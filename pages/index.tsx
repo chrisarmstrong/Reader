@@ -56,6 +56,7 @@ const BookTitle = styled.h1`
 
 const Chapter = styled.div`
   padding: 24px;
+  max-width: 75ch;
 `;
 
 const Verse = styled.p`
@@ -65,11 +66,12 @@ const Verse = styled.p`
   sup {
     opacity: 0.4;
     padding: 0 0.5ex 0 1ex;
+    line-height: 0ex;
   }
 `;
 
 const Search = styled.input`
-  width: 100%;
+  width: 100vw;
   position: sticky;
   top: 0;
   outline: none;
@@ -80,6 +82,7 @@ const Search = styled.input`
   border-radius: 0;
   background: white;
   z-index: 99;
+  box-sizing: boder-box;
 `;
 
 export default function Home() {
@@ -131,19 +134,20 @@ export default function Home() {
             placeholder="Search keyword"
             onChange={handleSearch}
           />
-          {getVerses()}
+
+          {searchKeyword.length > 1 && getVerses()}
         </div>
 
-        {/* {currentBook.chapters.map((chapter) => (
-          <div key={chapter.chapter}>
+        {currentBook.chapters.map((chapter) => (
+          <Chapter key={chapter.chapter}>
             <h3>{`Chapter ${chapter.chapter}`}</h3>
             {chapter.verses.map((verse) => (
-              <p key={verse.verse}>
+              <Verse key={verse.verse}>
                 <sup>{verse.verse}</sup> {verse.text}
-              </p>
+              </Verse>
             ))}
-          </div>
-        ))} */}
+          </Chapter>
+        ))}
       </main>
     </>
   );
