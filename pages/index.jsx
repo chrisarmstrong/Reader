@@ -147,6 +147,11 @@ export default function Home() {
 					content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
 				/>
 				<meta name="apple-mobile-web-app-capable" content="yes" />
+				<link
+					rel="apple-touch-icon"
+					sizes="180x180"
+					href="/apple-touch-icon.png"
+				></link>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<GlobalStyle></GlobalStyle>
