@@ -44,8 +44,8 @@ const BookTitle = styled.h1`
 `;
 
 const Chapter = styled.div`
-	max-width: 66ch;
-	line-height: 1.45;
+	max-width: 70ch;
+	line-height: 24px;
 	grid-column: main;
 	margin-bottom: 24px;
 `;
@@ -87,6 +87,8 @@ const Result = styled.p`
 `;
 
 const Search = styled.input`
+	font-family: Family, georgia, serif;
+	font-size: 16px;
 	grid-column: fullbleed;
 	width: 100%;
 	position: sticky;
@@ -94,7 +96,7 @@ const Search = styled.input`
 	outline: none;
 	border: none;
 	border-radius: none;
-	padding: 12px;
+	padding: 18px 24px;
 	border-bottom: 1px solid rgb(0 0 0 /0.1);
 	border-radius: 0;
 	background: white;
