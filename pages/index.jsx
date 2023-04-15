@@ -1,10 +1,11 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styled, { createGlobalStyle, css } from "styled-components";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import GlobalStyle from "../styles/globalStyles";
 
+import Books from "./data/kjv/Books.json";
 import Genesis from "./data/kjv/Genesis.json";
 
 const Container = styled.div`
@@ -34,6 +35,14 @@ const Container = styled.div`
 			  `}
 `;
 
+const Book = styled.div`
+	display: grid;
+	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
+	justify-items: center;
+
+	grid-column: fullbleed;
+`;
+
 const BookTitle = styled.h1`
 	font-family: Family, georgia, serif;
 	grid-column: main;
@@ -55,7 +64,7 @@ const ChapterNumber = styled.h2`
 	font-weight: 300;
 	display: inline-block;
 	float: left;
-	line-height: 1.8ex;
+	line-height: 1.9ex;
 	margin-right: 0.35ex;
 
 	& + p sup {
@@ -106,8 +115,20 @@ const Search = styled.input`
 `;
 
 export default function Home() {
+	const [bookData, setBookData] = useState([]);
+
 	const [currentBook, setCurrentBook] = useState(Genesis); // set the initial book to the first book in the JSON data
 	const [searchKeyword, setSearchKeyword] = useState("");
+
+	useEffect(() => {
+		Promise.all(
+			Books.map((book) => {
+				import(`./data/kjv/${book}.json`).then((data) => {
+					setBookData((prevData) => [...prevData, data.default]);
+				});
+			})
+		);
+	}, []);
 
 	const handleSearch = (e) => {
 		setSearchKeyword(e.target.value);
@@ -161,16 +182,20 @@ export default function Home() {
 
 				<Chapter className="results">{getVerses()}</Chapter>
 
-				<BookTitle className="content">{currentBook.book}</BookTitle>
-				{currentBook.chapters.map((chapter) => (
-					<Chapter key={chapter.chapter} className="content">
-						<ChapterNumber>{`${chapter.chapter}`}</ChapterNumber>
-						{chapter.verses.map((verse) => (
-							<Verse key={verse.verse}>
-								<sup>{verse.verse}</sup> {verse.text}
-							</Verse>
+				{bookData.map((book) => (
+					<Book>
+						<BookTitle className="content">{book.book}</BookTitle>
+						{book.chapters.map((chapter) => (
+							<Chapter key={chapter.chapter} className="content">
+								<ChapterNumber>{`${chapter.chapter}`}</ChapterNumber>
+								{chapter.verses.map((verse) => (
+									<Verse key={verse.verse}>
+										<sup>{verse.verse}</sup> {verse.text}
+									</Verse>
+								))}
+							</Chapter>
 						))}
-					</Chapter>
+					</Book>
 				))}
 			</Container>
 		</>
