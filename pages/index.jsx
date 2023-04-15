@@ -51,6 +51,8 @@ const Book = styled.div`
 	justify-items: center;
 
 	grid-column: fullbleed;
+
+	padding: 24px 0;
 `;
 
 const BookTitle = styled.h1`
@@ -60,6 +62,7 @@ const BookTitle = styled.h1`
 	margin-bottom: 24px;
 	font-size: 54px;
 	line-height: 60px;
+	text-align: center;
 `;
 
 const Chapter = styled.div`
@@ -93,7 +96,7 @@ const Verse = styled.p`
 	}
 `;
 
-const Result = styled.p`
+const Result = styled.div`
 	font-family: Family, georgia, serif;
 	padding: 24px 0;
 	border-bottom: 1px solid rgb(0 0 0 / 0.1);
@@ -110,24 +113,23 @@ const Search = styled.input`
 	font-size: 16px;
 	grid-column: fullbleed;
 	width: 100%;
-	position: sticky;
-	top: 0;
+	position: fixed;
+	bottom: 0;
 	outline: none;
 	border: none;
 	border-radius: none;
 	padding: 18px 24px;
-	border-bottom: 1px solid rgb(0 0 0 /0.1);
+	border-top: 1px solid rgb(0 0 0 /0.1);
 	border-radius: 0;
 	background: white;
 	z-index: 99;
 	box-sizing: boder-box;
-	margin-bottom: 24px;
 `;
 
 const BooksNav = styled.nav`
 	position: fixed;
 	width: 200px;
-	top: 60px;
+	bottom: 60px;
 
 	transition: right 0.2s ease-in;
 	right: ${(props) => (props.active ? "0" : "-200px")};
@@ -161,7 +163,7 @@ const NavToggle = styled.div`
 	width: 60px;
 	height: 60px;
 	position: fixed;
-	top: 0;
+	bottom: 0;
 	right: 0;
 	z-index: 99;
 	display: flex;
@@ -206,9 +208,21 @@ export default function Home() {
 		);
 	}, []);
 
-	const handleSearch = (e) => {
+	console.log(bookData.length);
+
+	function debounce(func, delay) {
+		let timeoutId;
+		return function (...args) {
+			const context = this;
+			clearTimeout(timeoutId);
+			timeoutId = setTimeout(() => func.apply(context, args), delay);
+		};
+	}
+
+	const handleSearch = debounce((e) => {
 		setSearchKeyword(e.target.value);
-	};
+		getVerses();
+	}, 500);
 
 	const handleBookSelect = (e) => {
 		setCurrentBook(bookData[e.target.getAttribute("data-index")]);
@@ -230,11 +244,9 @@ export default function Home() {
 						verse.text.toLowerCase().includes(searchKeyword.toLowerCase())
 					) {
 						verses.push(
-							<Result
-								key={`${currentBook.book}${chapter.chapter}:${verse.verse}`}
-							>
+							<Result key={`${book.book}${chapter.chapter}:${verse.verse}`}>
 								<p>{verse.text}</p>
-								<p className="chapter-verse">{`${currentBook.book} ${chapter.chapter}:${verse.verse}`}</p>
+								<p className="chapter-verse">{`${book.book} ${chapter.chapter}:${verse.verse}`}</p>
 							</Result>
 						);
 					}
@@ -269,6 +281,7 @@ export default function Home() {
 
 				<Chapter className="results">{searchResults}</Chapter>
 				<NavToggle onClick={handleNavToggle}></NavToggle>
+
 				<BooksNav active={bookNavVisible}>
 					{bookData.map((book, i) => (
 						<p key={book.book} onClick={handleBookSelect} data-index={i}>
