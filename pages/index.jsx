@@ -1,7 +1,9 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styled, { createGlobalStyle, css } from "styled-components";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+
+import { VariableSizeList } from "react-window";
 
 import GlobalStyle from "../styles/globalStyles";
 
@@ -33,6 +35,14 @@ const Container = styled.div`
 						display: none;
 					}
 			  `}
+`;
+
+const Reader = styled.div`
+	display: grid;
+	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
+	justify-items: center;
+
+	grid-column: fullbleed;
 `;
 
 const Book = styled.div`
@@ -77,7 +87,7 @@ const Verse = styled.p`
 	font-family: Family, georgia, serif;
 
 	sup {
-		opacity: 0.4;
+		opacity: 0.3;
 		padding: 0 0.1ex 0 1ex;
 		line-height: 0;
 	}
@@ -114,11 +124,77 @@ const Search = styled.input`
 	margin-bottom: 24px;
 `;
 
+const BooksNav = styled.nav`
+	position: fixed;
+	width: 200px;
+	top: 60px;
+
+	transition: right 0.2s ease-in;
+	right: ${(props) => (props.active ? "0" : "-200px")};
+	text-align: right;
+	padding: 24px;
+	height: calc(100vh - 60px);
+	overflow: scroll;
+	z-index: 1;
+
+	background: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 40%,
+		rgba(255, 255, 255, 0) 100%
+	);
+
+	p {
+		opacity: 0.4;
+		transition: opacity 0.2s;
+		width: 100%;
+		padding: 6px 0;
+
+		&:hover {
+			opacity: 1;
+		}
+		cursor: pointer;
+	}
+`;
+
+const NavToggle = styled.div`
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	&:after {
+		content: "";
+		display: block;
+		width: 6px;
+		height: 6px;
+		background: black;
+		border-radius: 100px;
+		opacity: 0.4;
+		transition: width 0.2s ease-in, height 0.2s ease-in, opacity 0.2s;
+	}
+
+	&:hover:after {
+		width: 12px;
+		height: 12px;
+		opacity: 1;
+	}
+`;
+
 export default function Home() {
 	const [bookData, setBookData] = useState([]);
+	const [currentBook, setCurrentBook] = useState(bookData[0] || Genesis); // set the initial book to the first book in the JSON data
 
-	const [currentBook, setCurrentBook] = useState(Genesis); // set the initial book to the first book in the JSON data
+	const [bookNavVisible, setBookNavVisible] = useState(false);
+
 	const [searchKeyword, setSearchKeyword] = useState("");
+	const [searchResults, setSearchResults] = useState([]);
 
 	useEffect(() => {
 		Promise.all(
@@ -134,28 +210,39 @@ export default function Home() {
 		setSearchKeyword(e.target.value);
 	};
 
+	const handleBookSelect = (e) => {
+		setCurrentBook(bookData[e.target.getAttribute("data-index")]);
+		window.scrollTo({ top: 0 });
+	};
+
+	const handleNavToggle = (e) => {
+		setBookNavVisible(!bookNavVisible);
+	};
+
 	const getVerses = () => {
 		let verses = [];
 
-		currentBook.chapters.forEach((chapter) => {
-			chapter.verses.forEach((verse) => {
-				if (
-					!searchKeyword ||
-					verse.text.toLowerCase().includes(searchKeyword.toLowerCase())
-				) {
-					verses.push(
-						<Result
-							key={`${currentBook.book}${chapter.chapter}:${verse.verse}`}
-						>
-							<p>{verse.text}</p>
-							<p className="chapter-verse">{`${currentBook.book} ${chapter.chapter}:${verse.verse}`}</p>
-						</Result>
-					);
-				}
+		bookData.forEach((book) => {
+			book.chapters.forEach((chapter) => {
+				chapter.verses.forEach((verse) => {
+					if (
+						!searchKeyword ||
+						verse.text.toLowerCase().includes(searchKeyword.toLowerCase())
+					) {
+						verses.push(
+							<Result
+								key={`${currentBook.book}${chapter.chapter}:${verse.verse}`}
+							>
+								<p>{verse.text}</p>
+								<p className="chapter-verse">{`${currentBook.book} ${chapter.chapter}:${verse.verse}`}</p>
+							</Result>
+						);
+					}
+				});
 			});
 		});
 
-		return verses;
+		setSearchResults(verses);
 	};
 
 	return (
@@ -180,23 +267,31 @@ export default function Home() {
 			<Container searchKeyword={searchKeyword}>
 				<Search type="text" placeholder="Search..." onChange={handleSearch} />
 
-				<Chapter className="results">{getVerses()}</Chapter>
+				<Chapter className="results">{searchResults}</Chapter>
+				<NavToggle onClick={handleNavToggle}></NavToggle>
+				<BooksNav active={bookNavVisible}>
+					{bookData.map((book, i) => (
+						<p key={book.book} onClick={handleBookSelect} data-index={i}>
+							{book.book}
+						</p>
+					))}
+				</BooksNav>
 
-				{bookData.map((book) => (
-					<Book key={book.book}>
-						<BookTitle className="content">{book.book}</BookTitle>
-						{book.chapters.map((chapter) => (
+				<Reader>
+					<Book key={currentBook.book}>
+						<BookTitle className="content">{currentBook.book}</BookTitle>
+						{currentBook.chapters.map((chapter) => (
 							<Chapter key={chapter.chapter} className="content">
 								<ChapterNumber>{`${chapter.chapter}`}</ChapterNumber>
 								{chapter.verses.map((verse) => (
 									<Verse key={verse.verse}>
-										<sup>{verse.verse}</sup> {verse.text}
+										<sup>{verse.verse}</sup>&nbsp;{verse.text}
 									</Verse>
 								))}
 							</Chapter>
 						))}
 					</Book>
-				))}
+				</Reader>
 			</Container>
 		</>
 	);
