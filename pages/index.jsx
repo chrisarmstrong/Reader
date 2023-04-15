@@ -183,7 +183,7 @@ export default function Home() {
 				<Chapter className="results">{getVerses()}</Chapter>
 
 				{bookData.map((book) => (
-					<Book>
+					<Book key={book.book}>
 						<BookTitle className="content">{book.book}</BookTitle>
 						{book.chapters.map((chapter) => (
 							<Chapter key={chapter.chapter} className="content">
