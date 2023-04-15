@@ -50,6 +50,10 @@ const Reset = createGlobalStyle`
   }
 `;
 
+const Container = styled.div`
+  outline: 1px solid red;
+`;
+
 const BookTitle = styled.h1`
   font-family: Family, georgia, serif;
 `;
@@ -125,7 +129,7 @@ export default function Home() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <Container>
         <BookTitle>{currentBook.book}</BookTitle>
 
         <div className="search-container">
@@ -135,7 +139,7 @@ export default function Home() {
             onChange={handleSearch}
           />
 
-          {searchKeyword.length > 1 && getVerses()}
+          {searchKeyword.length > 2 && getVerses()}
         </div>
 
         {currentBook.chapters.map((chapter) => (
@@ -148,7 +152,7 @@ export default function Home() {
             ))}
           </Chapter>
         ))}
-      </main>
+      </Container>
     </>
   );
 }
