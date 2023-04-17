@@ -105,6 +105,9 @@ export default function Search({ dismiss }) {
 				placeholder="Search..."
 				onChange={handleSearch}
 				autoFocus
+				onBlur={() => {
+					!searchKeyword && dismiss();
+				}}
 			/>
 			<DismissButton onClick={dismiss}>×</DismissButton>
 			<Results>
