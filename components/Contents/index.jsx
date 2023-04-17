@@ -59,12 +59,18 @@ const Container = styled.div`
 	}
 `;
 
-export default function Contents({ active, dismiss, books, handleBookSelect }) {
+export default function Contents({ active, dismiss, books, goToPosition }) {
 	return (
 		<Container active={active}>
 			<div className="book-list">
 				{books.map((book, i) => (
-					<p key={book.book} onClick={handleBookSelect} data-index={i}>
+					<p
+						key={book.book}
+						onClick={() => {
+							goToPosition(i);
+						}}
+						data-index={i}
+					>
 						{book.book}
 					</p>
 				))}

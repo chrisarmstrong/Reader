@@ -47,6 +47,8 @@ const Result = styled.div`
 	font-family: Family, georgia, serif;
 	padding: 24px 0;
 	border-bottom: 1px solid rgb(0 0 0 / 0.1);
+	cursor: pointer;
+
 	p {
 		margin-bottom: 6px;
 	}
@@ -80,7 +82,7 @@ const DismissButton = styled.button`
 	}
 `;
 
-export default function Search({ dismiss }) {
+export default function Search({ dismiss, goToPosition }) {
 	const [searchKeyword, setSearchKeyword] = useState("");
 	const [searchResults, setSearchResults] = useState([]);
 
@@ -98,6 +100,12 @@ export default function Search({ dismiss }) {
 		console.log("Search for " + e.target.value);
 	}, 500);
 
+	const handleResultClick = (book, chapter, verse) => {
+		console.log("Navigate to " + book + " " + chapter + ":" + verse);
+		dismiss();
+		goToPosition(book, chapter, verse);
+	};
+
 	return (
 		<Container>
 			<SearchInput
@@ -111,7 +119,7 @@ export default function Search({ dismiss }) {
 			/>
 			<DismissButton onClick={dismiss}>×</DismissButton>
 			<Results>
-				{Books.map((book) =>
+				{Books.map((book, book_index) =>
 					book.chapters.map((chapter) =>
 						chapter.verses.map(
 							(verse) =>
@@ -119,7 +127,16 @@ export default function Search({ dismiss }) {
 								verse.text
 									.toLowerCase()
 									.includes(searchKeyword.toLowerCase()) && (
-									<Result key={`${book.book}${chapter.chapter}:${verse.verse}`}>
+									<Result
+										key={`${book.book}${chapter.chapter}:${verse.verse}`}
+										onClick={() => {
+											handleResultClick(
+												book_index,
+												chapter.chapter,
+												verse.verse
+											);
+										}}
+									>
 										<p>{verse.text}</p>
 										<p className="chapter-verse">{`${book.book} ${chapter.chapter}:${verse.verse}`}</p>
 									</Result>

@@ -24,7 +24,8 @@ export default function Home() {
 	useEffect(() => {
 		if (typeof window !== "undefined") {
 			const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
-			if (lastPosition?.book) {
+			if (!isNaN(lastPosition?.book)) {
+				console.log("Last position", lastPosition.book);
 				setCurrentBook(Books[lastPosition.book]);
 			}
 		}
@@ -33,19 +34,24 @@ export default function Home() {
 	const [bookNavVisible, setBookNavVisible] = useState(false);
 	const [searchVisible, setSearchVisible] = useState(false);
 
-	const handleBookSelect = (e) => {
-		setCurrentBook(Books[e.target.getAttribute("data-index")]);
+	const goToPosition = (book_index, chapter_index, verse_index) => {
+		setCurrentBook(Books[book_index]);
 		setBookNavVisible(false);
-		window.scrollTo({ top: 0 });
+		if (chapter_index || verse_index) {
+			const id = chapter_index + ":" + verse_index;
+			window.location.hash = id;
+		} else {
+			window.scrollTo({ top: 0 });
+		}
 
-		const currentPosition = { book: e.target.getAttribute("data-index") };
+		const currentPosition = { book: book_index };
 		localStorage.setItem("lastPosition", JSON.stringify(currentPosition));
 	};
 
 	return (
 		<>
 			<Head>
-				<title>{currentBook.book}</title>
+				<title>{currentBook?.book}</title>
 				<meta name="description" content="A simple Bible app" />
 				<meta
 					name="viewport"
@@ -67,13 +73,14 @@ export default function Home() {
 						dismiss={() => {
 							setSearchVisible(false);
 						}}
+						goToPosition={goToPosition}
 					></Search>
 				)}
 				<Reader book={currentBook}></Reader>
 
 				<Contents
 					active={bookNavVisible}
-					handleBookSelect={handleBookSelect}
+					goToPosition={goToPosition}
 					books={Books}
 					dismiss={() => {
 						setBookNavVisible(false);

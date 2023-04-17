@@ -91,7 +91,11 @@ export default function Reader({ book }) {
 					{book.book}
 				</BookTitle>
 				{book.chapters.map((chapter) => (
-					<Chapter key={chapter.chapter} className="content chapter">
+					<Chapter
+						key={chapter.chapter}
+						className="content chapter"
+						id={chapter.chapter}
+					>
 						<ChapterNumber>
 							{chaptersCount > 1
 								? chapter.chapter
@@ -100,6 +104,7 @@ export default function Reader({ book }) {
 						{chapter.verses.map((verse, i) => (
 							<Verse
 								key={verse.verse}
+								id={chapter.chapter + `:` + verse.verse}
 								className={verse.paragraph ? `verse new-paragraph` : `verse`}
 							>
 								<sup>{verse.verse}&nbsp;</sup>
