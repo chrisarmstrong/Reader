@@ -18,18 +18,17 @@ const SearchInput = styled.input`
 	font-size: 16px;
 	grid-column: fullbleed;
 	width: 100%;
-	position: fixed;
-	bottom: 0;
+	position: sticky;
+	top: 0;
 	outline: none;
 	border: none;
 	border-radius: none;
 	padding: 18px 24px;
-	border-top: 1px solid rgb(0 0 0 /0.1);
+	border-bottom: 1px solid rgb(0 0 0 /0.1);
 	border-radius: 0;
 	background: white;
 	z-index: 99;
 	box-sizing: boder-box;
-	padding-bottom: calc(18px + env(safe-area-inset-bottom));
 `;
 
 const Results = styled.div`
@@ -65,13 +64,20 @@ const DismissButton = styled.button`
 	width: 60px;
 	height: 60px;
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	right: 0;
 	z-index: 99;
 	line-height: 60px;
 	font-size: 24px;
 	font-family: "Family", georgia, serif;
 	color: rgb(0 0 0 / 0.4);
+
+	transition: color 0.2s;
+	cursor: pointer;
+
+	&:hover {
+		color: black;
+	}
 `;
 
 export default function Search({ dismiss }) {
