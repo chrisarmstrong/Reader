@@ -37,6 +37,8 @@ const Book = styled.div`
 	grid-column: fullbleed;
 
 	padding: 24px 0;
+
+	padding-bottom: calc(60px + env(safe-area-inset-bottom));
 `;
 
 const BookTitle = styled.h1`
