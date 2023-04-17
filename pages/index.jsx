@@ -21,6 +21,12 @@ const Reader = styled.div`
 	justify-items: center;
 
 	grid-column: fullbleed;
+
+	${(props) =>
+		props.searchActive &&
+		css`
+			pointer-events: none;
+		`}
 `;
 
 const Book = styled.div`
@@ -244,7 +250,7 @@ export default function Home() {
 					></Search>
 				)}
 
-				<Reader>
+				<Reader searchActive={searchVisible}>
 					<Book key={currentBook.book}>
 						<BookTitle className="content">{currentBook.book}</BookTitle>
 						{currentBook.chapters.map((chapter) => (

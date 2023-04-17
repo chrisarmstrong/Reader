@@ -29,6 +29,7 @@ const SearchInput = styled.input`
 	background: white;
 	z-index: 99;
 	box-sizing: boder-box;
+	padding-bottom: calc(18px + env(safe-area-inset-bottom));
 `;
 
 const Results = styled.div`
@@ -37,6 +38,7 @@ const Results = styled.div`
 	justify-items: center;
 	height: calc(100vh - 60px);
 	overflow: scroll;
+	padding-bottom: 120px;
 `;
 
 const Result = styled.div`
