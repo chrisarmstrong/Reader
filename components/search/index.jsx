@@ -11,7 +11,7 @@ const Container = styled.div`
 	right: 0;
 	background: ${(props) => (props.active ? "white" : "#ffffff00")};
 	z-index: 100;
-	transition: background-color 0.5s ease-in;
+	transition: background-color 0.2s ease-in;
 	pointer-events: none;
 `;
 
@@ -58,6 +58,10 @@ const Result = styled.div`
 	}
 	.chapter-verse {
 		opacity: 0.4;
+	}
+
+	.highlight {
+		font-weight: bold;
 	}
 `;
 
@@ -111,6 +115,24 @@ export default function Search({ active, dismiss, goToPosition }) {
 		goToPosition(book, chapter, verse);
 	};
 
+	const highlightWordInString = (str, wordToHighlight) => {
+		const words = str.split(" ");
+
+		return words.map((word, i) => {
+			const lowercased = word.toLowerCase();
+
+			if (lowercased.includes(wordToHighlight)) {
+				return (
+					<span key={i} className="highlight">
+						{word}{" "}
+					</span>
+				);
+			} else {
+				return <span key={i}>{word} </span>;
+			}
+		});
+	};
+
 	return (
 		<Container active={active}>
 			{active ? (
@@ -144,7 +166,12 @@ export default function Search({ active, dismiss, goToPosition }) {
 													);
 												}}
 											>
-												<p>{verse.text}</p>
+												<p>
+													{highlightWordInString(
+														verse.text,
+														searchKeyword.toLowerCase()
+													)}
+												</p>
 												<p className="chapter-verse">{`${book.book} ${chapter.chapter}:${verse.verse}`}</p>
 											</Result>
 										)
