@@ -118,6 +118,15 @@ const SearchToggle = styled.button``;
 export default function Home() {
 	const [currentBook, setCurrentBook] = useState(Books[0]); // set the initial book to the first book in the JSON data
 
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
+			if (lastPosition?.book) {
+				setCurrentBook(Books[lastPosition.book]);
+			}
+		}
+	}, []);
+
 	const [bookNavVisible, setBookNavVisible] = useState(false);
 	const [searchVisible, setSearchVisible] = useState(false);
 
@@ -125,6 +134,9 @@ export default function Home() {
 		setCurrentBook(Books[e.target.getAttribute("data-index")]);
 		setBookNavVisible(false);
 		window.scrollTo({ top: 0 });
+
+		const currentPosition = { book: e.target.getAttribute("data-index") };
+		localStorage.setItem("lastPosition", JSON.stringify(currentPosition));
 	};
 
 	return (
