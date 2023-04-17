@@ -44,8 +44,6 @@ export async function getStaticPaths() {
 		}
 	});
 
-	console.log(paths);
-
 	if (allBooks) {
 		return {
 			paths: paths,
