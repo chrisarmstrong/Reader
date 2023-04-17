@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-import { Books } from "../../pages/data/kjv/Books";
+import { Books } from "../../utils/Books";
 
 const Container = styled.div`
 	position: fixed;

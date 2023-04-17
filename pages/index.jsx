@@ -7,7 +7,7 @@ import Search from "../components/search";
 
 import GlobalStyle from "../styles/globalStyles";
 
-import { Books } from "./data/kjv/Books";
+import { Books } from "../utils/Books";
 
 const Container = styled.div`
 	display: grid;
