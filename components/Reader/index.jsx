@@ -87,7 +87,9 @@ export default function Reader({ book }) {
 	return (
 		<Container>
 			<Book key={book.book}>
-				<BookTitle className="content">{book.book}</BookTitle>
+				<BookTitle className="content" key={book.book}>
+					{book.book}
+				</BookTitle>
 				{book.chapters.map((chapter) => (
 					<Chapter key={chapter.chapter} className="content chapter">
 						<ChapterNumber>

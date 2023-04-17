@@ -10,7 +10,7 @@ const Container = styled.div`
 	left: 0;
 	right: 0;
 	background: white;
-	z-index: 99;
+	z-index: 100;
 `;
 
 const SearchInput = styled.input`

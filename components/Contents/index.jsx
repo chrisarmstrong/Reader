@@ -1,0 +1,75 @@
+import { useState } from "react";
+import styled, { css } from "styled-components";
+
+const Container = styled.div`
+	position: fixed;
+	width: 100%;
+	top: 0;
+	bottom: env(safe-area-inset-bottom);
+	transition: left 0.2s ease-in, background 0.2s ease-in, opacity 0.2s;
+	left: ${(props) => (props.active ? "0" : "-280px")};
+	text-align: left;
+	overflow: scroll;
+	z-index: 1;
+	opacity: ${(props) => (props.active ? "1" : "0")};
+	pointer-events: ${(props) => (props.active ? "all" : "none")};
+	${(props) =>
+		props.active
+			? css`
+					background: linear-gradient(
+						to right,
+						rgba(255, 255, 255, 1) 0%,
+						rgba(255, 255, 255, 1) 100px,
+						rgba(255, 255, 255, 0.8) 300px,
+						rgba(255, 255, 255, 0.4) 100%
+					);
+			  `
+			: css`
+					background: linear-gradient(
+						to right,
+						rgba(255, 255, 255, 1) 0%,
+						rgba(255, 255, 255, 1) 50px,
+						rgba(255, 255, 255, 0.4) 100%
+					);
+			  `};
+
+	display: grid;
+	grid-template-columns: 280px 1fr;
+
+	.book-list {
+		padding: 60px 24px;
+	}
+	.dismiss {
+		width: 100%;
+		height: 100%;
+	}
+
+	p {
+		opacity: 0.4;
+		transition: opacity 0.2s;
+		width: 100%;
+		padding: 6px 0;
+		font-size: 36px;
+		font-weight: 300;
+
+		&:hover {
+			opacity: 1;
+		}
+		cursor: pointer;
+	}
+`;
+
+export default function Contents({ active, dismiss, books, handleBookSelect }) {
+	return (
+		<Container active={active}>
+			<div className="book-list">
+				{books.map((book, i) => (
+					<p key={book.book} onClick={handleBookSelect} data-index={i}>
+						{book.book}
+					</p>
+				))}
+			</div>
+			<div className="dismiss" onClick={dismiss}></div>
+		</Container>
+	);
+}

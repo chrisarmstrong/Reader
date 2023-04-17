@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
 
 @font-face {
   font-family: "Family";
-  src: url("/fonts/family-regular-italic.woff2") format("woff2");
+  src: url("/fonts/family-italic.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
 }
