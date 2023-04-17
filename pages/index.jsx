@@ -84,7 +84,7 @@ const BooksNav = styled.nav`
 	position: fixed;
 	width: 100%;
 	top: 0;
-	bottom: 0;
+	bottom: env(safe-area-inset-bottom);
 	transition: left 0.2s ease-in, background 0.2s ease-in, opacity 0.2s;
 	left: ${(props) => (props.active ? "0" : "-280px")};
 	text-align: left;
