@@ -37,8 +37,8 @@ export default function Home() {
 	const goToPosition = (book_index, chapter_index, verse_index) => {
 		setCurrentBook(Books[book_index]);
 		setBookNavVisible(false);
-		if (chapter_index || verse_index) {
-			const id = chapter_index + ":" + verse_index;
+		if (chapter_index) {
+			const id = chapter_index;
 			window.location.hash = id;
 		} else {
 			window.scrollTo({ top: 0 });
@@ -68,14 +68,14 @@ export default function Home() {
 			<GlobalStyle></GlobalStyle>
 
 			<Container>
-				{searchVisible && (
-					<Search
-						dismiss={() => {
-							setSearchVisible(false);
-						}}
-						goToPosition={goToPosition}
-					></Search>
-				)}
+				<Search
+					dismiss={() => {
+						setSearchVisible(false);
+					}}
+					active={searchVisible}
+					goToPosition={goToPosition}
+				></Search>
+
 				<Reader book={currentBook}></Reader>
 
 				<Contents

@@ -9,8 +9,10 @@ const Container = styled.div`
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: white;
+	background: ${(props) => (props.active ? "white" : "#ffffff00")};
 	z-index: 100;
+	transition: background-color 0.5s ease-in;
+	pointer-events: none;
 `;
 
 const SearchInput = styled.input`
@@ -29,6 +31,7 @@ const SearchInput = styled.input`
 	background: white;
 	z-index: 99;
 	box-sizing: boder-box;
+	pointer-events: all;
 `;
 
 const Results = styled.div`
@@ -38,6 +41,7 @@ const Results = styled.div`
 	height: calc(100vh - 60px);
 	overflow: scroll;
 	padding-bottom: 120px;
+	pointer-events: all;
 `;
 
 const Result = styled.div`
@@ -80,9 +84,10 @@ const DismissButton = styled.button`
 	&:hover {
 		color: black;
 	}
+	pointer-events: all;
 `;
 
-export default function Search({ dismiss, goToPosition }) {
+export default function Search({ active, dismiss, goToPosition }) {
 	const [searchKeyword, setSearchKeyword] = useState("");
 	const [searchResults, setSearchResults] = useState([]);
 
@@ -107,44 +112,48 @@ export default function Search({ dismiss, goToPosition }) {
 	};
 
 	return (
-		<Container>
-			<SearchInput
-				type="text"
-				placeholder="Search..."
-				onChange={handleSearch}
-				autoFocus
-				onBlur={() => {
-					!searchKeyword && dismiss();
-				}}
-			/>
-			<DismissButton onClick={dismiss}>×</DismissButton>
-			<Results>
-				{Books.map((book, book_index) =>
-					book.chapters.map((chapter) =>
-						chapter.verses.map(
-							(verse) =>
-								searchKeyword.length > 1 &&
-								verse.text
-									.toLowerCase()
-									.includes(searchKeyword.toLowerCase()) && (
-									<Result
-										key={`${book.book}${chapter.chapter}:${verse.verse}`}
-										onClick={() => {
-											handleResultClick(
-												book_index,
-												chapter.chapter,
-												verse.verse
-											);
-										}}
-									>
-										<p>{verse.text}</p>
-										<p className="chapter-verse">{`${book.book} ${chapter.chapter}:${verse.verse}`}</p>
-									</Result>
+		<Container active={active}>
+			{active ? (
+				<>
+					<SearchInput
+						type="text"
+						placeholder="Search..."
+						onChange={handleSearch}
+						autoFocus
+						onBlur={() => {
+							!searchKeyword && dismiss();
+						}}
+					/>
+					<DismissButton onClick={dismiss}>×</DismissButton>
+					<Results>
+						{Books.map((book, book_index) =>
+							book.chapters.map((chapter) =>
+								chapter.verses.map(
+									(verse) =>
+										searchKeyword.length > 1 &&
+										verse.text
+											.toLowerCase()
+											.includes(searchKeyword.toLowerCase()) && (
+											<Result
+												key={`${book.book}${chapter.chapter}:${verse.verse}`}
+												onClick={() => {
+													handleResultClick(
+														book_index,
+														chapter.chapter,
+														verse.verse
+													);
+												}}
+											>
+												<p>{verse.text}</p>
+												<p className="chapter-verse">{`${book.book} ${chapter.chapter}:${verse.verse}`}</p>
+											</Result>
+										)
 								)
-						)
-					)
-				)}
-			</Results>
+							)
+						)}
+					</Results>
+				</>
+			) : null}
 		</Container>
 	);
 }
