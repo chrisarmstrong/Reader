@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import styled, { createGlobalStyle, css } from "styled-components";
+import styled, { css } from "styled-components";
 import { useState, useEffect, useRef } from "react";
 
-import Search from "../components/search";
+import Search from "../components/Search";
+import Reader from "../components/Reader";
 
 import GlobalStyle from "../styles/globalStyles";
 
@@ -13,74 +14,6 @@ const Container = styled.div`
 	display: grid;
 	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
 	justify-items: center;
-`;
-
-const Reader = styled.div`
-	display: grid;
-	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
-	justify-items: center;
-
-	grid-column: fullbleed;
-
-	${(props) =>
-		props.searchActive &&
-		css`
-			pointer-events: none;
-		`}
-`;
-
-const Book = styled.div`
-	display: grid;
-	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
-	justify-items: center;
-
-	grid-column: fullbleed;
-
-	padding: 24px 0;
-
-	padding-bottom: calc(60px + env(safe-area-inset-bottom));
-`;
-
-const BookTitle = styled.h1`
-	font-family: Family, georgia, serif;
-	grid-column: main;
-	padding: 24px;
-	margin-bottom: 24px;
-	font-size: 54px;
-	line-height: 60px;
-	text-align: center;
-`;
-
-const Chapter = styled.div`
-	max-width: 70ch;
-	line-height: 24px;
-	grid-column: main;
-	margin-bottom: 24px;
-`;
-
-const ChapterNumber = styled.h2`
-	font-size: 54px;
-	font-weight: 300;
-	display: inline-block;
-	float: left;
-	line-height: 1.9ex;
-	margin-right: 0.35ex;
-
-	& + p sup {
-		display: none;
-	}
-`;
-
-const Verse = styled.p`
-	display: inline;
-	font-family: Family, georgia, serif;
-
-	sup {
-		opacity: 0.3;
-		padding: 0 0.1ex 0 1ex;
-		line-height: 0;
-		font-variant-numeric: oldstyle-nums;
-	}
 `;
 
 const BooksNav = styled.nav`
@@ -253,22 +186,7 @@ export default function Home() {
 						}}
 					></Search>
 				)}
-
-				<Reader searchActive={searchVisible}>
-					<Book key={currentBook.book}>
-						<BookTitle className="content">{currentBook.book}</BookTitle>
-						{currentBook.chapters.map((chapter) => (
-							<Chapter key={chapter.chapter} className="content">
-								<ChapterNumber>{`${chapter.chapter}`}</ChapterNumber>
-								{chapter.verses.map((verse) => (
-									<Verse key={verse.verse}>
-										<sup>{verse.verse}</sup>&nbsp;{verse.text}
-									</Verse>
-								))}
-							</Chapter>
-						))}
-					</Book>
-				</Reader>
+				<Reader book={currentBook}></Reader>
 			</Container>
 		</>
 	);

@@ -86,6 +86,8 @@ const GlobalStyle = createGlobalStyle`
   /* Reset default font family */
   body {
     font-family: Family, georgia, serif;
+    color: #1a1f2e;
+    // background: #eadcda10;
   }
 `;
 
