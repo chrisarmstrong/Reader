@@ -3,7 +3,7 @@ import { Inter } from "@next/font/google";
 import styled, { css } from "styled-components";
 import { useState, useEffect, useRef } from "react";
 
-import Search from "../components/Search";
+import Search from "../components/search";
 import Reader from "../components/Reader";
 
 import GlobalStyle from "../styles/globalStyles";
