@@ -11,8 +11,9 @@ const Container = styled.div`
 	right: 0;
 	background: ${(props) => (props.active ? "white" : "#ffffff00")};
 	z-index: 100;
-	transition: background-color 0.2s ease-in;
 	pointer-events: none;
+	opacity: ${(props) => (props.active ? "1" : "0")};
+	transition: background-color 0.2s ease-in, opacity 0.2s;
 `;
 
 const SearchInput = styled.input`
@@ -154,7 +155,7 @@ export default function Search({ active, dismiss, goToPosition }) {
 					>
 						×
 					</DismissButton>
-					<Results>
+					<Results active={active}>
 						{Books.map((book, book_index) =>
 							book.chapters.map((chapter) =>
 								chapter.verses.map(
