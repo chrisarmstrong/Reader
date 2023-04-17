@@ -146,7 +146,14 @@ export default function Search({ active, dismiss, goToPosition }) {
 							!searchKeyword && dismiss();
 						}}
 					/>
-					<DismissButton onClick={dismiss}>×</DismissButton>
+					<DismissButton
+						onClick={() => {
+							dismiss();
+							setSearchKeyword[""];
+						}}
+					>
+						×
+					</DismissButton>
 					<Results>
 						{Books.map((book, book_index) =>
 							book.chapters.map((chapter) =>

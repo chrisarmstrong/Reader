@@ -38,7 +38,7 @@ export default function Home() {
 		setCurrentBook(Books[book_index]);
 		setBookNavVisible(false);
 		if (chapter_index) {
-			const id = chapter_index;
+			const id = chapter_index + ":" + verse_index;
 			window.location.hash = id;
 		} else {
 			window.scrollTo({ top: 0 });
