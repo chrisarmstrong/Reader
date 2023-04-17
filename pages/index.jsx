@@ -98,7 +98,8 @@ const BooksNav = styled.nav`
 					background: linear-gradient(
 						to right,
 						rgba(255, 255, 255, 1) 0%,
-						rgba(255, 255, 255, 1) 50px,
+						rgba(255, 255, 255, 1) 100px,
+						rgba(255, 255, 255, 0.8) 300px,
 						rgba(255, 255, 255, 0.4) 100%
 					);
 			  `
