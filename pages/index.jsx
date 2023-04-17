@@ -79,6 +79,7 @@ const Verse = styled.p`
 		opacity: 0.3;
 		padding: 0 0.1ex 0 1ex;
 		line-height: 0;
+		font-variant-numeric: oldstyle-nums;
 	}
 `;
 
