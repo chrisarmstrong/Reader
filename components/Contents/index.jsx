@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
+import Link from "next/link";
 
 const Container = styled.div`
 	position: fixed;
@@ -44,7 +45,7 @@ const Container = styled.div`
 		height: 100%;
 	}
 
-	p {
+	a {
 		opacity: 0.4;
 		transition: opacity 0.2s;
 		width: 100%;
@@ -56,6 +57,9 @@ const Container = styled.div`
 			opacity: 1;
 		}
 		cursor: pointer;
+		display: block;
+		text-decoration: none;
+		color: inherit;
 	}
 `;
 
@@ -64,15 +68,16 @@ export default function Contents({ active, dismiss, books, goToPosition }) {
 		<Container active={active}>
 			<div className="book-list">
 				{books.map((book, i) => (
-					<p
+					<Link
 						key={book.book}
-						onClick={() => {
-							goToPosition(i);
-						}}
+						href={"/" + book.book.toLowerCase()}
 						data-index={i}
+						onClick={() => {
+							dismiss();
+						}}
 					>
 						{book.book}
-					</p>
+					</Link>
 				))}
 			</div>
 			<div className="dismiss" onClick={dismiss}></div>

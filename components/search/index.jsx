@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 import { Books } from "../../utils/Books";
 
@@ -64,6 +65,11 @@ const Result = styled.div`
 	.highlight {
 		font-weight: bold;
 	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
 `;
 
 const DismissButton = styled.button`
@@ -109,12 +115,6 @@ export default function Search({ active, dismiss, goToPosition }) {
 		setSearchKeyword(e.target.value);
 		console.log("Search for " + e.target.value);
 	}, 500);
-
-	const handleResultClick = (book, chapter, verse) => {
-		console.log("Navigate to " + book + " " + chapter + ":" + verse);
-		dismiss();
-		goToPosition(book, chapter, verse);
-	};
 
 	const highlightWordInString = (str, wordToHighlight) => {
 		const words = str.split(" ");
@@ -166,21 +166,28 @@ export default function Search({ active, dismiss, goToPosition }) {
 											.includes(searchKeyword.toLowerCase()) && (
 											<Result
 												key={`${book.book}${chapter.chapter}:${verse.verse}`}
-												onClick={() => {
-													handleResultClick(
-														book_index,
-														chapter.chapter,
-														verse.verse
-													);
-												}}
 											>
-												<p>
-													{highlightWordInString(
-														verse.text,
-														searchKeyword.toLowerCase()
-													)}
-												</p>
-												<p className="chapter-verse">{`${book.book} ${chapter.chapter}:${verse.verse}`}</p>
+												<Link
+													href={
+														"/" +
+														book.book.toLowerCase() +
+														"#" +
+														chapter.chapter +
+														":" +
+														verse.verse
+													}
+													onClick={() => {
+														dismiss();
+													}}
+												>
+													<p>
+														{highlightWordInString(
+															verse.text,
+															searchKeyword.toLowerCase()
+														)}
+													</p>
+													<p className="chapter-verse">{`${book.book} ${chapter.chapter}:${verse.verse}`}</p>
+												</Link>
 											</Result>
 										)
 								)
