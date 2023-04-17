@@ -170,7 +170,7 @@ export default function Search({ active, dismiss, goToPosition }) {
 												<Link
 													href={
 														"/" +
-														book.book.toLowerCase() +
+														book.book.toLowerCase().replace(/\s+/g, "-") +
 														"#" +
 														chapter.chapter +
 														":" +

@@ -70,7 +70,7 @@ export default function Contents({ active, dismiss, books, goToPosition }) {
 				{books.map((book, i) => (
 					<Link
 						key={book.book}
-						href={"/" + book.book.toLowerCase()}
+						href={"/" + book.book.toLowerCase().replace(/\s+/g, "-")}
 						data-index={i}
 						onClick={() => {
 							dismiss();
