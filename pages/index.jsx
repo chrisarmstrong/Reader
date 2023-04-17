@@ -160,6 +160,7 @@ const Navbar = styled.div`
 		opacity: 0.4;
 		transition: opacity 0.2s;
 		cursor: pointer;
+		color: black;
 
 		&:hover {
 			opacity: 1;
