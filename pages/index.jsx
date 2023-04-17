@@ -3,38 +3,16 @@ import { Inter } from "@next/font/google";
 import styled, { createGlobalStyle, css } from "styled-components";
 import { useState, useEffect, useRef } from "react";
 
-import { VariableSizeList } from "react-window";
+import Search from "../components/search";
 
 import GlobalStyle from "../styles/globalStyles";
 
-import Books from "./data/kjv/Books.json";
-import Genesis from "./data/kjv/Genesis.json";
+import { Books } from "./data/kjv/Books";
 
 const Container = styled.div`
 	display: grid;
 	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
 	justify-items: center;
-
-	${(props) =>
-		props.searchKeyword.length < 2
-			? css`
-					.results {
-						display: none;
-					}
-
-					.content {
-						display: block;
-					}
-			  `
-			: css`
-					.results {
-						display: block;
-					}
-
-					.content {
-						display: none;
-					}
-			  `}
 `;
 
 const Reader = styled.div`
@@ -96,61 +74,55 @@ const Verse = styled.p`
 	}
 `;
 
-const Result = styled.div`
-	font-family: Family, georgia, serif;
-	padding: 24px 0;
-	border-bottom: 1px solid rgb(0 0 0 / 0.1);
-	p {
-		margin-bottom: 6px;
-	}
-	.chapter-verse {
-		opacity: 0.4;
-	}
-`;
-
-const Search = styled.input`
-	font-family: Family, georgia, serif;
-	font-size: 16px;
-	grid-column: fullbleed;
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	outline: none;
-	border: none;
-	border-radius: none;
-	padding: 18px 24px;
-	border-top: 1px solid rgb(0 0 0 /0.1);
-	border-radius: 0;
-	background: white;
-	z-index: 99;
-	box-sizing: boder-box;
-`;
-
 const BooksNav = styled.nav`
 	position: fixed;
-	width: 200px;
-	bottom: 60px;
-
-	transition: right 0.2s ease-in;
-	right: ${(props) => (props.active ? "0" : "-200px")};
-	text-align: right;
-	padding: 24px;
-	height: calc(100vh - 60px);
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	transition: left 0.2s ease-in, background 0.2s ease-in, opacity 0.2s;
+	left: ${(props) => (props.active ? "0" : "-280px")};
+	text-align: left;
 	overflow: scroll;
 	z-index: 1;
+	opacity: ${(props) => (props.active ? "1" : "0")};
+	pointer-events: ${(props) => (props.active ? "all" : "none")};
+	${(props) =>
+		props.active
+			? css`
+					background: linear-gradient(
+						to right,
+						rgba(255, 255, 255, 1) 0%,
+						rgba(255, 255, 255, 1) 50px,
+						rgba(255, 255, 255, 0.4) 100%
+					);
+			  `
+			: css`
+					background: linear-gradient(
+						to right,
+						rgba(255, 255, 255, 1) 0%,
+						rgba(255, 255, 255, 1) 50px,
+						rgba(255, 255, 255, 0.4) 100%
+					);
+			  `};
 
-	background: linear-gradient(
-		to left,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(255, 255, 255, 1) 40%,
-		rgba(255, 255, 255, 0) 100%
-	);
+	display: grid;
+	grid-template-columns: 280px 1fr;
+
+	.book-list {
+		padding: 60px 24px;
+	}
+	.dismiss {
+		width: 100%;
+		height: 100%;
+	}
 
 	p {
 		opacity: 0.4;
 		transition: opacity 0.2s;
 		width: 100%;
 		padding: 6px 0;
+		font-size: 36px;
+		font-weight: 300;
 
 		&:hover {
 			opacity: 1;
@@ -159,102 +131,56 @@ const BooksNav = styled.nav`
 	}
 `;
 
-const NavToggle = styled.div`
-	width: 60px;
-	height: 60px;
+const Navbar = styled.div`
+	width: 100%;
 	position: fixed;
-	bottom: 0;
-	right: 0;
-	z-index: 99;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
+	padding-bottom: env(safe-area-inset-bottom);
 
-	&:after {
-		content: "";
-		display: block;
-		width: 6px;
-		height: 6px;
-		background: black;
-		border-radius: 100px;
-		opacity: 0.4;
-		transition: width 0.2s ease-in, height 0.2s ease-in, opacity 0.2s;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	z-index: 99;
+
+	@media all and (max-width: 820px) {
+		background: white;
+		border-top: 1px solid rgb(0 0 0 /0.1);
+		bottom: 0;
 	}
 
-	&:hover:after {
-		width: 12px;
-		height: 12px;
-		opacity: 1;
+	button {
+		height: 60px;
+		padding: 12px 24px;
+		background: none;
+		outline: none;
+		border: none;
+		font-family: "Family", georgia, serif;
+		font-size: 16px;
+		font-style: italic;
+		opacity: 0.4;
+		transition: opacity 0.2s;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 1;
+		}
 	}
 `;
 
+const NavToggle = styled.button``;
+
+const SearchToggle = styled.button``;
+
 export default function Home() {
-	const [bookData, setBookData] = useState([]);
-	const [currentBook, setCurrentBook] = useState(bookData[0] || Genesis); // set the initial book to the first book in the JSON data
+	const [currentBook, setCurrentBook] = useState(Books[0]); // set the initial book to the first book in the JSON data
 
 	const [bookNavVisible, setBookNavVisible] = useState(false);
-
-	const [searchKeyword, setSearchKeyword] = useState("");
-	const [searchResults, setSearchResults] = useState([]);
-
-	useEffect(() => {
-		Promise.all(
-			Books.map((book) => {
-				import(`./data/kjv/${book}.json`).then((data) => {
-					setBookData((prevData) => [...prevData, data.default]);
-				});
-			})
-		);
-	}, []);
-
-	console.log(bookData.length);
-
-	function debounce(func, delay) {
-		let timeoutId;
-		return function (...args) {
-			const context = this;
-			clearTimeout(timeoutId);
-			timeoutId = setTimeout(() => func.apply(context, args), delay);
-		};
-	}
-
-	const handleSearch = debounce((e) => {
-		setSearchKeyword(e.target.value);
-		getVerses();
-	}, 500);
+	const [searchVisible, setSearchVisible] = useState(false);
 
 	const handleBookSelect = (e) => {
-		setCurrentBook(bookData[e.target.getAttribute("data-index")]);
+		setCurrentBook(Books[e.target.getAttribute("data-index")]);
+		setBookNavVisible(false);
 		window.scrollTo({ top: 0 });
-	};
-
-	const handleNavToggle = (e) => {
-		setBookNavVisible(!bookNavVisible);
-	};
-
-	const getVerses = () => {
-		let verses = [];
-
-		bookData.forEach((book) => {
-			book.chapters.forEach((chapter) => {
-				chapter.verses.forEach((verse) => {
-					if (
-						!searchKeyword ||
-						verse.text.toLowerCase().includes(searchKeyword.toLowerCase())
-					) {
-						verses.push(
-							<Result key={`${book.book}${chapter.chapter}:${verse.verse}`}>
-								<p>{verse.text}</p>
-								<p className="chapter-verse">{`${book.book} ${chapter.chapter}:${verse.verse}`}</p>
-							</Result>
-						);
-					}
-				});
-			});
-		});
-
-		setSearchResults(verses);
 	};
 
 	return (
@@ -267,6 +193,7 @@ export default function Home() {
 					content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
 				/>
 				<meta name="apple-mobile-web-app-capable" content="yes" />
+				<meta name="viewport" content="viewport-fit=cover" />
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
@@ -276,19 +203,46 @@ export default function Home() {
 			</Head>
 			<GlobalStyle></GlobalStyle>
 
-			<Container searchKeyword={searchKeyword}>
-				<Search type="text" placeholder="Search..." onChange={handleSearch} />
-
-				<Chapter className="results">{searchResults}</Chapter>
-				<NavToggle onClick={handleNavToggle}></NavToggle>
+			<Container>
+				<Navbar>
+					<NavToggle
+						onClick={() => {
+							setBookNavVisible(!bookNavVisible);
+						}}
+					>
+						Index
+					</NavToggle>
+					<SearchToggle
+						onClick={() => {
+							setSearchVisible(true);
+						}}
+					>
+						Search
+					</SearchToggle>
+				</Navbar>
 
 				<BooksNav active={bookNavVisible}>
-					{bookData.map((book, i) => (
-						<p key={book.book} onClick={handleBookSelect} data-index={i}>
-							{book.book}
-						</p>
-					))}
+					<div className="book-list">
+						{Books.map((book, i) => (
+							<p key={book.book} onClick={handleBookSelect} data-index={i}>
+								{book.book}
+							</p>
+						))}
+					</div>
+					<div
+						className="dismiss"
+						onClick={() => {
+							setBookNavVisible(false);
+						}}
+					></div>
 				</BooksNav>
+				{searchVisible && (
+					<Search
+						dismiss={() => {
+							setSearchVisible(false);
+						}}
+					></Search>
+				)}
 
 				<Reader>
 					<Book key={currentBook.book}>
