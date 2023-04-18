@@ -168,6 +168,7 @@ export default function Search({ active, dismiss, goToPosition }) {
 												key={`${book.book}${chapter.chapter}:${verse.verse}`}
 											>
 												<Link
+													target="_self"
 													href={
 														"/" +
 														book.book.toLowerCase().replace(/\s+/g, "-") +

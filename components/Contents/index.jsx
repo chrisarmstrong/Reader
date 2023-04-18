@@ -71,6 +71,7 @@ export default function Contents({ active, dismiss, books, goToPosition }) {
 					<Link
 						key={book.book}
 						href={"/" + book.book.toLowerCase().replace(/\s+/g, "-")}
+						target="_self"
 						data-index={i}
 						onClick={() => {
 							dismiss();
