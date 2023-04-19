@@ -29,7 +29,7 @@ const Book = styled.div`
 const BookTitle = styled.h1`
 	font-family: var(--serif), georgia, serif;
 	grid-column: main;
-	padding: 24px;
+	padding: 24px 0;
 	margin-bottom: 24px;
 	font-size: 54px;
 	line-height: 60px;
