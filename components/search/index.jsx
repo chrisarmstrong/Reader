@@ -18,7 +18,7 @@ const Container = styled.div`
 `;
 
 const SearchInput = styled.input`
-	font-family: Family, georgia, serif;
+	font-family: var(--serif), georgia, serif;
 	font-size: 16px;
 	grid-column: fullbleed;
 	width: 100%;
@@ -50,8 +50,8 @@ const Result = styled.div`
 	max-width: 70ch;
 	width: 100%;
 	grid-column: main;
-	font-family: Family, georgia, serif;
-	padding: 24px 0;
+	font-family: var(--serif), georgia, serif;
+
 	border-bottom: 1px solid rgb(0 0 0 / 0.1);
 	cursor: pointer;
 
@@ -69,6 +69,8 @@ const Result = styled.div`
 	a {
 		color: inherit;
 		text-decoration: none;
+		padding: 24px 0;
+		display: block;
 	}
 `;
 
@@ -86,7 +88,7 @@ const DismissButton = styled.button`
 	z-index: 99;
 	line-height: 60px;
 	font-size: 24px;
-	font-family: "Family", georgia, serif;
+	font-family: var(--serif), georgia, serif;
 	color: rgb(0 0 0 / 0.4);
 
 	transition: color 0.2s;

@@ -23,7 +23,7 @@ const Container = styled.div`
 		background: none;
 		outline: none;
 		border: none;
-		font-family: "Family", georgia, serif;
+		font-family: var(--serif), georgia, serif;
 		font-size: 16px;
 		font-style: italic;
 		opacity: 0.4;

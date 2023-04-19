@@ -5,7 +5,6 @@ const Container = styled.div`
 	display: grid;
 	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
 	justify-items: center;
-
 	grid-column: fullbleed;
 
 	${(props) =>
@@ -28,7 +27,7 @@ const Book = styled.div`
 `;
 
 const BookTitle = styled.h1`
-	font-family: Family, georgia, serif;
+	font-family: var(--serif), georgia, serif;
 	grid-column: main;
 	padding: 24px;
 	margin-bottom: 24px;
@@ -59,7 +58,7 @@ const ChapterNumber = styled.h2`
 
 const Verse = styled.p`
 	display: inline;
-	font-family: Family, georgia, serif;
+	font-family: var(--serif), georgia, serif;
 
 	sup {
 		opacity: 0.3;
@@ -85,7 +84,7 @@ export default function Reader({ book }) {
 	const chaptersCount = book.chapters.length;
 
 	return (
-		<Container>
+		<Container className="reader">
 			<Book key={book.book}>
 				<BookTitle className="content" key={book.book}>
 					{book.book}
