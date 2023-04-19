@@ -51,6 +51,7 @@ export default function Main({ slug, book }) {
 	const updateLastPosition = (book_index) => {
 		const position = { book: book_index };
 		localStorage.setItem("lastPosition", JSON.stringify(position));
+		// 		const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
 	};
 
 	return (

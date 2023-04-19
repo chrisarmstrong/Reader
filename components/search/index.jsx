@@ -36,14 +36,27 @@ const SearchInput = styled.input`
 	pointer-events: all;
 `;
 
-const Results = styled.div`
+const ResultsList = styled.div`
 	display: grid;
 	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
 	justify-items: center;
-	height: calc(100vh - 60px);
 	overflow: scroll;
 	padding-bottom: 120px;
 	pointer-events: all;
+	height: calc(100vh - 60px);
+
+	> div {
+		grid-column: main;
+	}
+
+	.count {
+		padding: 24px 0;
+		font-style: italic;
+		font-size: 18px;
+		line-height: 24px;
+		opacity: 0.6;
+		text-align: center;
+	}
 `;
 
 const Result = styled.div`
@@ -52,7 +65,7 @@ const Result = styled.div`
 	grid-column: main;
 	font-family: var(--serif), georgia, serif;
 
-	border-bottom: 1px solid rgb(0 0 0 / 0.1);
+	border-top: 1px solid rgb(0 0 0 / 0.1);
 	cursor: pointer;
 
 	p {
@@ -64,6 +77,7 @@ const Result = styled.div`
 
 	.highlight {
 		font-weight: bold;
+		font-style: italic;
 	}
 
 	a {
@@ -72,6 +86,10 @@ const Result = styled.div`
 		padding: 24px 0;
 		display: block;
 	}
+`;
+
+const Searchbar = styled.div`
+	display: flex;
 `;
 
 const DismissButton = styled.button`
@@ -100,9 +118,36 @@ const DismissButton = styled.button`
 	pointer-events: all;
 `;
 
+const History = styled.ul`
+	pointer-events: all;
+	padding: 24px 0;
+
+	button {
+		background: none;
+		padding: 12px 24px;
+		border: none;
+		outline: none;
+		border-radius: none;
+		font-family: var(--serif), georgia, serif;
+		font-size: 18px;
+		line-height: 12px;
+		cursor: pointer;
+		color: inherit;
+		opacity: 0.6;
+		transition: opacity 0.2s;
+		width: 100%;
+		text-align: left;
+	}
+
+	button:hover {
+		opacity: 1;
+	}
+`;
+
 export default function Search({ active, dismiss, goToPosition }) {
 	const [searchKeyword, setSearchKeyword] = useState("");
-	const [searchResults, setSearchResults] = useState([]);
+	const [searchHistory, setSearchHistory] = useState([]);
+	const [resultsCount, setResultsCount] = useState([]);
 
 	function debounce(func, delay) {
 		let timeoutId;
@@ -113,25 +158,104 @@ export default function Search({ active, dismiss, goToPosition }) {
 		};
 	}
 
+	const updateSearchHistory = (keyword) => {
+		if (keyword.length > 1) {
+			const history = [keyword, ...searchHistory];
+			const uniqueHistory = [...new Set(history)];
+			setSearchHistory(uniqueHistory.splice(0, 5));
+			localStorage?.setItem("lastPosition", JSON.stringify(searchHistory));
+			console.log("Searches", keyword, searchHistory);
+		}
+	};
+
 	const handleSearch = debounce((e) => {
 		setSearchKeyword(e.target.value);
 		console.log("Search for " + e.target.value);
+		updateSearchHistory(e.target.value);
 	}, 500);
+
+	const getResults = (keyword) => {
+		let results = [];
+		const keywords = keyword.toLowerCase().split(" ");
+
+		Books.map((book) =>
+			book.chapters.map((chapter) =>
+				chapter.verses.map((verse) => {
+					const verseText = verse.text.toLowerCase();
+					const match = keywords.every((word) => verseText.includes(word));
+					if (keyword.length > 1 && match) {
+						const r = {
+							book: book.book,
+							chapter: chapter,
+							verse: verse,
+						};
+						results.push(r);
+					}
+				})
+			)
+		);
+
+		return results;
+	};
+
+	const Results = ({ keyword }) => {
+		const results = getResults(keyword);
+
+		return (
+			<ResultsList active={active}>
+				<div>
+					<p className="count">
+						{results.length} verses containing “{keyword}”
+					</p>
+					{results.map((result, i) => (
+						<Result
+							key={
+								i + result.book + result.chapter.chapter + result.verse.verse
+							}
+						>
+							<Link
+								href={
+									"/" +
+									result.book.toLowerCase().replace(/\s+/g, "-") +
+									"#" +
+									result.chapter.chapter +
+									":" +
+									result.verse.verse
+								}
+								onClick={() => {
+									dismiss();
+								}}
+							>
+								<p>
+									{highlightWordInString(
+										result.verse.text,
+										searchKeyword.toLowerCase()
+									)}
+								</p>
+								<p className="chapter-verse">{`${result.book} ${result.chapter.chapter}:${result.verse.verse}`}</p>
+							</Link>
+						</Result>
+					))}
+				</div>
+			</ResultsList>
+		);
+	};
 
 	const highlightWordInString = (str, wordToHighlight) => {
 		const words = str.split(" ");
+		const highlightWords = wordToHighlight.split(" ");
 
 		return words.map((word, i) => {
 			const lowercased = word.toLowerCase();
 
-			if (lowercased.includes(wordToHighlight)) {
+			if (highlightWords.some((highlight) => lowercased.includes(highlight))) {
 				return (
 					<span key={i} className="highlight">
 						{word}{" "}
 					</span>
 				);
 			} else {
-				return <span key={i}>{word} </span>;
+				return <>{" " + word + " "}</>;
 			}
 		});
 	};
@@ -157,45 +281,25 @@ export default function Search({ active, dismiss, goToPosition }) {
 					>
 						×
 					</DismissButton>
-					<Results active={active}>
-						{Books.map((book, book_index) =>
-							book.chapters.map((chapter) =>
-								chapter.verses.map(
-									(verse) =>
-										searchKeyword.length > 1 &&
-										verse.text
-											.toLowerCase()
-											.includes(searchKeyword.toLowerCase()) && (
-											<Result
-												key={`${book.book}${chapter.chapter}:${verse.verse}`}
-											>
-												<Link
-													href={
-														"/" +
-														book.book.toLowerCase().replace(/\s+/g, "-") +
-														"#" +
-														chapter.chapter +
-														":" +
-														verse.verse
-													}
-													onClick={() => {
-														dismiss();
-													}}
-												>
-													<p>
-														{highlightWordInString(
-															verse.text,
-															searchKeyword.toLowerCase()
-														)}
-													</p>
-													<p className="chapter-verse">{`${book.book} ${chapter.chapter}:${verse.verse}`}</p>
-												</Link>
-											</Result>
-										)
-								)
-							)
-						)}
-					</Results>
+
+					{searchKeyword.length > 1 ? (
+						<Results keyword={searchKeyword} />
+					) : (
+						<History>
+							{/* {searchHistory.map((history, i) => (
+								<li key={i}>
+									<button
+										onClick={() => {
+											setSearchKeyword(history);
+											console.log("test");
+										}}
+									>
+										{history}
+									</button>
+								</li>
+							))} */}
+						</History>
+					)}
 				</>
 			) : null}
 		</Container>
