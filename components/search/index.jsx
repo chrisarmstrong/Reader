@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Link from "next/link";
 
 import { Books } from "../../utils/Books";
@@ -65,7 +65,24 @@ const Result = styled.div`
 	grid-column: main;
 	font-family: var(--serif), georgia, serif;
 
-	border-top: 1px solid rgb(0 0 0 / 0.1);
+	${(props) =>
+		props.sameChapter
+			? css`
+					&:before {
+						content: "~";
+						display: block;
+						margin: auto;
+						opacity: 0.2;
+						font-size: 24px;
+						line-height: 6px;
+						position: relative;
+						top: -6px;
+					}
+			  `
+			: css`
+					border-top: 1px solid rgb(0 0 0 / 0.2);
+			  `}
+
 	cursor: pointer;
 
 	p {
@@ -211,6 +228,11 @@ export default function Search({ active, dismiss, goToPosition }) {
 						<Result
 							key={
 								i + result.book + result.chapter.chapter + result.verse.verse
+							}
+							sameChapter={
+								i > 0 &&
+								result.book == results[i - 0].book &&
+								result.chapter.chapter == results[i - 1].chapter.chapter
 							}
 						>
 							<Link
