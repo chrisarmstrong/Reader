@@ -93,6 +93,7 @@ const Result = styled.div`
 	}
 	.chapter-verse {
 		opacity: 0.4;
+		margin-bottom: 0;
 	}
 
 	.highlight {
