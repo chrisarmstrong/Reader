@@ -66,22 +66,25 @@ const Result = styled.div`
 	font-family: var(--serif), georgia, serif;
 
 	${(props) =>
-		props.sameChapter
+		props.sameChapter && !props.followingVerse
 			? css`
 					&:before {
-						content: "~";
+						content: "";
 						display: block;
 						margin: auto;
-						opacity: 0.2;
-						font-size: 24px;
-						line-height: 6px;
-						position: relative;
-						top: -6px;
+						border-top: 1px dashed rgb(0 0 0 /0.1);
+						width: 100%;
 					}
 			  `
-			: css`
-					border-top: 1px solid rgb(0 0 0 / 0.2);
-			  `}
+			: css``}
+
+	${(props) =>
+		!props.sameChapter &&
+		css`
+			border-top: 1px solid rgb(0 0 0 / 0.2);
+		`}
+
+        
 
 	cursor: pointer;
 
@@ -102,7 +105,22 @@ const Result = styled.div`
 		text-decoration: none;
 		padding: 24px 0;
 		display: block;
+		transition: background 0.2s;
+
+		&:hover {
+			background: rgb(0 0 0 / 0.05);
+		}
 	}
+
+	${(props) =>
+		props.followingVerse &&
+		css`
+			border-top: none;
+			margin-top: -24px;
+			a {
+				padding-top: 12px;
+			}
+		`}
 `;
 
 const Searchbar = styled.div`
@@ -233,6 +251,13 @@ export default function Search({ active, dismiss, goToPosition }) {
 								i > 0 &&
 								result.book == results[i - 0].book &&
 								result.chapter.chapter == results[i - 1].chapter.chapter
+							}
+							followingVerse={
+								i > 0 &&
+								result.book == results[i - 0].book &&
+								result.chapter.chapter == results[i - 1].chapter.chapter &&
+								parseInt(result.verse.verse) ==
+									parseInt(results[i - 1].verse.verse) + 1
 							}
 						>
 							<Link
