@@ -105,21 +105,12 @@ const Result = styled.div`
 		text-decoration: none;
 		padding: 24px 0;
 		display: block;
-		transition: background 0.2s;
-
-		&:hover {
-			background: rgb(0 0 0 / 0.05);
-		}
 	}
 
 	${(props) =>
 		props.followingVerse &&
 		css`
 			border-top: none;
-			margin-top: -24px;
-			a {
-				padding-top: 12px;
-			}
 		`}
 `;
 
