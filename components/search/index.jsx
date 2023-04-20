@@ -111,6 +111,7 @@ const Result = styled.div`
 		props.followingVerse &&
 		css`
 			border-top: none;
+			margin-top: -24px;
 		`}
 `;
 
