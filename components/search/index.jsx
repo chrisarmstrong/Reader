@@ -84,6 +84,7 @@ const ResultsList = styled.div`
 	&.book-results {
 		background: rgb(0 0 0 /0.05);
 		padding: 12px 0;
+		justify-items: start;
 
 		align-items: start;
 
@@ -156,8 +157,6 @@ const Result = styled.div`
 		a {
 			padding: 6px 0;
 			font-size: 18px;
-			width: 100vw;
-			max-width: 100%;
 			opacity: 0.6;
 			transition: opacity 0.2s;
 
