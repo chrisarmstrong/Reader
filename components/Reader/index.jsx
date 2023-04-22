@@ -89,7 +89,11 @@ const Verse = styled.p`
 
 export default function Reader({ book }) {
 	const chaptersCount = book.chapters.length;
-	const hash = window.location.hash.substring(1);
+	let hash = null;
+
+	if (typeof window !== "undefined") {
+		hash = window?.location.hash.substring(1) || null;
+	}
 
 	return (
 		<Container className="reader">
@@ -113,7 +117,7 @@ export default function Reader({ book }) {
 								key={verse.verse}
 								id={chapter.chapter + `:` + verse.verse}
 								className={verse.paragraph ? `verse new-paragraph` : `verse`}
-								highlight={hash == chapter.chapter + `:` + verse.verse}
+								highlight={hash && hash == chapter.chapter + `:` + verse.verse}
 							>
 								<sup>{verse.verse}&nbsp;</sup>
 
