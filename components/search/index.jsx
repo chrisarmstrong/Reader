@@ -321,7 +321,7 @@ export default function Search({ active, dismiss, goToPosition }) {
 	const BookResults = ({ keyword }) => {
 		const results = getBookResults(keyword);
 
-		return (
+		return results.length ? (
 			<ResultsList active={active} className="book-results">
 				<div>
 					{results.map((result, i) => {
@@ -366,6 +366,8 @@ export default function Search({ active, dismiss, goToPosition }) {
 					})}
 				</div>
 			</ResultsList>
+		) : (
+			<></>
 		);
 	};
 
