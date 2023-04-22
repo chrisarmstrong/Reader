@@ -387,47 +387,51 @@ export default function Search({ active, dismiss, goToPosition }) {
 					<p className="count">
 						{results.length} verses containing “{keyword}”
 					</p>
-					{results.map((result, i) => (
-						<Result
-							key={
-								i + result.book + result.chapter.chapter + result.verse.verse
-							}
-							sameChapter={
-								i > 0 &&
-								result.book == results[i - 0].book &&
-								result.chapter.chapter == results[i - 1].chapter.chapter
-							}
-							followingVerse={
-								i > 0 &&
-								result.book == results[i - 0].book &&
-								result.chapter.chapter == results[i - 1].chapter.chapter &&
-								parseInt(result.verse.verse) ==
-									parseInt(results[i - 1].verse.verse) + 1
-							}
-						>
-							<Link
-								href={
-									"/" +
-									result.book.toLowerCase().replace(/\s+/g, "-") +
-									"#" +
-									result.chapter.chapter +
-									":" +
-									result.verse.verse
+					{results.map((result, i) =>
+						i < 500 ? (
+							<Result
+								key={
+									i + result.book + result.chapter.chapter + result.verse.verse
 								}
-								onClick={() => {
-									dismiss();
-								}}
+								sameChapter={
+									i > 0 &&
+									result.book == results[i - 0].book &&
+									result.chapter.chapter == results[i - 1].chapter.chapter
+								}
+								followingVerse={
+									i > 0 &&
+									result.book == results[i - 0].book &&
+									result.chapter.chapter == results[i - 1].chapter.chapter &&
+									parseInt(result.verse.verse) ==
+										parseInt(results[i - 1].verse.verse) + 1
+								}
 							>
-								<p>
-									{highlightWordInString(
-										result.verse.text,
-										searchKeyword.toLowerCase()
-									)}
-								</p>
-								<p className="chapter-verse">{`${result.book} ${result.chapter.chapter}:${result.verse.verse}`}</p>
-							</Link>
-						</Result>
-					))}
+								<Link
+									href={
+										"/" +
+										result.book.toLowerCase().replace(/\s+/g, "-") +
+										"#" +
+										result.chapter.chapter +
+										":" +
+										result.verse.verse
+									}
+									onClick={() => {
+										dismiss();
+									}}
+								>
+									<p>
+										{highlightWordInString(
+											result.verse.text,
+											searchKeyword.toLowerCase()
+										)}
+									</p>
+									<p className="chapter-verse">{`${result.book} ${result.chapter.chapter}:${result.verse.verse}`}</p>
+								</Link>
+							</Result>
+						) : (
+							<></>
+						)
+					)}
 				</div>
 			</ResultsList>
 		);
