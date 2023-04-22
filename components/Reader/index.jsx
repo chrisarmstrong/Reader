@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Container = styled.div`
 	display: grid;
@@ -78,10 +78,18 @@ const Verse = styled.p`
 			padding-left: 0;
 		}
 	}
+
+	${(props) =>
+		props.highlight
+			? css`
+					background: #f3be8180;
+			  `
+			: ""}
 `;
 
 export default function Reader({ book }) {
 	const chaptersCount = book.chapters.length;
+	const hash = window.location.hash.substring(1);
 
 	return (
 		<Container className="reader">
@@ -92,7 +100,7 @@ export default function Reader({ book }) {
 				{book.chapters.map((chapter) => (
 					<Chapter
 						key={chapter.chapter}
-						className="content chapter"
+						className={"content chapter"}
 						id={chapter.chapter}
 					>
 						<ChapterNumber>
@@ -105,6 +113,7 @@ export default function Reader({ book }) {
 								key={verse.verse}
 								id={chapter.chapter + `:` + verse.verse}
 								className={verse.paragraph ? `verse new-paragraph` : `verse`}
+								highlight={hash == chapter.chapter + `:` + verse.verse}
 							>
 								<sup>{verse.verse}&nbsp;</sup>
 
