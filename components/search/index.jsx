@@ -4,6 +4,25 @@ import Link from "next/link";
 
 import { Books } from "../../utils/Books";
 
+// import Fuse from "fuse.js";
+// const options = {
+// 	keys: ["text"], // Search the 'text' property of each verse object
+// 	includeMatches: true, // Return matched characters for highlighting
+// 	includeScore: true,
+// 	threshold: 0.46,
+// 	shouldSort: true,
+// };
+// const indexableData = Books.flatMap((book) =>
+// 	book.chapters.flatMap((chapter) =>
+// 		chapter.verses.map((verse) => ({
+// 			...verse,
+// 			book: book.book,
+// 			chapter: chapter.chapter,
+// 		}))
+// 	)
+// );
+// const fuse = new Fuse(indexableData, options);
+
 const Container = styled.div`
 	position: fixed;
 	top: 0;
@@ -36,16 +55,20 @@ const SearchInput = styled.input`
 	pointer-events: all;
 `;
 
-const ResultsList = styled.div`
-	display: grid;
-	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
-	justify-items: center;
+const ResultsContainer = styled.div`
 	overflow: scroll;
 	padding-bottom: 120px;
 	pointer-events: all;
 	height: calc(100vh - 60px);
+	width: 100%;
+`;
 
-	> div {
+const ResultsList = styled.div`
+	display: grid;
+	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
+	justify-items: center;
+
+	& > div {
 		grid-column: main;
 	}
 
@@ -57,12 +80,20 @@ const ResultsList = styled.div`
 		opacity: 0.6;
 		text-align: center;
 	}
+
+	&.book-results {
+		background: rgb(0 0 0 /0.05);
+		padding: 12px 0;
+
+		align-items: start;
+	}
 `;
 
 const Result = styled.div`
 	max-width: 70ch;
 	width: 100%;
 	grid-column: main;
+
 	font-family: var(--serif), georgia, serif;
 
 	${(props) =>
@@ -114,6 +145,23 @@ const Result = styled.div`
 			border-top: none;
 			margin-top: -24px;
 		`}
+
+	&.book-result {
+		border-top: none;
+
+		a {
+			padding: 6px 0;
+			font-size: 18px;
+			width: 100vw;
+			max-width: 100%;
+			opacity: 0.6;
+			transition: opacity 0.2s;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
 `;
 
 const Searchbar = styled.div`
@@ -203,6 +251,9 @@ export default function Search({ active, dismiss, goToPosition }) {
 	}, 500);
 
 	const getResults = (keyword) => {
+		// const fuseResults = fuse.search(keyword);
+		// console.log("Fuse results", fuseResults.length, fuseResults, Books);
+
 		let results = [];
 		const keywords = keyword.toLowerCase().split(" ");
 
@@ -224,6 +275,98 @@ export default function Search({ active, dismiss, goToPosition }) {
 		);
 
 		return results;
+	};
+
+	const getBookResults = (keyword) => {
+		let results = [];
+		const keywords = keyword.toLowerCase().split(" ");
+
+		Books.map((book) => {
+			if (book.book.toLowerCase().includes(keywords[0])) {
+				const chapterVerse = keywords[1]?.split(":") || null;
+				const chapter = (chapterVerse && parseInt(chapterVerse[0])) || null;
+				const verse =
+					(chapterVerse && chapterVerse[1] && parseInt(chapterVerse[1])) ||
+					null;
+
+				if (chapter && chapter < book.chapters.length + 1) {
+					if (verse && verse < book.chapters[chapter - 1].verses.length + 1) {
+						const r = {
+							book: book.book,
+							chapter: chapter.toString(),
+							verse: verse.toString(),
+						};
+						console.log("Book,chapter and verse", r);
+						results.push(r);
+					} else {
+						const r = {
+							book: book.book,
+							chapter: chapter.toString(),
+							verse: null,
+						};
+						console.log("Book and chapter", r);
+						results.push(r);
+					}
+				} else {
+					const r = { book: book.book, chapter: null, verse: null };
+					console.log("Book result", r);
+					results.push(r);
+				}
+			}
+		});
+
+		return results;
+	};
+
+	const BookResults = ({ keyword }) => {
+		const results = getBookResults(keyword);
+
+		return (
+			<ResultsList active={active} className="book-results">
+				<div>
+					{results.map((result, i) => {
+						const link = (r) => {
+							let l = "/" + r.book.toLowerCase().replace(/\s+/g, "-");
+
+							if (r.chapter) {
+								if (r.verse) {
+									l = l + "#" + r.chapter + ":" + r.verse;
+								} else {
+									l = l + "#" + r.chapter;
+								}
+							}
+
+							return l;
+						};
+
+						return (
+							<Result
+								className="book-result"
+								key={
+									"book-result" +
+									result.book +
+									result.chapter?.chapter +
+									result.verse?.verse +
+									"-" +
+									i
+								}
+							>
+								<Link
+									href={link(result)}
+									onClick={() => {
+										dismiss();
+									}}
+								>
+									<p>{`${result.book} ${
+										result.chapter?.length > 0 ? " " + result.chapter : ""
+									}${result.verse ? ":" + result.verse : ""}`}</p>
+								</Link>
+							</Result>
+						);
+					})}
+				</div>
+			</ResultsList>
+		);
 	};
 
 	const Results = ({ keyword }) => {
@@ -323,7 +466,10 @@ export default function Search({ active, dismiss, goToPosition }) {
 					</DismissButton>
 
 					{searchKeyword.length > 1 ? (
-						<Results keyword={searchKeyword} />
+						<ResultsContainer>
+							<BookResults keyword={searchKeyword} />
+							<Results keyword={searchKeyword} />
+						</ResultsContainer>
 					) : (
 						<History>
 							{/* {searchHistory.map((history, i) => (
