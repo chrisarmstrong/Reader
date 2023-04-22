@@ -82,7 +82,7 @@ const Verse = styled.p`
 	${(props) =>
 		props.highlight
 			? css`
-					background: #f3be8180;
+					background: #fcba0360;
 			  `
 			: ""}
 `;
