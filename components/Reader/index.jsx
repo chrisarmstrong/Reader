@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 const Container = styled.div`
 	display: grid;
@@ -12,6 +12,15 @@ const Container = styled.div`
 		css`
 			pointer-events: none;
 		`}
+
+	--highlight-color: #fcba0360;
+`;
+
+const highlightFade = keyframes`
+ 0% { background: transparent}
+ 5% { background: var(--highlight-color)}
+ 80% { background: var(--highlight-color)}
+ 100% { background: transparent) }
 `;
 
 const Book = styled.div`
@@ -82,7 +91,7 @@ const Verse = styled.p`
 	${(props) =>
 		props.highlight
 			? css`
-					background: #fcba0360;
+					animation: ${highlightFade} 10s;
 			  `
 			: ""}
 `;
