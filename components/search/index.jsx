@@ -86,6 +86,10 @@ const ResultsList = styled.div`
 		padding: 12px 0;
 
 		align-items: start;
+
+		& + .no-results {
+			display: none;
+		}
 	}
 `;
 
@@ -375,7 +379,10 @@ export default function Search({ active, dismiss, goToPosition }) {
 		const results = getResults(keyword);
 
 		return (
-			<ResultsList active={active}>
+			<ResultsList
+				active={active}
+				className={results.length < 1 ? "no-results" : ""}
+			>
 				<div>
 					<p className="count">
 						{results.length} verses containing “{keyword}”
