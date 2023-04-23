@@ -88,10 +88,13 @@ const Verse = styled.p`
 		}
 	}
 
+	transition: background-color 0.2s ease-out;
+
 	${(props) =>
 		props.highlight
 			? css`
-					animation: ${highlightFade} 10s;
+					// animation: ${highlightFade} 10s;
+					background: var(--highlight-color);
 			  `
 			: ""}
 `;
