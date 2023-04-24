@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 import Link from "next/link";
 
 import { Books } from "../../utils/Books";
+import Debounce from "../../utils/Debounce";
 
 // import Fuse from "fuse.js";
 // const options = {
@@ -228,15 +229,6 @@ export default function Search({ active, dismiss, goToPosition }) {
 	const [searchHistory, setSearchHistory] = useState([]);
 	const [resultsCount, setResultsCount] = useState([]);
 
-	function debounce(func, delay) {
-		let timeoutId;
-		return function (...args) {
-			const context = this;
-			clearTimeout(timeoutId);
-			timeoutId = setTimeout(() => func.apply(context, args), delay);
-		};
-	}
-
 	const updateSearchHistory = (keyword) => {
 		if (keyword.length > 1) {
 			const history = [keyword, ...searchHistory];
@@ -247,7 +239,7 @@ export default function Search({ active, dismiss, goToPosition }) {
 		}
 	};
 
-	const handleSearch = debounce((e) => {
+	const handleSearch = Debounce((e) => {
 		setSearchKeyword(e.target.value);
 		console.log("Search for " + e.target.value);
 		updateSearchHistory(e.target.value);

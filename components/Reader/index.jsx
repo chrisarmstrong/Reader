@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styled, { css, keyframes } from "styled-components";
+import Debounce from "../../utils/Debounce";
 
 const Container = styled.div`
 	display: grid;
@@ -99,7 +100,70 @@ const Verse = styled.p`
 			: ""}
 `;
 
+// useEffect(() => {
+// 	if (typeof window !== "undefined") {
+// 		const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
+
+// 		if (!isNaN(lastPosition?.book) && !slug) {
+// 			setCurrentBook(Books[lastPosition.book]);
+// 		} else {
+// 			if (currentBook.index) {
+// 				updateLastPosition(currentBook.index);
+// 			}
+// 		}
+// 	}
+// }, []);
+
+const updateLastPosition = (book_index, chapter_index, verse_index) => {
+	const position = {
+		book: book_index,
+		chapter: chapter_index,
+		verse: verse_index,
+	};
+	localStorage.setItem("lastPosition", JSON.stringify(position));
+
+	console.log(
+		"Updated last position",
+		JSON.parse(localStorage.getItem("lastPosition"))
+	);
+	// 		const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
+};
+
 export default function Reader({ book }) {
+	const handleScroll = Debounce(() => {
+		let elements = document.querySelectorAll("p.verse");
+		let currentChapterVerse = null;
+
+		let foundElement = Array.from(elements).find((element) => {
+			if (
+				element.getBoundingClientRect().top >= 0 &&
+				element.getBoundingClientRect().top <= window.innerHeight
+			) {
+				return element.id;
+			}
+		});
+
+		currentChapterVerse = foundElement.id.split(":");
+
+		updateLastPosition(
+			book.book_index,
+			currentChapterVerse[0],
+			currentChapterVerse[1]
+		);
+
+		return foundElement;
+	}, 1000);
+
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			window.addEventListener("scroll", handleScroll);
+
+			return () => {
+				window.removeEventListener("scroll", handleScroll);
+			};
+		}
+	}, []);
+
 	const chaptersCount = book.chapters.length;
 	let hash = null;
 
