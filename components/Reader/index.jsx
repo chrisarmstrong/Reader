@@ -114,6 +114,8 @@ const Verse = styled.p`
 // 	}
 // }, []);
 
+// Note: Books are zero-base indexed, chapters and verses are the number in which they appear
+
 const updateLastPosition = (book_index, chapter_index, verse_index) => {
 	const position = {
 		book: book_index,
@@ -122,10 +124,10 @@ const updateLastPosition = (book_index, chapter_index, verse_index) => {
 	};
 	localStorage.setItem("lastPosition", JSON.stringify(position));
 
-	console.log(
-		"Updated last position",
-		JSON.parse(localStorage.getItem("lastPosition"))
-	);
+	// console.log(
+	// 	"Updated last position",
+	// 	JSON.parse(localStorage.getItem("lastPosition"))
+	// );
 	// 		const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
 };
 
@@ -146,7 +148,7 @@ export default function Reader({ book }) {
 		currentChapterVerse = foundElement.id.split(":");
 
 		updateLastPosition(
-			book.book_index,
+			book?.index,
 			currentChapterVerse[0],
 			currentChapterVerse[1]
 		);
@@ -164,7 +166,7 @@ export default function Reader({ book }) {
 		}
 	}, []);
 
-	const chaptersCount = book.chapters.length;
+	const chaptersCount = book?.chapters.length;
 	let hash = null;
 
 	if (typeof window !== "undefined") {
@@ -177,7 +179,7 @@ export default function Reader({ book }) {
 				<BookTitle className="content" key={book.book}>
 					{book.book}
 				</BookTitle>
-				{book.chapters.map((chapter) => (
+				{book.chapters?.map((chapter) => (
 					<Chapter
 						key={chapter.chapter}
 						className={"content chapter"}

@@ -20,8 +20,22 @@ const Container = styled.div`
 export default function Main({ slug, book }) {
 	const [bookNavVisible, setBookNavVisible] = useState(false);
 	const [searchVisible, setSearchVisible] = useState(false);
-	const [currentPosition, setCurrentPosition] = useState({});
+	// const [currentPosition, setCurrentPosition] = useState({});
 	const [currentBook, setCurrentBook] = useState(book || Books[0]); // set the initial book to the first book in the JSON data
+
+	useEffect(() => {
+		if (!book && typeof window !== "undefined" && window.localStorage) {
+			const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
+			if (lastPosition?.book) {
+				setCurrentBook(Books[lastPosition?.book]);
+				console.log("Use last position", lastPosition);
+			}
+		}
+
+		if (book) {
+			setCurrentBook(book);
+		}
+	}, [book]);
 
 	// useEffect(() => {
 	// 	if (typeof window !== "undefined") {
@@ -54,6 +68,11 @@ export default function Main({ slug, book }) {
 		localStorage.setItem("lastPosition", JSON.stringify(position));
 		// 		const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
 	};
+
+	// if (typeof window !== "undefined" && window.localStorage) {
+	// 	// code that uses localStorage
+	// } else {
+	// }
 
 	return (
 		<>
@@ -92,7 +111,7 @@ export default function Main({ slug, book }) {
 					goToPosition={goToPosition}
 				></Search>
 
-				<Reader book={book || Books[0]}></Reader>
+				<Reader book={currentBook}></Reader>
 
 				<Contents
 					active={bookNavVisible}
