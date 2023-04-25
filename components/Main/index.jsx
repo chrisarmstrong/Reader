@@ -17,6 +17,17 @@ const Container = styled.div`
 	justify-items: center;
 `;
 
+function scrollTo(chapter, verse) {
+	let chapterVerse = chapter;
+	if (verse) {
+		chapterVerse = chapter + ":" + verse;
+	}
+	const element = document.getElementById(chapterVerse);
+	if (element) {
+		element.scrollIntoView({ behavior: "instant" });
+	}
+}
+
 export default function Main({ slug, book }) {
 	const [bookNavVisible, setBookNavVisible] = useState(false);
 	const [searchVisible, setSearchVisible] = useState(false);
@@ -29,6 +40,10 @@ export default function Main({ slug, book }) {
 			if (lastPosition?.book) {
 				setCurrentBook(Books[lastPosition?.book]);
 				console.log("Use last position", lastPosition);
+
+				if (lastPosition.chapter) {
+					scrollTo(lastPosition.chapter, lastPosition.verse);
+				}
 			}
 		}
 
