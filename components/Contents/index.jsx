@@ -63,7 +63,7 @@ const Container = styled.div`
 	}
 `;
 
-export default function Contents({ active, dismiss, books, goToPosition }) {
+export default function Contents({ active, dismiss, books }) {
 	return (
 		<Container active={active}>
 			<div className="book-list">

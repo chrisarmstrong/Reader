@@ -11,10 +11,20 @@ const Container = styled.div`
 	justify-content: space-between;
 	z-index: 99;
 
+	h2 {
+		display: none;
+		align-self: center;
+		font-size: 18px;
+	}
+
 	@media all and (max-width: 820px) {
 		background: white;
 		border-top: 1px solid rgb(0 0 0 /0.1);
 		bottom: 0;
+
+		h2 {
+			display: block;
+		}
 	}
 
 	button {
@@ -41,17 +51,23 @@ export default function Navbar({
 	setBookNavVisible,
 	bookNavVisible,
 	setSearchVisible,
+	currentPosition,
+	currentBook,
 }) {
 	return (
 		<Container>
 			<button
 				onClick={() => {
 					setBookNavVisible(!bookNavVisible);
-					console.log(bookNavVisible);
 				}}
 			>
 				Index
 			</button>
+			{currentPosition.chapter ? (
+				<h2>
+					{currentBook.book} {currentPosition.chapter}
+				</h2>
+			) : null}
 			<button
 				onClick={() => {
 					setSearchVisible(true);

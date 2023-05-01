@@ -31,7 +31,7 @@ function scrollTo(chapter, verse) {
 export default function Main({ slug, book }) {
 	const [bookNavVisible, setBookNavVisible] = useState(false);
 	const [searchVisible, setSearchVisible] = useState(false);
-	// const [currentPosition, setCurrentPosition] = useState({});
+	const [currentPosition, setCurrentPosition] = useState({});
 	const [currentBook, setCurrentBook] = useState(book || Books[0]); // set the initial book to the first book in the JSON data
 
 	useEffect(() => {
@@ -39,7 +39,6 @@ export default function Main({ slug, book }) {
 			const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
 			if (lastPosition?.book) {
 				setCurrentBook(Books[lastPosition?.book]);
-				console.log("Use last position", lastPosition);
 
 				if (lastPosition.chapter) {
 					scrollTo(lastPosition.chapter, lastPosition.verse);
@@ -51,43 +50,6 @@ export default function Main({ slug, book }) {
 			setCurrentBook(book);
 		}
 	}, [book]);
-
-	// useEffect(() => {
-	// 	if (typeof window !== "undefined") {
-	// 		const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
-
-	// 		if (!isNaN(lastPosition?.book) && !slug) {
-	// 			setCurrentBook(Books[lastPosition.book]);
-	// 		} else {
-	// 			if (currentBook.index) {
-	// 				updateLastPosition(currentBook.index);
-	// 			}
-	// 		}
-	// 	}
-	// }, []);
-
-	const goToPosition = (book_index, chapter_index, verse_index) => {
-		// setCurrentBook(Books[book_index]);
-		// setBookNavVisible(false);
-		// if (chapter_index) {
-		// 	const id = chapter_index + ":" + verse_index;
-		// 	window.location.hash = id;
-		// } else {
-		// 	window.scrollTo({ top: 0 });
-		// }
-		// updateLastPosition(book_index);
-	};
-
-	const updateLastPosition = (book_index) => {
-		const position = { book: book_index };
-		localStorage.setItem("lastPosition", JSON.stringify(position));
-		// 		const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
-	};
-
-	// if (typeof window !== "undefined" && window.localStorage) {
-	// 	// code that uses localStorage
-	// } else {
-	// }
 
 	return (
 		<>
@@ -123,14 +85,15 @@ export default function Main({ slug, book }) {
 						setSearchVisible(false);
 					}}
 					active={searchVisible}
-					goToPosition={goToPosition}
 				></Search>
 
-				<Reader book={currentBook}></Reader>
+				<Reader
+					book={currentBook}
+					setCurrentPosition={setCurrentPosition}
+				></Reader>
 
 				<Contents
 					active={bookNavVisible}
-					goToPosition={goToPosition}
 					books={Books}
 					dismiss={() => {
 						setBookNavVisible(false);
@@ -141,6 +104,8 @@ export default function Main({ slug, book }) {
 					setBookNavVisible={setBookNavVisible}
 					bookNavVisible={bookNavVisible}
 					setSearchVisible={setSearchVisible}
+					currentPosition={currentPosition}
+					currentBook={currentBook}
 				/>
 			</Container>
 		</>

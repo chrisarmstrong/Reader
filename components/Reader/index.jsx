@@ -116,22 +116,7 @@ const Verse = styled.p`
 
 // Note: Books are zero-base indexed, chapters and verses are the number in which they appear
 
-const updateLastPosition = (book_index, chapter_index, verse_index) => {
-	const position = {
-		book: book_index,
-		chapter: chapter_index,
-		verse: verse_index,
-	};
-	localStorage.setItem("lastPosition", JSON.stringify(position));
-
-	// console.log(
-	// 	"Updated last position",
-	// 	JSON.parse(localStorage.getItem("lastPosition"))
-	// );
-	// 		const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
-};
-
-export default function Reader({ book }) {
+export default function Reader({ book, setCurrentPosition }) {
 	const handleScroll = Debounce(() => {
 		let elements = document.querySelectorAll("p.verse");
 		let currentChapterVerse = null;
@@ -165,6 +150,16 @@ export default function Reader({ book }) {
 			};
 		}
 	}, []);
+
+	const updateLastPosition = (book_index, chapter_index, verse_index) => {
+		const position = {
+			book: book_index,
+			chapter: chapter_index,
+			verse: verse_index,
+		};
+		localStorage.setItem("lastPosition", JSON.stringify(position));
+		setCurrentPosition(position);
+	};
 
 	const chaptersCount = book?.chapters.length;
 	let hash = null;
