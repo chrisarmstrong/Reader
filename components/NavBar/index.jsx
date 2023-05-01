@@ -50,12 +50,12 @@ const Container = styled.div`
 			opacity: 1;
 		}
 
-		&.search-button {
-			background: url(${iconSearch.src}) no-repeat center center;
+		&.menu-button {
+			background: url(${iconMenu.src}) no-repeat 11px center;
 		}
 
-		&.menu-button {
-			background: url(${iconMenu.src}) no-repeat center center;
+		&.search-button {
+			background: url(${iconSearch.src}) no-repeat center center;
 		}
 	}
 `;
