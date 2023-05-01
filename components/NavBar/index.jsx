@@ -55,7 +55,7 @@ const Container = styled.div`
 		}
 
 		&.search-button {
-			background: url(${iconSearch.src}) no-repeat center center;
+			background: url(${iconSearch.src}) no-repeat 4px center;
 		}
 	}
 `;
