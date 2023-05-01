@@ -51,7 +51,7 @@ const Container = styled.div`
 		}
 
 		&.menu-button {
-			background: url(${iconMenu.src}) no-repeat 11px center;
+			background: url(${iconMenu.src}) no-repeat 10px center;
 		}
 
 		&.search-button {
