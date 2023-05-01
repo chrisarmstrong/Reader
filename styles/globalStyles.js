@@ -44,8 +44,10 @@ const GlobalStyle = createGlobalStyle`
 
   /* Reset default font family */
   body {
+    --ink-black: #1a1f2e;
+
     font-family: var(--serif), georgia, serif;
-    color: #1a1f2e;
+    color: var(--ink-black);
     // background: #eadcda10;
     display: block;
   }

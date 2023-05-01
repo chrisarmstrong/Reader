@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+import iconSearch from "./images/icon-search.svg";
+import iconMenu from "./images/icon-menu.svg";
+
 const Container = styled.div`
 	width: 100%;
 	position: fixed;
@@ -15,6 +18,7 @@ const Container = styled.div`
 		display: none;
 		align-self: center;
 		font-size: 18px;
+		color: var(--ink-black);
 	}
 
 	@media all and (max-width: 820px) {
@@ -29,6 +33,7 @@ const Container = styled.div`
 
 	button {
 		height: 60px;
+		width: 60px;
 		padding: 12px 24px;
 		background: none;
 		outline: none;
@@ -43,6 +48,14 @@ const Container = styled.div`
 
 		&:hover {
 			opacity: 1;
+		}
+
+		&.search-button {
+			background: url(${iconSearch.src}) no-repeat center center;
+		}
+
+		&.menu-button {
+			background: url(${iconMenu.src}) no-repeat center center;
 		}
 	}
 `;
@@ -60,9 +73,8 @@ export default function Navbar({
 				onClick={() => {
 					setBookNavVisible(!bookNavVisible);
 				}}
-			>
-				Index
-			</button>
+				className="menu-button"
+			></button>
 			{currentPosition.chapter ? (
 				<h2>
 					{currentBook.book} {currentPosition.chapter}
@@ -72,9 +84,8 @@ export default function Navbar({
 				onClick={() => {
 					setSearchVisible(true);
 				}}
-			>
-				Search
-			</button>
+				className="search-button"
+			></button>
 		</Container>
 	);
 }
