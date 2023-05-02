@@ -6,7 +6,7 @@ import iconMenu from "./images/icon-menu.svg";
 const Container = styled.div`
 	width: 100%;
 	position: fixed;
-	padding-bottom: calc(env(safe-area-inset-bottom) - 12px);
+	padding-bottom: calc(env(safe-area-inset-bottom) - 6px);
 
 	left: 0;
 	right: 0;
