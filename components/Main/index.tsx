@@ -77,16 +77,37 @@ export default function Main({ slug, book }: MainProps) {
 				setInitialLoadComplete(true);
 			}
 		}
-	}, [book, initialLoadComplete, currentPosition, saveCurrentScrollPosition]);
+	}, [book, initialLoadComplete, currentPosition]);
 
 	const handleBookSelect = (selectedBook: Book): void => {
 		setCurrentBook(selectedBook);
 		setBookNavVisible(false);
 	};
 
+	// Close modals when escaping
+	useEffect(() => {
+		const handleEscape = (e: KeyboardEvent) => {
+			if (e.key === "Escape") {
+				setSearchVisible(false);
+				setBookNavVisible(false);
+			}
+		};
+
+		if (searchVisible || bookNavVisible) {
+			document.addEventListener("keydown", handleEscape);
+			return () => document.removeEventListener("keydown", handleEscape);
+		}
+	}, [searchVisible, bookNavVisible]);
+
 	return (
 		<div className={styles.container}>
-			<Search dismiss={() => setSearchVisible(false)} active={searchVisible} />
+			{/* Only render Search when active */}
+			{searchVisible && (
+				<Search
+					dismiss={() => setSearchVisible(false)}
+					active={searchVisible}
+				/>
+			)}
 
 			<Reader
 				book={currentBook}
@@ -98,13 +119,16 @@ export default function Main({ slug, book }: MainProps) {
 				}}
 			/>
 
-			<Contents
-				active={bookNavVisible}
-				currentBook={currentBook}
-				onBookSelect={handleBookSelect}
-				books={Books}
-				dismiss={() => setBookNavVisible(false)}
-			/>
+			{/* Only render Contents when active */}
+			{bookNavVisible && (
+				<Contents
+					active={bookNavVisible}
+					currentBook={currentBook}
+					onBookSelect={handleBookSelect}
+					books={Books}
+					dismiss={() => setBookNavVisible(false)}
+				/>
+			)}
 
 			<NavBar
 				onMenuToggle={() => setBookNavVisible(!bookNavVisible)}

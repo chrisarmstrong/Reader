@@ -121,7 +121,7 @@ export function useReadingPosition() {
 			setCurrentPosition(position);
 			return position;
 		},
-		[]
+		[setCurrentPosition]
 	);
 
 	// Auto-save scroll position with debouncing

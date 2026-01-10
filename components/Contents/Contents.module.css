@@ -1,43 +1,32 @@
 .container {
 	position: fixed;
 	width: 100%;
+	height: 100%;
 	top: 0;
-	bottom: env(safe-area-inset-bottom);
-	transition: left 0.2s ease-in, background 0.2s ease-in, opacity 0.2s;
-	text-align: left;
-	overflow: scroll;
+	bottom: 0;
+	left: 0;
 	z-index: 1;
 	display: grid;
 	grid-template-columns: 280px 1fr;
+	/* Only animate if already in DOM */
+	transition: left 0.2s ease-in, background 0.2s ease-in, opacity 0.2s;
+	overflow: hidden;
 }
 
 .container[data-active="false"] {
-	left: -280px;
-	opacity: 0;
 	pointer-events: none;
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(255, 255, 255, 1) 50px,
-		rgba(255, 255, 255, 0.4) 100%
-	);
+	visibility: hidden;
 }
 
 .container[data-active="true"] {
-	left: 0;
-	opacity: 1;
 	pointer-events: all;
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(255, 255, 255, 1) 100px,
-		rgba(255, 255, 255, 0.8) 300px,
-		rgba(255, 255, 255, 0.4) 100%
-	);
+	visibility: visible;
 }
 
 .bookList {
 	padding: 60px 24px;
+	overflow: scroll;
+	height: 100%;
 }
 
 .dismiss {
