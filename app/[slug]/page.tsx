@@ -1,6 +1,15 @@
 import { Books } from "../../utils/Books";
 import Main from "../../components/Main";
 import { notFound } from "next/navigation";
+import type { Book } from "../../types/bible";
+
+interface PageParams {
+	slug: string;
+}
+
+interface PageProps {
+	params: Promise<PageParams>;
+}
 
 // Generate static params (replaces getStaticPaths)
 export async function generateStaticParams() {
@@ -11,7 +20,7 @@ export async function generateStaticParams() {
 	}));
 }
 
-export default async function BookPage({ params }) {
+export default async function BookPage({ params }: PageProps) {
 	const { slug } = await params;
 	const books = Books;
 

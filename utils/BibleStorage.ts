@@ -1,14 +1,24 @@
 // IndexedDB utility for persistent Bible reading position
 // More reliable than localStorage on iOS PWAs
+import type {
+	ReadingPosition,
+	BibleStoragePreference,
+	BibleContent,
+	Book,
+} from "../types/bible";
 
 class BibleStorage {
+	private dbName: string;
+	private version: number;
+	private db: IDBDatabase | null;
+
 	constructor() {
 		this.dbName = "BibleReaderDB";
 		this.version = 1;
 		this.db = null;
 	}
 
-	async init() {
+	async init(): Promise<IDBDatabase> {
 		if (this.db) return this.db;
 
 		return new Promise((resolve, reject) => {
@@ -21,8 +31,8 @@ class BibleStorage {
 			};
 
 			request.onupgradeneeded = (event) => {
-				const db = event.target.result;
-
+				const target = event.target as IDBOpenDBRequest;
+				const db = target.result;
 				// Store for reading positions
 				if (!db.objectStoreNames.contains("readingPositions")) {
 					const store = db.createObjectStore("readingPositions", {
@@ -51,10 +61,15 @@ class BibleStorage {
 	}
 
 	// Save reading position
-	async saveReadingPosition(book, chapter, verse = 1, scrollPosition = 0) {
+	async saveReadingPosition(
+		book: number,
+		chapter: number,
+		verse = 1,
+		scrollPosition = 0
+	): Promise<ReadingPosition> {
 		await this.init();
 
-		const transaction = this.db.transaction(["readingPositions"], "readwrite");
+		const transaction = this.db!.transaction(["readingPositions"], "readwrite");
 		const store = transaction.objectStore("readingPositions");
 
 		const position = {
@@ -74,10 +89,10 @@ class BibleStorage {
 	}
 
 	// Get reading position
-	async getReadingPosition() {
+	async getReadingPosition(): Promise<ReadingPosition | null> {
 		await this.init();
 
-		const transaction = this.db.transaction(["readingPositions"], "readonly");
+		const transaction = this.db!.transaction(["readingPositions"], "readonly");
 		const store = transaction.objectStore("readingPositions");
 
 		return new Promise((resolve, reject) => {
@@ -88,10 +103,13 @@ class BibleStorage {
 	}
 
 	// Save user preference
-	async savePreference(key, value) {
+	async savePreference(
+		key: string,
+		value: any
+	): Promise<BibleStoragePreference> {
 		await this.init();
 
-		const transaction = this.db.transaction(["preferences"], "readwrite");
+		const transaction = this.db!.transaction(["preferences"], "readwrite");
 		const store = transaction.objectStore("preferences");
 
 		const preference = { key, value, lastUpdated: Date.now() };
@@ -104,10 +122,10 @@ class BibleStorage {
 	}
 
 	// Get user preference
-	async getPreference(key, defaultValue = null) {
+	async getPreference(key: string, defaultValue: any = null): Promise<any> {
 		await this.init();
 
-		const transaction = this.db.transaction(["preferences"], "readonly");
+		const transaction = this.db!.transaction(["preferences"], "readonly");
 		const store = transaction.objectStore("preferences");
 
 		return new Promise((resolve, reject) => {
@@ -121,10 +139,10 @@ class BibleStorage {
 	}
 
 	// Cache Bible content in IndexedDB as backup
-	async cacheBibleBook(bookName, content) {
+	async cacheBibleBook(bookName: string, content: Book): Promise<BibleContent> {
 		await this.init();
 
-		const transaction = this.db.transaction(["bibleContent"], "readwrite");
+		const transaction = this.db!.transaction(["bibleContent"], "readwrite");
 		const store = transaction.objectStore("bibleContent");
 
 		const bookData = {
@@ -141,10 +159,10 @@ class BibleStorage {
 	}
 
 	// Get cached Bible content
-	async getCachedBibleBook(bookName) {
+	async getCachedBibleBook(bookName: string): Promise<Book | null> {
 		await this.init();
 
-		const transaction = this.db.transaction(["bibleContent"], "readonly");
+		const transaction = this.db!.transaction(["bibleContent"], "readonly");
 		const store = transaction.objectStore("bibleContent");
 
 		return new Promise((resolve, reject) => {
@@ -158,21 +176,21 @@ class BibleStorage {
 	}
 
 	// Clear all data (for reset functionality)
-	async clearAll() {
+	async clearAll(): Promise<void> {
 		await this.init();
 
 		const storeNames = ["readingPositions", "preferences", "bibleContent"];
-		const transaction = this.db.transaction(storeNames, "readwrite");
+		const transaction = this.db!.transaction(storeNames, "readwrite");
 
 		const clearPromises = storeNames.map((storeName) => {
-			return new Promise((resolve, reject) => {
+			return new Promise<void>((resolve, reject) => {
 				const request = transaction.objectStore(storeName).clear();
-				request.onsuccess = () => resolve();
+				request.onsuccess = () => resolve(void 0);
 				request.onerror = () => reject(request.error);
 			});
 		});
 
-		return Promise.all(clearPromises);
+		await Promise.all(clearPromises);
 	}
 }
 

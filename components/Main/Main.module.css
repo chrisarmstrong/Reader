@@ -1,0 +1,5 @@
+.container {
+	display: grid;
+	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
+	justify-items: center;
+}

@@ -1,0 +1,129 @@
+.container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	pointer-events: none;
+	transition: background-color 0.2s ease-in, opacity 0.2s;
+}
+
+.container[data-active="false"] {
+	background: #ffffff00;
+	opacity: 0;
+}
+
+.container[data-active="true"] {
+	background: white;
+	opacity: 1;
+}
+
+.searchInput {
+	font-family: var(--serif), georgia, serif;
+	font-size: 16px;
+	grid-column: fullbleed;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	outline: none;
+	border: none;
+	border-radius: none;
+	padding: 18px 24px;
+	border-bottom: 1px solid rgb(0 0 0 /0.1);
+	border-radius: 0;
+	background: white;
+	z-index: 99;
+	box-sizing: border-box;
+	pointer-events: all;
+}
+
+.resultsContainer {
+	overflow: scroll;
+	padding-bottom: 120px;
+	pointer-events: all;
+	height: calc(100vh - 60px);
+	width: 100%;
+}
+
+.resultsList {
+	display: grid;
+	grid-template-columns: [fullbleed-start] 24px [main-start] 1fr [main-end] 24px [fullbleed-end];
+	justify-items: center;
+}
+
+.resultsList > div {
+	grid-column: main;
+}
+
+.count {
+	padding: 24px 0;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 24px;
+	opacity: 0.6;
+	text-align: center;
+}
+
+.bookResults {
+	background: rgb(0 0 0 /0.05);
+	padding: 12px 0;
+	justify-items: start;
+	align-items: start;
+}
+
+.bookResults + .noResults {
+	display: none;
+}
+
+.result {
+	cursor: pointer;
+	padding: 12px 0;
+	border-bottom: 1px solid rgb(0 0 0 /0.1);
+	transition: background-color 0.2s;
+	width: 100%;
+}
+
+.result:hover {
+	background-color: rgb(0 0 0 /0.02);
+}
+
+.resultMeta {
+	font-size: 12px;
+	opacity: 0.6;
+	margin-bottom: 6px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.resultText {
+	font-family: var(--serif), georgia, serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.highlight {
+	background: yellow;
+	font-weight: bold;
+}
+
+.noResults {
+	text-align: center;
+	padding: 48px 24px;
+	opacity: 0.6;
+}
+
+.bookResult {
+	cursor: pointer;
+	padding: 6px 24px;
+	font-size: 24px;
+	font-weight: 300;
+	transition: opacity 0.2s;
+	opacity: 0.7;
+	width: 100%;
+}
+
+.bookResult:hover {
+	opacity: 1;
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styled, { css } from "styled-components";
 import Link from "next/link";
 
@@ -231,13 +231,28 @@ export default function Search({ active, dismiss, goToPosition }) {
 	const [searchHistory, setSearchHistory] = useState([]);
 	const [resultsCount, setResultsCount] = useState([]);
 
+	// Load search history on component mount
+	useEffect(() => {
+		const savedHistory = localStorage?.getItem("searchHistory");
+		if (savedHistory) {
+			try {
+				const parsed = JSON.parse(savedHistory);
+				setSearchHistory(parsed);
+			} catch (error) {
+				console.warn("Failed to parse search history:", error);
+			}
+		}
+	}, []);
+
 	const updateSearchHistory = (keyword) => {
 		if (keyword.length > 1) {
 			const history = [keyword, ...searchHistory];
 			const uniqueHistory = [...new Set(history)];
-			setSearchHistory(uniqueHistory.splice(0, 5));
-			localStorage?.setItem("lastPosition", JSON.stringify(searchHistory));
-			console.log("Searches", keyword, searchHistory);
+			const limitedHistory = uniqueHistory.slice(0, 5);
+			setSearchHistory(limitedHistory);
+			// Fix: Use correct localStorage key for search history, not reading position
+			localStorage?.setItem("searchHistory", JSON.stringify(limitedHistory));
+			console.log("Searches", keyword, limitedHistory);
 		}
 	};
 

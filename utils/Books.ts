@@ -1,3 +1,5 @@
+import type { Book } from "../types/bible";
+
 import Genesis from "../pages_backup_old_pages_router/data/kjv/Genesis.json";
 import Exodus from "../pages_backup_old_pages_router/data/kjv/Exodus.json";
 import Leviticus from "../pages_backup_old_pages_router/data/kjv/Leviticus.json";
@@ -65,7 +67,7 @@ import _3John from "../pages_backup_old_pages_router/data/kjv/3John.json";
 import Jude from "../pages_backup_old_pages_router/data/kjv/Jude.json";
 import Revelation from "../pages_backup_old_pages_router/data/kjv/Revelation.json";
 
-export const Books = [
+export const Books: Book[] = [
 	Genesis,
 	Exodus,
 	Leviticus,

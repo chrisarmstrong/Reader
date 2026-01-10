@@ -1,10 +1,12 @@
 // Custom hook for reading position management
 import { useEffect, useState, useCallback } from "react";
 import BibleStorage from "./BibleStorage";
+import type { ReadingPosition, Book } from "../types/bible";
 
 export function useReadingPosition() {
-	const [currentPosition, setCurrentPosition] = useState(null);
-	const [isLoading, setIsLoading] = useState(true);
+	const [currentPosition, setCurrentPosition] =
+		useState<ReadingPosition | null>(null);
+	const [isLoading, setIsLoading] = useState<boolean>(true);
 
 	// Load saved position on mount
 	useEffect(() => {
@@ -65,9 +67,23 @@ export function useReadingPosition() {
 
 	// Save reading position with multiple storage methods
 	const savePosition = useCallback(
-		async (book, chapter, verse = 1, scrollPosition = 0) => {
-			const position = {
-				book,
+		async (
+			book: string | number,
+			chapter: number,
+			verse = 1,
+			scrollPosition = 0
+		) => {
+			let bookIndex: number;
+			if (typeof book === "string") {
+				// Convert book name to index if needed
+				const Books = await import("./Books");
+				bookIndex = Books.Books.findIndex((b) => b.book === book);
+			} else {
+				bookIndex = book;
+			}
+
+			const position: ReadingPosition = {
+				book: bookIndex,
 				chapter,
 				verse,
 				scrollPosition,
@@ -76,7 +92,7 @@ export function useReadingPosition() {
 
 			try {
 				await BibleStorage.saveReadingPosition(
-					book,
+					bookIndex,
 					chapter,
 					verse,
 					scrollPosition
@@ -93,7 +109,7 @@ export function useReadingPosition() {
 				localStorage.setItem(
 					"lastPosition",
 					JSON.stringify({
-						book,
+						book: bookIndex,
 						chapter,
 						verse,
 					})
@@ -110,11 +126,11 @@ export function useReadingPosition() {
 
 	// Auto-save scroll position with debouncing
 	const saveScrollPosition = useCallback(
-		(scrollY) => {
+		(scrollY: number) => {
 			if (!currentPosition) return;
 
-			clearTimeout(saveScrollPosition.timeout);
-			saveScrollPosition.timeout = setTimeout(() => {
+			clearTimeout((saveScrollPosition as any).timeout);
+			(saveScrollPosition as any).timeout = setTimeout(() => {
 				savePosition(
 					currentPosition.book,
 					currentPosition.chapter,
@@ -173,15 +189,18 @@ export function useReadingPosition() {
 
 // Hook for Bible content caching
 export function useBibleContent() {
-	const cacheBibleBook = useCallback(async (bookName, content) => {
-		try {
-			await BibleStorage.cacheBibleBook(bookName, content);
-		} catch (error) {
-			console.warn("Could not cache Bible content:", error);
-		}
-	}, []);
+	const cacheBibleBook = useCallback(
+		async (bookName: string, content: Book) => {
+			try {
+				await BibleStorage.cacheBibleBook(bookName, content);
+			} catch (error) {
+				console.warn("Could not cache Bible content:", error);
+			}
+		},
+		[]
+	);
 
-	const getCachedBibleBook = useCallback(async (bookName) => {
+	const getCachedBibleBook = useCallback(async (bookName: string) => {
 		try {
 			return await BibleStorage.getCachedBibleBook(bookName);
 		} catch (error) {
