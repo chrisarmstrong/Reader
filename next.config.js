@@ -8,8 +8,7 @@ const nextConfig = {
 		// Enable if needed for performance
 		optimizePackageImports: ["react-window", "styled-components"],
 	},
-	// Enable static exports for better PWA compatibility
-	output: "export",
+	// Remove static export to keep dynamic routing working
 	trailingSlash: true,
 	images: {
 		unoptimized: true,

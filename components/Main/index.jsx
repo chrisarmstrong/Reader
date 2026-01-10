@@ -10,6 +10,7 @@ import Contents from "../Contents";
 import NavBar from "../NavBar";
 
 import { Books } from "../../utils/Books";
+import { useReadingPosition } from "../../utils/useReadingPosition";
 
 const Container = styled.div`
 	display: grid;
@@ -31,25 +32,56 @@ function scrollTo(chapter, verse) {
 export default function Main({ slug, book }) {
 	const [bookNavVisible, setBookNavVisible] = useState(false);
 	const [searchVisible, setSearchVisible] = useState(false);
-	const [currentPosition, setCurrentPosition] = useState({});
-	const [currentBook, setCurrentBook] = useState(book || Books[0]); // set the initial book to the first book in the JSON data
+	const [currentBook, setCurrentBook] = useState(book || Books[0]);
+	const [initialLoadComplete, setInitialLoadComplete] = useState(false);
+
+	const {
+		currentPosition,
+		savePosition,
+		saveCurrentScrollPosition,
+		isLoading,
+	} = useReadingPosition();
 
 	useEffect(() => {
-		if (!book && typeof window !== "undefined" && window.localStorage) {
-			const lastPosition = JSON.parse(localStorage.getItem("lastPosition"));
-			if (lastPosition?.book) {
-				setCurrentBook(Books[lastPosition?.book]);
+		// Only restore position on initial load, not when navigating between books
+		if (!book && currentPosition && !isLoading && !initialLoadComplete) {
+			if (currentPosition.book !== undefined && Books[currentPosition.book]) {
+				setCurrentBook(Books[currentPosition.book]);
 
-				if (lastPosition.chapter) {
-					scrollTo(lastPosition.chapter, lastPosition.verse);
-				}
+				// Mark initial load as complete before scrolling
+				setInitialLoadComplete(true);
+
+				// Scroll to saved position after content is rendered
+				// Use a longer delay to ensure everything is loaded
+				setTimeout(() => {
+					if (currentPosition.scrollPosition > 0) {
+						// Restore exact scroll position if we have it
+						window.scrollTo({
+							top: currentPosition.scrollPosition,
+							behavior: "instant",
+						});
+					} else {
+						// Fallback to scrolling to the verse
+						scrollTo(currentPosition.chapter, currentPosition.verse);
+					}
+				}, 200);
+			} else {
+				setInitialLoadComplete(true);
 			}
 		}
 
+		// If a specific book is provided (navigation), use it without scroll restoration
 		if (book) {
+			// Save current scroll position before navigating away
+			if (initialLoadComplete && currentPosition) {
+				saveCurrentScrollPosition();
+			}
 			setCurrentBook(book);
+			if (!initialLoadComplete) {
+				setInitialLoadComplete(true);
+			}
 		}
-	}, [book]);
+	}, [book, currentPosition, isLoading, initialLoadComplete]);
 
 	return (
 		<>
@@ -89,7 +121,8 @@ export default function Main({ slug, book }) {
 
 				<Reader
 					book={currentBook}
-					setCurrentPosition={setCurrentPosition}
+					savePosition={savePosition}
+					currentPosition={currentPosition}
 				></Reader>
 
 				<Contents

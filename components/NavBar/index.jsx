@@ -75,7 +75,7 @@ export default function Navbar({
 				}}
 				className="menu-button"
 			></button>
-			{currentPosition.chapter ? (
+			{currentPosition?.chapter ? (
 				<h2>
 					{currentBook.book} {currentPosition.chapter}
 				</h2>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styled, { css, keyframes } from "styled-components";
 import Debounce from "../../utils/Debounce";
+import { useBibleContent } from "../../utils/useReadingPosition";
 
 const Container = styled.div`
 	display: grid;
@@ -116,7 +117,16 @@ const Verse = styled.p`
 
 // Note: Books are zero-base indexed, chapters and verses are the number in which they appear
 
-export default function Reader({ book, setCurrentPosition }) {
+export default function Reader({ book, savePosition, currentPosition }) {
+	const { cacheBibleBook } = useBibleContent();
+
+	// Cache the current book content when it's loaded
+	useEffect(() => {
+		if (book && book.book) {
+			cacheBibleBook(book.book, book);
+		}
+	}, [book, cacheBibleBook]);
+
 	const handleScroll = Debounce(() => {
 		let elements = document.querySelectorAll("p.verse");
 		let currentChapterVerse = null;
@@ -130,13 +140,18 @@ export default function Reader({ book, setCurrentPosition }) {
 			}
 		});
 
-		currentChapterVerse = foundElement.id.split(":");
+		if (foundElement) {
+			currentChapterVerse = foundElement.id.split(":");
 
-		updateLastPosition(
-			book?.index,
-			currentChapterVerse[0],
-			currentChapterVerse[1]
-		);
+			// Save reading position but DON'T include scroll position during normal scrolling
+			// This prevents the "snapping" behavior
+			savePosition(
+				book?.index,
+				parseInt(currentChapterVerse[0]),
+				parseInt(currentChapterVerse[1]),
+				0 // Always save scroll as 0 during normal reading to prevent snapping
+			);
+		}
 
 		return foundElement;
 	}, 1000);
@@ -149,17 +164,9 @@ export default function Reader({ book, setCurrentPosition }) {
 				window.removeEventListener("scroll", handleScroll);
 			};
 		}
-	}, []);
+	}, [book, cacheBibleBook]);
 
-	const updateLastPosition = (book_index, chapter_index, verse_index) => {
-		const position = {
-			book: book_index,
-			chapter: chapter_index,
-			verse: verse_index,
-		};
-		localStorage.setItem("lastPosition", JSON.stringify(position));
-		setCurrentPosition(position);
-	};
+	// Remove the old updateLastPosition function since we're using savePosition now
 
 	const chaptersCount = book?.chapters.length;
 	let hash = null;
