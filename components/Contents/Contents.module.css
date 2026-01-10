@@ -21,6 +21,14 @@
 .container[data-active="true"] {
 	pointer-events: all;
 	visibility: visible;
+	/* Soft white-to-transparent gradient behind the contents list */
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 1) 0px,
+		rgba(255, 255, 255, 0.95) 240px,
+		rgba(255, 255, 255, 0.6) 360px,
+		rgba(255, 255, 255, 0) 100%
+	);
 }
 
 .bookList {
