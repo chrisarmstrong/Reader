@@ -150,9 +150,11 @@ export default function Search({ active, dismiss }: SearchProps) {
 							{bookResults.map((result, i) => {
 								let link = "/" + result.book.toLowerCase().replace(/\s+/g, "-");
 								if (result.chapter) {
-									link += result.verse
-										? `#${result.chapter}:${result.verse}`
-										: `#${result.chapter}`;
+									if (result.verse) {
+										link += `?highlight=${result.chapter}:${result.verse}#${result.chapter}:${result.verse}`;
+									} else {
+										link += `#${result.chapter}`;
+									}
 								}
 
 								return (
@@ -179,9 +181,11 @@ export default function Search({ active, dismiss }: SearchProps) {
 					)}
 
 					{results.map((result, i) => {
-						const link = `/${result.book.toLowerCase().replace(/\s+/g, "-")}#${
-							result.chapter
-						}:${result.verse}`;
+						const link = `/${result.book
+							.toLowerCase()
+							.replace(/\s+/g, "-")}?highlight=${result.chapter}:${
+							result.verse
+						}#${result.chapter}:${result.verse}`;
 
 						return (
 							<div key={`result-${i}`} className={styles.result}>

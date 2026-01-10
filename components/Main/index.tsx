@@ -3,7 +3,7 @@
 import styles from "./Main.module.css";
 import "../../styles/styles.css";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import type { MainProps, Book } from "../../types/bible";
 
 import Search from "../search";
@@ -68,21 +68,43 @@ export default function Main({ slug, book }: MainProps) {
 	// Separate effect to handle book changes for navigation
 	useEffect(() => {
 		if (book) {
-			// Save current scroll position before navigating away
-			if (initialLoadComplete && currentPosition) {
-				saveCurrentScrollPosition();
-			}
 			setCurrentBook(book);
 			if (!initialLoadComplete) {
 				setInitialLoadComplete(true);
 			}
 		}
-	}, [book, initialLoadComplete, currentPosition]);
+	}, [book, initialLoadComplete]);
 
-	const handleBookSelect = (selectedBook: Book): void => {
+	// Save scroll position when navigating away from a book
+	useEffect(() => {
+		return () => {
+			if (initialLoadComplete && currentPosition) {
+				saveCurrentScrollPosition();
+			}
+		};
+	}, [currentPosition, saveCurrentScrollPosition, initialLoadComplete]);
+
+	const handleBookSelect = useCallback((selectedBook: Book): void => {
 		setCurrentBook(selectedBook);
 		setBookNavVisible(false);
-	};
+	}, []);
+
+	const handleMenuToggle = useCallback(() => {
+		setBookNavVisible((prev) => !prev);
+	}, []);
+
+	const handleSearchToggle = useCallback(() => {
+		setSearchVisible((prev) => !prev);
+	}, []);
+
+	const handleChapterChange = useCallback(
+		(chapter: number, verse: number) => {
+			if (currentBook.index !== undefined) {
+				savePosition(currentBook.index, chapter, verse);
+			}
+		},
+		[currentBook.index, savePosition]
+	);
 
 	// Close modals when escaping
 	useEffect(() => {
@@ -112,11 +134,7 @@ export default function Main({ slug, book }: MainProps) {
 			<Reader
 				book={currentBook}
 				searchActive={searchVisible}
-				onChapterChange={(chapter: number, verse: number) => {
-					if (currentBook.index !== undefined) {
-						savePosition(currentBook.index, chapter, verse);
-					}
-				}}
+				onChapterChange={handleChapterChange}
 			/>
 
 			{/* Only render Contents when active */}
@@ -131,8 +149,8 @@ export default function Main({ slug, book }: MainProps) {
 			)}
 
 			<NavBar
-				onMenuToggle={() => setBookNavVisible(!bookNavVisible)}
-				onSearchToggle={() => setSearchVisible(!searchVisible)}
+				onMenuToggle={handleMenuToggle}
+				onSearchToggle={handleSearchToggle}
 				onNextChapter={() => {
 					// Implementation for next chapter navigation
 				}}
