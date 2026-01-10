@@ -11,6 +11,13 @@ function Reader({ book, searchActive = false, onChapterChange }: ReaderProps) {
 	const [visibleChapter, setVisibleChapter] = useState<number | null>(null);
 	const debouncedSaveRef = useRef<(chapter: number, verse: number) => void>();
 	const initialHashScrollDone = useRef(false);
+	const lastHashRef = useRef<string | null>(null);
+	const lastHashUpdateAtRef = useRef<number>(0);
+	const visibleIdsRef = useRef<Set<string>>(new Set());
+	const searchActiveRef = useRef<boolean>(false);
+	useEffect(() => {
+		searchActiveRef.current = searchActive;
+	}, [searchActive]);
 
 	// Initialize debounced save function once
 	useEffect(() => {
@@ -26,57 +33,82 @@ function Reader({ book, searchActive = false, onChapterChange }: ReaderProps) {
 		if (book && book.book) {
 			cacheBibleBook(book.book, book);
 		}
-	}, [book.book, cacheBibleBook]);
+	}, [book, cacheBibleBook]);
 
-	// Memoize the scroll handler so it doesn't get recreated on every render
-	const handleScroll = useCallback(() => {
-		if (searchActive) return; // pause updates while search overlay is open
-
-		const elements = document.querySelectorAll("p.verse");
-
-		const foundElement = Array.from(elements).find((element) => {
-			if (
-				element.getBoundingClientRect().top >= 0 &&
-				element.getBoundingClientRect().top <= window.innerHeight
-			) {
-				return element.id;
-			}
-		});
-
-		if (foundElement) {
-			const currentChapterVerse = foundElement.id.split(":");
-			const chapter = parseInt(currentChapterVerse[0]);
-			const verse = parseInt(currentChapterVerse[1]);
-
-			// Update URL hash immediately for instant visual feedback
-			// Use replaceState to avoid adding to history on every scroll
-			window.history.replaceState(null, "", `#${chapter}:${verse}`);
-
-			// Manually dispatch hashchange event since replaceState doesn't trigger it
-			window.dispatchEvent(new HashChangeEvent("hashchange"));
-
-			// Update local state for any other consumers
-			setVisibleChapter(chapter);
-
-			// Call debounced save operation
-			if (currentChapterVerse.length >= 2 && debouncedSaveRef.current) {
-				debouncedSaveRef.current(chapter, verse);
-			}
-		}
-
-		return foundElement;
-	}, [searchActive]);
-
+	// IntersectionObserver-based visibility tracking for verses
 	useEffect(() => {
-		if (typeof window !== "undefined") {
-			// Use passive listener for better scroll performance
-			window.addEventListener("scroll", handleScroll, { passive: true });
+		if (typeof window === "undefined") return;
 
-			return () => {
-				window.removeEventListener("scroll", handleScroll);
-			};
-		}
-	}, [handleScroll]);
+		const observer = new IntersectionObserver(
+			(entries) => {
+				if (searchActiveRef.current) return;
+
+				for (const entry of entries) {
+					const id = (entry.target as HTMLElement).id;
+					if (!id) continue;
+					if (entry.isIntersecting) {
+						visibleIdsRef.current.add(id);
+					} else {
+						visibleIdsRef.current.delete(id);
+					}
+				}
+
+				// Find the topmost visible verse in the viewport
+				let topId: string | null = null;
+				let topVal = Number.POSITIVE_INFINITY;
+				for (const id of visibleIdsRef.current) {
+					const el = document.getElementById(id);
+					if (!el) continue;
+					const rect = el.getBoundingClientRect();
+					if (rect.top >= 0 && rect.top <= window.innerHeight) {
+						if (rect.top < topVal) {
+							topVal = rect.top;
+							topId = id;
+						}
+					}
+				}
+
+				if (topId) {
+					const [chapterStr, verseStr] = topId.split(":");
+					const chapter = parseInt(chapterStr);
+					const verse = parseInt(verseStr);
+
+					const newHash = `#${chapter}:${verse}`;
+					const now =
+						typeof performance !== "undefined" ? performance.now() : Date.now();
+					if (
+						newHash !== lastHashRef.current &&
+						now - lastHashUpdateAtRef.current > 500
+					) {
+						try {
+							window.history.replaceState(null, "", newHash);
+							window.dispatchEvent(new HashChangeEvent("hashchange"));
+							lastHashRef.current = newHash;
+							lastHashUpdateAtRef.current = now;
+						} catch (_) {
+							// ignore Safari SecurityError if thrown
+						}
+					}
+
+					setVisibleChapter(chapter);
+
+					if (debouncedSaveRef.current) {
+						debouncedSaveRef.current(chapter, verse);
+					}
+				}
+			},
+			{ root: null, threshold: [0, 0.5, 1] }
+		);
+
+		const verses = document.querySelectorAll("p.verse");
+		verses.forEach((node) => observer.observe(node));
+
+		const visibleIds = visibleIdsRef.current;
+		return () => {
+			observer.disconnect();
+			visibleIds.clear();
+		};
+	}, [book]);
 
 	const chaptersCount = book?.chapters.length || 0;
 	let highlightVerse: string | null = null;
