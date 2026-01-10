@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { memo, useCallback, useMemo, useState } from "react";
 import styles from "./Search.module.css";
 import Link from "next/link";
 import { Books } from "../../utils/Books";
@@ -19,23 +19,30 @@ interface SearchResultProps {
 	text: string;
 }
 
-export default function Search({ active, dismiss }: SearchProps) {
+function Search({ active, dismiss }: SearchProps) {
 	const [searchKeyword, setSearchKeyword] = useState<string>("");
 	const [searchHistory, setSearchHistory] = useState<string[]>([]);
 
-	const updateSearchHistory = (keyword: string): void => {
+	const updateSearchHistory = useCallback((keyword: string): void => {
 		if (keyword.length > 1) {
-			const history = [keyword, ...searchHistory];
-			const uniqueHistory = [...new Set(history)];
-			setSearchHistory(uniqueHistory.slice(0, 5));
-			localStorage?.setItem("searchHistory", JSON.stringify(uniqueHistory));
+			setSearchHistory((prev) => {
+				const history = [keyword, ...prev];
+				const uniqueHistory = [...new Set(history)];
+				const trimmed = uniqueHistory.slice(0, 5);
+				localStorage?.setItem("searchHistory", JSON.stringify(trimmed));
+				return trimmed;
+			});
 		}
-	};
+	}, []);
 
-	const handleSearch = Debounce((e: React.ChangeEvent<HTMLInputElement>) => {
-		setSearchKeyword(e.target.value);
-		updateSearchHistory(e.target.value);
-	}, 500);
+	const handleSearch = useMemo(
+		() =>
+			Debounce((e: React.ChangeEvent<HTMLInputElement>) => {
+				setSearchKeyword(e.target.value);
+				updateSearchHistory(e.target.value);
+			}, 500),
+		[updateSearchHistory]
+	);
 
 	const getResults = (keyword: string): SearchResultProps[] => {
 		const results: SearchResultProps[] = [];
@@ -68,6 +75,9 @@ export default function Search({ active, dismiss }: SearchProps) {
 		chapter: string | null;
 		verse: string | null;
 	}> => {
+		// Avoid listing every book when the input is empty
+		if (!keyword.trim()) return [];
+
 		const results: Array<{
 			book: string;
 			chapter: string | null;
@@ -129,18 +139,31 @@ export default function Search({ active, dismiss }: SearchProps) {
 		);
 	};
 
-	const results = getResults(searchKeyword);
-	const bookResults = getBookResults(searchKeyword);
+	const results = useMemo(() => getResults(searchKeyword), [searchKeyword]);
+	const bookResults = useMemo(
+		() => getBookResults(searchKeyword),
+		[searchKeyword]
+	);
 
 	return (
 		<div className={styles.container} data-active={active}>
-			<input
-				type="text"
-				placeholder="Search the Bible..."
-				className={styles.searchInput}
-				onChange={handleSearch}
-				autoFocus={active}
-			/>
+			<div className={styles.searchHeader}>
+				<input
+					type="text"
+					placeholder="Search the Bible..."
+					className={styles.searchInput}
+					onChange={handleSearch}
+					autoFocus={active}
+				/>
+				<button
+					type="button"
+					className={styles.closeButton}
+					onClick={dismiss}
+					aria-label="Close search"
+				>
+					×
+				</button>
+			</div>
 
 			<div className={styles.resultsContainer}>
 				<div className={styles.resultsList}>
@@ -217,3 +240,5 @@ export default function Search({ active, dismiss }: SearchProps) {
 		</div>
 	);
 }
+
+export default memo(Search);

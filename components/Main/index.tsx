@@ -32,6 +32,8 @@ export default function Main({ slug, book }: MainProps) {
 	const [initialLoadComplete, setInitialLoadComplete] =
 		useState<boolean>(false);
 
+	const dismissSearch = useCallback(() => setSearchVisible(false), []);
+
 	const {
 		currentPosition,
 		savePosition,
@@ -125,10 +127,7 @@ export default function Main({ slug, book }: MainProps) {
 		<div className={styles.container}>
 			{/* Only render Search when active */}
 			{searchVisible && (
-				<Search
-					dismiss={() => setSearchVisible(false)}
-					active={searchVisible}
-				/>
+				<Search dismiss={dismissSearch} active={searchVisible} />
 			)}
 
 			<Reader

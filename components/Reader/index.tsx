@@ -1,16 +1,12 @@
 "use client";
 
 import styles from "./Reader.module.css";
-import { useEffect, useCallback, useState, useRef } from "react";
+import { useEffect, useCallback, useState, useRef, memo } from "react";
 import Debounce from "../../utils/Debounce";
 import { useBibleContent } from "../../utils/useReadingPosition";
 import type { ReaderProps } from "../../types/bible";
 
-export default function Reader({
-	book,
-	searchActive = false,
-	onChapterChange,
-}: ReaderProps) {
+function Reader({ book, searchActive = false, onChapterChange }: ReaderProps) {
 	const { cacheBibleBook } = useBibleContent();
 	const [visibleChapter, setVisibleChapter] = useState<number | null>(null);
 	const debouncedSaveRef = useRef<(chapter: number, verse: number) => void>();
@@ -33,6 +29,8 @@ export default function Reader({
 
 	// Memoize the scroll handler so it doesn't get recreated on every render
 	const handleScroll = useCallback(() => {
+		if (searchActive) return; // pause updates while search overlay is open
+
 		const elements = document.querySelectorAll("p.verse");
 
 		const foundElement = Array.from(elements).find((element) => {
@@ -66,7 +64,7 @@ export default function Reader({
 		}
 
 		return foundElement;
-	}, []);
+	}, [searchActive]);
 
 	useEffect(() => {
 		if (typeof window !== "undefined") {
@@ -127,3 +125,5 @@ export default function Reader({
 		</div>
 	);
 }
+
+export default memo(Reader);
