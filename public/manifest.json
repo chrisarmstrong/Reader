@@ -1,16 +1,27 @@
 {
 	"name": "Holy Bible",
 	"short_name": "Bible",
+	"description": "Offline Bible Reader",
 	"icons": [
 		{
 			"src": "/icon.png",
 			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/apple-touch-icon.png",
+			"sizes": "180x180",
 			"type": "image/png"
 		}
 	],
 	"start_url": "/",
 	"scope": "/",
 	"display": "standalone",
+	"orientation": "portrait-primary",
 	"background_color": "#ffffff",
-	"theme_color": "#ffffff"
+	"theme_color": "#ffffff",
+	"categories": ["books", "education", "reference"],
+	"lang": "en",
+	"dir": "ltr"
 }

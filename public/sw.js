@@ -1,101 +1,108 @@
-/**
- * Copyright 2018 Google Inc. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *     http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+// Simple Service Worker for Bible Reader
+// Focused on reliable offline reading and iOS compatibility
 
-// If the loader is already loaded, just stop.
-if (!self.define) {
-  let registry = {};
+const CACHE_NAME = "bible-reader-v1";
+const BIBLE_CACHE = "bible-content-v1";
 
-  // Used for `eval` and `importScripts` where we can't get script URL by other means.
-  // In both cases, it's safe to use a global var because those functions are synchronous.
-  let nextDefineUri;
+// Critical files that should always be cached
+const STATIC_ASSETS = [
+	"/",
+	"/manifest.json",
+	"/icon.png",
+	"/apple-touch-icon.png",
+];
 
-  const singleRequire = (uri, parentUri) => {
-    uri = new URL(uri + ".js", parentUri).href;
-    return registry[uri] || (
-      
-        new Promise(resolve => {
-          if ("document" in self) {
-            const script = document.createElement("script");
-            script.src = uri;
-            script.onload = resolve;
-            document.head.appendChild(script);
-          } else {
-            nextDefineUri = uri;
-            importScripts(uri);
-            resolve();
-          }
-        })
-      
-      .then(() => {
-        let promise = registry[uri];
-        if (!promise) {
-          throw new Error(`Module ${uri} didn’t register its module`);
-        }
-        return promise;
-      })
-    );
-  };
+// Install event - cache static assets
+self.addEventListener("install", (event) => {
+	event.waitUntil(
+		caches
+			.open(CACHE_NAME)
+			.then((cache) => cache.addAll(STATIC_ASSETS))
+			.then(() => self.skipWaiting())
+	);
+});
 
-  self.define = (depsNames, factory) => {
-    const uri = nextDefineUri || ("document" in self ? document.currentScript.src : "") || location.href;
-    if (registry[uri]) {
-      // Module is already loading or loaded.
-      return;
-    }
-    let exports = {};
-    const require = depUri => singleRequire(depUri, uri);
-    const specialDeps = {
-      module: { uri },
-      exports,
-      require
-    };
-    registry[uri] = Promise.all(depsNames.map(
-      depName => specialDeps[depName] || require(depName)
-    )).then(deps => {
-      factory(...deps);
-      return exports;
-    });
-  };
-}
-define(['./workbox-327c579b'], (function (workbox) { 'use strict';
+// Activate event - clean up old caches
+self.addEventListener("activate", (event) => {
+	event.waitUntil(
+		caches
+			.keys()
+			.then((cacheNames) => {
+				return Promise.all(
+					cacheNames.map((cacheName) => {
+						if (cacheName !== CACHE_NAME && cacheName !== BIBLE_CACHE) {
+							return caches.delete(cacheName);
+						}
+					})
+				);
+			})
+			.then(() => self.clients.claim())
+	);
+});
 
-  importScripts();
-  self.skipWaiting();
-  workbox.clientsClaim();
-  workbox.registerRoute("/", new workbox.NetworkFirst({
-    "cacheName": "start-url",
-    plugins: [{
-      cacheWillUpdate: async ({
-        request,
-        response,
-        event,
-        state
-      }) => {
-        if (response && response.type === 'opaqueredirect') {
-          return new Response(response.body, {
-            status: 200,
-            statusText: 'OK',
-            headers: response.headers
-          });
-        }
-        return response;
-      }
-    }]
-  }), 'GET');
-  workbox.registerRoute(/.*/i, new workbox.NetworkOnly({
-    "cacheName": "dev",
-    plugins: []
-  }), 'GET');
+// Fetch event - handle requests
+self.addEventListener("fetch", (event) => {
+	const url = new URL(event.request.url);
 
-}));
-//# sourceMappingURL=sw.js.map
+	// Handle Bible JSON files specially - these are most important for offline reading
+	if (url.pathname.includes("/api/") || url.pathname.includes(".json")) {
+		event.respondWith(
+			caches.open(BIBLE_CACHE).then((cache) => {
+				return cache.match(event.request).then((response) => {
+					if (response) {
+						// Return cached version immediately
+						return response;
+					}
+					// Fetch and cache new version
+					return fetch(event.request)
+						.then((fetchResponse) => {
+							if (fetchResponse.ok) {
+								cache.put(event.request, fetchResponse.clone());
+							}
+							return fetchResponse;
+						})
+						.catch(() => {
+							// If offline and no cache, return a basic error response
+							return new Response("Offline - content not available", {
+								status: 503,
+								statusText: "Service Unavailable",
+							});
+						});
+				});
+			})
+		);
+		return;
+	}
+
+	// Handle other requests with cache-first strategy for static assets
+	if (event.request.method === "GET") {
+		event.respondWith(
+			caches.match(event.request).then((response) => {
+				if (response) {
+					return response;
+				}
+				return fetch(event.request).then((fetchResponse) => {
+					// Don't cache API calls or external resources
+					if (fetchResponse.ok && url.origin === self.location.origin) {
+						const responseClone = fetchResponse.clone();
+						caches
+							.open(CACHE_NAME)
+							.then((cache) => cache.put(event.request, responseClone));
+					}
+					return fetchResponse;
+				});
+			})
+		);
+	}
+});
+
+// Message event - for clearing cache if needed
+self.addEventListener("message", (event) => {
+	if (event.data && event.data.type === "CLEAR_CACHE") {
+		caches.keys().then((cacheNames) => {
+			return Promise.all(
+				cacheNames.map((cacheName) => caches.delete(cacheName))
+			);
+		});
+	}
+});

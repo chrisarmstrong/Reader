@@ -1,17 +1,19 @@
 /** @type {import('next').NextConfig} */
-const withPWA = require("next-pwa")({
-	dest: "public",
-});
-
-module.exports = withPWA({
-	pwa: {
-		dest: "public",
-		disable: process.env.NODE_ENV === "development",
-		register: true,
-		sw: "service-worker.js",
-	},
+const nextConfig = {
 	compiler: {
 		// Enables the styled-components SWC transform
 		styledComponents: true,
 	},
-});
+	experimental: {
+		// Enable if needed for performance
+		optimizePackageImports: ["react-window", "styled-components"],
+	},
+	// Enable static exports for better PWA compatibility
+	output: "export",
+	trailingSlash: true,
+	images: {
+		unoptimized: true,
+	},
+};
+
+module.exports = nextConfig;
