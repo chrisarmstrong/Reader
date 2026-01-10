@@ -67,7 +67,13 @@ export default function Contents({
 		);
 
 		return () => {
-			controls.forEach((c) => c.cancel());
+			controls.forEach((c) => {
+				try {
+					if (c) c.cancel();
+				} catch (_) {
+					// ignore cancel errors on unmounted elements
+				}
+			});
 			links.forEach((el) => {
 				el.style.willChange = "";
 			});
