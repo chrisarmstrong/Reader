@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import Link from "next/link";
@@ -70,7 +72,7 @@ export default function Contents({ active, dismiss, books }) {
 				{books.map((book, i) => (
 					<Link
 						key={book.book}
-						href={book.book.toLowerCase().replace(/\s+/g, "-")}
+						href={"/" + book.book.toLowerCase().replace(/\s+/g, "-")}
 						data-index={i}
 						onClick={() => {
 							dismiss();

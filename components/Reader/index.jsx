@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import styled, { css, keyframes } from "styled-components";
 import Debounce from "../../utils/Debounce";

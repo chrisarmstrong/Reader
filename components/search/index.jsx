@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import Link from "next/link";
