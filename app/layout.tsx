@@ -1,6 +1,8 @@
 import "../styles/styles.css";
 import localFont from "next/font/local";
 import ServiceWorkerProvider from "./ServiceWorkerProvider";
+import { MantineProvider } from "@mantine/core";
+import "@mantine/core/styles.css";
 
 const Family = localFont({
 	src: [
@@ -100,7 +102,9 @@ export default function RootLayout({
 				/>
 			</head>
 			<body className={Family.className}>
-				<ServiceWorkerProvider>{children}</ServiceWorkerProvider>
+				<MantineProvider>
+					<ServiceWorkerProvider>{children}</ServiceWorkerProvider>
+				</MantineProvider>
 			</body>
 		</html>
 	);

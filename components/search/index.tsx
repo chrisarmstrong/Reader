@@ -1,8 +1,18 @@
 "use client";
 
 import { memo, useCallback, useMemo, useState } from "react";
-import styles from "./Search.module.css";
 import Link from "next/link";
+import {
+	Modal,
+	TextInput,
+	Stack,
+	Group,
+	Text,
+	ActionIcon,
+	Highlight,
+	Box,
+} from "@mantine/core";
+import { IconX } from "@tabler/icons-react";
 import { Books } from "../../utils/Books";
 import Debounce from "../../utils/Debounce";
 import type { Book } from "../../types/bible";
@@ -122,20 +132,10 @@ function Search({ active, dismiss }: SearchProps) {
 
 	const highlightText = (text: string, keyword: string): JSX.Element => {
 		if (!keyword) return <>{text}</>;
-
-		const parts = text.split(new RegExp(`(${keyword})`, "gi"));
 		return (
-			<>
-				{parts.map((part, index) =>
-					part.toLowerCase() === keyword.toLowerCase() ? (
-						<span key={index} className={styles.highlight}>
-							{part}
-						</span>
-					) : (
-						part
-					)
-				)}
-			</>
+			<Highlight highlight={keyword} weight={700} size="sm">
+				{text}
+			</Highlight>
 		);
 	};
 
@@ -146,63 +146,108 @@ function Search({ active, dismiss }: SearchProps) {
 	);
 
 	return (
-		<div className={styles.container} data-active={active}>
-			<div className={styles.searchHeader}>
-				<input
-					type="text"
+		<Modal
+			opened={active}
+			onClose={dismiss}
+			size="lg"
+			fullScreen
+			withCloseButton={false}
+			styles={{
+				content: { padding: 0 },
+				body: {
+					padding: 0,
+					overflow: "hidden",
+					display: "flex",
+					flexDirection: "column",
+				},
+			}}
+		>
+			<Group
+				justify="space-between"
+				px="md"
+				py="lg"
+				style={{
+					borderBottom: "1px solid var(--mantine-color-gray-2)",
+					flexShrink: 0,
+				}}
+			>
+				<TextInput
 					placeholder="Search the Bible..."
-					className={styles.searchInput}
 					onChange={handleSearch}
-					autoFocus={active}
+					autoFocus
+					style={{ flex: 1 }}
+					variant="unstyled"
+					size="md"
 				/>
-				<button
-					type="button"
-					className={styles.closeButton}
+				<ActionIcon
+					variant="transparent"
+					size="lg"
 					onClick={dismiss}
 					aria-label="Close search"
 				>
-					×
-				</button>
-			</div>
+					<IconX size={20} />
+				</ActionIcon>
+			</Group>
 
-			<div className={styles.resultsContainer}>
-				<div className={styles.resultsList}>
-					{/* Book Results */}
-					{bookResults.length > 0 && (
-						<div className={styles.bookResults}>
-							{bookResults.map((result, i) => {
-								let link = "/" + result.book.toLowerCase().replace(/\s+/g, "-");
-								if (result.chapter) {
-									if (result.verse) {
-										link += `?highlight=${result.chapter}:${result.verse}#${result.chapter}:${result.verse}`;
-									} else {
-										link += `#${result.chapter}`;
-									}
+			<Stack gap="md" p="md" style={{ overflow: "auto", flex: 1 }}>
+				{/* Book Results */}
+				{bookResults.length > 0 && (
+					<Stack gap="xs">
+						{bookResults.map((result, i) => {
+							let link = "/" + result.book.toLowerCase().replace(/\s+/g, "-");
+							if (result.chapter) {
+								if (result.verse) {
+									link += `?highlight=${result.chapter}:${result.verse}#${result.chapter}:${result.verse}`;
+								} else {
+									link += `#${result.chapter}`;
 								}
+							}
 
-								return (
-									<Link
-										key={`book-result-${i}`}
-										href={link}
-										className={styles.bookResult}
-										onClick={dismiss}
+							return (
+								<Link
+									key={`book-result-${i}`}
+									href={link}
+									onClick={dismiss}
+									style={{ textDecoration: "none" }}
+								>
+									<Box
+										p="sm"
+										style={{
+											borderRadius: "var(--mantine-radius-sm)",
+											backgroundColor: "var(--mantine-color-blue-0)",
+											cursor: "pointer",
+											transition: "background-color 0.2s",
+										}}
+										onMouseEnter={(e) =>
+											(e.currentTarget.style.backgroundColor =
+												"var(--mantine-color-blue-1)")
+										}
+										onMouseLeave={(e) =>
+											(e.currentTarget.style.backgroundColor =
+												"var(--mantine-color-blue-0)")
+										}
 									>
-										{result.book}
-										{result.chapter && ` ${result.chapter}`}
-										{result.verse && `:${result.verse}`}
-									</Link>
-								);
-							})}
-						</div>
-					)}
+										<Text size="sm" fw={600}>
+											{result.book}
+											{result.chapter && ` ${result.chapter}`}
+											{result.verse && `:${result.verse}`}
+										</Text>
+									</Box>
+								</Link>
+							);
+						})}
+					</Stack>
+				)}
 
-					{/* Search Results */}
-					{searchKeyword.length > 1 && (
-						<div className={styles.count}>
-							{results.length} result{results.length !== 1 ? "s" : ""}
-						</div>
-					)}
+				{/* Search Results Count */}
+				{searchKeyword.length > 1 && (
+					<Text size="sm" c="dimmed">
+						{results.length} result{results.length !== 1 ? "s" : ""}
+					</Text>
+				)}
 
+				{/* Search Results */}
+				<Stack gap="md">
 					{results.map((result, i) => {
 						const link = `/${result.book
 							.toLowerCase()
@@ -211,33 +256,53 @@ function Search({ active, dismiss }: SearchProps) {
 						}#${result.chapter}:${result.verse}`;
 
 						return (
-							<div key={`result-${i}`} className={styles.result}>
-								<Link
-									href={link}
-									onClick={dismiss}
-									style={{ textDecoration: "none", color: "inherit" }}
+							<Link
+								key={`result-${i}`}
+								href={link}
+								onClick={dismiss}
+								style={{ textDecoration: "none" }}
+							>
+								<Box
+									p="md"
+									style={{
+										borderRadius: "var(--mantine-radius-sm)",
+										border: "1px solid var(--mantine-color-gray-2)",
+										cursor: "pointer",
+										transition: "border-color 0.2s",
+									}}
+									onMouseEnter={(e) =>
+										(e.currentTarget.style.borderColor =
+											"var(--mantine-color-gray-4)")
+									}
+									onMouseLeave={(e) =>
+										(e.currentTarget.style.borderColor =
+											"var(--mantine-color-gray-2)")
+									}
 								>
-									<div className={styles.resultMeta}>
-										{result.book} {result.chapter}:{result.verse}
-									</div>
-									<div className={styles.resultText}>
+									<Group justify="space-between" mb="xs">
+										<Text size="sm" fw={500}>
+											{result.book} {result.chapter}:{result.verse}
+										</Text>
+									</Group>
+									<Text size="sm" lineClamp={2}>
 										{highlightText(result.text, searchKeyword)}
-									</div>
-								</Link>
-							</div>
+									</Text>
+								</Box>
+							</Link>
 						);
 					})}
+				</Stack>
 
-					{searchKeyword.length > 1 &&
-						results.length === 0 &&
-						bookResults.length === 0 && (
-							<div className={styles.noResults}>
-								No results found for &quot;{searchKeyword}&quot;
-							</div>
-						)}
-				</div>
-			</div>
-		</div>
+				{/* No Results Message */}
+				{searchKeyword.length > 1 &&
+					results.length === 0 &&
+					bookResults.length === 0 && (
+						<Text ta="center" c="dimmed" py="xl">
+							No results found for &quot;{searchKeyword}&quot;
+						</Text>
+					)}
+			</Stack>
+		</Modal>
 	);
 }
 
