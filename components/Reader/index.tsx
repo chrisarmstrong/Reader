@@ -10,6 +10,7 @@ function Reader({ book, searchActive = false, onChapterChange }: ReaderProps) {
 	const { cacheBibleBook } = useBibleContent();
 	const [visibleChapter, setVisibleChapter] = useState<number | null>(null);
 	const debouncedSaveRef = useRef<(chapter: number, verse: number) => void>();
+	const initialHashScrollDone = useRef(false);
 
 	// Initialize debounced save function once
 	useEffect(() => {
@@ -86,8 +87,47 @@ function Reader({ book, searchActive = false, onChapterChange }: ReaderProps) {
 		highlightVerse = params.get("highlight");
 	}
 
+	// Scroll to requested hash/highlight once after book loads
+	useEffect(() => {
+		if (typeof window === "undefined") return;
+
+		const targetHash = window.location.hash.replace("#", "");
+		let targetId = targetHash || highlightVerse;
+
+		// If target is chapter 1 verse 1, scroll to top instead of verse anchor
+		if (targetId === "1:1") {
+			targetId = null;
+			initialHashScrollDone.current = true;
+			window.scrollTo({ top: 0, behavior: "instant" });
+			return;
+		}
+		if (!targetId || initialHashScrollDone.current) return;
+
+		const tryScroll = () => {
+			const el = document.getElementById(targetId);
+			if (el) {
+				el.scrollIntoView({ behavior: "instant", block: "start" });
+				initialHashScrollDone.current = true;
+				return true;
+			}
+			return false;
+		};
+
+		// attempt immediately, then fallback after a frame to allow render
+		if (!tryScroll()) {
+			requestAnimationFrame(() => {
+				tryScroll();
+			});
+		}
+	}, [book, highlightVerse]);
+
 	return (
-		<div className={styles.container} data-search-active={searchActive}>
+		<div
+			className={styles.container}
+			data-search-active={searchActive}
+			aria-hidden={searchActive}
+			style={searchActive ? { pointerEvents: "none" } : undefined}
+		>
 			<div className={styles.book}>
 				<h1 className={styles.bookTitle}>{book.book}</h1>
 				{book.chapters?.map((chapter) => (

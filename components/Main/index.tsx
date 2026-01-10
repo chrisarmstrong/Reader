@@ -132,8 +132,8 @@ export default function Main({ slug, book }: MainProps) {
 
 			<Reader
 				book={currentBook}
-				searchActive={searchVisible}
-				onChapterChange={handleChapterChange}
+				savePosition={savePosition}
+				currentPosition={currentPosition}
 			/>
 
 			{/* Only render Contents when active */}
