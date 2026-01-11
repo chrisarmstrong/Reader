@@ -14,6 +14,7 @@ import NavBar from "../NavBar";
 
 import { Books } from "../../utils/Books";
 import { useReadingPosition } from "../../utils/useReadingPosition";
+import { useAudioPlayer } from "../../utils/useAudioPlayer";
 
 function scrollTo(chapter: number, verse?: number): void {
 	let chapterVerse = chapter.toString();
@@ -36,7 +37,6 @@ export default function Main({ slug, book }: MainProps) {
 		string | undefined
 	>(undefined);
 	const [currentReference, setCurrentReference] = useState<string | null>(null);
-	const [readingVerse, setReadingVerse] = useState<string | null>(null);
 
 	const dismissSearch = useCallback(() => setSearchVisible(false), []);
 
@@ -46,6 +46,24 @@ export default function Main({ slug, book }: MainProps) {
 		saveCurrentScrollPosition,
 		isLoading,
 	} = useReadingPosition();
+
+	// Get current chapter from position or hash
+	const getCurrentChapter = () => {
+		if (typeof window === "undefined") return currentPosition?.chapter;
+		const hash = window.location.hash.substring(1);
+		if (hash) {
+			const [chapter] = hash.split(":");
+			return parseInt(chapter) || currentPosition?.chapter;
+		}
+		return currentPosition?.chapter;
+	};
+
+	const { isPlaying, isSupported, currentVerseId, togglePlayPause } =
+		useAudioPlayer({
+			book: currentBook,
+			chapter: getCurrentChapter(),
+			startVerse: currentPosition?.verse,
+		});
 
 	useEffect(() => {
 		// Only restore position on initial load, not when navigating between books
@@ -162,7 +180,7 @@ export default function Main({ slug, book }: MainProps) {
 				book={currentBook}
 				searchActive={searchVisible}
 				onChapterChange={handleChapterChange}
-				readingVerse={readingVerse}
+				readingVerse={currentVerseId}
 			/>
 
 			{/* Only render Contents when active */}
@@ -187,8 +205,9 @@ export default function Main({ slug, book }: MainProps) {
 				}}
 				currentPosition={currentPosition}
 				currentBook={currentBook}
-				currentChapterContent={currentChapterContent}
-				onSetReadingVerse={setReadingVerse}
+				isPlaying={isPlaying}
+				isAudioSupported={isSupported}
+				onPlayPause={togglePlayPause}
 			/>
 		</div>
 	);
