@@ -211,7 +211,12 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 			fullScreen
 			withCloseButton={false}
 			styles={{
-				content: { padding: 0, height: "100vh" },
+				content: {
+					padding: 0,
+					height: "100dvh",
+					paddingTop: "env(safe-area-inset-top)",
+					paddingBottom: "env(safe-area-inset-bottom)",
+				},
 				body: {
 					padding: 0,
 					overflow: "hidden",
