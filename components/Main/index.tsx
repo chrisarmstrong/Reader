@@ -32,6 +32,9 @@ export default function Main({ slug, book }: MainProps) {
 	const [currentBook, setCurrentBook] = useState<Book>(book || Books[0]);
 	const [initialLoadComplete, setInitialLoadComplete] =
 		useState<boolean>(false);
+	const [currentChapterContent, setCurrentChapterContent] = useState<
+		string | undefined
+	>(undefined);
 
 	const dismissSearch = useCallback(() => setSearchVisible(false), []);
 
@@ -106,9 +109,18 @@ export default function Main({ slug, book }: MainProps) {
 		(chapter: number, verse: number) => {
 			if (currentBook.index !== undefined) {
 				savePosition(currentBook.index, chapter, verse);
+
+				// Extract text content for the current chapter
+				const chapterData = currentBook.chapters?.find(
+					(ch) => parseInt(ch.chapter) === chapter
+				);
+				if (chapterData) {
+					const chapterText = chapterData.verses.map((v) => v.text).join(" ");
+					setCurrentChapterContent(chapterText);
+				}
 			}
 		},
-		[currentBook.index, savePosition]
+		[currentBook.index, currentBook.chapters, savePosition]
 	);
 
 	// Close modals when escaping
@@ -162,6 +174,7 @@ export default function Main({ slug, book }: MainProps) {
 				}}
 				currentPosition={currentPosition}
 				currentBook={currentBook}
+				currentChapterContent={currentChapterContent}
 			/>
 		</div>
 	);
