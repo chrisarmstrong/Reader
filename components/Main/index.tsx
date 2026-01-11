@@ -36,6 +36,7 @@ export default function Main({ slug, book }: MainProps) {
 		string | undefined
 	>(undefined);
 	const [currentReference, setCurrentReference] = useState<string | null>(null);
+	const [readingVerse, setReadingVerse] = useState<string | null>(null);
 
 	const dismissSearch = useCallback(() => setSearchVisible(false), []);
 
@@ -161,6 +162,7 @@ export default function Main({ slug, book }: MainProps) {
 				book={currentBook}
 				searchActive={searchVisible}
 				onChapterChange={handleChapterChange}
+				readingVerse={readingVerse}
 			/>
 
 			{/* Only render Contents when active */}
@@ -186,6 +188,7 @@ export default function Main({ slug, book }: MainProps) {
 				currentPosition={currentPosition}
 				currentBook={currentBook}
 				currentChapterContent={currentChapterContent}
+				onSetReadingVerse={setReadingVerse}
 			/>
 		</div>
 	);

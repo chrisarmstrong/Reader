@@ -57,6 +57,7 @@ export interface ReaderProps {
 	book: Book;
 	searchActive?: boolean;
 	onChapterChange?: (chapter: number, verse: number) => void;
+	readingVerse?: string | null;
 }
 
 export interface ContentsProps {

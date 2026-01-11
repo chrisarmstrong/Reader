@@ -6,7 +6,7 @@ import {
 	IconSearch,
 } from "@tabler/icons-react";
 import styles from "./NavBar.module.css";
-import type { ReadingPosition, Book } from "../../types/bible";
+import type { ReadingPosition, Book, Verse } from "../../types/bible";
 
 interface NavBarProps {
 	onMenuToggle: () => void;
@@ -18,6 +18,7 @@ interface NavBarProps {
 	currentPosition?: ReadingPosition | null;
 	currentBook?: Book;
 	currentChapterContent?: string;
+	onSetReadingVerse?: (id: string | null) => void;
 }
 
 function NavBar({
@@ -30,6 +31,7 @@ function NavBar({
 	currentPosition,
 	currentBook,
 	currentChapterContent,
+	onSetReadingVerse,
 }: NavBarProps) {
 	const [displayChapter, setDisplayChapter] = useState<number | null>(null);
 	const [isPlaying, setIsPlaying] = useState(false);
@@ -38,6 +40,8 @@ function NavBar({
 		useState<SpeechSynthesisVoice | null>(null);
 	const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
 	const lastChapterRef = useRef<number | null>(null);
+	const queueIndexRef = useRef<number>(0);
+	const versesRef = useRef<Verse[]>([]);
 
 	// Derive chapter from URL hash for instant updates without state changes
 	useEffect(() => {
@@ -63,7 +67,14 @@ function NavBar({
 		if (!hasSpeech) return;
 
 		const selectVoice = (voices: SpeechSynthesisVoice[]) => {
-			const enhanced = voices.find((v) => v.name.includes("Enhanced"));
+			const byName = (substr: string) =>
+				voices.find((v) =>
+					v.name?.toLowerCase().includes(substr.toLowerCase())
+				);
+			// Priority: Premium → Enhanced → English → any
+			const premium = byName("premium");
+			if (premium) return premium;
+			const enhanced = byName("enhanced");
 			if (enhanced) return enhanced;
 			const english = voices.find((v) =>
 				v.lang?.toLowerCase().startsWith("en")
@@ -92,6 +103,9 @@ function NavBar({
 		if (chapter !== lastChapterRef.current && isPlaying) {
 			window.speechSynthesis.cancel();
 			setIsPlaying(false);
+			queueIndexRef.current = 0;
+			versesRef.current = [];
+			onSetReadingVerse?.(null);
 		}
 		lastChapterRef.current = chapter || null;
 	}, [chapter, isPlaying]);
@@ -106,37 +120,68 @@ function NavBar({
 	}, []);
 
 	const handlePlayPause = useCallback(() => {
-		if (!speechSupported || !currentChapterContent) return;
+		if (!speechSupported || !currentBook || !chapter) return;
 
-		if (isPlaying) {
-			// Pause or stop speech
-			window.speechSynthesis.cancel();
-			setIsPlaying(false);
-		} else {
-			// Start speech
-			const utterance = new SpeechSynthesisUtterance(currentChapterContent);
+		const chapterData = currentBook.chapters?.find(
+			(ch) => parseInt(ch.chapter) === chapter
+		);
+		const verses = chapterData?.verses ?? [];
+		if (verses.length === 0) return;
+
+		const speakNext = () => {
+			const idx = queueIndexRef.current;
+			if (!versesRef.current[idx]) {
+				setIsPlaying(false);
+				onSetReadingVerse?.(null);
+				return;
+			}
+			const v = versesRef.current[idx];
+			const id = `${chapter}:${v.verse}`;
+			onSetReadingVerse?.(id);
+
+			const utterance = new SpeechSynthesisUtterance(v.text);
 			utteranceRef.current = utterance;
 			utterance.voice = preferredVoice ?? null;
-
-			// Configure speech parameters
 			utterance.rate = 1.0;
 			utterance.pitch = 1.0;
 			utterance.volume = 1.0;
-
-			// Handle speech end
 			utterance.onend = () => {
-				setIsPlaying(false);
+				queueIndexRef.current += 1;
+				speakNext();
 			};
-
-			// Handle speech errors
 			utterance.onerror = () => {
-				setIsPlaying(false);
+				queueIndexRef.current += 1;
+				speakNext();
 			};
-
 			window.speechSynthesis.speak(utterance);
 			setIsPlaying(true);
+		};
+
+		if (isPlaying) {
+			window.speechSynthesis.cancel();
+			setIsPlaying(false);
+			onSetReadingVerse?.(null);
+			queueIndexRef.current = 0;
+			versesRef.current = [];
+		} else {
+			versesRef.current = verses;
+			const startVerse =
+				currentPosition?.verse ?? parseInt(verses[0]?.verse || "1");
+			const startIdx = verses.findIndex(
+				(v) => parseInt(v.verse) === startVerse
+			);
+			queueIndexRef.current = startIdx >= 0 ? startIdx : 0;
+			speakNext();
 		}
-	}, [currentChapterContent, isPlaying, speechSupported]);
+	}, [
+		speechSupported,
+		currentBook,
+		chapter,
+		preferredVoice,
+		isPlaying,
+		currentPosition?.verse,
+		onSetReadingVerse,
+	]);
 
 	return (
 		<div className={styles.container}>
@@ -157,11 +202,11 @@ function NavBar({
 			<div className={styles.rightButtons}>
 				<button
 					onClick={handlePlayPause}
-					disabled={!speechSupported || !currentChapterContent}
+					disabled={!speechSupported || !currentBook || !chapter}
 					title={
 						!speechSupported
 							? "Not supported on this device"
-							: !currentChapterContent
+							: !currentBook || !chapter
 							? "Chapter not loaded yet"
 							: undefined
 					}

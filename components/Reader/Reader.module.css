@@ -75,6 +75,10 @@
 	background: var(--highlight-color);
 }
 
+.verse.reading {
+	background: var(--highlight-color);
+}
+
 @keyframes highlightFade {
 	0% {
 		background: transparent;

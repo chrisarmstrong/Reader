@@ -6,7 +6,12 @@ import Debounce from "../../utils/Debounce";
 import { useBibleContent } from "../../utils/useReadingPosition";
 import type { ReaderProps } from "../../types/bible";
 
-function Reader({ book, searchActive = false, onChapterChange }: ReaderProps) {
+function Reader({
+	book,
+	searchActive = false,
+	onChapterChange,
+	readingVerse,
+}: ReaderProps) {
 	const { cacheBibleBook } = useBibleContent();
 	const [visibleChapter, setVisibleChapter] = useState<number | null>(null);
 	const debouncedSaveRef = useRef<(chapter: number, verse: number) => void>();
@@ -183,6 +188,10 @@ function Reader({ book, searchActive = false, onChapterChange }: ReaderProps) {
 									highlightVerse &&
 									highlightVerse === chapter.chapter + `:` + verse.verse
 										? styles.highlight
+										: ""
+								} ${
+									readingVerse === chapter.chapter + `:` + verse.verse
+										? styles.reading
 										: ""
 								}`}
 							>
