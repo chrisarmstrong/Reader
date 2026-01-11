@@ -52,6 +52,8 @@
 	background: none;
 	border: none;
 	text-align: left;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .randomButton:hover,
@@ -77,6 +79,8 @@
 	display: block;
 	text-decoration: none;
 	color: inherit;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
 }
 .bookLink:hover,
 .bookLink:active {
