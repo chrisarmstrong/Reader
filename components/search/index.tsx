@@ -7,8 +7,10 @@ import {
 	useState,
 	useTransition,
 	useDeferredValue,
+	useEffect,
 } from "react";
 import Link from "next/link";
+import { Virtuoso } from "react-virtuoso";
 import {
 	Modal,
 	TextInput,
@@ -19,7 +21,6 @@ import {
 	Highlight,
 	Box,
 	Loader,
-	ScrollArea,
 	SegmentedControl,
 } from "@mantine/core";
 import { IconX } from "@tabler/icons-react";
@@ -43,13 +44,33 @@ interface SearchResultProps {
 }
 
 function Search({ active, dismiss, currentBook }: SearchProps) {
-	const [searchKeyword, setSearchKeyword] = useState<string>("");
+	const [searchKeyword, setSearchKeyword] = useState<string>(() => {
+		if (typeof window !== "undefined") {
+			return sessionStorage.getItem("searchKeyword") || "";
+		}
+		return "";
+	});
 	const [searchHistory, setSearchHistory] = useState<string[]>([]);
 	const [isPending, startTransition] = useTransition();
-	const [searchScope, setSearchScope] = useState<SearchScope>("all");
+	const [searchScope, setSearchScope] = useState<SearchScope>(() => {
+		if (typeof window !== "undefined") {
+			const saved = sessionStorage.getItem("searchScope");
+			return (saved as SearchScope) || "all";
+		}
+		return "all";
+	});
 
 	// Defer the search scope for expensive computations while keeping UI responsive
 	const deferredSearchScope = useDeferredValue(searchScope);
+
+	// Persist search state to sessionStorage
+	useEffect(() => {
+		sessionStorage.setItem("searchKeyword", searchKeyword);
+	}, [searchKeyword]);
+
+	useEffect(() => {
+		sessionStorage.setItem("searchScope", searchScope);
+	}, [searchScope]);
 
 	const updateSearchHistory = useCallback((keyword: string): void => {
 		if (keyword.length > 1) {
@@ -170,11 +191,7 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 
 	const highlightText = (text: string, keyword: string): JSX.Element => {
 		if (!keyword) return <>{text}</>;
-		return (
-			<Highlight highlight={keyword} weight={700} size="sm">
-				{text}
-			</Highlight>
-		);
+		return <Highlight highlight={keyword}>{text}</Highlight>;
 	};
 
 	const results = useMemo(
@@ -194,12 +211,13 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 			fullScreen
 			withCloseButton={false}
 			styles={{
-				content: { padding: 0 },
+				content: { padding: 0, height: "100vh" },
 				body: {
 					padding: 0,
 					overflow: "hidden",
 					display: "flex",
 					flexDirection: "column",
+					height: "100%",
 				},
 			}}
 		>
@@ -230,9 +248,16 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 				</ActionIcon>
 			</Group>
 
-			<Stack gap={0} style={{ flex: 1, overflow: "hidden" }}>
+			<Box
+				style={{
+					display: "flex",
+					flexDirection: "column",
+					flex: 1,
+					overflow: "hidden",
+				}}
+			>
 				{/* Search Scope Selector */}
-				<Box px="md" pt="md">
+				<Box px="md" pt="md" style={{ flexShrink: 0 }}>
 					<SegmentedControl
 						value={searchScope}
 						onChange={(value) => setSearchScope(value as SearchScope)}
@@ -252,7 +277,7 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 				</Box>
 
 				{isPending && searchKeyword.length > 1 && (
-					<Group justify="center" p="md">
+					<Group justify="center" p="md" style={{ flexShrink: 0 }}>
 						<Loader size="sm" />
 						<Text size="sm" c="dimmed">
 							Searching...
@@ -262,7 +287,7 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 
 				{/* Book Results */}
 				{!isPending && bookResults.length > 0 && (
-					<Stack gap="xs">
+					<Stack gap="xs" style={{ flexShrink: 0 }}>
 						{bookResults.map((result, i) => {
 							let link = "/" + result.book.toLowerCase().replace(/\s+/g, "-");
 							if (result.chapter) {
@@ -311,60 +336,73 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 
 				{/* Search Results Count */}
 				{!isPending && searchKeyword.length > 1 && (
-					<Text size="sm" c="dimmed" px="md" pt="md">
+					<Text size="sm" c="dimmed" px="md" pt="md" style={{ flexShrink: 0 }}>
 						{results.length} result{results.length !== 1 ? "s" : ""}
 					</Text>
 				)}
 
-				{/* Search Results - Scrollable */}
+				{/* Search Results - Virtualized */}
 				{!isPending && results.length > 0 && (
-					<ScrollArea style={{ flex: 1 }}>
-						<Stack gap="md" p="md">
-							{results.map((result, i) => {
-								const link = `/${result.book
-									.toLowerCase()
-									.replace(/\s+/g, "-")}?highlight=${result.chapter}:${
-									result.verse
-								}#${result.chapter}:${result.verse}`;
+					<Box style={{ flex: 1, minHeight: 0, position: "relative" }}>
+						<Box
+							style={{
+								position: "absolute",
+								top: 0,
+								left: 0,
+								right: 0,
+								bottom: 0,
+							}}
+						>
+							<Virtuoso
+								data={results}
+								itemContent={(index, result) => {
+									const link = `/${result.book
+										.toLowerCase()
+										.replace(/\s+/g, "-")}?highlight=${result.chapter}:${
+										result.verse
+									}#${result.chapter}:${result.verse}`;
 
-								return (
-									<Link
-										key={`result-${i}`}
-										href={link}
-										onClick={dismiss}
-										style={{ textDecoration: "none" }}
-									>
-										<Box
-											p="md"
-											style={{
-												borderRadius: "var(--mantine-radius-sm)",
-												border: "1px solid var(--mantine-color-gray-2)",
-												cursor: "pointer",
-												transition: "border-color 0.2s",
-											}}
-											onMouseEnter={(e) =>
-												(e.currentTarget.style.borderColor =
-													"var(--mantine-color-gray-4)")
-											}
-											onMouseLeave={(e) =>
-												(e.currentTarget.style.borderColor =
-													"var(--mantine-color-gray-2)")
-											}
-										>
-											<Group justify="space-between" mb="xs">
-												<Text size="sm" fw={500}>
-													{result.book} {result.chapter}:{result.verse}
-												</Text>
-											</Group>
-											<Text size="sm" lineClamp={2} component="div">
-												{highlightText(result.text, searchKeyword)}
-											</Text>
+									return (
+										<Box px="md" key={`result-${index}`}>
+											<Link
+												href={link}
+												onClick={dismiss}
+												style={{ textDecoration: "none", display: "block" }}
+											>
+												<Box
+													p="md"
+													mb="md"
+													style={{
+														borderRadius: "var(--mantine-radius-sm)",
+														border: "1px solid var(--mantine-color-gray-2)",
+														cursor: "pointer",
+														transition: "border-color 0.2s",
+													}}
+													onMouseEnter={(e) =>
+														(e.currentTarget.style.borderColor =
+															"var(--mantine-color-gray-4)")
+													}
+													onMouseLeave={(e) =>
+														(e.currentTarget.style.borderColor =
+															"var(--mantine-color-gray-2)")
+													}
+												>
+													<Group justify="space-between" mb="xs">
+														<Text size="sm" fw={500}>
+															{result.book} {result.chapter}:{result.verse}
+														</Text>
+													</Group>
+													<Text size="sm" component="div">
+														{highlightText(result.text, searchKeyword)}
+													</Text>
+												</Box>
+											</Link>
 										</Box>
-									</Link>
-								);
-							})}
-						</Stack>
-					</ScrollArea>
+									);
+								}}
+							/>
+						</Box>
+					</Box>
 				)}
 
 				{/* No Results Message */}
@@ -376,7 +414,7 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 							No results found for &quot;{searchKeyword}&quot;
 						</Text>
 					)}
-			</Stack>
+			</Box>
 		</Modal>
 	);
 }

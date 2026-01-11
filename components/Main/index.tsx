@@ -128,14 +128,11 @@ export default function Main({ slug, book }: MainProps) {
 
 	return (
 		<div className={styles.container}>
-			{/* Only render Search when active */}
-			{searchVisible && (
-				<Search
-					dismiss={dismissSearch}
-					active={searchVisible}
-					currentBook={currentBook}
-				/>
-			)}
+			<Search
+				dismiss={dismissSearch}
+				active={searchVisible}
+				currentBook={currentBook}
+			/>
 
 			<Reader
 				book={currentBook}
