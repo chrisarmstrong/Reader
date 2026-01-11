@@ -47,6 +47,7 @@
 	justify-content: center;
 	touch-action: manipulation;
 	-webkit-tap-highlight-color: transparent;
+	text-decoration: none;
 }
 
 .navButton:hover {

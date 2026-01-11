@@ -4,7 +4,9 @@ import {
 	IconPlayerPauseFilled,
 	IconMenu2,
 	IconSearch,
+	IconBookmark,
 } from "@tabler/icons-react";
+import Link from "next/link";
 import styles from "./NavBar.module.css";
 import type { ReadingPosition, Book } from "../../types/bible";
 
@@ -75,6 +77,13 @@ function NavBar({
 						<IconPlayerPlayFilled size={24} stroke={1.5} />
 					)}
 				</button>
+				<Link
+					href="/bookmarks"
+					className={`${styles.navButton} ${styles.iconButton}`}
+					aria-label="Bookmarks"
+				>
+					<IconBookmark size={24} stroke={1.6} />
+				</Link>
 				<button
 					onPointerUp={(e) => {
 						e.preventDefault();

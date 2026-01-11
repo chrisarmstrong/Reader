@@ -1,0 +1,146 @@
+.container {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.content {
+	background: white;
+	padding: 48px;
+	border-radius: 16px;
+	max-width: 600px;
+	width: 100%;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 300;
+	margin: 0 0 24px 0;
+	text-align: center;
+}
+
+.info {
+	margin-bottom: 32px;
+	line-height: 1.6;
+}
+
+.info p {
+	margin: 12px 0;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.upgradeButton {
+	width: 100%;
+	padding: 16px 32px;
+	background: #667eea;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background 0.2s, transform 0.15s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.upgradeButton:hover {
+	background: #5568d3;
+}
+
+.upgradeButton:active {
+	transform: scale(0.98);
+}
+
+.upgradeButton:disabled {
+	background: rgba(0, 0, 0, 0.2);
+	cursor: not-allowed;
+}
+
+.result {
+	padding: 24px;
+	border-radius: 8px;
+	margin-top: 24px;
+}
+
+.success {
+	background: #d4edda;
+	border: 1px solid #c3e6cb;
+	color: #155724;
+}
+
+.error {
+	background: #f8d7da;
+	border: 1px solid #f5c6cb;
+	color: #721c24;
+}
+
+.resultMessage {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0 0 12px 0;
+}
+
+.redirect {
+	font-size: 14px;
+	opacity: 0.7;
+	margin: 8px 0 0 0;
+}
+
+.errorDetails {
+	margin-top: 16px;
+	padding: 12px;
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.errorDetails summary {
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.errorDetails pre {
+	margin: 8px 0 0 0;
+	padding: 12px;
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	overflow-x: auto;
+	font-size: 12px;
+}
+
+.manualSteps {
+	margin-top: 24px;
+	padding-top: 24px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.manualSteps h3 {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0 0 12px 0;
+}
+
+.manualSteps ol {
+	margin: 12px 0;
+	padding-left: 24px;
+	line-height: 1.8;
+}
+
+.manualSteps li {
+	margin: 8px 0;
+}
+
+@media (max-width: 600px) {
+	.content {
+		padding: 32px 24px;
+	}
+
+	.title {
+		font-size: 24px;
+	}
+}

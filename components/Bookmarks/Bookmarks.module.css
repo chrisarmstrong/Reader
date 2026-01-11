@@ -1,0 +1,171 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	padding-top: env(safe-area-inset-top);
+	padding-bottom: calc(60px + env(safe-area-inset-bottom));
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 24px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.backButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+	color: inherit;
+	text-decoration: none;
+	opacity: 0.5;
+	transition: all 0.2s;
+	-webkit-tap-highlight-color: transparent;
+	touch-action: manipulation;
+}
+
+.backButton:hover {
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.backButton:active {
+	background: rgba(0, 0, 0, 0.1);
+	transform: scale(0.95);
+}
+
+.header h1 {
+	font-size: 32px;
+	font-weight: 300;
+	margin: 0;
+	flex: 1;
+}
+
+.count {
+	font-size: 18px;
+	opacity: 0.5;
+	font-weight: 300;
+}
+
+.loading,
+.empty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 48px 24px;
+	text-align: center;
+	opacity: 0.5;
+}
+
+.empty p {
+	margin: 12px 0 0 0;
+	font-size: 18px;
+}
+
+.emptyHint {
+	font-size: 14px !important;
+	opacity: 0.7;
+}
+
+.retryButton {
+	margin-top: 16px;
+	padding: 12px 24px;
+	background: rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background 0.2s, transform 0.15s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.retryButton:hover {
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.retryButton:active {
+	transform: scale(0.98);
+}
+
+.bookmarkItem {
+	position: relative;
+	padding: 20px 24px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	transition: background 0.15s;
+}
+
+.bookmarkItem:hover {
+	background: rgba(0, 0, 0, 0.02);
+}
+
+.bookmarkLink {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	padding-right: 40px;
+}
+
+.bookmarkHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.reference {
+	font-size: 14px;
+	font-weight: 600;
+	opacity: 0.7;
+}
+
+.date {
+	font-size: 12px;
+	opacity: 0.4;
+}
+
+.text {
+	font-family: var(--serif), georgia, serif;
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 0;
+}
+
+.note {
+	margin-top: 8px;
+	font-size: 14px;
+	font-style: italic;
+	opacity: 0.6;
+}
+
+.removeButton {
+	position: absolute;
+	right: 24px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	cursor: pointer;
+	opacity: 0.3;
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.2s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.removeButton:hover {
+	opacity: 0.7;
+}
+
+.removeButton:active {
+	opacity: 1;
+}

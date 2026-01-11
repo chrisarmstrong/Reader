@@ -47,6 +47,16 @@ export interface BibleContent {
 	lastCached: number;
 }
 
+export interface Bookmark {
+	id: string;
+	book: string;
+	chapter: string;
+	verse: string;
+	text: string;
+	createdAt: number;
+	note?: string;
+}
+
 // Component Props Types
 export interface MainProps {
 	slug?: string;

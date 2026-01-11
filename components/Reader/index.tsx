@@ -3,7 +3,9 @@
 import styles from "./Reader.module.css";
 import { useEffect, useCallback, useState, useRef, memo } from "react";
 import { useBibleContent } from "../../utils/useReadingPosition";
-import type { ReaderProps } from "../../types/bible";
+import VerseDetails from "../VerseDetails";
+import type { ReaderProps, Bookmark } from "../../types/bible";
+import BibleStorageInstance from "../../utils/BibleStorage";
 
 function Reader({
 	book,
@@ -21,9 +23,53 @@ function Reader({
 	const isScrollingRef = useRef<boolean>(false);
 	const pendingHashRef = useRef<string | null>(null);
 
+	const [selectedVerse, setSelectedVerse] = useState<{
+		book: string;
+		chapter: string;
+		verse: string;
+		text: string;
+	} | null>(null);
+
 	useEffect(() => {
 		searchActiveRef.current = searchActive;
 	}, [searchActive]);
+
+	// Inject CSS for bookmarked verses (more efficient than JS checking on each render)
+	useEffect(() => {
+		const styleId = `bookmark-styles-${book.book}`;
+		let styleEl = document.getElementById(styleId) as HTMLStyleElement;
+
+		const loadBookmarks = async () => {
+			// Filter to only bookmarks from the current book for efficiency
+			const bookmarks = await BibleStorageInstance.getAllBookmarks();
+			const bookmarkedVerses = bookmarks.filter((b) => b.book === book.book);
+
+			// Create or update style tag with CSS selectors for bookmarked verses
+			if (!styleEl) {
+				styleEl = document.createElement("style");
+				styleEl.id = styleId;
+				document.head.appendChild(styleEl);
+			}
+
+			// Generate CSS rules targeting bookmarked verse IDs
+			const selectors = bookmarkedVerses
+				.map((b) => `#${CSS.escape(`${b.chapter}:${b.verse}`)}`)
+				.join(", ");
+
+			styleEl.textContent = selectors
+				? `${selectors} { background: rgba(255, 200, 0, 0.15); border-bottom: 2px solid rgba(255, 200, 0, 0.5); }`
+				: "";
+		};
+
+		loadBookmarks();
+
+		// Cleanup style tag when book changes or component unmounts
+		return () => {
+			if (styleEl && styleEl.parentNode) {
+				styleEl.parentNode.removeChild(styleEl);
+			}
+		};
+	}, [book]);
 
 	// Track scroll state to defer hash updates until scrolling stops
 	useEffect(() => {
@@ -216,52 +262,105 @@ function Reader({
 		}
 	}, [book, highlightVerse]);
 
+	const handleVerseClick = (chapter: string, verse: string, text: string) => {
+		console.log("Verse clicked:", { book: book.book, chapter, verse });
+		setSelectedVerse({
+			book: book.book,
+			chapter,
+			verse,
+			text,
+		});
+		console.log("Selected verse state updated");
+	};
+
+	// Function to update bookmark CSS - can be called anytime
+	const updateBookmarkStyles = useCallback(async () => {
+		const styleId = `bookmark-styles-${book.book}`;
+		const styleEl = document.getElementById(styleId) as HTMLStyleElement;
+
+		if (styleEl) {
+			const bookmarks = await BibleStorageInstance.getAllBookmarks();
+			const bookmarkedVerses = bookmarks.filter((b) => b.book === book.book);
+
+			// Update CSS rules
+			const selectors = bookmarkedVerses
+				.map((b) => `#${CSS.escape(`${b.chapter}:${b.verse}`)}`)
+				.join(", ");
+
+			styleEl.textContent = selectors
+				? `${selectors} { background: rgba(255, 200, 0, 0.15); border-bottom: 2px solid rgba(255, 200, 0, 0.5); }`
+				: "";
+		}
+	}, [book]);
+
+	const handleVerseDetailsClose = async () => {
+		setSelectedVerse(null);
+		// Reload bookmarks after drawer closes (in case bookmark was added/removed)
+		await updateBookmarkStyles();
+	};
+
 	return (
-		<div
-			className={styles.container}
-			data-search-active={searchActive}
-			aria-hidden={searchActive}
-			style={searchActive ? { pointerEvents: "none" } : undefined}
-		>
-			<div className={styles.book}>
-				<h1 className={styles.bookTitle}>{book.book}</h1>
-				{book.chapters?.map((chapter) => (
-					<div
-						key={chapter.chapter}
-						className={styles.chapter}
-						id={chapter.chapter.toString()}
-					>
-						<h2 className={styles.chapterNumber}>
-							{chaptersCount > 1
-								? chapter.chapter
-								: chapter.verses[0]?.text.slice(0, 1)}
-						</h2>
-						{chapter.verses.map((verse, i) => (
-							<p
-								key={verse.verse}
-								id={chapter.chapter + `:` + verse.verse}
-								className={`${styles.verse} verse ${
-									verse.paragraph ? styles.newParagraph : ""
-								} ${
-									highlightVerse &&
-									highlightVerse === chapter.chapter + `:` + verse.verse
-										? styles.highlight
-										: ""
-								} ${
-									readingVerse === chapter.chapter + `:` + verse.verse
-										? styles.reading
-										: ""
-								}`}
-							>
-								<sup>{verse.verse}&nbsp;</sup>
-								{i === 0 && chaptersCount < 2 && verse.text.slice(1)}
-								{(i > 0 || chaptersCount > 1) && verse.text}
-							</p>
-						))}
-					</div>
-				))}
+		<>
+			<div
+				className={styles.container}
+				data-search-active={searchActive}
+				aria-hidden={searchActive}
+				style={searchActive ? { pointerEvents: "none" } : undefined}
+			>
+				<div className={styles.book}>
+					<h1 className={styles.bookTitle}>{book.book}</h1>
+					{book.chapters?.map((chapter) => (
+						<div
+							key={chapter.chapter}
+							className={styles.chapter}
+							id={chapter.chapter.toString()}
+						>
+							<h2 className={styles.chapterNumber}>
+								{chaptersCount > 1
+									? chapter.chapter
+									: chapter.verses[0]?.text.slice(0, 1)}
+							</h2>
+							{chapter.verses.map((verse, i) => (
+								<p
+									key={verse.verse}
+									id={chapter.chapter + `:` + verse.verse}
+									className={`${styles.verse} verse ${
+										verse.paragraph ? styles.newParagraph : ""
+									} ${
+										highlightVerse &&
+										highlightVerse === chapter.chapter + `:` + verse.verse
+											? styles.highlight
+											: ""
+									} ${
+										readingVerse === chapter.chapter + `:` + verse.verse
+											? styles.reading
+											: ""
+									}`}
+									onPointerUp={(e) => {
+										e.preventDefault();
+										handleVerseClick(chapter.chapter, verse.verse, verse.text);
+									}}
+								>
+									<sup>{verse.verse}&nbsp;</sup>
+									{i === 0 && chaptersCount < 2 && verse.text.slice(1)}
+									{(i > 0 || chaptersCount > 1) && verse.text}
+								</p>
+							))}
+						</div>
+					))}
+				</div>
 			</div>
-		</div>
+
+			<VerseDetails
+				active={selectedVerse !== null}
+				book={selectedVerse?.book || ""}
+				chapter={selectedVerse?.chapter || ""}
+				verse={selectedVerse?.verse || ""}
+				text={selectedVerse?.text || ""}
+				onClose={handleVerseDetailsClose}
+				onBookmarkChange={updateBookmarkStyles}
+			/>
+		</>
 	);
 }
 

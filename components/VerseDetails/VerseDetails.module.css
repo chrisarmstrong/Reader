@@ -1,0 +1,88 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.reference {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.closeButton {
+	background: none;
+	border: none;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: opacity 0.2s;
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.closeButton:hover {
+	opacity: 1;
+}
+
+.content {
+	padding: 24px;
+	flex: 1;
+	overflow-y: auto;
+}
+
+.verseText {
+	font-size: 18px;
+	line-height: 1.6;
+	margin: 0;
+	font-family: var(--serif), georgia, serif;
+}
+
+.actions {
+	display: flex;
+	gap: 12px;
+	padding: 20px 24px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.actionButton {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	padding: 16px;
+	background: rgba(0, 0, 0, 0.03);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.2s, transform 0.15s;
+	font-size: 14px;
+	font-weight: 500;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.actionButton:hover {
+	background: rgba(0, 0, 0, 0.06);
+	transform: scale(1.02);
+}
+
+.actionButton:active {
+	transform: scale(0.98);
+}
+
+.actionButton:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.actionButton span {
+	color: inherit;
+}
