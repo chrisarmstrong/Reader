@@ -2,7 +2,6 @@
 
 import styles from "./Reader.module.css";
 import { useEffect, useCallback, useState, useRef, memo } from "react";
-import Debounce from "../../utils/Debounce";
 import { useBibleContent } from "../../utils/useReadingPosition";
 import type { ReaderProps } from "../../types/bible";
 
@@ -13,13 +12,11 @@ function Reader({
 	readingVerse,
 }: ReaderProps) {
 	const { cacheBibleBook } = useBibleContent();
-	const [visibleChapter, setVisibleChapter] = useState<number | null>(null);
 	const initialHashScrollDone = useRef(false);
 	const lastHashRef = useRef<string | null>(null);
 	const lastHashUpdateAtRef = useRef<number>(0);
 	const visibleIdsRef = useRef<Set<string>>(new Set());
 	const searchActiveRef = useRef<boolean>(false);
-	const pendingHashUpdateRef = useRef<number | null>(null);
 	const scrollTimeoutRef = useRef<number | null>(null);
 	const isScrollingRef = useRef<boolean>(false);
 	const pendingHashRef = useRef<string | null>(null);
@@ -156,8 +153,6 @@ function Reader({
 						}
 					}
 
-					setVisibleChapter(chapter);
-
 					// Immediately notify parent of visible chapter change for UI
 					// Only update if chapter or verse actually changed to avoid unnecessary renders
 					if (onChapterChange) {
@@ -176,7 +171,7 @@ function Reader({
 			observer.disconnect();
 			visibleIds.clear();
 		};
-	}, [book]);
+	}, [book, onChapterChange]);
 
 	const chaptersCount = book?.chapters.length || 0;
 	let highlightVerse: string | null = null;

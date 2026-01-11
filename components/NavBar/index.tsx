@@ -11,10 +11,6 @@ import type { ReadingPosition, Book } from "../../types/bible";
 interface NavBarProps {
 	onMenuToggle: () => void;
 	onSearchToggle: () => void;
-	onNextChapter: () => void;
-	onPrevChapter: () => void;
-	canGoNext?: boolean;
-	canGoPrev?: boolean;
 	currentPosition?: ReadingPosition | null;
 	currentBook?: Book;
 	visibleChapter?: number | null;
@@ -26,10 +22,6 @@ interface NavBarProps {
 function NavBar({
 	onMenuToggle,
 	onSearchToggle,
-	onNextChapter,
-	onPrevChapter,
-	canGoNext = true,
-	canGoPrev = true,
 	currentPosition,
 	currentBook,
 	visibleChapter,

@@ -15,17 +15,7 @@ import NavBar from "../NavBar";
 import { Books } from "../../utils/Books";
 import { useReadingPosition } from "../../utils/useReadingPosition";
 import { useAudioPlayer } from "../../utils/useAudioPlayer";
-
-function scrollTo(chapter: number, verse?: number): void {
-	let chapterVerse = chapter.toString();
-	if (verse) {
-		chapterVerse = chapter + ":" + verse;
-	}
-	const element = document.getElementById(chapterVerse);
-	if (element) {
-		element.scrollIntoView({ behavior: "instant" });
-	}
-}
+import { scrollToVerse } from "../../utils/scrollToVerse";
 
 export default function Main({ slug, book }: MainProps) {
 	const [bookNavVisible, setBookNavVisible] = useState<boolean>(false);
@@ -57,34 +47,33 @@ export default function Main({ slug, book }: MainProps) {
 			book: currentBook,
 		});
 
-	// Helper to get current chapter from hash
-	const getCurrentChapter = useCallback(() => {
-		if (typeof window === "undefined") return currentPosition?.chapter || 1;
+	// Helper to get current position from hash (parses once instead of separately)
+	const getCurrentPosition = useCallback(() => {
+		if (typeof window === "undefined") {
+			return {
+				chapter: currentPosition?.chapter || 1,
+				verse: currentPosition?.verse,
+			};
+		}
 		const hash = window.location.hash.substring(1);
 		if (hash) {
-			const [chapter] = hash.split(":");
-			return parseInt(chapter) || currentPosition?.chapter || 1;
+			const [chapter, verse] = hash.split(":");
+			return {
+				chapter: parseInt(chapter) || currentPosition?.chapter || 1,
+				verse: verse ? parseInt(verse) : currentPosition?.verse,
+			};
 		}
-		return currentPosition?.chapter || 1;
-	}, [currentPosition?.chapter]);
-
-	// Helper to get current verse from hash
-	const getCurrentVerse = useCallback(() => {
-		if (typeof window === "undefined") return currentPosition?.verse;
-		const hash = window.location.hash.substring(1);
-		if (hash) {
-			const [, verse] = hash.split(":");
-			return parseInt(verse) || currentPosition?.verse;
-		}
-		return currentPosition?.verse;
-	}, [currentPosition?.verse]);
+		return {
+			chapter: currentPosition?.chapter || 1,
+			verse: currentPosition?.verse,
+		};
+	}, [currentPosition?.chapter, currentPosition?.verse]);
 
 	// Wrapper for togglePlayPause that gets current position
 	const handlePlayPause = useCallback(() => {
-		const chapter = getCurrentChapter();
-		const verse = getCurrentVerse();
+		const { chapter, verse } = getCurrentPosition();
 		togglePlayPause(chapter, verse);
-	}, [togglePlayPause, getCurrentChapter, getCurrentVerse]);
+	}, [togglePlayPause, getCurrentPosition]);
 
 	useEffect(() => {
 		// Only restore position on initial load, not when navigating between books
@@ -103,7 +92,7 @@ export default function Main({ slug, book }: MainProps) {
 							behavior: "instant",
 						});
 					} else {
-						scrollTo(currentPosition.chapter, currentPosition.verse);
+						scrollToVerse(currentPosition.chapter, currentPosition.verse);
 					}
 				}, 200);
 			} else {
@@ -231,12 +220,6 @@ export default function Main({ slug, book }: MainProps) {
 			<NavBar
 				onMenuToggle={handleMenuToggle}
 				onSearchToggle={handleSearchToggle}
-				onNextChapter={() => {
-					// Implementation for next chapter navigation
-				}}
-				onPrevChapter={() => {
-					// Implementation for previous chapter navigation
-				}}
 				currentPosition={currentPosition}
 				currentBook={currentBook}
 				visibleChapter={visibleChapter}

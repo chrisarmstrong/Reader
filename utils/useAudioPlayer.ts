@@ -1,6 +1,7 @@
 // Custom hook for Bible audio playback using Web Speech API
 import { useState, useEffect, useCallback, useRef } from "react";
 import type { Book, Verse } from "../types/bible";
+import { scrollToVerse } from "./scrollToVerse";
 
 interface UseAudioPlayerProps {
 	book?: Book;
@@ -206,11 +207,7 @@ export function useAudioPlayer({
 			queueIndexRef.current = startIdx >= 0 ? startIdx : 0;
 
 			// Scroll to the verse that will start playing
-			const verseId = `${chapter}:${startVerseNum}`;
-			const verseElement = document.getElementById(verseId);
-			if (verseElement) {
-				verseElement.scrollIntoView({ behavior: "smooth", block: "start" });
-			}
+			scrollToVerse(chapter, startVerseNum, "smooth");
 
 			setIsPlaying(true);
 			speakNext();

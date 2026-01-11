@@ -58,7 +58,6 @@ export interface ReaderProps {
 	searchActive?: boolean;
 	onChapterChange?: (chapter: number, verse: number) => void;
 	readingVerse?: string | null;
-	onVisibleChapterChange?: (chapter: number) => void;
 }
 
 export interface ContentsProps {
@@ -76,8 +75,10 @@ export interface SearchProps {
 export interface NavBarProps {
 	onMenuToggle: () => void;
 	onSearchToggle: () => void;
-	onNextChapter: () => void;
-	onPrevChapter: () => void;
-	canGoNext?: boolean;
-	canGoPrev?: boolean;
+	currentPosition?: ReadingPosition | null;
+	currentBook?: Book;
+	visibleChapter?: number | null;
+	isPlaying?: boolean;
+	isAudioSupported?: boolean;
+	onPlayPause?: () => void;
 }
