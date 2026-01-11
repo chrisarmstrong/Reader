@@ -198,7 +198,11 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 		() => getResults(searchKeyword, deferredSearchScope),
 		// Only include currentBook when scope is "book", otherwise it causes unnecessary re-searches
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-		[searchKeyword, deferredSearchScope, deferredSearchScope === "book" ? currentBook : null]
+		[
+			searchKeyword,
+			deferredSearchScope,
+			deferredSearchScope === "book" ? currentBook : null,
+		]
 	);
 	const bookResults = useMemo(
 		() => getBookResults(searchKeyword),
