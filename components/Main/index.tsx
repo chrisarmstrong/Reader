@@ -35,6 +35,7 @@ export default function Main({ slug, book }: MainProps) {
 	const [currentChapterContent, setCurrentChapterContent] = useState<
 		string | undefined
 	>(undefined);
+	const [currentReference, setCurrentReference] = useState<string | null>(null);
 
 	const dismissSearch = useCallback(() => setSearchVisible(false), []);
 
@@ -109,6 +110,7 @@ export default function Main({ slug, book }: MainProps) {
 		(chapter: number, verse: number) => {
 			if (currentBook.index !== undefined) {
 				savePosition(currentBook.index, chapter, verse);
+				setCurrentReference(`${currentBook.book} ${chapter}:${verse}`);
 
 				// Extract text content for the current chapter
 				const chapterData = currentBook.chapters?.find(
@@ -120,8 +122,17 @@ export default function Main({ slug, book }: MainProps) {
 				}
 			}
 		},
-		[currentBook.index, currentBook.chapters, savePosition]
+		[currentBook.index, currentBook.chapters, currentBook.book, savePosition]
 	);
+
+	useEffect(() => {
+		if (typeof document === "undefined") return;
+
+		const appName = "KJV";
+		document.title = currentReference
+			? `${currentReference} · ${appName}`
+			: appName;
+	}, [currentReference]);
 
 	// Close modals when escaping
 	useEffect(() => {

@@ -31,6 +31,7 @@ function NavBar({
 }: NavBarProps) {
 	const [displayChapter, setDisplayChapter] = useState<number | null>(null);
 	const [isPlaying, setIsPlaying] = useState(false);
+	const [speechSupported, setSpeechSupported] = useState(true);
 	const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
 	const lastChapterRef = useRef<number | null>(null);
 
@@ -47,6 +48,12 @@ function NavBar({
 		handleHashChange();
 		window.addEventListener("hashchange", handleHashChange);
 		return () => window.removeEventListener("hashchange", handleHashChange);
+	}, []);
+
+	// Detect Web Speech API support (iOS Safari may lack it)
+	useEffect(() => {
+		if (typeof window === "undefined") return;
+		setSpeechSupported("speechSynthesis" in window);
 	}, []);
 
 	// Fallback to currentPosition for initial render before hash is set
@@ -71,7 +78,7 @@ function NavBar({
 	}, []);
 
 	const handlePlayPause = useCallback(() => {
-		if (!currentChapterContent) return;
+		if (!speechSupported || !currentChapterContent) return;
 
 		if (isPlaying) {
 			// Pause or stop speech
@@ -100,7 +107,7 @@ function NavBar({
 			window.speechSynthesis.speak(utterance);
 			setIsPlaying(true);
 		}
-	}, [currentChapterContent, isPlaying]);
+	}, [currentChapterContent, isPlaying, speechSupported]);
 
 	return (
 		<div className={styles.container}>
@@ -117,19 +124,25 @@ function NavBar({
 			) : null}
 
 			<div className={styles.rightButtons}>
-				{currentChapterContent && (
-					<button
-						onClick={handlePlayPause}
-						className={`${styles.navButton} ${styles.playButton}`}
-						aria-label={isPlaying ? "Pause" : "Play"}
-					>
-						{isPlaying ? (
-							<IconPlayerPauseFilled size={24} stroke={1.5} />
-						) : (
-							<IconPlayerPlayFilled size={24} stroke={1.5} />
-						)}
-					</button>
-				)}
+				<button
+					onClick={handlePlayPause}
+					disabled={!speechSupported || !currentChapterContent}
+					title={
+						!speechSupported
+							? "Not supported on this device"
+							: !currentChapterContent
+							? "Chapter not loaded yet"
+							: undefined
+					}
+					className={`${styles.navButton} ${styles.playButton}`}
+					aria-label={isPlaying ? "Pause" : "Play"}
+				>
+					{isPlaying ? (
+						<IconPlayerPauseFilled size={24} stroke={1.5} />
+					) : (
+						<IconPlayerPlayFilled size={24} stroke={1.5} />
+					)}
+				</button>
 				<button
 					onClick={onSearchToggle}
 					className={`${styles.navButton} ${styles.iconButton}`}
