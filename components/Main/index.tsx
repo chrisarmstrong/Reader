@@ -4,6 +4,7 @@ import styles from "./Main.module.css";
 import "../../styles/styles.css";
 
 import { useState, useEffect, useCallback } from "react";
+import { useHotkeys } from "@mantine/hooks";
 import type { MainProps, Book } from "../../types/bible";
 
 import Search from "../search";
@@ -99,6 +100,8 @@ export default function Main({ slug, book }: MainProps) {
 		setSearchVisible((prev) => !prev);
 	}, []);
 
+	useHotkeys([["mod+k", handleSearchToggle]]);
+
 	const handleChapterChange = useCallback(
 		(chapter: number, verse: number) => {
 			if (currentBook.index !== undefined) {
@@ -127,7 +130,11 @@ export default function Main({ slug, book }: MainProps) {
 		<div className={styles.container}>
 			{/* Only render Search when active */}
 			{searchVisible && (
-				<Search dismiss={dismissSearch} active={searchVisible} />
+				<Search
+					dismiss={dismissSearch}
+					active={searchVisible}
+					currentBook={currentBook}
+				/>
 			)}
 
 			<Reader

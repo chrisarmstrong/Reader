@@ -1,6 +1,13 @@
 "use client";
 
-import { memo, useCallback, useMemo, useState } from "react";
+import {
+	memo,
+	useCallback,
+	useMemo,
+	useState,
+	useTransition,
+	useDeferredValue,
+} from "react";
 import Link from "next/link";
 import {
 	Modal,
@@ -11,15 +18,21 @@ import {
 	ActionIcon,
 	Highlight,
 	Box,
+	Loader,
+	ScrollArea,
+	SegmentedControl,
 } from "@mantine/core";
 import { IconX } from "@tabler/icons-react";
 import { Books } from "../../utils/Books";
 import Debounce from "../../utils/Debounce";
 import type { Book } from "../../types/bible";
 
+type SearchScope = "all" | "book" | "old" | "new";
+
 interface SearchProps {
 	active: boolean;
 	dismiss: () => void;
+	currentBook?: Book;
 }
 
 interface SearchResultProps {
@@ -29,9 +42,14 @@ interface SearchResultProps {
 	text: string;
 }
 
-function Search({ active, dismiss }: SearchProps) {
+function Search({ active, dismiss, currentBook }: SearchProps) {
 	const [searchKeyword, setSearchKeyword] = useState<string>("");
 	const [searchHistory, setSearchHistory] = useState<string[]>([]);
+	const [isPending, startTransition] = useTransition();
+	const [searchScope, setSearchScope] = useState<SearchScope>("all");
+
+	// Defer the search scope for expensive computations while keeping UI responsive
+	const deferredSearchScope = useDeferredValue(searchScope);
 
 	const updateSearchHistory = useCallback((keyword: string): void => {
 		if (keyword.length > 1) {
@@ -48,22 +66,42 @@ function Search({ active, dismiss }: SearchProps) {
 	const handleSearch = useMemo(
 		() =>
 			Debounce((e: React.ChangeEvent<HTMLInputElement>) => {
-				setSearchKeyword(e.target.value);
-				updateSearchHistory(e.target.value);
-			}, 500),
+				const value = e.target.value;
+				startTransition(() => {
+					setSearchKeyword(value);
+					updateSearchHistory(value);
+				});
+			}, 300),
 		[updateSearchHistory]
 	);
 
-	const getResults = (keyword: string): SearchResultProps[] => {
+	const getResults = (
+		keyword: string,
+		scope: SearchScope
+	): SearchResultProps[] => {
+		if (keyword.length < 2) return [];
+
 		const results: SearchResultProps[] = [];
 		const keywords = keyword.toLowerCase().split(" ");
 
-		Books.forEach((book) =>
-			book.chapters.forEach((chapter) =>
-				chapter.verses.forEach((verse) => {
+		// Filter books based on scope
+		let booksToSearch = Books;
+		if (scope === "book" && currentBook) {
+			booksToSearch = [currentBook];
+		} else if (scope === "old") {
+			// Old Testament: first 39 books (Genesis to Malachi)
+			booksToSearch = Books.slice(0, 39);
+		} else if (scope === "new") {
+			// New Testament: last 27 books (Matthew to Revelation)
+			booksToSearch = Books.slice(39);
+		}
+
+		for (const book of booksToSearch) {
+			for (const chapter of book.chapters) {
+				for (const verse of chapter.verses) {
 					const verseText = verse.text.toLowerCase();
 					const match = keywords.every((word) => verseText.includes(word));
-					if (keyword.length > 1 && match) {
+					if (match) {
 						results.push({
 							book: book.book,
 							chapter: chapter.chapter,
@@ -71,9 +109,9 @@ function Search({ active, dismiss }: SearchProps) {
 							text: verse.text,
 						});
 					}
-				})
-			)
-		);
+				}
+			}
+		}
 
 		return results;
 	};
@@ -139,7 +177,10 @@ function Search({ active, dismiss }: SearchProps) {
 		);
 	};
 
-	const results = useMemo(() => getResults(searchKeyword), [searchKeyword]);
+	const results = useMemo(
+		() => getResults(searchKeyword, deferredSearchScope),
+		[searchKeyword, deferredSearchScope, currentBook]
+	);
 	const bookResults = useMemo(
 		() => getBookResults(searchKeyword),
 		[searchKeyword]
@@ -189,9 +230,38 @@ function Search({ active, dismiss }: SearchProps) {
 				</ActionIcon>
 			</Group>
 
-			<Stack gap="md" p="md" style={{ overflow: "auto", flex: 1 }}>
+			<Stack gap={0} style={{ flex: 1, overflow: "hidden" }}>
+				{/* Search Scope Selector */}
+				<Box px="md" pt="md">
+					<SegmentedControl
+						value={searchScope}
+						onChange={(value) => setSearchScope(value as SearchScope)}
+						data={[
+							{ label: "All", value: "all" },
+							{
+								label: currentBook?.book || "Book",
+								value: "book",
+								disabled: !currentBook,
+							},
+							{ label: "Old", value: "old" },
+							{ label: "New", value: "new" },
+						]}
+						fullWidth
+						size="sm"
+					/>
+				</Box>
+
+				{isPending && searchKeyword.length > 1 && (
+					<Group justify="center" p="md">
+						<Loader size="sm" />
+						<Text size="sm" c="dimmed">
+							Searching...
+						</Text>
+					</Group>
+				)}
+
 				{/* Book Results */}
-				{bookResults.length > 0 && (
+				{!isPending && bookResults.length > 0 && (
 					<Stack gap="xs">
 						{bookResults.map((result, i) => {
 							let link = "/" + result.book.toLowerCase().replace(/\s+/g, "-");
@@ -240,61 +310,66 @@ function Search({ active, dismiss }: SearchProps) {
 				)}
 
 				{/* Search Results Count */}
-				{searchKeyword.length > 1 && (
-					<Text size="sm" c="dimmed">
+				{!isPending && searchKeyword.length > 1 && (
+					<Text size="sm" c="dimmed" px="md" pt="md">
 						{results.length} result{results.length !== 1 ? "s" : ""}
 					</Text>
 				)}
 
-				{/* Search Results */}
-				<Stack gap="md">
-					{results.map((result, i) => {
-						const link = `/${result.book
-							.toLowerCase()
-							.replace(/\s+/g, "-")}?highlight=${result.chapter}:${
-							result.verse
-						}#${result.chapter}:${result.verse}`;
+				{/* Search Results - Scrollable */}
+				{!isPending && results.length > 0 && (
+					<ScrollArea style={{ flex: 1 }}>
+						<Stack gap="md" p="md">
+							{results.map((result, i) => {
+								const link = `/${result.book
+									.toLowerCase()
+									.replace(/\s+/g, "-")}?highlight=${result.chapter}:${
+									result.verse
+								}#${result.chapter}:${result.verse}`;
 
-						return (
-							<Link
-								key={`result-${i}`}
-								href={link}
-								onClick={dismiss}
-								style={{ textDecoration: "none" }}
-							>
-								<Box
-									p="md"
-									style={{
-										borderRadius: "var(--mantine-radius-sm)",
-										border: "1px solid var(--mantine-color-gray-2)",
-										cursor: "pointer",
-										transition: "border-color 0.2s",
-									}}
-									onMouseEnter={(e) =>
-										(e.currentTarget.style.borderColor =
-											"var(--mantine-color-gray-4)")
-									}
-									onMouseLeave={(e) =>
-										(e.currentTarget.style.borderColor =
-											"var(--mantine-color-gray-2)")
-									}
-								>
-									<Group justify="space-between" mb="xs">
-										<Text size="sm" fw={500}>
-											{result.book} {result.chapter}:{result.verse}
-										</Text>
-									</Group>
-									<Text size="sm" lineClamp={2}>
-										{highlightText(result.text, searchKeyword)}
-									</Text>
-								</Box>
-							</Link>
-						);
-					})}
-				</Stack>
+								return (
+									<Link
+										key={`result-${i}`}
+										href={link}
+										onClick={dismiss}
+										style={{ textDecoration: "none" }}
+									>
+										<Box
+											p="md"
+											style={{
+												borderRadius: "var(--mantine-radius-sm)",
+												border: "1px solid var(--mantine-color-gray-2)",
+												cursor: "pointer",
+												transition: "border-color 0.2s",
+											}}
+											onMouseEnter={(e) =>
+												(e.currentTarget.style.borderColor =
+													"var(--mantine-color-gray-4)")
+											}
+											onMouseLeave={(e) =>
+												(e.currentTarget.style.borderColor =
+													"var(--mantine-color-gray-2)")
+											}
+										>
+											<Group justify="space-between" mb="xs">
+												<Text size="sm" fw={500}>
+													{result.book} {result.chapter}:{result.verse}
+												</Text>
+											</Group>
+											<Text size="sm" lineClamp={2} component="div">
+												{highlightText(result.text, searchKeyword)}
+											</Text>
+										</Box>
+									</Link>
+								);
+							})}
+						</Stack>
+					</ScrollArea>
+				)}
 
 				{/* No Results Message */}
-				{searchKeyword.length > 1 &&
+				{!isPending &&
+					searchKeyword.length > 1 &&
 					results.length === 0 &&
 					bookResults.length === 0 && (
 						<Text ta="center" c="dimmed" py="xl">
