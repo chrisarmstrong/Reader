@@ -34,6 +34,8 @@ function NavBar({
 	const [displayChapter, setDisplayChapter] = useState<number | null>(null);
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [speechSupported, setSpeechSupported] = useState(true);
+	const [preferredVoice, setPreferredVoice] =
+		useState<SpeechSynthesisVoice | null>(null);
 	const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
 	const lastChapterRef = useRef<number | null>(null);
 
@@ -55,7 +57,31 @@ function NavBar({
 	// Detect Web Speech API support (iOS Safari may lack it)
 	useEffect(() => {
 		if (typeof window === "undefined") return;
-		setSpeechSupported("speechSynthesis" in window);
+		const hasSpeech = "speechSynthesis" in window;
+		setSpeechSupported(hasSpeech);
+
+		if (!hasSpeech) return;
+
+		const selectVoice = (voices: SpeechSynthesisVoice[]) => {
+			const enhanced = voices.find((v) => v.name.includes("Enhanced"));
+			if (enhanced) return enhanced;
+			const english = voices.find((v) =>
+				v.lang?.toLowerCase().startsWith("en")
+			);
+			if (english) return english;
+			return voices[0] || null;
+		};
+
+		const assignVoice = () => {
+			const voices = window.speechSynthesis.getVoices();
+			setPreferredVoice(selectVoice(voices));
+		};
+
+		assignVoice();
+		window.speechSynthesis.addEventListener("voiceschanged", assignVoice);
+		return () => {
+			window.speechSynthesis.removeEventListener("voiceschanged", assignVoice);
+		};
 	}, []);
 
 	// Fallback to currentPosition for initial render before hash is set
@@ -90,6 +116,7 @@ function NavBar({
 			// Start speech
 			const utterance = new SpeechSynthesisUtterance(currentChapterContent);
 			utteranceRef.current = utterance;
+			utterance.voice = preferredVoice ?? null;
 
 			// Configure speech parameters
 			utterance.rate = 1.0;
