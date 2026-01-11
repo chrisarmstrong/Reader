@@ -67,31 +67,58 @@ function NavBar({
 		if (!hasSpeech) return;
 
 		const selectVoice = (voices: SpeechSynthesisVoice[]) => {
-			const byName = (substr: string) =>
-				voices.find((v) =>
-					v.name?.toLowerCase().includes(substr.toLowerCase())
-				);
-			// Priority: Premium → Enhanced → English → any
-			const premium = byName("premium");
+			const lower = (s?: string) => s?.toLowerCase() ?? "";
+			const isEnglish = (v: SpeechSynthesisVoice) =>
+				lower(v.lang).startsWith("en");
+			const englishVoices = voices.filter(isEnglish);
+			const byName = (list: SpeechSynthesisVoice[], substr: string) =>
+				list.find((v) => lower(v.name).includes(substr.toLowerCase()));
+			// Priority: Premium → Enhanced → Siri (prefer English variants first)
+			const premium =
+				byName(englishVoices, "premium") || byName(voices, "premium");
 			if (premium) return premium;
-			const enhanced = byName("enhanced");
+			const enhanced =
+				byName(englishVoices, "enhanced") || byName(voices, "enhanced");
 			if (enhanced) return enhanced;
-			const english = voices.find((v) =>
-				v.lang?.toLowerCase().startsWith("en")
-			);
+			const siri = byName(englishVoices, "siri") || byName(voices, "siri");
+			if (siri) return siri;
+			// Fallback to any English voice, then any voice
+			const english = englishVoices[0];
 			if (english) return english;
 			return voices[0] || null;
 		};
 
+		let retries = 0;
 		const assignVoice = () => {
 			const voices = window.speechSynthesis.getVoices();
-			setPreferredVoice(selectVoice(voices));
+			if (voices && voices.length) {
+				setPreferredVoice(selectVoice(voices));
+				return true;
+			}
+			return false;
 		};
 
-		assignVoice();
-		window.speechSynthesis.addEventListener("voiceschanged", assignVoice);
+		// Try once immediately
+		if (!assignVoice()) {
+			// Poll a few times because some browsers don't fire voiceschanged reliably
+			const tryLoadVoices = () => {
+				if (assignVoice()) return;
+				if (retries++ < 12) {
+					setTimeout(tryLoadVoices, 250);
+				}
+			};
+			tryLoadVoices();
+		}
+
+		const onVoicesChanged = () => {
+			assignVoice();
+		};
+		window.speechSynthesis.addEventListener("voiceschanged", onVoicesChanged);
 		return () => {
-			window.speechSynthesis.removeEventListener("voiceschanged", assignVoice);
+			window.speechSynthesis.removeEventListener(
+				"voiceschanged",
+				onVoicesChanged
+			);
 		};
 	}, []);
 
@@ -119,8 +146,41 @@ function NavBar({
 		};
 	}, []);
 
-	const handlePlayPause = useCallback(() => {
+	const handlePlayPause = useCallback(async () => {
 		if (!speechSupported || !currentBook || !chapter) return;
+
+		// Lazily load/select voices only upon user gesture (play)
+		if (!preferredVoice) {
+			const synth = window.speechSynthesis;
+			let voices = synth.getVoices();
+			if (!voices || voices.length === 0) {
+				await new Promise<void>((resolve) => {
+					const handler = () => {
+						synth.removeEventListener("voiceschanged", handler);
+						resolve();
+					};
+					synth.addEventListener("voiceschanged", handler);
+					// Safety timeout in case event doesn't fire
+					setTimeout(resolve, 1000);
+				});
+				voices = synth.getVoices();
+			}
+			const lower = (s?: string) => s?.toLowerCase() ?? "";
+			const isEnglish = (vv: SpeechSynthesisVoice) =>
+				lower(vv.lang).startsWith("en");
+			const englishVoices = voices.filter(isEnglish);
+			const byName = (list: SpeechSynthesisVoice[], substr: string) =>
+				list.find((vv) => lower(vv.name).includes(substr.toLowerCase()));
+			const premium =
+				byName(englishVoices, "premium") || byName(voices, "premium");
+			const enhanced =
+				byName(englishVoices, "enhanced") || byName(voices, "enhanced");
+			const siri = byName(englishVoices, "siri") || byName(voices, "siri");
+			const english = englishVoices[0];
+			const selected =
+				premium || enhanced || siri || english || voices[0] || null;
+			if (selected) setPreferredVoice(selected);
+		}
 
 		const chapterData = currentBook.chapters?.find(
 			(ch) => parseInt(ch.chapter) === chapter
@@ -141,7 +201,30 @@ function NavBar({
 
 			const utterance = new SpeechSynthesisUtterance(v.text);
 			utteranceRef.current = utterance;
-			utterance.voice = preferredVoice ?? null;
+			// Ensure we have a voice; reselect if missing
+			const voices = window.speechSynthesis.getVoices();
+			const voiceToUse =
+				preferredVoice ?? (voices.length ? voices.find((vv) => vv) : null);
+			if (!preferredVoice && voices.length) {
+				// Use same selection strategy to pick best available
+				const lower = (s?: string) => s?.toLowerCase() ?? "";
+				const isEnglish = (vv: SpeechSynthesisVoice) =>
+					lower(vv.lang).startsWith("en");
+				const englishVoices = voices.filter(isEnglish);
+				const byName = (list: SpeechSynthesisVoice[], substr: string) =>
+					list.find((vv) => lower(vv.name).includes(substr.toLowerCase()));
+				const premium =
+					byName(englishVoices, "premium") || byName(voices, "premium");
+				const enhanced =
+					byName(englishVoices, "enhanced") || byName(voices, "enhanced");
+				const siri = byName(englishVoices, "siri") || byName(voices, "siri");
+				const english = englishVoices[0];
+				const selected =
+					premium || enhanced || siri || english || voices[0] || null;
+				if (selected) setPreferredVoice(selected);
+			}
+			utterance.voice = voiceToUse ?? null;
+			utterance.lang = voiceToUse?.lang ?? "en-US";
 			utterance.rate = 1.0;
 			utterance.pitch = 1.0;
 			utterance.volume = 1.0;
