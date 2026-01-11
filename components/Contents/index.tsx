@@ -80,9 +80,28 @@ export default function Contents({
 		};
 	}, [active, books]);
 
+	const handleRandomBook = () => {
+		const randomBook = books[Math.floor(Math.random() * books.length)];
+		const randomChapter =
+			Math.floor(Math.random() * randomBook.chapters.length) + 1;
+
+		if (onBookSelect) {
+			onBookSelect(randomBook);
+		}
+
+		// Navigate to the random chapter
+		const bookSlug = randomBook.book.toLowerCase().replace(/\s+/g, "-");
+		window.location.href = `/${bookSlug}#${randomChapter}:1`;
+
+		dismiss();
+	};
+
 	return (
 		<div className={styles.container} data-active={active}>
 			<div className={styles.bookList} ref={listRef}>
+				<button className={styles.randomButton} onClick={handleRandomBook}>
+					Random
+				</button>
 				{books.map((book, i) => (
 					<Link
 						key={book.book}
