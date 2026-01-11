@@ -47,23 +47,39 @@ export default function Main({ slug, book }: MainProps) {
 		isLoading,
 	} = useReadingPosition();
 
-	// Get current chapter from position or hash
-	const getCurrentChapter = () => {
-		if (typeof window === "undefined") return currentPosition?.chapter;
-		const hash = window.location.hash.substring(1);
-		if (hash) {
-			const [chapter] = hash.split(":");
-			return parseInt(chapter) || currentPosition?.chapter;
-		}
-		return currentPosition?.chapter;
-	};
-
 	const { isPlaying, isSupported, currentVerseId, togglePlayPause } =
 		useAudioPlayer({
 			book: currentBook,
-			chapter: getCurrentChapter(),
-			startVerse: currentPosition?.verse,
 		});
+
+	// Helper to get current chapter from hash
+	const getCurrentChapter = useCallback(() => {
+		if (typeof window === "undefined") return currentPosition?.chapter || 1;
+		const hash = window.location.hash.substring(1);
+		if (hash) {
+			const [chapter] = hash.split(":");
+			return parseInt(chapter) || currentPosition?.chapter || 1;
+		}
+		return currentPosition?.chapter || 1;
+	}, [currentPosition?.chapter]);
+
+	// Helper to get current verse from hash
+	const getCurrentVerse = useCallback(() => {
+		if (typeof window === "undefined") return currentPosition?.verse;
+		const hash = window.location.hash.substring(1);
+		if (hash) {
+			const [, verse] = hash.split(":");
+			return parseInt(verse) || currentPosition?.verse;
+		}
+		return currentPosition?.verse;
+	}, [currentPosition?.verse]);
+
+	// Wrapper for togglePlayPause that gets current position
+	const handlePlayPause = useCallback(() => {
+		const chapter = getCurrentChapter();
+		const verse = getCurrentVerse();
+		togglePlayPause(chapter, verse);
+	}, [togglePlayPause, getCurrentChapter, getCurrentVerse]);
 
 	useEffect(() => {
 		// Only restore position on initial load, not when navigating between books
@@ -207,7 +223,7 @@ export default function Main({ slug, book }: MainProps) {
 				currentBook={currentBook}
 				isPlaying={isPlaying}
 				isAudioSupported={isSupported}
-				onPlayPause={togglePlayPause}
+				onPlayPause={handlePlayPause}
 			/>
 		</div>
 	);

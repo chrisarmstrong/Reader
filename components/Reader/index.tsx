@@ -59,16 +59,35 @@ function Reader({
 				}
 
 				// Find the topmost visible verse in the viewport
+				// Use cached rects from entries instead of querying DOM
 				let topId: string | null = null;
 				let topVal = Number.POSITIVE_INFINITY;
-				for (const id of visibleIdsRef.current) {
-					const el = document.getElementById(id);
-					if (!el) continue;
-					const rect = el.getBoundingClientRect();
+
+				for (const entry of entries) {
+					if (!entry.isIntersecting) continue;
+					const id = (entry.target as HTMLElement).id;
+					if (!id) continue;
+
+					const rect = entry.boundingClientRect;
 					if (rect.top >= 0 && rect.top <= window.innerHeight) {
 						if (rect.top < topVal) {
 							topVal = rect.top;
 							topId = id;
+						}
+					}
+				}
+
+				// If no top verse from current entries, check all visible
+				if (!topId && visibleIdsRef.current.size > 0) {
+					for (const id of visibleIdsRef.current) {
+						const el = document.getElementById(id);
+						if (!el) continue;
+						const rect = el.getBoundingClientRect();
+						if (rect.top >= 0 && rect.top <= window.innerHeight) {
+							if (rect.top < topVal) {
+								topVal = rect.top;
+								topId = id;
+							}
 						}
 					}
 				}
@@ -86,8 +105,8 @@ function Reader({
 						now - lastHashUpdateAtRef.current > 500
 					) {
 						try {
+							// Use replaceState without dispatching event - let components listen to scroll instead
 							window.history.replaceState(null, "", newHash);
-							window.dispatchEvent(new HashChangeEvent("hashchange"));
 							lastHashRef.current = newHash;
 							lastHashUpdateAtRef.current = now;
 						} catch (_) {

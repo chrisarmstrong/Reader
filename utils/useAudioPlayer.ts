@@ -4,23 +4,19 @@ import type { Book, Verse } from "../types/bible";
 
 interface UseAudioPlayerProps {
 	book?: Book;
-	chapter?: number;
-	startVerse?: number;
 }
 
 interface UseAudioPlayerReturn {
 	isPlaying: boolean;
 	isSupported: boolean;
 	currentVerseId: string | null;
-	play: () => void;
+	play: (chapter: number, startVerse?: number) => void;
 	pause: () => void;
-	togglePlayPause: () => void;
+	togglePlayPause: (chapter: number, startVerse?: number) => void;
 }
 
 export function useAudioPlayer({
 	book,
-	chapter,
-	startVerse,
 }: UseAudioPlayerProps): UseAudioPlayerReturn {
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [isSupported, setIsSupported] = useState(true);
@@ -169,63 +165,58 @@ export function useAudioPlayer({
 		window.speechSynthesis.speak(utterance);
 	}, [preferredVoice]);
 
-	// Play function
-	const play = useCallback(async () => {
-		if (!isSupported || !book || chapter === undefined) return;
+	// Play function - now takes chapter and verse as parameters
+	const play = useCallback(
+		async (chapter: number, startVerse?: number) => {
+			if (!isSupported || !book || chapter === undefined) return;
 
-		// Lazily load voices on user gesture if needed
-		if (!preferredVoice) {
-			const synth = window.speechSynthesis;
-			let voices = synth.getVoices();
-			if (!voices || voices.length === 0) {
-				await new Promise<void>((resolve) => {
-					const handler = () => {
-						synth.removeEventListener("voiceschanged", handler);
-						resolve();
-					};
-					synth.addEventListener("voiceschanged", handler);
-					setTimeout(resolve, 1000);
-				});
-				voices = synth.getVoices();
+			// Lazily load voices on user gesture if needed
+			if (!preferredVoice) {
+				const synth = window.speechSynthesis;
+				let voices = synth.getVoices();
+				if (!voices || voices.length === 0) {
+					await new Promise<void>((resolve) => {
+						const handler = () => {
+							synth.removeEventListener("voiceschanged", handler);
+							resolve();
+						};
+						synth.addEventListener("voiceschanged", handler);
+						setTimeout(resolve, 1000);
+					});
+					voices = synth.getVoices();
+				}
+				const selected = selectVoice(voices);
+				if (selected) setPreferredVoice(selected);
 			}
-			const selected = selectVoice(voices);
-			if (selected) setPreferredVoice(selected);
-		}
 
-		const chapterData = book.chapters?.find(
-			(ch) => parseInt(ch.chapter) === chapter
-		);
-		const verses = chapterData?.verses ?? [];
-		if (verses.length === 0) return;
+			const chapterData = book.chapters?.find(
+				(ch) => parseInt(ch.chapter) === chapter
+			);
+			const verses = chapterData?.verses ?? [];
+			if (verses.length === 0) return;
 
-		versesRef.current = verses;
-		currentChapterRef.current = chapter;
+			versesRef.current = verses;
+			currentChapterRef.current = chapter;
 
-		// Find starting verse index
-		const startVerseNum = startVerse ?? parseInt(verses[0]?.verse || "1");
-		const startIdx = verses.findIndex(
-			(v) => parseInt(v.verse) === startVerseNum
-		);
-		queueIndexRef.current = startIdx >= 0 ? startIdx : 0;
+			// Find starting verse index
+			const startVerseNum = startVerse ?? parseInt(verses[0]?.verse || "1");
+			const startIdx = verses.findIndex(
+				(v) => parseInt(v.verse) === startVerseNum
+			);
+			queueIndexRef.current = startIdx >= 0 ? startIdx : 0;
 
-		// Scroll to the verse that will start playing
-		const verseId = `${chapter}:${startVerseNum}`;
-		const verseElement = document.getElementById(verseId);
-		if (verseElement) {
-			verseElement.scrollIntoView({ behavior: "smooth", block: "start" });
-		}
+			// Scroll to the verse that will start playing
+			const verseId = `${chapter}:${startVerseNum}`;
+			const verseElement = document.getElementById(verseId);
+			if (verseElement) {
+				verseElement.scrollIntoView({ behavior: "smooth", block: "start" });
+			}
 
-		setIsPlaying(true);
-		speakNext();
-	}, [
-		isSupported,
-		book,
-		chapter,
-		startVerse,
-		preferredVoice,
-		selectVoice,
-		speakNext,
-	]);
+			setIsPlaying(true);
+			speakNext();
+		},
+		[isSupported, book, preferredVoice, selectVoice, speakNext]
+	);
 
 	// Pause function
 	const pause = useCallback(() => {
@@ -239,13 +230,16 @@ export function useAudioPlayer({
 	}, []);
 
 	// Toggle play/pause
-	const togglePlayPause = useCallback(() => {
-		if (isPlaying) {
-			pause();
-		} else {
-			play();
-		}
-	}, [isPlaying, play, pause]);
+	const togglePlayPause = useCallback(
+		(chapter: number, startVerse?: number) => {
+			if (isPlaying) {
+				pause();
+			} else {
+				play(chapter, startVerse);
+			}
+		},
+		[isPlaying, play, pause]
+	);
 
 	return {
 		isPlaying,
