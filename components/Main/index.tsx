@@ -3,7 +3,7 @@
 import styles from "./Main.module.css";
 import "../../styles/styles.css";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useHotkeys } from "@mantine/hooks";
 import type { MainProps, Book } from "../../types/bible";
 
@@ -37,6 +37,11 @@ export default function Main({ slug, book }: MainProps) {
 		string | undefined
 	>(undefined);
 	const [currentReference, setCurrentReference] = useState<string | null>(null);
+	const [visibleChapter, setVisibleChapter] = useState<number | null>(null);
+	const lastSavedPositionRef = useRef<{
+		chapter: number;
+		verse: number;
+	} | null>(null);
 
 	const dismissSearch = useCallback(() => setSearchVisible(false), []);
 
@@ -143,11 +148,24 @@ export default function Main({ slug, book }: MainProps) {
 
 	const handleChapterChange = useCallback(
 		(chapter: number, verse: number) => {
+			// Update visible chapter immediately for UI (this is cheap)
+			setVisibleChapter(chapter);
+
+			// Skip expensive operations if same position
+			if (
+				lastSavedPositionRef.current?.chapter === chapter &&
+				lastSavedPositionRef.current?.verse === verse
+			) {
+				return;
+			}
+
+			lastSavedPositionRef.current = { chapter, verse };
+
 			if (currentBook.index !== undefined) {
 				savePosition(currentBook.index, chapter, verse);
 				setCurrentReference(`${currentBook.book} ${chapter}:${verse}`);
 
-				// Extract text content for the current chapter
+				// Extract text content for the current chapter (only when chapter changes)
 				const chapterData = currentBook.chapters?.find(
 					(ch) => parseInt(ch.chapter) === chapter
 				);
@@ -221,6 +239,7 @@ export default function Main({ slug, book }: MainProps) {
 				}}
 				currentPosition={currentPosition}
 				currentBook={currentBook}
+				visibleChapter={visibleChapter}
 				isPlaying={isPlaying}
 				isAudioSupported={isSupported}
 				onPlayPause={handlePlayPause}

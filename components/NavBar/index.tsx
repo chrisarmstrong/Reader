@@ -17,6 +17,7 @@ interface NavBarProps {
 	canGoPrev?: boolean;
 	currentPosition?: ReadingPosition | null;
 	currentBook?: Book;
+	visibleChapter?: number | null;
 	isPlaying?: boolean;
 	isAudioSupported?: boolean;
 	onPlayPause?: () => void;
@@ -31,29 +32,14 @@ function NavBar({
 	canGoPrev = true,
 	currentPosition,
 	currentBook,
+	visibleChapter,
 	isPlaying = false,
 	isAudioSupported = true,
 	onPlayPause,
 }: NavBarProps) {
-	const [displayChapter, setDisplayChapter] = useState<number | null>(null);
-
-	// Derive chapter from URL hash for instant updates without state changes
-	useEffect(() => {
-		const handleHashChange = () => {
-			const hash = window.location.hash.substring(1);
-			if (hash) {
-				const [chapter] = hash.split(":");
-				setDisplayChapter(parseInt(chapter) || null);
-			}
-		};
-
-		handleHashChange();
-		window.addEventListener("hashchange", handleHashChange);
-		return () => window.removeEventListener("hashchange", handleHashChange);
-	}, []);
-
-	// Fallback to currentPosition for initial render before hash is set
-	const chapter = displayChapter || currentPosition?.chapter;
+	// Use visibleChapter from parent (updated immediately during scroll)
+	// Fallback to currentPosition for initial render
+	const chapter = visibleChapter ?? currentPosition?.chapter;
 
 	return (
 		<div className={styles.container}>

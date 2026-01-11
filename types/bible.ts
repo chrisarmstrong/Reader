@@ -58,6 +58,7 @@ export interface ReaderProps {
 	searchActive?: boolean;
 	onChapterChange?: (chapter: number, verse: number) => void;
 	readingVerse?: string | null;
+	onVisibleChapterChange?: (chapter: number) => void;
 }
 
 export interface ContentsProps {

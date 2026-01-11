@@ -14,24 +14,59 @@ function Reader({
 }: ReaderProps) {
 	const { cacheBibleBook } = useBibleContent();
 	const [visibleChapter, setVisibleChapter] = useState<number | null>(null);
-	const debouncedSaveRef = useRef<(chapter: number, verse: number) => void>();
 	const initialHashScrollDone = useRef(false);
 	const lastHashRef = useRef<string | null>(null);
 	const lastHashUpdateAtRef = useRef<number>(0);
 	const visibleIdsRef = useRef<Set<string>>(new Set());
 	const searchActiveRef = useRef<boolean>(false);
+	const pendingHashUpdateRef = useRef<number | null>(null);
+	const scrollTimeoutRef = useRef<number | null>(null);
+	const isScrollingRef = useRef<boolean>(false);
+	const pendingHashRef = useRef<string | null>(null);
+
 	useEffect(() => {
 		searchActiveRef.current = searchActive;
 	}, [searchActive]);
 
-	// Initialize debounced save function once
+	// Track scroll state to defer hash updates until scrolling stops
 	useEffect(() => {
-		debouncedSaveRef.current = Debounce((chapter: number, verse: number) => {
-			if (onChapterChange) {
-				onChapterChange(chapter, verse);
+		if (typeof window === "undefined") return;
+
+		const handleScroll = () => {
+			isScrollingRef.current = true;
+
+			// Clear existing timeout
+			if (scrollTimeoutRef.current !== null) {
+				clearTimeout(scrollTimeoutRef.current);
 			}
-		}, 1000);
-	}, [onChapterChange]);
+
+			// Set scrolling to false after 200ms of no scroll events
+			scrollTimeoutRef.current = window.setTimeout(() => {
+				isScrollingRef.current = false;
+
+				// Update hash if there's a pending one
+				if (pendingHashRef.current) {
+					try {
+						window.history.replaceState(null, "", pendingHashRef.current);
+						lastHashRef.current = pendingHashRef.current;
+						lastHashUpdateAtRef.current = performance.now();
+						pendingHashRef.current = null;
+					} catch (_) {
+						// ignore Safari SecurityError if thrown
+					}
+				}
+			}, 200);
+		};
+
+		window.addEventListener("scroll", handleScroll, { passive: true });
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+			if (scrollTimeoutRef.current !== null) {
+				clearTimeout(scrollTimeoutRef.current);
+			}
+		};
+	}, []);
 
 	// Cache the current book content when it's loaded
 	useEffect(() => {
@@ -100,24 +135,33 @@ function Reader({
 					const newHash = `#${chapter}:${verse}`;
 					const now =
 						typeof performance !== "undefined" ? performance.now() : Date.now();
+
+					// Only update if enough time has passed
 					if (
 						newHash !== lastHashRef.current &&
 						now - lastHashUpdateAtRef.current > 500
 					) {
-						try {
-							// Use replaceState without dispatching event - let components listen to scroll instead
-							window.history.replaceState(null, "", newHash);
-							lastHashRef.current = newHash;
-							lastHashUpdateAtRef.current = now;
-						} catch (_) {
-							// ignore Safari SecurityError if thrown
+						// If scrolling, just store the pending hash
+						if (isScrollingRef.current) {
+							pendingHashRef.current = newHash;
+						} else {
+							// Not scrolling, update immediately
+							try {
+								window.history.replaceState(null, "", newHash);
+								lastHashRef.current = newHash;
+								lastHashUpdateAtRef.current = now;
+							} catch (_) {
+								// ignore Safari SecurityError if thrown
+							}
 						}
 					}
 
 					setVisibleChapter(chapter);
 
-					if (debouncedSaveRef.current) {
-						debouncedSaveRef.current(chapter, verse);
+					// Immediately notify parent of visible chapter change for UI
+					// Only update if chapter or verse actually changed to avoid unnecessary renders
+					if (onChapterChange) {
+						onChapterChange(chapter, verse);
 					}
 				}
 			},
