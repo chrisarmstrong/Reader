@@ -2,6 +2,8 @@ import { memo, useEffect, useState, useCallback, useRef } from "react";
 import {
 	IconPlayerPlayFilled,
 	IconPlayerPauseFilled,
+	IconMenu2,
+	IconSearch,
 } from "@tabler/icons-react";
 import styles from "./NavBar.module.css";
 import type { ReadingPosition, Book } from "../../types/bible";
@@ -113,9 +115,11 @@ function NavBar({
 		<div className={styles.container}>
 			<button
 				onClick={onMenuToggle}
-				className={`${styles.navButton} ${styles.iconButton} ${styles.menu}`}
+				className={`${styles.navButton} ${styles.iconButton}`}
 				aria-label="Menu"
-			></button>
+			>
+				<IconMenu2 size={28} stroke={1.6} />
+			</button>
 
 			{chapter && currentBook ? (
 				<h2>
@@ -147,7 +151,9 @@ function NavBar({
 					onClick={onSearchToggle}
 					className={`${styles.navButton} ${styles.iconButton}`}
 					aria-label="Search"
-				></button>
+				>
+					<IconSearch size={26} stroke={1.6} />
+				</button>
 			</div>
 		</div>
 	);

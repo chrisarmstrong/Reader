@@ -61,14 +61,12 @@
 }
 
 .iconButton {
-	background-image: url("./images/icon-search.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 48px 48px;
+	color: inherit;
 }
 
-.iconButton.menu {
-	background-image: url("./images/icon-menu.svg");
+.iconButton svg {
+	height: 28px;
+	width: 28px;
 }
 
 .rightButtons {
