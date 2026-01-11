@@ -17,6 +17,7 @@ import { useReadingPosition } from "../../utils/useReadingPosition";
 import { useAudioPlayer } from "../../utils/useAudioPlayer";
 import { scrollToVerse } from "../../utils/scrollToVerse";
 
+
 export default function Main({ slug, book }: MainProps) {
 	const [bookNavVisible, setBookNavVisible] = useState<boolean>(false);
 	const [searchVisible, setSearchVisible] = useState<boolean>(false);
