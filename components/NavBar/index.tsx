@@ -36,7 +36,10 @@ function NavBar({
 	return (
 		<div className={styles.container}>
 			<button
-				onClick={onMenuToggle}
+				onPointerUp={(e) => {
+					e.preventDefault();
+					onMenuToggle();
+				}}
 				className={`${styles.navButton} ${styles.iconButton}`}
 				aria-label="Menu"
 			>
@@ -51,7 +54,10 @@ function NavBar({
 
 			<div className={styles.rightButtons}>
 				<button
-					onClick={onPlayPause}
+					onPointerUp={(e) => {
+						e.preventDefault();
+						if (onPlayPause) onPlayPause();
+					}}
 					disabled={!isAudioSupported || !currentBook || !chapter}
 					title={
 						!isAudioSupported
@@ -70,7 +76,10 @@ function NavBar({
 					)}
 				</button>
 				<button
-					onClick={onSearchToggle}
+					onPointerUp={(e) => {
+						e.preventDefault();
+						onSearchToggle();
+					}}
 					className={`${styles.navButton} ${styles.iconButton}`}
 					aria-label="Search"
 				>

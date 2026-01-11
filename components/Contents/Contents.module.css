@@ -81,6 +81,10 @@
 	color: inherit;
 	touch-action: manipulation;
 	-webkit-tap-highlight-color: transparent;
+	background: none;
+	border: none;
+	text-align: left;
+	font-family: inherit;
 }
 .bookLink:hover,
 .bookLink:active {

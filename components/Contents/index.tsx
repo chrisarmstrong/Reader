@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import styles from "./Contents.module.css";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import type { Book } from "../../types/bible";
 import { stagger } from "motion";
 import { useRef } from "react";
@@ -22,6 +22,7 @@ export default function Contents({
 	onBookSelect,
 	books,
 }: ContentsProps) {
+	const router = useRouter();
 	const listRef = useRef<HTMLDivElement | null>(null);
 	// Close menu when ESC is pressed
 	useEffect(() => {
@@ -91,32 +92,44 @@ export default function Contents({
 
 		// Navigate to the random chapter
 		const bookSlug = randomBook.book.toLowerCase().replace(/\s+/g, "-");
-		window.location.href = `/${bookSlug}#${randomChapter}:1`;
+		router.push(`/${bookSlug}#${randomChapter}:1`);
 
+		dismiss();
+	};
+
+	const handleBookClick = (book: Book) => {
+		if (onBookSelect) {
+			onBookSelect(book);
+		}
+		const bookSlug = book.book.toLowerCase().replace(/\s+/g, "-");
+		router.push(`/${bookSlug}`);
 		dismiss();
 	};
 
 	return (
 		<div className={styles.container} data-active={active}>
 			<div className={styles.bookList} ref={listRef}>
-				<button className={styles.randomButton} onClick={handleRandomBook}>
+				<button
+					className={styles.randomButton}
+					onPointerUp={(e) => {
+						e.preventDefault();
+						handleRandomBook();
+					}}
+				>
 					Random
 				</button>
 				{books.map((book, i) => (
-					<Link
+					<button
 						key={book.book}
-						href={"/" + book.book.toLowerCase().replace(/\s+/g, "-")}
 						data-index={i}
 						className={styles.bookLink}
-						onClick={() => {
-							if (onBookSelect) {
-								onBookSelect(book);
-							}
-							dismiss();
+						onPointerUp={(e) => {
+							e.preventDefault();
+							handleBookClick(book);
 						}}
 					>
 						{book.book}
-					</Link>
+					</button>
 				))}
 			</div>
 			<div className={styles.dismiss} onClick={dismiss}></div>

@@ -26,6 +26,7 @@ import {
 import { IconX } from "@tabler/icons-react";
 import { Books } from "../../utils/Books";
 import Debounce from "../../utils/Debounce";
+import BibleStorage from "../../utils/BibleStorage";
 import type { Book } from "../../types/bible";
 
 type SearchScope = "all" | "book" | "old" | "new";
@@ -52,13 +53,14 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 	});
 	const [searchHistory, setSearchHistory] = useState<string[]>([]);
 	const [isPending, startTransition] = useTransition();
-	const [searchScope, setSearchScope] = useState<SearchScope>(() => {
-		if (typeof window !== "undefined") {
-			const saved = sessionStorage.getItem("searchScope");
-			return (saved as SearchScope) || "all";
-		}
-		return "all";
-	});
+	const [searchScope, setSearchScope] = useState<SearchScope>("all");
+
+	// Load search scope from IndexedDB on mount
+	useEffect(() => {
+		BibleStorage.getPreference("searchScope", "all").then((scope) => {
+			setSearchScope(scope as SearchScope);
+		});
+	}, []);
 
 	// Defer the search scope for expensive computations while keeping UI responsive
 	const deferredSearchScope = useDeferredValue(searchScope);
@@ -69,7 +71,7 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 	}, [searchKeyword]);
 
 	useEffect(() => {
-		sessionStorage.setItem("searchScope", searchScope);
+		BibleStorage.savePreference("searchScope", searchScope);
 	}, [searchScope]);
 
 	const updateSearchHistory = useCallback((keyword: string): void => {
@@ -215,6 +217,7 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 			onClose={dismiss}
 			size="lg"
 			fullScreen
+			transitionProps={{ transition: "fade" }}
 			withCloseButton={false}
 			styles={{
 				content: {
@@ -347,8 +350,16 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 
 				{/* Search Results Count */}
 				{!isPending && searchKeyword.length > 1 && (
-					<Text size="sm" c="dimmed" px="md" pt="md" style={{ flexShrink: 0 }}>
-						{results.length} result{results.length !== 1 ? "s" : ""}
+					<Text
+						size="sm"
+						c="dimmed"
+						px="md"
+						pt="md"
+						mb="md"
+						style={{ flexShrink: 0 }}
+					>
+						{results.length} result{results.length !== 1 ? "s" : ""} for "
+						{searchKeyword}"
 					</Text>
 				)}
 
