@@ -6,13 +6,13 @@ import {
 	IconSearch,
 	IconBookmark,
 } from "@tabler/icons-react";
-import Link from "next/link";
 import styles from "./NavBar.module.css";
 import type { ReadingPosition, Book } from "../../types/bible";
 
 interface NavBarProps {
 	onMenuToggle: () => void;
 	onSearchToggle: () => void;
+	onBookmarksToggle: () => void;
 	currentPosition?: ReadingPosition | null;
 	currentBook?: Book;
 	visibleChapter?: number | null;
@@ -24,6 +24,7 @@ interface NavBarProps {
 function NavBar({
 	onMenuToggle,
 	onSearchToggle,
+	onBookmarksToggle,
 	currentPosition,
 	currentBook,
 	visibleChapter,
@@ -77,13 +78,16 @@ function NavBar({
 						<IconPlayerPlayFilled size={24} stroke={1.5} />
 					)}
 				</button>
-				<Link
-					href="/bookmarks"
+				<button
+					onPointerUp={(e) => {
+						e.preventDefault();
+						onBookmarksToggle();
+					}}
 					className={`${styles.navButton} ${styles.iconButton}`}
 					aria-label="Bookmarks"
 				>
 					<IconBookmark size={24} stroke={1.6} />
-				</Link>
+				</button>
 				<button
 					onPointerUp={(e) => {
 						e.preventDefault();

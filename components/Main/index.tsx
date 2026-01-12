@@ -10,6 +10,7 @@ import type { MainProps, Book } from "../../types/bible";
 import Search from "../search";
 import Reader from "../Reader";
 import Contents from "../Contents";
+import Bookmarks from "../Bookmarks";
 import NavBar from "../NavBar";
 
 import { Books } from "../../utils/Books";
@@ -20,6 +21,7 @@ import { scrollToVerse } from "../../utils/scrollToVerse";
 export default function Main({ slug, book }: MainProps) {
 	const [bookNavVisible, setBookNavVisible] = useState<boolean>(false);
 	const [searchVisible, setSearchVisible] = useState<boolean>(false);
+	const [bookmarksVisible, setBookmarksVisible] = useState<boolean>(false);
 	const [currentBook, setCurrentBook] = useState<Book>(book || Books[0]);
 	const [initialLoadComplete, setInitialLoadComplete] =
 		useState<boolean>(false);
@@ -182,20 +184,27 @@ export default function Main({ slug, book }: MainProps) {
 			if (e.key === "Escape") {
 				setSearchVisible(false);
 				setBookNavVisible(false);
+				setBookmarksVisible(false);
 			}
 		};
 
-		if (searchVisible || bookNavVisible) {
+		if (searchVisible || bookNavVisible || bookmarksVisible) {
 			document.addEventListener("keydown", handleEscape);
 			return () => document.removeEventListener("keydown", handleEscape);
 		}
-	}, [searchVisible, bookNavVisible]);
+	}, [searchVisible, bookNavVisible, bookmarksVisible]);
 
 	return (
 		<div className={styles.container}>
 			<Search
 				dismiss={dismissSearch}
 				active={searchVisible}
+				currentBook={currentBook}
+			/>
+
+			<Bookmarks
+				active={bookmarksVisible}
+				dismiss={() => setBookmarksVisible(false)}
 				currentBook={currentBook}
 			/>
 
@@ -220,6 +229,7 @@ export default function Main({ slug, book }: MainProps) {
 			<NavBar
 				onMenuToggle={handleMenuToggle}
 				onSearchToggle={handleSearchToggle}
+				onBookmarksToggle={() => setBookmarksVisible((prev) => !prev)}
 				currentPosition={currentPosition}
 				currentBook={currentBook}
 				visibleChapter={visibleChapter}

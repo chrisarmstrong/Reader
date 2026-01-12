@@ -88,13 +88,16 @@ export default function VerseDetails({
 
 	const handleShare = async () => {
 		const reference = `${book} ${chapter}:${verse}`;
-		const shareText = `"${text}"\n\n— ${reference}`;
+		const bookSlug = book.toLowerCase().replace(/\s+/g, "-");
+		const url = `https://simplebible.app/${bookSlug}/#${chapter}:${verse}`;
+		const shareText = `"${text}"\n\n— ${reference}\n${url}`;
 
 		if (navigator.share) {
 			try {
 				await navigator.share({
 					text: shareText,
 					title: reference,
+					url: url,
 				});
 			} catch (error) {
 				// User cancelled or error occurred
