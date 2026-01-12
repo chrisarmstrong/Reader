@@ -91,7 +91,8 @@ export default function DatabaseMigration() {
 									<li>Open browser DevTools (F12)</li>
 									<li>Go to Application → Storage → IndexedDB</li>
 									<li>
-										Right-click "BibleReaderDB" and select "Delete database"
+										Right-click &quot;BibleReaderDB&quot; and select
+										&quot;Delete database&quot;
 									</li>
 									<li>Refresh the page</li>
 								</ol>

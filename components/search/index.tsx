@@ -358,8 +358,8 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 						mb="md"
 						style={{ flexShrink: 0 }}
 					>
-						{results.length} result{results.length !== 1 ? "s" : ""} for "
-						{searchKeyword}"
+						{results.length} result{results.length !== 1 ? "s" : ""} for &quot;
+						{searchKeyword}&quot;
 					</Text>
 				)}
 
