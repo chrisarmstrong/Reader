@@ -12,6 +12,7 @@ function Reader({
 	searchActive = false,
 	onChapterChange,
 	readingVerse,
+	onPlayAudio,
 }: ReaderProps) {
 	const { cacheBibleBook } = useBibleContent();
 	const initialHashScrollDone = useRef(false);
@@ -359,6 +360,7 @@ function Reader({
 				text={selectedVerse?.text || ""}
 				onClose={handleVerseDetailsClose}
 				onBookmarkChange={updateBookmarkStyles}
+				onPlayAudio={onPlayAudio}
 			/>
 		</>
 	);

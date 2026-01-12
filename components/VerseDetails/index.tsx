@@ -6,6 +6,7 @@ import styles from "./VerseDetails.module.css";
 import {
 	IconBookmark,
 	IconBookmarkFilled,
+	IconPlayerPlay,
 	IconShare,
 	IconX,
 } from "@tabler/icons-react";
@@ -19,6 +20,7 @@ interface VerseDetailsProps {
 	text: string;
 	onClose: () => void;
 	onBookmarkChange?: () => void | Promise<void>;
+	onPlayAudio?: (chapter: number, verse: number) => void;
 }
 
 export default function VerseDetails({
@@ -29,6 +31,7 @@ export default function VerseDetails({
 	text,
 	onClose,
 	onBookmarkChange,
+	onPlayAudio,
 }: VerseDetailsProps) {
 	const [isBookmarked, setIsBookmarked] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
@@ -161,6 +164,19 @@ export default function VerseDetails({
 					)}
 					<span>{isBookmarked ? "Bookmarked" : "Bookmark"}</span>
 				</button>
+
+				{onPlayAudio && (
+					<button
+						className={styles.actionButton}
+						onPointerUp={(e) => {
+							e.preventDefault();
+							onPlayAudio(parseInt(chapter), parseInt(verse));
+						}}
+					>
+						<IconPlayerPlay size={24} />
+						<span>Play</span>
+					</button>
+				)}
 
 				<button
 					className={styles.actionButton}

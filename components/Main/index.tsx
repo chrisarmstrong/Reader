@@ -44,7 +44,7 @@ export default function Main({ slug, book }: MainProps) {
 		isLoading,
 	} = useReadingPosition();
 
-	const { isPlaying, isSupported, currentVerseId, togglePlayPause } =
+	const { isPlaying, isSupported, currentVerseId, togglePlayPause, play } =
 		useAudioPlayer({
 			book: currentBook,
 		});
@@ -76,6 +76,14 @@ export default function Main({ slug, book }: MainProps) {
 		const { chapter, verse } = getCurrentPosition();
 		togglePlayPause(chapter, verse);
 	}, [togglePlayPause, getCurrentPosition]);
+
+	// Handler for playing audio from a specific verse
+	const handlePlayAudio = useCallback(
+		(chapter: number, verse: number) => {
+			play(chapter, verse);
+		},
+		[play]
+	);
 
 	useEffect(() => {
 		// Only restore position on initial load, not when navigating between books
@@ -213,6 +221,7 @@ export default function Main({ slug, book }: MainProps) {
 				searchActive={searchVisible}
 				onChapterChange={handleChapterChange}
 				readingVerse={currentVerseId}
+				onPlayAudio={handlePlayAudio}
 			/>
 
 			{/* Only render Contents when active */}

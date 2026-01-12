@@ -11,6 +11,7 @@
 	/* Only animate if already in DOM */
 	transition: left 0.2s ease-in, background 0.2s ease-in, opacity 0.2s;
 	overflow: hidden;
+	padding-bottom: 60px;
 }
 
 .container[data-active="false"] {

@@ -68,6 +68,7 @@ export interface ReaderProps {
 	searchActive?: boolean;
 	onChapterChange?: (chapter: number, verse: number) => void;
 	readingVerse?: string | null;
+	onPlayAudio?: (chapter: number, verse: number) => void;
 }
 
 export interface ContentsProps {
