@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import styles from "./Contents.module.css";
 import { useRouter } from "next/navigation";
 import type { Book } from "../../types/bible";
-import { stagger } from "motion";
+import { motion, stagger } from "motion/react";
 import { useRef } from "react";
 import Link from "next/link";
 
@@ -25,6 +25,7 @@ export default function Contents({
 }: ContentsProps) {
 	const router = useRouter();
 	const listRef = useRef<HTMLDivElement | null>(null);
+
 	// Close menu when ESC is pressed
 	useEffect(() => {
 		const handleEscape = (e: KeyboardEvent) => {
@@ -110,27 +111,18 @@ export default function Contents({
 	return (
 		<div className={styles.container} data-active={active}>
 			<div className={styles.bookList} ref={listRef}>
-				<button
-					className={styles.randomButton}
-					onPointerUp={(e) => {
-						e.preventDefault();
-						handleRandomBook();
-					}}
-				>
+				<motion.button className={styles.randomButton} onTap={handleRandomBook}>
 					Random
-				</button>
+				</motion.button>
 				{books.map((book, i) => (
-					<button
+					<motion.button
 						key={book.book}
 						data-index={i}
 						className={styles.bookLink}
-						onPointerUp={(e) => {
-							e.preventDefault();
-							handleBookClick(book);
-						}}
+						onTap={() => handleBookClick(book)}
 					>
 						{book.book}
-					</button>
+					</motion.button>
 				))}
 				<Link href="/update" className={styles.updateLink}>
 					Check for Updates
