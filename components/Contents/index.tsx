@@ -2,9 +2,8 @@
 
 import { useEffect } from "react";
 import styles from "./Contents.module.css";
-import { useRouter } from "next/navigation";
 import type { Book } from "../../types/bible";
-import { motion, stagger } from "motion/react";
+import { stagger } from "motion/react";
 import { useRef } from "react";
 import Link from "next/link";
 
@@ -23,9 +22,7 @@ export default function Contents({
 	onBookSelect,
 	books,
 }: ContentsProps) {
-	const router = useRouter();
 	const listRef = useRef<HTMLDivElement | null>(null);
-	const isPanningRef = useRef(false);
 
 	// Close menu when ESC is pressed
 	useEffect(() => {
@@ -84,9 +81,8 @@ export default function Contents({
 		};
 	}, [active, books]);
 
-	const handleRandomBook = () => {
-		if (isPanningRef.current) return;
-
+	const handleRandomBook = (e: React.MouseEvent) => {
+		e.preventDefault();
 		const randomBook = books[Math.floor(Math.random() * books.length)];
 		const randomChapter =
 			Math.floor(Math.random() * randomBook.chapters.length) + 1;
@@ -95,64 +91,43 @@ export default function Contents({
 			onBookSelect(randomBook);
 		}
 
-		// Navigate to the random chapter
-		const bookSlug = randomBook.book.toLowerCase().replace(/\s+/g, "-");
-		router.push(`/${bookSlug}#${randomChapter}:1`);
-
 		dismiss();
+		// Use window.location for navigation to ensure it works
+		const bookSlug = randomBook.book.toLowerCase().replace(/\s+/g, "-");
+		window.location.href = `/${bookSlug}#${randomChapter}:1`;
 	};
 
 	const handleBookClick = (book: Book) => {
-		if (isPanningRef.current) return;
-
 		if (onBookSelect) {
 			onBookSelect(book);
 		}
-		const bookSlug = book.book.toLowerCase().replace(/\s+/g, "-");
-		router.push(`/${bookSlug}`);
 		dismiss();
 	};
 
 	return (
 		<div className={styles.container} data-active={active}>
-			<motion.div
-				className={styles.bookList}
-				ref={listRef}
-				onPanStart={() => {
-					isPanningRef.current = true;
-				}}
-				onPan={() => {
-					isPanningRef.current = true;
-				}}
-				onPanEnd={() => {
-					// Reset after a brief delay to avoid triggering during deceleration
-					setTimeout(() => {
-						isPanningRef.current = false;
-					}, 100);
-				}}
-			>
-				<motion.button
-					className={styles.randomButton}
-					onTap={handleRandomBook}
-					whileTap={{ scale: 0.98 }}
-				>
+			<div className={styles.bookList} ref={listRef}>
+				<button className={styles.randomButton} onClick={handleRandomBook}>
 					Random
-				</motion.button>
-				{books.map((book, i) => (
-					<motion.button
-						key={book.book}
-						data-index={i}
-						className={styles.bookLink}
-						onTap={() => handleBookClick(book)}
-						whileTap={{ scale: 0.98 }}
-					>
-						{book.book}
-					</motion.button>
-				))}
+				</button>
+				{books.map((book, i) => {
+					const bookSlug = book.book.toLowerCase().replace(/\s+/g, "-");
+					return (
+						<Link
+							key={book.book}
+							href={`/${bookSlug}`}
+							className={styles.bookLink}
+							data-index={i}
+							onClick={() => handleBookClick(book)}
+						>
+							{book.book}
+						</Link>
+					);
+				})}
 				<Link href="/update" className={styles.updateLink}>
 					Check for Updates
 				</Link>
-			</motion.div>
+			</div>
 			<div className={styles.dismiss} onClick={dismiss}></div>
 		</div>
 	);
