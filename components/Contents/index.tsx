@@ -110,8 +110,18 @@ export default function Contents({
 
 	return (
 		<div className={styles.container} data-active={active}>
-			<div className={styles.bookList} ref={listRef}>
-				<motion.button className={styles.randomButton} onTap={handleRandomBook}>
+			<motion.div
+				className={styles.bookList}
+				ref={listRef}
+				drag="y"
+				dragConstraints={{ top: 0, bottom: 0 }}
+				dragElastic={0}
+			>
+				<motion.button
+					className={styles.randomButton}
+					onTap={handleRandomBook}
+					whileTap={{ scale: 0.98 }}
+				>
 					Random
 				</motion.button>
 				{books.map((book, i) => (
@@ -120,6 +130,7 @@ export default function Contents({
 						data-index={i}
 						className={styles.bookLink}
 						onTap={() => handleBookClick(book)}
+						whileTap={{ scale: 0.98 }}
 					>
 						{book.book}
 					</motion.button>
@@ -127,7 +138,7 @@ export default function Contents({
 				<Link href="/update" className={styles.updateLink}>
 					Check for Updates
 				</Link>
-			</div>
+			</motion.div>
 			<div className={styles.dismiss} onClick={dismiss}></div>
 		</div>
 	);
