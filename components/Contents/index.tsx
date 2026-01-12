@@ -25,6 +25,7 @@ export default function Contents({
 }: ContentsProps) {
 	const router = useRouter();
 	const listRef = useRef<HTMLDivElement | null>(null);
+	const isPanningRef = useRef(false);
 
 	// Close menu when ESC is pressed
 	useEffect(() => {
@@ -84,6 +85,8 @@ export default function Contents({
 	}, [active, books]);
 
 	const handleRandomBook = () => {
+		if (isPanningRef.current) return;
+
 		const randomBook = books[Math.floor(Math.random() * books.length)];
 		const randomChapter =
 			Math.floor(Math.random() * randomBook.chapters.length) + 1;
@@ -100,6 +103,8 @@ export default function Contents({
 	};
 
 	const handleBookClick = (book: Book) => {
+		if (isPanningRef.current) return;
+
 		if (onBookSelect) {
 			onBookSelect(book);
 		}
@@ -113,9 +118,18 @@ export default function Contents({
 			<motion.div
 				className={styles.bookList}
 				ref={listRef}
-				drag="y"
-				dragConstraints={{ top: 0, bottom: 0 }}
-				dragElastic={0}
+				onPanStart={() => {
+					isPanningRef.current = true;
+				}}
+				onPan={() => {
+					isPanningRef.current = true;
+				}}
+				onPanEnd={() => {
+					// Reset after a brief delay to avoid triggering during deceleration
+					setTimeout(() => {
+						isPanningRef.current = false;
+					}, 100);
+				}}
 			>
 				<motion.button
 					className={styles.randomButton}
