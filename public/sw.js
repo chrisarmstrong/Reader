@@ -111,6 +111,9 @@ if (isDev) {
 
 	// Message event - for clearing cache if needed
 	self.addEventListener("message", (event) => {
+		if (event.data && event.data.type === "SKIP_WAITING") {
+			self.skipWaiting();
+		}
 		if (event.data && event.data.type === "CLEAR_CACHE") {
 			caches.keys().then((cacheNames) => {
 				return Promise.all(

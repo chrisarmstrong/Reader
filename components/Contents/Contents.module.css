@@ -91,3 +91,26 @@
 	opacity: 1;
 	transform: scale(1.05);
 }
+
+.updateLink {
+	opacity: 0.3;
+	transition: opacity 0.2s;
+	will-change: opacity;
+	width: 100%;
+	padding: 12px 0;
+	margin-top: 48px;
+	font-size: 14px;
+	font-weight: 400;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	text-align: left;
+}
+
+.updateLink:hover,
+.updateLink:active {
+	opacity: 0.6;
+}

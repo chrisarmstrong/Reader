@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import type { Book } from "../../types/bible";
 import { stagger } from "motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 interface ContentsProps {
 	active: boolean;
@@ -131,6 +132,9 @@ export default function Contents({
 						{book.book}
 					</button>
 				))}
+				<Link href="/update" className={styles.updateLink}>
+					Check for Updates
+				</Link>
 			</div>
 			<div className={styles.dismiss} onClick={dismiss}></div>
 		</div>
