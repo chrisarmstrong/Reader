@@ -1,10 +1,44 @@
+.drawerWrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	touch-action: pan-y;
+}
+
+.dragHandle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 0 8px;
+	cursor: grab;
+	touch-action: none;
+}
+
+.dragHandle:active {
+	cursor: grabbing;
+}
+
+.dragIndicator {
+	width: 36px;
+	height: 4px;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 20px;
+	padding: 0 24px 20px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* When there's no drag handle (desktop), add top padding */
+@media (min-width: 821px) {
+	.header {
+		padding-top: 24px;
+	}
 }
 
 .reference {
