@@ -36,10 +36,11 @@ export default function VerseDetails({
 	const [isBookmarked, setIsBookmarked] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
 
-	// Swipe-to-dismiss state
+	// Swipe-to-dismiss state - use refs to avoid stale closure issues
 	const [dragY, setDragY] = useState(0);
-	const [isDragging, setIsDragging] = useState(false);
+	const isDraggingRef = useRef(false);
 	const dragStartY = useRef(0);
+	const dragYRef = useRef(0);
 	const drawerContentRef = useRef<HTMLDivElement>(null);
 
 	console.log("VerseDetails rendered:", { active, book, chapter, verse });
@@ -48,7 +49,8 @@ export default function VerseDetails({
 	useEffect(() => {
 		if (!active) {
 			setDragY(0);
-			setIsDragging(false);
+			isDraggingRef.current = false;
+			dragYRef.current = 0;
 		}
 	}, [active]);
 
@@ -62,36 +64,38 @@ export default function VerseDetails({
 
 		if (isHandle || isAtTop) {
 			dragStartY.current = e.touches[0].clientY;
-			setIsDragging(true);
+			isDraggingRef.current = true;
 		}
 	}, []);
 
 	const handleTouchMove = useCallback((e: React.TouchEvent) => {
-		if (!isDragging) return;
+		if (!isDraggingRef.current) return;
 
 		const currentY = e.touches[0].clientY;
 		const deltaY = currentY - dragStartY.current;
 
 		// Only allow dragging downward (positive deltaY)
 		if (deltaY > 0) {
+			dragYRef.current = deltaY;
 			setDragY(deltaY);
 		}
-	}, [isDragging]);
+	}, []);
 
 	const handleTouchEnd = useCallback(() => {
-		if (!isDragging) return;
+		if (!isDraggingRef.current) return;
 
 		// If dragged more than 100px or 20% of viewport height, close the drawer
 		const threshold = Math.min(100, window.innerHeight * 0.2);
 
-		if (dragY > threshold) {
+		if (dragYRef.current > threshold) {
 			onClose();
 		}
 
 		// Reset drag state
 		setDragY(0);
-		setIsDragging(false);
-	}, [isDragging, dragY, onClose]);
+		isDraggingRef.current = false;
+		dragYRef.current = 0;
+	}, [onClose]);
 
 	useEffect(() => {
 		console.log("VerseDetails useEffect:", { active, book, chapter, verse });
@@ -177,7 +181,7 @@ export default function VerseDetails({
 	// Swipe styles for mobile bottom drawer - applied to wrapper div
 	const wrapperStyle: React.CSSProperties = isMobile ? {
 		transform: dragY > 0 ? `translateY(${dragY}px)` : undefined,
-		transition: isDragging ? 'none' : 'transform 0.3s ease-out',
+		transition: dragY > 0 ? 'none' : 'transform 0.3s ease-out',
 	} : {};
 
 	return (
