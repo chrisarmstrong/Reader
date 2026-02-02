@@ -174,13 +174,11 @@ export default function VerseDetails({
 
 	const isMobile = typeof window !== "undefined" && window.innerWidth <= 820;
 
-	// Swipe styles for mobile bottom drawer
-	const swipeStyle = isMobile && dragY > 0 ? {
-		transform: `translateY(${dragY}px)`,
+	// Swipe styles for mobile bottom drawer - applied to wrapper div
+	const wrapperStyle: React.CSSProperties = isMobile ? {
+		transform: dragY > 0 ? `translateY(${dragY}px)` : undefined,
 		transition: isDragging ? 'none' : 'transform 0.3s ease-out',
-	} : {
-		transition: isDragging ? 'none' : 'transform 0.3s ease-out',
-	};
+	} : {};
 
 	return (
 		<Drawer
@@ -190,11 +188,6 @@ export default function VerseDetails({
 			size={isMobile ? "70vh" : "md"}
 			padding={0}
 			withCloseButton={false}
-			styles={isMobile ? {
-				content: {
-					...swipeStyle,
-				},
-			} : undefined}
 		>
 			<div
 				ref={drawerContentRef}
@@ -202,6 +195,7 @@ export default function VerseDetails({
 				onTouchMove={isMobile ? handleTouchMove : undefined}
 				onTouchEnd={isMobile ? handleTouchEnd : undefined}
 				className={styles.drawerWrapper}
+				style={wrapperStyle}
 			>
 				{/* Drag handle for mobile */}
 				{isMobile && (
