@@ -337,8 +337,7 @@ function Reader({
 											? styles.reading
 											: ""
 									}`}
-									onPointerUp={(e) => {
-										e.preventDefault();
+									onClick={() => {
 										handleVerseClick(chapter.chapter, verse.verse, verse.text);
 									}}
 								>

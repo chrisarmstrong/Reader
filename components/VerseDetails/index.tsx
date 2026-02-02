@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Drawer } from "@mantine/core";
 import styles from "./VerseDetails.module.css";
 import {
@@ -36,7 +36,66 @@ export default function VerseDetails({
 	const [isBookmarked, setIsBookmarked] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
 
+	// Swipe-to-dismiss state - use refs to avoid stale closure issues
+	const [dragY, setDragY] = useState(0);
+	const isDraggingRef = useRef(false);
+	const dragStartY = useRef(0);
+	const dragYRef = useRef(0);
+	const drawerContentRef = useRef<HTMLDivElement>(null);
+
 	console.log("VerseDetails rendered:", { active, book, chapter, verse });
+
+	// Reset drag state when drawer closes
+	useEffect(() => {
+		if (!active) {
+			setDragY(0);
+			isDraggingRef.current = false;
+			dragYRef.current = 0;
+		}
+	}, [active]);
+
+	// Swipe gesture handlers
+	const handleTouchStart = useCallback((e: React.TouchEvent) => {
+		// Only allow drag from the handle area or if at top of scroll
+		const target = e.target as HTMLElement;
+		const isHandle = target.closest(`.${styles.dragHandle}`);
+		const contentEl = drawerContentRef.current?.querySelector(`.${styles.content}`) as HTMLElement;
+		const isAtTop = !contentEl || contentEl.scrollTop === 0;
+
+		if (isHandle || isAtTop) {
+			dragStartY.current = e.touches[0].clientY;
+			isDraggingRef.current = true;
+		}
+	}, []);
+
+	const handleTouchMove = useCallback((e: React.TouchEvent) => {
+		if (!isDraggingRef.current) return;
+
+		const currentY = e.touches[0].clientY;
+		const deltaY = currentY - dragStartY.current;
+
+		// Only allow dragging downward (positive deltaY)
+		if (deltaY > 0) {
+			dragYRef.current = deltaY;
+			setDragY(deltaY);
+		}
+	}, []);
+
+	const handleTouchEnd = useCallback(() => {
+		if (!isDraggingRef.current) return;
+
+		// If dragged more than 100px or 20% of viewport height, close the drawer
+		const threshold = Math.min(100, window.innerHeight * 0.2);
+
+		if (dragYRef.current > threshold) {
+			onClose();
+		}
+
+		// Reset drag state
+		setDragY(0);
+		isDraggingRef.current = false;
+		dragYRef.current = 0;
+	}, [onClose]);
 
 	useEffect(() => {
 		console.log("VerseDetails useEffect:", { active, book, chapter, verse });
@@ -119,75 +178,97 @@ export default function VerseDetails({
 
 	const isMobile = typeof window !== "undefined" && window.innerWidth <= 820;
 
+	// Swipe styles for mobile bottom drawer - applied to wrapper div
+	const wrapperStyle: React.CSSProperties = isMobile ? {
+		transform: dragY > 0 ? `translateY(${dragY}px)` : undefined,
+		transition: dragY > 0 ? 'none' : 'transform 0.3s ease-out',
+	} : {};
+
 	return (
 		<Drawer
 			opened={active}
 			onClose={onClose}
 			position={isMobile ? "bottom" : "right"}
 			size={isMobile ? "70vh" : "md"}
-			padding="lg"
+			padding={0}
 			withCloseButton={false}
 		>
-			<div className={styles.header}>
-				<h3 className={styles.reference}>
-					{book} {chapter}:{verse}
-				</h3>
-				<button
-					className={styles.closeButton}
-					onPointerUp={(e) => {
-						e.preventDefault();
-						onClose();
-					}}
-					aria-label="Close"
-				>
-					<IconX size={24} />
-				</button>
-			</div>
+			<div
+				ref={drawerContentRef}
+				onTouchStart={isMobile ? handleTouchStart : undefined}
+				onTouchMove={isMobile ? handleTouchMove : undefined}
+				onTouchEnd={isMobile ? handleTouchEnd : undefined}
+				className={styles.drawerWrapper}
+				style={wrapperStyle}
+			>
+				{/* Drag handle for mobile */}
+				{isMobile && (
+					<div className={styles.dragHandle}>
+						<div className={styles.dragIndicator} />
+					</div>
+				)}
 
-			<div className={styles.content}>
-				<p className={styles.verseText}>{text}</p>
-			</div>
+				<div className={styles.header}>
+					<h3 className={styles.reference}>
+						{book} {chapter}:{verse}
+					</h3>
+					<button
+						className={styles.closeButton}
+						onPointerUp={(e) => {
+							e.preventDefault();
+							onClose();
+						}}
+						aria-label="Close"
+					>
+						<IconX size={24} />
+					</button>
+				</div>
 
-			<div className={styles.actions}>
-				<button
-					className={styles.actionButton}
-					onPointerUp={(e) => {
-						e.preventDefault();
-						handleBookmarkToggle();
-					}}
-					disabled={isLoading}
-				>
-					{isBookmarked ? (
-						<IconBookmarkFilled size={24} />
-					) : (
-						<IconBookmark size={24} />
-					)}
-					<span>{isBookmarked ? "Bookmarked" : "Bookmark"}</span>
-				</button>
+				<div className={styles.content}>
+					<p className={styles.verseText}>{text}</p>
+				</div>
 
-				{onPlayAudio && (
+				<div className={styles.actions}>
 					<button
 						className={styles.actionButton}
 						onPointerUp={(e) => {
 							e.preventDefault();
-							onPlayAudio(parseInt(chapter), parseInt(verse));
+							handleBookmarkToggle();
+						}}
+						disabled={isLoading}
+					>
+						{isBookmarked ? (
+							<IconBookmarkFilled size={24} />
+						) : (
+							<IconBookmark size={24} />
+						)}
+						<span>{isBookmarked ? "Bookmarked" : "Bookmark"}</span>
+					</button>
+
+					{onPlayAudio && (
+						<button
+							className={styles.actionButton}
+							onPointerUp={(e) => {
+								e.preventDefault();
+								onPlayAudio(parseInt(chapter), parseInt(verse));
+							}}
+						>
+							<IconPlayerPlay size={24} />
+							<span>Play</span>
+						</button>
+					)}
+
+					<button
+						className={styles.actionButton}
+						onPointerUp={(e) => {
+							e.preventDefault();
+							handleShare();
 						}}
 					>
-						<IconPlayerPlay size={24} />
-						<span>Play</span>
+						<IconShare size={24} />
+						<span>Share</span>
 					</button>
-				)}
-
-				<button
-					className={styles.actionButton}
-					onPointerUp={(e) => {
-						e.preventDefault();
-						handleShare();
-					}}
-				>
-					<IconShare size={24} />
-					<span>Share</span>
-				</button>
+				</div>
 			</div>
 		</Drawer>
 	);
