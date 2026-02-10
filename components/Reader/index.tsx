@@ -330,7 +330,7 @@ function Reader({
 									} ${
 										highlightVerse &&
 										highlightVerse === chapter.chapter + `:` + verse.verse
-											? styles.highlight
+											? styles.selected
 											: ""
 									} ${
 										readingVerse === chapter.chapter + `:` + verse.verse
