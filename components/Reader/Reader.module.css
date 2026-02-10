@@ -84,6 +84,10 @@
 	background: var(--highlight-color);
 }
 
+.verse.selected {
+	background: rgba(255, 200, 0, 0.15);
+}
+
 @keyframes highlightFade {
 	0% {
 		background: transparent;

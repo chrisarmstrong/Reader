@@ -336,6 +336,12 @@ function Reader({
 										readingVerse === chapter.chapter + `:` + verse.verse
 											? styles.reading
 											: ""
+									} ${
+										selectedVerse &&
+										selectedVerse.chapter === chapter.chapter &&
+										selectedVerse.verse === verse.verse
+											? styles.selected
+											: ""
 									}`}
 									onPointerUp={(e) => {
 										e.preventDefault();
