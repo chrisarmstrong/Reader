@@ -330,11 +330,17 @@ function Reader({
 									} ${
 										highlightVerse &&
 										highlightVerse === chapter.chapter + `:` + verse.verse
-											? styles.highlight
+											? styles.selected
 											: ""
 									} ${
 										readingVerse === chapter.chapter + `:` + verse.verse
 											? styles.reading
+											: ""
+									} ${
+										selectedVerse &&
+										selectedVerse.chapter === chapter.chapter &&
+										selectedVerse.verse === verse.verse
+											? styles.selected
 											: ""
 									}`}
 									onPointerUp={(e) => {
