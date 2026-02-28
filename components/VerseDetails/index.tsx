@@ -38,9 +38,19 @@ export default function VerseDetails({
 	const [isLoading, setIsLoading] = useState(false);
 	const [noteText, setNoteText] = useState("");
 	const [currentNote, setCurrentNote] = useState<VerseNote | null>(null);
+	const [isEditing, setIsEditing] = useState(false);
 	const savedNoteRef = useRef("");
+	const textareaRef = useRef<HTMLTextAreaElement>(null);
 
 	console.log("VerseDetails rendered:", { active, book, chapter, verse });
+
+	useEffect(() => {
+		const textarea = textareaRef.current;
+		if (textarea) {
+			textarea.style.height = "auto";
+			textarea.style.height = textarea.scrollHeight + "px";
+		}
+	}, [noteText]);
 
 	const saveNote = useCallback(async () => {
 		const trimmed = noteText.trim();
@@ -170,7 +180,7 @@ export default function VerseDetails({
 			opened={active}
 			onClose={handleClose}
 			position={isMobile ? "bottom" : "right"}
-			size={isMobile ? "70vh" : "md"}
+			size={isMobile ? (isEditing ? "100%" : "70vh") : "md"}
 			padding="lg"
 			withCloseButton={false}
 		>
@@ -238,12 +248,17 @@ export default function VerseDetails({
 
 			<div className={styles.notesSection}>
 				<textarea
+					ref={textareaRef}
 					className={styles.noteTextarea}
-					placeholder="Add a comment..."
+					placeholder="Add a note..."
 					value={noteText}
 					onChange={(e) => setNoteText(e.target.value)}
-					onBlur={saveNote}
-					rows={2}
+					onFocus={() => setIsEditing(true)}
+					onBlur={() => {
+						setIsEditing(false);
+						saveNote();
+					}}
+					rows={1}
 				/>
 			</div>
 		</Drawer>
