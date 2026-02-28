@@ -32,7 +32,7 @@
 }
 
 .content {
-	padding: 24px;
+	padding: 24px 0;
 	flex: 1;
 	overflow-y: auto;
 }
@@ -45,7 +45,7 @@
 }
 
 .notesSection {
-	padding: 16px 24px 24px;
+	padding: 16px 0 24px;
 }
 
 .noteTextarea {
@@ -62,17 +62,18 @@
 	color: inherit;
 	transform: scale(0.875);
 	transform-origin: top left;
+	overflow: hidden;
 }
 
 .noteTextarea::placeholder {
-	opacity: 0.3;
+	opacity: 0.5;
 	font-style: italic;
 }
 
 .actions {
 	display: flex;
 	gap: 12px;
-	padding: 20px 24px;
+	padding: 20px 0;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
