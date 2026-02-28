@@ -26,10 +26,40 @@ export default function ServiceWorkerProvider({
 					.register("/sw.js")
 					.then((registration) => {
 						console.log("SW registered: ", registration);
+
+						// If a new service worker is already waiting, activate it immediately
+						if (registration.waiting) {
+							registration.waiting.postMessage({ type: "SKIP_WAITING" });
+						}
+
+						// Listen for new service workers that finish installing
+						registration.addEventListener("updatefound", () => {
+							const newWorker = registration.installing;
+							if (newWorker) {
+								newWorker.addEventListener("statechange", () => {
+									if (
+										newWorker.state === "installed" &&
+										navigator.serviceWorker.controller
+									) {
+										// New version available - activate it immediately
+										newWorker.postMessage({ type: "SKIP_WAITING" });
+									}
+								});
+							}
+						});
 					})
 					.catch((registrationError) => {
 						console.log("SW registration failed: ", registrationError);
 					});
+			});
+
+			// When a new service worker takes control, reload to get fresh content
+			let refreshing = false;
+			navigator.serviceWorker.addEventListener("controllerchange", () => {
+				if (!refreshing) {
+					refreshing = true;
+					window.location.reload();
+				}
 			});
 		}
 	}, []);
