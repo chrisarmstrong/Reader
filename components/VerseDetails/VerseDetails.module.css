@@ -44,6 +44,43 @@
 	font-family: var(--serif), georgia, serif;
 }
 
+.notesSection {
+	margin-top: 24px;
+}
+
+.notesLabel {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 13px;
+	font-weight: 500;
+	opacity: 0.6;
+	margin-bottom: 8px;
+}
+
+.noteTextarea {
+	width: 100%;
+	padding: 12px;
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: var(--serif), georgia, serif;
+	background: rgba(0, 0, 0, 0.03);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	resize: vertical;
+	outline: none;
+	transition: border-color 0.2s;
+	box-sizing: border-box;
+}
+
+.noteTextarea:focus {
+	border-color: rgba(0, 0, 0, 0.3);
+}
+
+.noteTextarea::placeholder {
+	opacity: 0.4;
+}
+
 .actions {
 	display: flex;
 	gap: 12px;

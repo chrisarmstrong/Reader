@@ -6,6 +6,7 @@ import type {
 	BibleContent,
 	Book,
 	Bookmark,
+	VerseNote,
 } from "../types/bible";
 
 class BibleStorage {
@@ -15,7 +16,7 @@ class BibleStorage {
 
 	constructor() {
 		this.dbName = "BibleReaderDB";
-		this.version = 2;
+		this.version = 3;
 		this.db = null;
 	}
 
@@ -96,6 +97,23 @@ class BibleStorage {
 						unique: false,
 					});
 					bookmarkStore.createIndex("book", "book", { unique: false });
+				}
+
+				// Store for verse notes
+				if (!db.objectStoreNames.contains("notes")) {
+					console.log("Creating notes store");
+					const notesStore = db.createObjectStore("notes", {
+						keyPath: "id",
+					});
+					notesStore.createIndex("createdAt", "createdAt", {
+						unique: false,
+					});
+					notesStore.createIndex("updatedAt", "updatedAt", {
+						unique: false,
+					});
+					notesStore.createIndex("verseRef", ["book", "chapter", "verse"], {
+						unique: false,
+					});
 				}
 
 				console.log("Upgrade complete");
@@ -228,7 +246,7 @@ class BibleStorage {
 	async clearAll(): Promise<void> {
 		await this.init();
 
-		const storeNames = ["readingPositions", "preferences", "bibleContent"];
+		const storeNames = ["readingPositions", "preferences", "bibleContent", "notes"];
 		const transaction = this.db!.transaction(storeNames, "readwrite");
 
 		const clearPromises = storeNames.map((storeName) => {
@@ -369,6 +387,107 @@ class BibleStorage {
 		const id = `${book}-${chapter}:${verse}`;
 		const bookmark = await this.getBookmark(id);
 		return bookmark !== null;
+	}
+
+	// Note methods
+	async addNote(
+		book: string,
+		chapter: string,
+		verse: string,
+		content: string
+	): Promise<VerseNote> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["notes"], "readwrite");
+		const store = transaction.objectStore("notes");
+
+		const now = Date.now();
+		const note: VerseNote = {
+			id: crypto.randomUUID(),
+			book,
+			chapter,
+			verse,
+			content,
+			createdAt: now,
+			updatedAt: now,
+		};
+
+		return new Promise((resolve, reject) => {
+			const request = store.put(note);
+			request.onsuccess = () => resolve(note);
+			request.onerror = () => reject(request.error);
+		});
+	}
+
+	async updateNote(id: string, content: string): Promise<VerseNote> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["notes"], "readwrite");
+		const store = transaction.objectStore("notes");
+
+		return new Promise((resolve, reject) => {
+			const getRequest = store.get(id);
+			getRequest.onsuccess = () => {
+				const note = getRequest.result as VerseNote | undefined;
+				if (!note) {
+					reject(new Error(`Note not found: ${id}`));
+					return;
+				}
+				note.content = content;
+				note.updatedAt = Date.now();
+				const putRequest = store.put(note);
+				putRequest.onsuccess = () => resolve(note);
+				putRequest.onerror = () => reject(putRequest.error);
+			};
+			getRequest.onerror = () => reject(getRequest.error);
+		});
+	}
+
+	async deleteNote(id: string): Promise<void> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["notes"], "readwrite");
+		const store = transaction.objectStore("notes");
+
+		return new Promise((resolve, reject) => {
+			const request = store.delete(id);
+			request.onsuccess = () => resolve();
+			request.onerror = () => reject(request.error);
+		});
+	}
+
+	async getNotesForVerse(
+		book: string,
+		chapter: string,
+		verse: string
+	): Promise<VerseNote[]> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["notes"], "readonly");
+		const store = transaction.objectStore("notes");
+		const index = store.index("verseRef");
+
+		return new Promise((resolve, reject) => {
+			const request = index.openCursor(
+				IDBKeyRange.only([book, chapter, verse]),
+				"prev"
+			);
+			const notes: VerseNote[] = [];
+
+			request.onsuccess = (event) => {
+				const cursor = (event.target as IDBRequest<IDBCursorWithValue>)
+					.result;
+				if (cursor) {
+					notes.push(cursor.value);
+					cursor.continue();
+				} else {
+					// Sort by updatedAt descending
+					notes.sort((a, b) => b.updatedAt - a.updatedAt);
+					resolve(notes);
+				}
+			};
+			request.onerror = () => reject(request.error);
+		});
 	}
 }
 

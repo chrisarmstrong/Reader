@@ -27,7 +27,7 @@ describe('BibleStorage', () => {
 
       expect(db).toBeDefined();
       expect(db.name).toBe('BibleReaderDB');
-      expect(db.version).toBe(2);
+      expect(db.version).toBe(3);
     });
 
     it('should create all required object stores', async () => {
@@ -37,6 +37,7 @@ describe('BibleStorage', () => {
       expect(db.objectStoreNames.contains('preferences')).toBe(true);
       expect(db.objectStoreNames.contains('bibleContent')).toBe(true);
       expect(db.objectStoreNames.contains('bookmarks')).toBe(true);
+      expect(db.objectStoreNames.contains('notes')).toBe(true);
     });
 
     it('should return existing database on subsequent calls', async () => {
@@ -571,6 +572,122 @@ describe('BibleStorage', () => {
 
       const value5 = await BibleStorage.getPreference('key5');
       expect(value5).toBe('value5');
+    });
+  });
+
+  describe('addNote()', () => {
+    it('should add a note with all fields', async () => {
+      const note = await BibleStorage.addNote('Genesis', '1', '1', 'My note');
+
+      expect(note).toEqual({
+        id: expect.any(String),
+        book: 'Genesis',
+        chapter: '1',
+        verse: '1',
+        content: 'My note',
+        createdAt: expect.any(Number),
+        updatedAt: expect.any(Number),
+      });
+    });
+
+    it('should generate unique IDs for each note', async () => {
+      const note1 = await BibleStorage.addNote('Genesis', '1', '1', 'Note 1');
+      const note2 = await BibleStorage.addNote('Genesis', '1', '1', 'Note 2');
+
+      expect(note1.id).not.toBe(note2.id);
+    });
+
+    it('should set createdAt and updatedAt to the same value initially', async () => {
+      const note = await BibleStorage.addNote('Genesis', '1', '1', 'My note');
+
+      expect(note.createdAt).toBe(note.updatedAt);
+    });
+  });
+
+  describe('getNotesForVerse()', () => {
+    it('should return empty array when no notes exist', async () => {
+      const notes = await BibleStorage.getNotesForVerse('Genesis', '1', '1');
+
+      expect(notes).toEqual([]);
+    });
+
+    it('should return notes for a specific verse', async () => {
+      await BibleStorage.addNote('Genesis', '1', '1', 'Note for Gen 1:1');
+      await BibleStorage.addNote('Genesis', '1', '2', 'Note for Gen 1:2');
+
+      const notes = await BibleStorage.getNotesForVerse('Genesis', '1', '1');
+
+      expect(notes).toHaveLength(1);
+      expect(notes[0].content).toBe('Note for Gen 1:1');
+    });
+
+    it('should return multiple notes for the same verse', async () => {
+      await BibleStorage.addNote('Genesis', '1', '1', 'First note');
+      await new Promise(resolve => setTimeout(resolve, 10));
+      await BibleStorage.addNote('Genesis', '1', '1', 'Second note');
+
+      const notes = await BibleStorage.getNotesForVerse('Genesis', '1', '1');
+
+      expect(notes).toHaveLength(2);
+    });
+
+    it('should return notes sorted by updatedAt descending', async () => {
+      await BibleStorage.addNote('Genesis', '1', '1', 'Older note');
+      await new Promise(resolve => setTimeout(resolve, 10));
+      await BibleStorage.addNote('Genesis', '1', '1', 'Newer note');
+
+      const notes = await BibleStorage.getNotesForVerse('Genesis', '1', '1');
+
+      expect(notes[0].content).toBe('Newer note');
+      expect(notes[1].content).toBe('Older note');
+    });
+  });
+
+  describe('updateNote()', () => {
+    it('should update note content', async () => {
+      const note = await BibleStorage.addNote('Genesis', '1', '1', 'Original');
+
+      const updated = await BibleStorage.updateNote(note.id, 'Updated');
+
+      expect(updated.content).toBe('Updated');
+    });
+
+    it('should update the updatedAt timestamp', async () => {
+      const note = await BibleStorage.addNote('Genesis', '1', '1', 'Original');
+      await new Promise(resolve => setTimeout(resolve, 10));
+
+      const updated = await BibleStorage.updateNote(note.id, 'Updated');
+
+      expect(updated.updatedAt).toBeGreaterThan(note.updatedAt);
+      expect(updated.createdAt).toBe(note.createdAt);
+    });
+
+    it('should throw when note does not exist', async () => {
+      await expect(
+        BibleStorage.updateNote('nonexistent-id', 'content')
+      ).rejects.toThrow('Note not found');
+    });
+  });
+
+  describe('deleteNote()', () => {
+    it('should delete an existing note', async () => {
+      const note = await BibleStorage.addNote('Genesis', '1', '1', 'To delete');
+
+      await BibleStorage.deleteNote(note.id);
+
+      const notes = await BibleStorage.getNotesForVerse('Genesis', '1', '1');
+      expect(notes).toHaveLength(0);
+    });
+
+    it('should only delete the specified note', async () => {
+      const note1 = await BibleStorage.addNote('Genesis', '1', '1', 'Keep');
+      const note2 = await BibleStorage.addNote('Genesis', '1', '1', 'Delete');
+
+      await BibleStorage.deleteNote(note2.id);
+
+      const notes = await BibleStorage.getNotesForVerse('Genesis', '1', '1');
+      expect(notes).toHaveLength(1);
+      expect(notes[0].content).toBe('Keep');
     });
   });
 

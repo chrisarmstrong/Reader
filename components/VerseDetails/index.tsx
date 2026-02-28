@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Drawer } from "@mantine/core";
 import styles from "./VerseDetails.module.css";
 import {
@@ -9,8 +9,10 @@ import {
 	IconPlayerPlay,
 	IconShare,
 	IconX,
+	IconNotes,
 } from "@tabler/icons-react";
 import BibleStorage from "../../utils/BibleStorage";
+import type { VerseNote } from "../../types/bible";
 
 interface VerseDetailsProps {
 	active: boolean;
@@ -35,8 +37,32 @@ export default function VerseDetails({
 }: VerseDetailsProps) {
 	const [isBookmarked, setIsBookmarked] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
+	const [noteText, setNoteText] = useState("");
+	const [currentNote, setCurrentNote] = useState<VerseNote | null>(null);
+	const savedNoteRef = useRef("");
 
 	console.log("VerseDetails rendered:", { active, book, chapter, verse });
+
+	const saveNote = useCallback(async () => {
+		const trimmed = noteText.trim();
+		if (trimmed === savedNoteRef.current) return;
+
+		try {
+			if (currentNote && trimmed === "") {
+				await BibleStorage.deleteNote(currentNote.id);
+				setCurrentNote(null);
+			} else if (currentNote && trimmed !== "") {
+				const updated = await BibleStorage.updateNote(currentNote.id, trimmed);
+				setCurrentNote(updated);
+			} else if (!currentNote && trimmed !== "") {
+				const created = await BibleStorage.addNote(book, chapter, verse, trimmed);
+				setCurrentNote(created);
+			}
+			savedNoteRef.current = trimmed;
+		} catch (error) {
+			console.error("Error saving note:", error);
+		}
+	}, [noteText, currentNote, book, chapter, verse]);
 
 	useEffect(() => {
 		console.log("VerseDetails useEffect:", { active, book, chapter, verse });
@@ -50,6 +76,22 @@ export default function VerseDetails({
 				.catch((error) => {
 					console.error("Error checking bookmark status:", error);
 					setIsBookmarked(false);
+				});
+
+			BibleStorage.getNotesForVerse(book, chapter, verse)
+				.then((notes) => {
+					if (notes.length > 0) {
+						setCurrentNote(notes[0]);
+						setNoteText(notes[0].content);
+						savedNoteRef.current = notes[0].content;
+					} else {
+						setCurrentNote(null);
+						setNoteText("");
+						savedNoteRef.current = "";
+					}
+				})
+				.catch((error) => {
+					console.error("Error loading notes:", error);
 				});
 		}
 	}, [active, book, chapter, verse]);
@@ -117,12 +159,17 @@ export default function VerseDetails({
 		}
 	};
 
+	const handleClose = useCallback(async () => {
+		await saveNote();
+		onClose();
+	}, [saveNote, onClose]);
+
 	const isMobile = typeof window !== "undefined" && window.innerWidth <= 820;
 
 	return (
 		<Drawer
 			opened={active}
-			onClose={onClose}
+			onClose={handleClose}
 			position={isMobile ? "bottom" : "right"}
 			size={isMobile ? "70vh" : "md"}
 			padding="lg"
@@ -136,7 +183,7 @@ export default function VerseDetails({
 					className={styles.closeButton}
 					onPointerUp={(e) => {
 						e.preventDefault();
-						onClose();
+						handleClose();
 					}}
 					aria-label="Close"
 				>
@@ -146,6 +193,21 @@ export default function VerseDetails({
 
 			<div className={styles.content}>
 				<p className={styles.verseText}>{text}</p>
+
+				<div className={styles.notesSection}>
+					<label className={styles.notesLabel}>
+						<IconNotes size={16} />
+						Note
+					</label>
+					<textarea
+						className={styles.noteTextarea}
+						placeholder="Add a note..."
+						value={noteText}
+						onChange={(e) => setNoteText(e.target.value)}
+						onBlur={saveNote}
+						rows={3}
+					/>
+				</div>
 			</div>
 
 			<div className={styles.actions}>

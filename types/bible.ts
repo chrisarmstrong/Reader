@@ -57,6 +57,16 @@ export interface Bookmark {
 	note?: string;
 }
 
+export interface VerseNote {
+	id: string;
+	book: string;
+	chapter: string;
+	verse: string;
+	content: string;
+	createdAt: number;
+	updatedAt: number;
+}
+
 // Component Props Types
 export interface MainProps {
 	slug?: string;
