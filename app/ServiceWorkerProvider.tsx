@@ -52,15 +52,6 @@ export default function ServiceWorkerProvider({
 						console.log("SW registration failed: ", registrationError);
 					});
 			});
-
-			// When a new service worker takes control, reload to get fresh content
-			let refreshing = false;
-			navigator.serviceWorker.addEventListener("controllerchange", () => {
-				if (!refreshing) {
-					refreshing = true;
-					window.location.reload();
-				}
-			});
 		}
 	}, []);
 
