@@ -9,7 +9,6 @@ import {
 	IconPlayerPlay,
 	IconShare,
 	IconX,
-	IconNotes,
 } from "@tabler/icons-react";
 import BibleStorage from "../../utils/BibleStorage";
 import type { VerseNote } from "../../types/bible";
@@ -193,21 +192,6 @@ export default function VerseDetails({
 
 			<div className={styles.content}>
 				<p className={styles.verseText}>{text}</p>
-
-				<div className={styles.notesSection}>
-					<label className={styles.notesLabel}>
-						<IconNotes size={16} />
-						Note
-					</label>
-					<textarea
-						className={styles.noteTextarea}
-						placeholder="Add a note..."
-						value={noteText}
-						onChange={(e) => setNoteText(e.target.value)}
-						onBlur={saveNote}
-						rows={3}
-					/>
-				</div>
 			</div>
 
 			<div className={styles.actions}>
@@ -250,6 +234,17 @@ export default function VerseDetails({
 					<IconShare size={24} />
 					<span>Share</span>
 				</button>
+			</div>
+
+			<div className={styles.notesSection}>
+				<textarea
+					className={styles.noteTextarea}
+					placeholder="Add a comment..."
+					value={noteText}
+					onChange={(e) => setNoteText(e.target.value)}
+					onBlur={saveNote}
+					rows={2}
+				/>
 			</div>
 		</Drawer>
 	);

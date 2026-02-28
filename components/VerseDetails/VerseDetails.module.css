@@ -45,40 +45,26 @@
 }
 
 .notesSection {
-	margin-top: 24px;
-}
-
-.notesLabel {
-	display: flex;
-	align-items: center;
-	gap: 6px;
-	font-size: 13px;
-	font-weight: 500;
-	opacity: 0.6;
-	margin-bottom: 8px;
+	padding: 16px 24px 24px;
 }
 
 .noteTextarea {
 	width: 100%;
-	padding: 12px;
-	font-size: 15px;
-	line-height: 1.5;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.6;
 	font-family: var(--serif), georgia, serif;
-	background: rgba(0, 0, 0, 0.03);
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 8px;
-	resize: vertical;
+	background: transparent;
+	border: none;
+	resize: none;
 	outline: none;
-	transition: border-color 0.2s;
 	box-sizing: border-box;
-}
-
-.noteTextarea:focus {
-	border-color: rgba(0, 0, 0, 0.3);
+	color: inherit;
 }
 
 .noteTextarea::placeholder {
-	opacity: 0.4;
+	opacity: 0.3;
+	font-style: italic;
 }
 
 .actions {
