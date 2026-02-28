@@ -47,6 +47,20 @@ export interface BibleContent {
 	lastCached: number;
 }
 
+export interface VerseRecord {
+	id: string; // "Genesis-1:1"
+	book: string;
+	bookIndex: number;
+	chapter: string;
+	verse: string;
+	text: string;
+}
+
+export interface SearchIndexEntry {
+	word: string;
+	refs: string[]; // verse IDs
+}
+
 export interface Bookmark {
 	id: string;
 	book: string;

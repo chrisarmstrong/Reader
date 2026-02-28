@@ -17,6 +17,7 @@ import { Books } from "../../utils/Books";
 import { useReadingPosition } from "../../utils/useReadingPosition";
 import { useAudioPlayer } from "../../utils/useAudioPlayer";
 import { scrollToVerse } from "../../utils/scrollToVerse";
+import { useBibleSeed } from "../../utils/useBibleSeed";
 
 export default function Main({ slug, book }: MainProps) {
 	const [bookNavVisible, setBookNavVisible] = useState<boolean>(false);
@@ -36,6 +37,9 @@ export default function Main({ slug, book }: MainProps) {
 	} | null>(null);
 
 	const dismissSearch = useCallback(() => setSearchVisible(false), []);
+
+	// Seed the full Bible into IndexedDB in the background for offline support & fast search
+	const seedProgress = useBibleSeed();
 
 	const {
 		currentPosition,
@@ -208,6 +212,7 @@ export default function Main({ slug, book }: MainProps) {
 				dismiss={dismissSearch}
 				active={searchVisible}
 				currentBook={currentBook}
+				isIndexReady={seedProgress.status === "done"}
 			/>
 
 			<Bookmarks

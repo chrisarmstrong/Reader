@@ -8,6 +8,7 @@ import {
 	useTransition,
 	useDeferredValue,
 	useEffect,
+	useRef,
 } from "react";
 import Link from "next/link";
 import { Virtuoso } from "react-virtuoso";
@@ -35,6 +36,7 @@ interface SearchProps {
 	active: boolean;
 	dismiss: () => void;
 	currentBook?: Book;
+	isIndexReady?: boolean;
 }
 
 interface SearchResultProps {
@@ -44,7 +46,75 @@ interface SearchResultProps {
 	text: string;
 }
 
-function Search({ active, dismiss, currentBook }: SearchProps) {
+/**
+ * Perform indexed search via the IndexedDB inverted index.
+ * Looks up each keyword, intersects the verse ID sets, fetches verse records,
+ * and filters by scope.
+ */
+async function indexedSearch(
+	keyword: string,
+	scope: SearchScope,
+	currentBook?: Book
+): Promise<SearchResultProps[]> {
+	const keywords = keyword
+		.toLowerCase()
+		.replace(/[^a-z0-9' ]/g, " ")
+		.split(/\s+/)
+		.filter((w) => w.length > 1);
+
+	if (keywords.length === 0) return [];
+
+	// Look up each keyword in the inverted index
+	const refSets: Set<string>[] = [];
+	for (const word of keywords) {
+		const entry = await BibleStorage.getSearchIndexEntry(word);
+		if (!entry) return []; // A keyword with no matches → no results
+		refSets.push(new Set(entry.refs));
+	}
+
+	// Intersect all sets (start from smallest for efficiency)
+	refSets.sort((a, b) => a.size - b.size);
+	let matchingIds = refSets[0];
+	for (let i = 1; i < refSets.length; i++) {
+		const next = refSets[i];
+		const intersection = new Set<string>();
+		for (const id of matchingIds) {
+			if (next.has(id)) intersection.add(id);
+		}
+		matchingIds = intersection;
+		if (matchingIds.size === 0) return [];
+	}
+
+	// Fetch the verse records
+	const verses = await BibleStorage.getVersesByIds(Array.from(matchingIds));
+
+	// Filter by scope
+	let filtered = verses;
+	if (scope === "book" && currentBook) {
+		filtered = verses.filter((v) => v.book === currentBook.book);
+	} else if (scope === "old") {
+		filtered = verses.filter((v) => v.bookIndex < 39);
+	} else if (scope === "new") {
+		filtered = verses.filter((v) => v.bookIndex >= 39);
+	}
+
+	// Sort by book index, then chapter, then verse for consistent ordering
+	filtered.sort((a, b) => {
+		if (a.bookIndex !== b.bookIndex) return a.bookIndex - b.bookIndex;
+		const chapterDiff = parseInt(a.chapter) - parseInt(b.chapter);
+		if (chapterDiff !== 0) return chapterDiff;
+		return parseInt(a.verse) - parseInt(b.verse);
+	});
+
+	return filtered.map((v) => ({
+		book: v.book,
+		chapter: v.chapter,
+		verse: v.verse,
+		text: v.text,
+	}));
+}
+
+function Search({ active, dismiss, currentBook, isIndexReady }: SearchProps) {
 	const [searchKeyword, setSearchKeyword] = useState<string>(() => {
 		if (typeof window !== "undefined") {
 			return sessionStorage.getItem("searchKeyword") || "";
@@ -54,6 +124,13 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 	const [searchHistory, setSearchHistory] = useState<string[]>([]);
 	const [isPending, startTransition] = useTransition();
 	const [searchScope, setSearchScope] = useState<SearchScope>("all");
+
+	// Indexed search results (async path)
+	const [indexedResults, setIndexedResults] = useState<
+		SearchResultProps[] | null
+	>(null);
+	const [isIndexSearching, setIsIndexSearching] = useState(false);
+	const indexSearchVersion = useRef(0);
 
 	// Load search scope from IndexedDB on mount
 	useEffect(() => {
@@ -73,6 +150,36 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 	useEffect(() => {
 		BibleStorage.savePreference("searchScope", searchScope);
 	}, [searchScope]);
+
+	// Run indexed search when the index is ready
+	useEffect(() => {
+		if (!isIndexReady || searchKeyword.length < 2) {
+			setIndexedResults(null);
+			return;
+		}
+
+		const version = ++indexSearchVersion.current;
+		setIsIndexSearching(true);
+
+		indexedSearch(searchKeyword, deferredSearchScope, currentBook)
+			.then((results) => {
+				// Only apply if this is still the latest search
+				if (version === indexSearchVersion.current) {
+					setIndexedResults(results);
+				}
+			})
+			.catch((err) => {
+				console.warn("Indexed search failed, falling back:", err);
+				if (version === indexSearchVersion.current) {
+					setIndexedResults(null);
+				}
+			})
+			.finally(() => {
+				if (version === indexSearchVersion.current) {
+					setIsIndexSearching(false);
+				}
+			});
+	}, [isIndexReady, searchKeyword, deferredSearchScope, currentBook]);
 
 	const updateSearchHistory = useCallback((keyword: string): void => {
 		if (keyword.length > 1) {
@@ -196,20 +303,27 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 		return <Highlight highlight={keyword}>{text}</Highlight>;
 	};
 
-	const results = useMemo(
-		() => getResults(searchKeyword, deferredSearchScope),
+	// Use indexed results when available, otherwise fall back to brute-force
+	const fallbackResults = useMemo(
+		() => (isIndexReady ? [] : getResults(searchKeyword, deferredSearchScope)),
 		// Only include currentBook when scope is "book", otherwise it causes unnecessary re-searches
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 		[
 			searchKeyword,
 			deferredSearchScope,
+			isIndexReady,
 			deferredSearchScope === "book" ? currentBook : null,
 		]
 	);
+
+	const results = isIndexReady && indexedResults ? indexedResults : fallbackResults;
+
 	const bookResults = useMemo(
 		() => getBookResults(searchKeyword),
 		[searchKeyword]
 	);
+
+	const searching = isIndexReady ? isIndexSearching : isPending;
 
 	return (
 		<Modal
@@ -290,7 +404,7 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 					/>
 				</Box>
 
-				{isPending && searchKeyword.length > 1 && (
+				{searching && searchKeyword.length > 1 && (
 					<Group justify="center" p="md" style={{ flexShrink: 0 }}>
 						<Loader size="sm" />
 						<Text size="sm" c="dimmed">
@@ -300,7 +414,7 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 				)}
 
 				{/* Book Results */}
-				{!isPending && bookResults.length > 0 && (
+				{!searching && bookResults.length > 0 && (
 					<Stack gap="xs" style={{ flexShrink: 0 }}>
 						{bookResults.map((result, i) => {
 							let link = "/" + result.book.toLowerCase().replace(/\s+/g, "-");
@@ -349,7 +463,7 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 				)}
 
 				{/* Search Results Count */}
-				{!isPending && searchKeyword.length > 1 && (
+				{!searching && searchKeyword.length > 1 && (
 					<Text
 						size="sm"
 						c="dimmed"
@@ -364,7 +478,7 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 				)}
 
 				{/* Search Results - Virtualized */}
-				{!isPending && results.length > 0 && (
+				{!searching && results.length > 0 && (
 					<Box style={{ flex: 1, minHeight: 0, position: "relative" }}>
 						<Box
 							style={{
@@ -428,7 +542,7 @@ function Search({ active, dismiss, currentBook }: SearchProps) {
 				)}
 
 				{/* No Results Message */}
-				{!isPending &&
+				{!searching &&
 					searchKeyword.length > 1 &&
 					results.length === 0 &&
 					bookResults.length === 0 && (
