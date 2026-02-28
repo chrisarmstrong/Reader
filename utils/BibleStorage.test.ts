@@ -27,7 +27,7 @@ describe('BibleStorage', () => {
 
       expect(db).toBeDefined();
       expect(db.name).toBe('BibleReaderDB');
-      expect(db.version).toBe(3);
+      expect(db.version).toBe(4);
     });
 
     it('should create all required object stores', async () => {
@@ -38,6 +38,8 @@ describe('BibleStorage', () => {
       expect(db.objectStoreNames.contains('bibleContent')).toBe(true);
       expect(db.objectStoreNames.contains('bookmarks')).toBe(true);
       expect(db.objectStoreNames.contains('notes')).toBe(true);
+      expect(db.objectStoreNames.contains('verses')).toBe(true);
+      expect(db.objectStoreNames.contains('searchIndex')).toBe(true);
     });
 
     it('should return existing database on subsequent calls', async () => {
@@ -751,6 +753,80 @@ describe('BibleStorage', () => {
       expect(position?.chapter).toBe(0);
       expect(position?.verse).toBe(0);
       expect(position?.scrollPosition).toBe(0);
+    });
+  });
+
+  describe('putVerses()', () => {
+    it('should store verse records', async () => {
+      const verses = [
+        { id: 'Genesis-1:1', book: 'Genesis', bookIndex: 0, chapter: '1', verse: '1', text: 'In the beginning...' },
+        { id: 'Genesis-1:2', book: 'Genesis', bookIndex: 0, chapter: '1', verse: '2', text: 'And the earth was...' },
+      ];
+
+      await BibleStorage.putVerses(verses);
+
+      const results = await BibleStorage.getVersesByIds(['Genesis-1:1', 'Genesis-1:2']);
+      expect(results).toHaveLength(2);
+      expect(results[0].text).toBe('In the beginning...');
+    });
+  });
+
+  describe('putSearchIndexEntries()', () => {
+    it('should store search index entries', async () => {
+      const entries = [
+        { word: 'beginning', refs: ['Genesis-1:1', 'John-1:1'] },
+        { word: 'earth', refs: ['Genesis-1:1', 'Genesis-1:2'] },
+      ];
+
+      await BibleStorage.putSearchIndexEntries(entries);
+
+      const result = await BibleStorage.getSearchIndexEntry('beginning');
+      expect(result).not.toBeNull();
+      expect(result!.refs).toEqual(['Genesis-1:1', 'John-1:1']);
+    });
+  });
+
+  describe('getSearchIndexEntry()', () => {
+    it('should return null for non-existent word', async () => {
+      const result = await BibleStorage.getSearchIndexEntry('nonexistent');
+      expect(result).toBeNull();
+    });
+  });
+
+  describe('getVersesByIds()', () => {
+    it('should return only existing verses', async () => {
+      const verses = [
+        { id: 'Genesis-1:1', book: 'Genesis', bookIndex: 0, chapter: '1', verse: '1', text: 'Test' },
+      ];
+      await BibleStorage.putVerses(verses);
+
+      const results = await BibleStorage.getVersesByIds(['Genesis-1:1', 'NonExistent-1:1']);
+      expect(results).toHaveLength(1);
+      expect(results[0].id).toBe('Genesis-1:1');
+    });
+
+    it('should return empty array for no matching IDs', async () => {
+      const results = await BibleStorage.getVersesByIds(['NonExistent-1:1']);
+      expect(results).toHaveLength(0);
+    });
+  });
+
+  describe('getVerseCount()', () => {
+    it('should return 0 when no verses stored', async () => {
+      const count = await BibleStorage.getVerseCount();
+      expect(count).toBe(0);
+    });
+
+    it('should return correct count after storing verses', async () => {
+      const verses = [
+        { id: 'Genesis-1:1', book: 'Genesis', bookIndex: 0, chapter: '1', verse: '1', text: 'Test 1' },
+        { id: 'Genesis-1:2', book: 'Genesis', bookIndex: 0, chapter: '1', verse: '2', text: 'Test 2' },
+        { id: 'Genesis-1:3', book: 'Genesis', bookIndex: 0, chapter: '1', verse: '3', text: 'Test 3' },
+      ];
+      await BibleStorage.putVerses(verses);
+
+      const count = await BibleStorage.getVerseCount();
+      expect(count).toBe(3);
     });
   });
 });

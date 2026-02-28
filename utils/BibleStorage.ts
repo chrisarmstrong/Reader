@@ -7,6 +7,8 @@ import type {
 	Book,
 	Bookmark,
 	VerseNote,
+	VerseRecord,
+	SearchIndexEntry,
 } from "../types/bible";
 
 class BibleStorage {
@@ -16,7 +18,7 @@ class BibleStorage {
 
 	constructor() {
 		this.dbName = "BibleReaderDB";
-		this.version = 3;
+		this.version = 4;
 		this.db = null;
 	}
 
@@ -114,6 +116,24 @@ class BibleStorage {
 					notesStore.createIndex("verseRef", ["book", "chapter", "verse"], {
 						unique: false,
 					});
+				}
+
+				// Store for individual verses (for offline seeding & indexed search)
+				if (!db.objectStoreNames.contains("verses")) {
+					console.log("Creating verses store");
+					const versesStore = db.createObjectStore("verses", {
+						keyPath: "id",
+					});
+					versesStore.createIndex("book", "book", { unique: false });
+					versesStore.createIndex("bookIndex", "bookIndex", {
+						unique: false,
+					});
+				}
+
+				// Store for inverted search index (word -> verse IDs)
+				if (!db.objectStoreNames.contains("searchIndex")) {
+					console.log("Creating searchIndex store");
+					db.createObjectStore("searchIndex", { keyPath: "word" });
 				}
 
 				console.log("Upgrade complete");
@@ -486,6 +506,96 @@ class BibleStorage {
 					resolve(notes);
 				}
 			};
+			request.onerror = () => reject(request.error);
+		});
+	}
+
+	// --- Bible seeding methods ---
+
+	// Store a batch of verses in a single transaction
+	async putVerses(verses: VerseRecord[]): Promise<void> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["verses"], "readwrite");
+		const store = transaction.objectStore("verses");
+
+		return new Promise((resolve, reject) => {
+			transaction.oncomplete = () => resolve();
+			transaction.onerror = () => reject(transaction.error);
+			transaction.onabort = () => reject(transaction.error);
+
+			for (const verse of verses) {
+				store.put(verse);
+			}
+		});
+	}
+
+	// Store a batch of search index entries in a single transaction
+	async putSearchIndexEntries(entries: SearchIndexEntry[]): Promise<void> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["searchIndex"], "readwrite");
+		const store = transaction.objectStore("searchIndex");
+
+		return new Promise((resolve, reject) => {
+			transaction.oncomplete = () => resolve();
+			transaction.onerror = () => reject(transaction.error);
+			transaction.onabort = () => reject(transaction.error);
+
+			for (const entry of entries) {
+				store.put(entry);
+			}
+		});
+	}
+
+	// Look up verse IDs for a word from the search index
+	async getSearchIndexEntry(word: string): Promise<SearchIndexEntry | null> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["searchIndex"], "readonly");
+		const store = transaction.objectStore("searchIndex");
+
+		return new Promise((resolve, reject) => {
+			const request = store.get(word);
+			request.onsuccess = () => resolve(request.result || null);
+			request.onerror = () => reject(request.error);
+		});
+	}
+
+	// Fetch multiple verses by their IDs
+	async getVersesByIds(ids: string[]): Promise<VerseRecord[]> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["verses"], "readonly");
+		const store = transaction.objectStore("verses");
+
+		const results: VerseRecord[] = [];
+
+		return new Promise((resolve, reject) => {
+			transaction.oncomplete = () => resolve(results);
+			transaction.onerror = () => reject(transaction.error);
+
+			for (const id of ids) {
+				const request = store.get(id);
+				request.onsuccess = () => {
+					if (request.result) {
+						results.push(request.result);
+					}
+				};
+			}
+		});
+	}
+
+	// Get count of verses in the store (to check seeding status)
+	async getVerseCount(): Promise<number> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["verses"], "readonly");
+		const store = transaction.objectStore("verses");
+
+		return new Promise((resolve, reject) => {
+			const request = store.count();
+			request.onsuccess = () => resolve(request.result);
 			request.onerror = () => reject(request.error);
 		});
 	}
