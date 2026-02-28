@@ -14,7 +14,7 @@ if (isDev) {
 	// Exit early - don't register any caching logic in development
 } else {
 	// Production service worker code
-	const CACHE_NAME = "bible-reader-v1";
+	const CACHE_NAME = "bible-reader-v2";
 	const BIBLE_CACHE = "bible-content-v1";
 
 	// Critical files that should always be cached
@@ -87,7 +87,42 @@ if (isDev) {
 			return;
 		}
 
-		// Handle other requests with cache-first strategy for static assets
+		// Handle navigation requests (HTML pages) with network-first strategy
+		// This ensures users always get the latest UI after an update
+		if (event.request.mode === "navigate") {
+			event.respondWith(
+				fetch(event.request)
+					.then((fetchResponse) => {
+						// Cache the latest version for offline use
+						if (fetchResponse.ok) {
+							const responseClone = fetchResponse.clone();
+							caches
+								.open(CACHE_NAME)
+								.then((cache) =>
+									cache.put(event.request, responseClone)
+								);
+						}
+						return fetchResponse;
+					})
+					.catch(() => {
+						// Offline - fall back to cached version
+						return caches.match(event.request).then((response) => {
+							return (
+								response ||
+								new Response("Offline - page not available", {
+									status: 503,
+									statusText: "Service Unavailable",
+									headers: { "Content-Type": "text/html" },
+								})
+							);
+						});
+					})
+			);
+			return;
+		}
+
+		// Handle other GET requests with cache-first strategy for static assets
+		// (Next.js uses content-hashed filenames, so cached versions are always valid)
 		if (event.request.method === "GET") {
 			event.respondWith(
 				caches.match(event.request).then((response) => {
