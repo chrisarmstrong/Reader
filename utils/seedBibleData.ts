@@ -1,8 +1,13 @@
-import type { Book, VerseRecord, SearchIndexEntry } from "../types/bible";
+import type {
+	Book,
+	VerseRecord,
+	SearchIndexEntry,
+	CrossReferenceRecord,
+} from "../types/bible";
 import BibleStorage from "./BibleStorage";
 
 // Seed version — bump this to force a re-seed when the data/schema changes
-const SEED_VERSION = 1;
+const SEED_VERSION = 2;
 
 // How many books to process per chunk before yielding to the browser
 const BOOKS_PER_CHUNK = 3;
@@ -121,6 +126,20 @@ export async function seedBibleData(
 	for (let i = 0; i < indexEntries.length; i += INDEX_BATCH_SIZE) {
 		const batch = indexEntries.slice(i, i + INDEX_BATCH_SIZE);
 		await BibleStorage.putSearchIndexEntries(batch);
+		await yieldToBrowser();
+	}
+
+	// Seed cross-references from pre-built JSON
+	const crossRefModule = await import("../data/crossRefs.json");
+	const crossRefData: Record<string, string[]> = crossRefModule.default;
+	const crossRefEntries: CrossReferenceRecord[] = Object.entries(
+		crossRefData
+	).map(([id, refs]) => ({ id, refs }));
+
+	const CROSS_REF_BATCH_SIZE = 500;
+	for (let i = 0; i < crossRefEntries.length; i += CROSS_REF_BATCH_SIZE) {
+		const batch = crossRefEntries.slice(i, i + CROSS_REF_BATCH_SIZE);
+		await BibleStorage.putCrossReferences(batch);
 		await yieldToBrowser();
 	}
 

@@ -9,6 +9,7 @@ import type {
 	VerseNote,
 	VerseRecord,
 	SearchIndexEntry,
+	CrossReferenceRecord,
 } from "../types/bible";
 
 class BibleStorage {
@@ -18,7 +19,7 @@ class BibleStorage {
 
 	constructor() {
 		this.dbName = "BibleReaderDB";
-		this.version = 4;
+		this.version = 5;
 		this.db = null;
 	}
 
@@ -134,6 +135,12 @@ class BibleStorage {
 				if (!db.objectStoreNames.contains("searchIndex")) {
 					console.log("Creating searchIndex store");
 					db.createObjectStore("searchIndex", { keyPath: "word" });
+				}
+
+				// Store for cross-references (verse ID -> array of related verse IDs)
+				if (!db.objectStoreNames.contains("crossReferences")) {
+					console.log("Creating crossReferences store");
+					db.createObjectStore("crossReferences", { keyPath: "id" });
 				}
 
 				console.log("Upgrade complete");
@@ -583,6 +590,46 @@ class BibleStorage {
 					}
 				};
 			}
+		});
+	}
+
+	// Store a batch of cross-reference entries in a single transaction
+	async putCrossReferences(entries: CrossReferenceRecord[]): Promise<void> {
+		await this.init();
+
+		const transaction = this.db!.transaction(
+			["crossReferences"],
+			"readwrite"
+		);
+		const store = transaction.objectStore("crossReferences");
+
+		return new Promise((resolve, reject) => {
+			transaction.oncomplete = () => resolve();
+			transaction.onerror = () => reject(transaction.error);
+			transaction.onabort = () => reject(transaction.error);
+
+			for (const entry of entries) {
+				store.put(entry);
+			}
+		});
+	}
+
+	// Get cross-references for a verse by its ID
+	async getCrossReferences(
+		verseId: string
+	): Promise<CrossReferenceRecord | null> {
+		await this.init();
+
+		const transaction = this.db!.transaction(
+			["crossReferences"],
+			"readonly"
+		);
+		const store = transaction.objectStore("crossReferences");
+
+		return new Promise((resolve, reject) => {
+			const request = store.get(verseId);
+			request.onsuccess = () => resolve(request.result || null);
+			request.onerror = () => reject(request.error);
 		});
 	}
 

@@ -112,3 +112,79 @@
 .actionButton span {
 	color: inherit;
 }
+
+.crossRefsSection {
+	padding: 16px 0 24px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.crossRefsTitle {
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	opacity: 0.5;
+	margin: 0 0 12px;
+}
+
+.crossRefsList {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+
+.crossRefLink {
+	display: block;
+	padding: 12px 0;
+	text-decoration: none;
+	color: inherit;
+	transition: background 0.2s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.crossRefLink:last-child {
+	border-bottom: none;
+}
+
+.crossRefLink:active {
+	opacity: 0.7;
+}
+
+.crossRefReference {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.crossRefText {
+	display: block;
+	font-size: 14px;
+	line-height: 1.5;
+	opacity: 0.7;
+	font-family: var(--serif), georgia, serif;
+}
+
+.showMoreButton {
+	display: block;
+	width: 100%;
+	margin-top: 12px;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: 500;
+	background: none;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	cursor: pointer;
+	color: inherit;
+	opacity: 0.6;
+	transition: opacity 0.2s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.showMoreButton:hover {
+	opacity: 1;
+}
