@@ -170,6 +170,13 @@
 	opacity: 1;
 }
 
+.dataSummary {
+	font-size: 14px;
+	font-weight: 400;
+	opacity: 0.4;
+	margin: 0 0 16px;
+}
+
 .fileInput {
 	display: none;
 }

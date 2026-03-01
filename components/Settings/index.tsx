@@ -16,6 +16,8 @@ export default function Settings() {
 	const [playbackSpeed, setPlaybackSpeed] = useState(1);
 	const [isSamplePlaying, setIsSamplePlaying] = useState(false);
 	const [statusMessage, setStatusMessage] = useState<string | null>(null);
+	const [bookmarkCount, setBookmarkCount] = useState<number | null>(null);
+	const [noteCount, setNoteCount] = useState<number | null>(null);
 	const voiceRef = useRef<SpeechSynthesisVoice | null>(null);
 
 	useEffect(() => {
@@ -25,6 +27,10 @@ export default function Settings() {
 		BibleStorageInstance.getPreference("playbackSpeed", 1).then((val) =>
 			setPlaybackSpeed(val)
 		);
+		BibleStorageInstance.getAllBookmarks().then((b) =>
+			setBookmarkCount(b.length)
+		);
+		BibleStorageInstance.getAllNotes().then((n) => setNoteCount(n.length));
 	}, []);
 
 	// Load voice using the same logic as the audio player
@@ -174,6 +180,12 @@ export default function Settings() {
 
 			<div className={styles.section}>
 				<h2 className={styles.sectionTitle}>Data</h2>
+				{bookmarkCount !== null && noteCount !== null && (
+					<p className={styles.dataSummary}>
+						{bookmarkCount} bookmark{bookmarkCount !== 1 ? "s" : ""},{" "}
+						{noteCount} note{noteCount !== 1 ? "s" : ""}
+					</p>
+				)}
 				<button className={styles.button} onClick={handleExport}>
 					Export Notes &amp; Bookmarks
 				</button>
