@@ -281,7 +281,7 @@ export default function VerseDetails({
 						{crossRefs.slice(0, visibleCrossRefs).map((ref) => (
 							<Link
 								key={ref.verseId}
-								href={`/${ref.book.toLowerCase().replace(/\s+/g, "-")}#${ref.chapter}:${ref.verse}`}
+								href={`/${ref.book.toLowerCase().replace(/\s+/g, "-")}?highlight=${ref.chapter}:${ref.verse}#${ref.chapter}:${ref.verse}`}
 								className={styles.crossRefLink}
 								onClick={handleClose}
 							>
