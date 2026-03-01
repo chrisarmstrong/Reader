@@ -94,6 +94,14 @@ export function useAudioPlayer({
 		const verseId = `${currentChapterRef.current}:${v.verse}`;
 		setCurrentVerseId(verseId);
 
+		// Insert a brief pause before paragraph-starting verses (not the first)
+		if (v.paragraph && idx > 0) {
+			const pause = new SpeechSynthesisUtterance(". . .");
+			pause.volume = 0;
+			pause.rate = 1;
+			window.speechSynthesis.speak(pause);
+		}
+
 		const utterance = new SpeechSynthesisUtterance(v.text);
 		utteranceRef.current = utterance;
 
