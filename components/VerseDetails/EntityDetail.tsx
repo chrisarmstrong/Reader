@@ -53,7 +53,7 @@ export default function EntityDetail({
 	const [verseRefs, setVerseRefs] = useState<CrossReference[]>([]);
 	const [visibleRefs, setVisibleRefs] = useState(10);
 	const [loading, setLoading] = useState(true);
-	const [activeTab, setActiveTab] = useState<Tab>("about");
+	const [activeTab, setActiveTab] = useState<Tab>("verses");
 
 	const isPerson = entity.type === "person";
 	const hasFamily =
@@ -65,7 +65,7 @@ export default function EntityDetail({
 	useEffect(() => {
 		setLoading(true);
 		setVisibleRefs(10);
-		setActiveTab(hasDescription ? "about" : "verses");
+		setActiveTab("verses");
 		getEntityVerseRefs(entity.slug)
 			.then((refs) => {
 				setVerseRefs(refs);
@@ -76,7 +76,7 @@ export default function EntityDetail({
 				setVerseRefs([]);
 				setLoading(false);
 			});
-	}, [entity.slug, hasDescription]);
+	}, [entity.slug]);
 
 	const handleFamilyMemberTap = async (member: EntityFamilyMember) => {
 		const memberEntity = await getEntityBySlug(member.slug);
