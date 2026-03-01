@@ -102,7 +102,7 @@ function Reader({
 
 			styleEl.textContent = enabled
 				? ""
-				: ".verse sup { display: none !important; }";
+				: ".verse sup { font-size: 0 !important; padding: 0 0 0 0.25em; }";
 		};
 
 		loadPreference();
