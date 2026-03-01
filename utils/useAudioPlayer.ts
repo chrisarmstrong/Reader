@@ -112,9 +112,11 @@ export function useAudioPlayer({
 		const verseId = `${currentChapterRef.current}:${v.verse}`;
 		setCurrentVerseId(verseId);
 
-		// Insert a brief pause before paragraph-starting verses (not the first)
-		if (v.paragraph && idx > 0) {
-			const pause = new SpeechSynthesisUtterance(". . .");
+		// Insert a brief pause between verses, doubled for paragraph breaks
+		if (idx > 0) {
+			const pause = new SpeechSynthesisUtterance(
+				v.paragraph ? ". . . . . ." : ". . ."
+			);
 			pause.volume = 0;
 			pause.rate = 1;
 			window.speechSynthesis.speak(pause);
