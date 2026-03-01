@@ -42,8 +42,7 @@ export default function Contents({
 		const newValue = !redLetterEnabled;
 		setRedLetterEnabled(newValue);
 		await BibleStorageInstance.savePreference("redLetterEnabled", newValue);
-		// Force reload to re-apply/remove red letter CSS
-		window.location.reload();
+		window.dispatchEvent(new Event("redLetterChanged"));
 	};
 
 	// Close menu when ESC is pressed

@@ -76,7 +76,11 @@ function Reader({
 
 		loadRedLetterVerses();
 
+		// Re-evaluate when preference is toggled or data becomes available
+		window.addEventListener("redLetterChanged", loadRedLetterVerses);
+
 		return () => {
+			window.removeEventListener("redLetterChanged", loadRedLetterVerses);
 			if (styleEl && styleEl.parentNode) {
 				styleEl.parentNode.removeChild(styleEl);
 			}
