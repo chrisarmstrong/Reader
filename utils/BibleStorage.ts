@@ -8,6 +8,7 @@ import type {
 	Bookmark,
 	VerseNote,
 	VerseRecord,
+	ChapterRecord,
 	SearchIndexEntry,
 	CrossReferenceRecord,
 } from "../types/bible";
@@ -19,7 +20,7 @@ class BibleStorage {
 
 	constructor() {
 		this.dbName = "BibleReaderDB";
-		this.version = 5;
+		this.version = 6;
 		this.db = null;
 	}
 
@@ -141,6 +142,15 @@ class BibleStorage {
 				if (!db.objectStoreNames.contains("crossReferences")) {
 					console.log("Creating crossReferences store");
 					db.createObjectStore("crossReferences", { keyPath: "id" });
+				}
+
+				// Store for chapter metadata (psalm titles, etc.)
+				if (!db.objectStoreNames.contains("chapters")) {
+					console.log("Creating chapters store");
+					const chaptersStore = db.createObjectStore("chapters", {
+						keyPath: "id",
+					});
+					chaptersStore.createIndex("book", "book", { unique: false });
 				}
 
 				console.log("Upgrade complete");
@@ -628,6 +638,38 @@ class BibleStorage {
 
 		return new Promise((resolve, reject) => {
 			const request = store.get(verseId);
+			request.onsuccess = () => resolve(request.result || null);
+			request.onerror = () => reject(request.error);
+		});
+	}
+
+	// Store a batch of chapter records in a single transaction
+	async putChapters(chapters: ChapterRecord[]): Promise<void> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["chapters"], "readwrite");
+		const store = transaction.objectStore("chapters");
+
+		return new Promise((resolve, reject) => {
+			transaction.oncomplete = () => resolve();
+			transaction.onerror = () => reject(transaction.error);
+			transaction.onabort = () => reject(transaction.error);
+
+			for (const chapter of chapters) {
+				store.put(chapter);
+			}
+		});
+	}
+
+	// Get chapter metadata by ID (e.g. "Psalms-3")
+	async getChapter(chapterId: string): Promise<ChapterRecord | null> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["chapters"], "readonly");
+		const store = transaction.objectStore("chapters");
+
+		return new Promise((resolve, reject) => {
+			const request = store.get(chapterId);
 			request.onsuccess = () => resolve(request.result || null);
 			request.onerror = () => reject(request.error);
 		});

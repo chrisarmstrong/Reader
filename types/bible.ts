@@ -58,7 +58,14 @@ export interface VerseRecord {
 	text: string;
 	paragraph?: boolean;
 	poetry?: boolean;
-	chapterTitle?: string; // psalm superscription, attached to verse 1
+}
+
+export interface ChapterRecord {
+	id: string; // "Psalms-3"
+	book: string;
+	bookIndex: number;
+	chapter: string;
+	title?: string; // psalm superscription
 }
 
 export interface SearchIndexEntry {

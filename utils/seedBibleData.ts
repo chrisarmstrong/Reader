@@ -1,13 +1,14 @@
 import type {
 	Book,
 	VerseRecord,
+	ChapterRecord,
 	SearchIndexEntry,
 	CrossReferenceRecord,
 } from "../types/bible";
 import BibleStorage from "./BibleStorage";
 
 // Seed version — bump this to force a re-seed when the data/schema changes
-const SEED_VERSION = 4;
+const SEED_VERSION = 5;
 
 // How many books to process per chunk before yielding to the browser
 const BOOKS_PER_CHUNK = 3;
@@ -56,8 +57,9 @@ function yieldToBrowser(): Promise<void> {
 /**
  * Seed the entire Bible into IndexedDB:
  *  1. Writes all verses into the `verses` store
- *  2. Builds an inverted index (word → verse IDs) in the `searchIndex` store
- *  3. Saves a seed version flag so we skip on subsequent loads
+ *  2. Writes chapter metadata (psalm titles, etc.) into the `chapters` store
+ *  3. Builds an inverted index (word → verse IDs) in the `searchIndex` store
+ *  4. Saves a seed version flag so we skip on subsequent loads
  *
  * Books are processed in small chunks with yielding to keep the UI responsive.
  */
@@ -75,12 +77,24 @@ export async function seedBibleData(
 	report("seeding", 0);
 
 	// Process books in chunks
+	const allChapters: ChapterRecord[] = [];
+
 	for (let i = 0; i < totalBooks; i += BOOKS_PER_CHUNK) {
 		const chunk = books.slice(i, i + BOOKS_PER_CHUNK);
 		const verses: VerseRecord[] = [];
 
 		for (const book of chunk) {
 			for (const chapter of book.chapters) {
+				// Collect chapter metadata
+				const chapterRecord: ChapterRecord = {
+					id: `${book.book}-${chapter.chapter}`,
+					book: book.book,
+					bookIndex: book.index,
+					chapter: chapter.chapter,
+				};
+				if (chapter.title) chapterRecord.title = chapter.title;
+				allChapters.push(chapterRecord);
+
 				for (const verse of chapter.verses) {
 					const id = `${book.book}-${chapter.chapter}:${verse.verse}`;
 					const record: VerseRecord = {
@@ -93,9 +107,6 @@ export async function seedBibleData(
 					};
 					if (verse.paragraph) record.paragraph = true;
 					if (verse.poetry) record.poetry = true;
-					if (verse.verse === "1" && chapter.title) {
-						record.chapterTitle = chapter.title;
-					}
 					verses.push(record);
 
 					// Build inverted index entries
@@ -118,6 +129,14 @@ export async function seedBibleData(
 		report("seeding", Math.min(i + BOOKS_PER_CHUNK, totalBooks));
 
 		// Yield between chunks so the UI stays responsive
+		await yieldToBrowser();
+	}
+
+	// Write chapter metadata in batches
+	const CHAPTER_BATCH_SIZE = 500;
+	for (let i = 0; i < allChapters.length; i += CHAPTER_BATCH_SIZE) {
+		const batch = allChapters.slice(i, i + CHAPTER_BATCH_SIZE);
+		await BibleStorage.putChapters(batch);
 		await yieldToBrowser();
 	}
 
