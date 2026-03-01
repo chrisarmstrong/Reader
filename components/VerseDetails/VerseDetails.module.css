@@ -46,6 +46,7 @@
 
 .notesSection {
 	padding: 16px 0 24px;
+	overflow: hidden;
 }
 
 .noteTextarea {

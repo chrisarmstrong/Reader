@@ -35,6 +35,54 @@ function Reader({
 		searchActiveRef.current = searchActive;
 	}, [searchActive]);
 
+	// Inject CSS for red letter verses (words of Jesus)
+	useEffect(() => {
+		const styleId = `red-letter-styles-${book.book}`;
+		let styleEl = document.getElementById(styleId) as HTMLStyleElement;
+
+		const loadRedLetterVerses = async () => {
+			const redLetterEnabled =
+				await BibleStorageInstance.getPreference("redLetterEnabled", true);
+			if (!redLetterEnabled) {
+				if (styleEl) styleEl.textContent = "";
+				return;
+			}
+
+			const record =
+				await BibleStorageInstance.getRedLetterVersesForBook(book.book);
+			if (!record) {
+				if (styleEl) styleEl.textContent = "";
+				return;
+			}
+
+			if (!styleEl) {
+				styleEl = document.createElement("style");
+				styleEl.id = styleId;
+				document.head.appendChild(styleEl);
+			}
+
+			// Build CSS selectors for all red letter verses in this book
+			const selectors: string[] = [];
+			for (const [chapter, verses] of Object.entries(record.chapters)) {
+				for (const verse of verses) {
+					selectors.push(`#${CSS.escape(`${chapter}:${verse}`)}`);
+				}
+			}
+
+			styleEl.textContent = selectors.length
+				? `${selectors.join(", ")} { color: #c0392b; }`
+				: "";
+		};
+
+		loadRedLetterVerses();
+
+		return () => {
+			if (styleEl && styleEl.parentNode) {
+				styleEl.parentNode.removeChild(styleEl);
+			}
+		};
+	}, [book]);
+
 	// Inject CSS for bookmarked verses (more efficient than JS checking on each render)
 	useEffect(() => {
 		const styleId = `bookmark-styles-${book.book}`;

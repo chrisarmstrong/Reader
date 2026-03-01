@@ -11,6 +11,7 @@ import type {
 	ChapterRecord,
 	SearchIndexEntry,
 	CrossReferenceRecord,
+	RedLetterRecord,
 } from "../types/bible";
 
 class BibleStorage {
@@ -151,6 +152,12 @@ class BibleStorage {
 						keyPath: "id",
 					});
 					chaptersStore.createIndex("book", "book", { unique: false });
+				}
+
+				// Store for red letter verses (words of Jesus) keyed by book name
+				if (!db.objectStoreNames.contains("redLetterVerses")) {
+					console.log("Creating redLetterVerses store");
+					db.createObjectStore("redLetterVerses", { keyPath: "book" });
 				}
 
 				console.log("Upgrade complete");
@@ -685,6 +692,48 @@ class BibleStorage {
 		return new Promise((resolve, reject) => {
 			const request = store.count();
 			request.onsuccess = () => resolve(request.result);
+			request.onerror = () => reject(request.error);
+		});
+	}
+
+	// --- Red letter verse methods ---
+
+	// Store a batch of red letter records (one per book)
+	async putRedLetterVerses(entries: RedLetterRecord[]): Promise<void> {
+		await this.init();
+
+		const transaction = this.db!.transaction(
+			["redLetterVerses"],
+			"readwrite"
+		);
+		const store = transaction.objectStore("redLetterVerses");
+
+		return new Promise((resolve, reject) => {
+			transaction.oncomplete = () => resolve();
+			transaction.onerror = () => reject(transaction.error);
+			transaction.onabort = () => reject(transaction.error);
+
+			for (const entry of entries) {
+				store.put(entry);
+			}
+		});
+	}
+
+	// Get red letter verse data for a specific book
+	async getRedLetterVersesForBook(
+		bookName: string
+	): Promise<RedLetterRecord | null> {
+		await this.init();
+
+		const transaction = this.db!.transaction(
+			["redLetterVerses"],
+			"readonly"
+		);
+		const store = transaction.objectStore("redLetterVerses");
+
+		return new Promise((resolve, reject) => {
+			const request = store.get(bookName);
+			request.onsuccess = () => resolve(request.result || null);
 			request.onerror = () => reject(request.error);
 		});
 	}

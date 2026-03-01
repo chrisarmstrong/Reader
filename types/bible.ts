@@ -98,6 +98,11 @@ export interface CrossReferenceRecord {
 	refs: string[]; // target verse IDs sorted by relevance
 }
 
+export interface RedLetterRecord {
+	book: string; // e.g. "Matthew"
+	chapters: Record<string, string[]>; // chapter -> array of verse numbers
+}
+
 export interface CrossReference {
 	verseId: string; // "Genesis-1:1"
 	book: string; // "Genesis"

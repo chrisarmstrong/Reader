@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import styles from "./Contents.module.css";
 import type { Book } from "../../types/bible";
 import { stagger } from "motion/react";
 import Link from "next/link";
+import BibleStorageInstance from "../../utils/BibleStorage";
 
 // Maximum pointer movement (px) that still counts as a tap rather than a scroll
 const TAP_THRESHOLD = 10;
@@ -28,6 +29,22 @@ export default function Contents({
 	const listRef = useRef<HTMLDivElement | null>(null);
 	const router = useRouter();
 	const pointerStartRef = useRef<{ x: number; y: number } | null>(null);
+	const [redLetterEnabled, setRedLetterEnabled] = useState(true);
+
+	// Load red letter preference on mount
+	useEffect(() => {
+		BibleStorageInstance.getPreference("redLetterEnabled", true).then(
+			(val) => setRedLetterEnabled(val)
+		);
+	}, []);
+
+	const handleRedLetterToggle = async () => {
+		const newValue = !redLetterEnabled;
+		setRedLetterEnabled(newValue);
+		await BibleStorageInstance.savePreference("redLetterEnabled", newValue);
+		// Force reload to re-apply/remove red letter CSS
+		window.location.reload();
+	};
 
 	// Close menu when ESC is pressed
 	useEffect(() => {
@@ -174,6 +191,16 @@ export default function Contents({
 						</Link>
 					);
 				})}
+				<button
+					className={styles.settingToggle}
+					onClick={handleRedLetterToggle}
+				>
+					<span>Red Letter</span>
+					<span
+						className={styles.toggleIndicator}
+						data-enabled={redLetterEnabled}
+					/>
+				</button>
 				<Link
 					href="/update"
 					className={styles.updateLink}

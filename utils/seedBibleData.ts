@@ -4,6 +4,7 @@ import type {
 	ChapterRecord,
 	SearchIndexEntry,
 	CrossReferenceRecord,
+	RedLetterRecord,
 } from "../types/bible";
 import BibleStorage from "./BibleStorage";
 
@@ -167,6 +168,17 @@ export async function seedBibleData(
 		await BibleStorage.putCrossReferences(batch);
 		await yieldToBrowser();
 	}
+
+	// Seed red letter verses from pre-built JSON
+	const redLetterModule = await import("../data/redLetterVerses.json");
+	const redLetterData: Record<string, Record<string, string[]>> =
+		redLetterModule.default;
+	const redLetterEntries: RedLetterRecord[] = Object.entries(
+		redLetterData
+	).map(([book, chapters]) => ({ book, chapters }));
+
+	await BibleStorage.putRedLetterVerses(redLetterEntries);
+	await yieldToBrowser();
 
 	// Mark seeding as complete
 	await BibleStorage.savePreference("seedVersion", SEED_VERSION);
