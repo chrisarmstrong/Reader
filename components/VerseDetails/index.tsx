@@ -276,7 +276,7 @@ export default function VerseDetails({
 
 			{crossRefs.length > 0 && (
 				<div className={styles.crossRefsSection}>
-					<h4 className={styles.crossRefsTitle}>Cross References</h4>
+					<h4 className={styles.crossRefsTitle}>References</h4>
 					<div className={styles.crossRefsList}>
 						{crossRefs.slice(0, visibleCrossRefs).map((ref) => (
 							<Link
