@@ -240,7 +240,7 @@ export default function VerseDetails({
 							}}
 							aria-label="Close"
 						>
-							<IconX size={18} />
+							<IconX size={24} />
 						</button>
 					</div>
 
@@ -258,9 +258,9 @@ export default function VerseDetails({
 							disabled={isLoading}
 						>
 							{isBookmarked ? (
-								<IconBookmarkFilled size={16} />
+								<IconBookmarkFilled size={24} />
 							) : (
-								<IconBookmark size={16} />
+								<IconBookmark size={24} />
 							)}
 							<span>{isBookmarked ? "Bookmarked" : "Bookmark"}</span>
 						</button>
@@ -273,7 +273,7 @@ export default function VerseDetails({
 									onPlayAudio(parseInt(chapter), parseInt(verse));
 								}}
 							>
-								<IconPlayerPlay size={16} />
+								<IconPlayerPlay size={24} />
 								<span>Play</span>
 							</button>
 						)}
@@ -285,7 +285,7 @@ export default function VerseDetails({
 								handleShare();
 							}}
 						>
-							<IconShare size={16} />
+							<IconShare size={24} />
 							<span>Share</span>
 						</button>
 					</div>
@@ -338,7 +338,7 @@ export default function VerseDetails({
 								{crossRefs.slice(0, visibleCrossRefs).map((ref) => (
 									<Link
 										key={ref.verseId}
-										href={`/${ref.book.toLowerCase().replace(/\s+/g, "-")}#${ref.chapter}:${ref.verse}`}
+										href={`/${ref.book.toLowerCase().replace(/\s+/g, "-")}?highlight=${ref.chapter}:${ref.verse}#${ref.chapter}:${ref.verse}`}
 										className={styles.crossRefLink}
 										onClick={handleClose}
 									>
