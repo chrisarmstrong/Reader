@@ -216,7 +216,7 @@ export default function Bookmarks({
 						return (
 							<div className={styles.bookmarkItem}>
 								<Link
-									href={`/${bookSlug}#${bookmark.chapter}:${bookmark.verse}`}
+									href={`/${bookSlug}?highlight=${bookmark.chapter}:${bookmark.verse}#${bookmark.chapter}:${bookmark.verse}`}
 									className={styles.bookmarkLink}
 								>
 									<div className={styles.bookmarkHeader}>
