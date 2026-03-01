@@ -1,11 +1,14 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import styles from "./Contents.module.css";
 import type { Book } from "../../types/bible";
 import { stagger } from "motion/react";
-import { useRef } from "react";
 import Link from "next/link";
+
+// Maximum pointer movement (px) that still counts as a tap rather than a scroll
+const TAP_THRESHOLD = 10;
 
 interface ContentsProps {
 	active: boolean;
@@ -23,6 +26,8 @@ export default function Contents({
 	books,
 }: ContentsProps) {
 	const listRef = useRef<HTMLDivElement | null>(null);
+	const router = useRouter();
+	const pointerStartRef = useRef<{ x: number; y: number } | null>(null);
 
 	// Close menu when ESC is pressed
 	useEffect(() => {
@@ -107,7 +112,29 @@ export default function Contents({
 	return (
 		<div className={styles.container} data-active={active}>
 			<div className={styles.bookList} ref={listRef}>
-				<button className={styles.randomButton} onClick={handleRandomBook}>
+				<button
+					className={styles.randomButton}
+					onPointerDown={(e) => {
+						pointerStartRef.current = { x: e.clientX, y: e.clientY };
+					}}
+					onPointerUp={(e) => {
+						const start = pointerStartRef.current;
+						pointerStartRef.current = null;
+						if (!start) return;
+						const dx = Math.abs(e.clientX - start.x);
+						const dy = Math.abs(e.clientY - start.y);
+						if (dx < TAP_THRESHOLD && dy < TAP_THRESHOLD) {
+							handleRandomBook(e);
+						}
+					}}
+					onClick={(e) => {
+						if (e.detail > 0) {
+							e.preventDefault();
+						} else {
+							handleRandomBook(e);
+						}
+					}}
+				>
 					Random
 				</button>
 				{books.map((book, i) => {
@@ -118,13 +145,61 @@ export default function Contents({
 							href={`/${bookSlug}`}
 							className={styles.bookLink}
 							data-index={i}
-							onClick={() => handleBookClick(book)}
+							onPointerDown={(e) => {
+								pointerStartRef.current = { x: e.clientX, y: e.clientY };
+							}}
+							onPointerUp={(e) => {
+								const start = pointerStartRef.current;
+								pointerStartRef.current = null;
+								if (!start) return;
+								const dx = Math.abs(e.clientX - start.x);
+								const dy = Math.abs(e.clientY - start.y);
+								if (dx < TAP_THRESHOLD && dy < TAP_THRESHOLD) {
+									e.preventDefault();
+									handleBookClick(book);
+									router.push(`/${bookSlug}`);
+								}
+							}}
+							onClick={(e) => {
+								// Keyboard Enter (detail === 0): let through for accessibility
+								// Pointer clicks (detail > 0): prevent, handled by onPointerUp
+								if (e.detail > 0) {
+									e.preventDefault();
+								} else {
+									handleBookClick(book);
+								}
+							}}
 						>
 							{book.book}
 						</Link>
 					);
 				})}
-				<Link href="/update" className={styles.updateLink}>
+				<Link
+					href="/update"
+					className={styles.updateLink}
+					onPointerDown={(e) => {
+						pointerStartRef.current = { x: e.clientX, y: e.clientY };
+					}}
+					onPointerUp={(e) => {
+						const start = pointerStartRef.current;
+						pointerStartRef.current = null;
+						if (!start) return;
+						const dx = Math.abs(e.clientX - start.x);
+						const dy = Math.abs(e.clientY - start.y);
+						if (dx < TAP_THRESHOLD && dy < TAP_THRESHOLD) {
+							e.preventDefault();
+							dismiss();
+							router.push("/update");
+						}
+					}}
+					onClick={(e) => {
+						if (e.detail > 0) {
+							e.preventDefault();
+						} else {
+							dismiss();
+						}
+					}}
+				>
 					Check for Updates
 				</Link>
 			</div>
