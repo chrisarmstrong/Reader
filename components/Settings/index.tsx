@@ -53,11 +53,24 @@ export default function Settings() {
 		await BibleStorageInstance.savePreference("playbackSpeed", rounded);
 	};
 
+	const startSample = (rate: number) => {
+		const utterance = new SpeechSynthesisUtterance(SAMPLE_TEXT);
+		utterance.rate = rate;
+		// Only override voice when selectVoice returned an explicit pick;
+		// null means the browser default is already the best choice.
+		if (voiceRef.current) {
+			utterance.voice = voiceRef.current;
+		}
+		utterance.onend = () => setIsSamplePlaying(false);
+		utterance.onerror = () => setIsSamplePlaying(false);
+		setIsSamplePlaying(true);
+		window.speechSynthesis.speak(utterance);
+	};
+
 	const handleSample = () => {
 		if (typeof window === "undefined" || !("speechSynthesis" in window))
 			return;
 
-		// Stop any current sample
 		window.speechSynthesis.cancel();
 
 		if (isSamplePlaying) {
@@ -65,19 +78,19 @@ export default function Settings() {
 			return;
 		}
 
-		const utterance = new SpeechSynthesisUtterance(SAMPLE_TEXT);
-		utterance.rate = playbackSpeed;
-		if (voiceRef.current) {
-			utterance.voice = voiceRef.current;
-			utterance.lang = voiceRef.current.lang;
-		} else {
-			utterance.lang = "en-US";
-		}
-		utterance.onend = () => setIsSamplePlaying(false);
-		utterance.onerror = () => setIsSamplePlaying(false);
-		setIsSamplePlaying(true);
-		window.speechSynthesis.speak(utterance);
+		startSample(playbackSpeed);
 	};
+
+	// Restart sample at new speed when slider moves during playback
+	useEffect(() => {
+		if (!isSamplePlaying) return;
+		if (typeof window === "undefined" || !("speechSynthesis" in window))
+			return;
+
+		window.speechSynthesis.cancel();
+		startSample(playbackSpeed);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [playbackSpeed]);
 
 	// Clean up sample on unmount
 	useEffect(() => {

@@ -99,9 +99,6 @@ export function useAudioPlayer({
 		// null means the browser default is already a good English voice.
 		if (preferredVoice) {
 			utterance.voice = preferredVoice;
-			utterance.lang = preferredVoice.lang;
-		} else {
-			utterance.lang = "en-US";
 		}
 		utterance.rate = playbackRateRef.current;
 		utterance.pitch = 1.0;
