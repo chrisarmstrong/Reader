@@ -278,6 +278,7 @@
 
 .entityDetailTitleText {
 	min-width: 0;
+	overflow: hidden;
 }
 
 .entityName {
@@ -291,9 +292,8 @@
 	font-size: 13px;
 	opacity: 0.6;
 	margin: 0;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 /* Entity tabs */
