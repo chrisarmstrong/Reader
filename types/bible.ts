@@ -111,6 +111,22 @@ export interface CrossReference {
 	text?: string; // verse content, loaded from IndexedDB
 }
 
+export interface BibleEntity {
+	slug: string;
+	name: string;
+	type: "person" | "place";
+	description: string;
+	// Person-specific fields
+	gender?: string;
+	alsoCalled?: string;
+	// Place-specific fields
+	featureType?: string;
+	latitude?: string;
+	longitude?: string;
+	// Computed
+	verseCount?: number;
+}
+
 // Component Props Types
 export interface MainProps {
 	slug?: string;

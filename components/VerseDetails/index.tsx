@@ -9,11 +9,15 @@ import {
 	IconPlayerPlay,
 	IconShare,
 	IconX,
+	IconUser,
+	IconMapPin,
 } from "@tabler/icons-react";
 import Link from "next/link";
 import BibleStorage from "../../utils/BibleStorage";
 import { getCrossReferences } from "../../utils/getCrossRefs";
-import type { VerseNote, CrossReference } from "../../types/bible";
+import { getVerseEntities } from "../../utils/getEntities";
+import EntityDetail from "./EntityDetail";
+import type { VerseNote, CrossReference, BibleEntity } from "../../types/bible";
 
 interface VerseDetailsProps {
 	active: boolean;
@@ -43,6 +47,10 @@ export default function VerseDetails({
 	const [isEditing, setIsEditing] = useState(false);
 	const [crossRefs, setCrossRefs] = useState<CrossReference[]>([]);
 	const [visibleCrossRefs, setVisibleCrossRefs] = useState(10);
+	const [entities, setEntities] = useState<BibleEntity[]>([]);
+	const [selectedEntity, setSelectedEntity] = useState<BibleEntity | null>(
+		null
+	);
 	const savedNoteRef = useRef("");
 	const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -116,7 +124,19 @@ export default function VerseDetails({
 					console.error("Error loading cross-references:", error);
 					setCrossRefs([]);
 				});
+
+			getVerseEntities(book, chapter, verse)
+				.then((ents) => {
+					setEntities(ents);
+				})
+				.catch((error) => {
+					console.error("Error loading entities:", error);
+					setEntities([]);
+				});
 		}
+
+		// Reset entity detail view when verse changes
+		setSelectedEntity(null);
 	}, [active, book, chapter, verse]);
 
 	const handleBookmarkToggle = async () => {
@@ -184,6 +204,7 @@ export default function VerseDetails({
 
 	const handleClose = useCallback(async () => {
 		await saveNote();
+		setSelectedEntity(null);
 		onClose();
 	}, [saveNote, onClose]);
 
@@ -198,116 +219,153 @@ export default function VerseDetails({
 			padding="lg"
 			withCloseButton={false}
 		>
-			<div className={styles.header}>
-				<h3 className={styles.reference}>
-					{book} {chapter}:{verse}
-				</h3>
-				<button
-					className={styles.closeButton}
-					onPointerUp={(e) => {
-						e.preventDefault();
-						handleClose();
-					}}
-					aria-label="Close"
-				>
-					<IconX size={24} />
-				</button>
-			</div>
-
-			<div className={styles.content}>
-				<p className={styles.verseText}>{text}</p>
-			</div>
-
-			<div className={styles.actions}>
-				<button
-					className={styles.actionButton}
-					onPointerUp={(e) => {
-						e.preventDefault();
-						handleBookmarkToggle();
-					}}
-					disabled={isLoading}
-				>
-					{isBookmarked ? (
-						<IconBookmarkFilled size={24} />
-					) : (
-						<IconBookmark size={24} />
-					)}
-					<span>{isBookmarked ? "Bookmarked" : "Bookmark"}</span>
-				</button>
-
-				{onPlayAudio && (
-					<button
-						className={styles.actionButton}
-						onPointerUp={(e) => {
-							e.preventDefault();
-							onPlayAudio(parseInt(chapter), parseInt(verse));
-						}}
-					>
-						<IconPlayerPlay size={24} />
-						<span>Play</span>
-					</button>
-				)}
-
-				<button
-					className={styles.actionButton}
-					onPointerUp={(e) => {
-						e.preventDefault();
-						handleShare();
-					}}
-				>
-					<IconShare size={24} />
-					<span>Share</span>
-				</button>
-			</div>
-
-			<div className={styles.notesSection}>
-				<textarea
-					ref={textareaRef}
-					className={styles.noteTextarea}
-					placeholder="Add a note..."
-					value={noteText}
-					onChange={(e) => setNoteText(e.target.value)}
-					onBlur={() => {
-						saveNote();
-					}}
-					rows={1}
+			{selectedEntity ? (
+				<EntityDetail
+					entity={selectedEntity}
+					onBack={() => setSelectedEntity(null)}
+					onClose={handleClose}
 				/>
-			</div>
-
-			{crossRefs.length > 0 && (
-				<div className={styles.crossRefsSection}>
-					<h4 className={styles.crossRefsTitle}>References</h4>
-					<div className={styles.crossRefsList}>
-						{crossRefs.slice(0, visibleCrossRefs).map((ref) => (
-							<Link
-								key={ref.verseId}
-								href={`/${ref.book.toLowerCase().replace(/\s+/g, "-")}#${ref.chapter}:${ref.verse}`}
-								className={styles.crossRefLink}
-								onClick={handleClose}
-							>
-								<span className={styles.crossRefReference}>
-									{ref.book} {ref.chapter}:{ref.verse}
-								</span>
-								{ref.text && (
-									<span className={styles.crossRefText}>
-										{ref.text}
-									</span>
-								)}
-							</Link>
-						))}
-					</div>
-					{crossRefs.length > visibleCrossRefs && (
+			) : (
+				<>
+					<div className={styles.header}>
+						<h3 className={styles.reference}>
+							{book} {chapter}:{verse}
+						</h3>
 						<button
-							className={styles.showMoreButton}
-							onClick={() =>
-								setVisibleCrossRefs((prev) => prev + 10)
-							}
+							className={styles.closeButton}
+							onPointerUp={(e) => {
+								e.preventDefault();
+								handleClose();
+							}}
+							aria-label="Close"
 						>
-							Show more ({crossRefs.length - visibleCrossRefs}{" "}
-							remaining)
+							<IconX size={24} />
 						</button>
+					</div>
+
+					<div className={styles.content}>
+						<p className={styles.verseText}>{text}</p>
+					</div>
+
+					<div className={styles.actions}>
+						<button
+							className={styles.actionButton}
+							onPointerUp={(e) => {
+								e.preventDefault();
+								handleBookmarkToggle();
+							}}
+							disabled={isLoading}
+						>
+							{isBookmarked ? (
+								<IconBookmarkFilled size={24} />
+							) : (
+								<IconBookmark size={24} />
+							)}
+							<span>{isBookmarked ? "Bookmarked" : "Bookmark"}</span>
+						</button>
+
+						{onPlayAudio && (
+							<button
+								className={styles.actionButton}
+								onPointerUp={(e) => {
+									e.preventDefault();
+									onPlayAudio(parseInt(chapter), parseInt(verse));
+								}}
+							>
+								<IconPlayerPlay size={24} />
+								<span>Play</span>
+							</button>
+						)}
+
+						<button
+							className={styles.actionButton}
+							onPointerUp={(e) => {
+								e.preventDefault();
+								handleShare();
+							}}
+						>
+							<IconShare size={24} />
+							<span>Share</span>
+						</button>
+					</div>
+
+					{entities.length > 0 && (
+						<div className={styles.entitiesSection}>
+							<h4 className={styles.crossRefsTitle}>
+								People & Places
+							</h4>
+							<div className={styles.entityChips}>
+								{entities.map((entity) => (
+									<button
+										key={entity.slug}
+										className={styles.entityChip}
+										onPointerUp={(e) => {
+											e.preventDefault();
+											setSelectedEntity(entity);
+										}}
+									>
+										{entity.type === "person" ? (
+											<IconUser size={14} />
+										) : (
+											<IconMapPin size={14} />
+										)}
+										<span>{entity.name}</span>
+									</button>
+								))}
+							</div>
+						</div>
 					)}
-				</div>
+
+					<div className={styles.notesSection}>
+						<textarea
+							ref={textareaRef}
+							className={styles.noteTextarea}
+							placeholder="Add a note..."
+							value={noteText}
+							onChange={(e) => setNoteText(e.target.value)}
+							onBlur={() => {
+								saveNote();
+							}}
+							rows={1}
+						/>
+					</div>
+
+					{crossRefs.length > 0 && (
+						<div className={styles.crossRefsSection}>
+							<h4 className={styles.crossRefsTitle}>References</h4>
+							<div className={styles.crossRefsList}>
+								{crossRefs.slice(0, visibleCrossRefs).map((ref) => (
+									<Link
+										key={ref.verseId}
+										href={`/${ref.book.toLowerCase().replace(/\s+/g, "-")}#${ref.chapter}:${ref.verse}`}
+										className={styles.crossRefLink}
+										onClick={handleClose}
+									>
+										<span className={styles.crossRefReference}>
+											{ref.book} {ref.chapter}:{ref.verse}
+										</span>
+										{ref.text && (
+											<span className={styles.crossRefText}>
+												{ref.text}
+											</span>
+										)}
+									</Link>
+								))}
+							</div>
+							{crossRefs.length > visibleCrossRefs && (
+								<button
+									className={styles.showMoreButton}
+									onClick={() =>
+										setVisibleCrossRefs((prev) => prev + 10)
+									}
+								>
+									Show more ({crossRefs.length - visibleCrossRefs}{" "}
+									remaining)
+								</button>
+							)}
+						</div>
+					)}
+				</>
 			)}
 		</Drawer>
 	);
