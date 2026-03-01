@@ -34,6 +34,21 @@ export function useAudioPlayer({
 	const currentChapterRef = useRef<number | undefined>(undefined);
 	const playbackRateRef = useRef<number>(1);
 	const stoppedRef = useRef<boolean>(false);
+	const wakeLockRef = useRef<WakeLockSentinel | null>(null);
+
+	const acquireWakeLock = useCallback(async () => {
+		if (typeof navigator === "undefined" || !("wakeLock" in navigator)) return;
+		try {
+			wakeLockRef.current = await navigator.wakeLock.request("screen");
+		} catch {
+			// Wake lock can fail silently (e.g. low battery, background tab)
+		}
+	}, []);
+
+	const releaseWakeLock = useCallback(() => {
+		wakeLockRef.current?.release();
+		wakeLockRef.current = null;
+	}, []);
 
 	// Detect Web Speech API support
 	useEffect(() => {
@@ -68,9 +83,10 @@ export function useAudioPlayer({
 			setCurrentVerseId(null);
 			queueIndexRef.current = 0;
 			versesRef.current = [];
+			releaseWakeLock();
 		}
 		currentBookRef.current = book?.book;
-	}, [book?.book, isPlaying]);
+	}, [book?.book, isPlaying, releaseWakeLock]);
 
 	// Cleanup on unmount
 	useEffect(() => {
@@ -78,8 +94,9 @@ export function useAudioPlayer({
 			if (typeof window !== "undefined" && window.speechSynthesis) {
 				window.speechSynthesis.cancel();
 			}
+			releaseWakeLock();
 		};
-	}, []);
+	}, [releaseWakeLock]);
 
 	// Speak the next verse in the queue
 	const speakNext = useCallback(() => {
@@ -87,6 +104,7 @@ export function useAudioPlayer({
 		if (!versesRef.current[idx]) {
 			setIsPlaying(false);
 			setCurrentVerseId(null);
+			releaseWakeLock();
 			return;
 		}
 
@@ -127,7 +145,7 @@ export function useAudioPlayer({
 		};
 
 		window.speechSynthesis.speak(utterance);
-	}, [preferredVoice]);
+	}, [preferredVoice, releaseWakeLock]);
 
 	// Play function - now takes chapter and verse as parameters
 	const play = useCallback(
@@ -174,9 +192,10 @@ export function useAudioPlayer({
 
 			stoppedRef.current = false;
 			setIsPlaying(true);
+			acquireWakeLock();
 			speakNext();
 		},
-		[isSupported, book, preferredVoice, speakNext]
+		[isSupported, book, preferredVoice, speakNext, acquireWakeLock]
 	);
 
 	// Pause function — set stoppedRef BEFORE cancel() because cancel()
@@ -190,7 +209,8 @@ export function useAudioPlayer({
 		setCurrentVerseId(null);
 		queueIndexRef.current = 0;
 		versesRef.current = [];
-	}, []);
+		releaseWakeLock();
+	}, [releaseWakeLock]);
 
 	// Toggle play/pause
 	const togglePlayPause = useCallback(
