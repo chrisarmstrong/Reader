@@ -111,6 +111,19 @@ export interface CrossReference {
 	text?: string; // verse content, loaded from IndexedDB
 }
 
+export interface EntityFamilyMember {
+	name: string;
+	slug: string;
+}
+
+export interface EntityFamily {
+	father?: EntityFamilyMember[];
+	mother?: EntityFamilyMember[];
+	siblings?: EntityFamilyMember[];
+	partners?: EntityFamilyMember[];
+	children?: EntityFamilyMember[];
+}
+
 export interface BibleEntity {
 	slug: string;
 	name: string;
@@ -119,6 +132,7 @@ export interface BibleEntity {
 	// Person-specific fields
 	gender?: string;
 	alsoCalled?: string;
+	family?: EntityFamily;
 	// Place-specific fields
 	featureType?: string;
 	latitude?: string;

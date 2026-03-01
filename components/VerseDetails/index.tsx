@@ -224,6 +224,7 @@ export default function VerseDetails({
 					entity={selectedEntity}
 					onBack={() => setSelectedEntity(null)}
 					onClose={handleClose}
+					onEntitySelect={setSelectedEntity}
 				/>
 			) : (
 				<>

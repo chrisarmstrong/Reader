@@ -4,8 +4,12 @@ import { useState, useEffect, type ReactNode } from "react";
 import { IconArrowLeft, IconUser, IconMapPin } from "@tabler/icons-react";
 import Link from "next/link";
 import styles from "./VerseDetails.module.css";
-import type { BibleEntity, CrossReference } from "../../types/bible";
-import { getEntityVerseRefs } from "../../utils/getEntities";
+import type {
+	BibleEntity,
+	CrossReference,
+	EntityFamilyMember,
+} from "../../types/bible";
+import { getEntityVerseRefs, getEntityBySlug } from "../../utils/getEntities";
 
 /**
  * Parse markdown-style links in text and return React nodes.
@@ -31,24 +35,37 @@ function renderLinkedText(text: string, onNavigate: () => void): ReactNode[] {
 	});
 }
 
+type Tab = "about" | "verses" | "family";
+
 interface EntityDetailProps {
 	entity: BibleEntity;
 	onBack: () => void;
 	onClose: () => void;
+	onEntitySelect: (entity: BibleEntity) => void;
 }
 
 export default function EntityDetail({
 	entity,
 	onBack,
 	onClose,
+	onEntitySelect,
 }: EntityDetailProps) {
 	const [verseRefs, setVerseRefs] = useState<CrossReference[]>([]);
 	const [visibleRefs, setVisibleRefs] = useState(10);
 	const [loading, setLoading] = useState(true);
+	const [activeTab, setActiveTab] = useState<Tab>("about");
+
+	const isPerson = entity.type === "person";
+	const hasFamily =
+		isPerson &&
+		entity.family &&
+		Object.keys(entity.family).length > 0;
+	const hasDescription = !!entity.description;
 
 	useEffect(() => {
 		setLoading(true);
 		setVisibleRefs(10);
+		setActiveTab(hasDescription ? "about" : "verses");
 		getEntityVerseRefs(entity.slug)
 			.then((refs) => {
 				setVerseRefs(refs);
@@ -59,9 +76,21 @@ export default function EntityDetail({
 				setVerseRefs([]);
 				setLoading(false);
 			});
-	}, [entity.slug]);
+	}, [entity.slug, hasDescription]);
 
-	const isPerson = entity.type === "person";
+	const handleFamilyMemberTap = async (member: EntityFamilyMember) => {
+		const memberEntity = await getEntityBySlug(member.slug);
+		if (memberEntity) {
+			onEntitySelect(memberEntity);
+		}
+	};
+
+	const tabs: { key: Tab; label: string; show: boolean }[] = [
+		{ key: "about", label: "About", show: hasDescription },
+		{ key: "verses", label: "Verses", show: true },
+		{ key: "family", label: "Family", show: !!hasFamily },
+	];
+	const visibleTabs = tabs.filter((t) => t.show);
 
 	return (
 		<div>
@@ -84,11 +113,16 @@ export default function EntityDetail({
 							<IconMapPin size={20} />
 						)}
 					</div>
-					<div>
+					<div className={styles.entityDetailTitleText}>
 						<h3 className={styles.entityName}>{entity.name}</h3>
 						<span className={styles.entityMeta}>
 							{isPerson
-								? [entity.gender, entity.alsoCalled ? `Also called: ${entity.alsoCalled}` : ""]
+								? [
+										entity.gender,
+										entity.alsoCalled
+											? `Also: ${entity.alsoCalled}`
+											: "",
+									]
 										.filter(Boolean)
 										.join(" \u00B7 ")
 								: [entity.featureType]
@@ -99,53 +133,163 @@ export default function EntityDetail({
 				</div>
 			</div>
 
-			{entity.description && (
-				<p className={styles.entityDescription}>
-					{renderLinkedText(entity.description, onClose)}
-				</p>
+			{visibleTabs.length > 1 && (
+				<div className={styles.entityTabs}>
+					{visibleTabs.map((tab) => (
+						<button
+							key={tab.key}
+							className={`${styles.entityTab} ${activeTab === tab.key ? styles.entityTabActive : ""}`}
+							onPointerUp={(e) => {
+								e.preventDefault();
+								setActiveTab(tab.key);
+							}}
+						>
+							{tab.label}
+						</button>
+					))}
+				</div>
 			)}
 
-			<div className={styles.crossRefsSection}>
-				<h4 className={styles.crossRefsTitle}>
-					Mentioned in {entity.verseCount || verseRefs.length} verse
-					{(entity.verseCount || verseRefs.length) !== 1 ? "s" : ""}
-				</h4>
-				{loading ? (
-					<p className={styles.entityMeta}>Loading verses...</p>
-				) : (
-					<>
-						<div className={styles.crossRefsList}>
-							{verseRefs.slice(0, visibleRefs).map((ref) => (
-								<Link
-									key={ref.verseId}
-									href={`/${ref.book.toLowerCase().replace(/\s+/g, "-")}#${ref.chapter}:${ref.verse}`}
-									className={styles.crossRefLink}
-									onClick={onClose}
+			{activeTab === "about" && entity.description && (
+				<div className={styles.entityTabContent}>
+					<p className={styles.entityDescription}>
+						{renderLinkedText(entity.description, onClose)}
+					</p>
+				</div>
+			)}
+
+			{activeTab === "verses" && (
+				<div className={styles.entityTabContent}>
+					<h4 className={styles.crossRefsTitle}>
+						Mentioned in {entity.verseCount || verseRefs.length}{" "}
+						verse
+						{(entity.verseCount || verseRefs.length) !== 1
+							? "s"
+							: ""}
+					</h4>
+					{loading ? (
+						<p className={styles.entityMeta}>Loading verses...</p>
+					) : (
+						<>
+							<div className={styles.crossRefsList}>
+								{verseRefs
+									.slice(0, visibleRefs)
+									.map((ref) => (
+										<Link
+											key={ref.verseId}
+											href={`/${ref.book.toLowerCase().replace(/\s+/g, "-")}#${ref.chapter}:${ref.verse}`}
+											className={styles.crossRefLink}
+											onClick={onClose}
+										>
+											<span
+												className={
+													styles.crossRefReference
+												}
+											>
+												{ref.book} {ref.chapter}:
+												{ref.verse}
+											</span>
+											{ref.text && (
+												<span
+													className={
+														styles.crossRefText
+													}
+												>
+													{ref.text}
+												</span>
+											)}
+										</Link>
+									))}
+							</div>
+							{verseRefs.length > visibleRefs && (
+								<button
+									className={styles.showMoreButton}
+									onClick={() =>
+										setVisibleRefs((prev) => prev + 10)
+									}
 								>
-									<span className={styles.crossRefReference}>
-										{ref.book} {ref.chapter}:{ref.verse}
-									</span>
-									{ref.text && (
-										<span className={styles.crossRefText}>
-											{ref.text}
-										</span>
-									)}
-								</Link>
-							))}
-						</div>
-						{verseRefs.length > visibleRefs && (
-							<button
-								className={styles.showMoreButton}
-								onClick={() =>
-									setVisibleRefs((prev) => prev + 10)
-								}
-							>
-								Show more ({verseRefs.length - visibleRefs}{" "}
-								remaining)
-							</button>
-						)}
-					</>
-				)}
+									Show more (
+									{verseRefs.length - visibleRefs} remaining)
+								</button>
+							)}
+						</>
+					)}
+				</div>
+			)}
+
+			{activeTab === "family" && entity.family && (
+				<div className={styles.entityTabContent}>
+					{entity.family.father && (
+						<FamilyGroup
+							label="Father"
+							members={entity.family.father}
+							onTap={handleFamilyMemberTap}
+						/>
+					)}
+					{entity.family.mother && (
+						<FamilyGroup
+							label="Mother"
+							members={entity.family.mother}
+							onTap={handleFamilyMemberTap}
+						/>
+					)}
+					{entity.family.partners && (
+						<FamilyGroup
+							label={
+								entity.family.partners.length > 1
+									? "Spouses"
+									: "Spouse"
+							}
+							members={entity.family.partners}
+							onTap={handleFamilyMemberTap}
+						/>
+					)}
+					{entity.family.siblings && (
+						<FamilyGroup
+							label="Siblings"
+							members={entity.family.siblings}
+							onTap={handleFamilyMemberTap}
+						/>
+					)}
+					{entity.family.children && (
+						<FamilyGroup
+							label="Children"
+							members={entity.family.children}
+							onTap={handleFamilyMemberTap}
+						/>
+					)}
+				</div>
+			)}
+		</div>
+	);
+}
+
+function FamilyGroup({
+	label,
+	members,
+	onTap,
+}: {
+	label: string;
+	members: EntityFamilyMember[];
+	onTap: (member: EntityFamilyMember) => void;
+}) {
+	return (
+		<div className={styles.familyGroup}>
+			<h4 className={styles.familyGroupLabel}>{label}</h4>
+			<div className={styles.entityChips}>
+				{members.map((member) => (
+					<button
+						key={member.slug}
+						className={styles.entityChip}
+						onPointerUp={(e) => {
+							e.preventDefault();
+							onTap(member);
+						}}
+					>
+						<IconUser size={14} />
+						<span>{member.name}</span>
+					</button>
+				))}
 			</div>
 		</div>
 	);

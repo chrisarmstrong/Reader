@@ -61,6 +61,16 @@ function parseVerseId(verseId: string): {
 }
 
 /**
+ * Look up a single entity by its slug.
+ */
+export async function getEntityBySlug(
+	slug: string
+): Promise<BibleEntity | null> {
+	const entities = await loadEntities();
+	return entities[slug] ?? null;
+}
+
+/**
  * Get all verse references for a specific entity, with verse text.
  */
 export async function getEntityVerseRefs(

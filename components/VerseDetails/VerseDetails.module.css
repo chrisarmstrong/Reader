@@ -273,6 +273,10 @@
 	flex-shrink: 0;
 }
 
+.entityDetailTitleText {
+	min-width: 0;
+}
+
 .entityName {
 	font-size: 18px;
 	font-weight: 500;
@@ -280,9 +284,50 @@
 }
 
 .entityMeta {
+	display: block;
 	font-size: 13px;
 	opacity: 0.6;
 	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* Entity tabs */
+.entityTabs {
+	display: flex;
+	gap: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 16px;
+}
+
+.entityTab {
+	flex: 1;
+	padding: 10px 0;
+	font-size: 14px;
+	font-weight: 500;
+	background: none;
+	border: none;
+	border-bottom: 2px solid transparent;
+	cursor: pointer;
+	color: inherit;
+	opacity: 0.5;
+	transition: opacity 0.2s, border-color 0.2s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.entityTab:hover {
+	opacity: 0.8;
+}
+
+.entityTabActive {
+	opacity: 1;
+	border-bottom-color: currentColor;
+}
+
+.entityTabContent {
+	padding: 0 0 16px;
 }
 
 .entityDescription {
@@ -290,7 +335,7 @@
 	line-height: 1.6;
 	font-family: var(--serif), georgia, serif;
 	opacity: 0.85;
-	margin: 0 0 16px;
+	margin: 0;
 }
 
 .inlineVerseLink {
@@ -303,4 +348,22 @@
 
 .inlineVerseLink:hover {
 	text-decoration-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Family tree */
+.familyGroup {
+	margin-bottom: 16px;
+}
+
+.familyGroup:last-child {
+	margin-bottom: 0;
+}
+
+.familyGroupLabel {
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	opacity: 0.5;
+	margin: 0 0 8px;
 }
