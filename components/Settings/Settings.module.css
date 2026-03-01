@@ -109,44 +109,42 @@
 	background: rgba(0, 0, 0, 0.03);
 }
 
-.speedPicker {
-	display: flex;
-	gap: 0;
-	margin: 8px 0 12px;
-	border: 1px solid rgba(0, 0, 0, 0.12);
-	border-radius: 8px;
-	overflow: hidden;
-}
-
-.speedOption {
-	flex: 1;
-	padding: 10px 0;
-	font-size: 15px;
+.speedValue {
+	font-size: 18px;
 	font-weight: 400;
-	font-family: inherit;
+	opacity: 0.6;
+	font-variant-numeric: tabular-nums;
+}
+
+.slider {
+	width: 100%;
+	height: 2px;
+	margin: 12px 0 4px;
+	appearance: none;
+	-webkit-appearance: none;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 1px;
+	outline: none;
 	cursor: pointer;
-	color: inherit;
-	background: none;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #1a1f2e;
 	border: none;
-	border-right: 1px solid rgba(0, 0, 0, 0.06);
-	transition: background 0.15s, opacity 0.15s;
-	touch-action: manipulation;
-	-webkit-tap-highlight-color: transparent;
-	opacity: 0.5;
+	cursor: pointer;
 }
 
-.speedOption:last-child {
-	border-right: none;
-}
-
-.speedOption[data-active="true"] {
-	opacity: 1;
-	font-weight: 500;
-	background: rgba(0, 0, 0, 0.05);
-}
-
-.speedOption:hover {
-	opacity: 0.8;
+.slider::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #1a1f2e;
+	border: none;
+	cursor: pointer;
 }
 
 .sampleButton {

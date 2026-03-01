@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import type { Book, Verse } from "../types/bible";
 import { scrollToVerse } from "./scrollToVerse";
 import BibleStorageInstance from "./BibleStorage";
+import { selectVoice, loadVoice } from "./selectVoice";
 
 interface UseAudioPlayerProps {
 	book?: Book;
@@ -47,69 +48,11 @@ export function useAudioPlayer({
 		);
 	}, []);
 
-	// Voice selection helper
-	const selectVoice = useCallback(
-		(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice | null => {
-			const lower = (s?: string) => s?.toLowerCase() ?? "";
-			const isEnglish = (v: SpeechSynthesisVoice) =>
-				lower(v.lang).startsWith("en");
-			const englishVoices = voices.filter(isEnglish);
-			const byName = (list: SpeechSynthesisVoice[], substr: string) =>
-				list.find((v) => lower(v.name).includes(substr.toLowerCase()));
-
-			// Priority: Premium → Enhanced → Siri → English → Any
-			const premium =
-				byName(englishVoices, "premium") || byName(voices, "premium");
-			if (premium) return premium;
-			const enhanced =
-				byName(englishVoices, "enhanced") || byName(voices, "enhanced");
-			if (enhanced) return enhanced;
-			const siri = byName(englishVoices, "siri") || byName(voices, "siri");
-			if (siri) return siri;
-			const english = englishVoices[0];
-			if (english) return english;
-			return voices[0] || null;
-		},
-		[]
-	);
-
 	// Load and select preferred voice
 	useEffect(() => {
 		if (!isSupported || typeof window === "undefined") return;
-
-		let retries = 0;
-		const assignVoice = () => {
-			const voices = window.speechSynthesis.getVoices();
-			if (voices && voices.length) {
-				setPreferredVoice(selectVoice(voices));
-				return true;
-			}
-			return false;
-		};
-
-		// Try once immediately
-		if (!assignVoice()) {
-			// Poll a few times because some browsers don't fire voiceschanged reliably
-			const tryLoadVoices = () => {
-				if (assignVoice()) return;
-				if (retries++ < 12) {
-					setTimeout(tryLoadVoices, 250);
-				}
-			};
-			tryLoadVoices();
-		}
-
-		const onVoicesChanged = () => {
-			assignVoice();
-		};
-		window.speechSynthesis.addEventListener("voiceschanged", onVoicesChanged);
-		return () => {
-			window.speechSynthesis.removeEventListener(
-				"voiceschanged",
-				onVoicesChanged
-			);
-		};
-	}, [isSupported, selectVoice]);
+		return loadVoice((voice) => setPreferredVoice(voice));
+	}, [isSupported]);
 
 	// Stop playback if book changes (but NOT if just chapter changes)
 	useEffect(() => {
@@ -152,12 +95,14 @@ export function useAudioPlayer({
 		const utterance = new SpeechSynthesisUtterance(v.text);
 		utteranceRef.current = utterance;
 
-		// Select voice
-		const voices = window.speechSynthesis.getVoices();
-		const voiceToUse = preferredVoice ?? (voices.length ? voices[0] : null);
-
-		utterance.voice = voiceToUse ?? null;
-		utterance.lang = voiceToUse?.lang ?? "en-US";
+		// Only override voice when selectVoice returned an explicit pick;
+		// null means the browser default is already a good English voice.
+		if (preferredVoice) {
+			utterance.voice = preferredVoice;
+			utterance.lang = preferredVoice.lang;
+		} else {
+			utterance.lang = "en-US";
+		}
 		utterance.rate = playbackRateRef.current;
 		utterance.pitch = 1.0;
 		utterance.volume = 1.0;
@@ -221,7 +166,7 @@ export function useAudioPlayer({
 			setIsPlaying(true);
 			speakNext();
 		},
-		[isSupported, book, preferredVoice, selectVoice, speakNext]
+		[isSupported, book, preferredVoice, speakNext]
 	);
 
 	// Pause function

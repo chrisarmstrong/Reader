@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import styles from "./Settings.module.css";
 import BibleStorageInstance from "../../utils/BibleStorage";
+import { loadVoice } from "../../utils/selectVoice";
 
-const SPEED_OPTIONS = [0.75, 1, 1.25, 1.5, 2];
 const SAMPLE_TEXT =
 	"The Lord is my shepherd; I shall not want. He maketh me to lie down in green pastures.";
 
@@ -16,6 +16,7 @@ export default function Settings() {
 	const [playbackSpeed, setPlaybackSpeed] = useState(1);
 	const [isSamplePlaying, setIsSamplePlaying] = useState(false);
 	const [statusMessage, setStatusMessage] = useState<string | null>(null);
+	const voiceRef = useRef<SpeechSynthesisVoice | null>(null);
 
 	useEffect(() => {
 		BibleStorageInstance.getPreference("redLetterEnabled", true).then(
@@ -26,6 +27,13 @@ export default function Settings() {
 		);
 	}, []);
 
+	// Load voice using the same logic as the audio player
+	useEffect(() => {
+		if (typeof window === "undefined" || !("speechSynthesis" in window))
+			return;
+		return loadVoice((voice) => (voiceRef.current = voice));
+	}, []);
+
 	const handleRedLetterToggle = async () => {
 		const newValue = !redLetterEnabled;
 		setRedLetterEnabled(newValue);
@@ -33,8 +41,10 @@ export default function Settings() {
 	};
 
 	const handleSpeedChange = async (speed: number) => {
-		setPlaybackSpeed(speed);
-		await BibleStorageInstance.savePreference("playbackSpeed", speed);
+		// Round to nearest 0.05 to avoid floating-point noise
+		const rounded = Math.round(speed * 20) / 20;
+		setPlaybackSpeed(rounded);
+		await BibleStorageInstance.savePreference("playbackSpeed", rounded);
 	};
 
 	const handleSample = () => {
@@ -51,6 +61,12 @@ export default function Settings() {
 
 		const utterance = new SpeechSynthesisUtterance(SAMPLE_TEXT);
 		utterance.rate = playbackSpeed;
+		if (voiceRef.current) {
+			utterance.voice = voiceRef.current;
+			utterance.lang = voiceRef.current.lang;
+		} else {
+			utterance.lang = "en-US";
+		}
 		utterance.onend = () => setIsSamplePlaying(false);
 		utterance.onerror = () => setIsSamplePlaying(false);
 		setIsSamplePlaying(true);
@@ -137,19 +153,17 @@ export default function Settings() {
 				<h2 className={styles.sectionTitle}>Audio</h2>
 				<div className={styles.settingRow}>
 					<span className={styles.settingLabel}>Playback Speed</span>
+					<span className={styles.speedValue}>{playbackSpeed}x</span>
 				</div>
-				<div className={styles.speedPicker}>
-					{SPEED_OPTIONS.map((speed) => (
-						<button
-							key={speed}
-							className={styles.speedOption}
-							data-active={playbackSpeed === speed}
-							onClick={() => handleSpeedChange(speed)}
-						>
-							{speed === 1 ? "1x" : `${speed}x`}
-						</button>
-					))}
-				</div>
+				<input
+					type="range"
+					min={0.5}
+					max={1.5}
+					step={0.05}
+					value={playbackSpeed}
+					onChange={(e) => handleSpeedChange(parseFloat(e.target.value))}
+					className={styles.slider}
+				/>
 				<button
 					className={styles.sampleButton}
 					onClick={handleSample}
