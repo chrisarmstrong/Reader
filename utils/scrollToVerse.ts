@@ -12,6 +12,6 @@ export function scrollToVerse(
 	const id = verse ? `${chapter}:${verse}` : chapter.toString();
 	const element = document.getElementById(id);
 	if (element) {
-		element.scrollIntoView({ behavior, block: "start" });
+		element.scrollIntoView({ behavior, block: "center" });
 	}
 }

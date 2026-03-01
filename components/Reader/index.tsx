@@ -269,13 +269,19 @@ function Reader({
 	}, [book, onChapterChange]);
 
 	const chaptersCount = book?.chapters.length || 0;
-	let highlightVerse: string | null = null;
 
-	if (typeof window !== "undefined") {
-		// Get highlight parameter from URL query string
+	// Store highlight once on mount so it persists even after the
+	// IntersectionObserver replaces the URL hash (which strips query params).
+	// Also fall back to the hash so bookmark links (hash-only) highlight too.
+	const [highlightVerse] = useState<string | null>(() => {
+		if (typeof window === "undefined") return null;
 		const params = new URLSearchParams(window.location.search);
-		highlightVerse = params.get("highlight");
-	}
+		const fromParam = params.get("highlight");
+		if (fromParam) return fromParam;
+		const fromHash = window.location.hash.replace("#", "");
+		if (fromHash && fromHash.includes(":")) return fromHash;
+		return null;
+	});
 
 	// Scroll to requested hash/highlight once after book loads
 	useEffect(() => {
@@ -296,7 +302,7 @@ function Reader({
 		const tryScroll = () => {
 			const el = document.getElementById(targetId);
 			if (el) {
-				el.scrollIntoView({ behavior: "instant", block: "start" });
+				el.scrollIntoView({ behavior: "instant", block: "center" });
 				initialHashScrollDone.current = true;
 				return true;
 			}
