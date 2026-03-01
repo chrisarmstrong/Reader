@@ -361,7 +361,7 @@ function Reader({
 					{book.chapters?.map((chapter) => (
 						<div
 							key={chapter.chapter}
-							className={styles.chapter}
+							className={`${styles.chapter} ${book.book === "Psalms" ? styles.psalm : ""}`}
 							id={chapter.chapter.toString()}
 						>
 							<h2 className={styles.chapterNumber}>

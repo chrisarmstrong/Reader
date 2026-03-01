@@ -90,6 +90,19 @@
 	padding-left: 0;
 }
 
+.psalm .chapterNumber {
+	float: none;
+	display: block;
+	text-align: center;
+	margin-right: 0;
+	line-height: 1;
+	margin-bottom: 8px;
+}
+
+.psalm .chapterNumber + p sup {
+	display: inline;
+}
+
 .psalmTitle {
 	display: block;
 	font-family: var(--serif), georgia, serif;
@@ -97,6 +110,7 @@
 	font-size: 14px;
 	line-height: 20px;
 	opacity: 0.6;
+	text-align: center;
 	margin-bottom: 8px;
 }
 
