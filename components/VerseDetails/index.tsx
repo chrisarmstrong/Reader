@@ -195,6 +195,7 @@ export default function VerseDetails({
 		<Drawer
 			opened={active}
 			onClose={handleClose}
+			closeOnClickOutside={false}
 			position={isMobile ? "bottom" : "right"}
 			size={isMobile ? "70vh" : "md"}
 			padding="lg"

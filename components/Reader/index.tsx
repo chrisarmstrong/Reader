@@ -23,9 +23,6 @@ function Reader({
 	const scrollTimeoutRef = useRef<number | null>(null);
 	const isScrollingRef = useRef<boolean>(false);
 	const pendingHashRef = useRef<string | null>(null);
-	const pointerStartRef = useRef<{ x: number; y: number } | null>(null);
-	const drawerOpenedAtRef = useRef<number>(0);
-
 	const [selectedVerse, setSelectedVerse] = useState<{
 		book: string;
 		chapter: string;
@@ -324,7 +321,6 @@ function Reader({
 	}, [book, highlightVerse]);
 
 	const handleVerseClick = (chapter: string, verse: string, text: string) => {
-		drawerOpenedAtRef.current = Date.now();
 		setSelectedVerse({
 			book: book.book,
 			chapter,
@@ -354,13 +350,7 @@ function Reader({
 	}, [book]);
 
 	const handleVerseDetailsClose = async () => {
-		// Guard against ghost clicks: on touch devices, the browser fires a
-		// synthetic click after pointerup. If the Drawer overlay renders before
-		// that click arrives, it lands on the overlay and immediately closes
-		// the drawer that was just opened.
-		if (Date.now() - drawerOpenedAtRef.current < 400) return;
 		setSelectedVerse(null);
-		// Reload bookmarks after drawer closes (in case bookmark was added/removed)
 		await updateBookmarkStyles();
 	};
 
@@ -412,18 +402,9 @@ function Reader({
 											? styles.selected
 											: ""
 									}`}
-									onPointerDown={(e) => {
-										pointerStartRef.current = { x: e.clientX, y: e.clientY };
-									}}
-									onPointerUp={(e) => {
-										const start = pointerStartRef.current;
-										pointerStartRef.current = null;
-										if (!start) return;
-										const dx = Math.abs(e.clientX - start.x);
-										const dy = Math.abs(e.clientY - start.y);
-										if (dx > 10 || dy > 10) return;
-										handleVerseClick(chapter.chapter, verse.verse, verse.text);
-									}}
+									onClick={() =>
+										handleVerseClick(chapter.chapter, verse.verse, verse.text)
+									}
 								>
 									<sup>{verse.verse}&nbsp;</sup>
 									{i === 0 && chaptersCount < 2 && verse.text.slice(1)}
