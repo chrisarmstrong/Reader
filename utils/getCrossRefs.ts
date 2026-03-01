@@ -19,7 +19,7 @@ function parseVerseId(verseId: string): {
 
 /**
  * Look up cross-references for a given verse from IndexedDB.
- * Returns an array of parsed CrossReference objects, sorted by relevance.
+ * Returns an array of parsed CrossReference objects with verse text, sorted by relevance.
  */
 export async function getCrossReferences(
 	book: string,
@@ -31,6 +31,10 @@ export async function getCrossReferences(
 
 	if (!record || record.refs.length === 0) return [];
 
+	// Fetch verse texts from the seeded verses store
+	const verseRecords = await BibleStorage.getVersesByIds(record.refs);
+	const textMap = new Map(verseRecords.map((v) => [v.id, v.text]));
+
 	return record.refs.map((refId) => {
 		const parsed = parseVerseId(refId);
 		return {
@@ -38,6 +42,7 @@ export async function getCrossReferences(
 			book: parsed.book,
 			chapter: parsed.chapter,
 			verse: parsed.verse,
+			text: textMap.get(refId),
 		};
 	});
 }

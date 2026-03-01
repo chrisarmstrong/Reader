@@ -287,7 +287,14 @@ export default function VerseDetails({
 								className={styles.crossRefLink}
 								onClick={handleClose}
 							>
-								{ref.book} {ref.chapter}:{ref.verse}
+								<span className={styles.crossRefReference}>
+									{ref.book} {ref.chapter}:{ref.verse}
+								</span>
+								{ref.text && (
+									<span className={styles.crossRefText}>
+										{ref.text}
+									</span>
+								)}
 							</Link>
 						))}
 					</div>

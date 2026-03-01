@@ -16,6 +16,18 @@ describe("getCrossReferences", () => {
 		// Initialize DB so the store is created
 		await BibleStorage.init();
 
+		// Seed sample verse data so text lookups work
+		await BibleStorage.putVerses([
+			{ id: "John-1:1", book: "John", bookIndex: 42, chapter: "1", verse: "1", text: "In the beginning was the Word, and the Word was with God, and the Word was God." },
+			{ id: "Hebrews-11:3", book: "Hebrews", bookIndex: 57, chapter: "11", verse: "3", text: "Through faith we understand that the worlds were framed by the word of God." },
+			{ id: "Revelation-4:11", book: "Revelation", bookIndex: 65, chapter: "4", verse: "11", text: "Thou art worthy, O Lord, to receive glory and honour and power." },
+			{ id: "Isaiah-45:18", book: "Isaiah", bookIndex: 22, chapter: "45", verse: "18", text: "For thus saith the LORD that created the heavens." },
+			{ id: "Romans-5:8", book: "Romans", bookIndex: 44, chapter: "5", verse: "8", text: "But God commendeth his love toward us." },
+			{ id: "I John-4:9", book: "I John", bookIndex: 61, chapter: "4", verse: "9", text: "In this was manifested the love of God toward us." },
+			{ id: "Isaiah-5:1", book: "Isaiah", bookIndex: 22, chapter: "5", verse: "1", text: "Now will I sing to my wellbeloved a song." },
+			{ id: "I Kings-4:32", book: "I Kings", bookIndex: 10, chapter: "4", verse: "32", text: "And he spake three thousand proverbs: and his songs were a thousand and five." },
+		]);
+
 		// Seed sample cross-reference data
 		await BibleStorage.putCrossReferences([
 			{
@@ -45,7 +57,7 @@ describe("getCrossReferences", () => {
 		getCrossReferences = crossRefModule.getCrossReferences;
 	});
 
-	it("should return cross-references for a verse with refs", async () => {
+	it("should return cross-references for a verse with refs and text", async () => {
 		const refs = await getCrossReferences("Genesis", "1", "1");
 		expect(refs).toHaveLength(4);
 		expect(refs[0]).toEqual({
@@ -53,6 +65,7 @@ describe("getCrossReferences", () => {
 			book: "John",
 			chapter: "1",
 			verse: "1",
+			text: "In the beginning was the Word, and the Word was with God, and the Word was God.",
 		});
 	});
 
@@ -82,6 +95,7 @@ describe("getCrossReferences", () => {
 			book: "Isaiah",
 			chapter: "5",
 			verse: "1",
+			text: "Now will I sing to my wellbeloved a song.",
 		});
 	});
 
@@ -93,6 +107,7 @@ describe("getCrossReferences", () => {
 			book: "I John",
 			chapter: "4",
 			verse: "9",
+			text: "In this was manifested the love of God toward us.",
 		});
 	});
 });

@@ -91,6 +91,7 @@ export interface CrossReference {
 	book: string; // "Genesis"
 	chapter: string; // "1"
 	verse: string; // "1"
+	text?: string; // verse content, loaded from IndexedDB
 }
 
 // Component Props Types

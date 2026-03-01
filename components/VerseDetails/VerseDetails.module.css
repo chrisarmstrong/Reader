@@ -129,30 +129,42 @@
 
 .crossRefsList {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 8px;
+	flex-direction: column;
+	gap: 0;
 }
 
 .crossRefLink {
-	display: inline-block;
-	padding: 6px 12px;
-	font-size: 14px;
-	background: rgba(0, 0, 0, 0.03);
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 6px;
+	display: block;
+	padding: 12px 0;
 	text-decoration: none;
 	color: inherit;
 	transition: background 0.2s;
 	touch-action: manipulation;
 	-webkit-tap-highlight-color: transparent;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.crossRefLink:hover {
-	background: rgba(0, 0, 0, 0.06);
+.crossRefLink:last-child {
+	border-bottom: none;
 }
 
 .crossRefLink:active {
-	transform: scale(0.98);
+	opacity: 0.7;
+}
+
+.crossRefReference {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.crossRefText {
+	display: block;
+	font-size: 14px;
+	line-height: 1.5;
+	opacity: 0.7;
+	font-family: var(--serif), georgia, serif;
 }
 
 .showMoreButton {
