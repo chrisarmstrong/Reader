@@ -2,6 +2,8 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import type { Book, Verse } from "../types/bible";
 import { scrollToVerse } from "./scrollToVerse";
+import BibleStorageInstance from "./BibleStorage";
+import { selectVoice, loadVoice } from "./selectVoice";
 
 interface UseAudioPlayerProps {
 	book?: Book;
@@ -30,6 +32,23 @@ export function useAudioPlayer({
 	const versesRef = useRef<Verse[]>([]);
 	const currentBookRef = useRef<string | undefined>(undefined);
 	const currentChapterRef = useRef<number | undefined>(undefined);
+	const playbackRateRef = useRef<number>(1);
+	const stoppedRef = useRef<boolean>(false);
+	const wakeLockRef = useRef<WakeLockSentinel | null>(null);
+
+	const acquireWakeLock = useCallback(async () => {
+		if (typeof navigator === "undefined" || !("wakeLock" in navigator)) return;
+		try {
+			wakeLockRef.current = await navigator.wakeLock.request("screen");
+		} catch {
+			// Wake lock can fail silently (e.g. low battery, background tab)
+		}
+	}, []);
+
+	const releaseWakeLock = useCallback(() => {
+		wakeLockRef.current?.release();
+		wakeLockRef.current = null;
+	}, []);
 
 	// Detect Web Speech API support
 	useEffect(() => {
@@ -38,69 +57,18 @@ export function useAudioPlayer({
 		setIsSupported(hasSpeech);
 	}, []);
 
-	// Voice selection helper
-	const selectVoice = useCallback(
-		(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice | null => {
-			const lower = (s?: string) => s?.toLowerCase() ?? "";
-			const isEnglish = (v: SpeechSynthesisVoice) =>
-				lower(v.lang).startsWith("en");
-			const englishVoices = voices.filter(isEnglish);
-			const byName = (list: SpeechSynthesisVoice[], substr: string) =>
-				list.find((v) => lower(v.name).includes(substr.toLowerCase()));
-
-			// Priority: Premium → Enhanced → Siri → English → Any
-			const premium =
-				byName(englishVoices, "premium") || byName(voices, "premium");
-			if (premium) return premium;
-			const enhanced =
-				byName(englishVoices, "enhanced") || byName(voices, "enhanced");
-			if (enhanced) return enhanced;
-			const siri = byName(englishVoices, "siri") || byName(voices, "siri");
-			if (siri) return siri;
-			const english = englishVoices[0];
-			if (english) return english;
-			return voices[0] || null;
-		},
-		[]
-	);
+	// Load playback speed preference
+	useEffect(() => {
+		BibleStorageInstance.getPreference("playbackSpeed", 1).then(
+			(val) => (playbackRateRef.current = val)
+		);
+	}, []);
 
 	// Load and select preferred voice
 	useEffect(() => {
 		if (!isSupported || typeof window === "undefined") return;
-
-		let retries = 0;
-		const assignVoice = () => {
-			const voices = window.speechSynthesis.getVoices();
-			if (voices && voices.length) {
-				setPreferredVoice(selectVoice(voices));
-				return true;
-			}
-			return false;
-		};
-
-		// Try once immediately
-		if (!assignVoice()) {
-			// Poll a few times because some browsers don't fire voiceschanged reliably
-			const tryLoadVoices = () => {
-				if (assignVoice()) return;
-				if (retries++ < 12) {
-					setTimeout(tryLoadVoices, 250);
-				}
-			};
-			tryLoadVoices();
-		}
-
-		const onVoicesChanged = () => {
-			assignVoice();
-		};
-		window.speechSynthesis.addEventListener("voiceschanged", onVoicesChanged);
-		return () => {
-			window.speechSynthesis.removeEventListener(
-				"voiceschanged",
-				onVoicesChanged
-			);
-		};
-	}, [isSupported, selectVoice]);
+		return loadVoice((voice) => setPreferredVoice(voice));
+	}, [isSupported]);
 
 	// Stop playback if book changes (but NOT if just chapter changes)
 	useEffect(() => {
@@ -109,14 +77,16 @@ export function useAudioPlayer({
 			book?.book !== currentBookRef.current &&
 			isPlaying
 		) {
+			stoppedRef.current = true;
 			window.speechSynthesis.cancel();
 			setIsPlaying(false);
 			setCurrentVerseId(null);
 			queueIndexRef.current = 0;
 			versesRef.current = [];
+			releaseWakeLock();
 		}
 		currentBookRef.current = book?.book;
-	}, [book?.book, isPlaying]);
+	}, [book?.book, isPlaying, releaseWakeLock]);
 
 	// Cleanup on unmount
 	useEffect(() => {
@@ -124,8 +94,9 @@ export function useAudioPlayer({
 			if (typeof window !== "undefined" && window.speechSynthesis) {
 				window.speechSynthesis.cancel();
 			}
+			releaseWakeLock();
 		};
-	}, []);
+	}, [releaseWakeLock]);
 
 	// Speak the next verse in the queue
 	const speakNext = useCallback(() => {
@@ -133,6 +104,7 @@ export function useAudioPlayer({
 		if (!versesRef.current[idx]) {
 			setIsPlaying(false);
 			setCurrentVerseId(null);
+			releaseWakeLock();
 			return;
 		}
 
@@ -140,31 +112,42 @@ export function useAudioPlayer({
 		const verseId = `${currentChapterRef.current}:${v.verse}`;
 		setCurrentVerseId(verseId);
 
+		// Insert a brief pause between verses, doubled for paragraph breaks
+		if (idx > 0) {
+			const pause = new SpeechSynthesisUtterance(
+				v.paragraph ? ". . . . . ." : ". . ."
+			);
+			pause.volume = 0;
+			pause.rate = 1;
+			window.speechSynthesis.speak(pause);
+		}
+
 		const utterance = new SpeechSynthesisUtterance(v.text);
 		utteranceRef.current = utterance;
 
-		// Select voice
-		const voices = window.speechSynthesis.getVoices();
-		const voiceToUse = preferredVoice ?? (voices.length ? voices[0] : null);
-
-		utterance.voice = voiceToUse ?? null;
-		utterance.lang = voiceToUse?.lang ?? "en-US";
-		utterance.rate = 1.0;
+		// Only override voice when selectVoice returned an explicit pick;
+		// null means the browser default is already a good English voice.
+		if (preferredVoice) {
+			utterance.voice = preferredVoice;
+		}
+		utterance.rate = playbackRateRef.current;
 		utterance.pitch = 1.0;
 		utterance.volume = 1.0;
 
 		utterance.onend = () => {
+			if (stoppedRef.current) return;
 			queueIndexRef.current += 1;
 			speakNext();
 		};
 
 		utterance.onerror = () => {
+			if (stoppedRef.current) return;
 			queueIndexRef.current += 1;
 			speakNext();
 		};
 
 		window.speechSynthesis.speak(utterance);
-	}, [preferredVoice]);
+	}, [preferredVoice, releaseWakeLock]);
 
 	// Play function - now takes chapter and verse as parameters
 	const play = useCallback(
@@ -209,14 +192,18 @@ export function useAudioPlayer({
 			// Scroll to the verse that will start playing
 			scrollToVerse(chapter, startVerseNum, "smooth");
 
+			stoppedRef.current = false;
 			setIsPlaying(true);
+			acquireWakeLock();
 			speakNext();
 		},
-		[isSupported, book, preferredVoice, selectVoice, speakNext]
+		[isSupported, book, preferredVoice, speakNext, acquireWakeLock]
 	);
 
-	// Pause function
+	// Pause function — set stoppedRef BEFORE cancel() because cancel()
+	// fires onend synchronously, which would otherwise call speakNext().
 	const pause = useCallback(() => {
+		stoppedRef.current = true;
 		if (typeof window !== "undefined") {
 			window.speechSynthesis.cancel();
 		}
@@ -224,7 +211,8 @@ export function useAudioPlayer({
 		setCurrentVerseId(null);
 		queueIndexRef.current = 0;
 		versesRef.current = [];
-	}, []);
+		releaseWakeLock();
+	}, [releaseWakeLock]);
 
 	// Toggle play/pause
 	const togglePlayPause = useCallback(

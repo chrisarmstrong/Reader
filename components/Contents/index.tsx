@@ -129,6 +129,34 @@ export default function Contents({
 	return (
 		<div className={styles.container} data-active={active}>
 			<div className={styles.bookList} ref={listRef}>
+				<Link
+					href="/settings"
+					className={styles.settingsLink}
+					onPointerDown={(e) => {
+						pointerStartRef.current = { x: e.clientX, y: e.clientY };
+					}}
+					onPointerUp={(e) => {
+						const start = pointerStartRef.current;
+						pointerStartRef.current = null;
+						if (!start) return;
+						const dx = Math.abs(e.clientX - start.x);
+						const dy = Math.abs(e.clientY - start.y);
+						if (dx < TAP_THRESHOLD && dy < TAP_THRESHOLD) {
+							e.preventDefault();
+							dismiss();
+							router.push("/settings");
+						}
+					}}
+					onClick={(e) => {
+						if (e.detail > 0) {
+							e.preventDefault();
+						} else {
+							dismiss();
+						}
+					}}
+				>
+					Settings
+				</Link>
 				<button
 					className={styles.randomButton}
 					onPointerDown={(e) => {

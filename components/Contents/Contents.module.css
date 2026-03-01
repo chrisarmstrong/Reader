@@ -38,6 +38,28 @@
 	height: 100%;
 }
 
+.settingsLink {
+	opacity: 0.5;
+	transition: opacity 0.2s, transform 150ms ease;
+	will-change: opacity, transform;
+	width: 100%;
+	padding: 6px 0;
+	margin-bottom: 24px;
+	font-size: 14px;
+	font-weight: 400;
+	cursor: pointer;
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.settingsLink:hover,
+.settingsLink:active {
+	opacity: 1;
+}
+
 .randomButton {
 	opacity: 0.5;
 	transition: opacity 0.2s, transform 150ms ease;
