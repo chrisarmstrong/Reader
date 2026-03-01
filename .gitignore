@@ -34,6 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# cross-reference source data (downloaded at build time)
+scripts/cross_references_expanded.csv
 public/sw.js
 public/sw.js.map
 .gitignore
