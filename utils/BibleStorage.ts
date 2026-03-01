@@ -737,6 +737,77 @@ class BibleStorage {
 			request.onerror = () => reject(request.error);
 		});
 	}
+
+	// Get all notes
+	async getAllNotes(): Promise<VerseNote[]> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["notes"], "readonly");
+		const store = transaction.objectStore("notes");
+
+		return new Promise((resolve, reject) => {
+			const request = store.getAll();
+			request.onsuccess = () => resolve(request.result || []);
+			request.onerror = () => reject(request.error);
+		});
+	}
+
+	// Export all notes and bookmarks as JSON
+	async exportData(): Promise<string> {
+		const [bookmarks, notes] = await Promise.all([
+			this.getAllBookmarks(),
+			this.getAllNotes(),
+		]);
+
+		return JSON.stringify({ bookmarks, notes }, null, 2);
+	}
+
+	// Import notes and bookmarks from JSON
+	async importData(json: string): Promise<{ bookmarks: number; notes: number }> {
+		const data = JSON.parse(json);
+		let bookmarkCount = 0;
+		let noteCount = 0;
+
+		if (Array.isArray(data.bookmarks)) {
+			await this.init();
+			const tx = this.db!.transaction(["bookmarks"], "readwrite");
+			const store = tx.objectStore("bookmarks");
+
+			await new Promise<void>((resolve, reject) => {
+				tx.oncomplete = () => resolve();
+				tx.onerror = () => reject(tx.error);
+				tx.onabort = () => reject(tx.error);
+
+				for (const bookmark of data.bookmarks) {
+					if (bookmark.id && bookmark.book && bookmark.chapter && bookmark.verse) {
+						store.put(bookmark);
+						bookmarkCount++;
+					}
+				}
+			});
+		}
+
+		if (Array.isArray(data.notes)) {
+			await this.init();
+			const tx = this.db!.transaction(["notes"], "readwrite");
+			const store = tx.objectStore("notes");
+
+			await new Promise<void>((resolve, reject) => {
+				tx.oncomplete = () => resolve();
+				tx.onerror = () => reject(tx.error);
+				tx.onabort = () => reject(tx.error);
+
+				for (const note of data.notes) {
+					if (note.id && note.book && note.chapter && note.verse && note.content) {
+						store.put(note);
+						noteCount++;
+					}
+				}
+			});
+		}
+
+		return { bookmarks: bookmarkCount, notes: noteCount };
+	}
 }
 
 // Export singleton instance

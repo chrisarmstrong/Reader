@@ -1,0 +1,122 @@
+.container {
+	max-width: 480px;
+	margin: 0 auto;
+	padding: 60px 24px 120px;
+}
+
+.backLink {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	color: inherit;
+	opacity: 0.5;
+	text-decoration: none;
+	margin-bottom: 32px;
+	transition: opacity 0.2s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.backLink:hover,
+.backLink:active {
+	opacity: 1;
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 300;
+	margin: 0 0 48px;
+}
+
+.section {
+	margin-bottom: 48px;
+}
+
+.sectionTitle {
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	opacity: 0.4;
+	margin: 0 0 16px;
+}
+
+.settingRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.settingLabel {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.toggleIndicator {
+	width: 36px;
+	height: 20px;
+	border-radius: 10px;
+	background: #ccc;
+	position: relative;
+	flex-shrink: 0;
+	transition: background 0.2s;
+	cursor: pointer;
+}
+
+.toggleIndicator::after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: white;
+	transition: transform 0.2s;
+}
+
+.toggleIndicator[data-enabled="true"] {
+	background: #c0392b;
+}
+
+.toggleIndicator[data-enabled="true"]::after {
+	transform: translateX(16px);
+}
+
+.button {
+	display: block;
+	width: 100%;
+	padding: 14px 0;
+	font-size: 18px;
+	font-weight: 300;
+	font-family: inherit;
+	cursor: pointer;
+	color: inherit;
+	background: none;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 8px;
+	text-align: center;
+	transition: background 0.15s, opacity 0.15s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	margin-bottom: 12px;
+}
+
+.button:hover,
+.button:active {
+	background: rgba(0, 0, 0, 0.03);
+}
+
+.fileInput {
+	display: none;
+}
+
+.statusMessage {
+	font-size: 14px;
+	font-weight: 400;
+	padding: 12px 0;
+	opacity: 0.6;
+	text-align: center;
+}
