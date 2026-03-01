@@ -5,15 +5,24 @@ import { useRouter } from "next/navigation";
 import styles from "./Settings.module.css";
 import BibleStorageInstance from "../../utils/BibleStorage";
 
+const SPEED_OPTIONS = [0.75, 1, 1.25, 1.5, 2];
+const SAMPLE_TEXT =
+	"The Lord is my shepherd; I shall not want. He maketh me to lie down in green pastures.";
+
 export default function Settings() {
 	const router = useRouter();
 	const fileInputRef = useRef<HTMLInputElement>(null);
 	const [redLetterEnabled, setRedLetterEnabled] = useState(true);
+	const [playbackSpeed, setPlaybackSpeed] = useState(1);
+	const [isSamplePlaying, setIsSamplePlaying] = useState(false);
 	const [statusMessage, setStatusMessage] = useState<string | null>(null);
 
 	useEffect(() => {
 		BibleStorageInstance.getPreference("redLetterEnabled", true).then(
 			(val) => setRedLetterEnabled(val)
+		);
+		BibleStorageInstance.getPreference("playbackSpeed", 1).then((val) =>
+			setPlaybackSpeed(val)
 		);
 	}, []);
 
@@ -22,6 +31,40 @@ export default function Settings() {
 		setRedLetterEnabled(newValue);
 		await BibleStorageInstance.savePreference("redLetterEnabled", newValue);
 	};
+
+	const handleSpeedChange = async (speed: number) => {
+		setPlaybackSpeed(speed);
+		await BibleStorageInstance.savePreference("playbackSpeed", speed);
+	};
+
+	const handleSample = () => {
+		if (typeof window === "undefined" || !("speechSynthesis" in window))
+			return;
+
+		// Stop any current sample
+		window.speechSynthesis.cancel();
+
+		if (isSamplePlaying) {
+			setIsSamplePlaying(false);
+			return;
+		}
+
+		const utterance = new SpeechSynthesisUtterance(SAMPLE_TEXT);
+		utterance.rate = playbackSpeed;
+		utterance.onend = () => setIsSamplePlaying(false);
+		utterance.onerror = () => setIsSamplePlaying(false);
+		setIsSamplePlaying(true);
+		window.speechSynthesis.speak(utterance);
+	};
+
+	// Clean up sample on unmount
+	useEffect(() => {
+		return () => {
+			if (typeof window !== "undefined" && window.speechSynthesis) {
+				window.speechSynthesis.cancel();
+			}
+		};
+	}, []);
 
 	const handleExport = async () => {
 		try {
@@ -88,6 +131,31 @@ export default function Settings() {
 						onClick={handleRedLetterToggle}
 					/>
 				</div>
+			</div>
+
+			<div className={styles.section}>
+				<h2 className={styles.sectionTitle}>Audio</h2>
+				<div className={styles.settingRow}>
+					<span className={styles.settingLabel}>Playback Speed</span>
+				</div>
+				<div className={styles.speedPicker}>
+					{SPEED_OPTIONS.map((speed) => (
+						<button
+							key={speed}
+							className={styles.speedOption}
+							data-active={playbackSpeed === speed}
+							onClick={() => handleSpeedChange(speed)}
+						>
+							{speed === 1 ? "1x" : `${speed}x`}
+						</button>
+					))}
+				</div>
+				<button
+					className={styles.sampleButton}
+					onClick={handleSample}
+				>
+					{isSamplePlaying ? "Stop" : "Preview"}
+				</button>
 			</div>
 
 			<div className={styles.section}>

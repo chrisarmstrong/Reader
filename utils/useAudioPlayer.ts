@@ -2,6 +2,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import type { Book, Verse } from "../types/bible";
 import { scrollToVerse } from "./scrollToVerse";
+import BibleStorageInstance from "./BibleStorage";
 
 interface UseAudioPlayerProps {
 	book?: Book;
@@ -30,12 +31,20 @@ export function useAudioPlayer({
 	const versesRef = useRef<Verse[]>([]);
 	const currentBookRef = useRef<string | undefined>(undefined);
 	const currentChapterRef = useRef<number | undefined>(undefined);
+	const playbackRateRef = useRef<number>(1);
 
 	// Detect Web Speech API support
 	useEffect(() => {
 		if (typeof window === "undefined") return;
 		const hasSpeech = "speechSynthesis" in window;
 		setIsSupported(hasSpeech);
+	}, []);
+
+	// Load playback speed preference
+	useEffect(() => {
+		BibleStorageInstance.getPreference("playbackSpeed", 1).then(
+			(val) => (playbackRateRef.current = val)
+		);
 	}, []);
 
 	// Voice selection helper
@@ -149,7 +158,7 @@ export function useAudioPlayer({
 
 		utterance.voice = voiceToUse ?? null;
 		utterance.lang = voiceToUse?.lang ?? "en-US";
-		utterance.rate = 1.0;
+		utterance.rate = playbackRateRef.current;
 		utterance.pitch = 1.0;
 		utterance.volume = 1.0;
 
