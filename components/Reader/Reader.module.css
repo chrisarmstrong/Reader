@@ -71,7 +71,7 @@
 }
 
 .verse.newParagraph sup {
-	padding-left: 2em;
+	padding-left: 1lh;
 }
 
 .chapterNumber + .verse.newParagraph sup,
