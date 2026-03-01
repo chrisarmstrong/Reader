@@ -33,6 +33,7 @@ export function useAudioPlayer({
 	const currentBookRef = useRef<string | undefined>(undefined);
 	const currentChapterRef = useRef<number | undefined>(undefined);
 	const playbackRateRef = useRef<number>(1);
+	const stoppedRef = useRef<boolean>(false);
 
 	// Detect Web Speech API support
 	useEffect(() => {
@@ -61,6 +62,7 @@ export function useAudioPlayer({
 			book?.book !== currentBookRef.current &&
 			isPlaying
 		) {
+			stoppedRef.current = true;
 			window.speechSynthesis.cancel();
 			setIsPlaying(false);
 			setCurrentVerseId(null);
@@ -105,11 +107,13 @@ export function useAudioPlayer({
 		utterance.volume = 1.0;
 
 		utterance.onend = () => {
+			if (stoppedRef.current) return;
 			queueIndexRef.current += 1;
 			speakNext();
 		};
 
 		utterance.onerror = () => {
+			if (stoppedRef.current) return;
 			queueIndexRef.current += 1;
 			speakNext();
 		};
@@ -160,14 +164,17 @@ export function useAudioPlayer({
 			// Scroll to the verse that will start playing
 			scrollToVerse(chapter, startVerseNum, "smooth");
 
+			stoppedRef.current = false;
 			setIsPlaying(true);
 			speakNext();
 		},
 		[isSupported, book, preferredVoice, speakNext]
 	);
 
-	// Pause function
+	// Pause function — set stoppedRef BEFORE cancel() because cancel()
+	// fires onend synchronously, which would otherwise call speakNext().
 	const pause = useCallback(() => {
+		stoppedRef.current = true;
 		if (typeof window !== "undefined") {
 			window.speechSynthesis.cancel();
 		}
