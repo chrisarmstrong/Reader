@@ -258,9 +258,9 @@ export default function VerseDetails({
 							disabled={isLoading}
 						>
 							{isBookmarked ? (
-								<IconBookmarkFilled size={24} />
+								<IconBookmarkFilled size={16} />
 							) : (
-								<IconBookmark size={24} />
+								<IconBookmark size={16} />
 							)}
 							<span>{isBookmarked ? "Bookmarked" : "Bookmark"}</span>
 						</button>
@@ -273,7 +273,7 @@ export default function VerseDetails({
 									onPlayAudio(parseInt(chapter), parseInt(verse));
 								}}
 							>
-								<IconPlayerPlay size={24} />
+								<IconPlayerPlay size={16} />
 								<span>Play</span>
 							</button>
 						)}
@@ -285,7 +285,7 @@ export default function VerseDetails({
 								handleShare();
 							}}
 						>
-							<IconShare size={24} />
+							<IconShare size={16} />
 							<span>Share</span>
 						</button>
 					</div>
