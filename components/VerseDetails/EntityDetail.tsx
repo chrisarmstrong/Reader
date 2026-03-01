@@ -120,7 +120,7 @@ export default function EntityDetail({
 								? [
 										entity.gender,
 										entity.alsoCalled
-											? `Also: ${entity.alsoCalled}`
+											? `Also: ${entity.alsoCalled.replace(/,(?!\s)/g, ", ")}`
 											: "",
 									]
 										.filter(Boolean)
