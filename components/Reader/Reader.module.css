@@ -66,13 +66,12 @@
 	font-variant-numeric: oldstyle-nums;
 }
 
-.verse.newParagraph::before {
-	content: "";
-	display: block;
-	height: 24px;
+.verse.newParagraph sup {
+	padding-left: 2em;
 }
 
-.verse.newParagraph sup {
+.chapterNumber + .verse.newParagraph sup,
+.psalmTitle + .verse.newParagraph sup {
 	padding-left: 0;
 }
 
