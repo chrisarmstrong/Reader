@@ -24,6 +24,7 @@ function Reader({
 	const isScrollingRef = useRef<boolean>(false);
 	const pendingHashRef = useRef<string | null>(null);
 	const pointerStartRef = useRef<{ x: number; y: number } | null>(null);
+	const drawerOpenedAtRef = useRef<number>(0);
 
 	const [selectedVerse, setSelectedVerse] = useState<{
 		book: string;
@@ -323,14 +324,13 @@ function Reader({
 	}, [book, highlightVerse]);
 
 	const handleVerseClick = (chapter: string, verse: string, text: string) => {
-		console.log("Verse clicked:", { book: book.book, chapter, verse });
+		drawerOpenedAtRef.current = Date.now();
 		setSelectedVerse({
 			book: book.book,
 			chapter,
 			verse,
 			text,
 		});
-		console.log("Selected verse state updated");
 	};
 
 	// Function to update bookmark CSS - can be called anytime
@@ -354,6 +354,11 @@ function Reader({
 	}, [book]);
 
 	const handleVerseDetailsClose = async () => {
+		// Guard against ghost clicks: on touch devices, the browser fires a
+		// synthetic click after pointerup. If the Drawer overlay renders before
+		// that click arrives, it lands on the overlay and immediately closes
+		// the drawer that was just opened.
+		if (Date.now() - drawerOpenedAtRef.current < 400) return;
 		setSelectedVerse(null);
 		// Reload bookmarks after drawer closes (in case bookmark was added/removed)
 		await updateBookmarkStyles();

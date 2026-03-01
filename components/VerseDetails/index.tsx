@@ -54,8 +54,6 @@ export default function VerseDetails({
 	const savedNoteRef = useRef("");
 	const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-	console.log("VerseDetails rendered:", { active, book, chapter, verse });
-
 	useEffect(() => {
 		const textarea = textareaRef.current;
 		if (textarea) {
@@ -86,12 +84,9 @@ export default function VerseDetails({
 	}, [noteText, currentNote, book, chapter, verse]);
 
 	useEffect(() => {
-		console.log("VerseDetails useEffect:", { active, book, chapter, verse });
 		if (active && book && chapter && verse) {
-			console.log("Checking if bookmarked...");
 			BibleStorage.isBookmarked(book, chapter, verse)
 				.then((result) => {
-					console.log("Is bookmarked result:", result);
 					setIsBookmarked(result);
 				})
 				.catch((error) => {
@@ -140,37 +135,23 @@ export default function VerseDetails({
 	}, [active, book, chapter, verse]);
 
 	const handleBookmarkToggle = async () => {
-		console.log("=== handleBookmarkToggle called ===");
-		console.log(
-			"Current state - isBookmarked:",
-			isBookmarked,
-			"isLoading:",
-			isLoading
-		);
-
 		setIsLoading(true);
 		try {
 			if (isBookmarked) {
-				console.log("Removing bookmark...");
 				await BibleStorage.removeBookmark(`${book}-${chapter}:${verse}`);
 				setIsBookmarked(false);
 			} else {
-				console.log("Adding bookmark...");
 				await BibleStorage.addBookmark(book, chapter, verse, text);
-				console.log("Bookmark added, updating state");
 				setIsBookmarked(true);
 			}
-			console.log("Bookmark toggle completed successfully");
 			// Update bookmark CSS immediately
 			if (onBookmarkChange) {
 				await onBookmarkChange();
 			}
 		} catch (error) {
 			console.error("Error toggling bookmark:", error);
-			alert("Failed to save bookmark. Check console for details.");
 		} finally {
 			setIsLoading(false);
-			console.log("Loading state reset");
 		}
 	};
 
