@@ -23,6 +23,7 @@ function Reader({
 	const scrollTimeoutRef = useRef<number | null>(null);
 	const isScrollingRef = useRef<boolean>(false);
 	const pendingHashRef = useRef<string | null>(null);
+	const pointerStartRef = useRef<{ x: number; y: number } | null>(null);
 
 	const [selectedVerse, setSelectedVerse] = useState<{
 		book: string;
@@ -406,8 +407,16 @@ function Reader({
 											? styles.selected
 											: ""
 									}`}
+									onPointerDown={(e) => {
+										pointerStartRef.current = { x: e.clientX, y: e.clientY };
+									}}
 									onPointerUp={(e) => {
-										e.preventDefault();
+										const start = pointerStartRef.current;
+										pointerStartRef.current = null;
+										if (!start) return;
+										const dx = Math.abs(e.clientX - start.x);
+										const dy = Math.abs(e.clientY - start.y);
+										if (dx > 10 || dy > 10) return;
 										handleVerseClick(chapter.chapter, verse.verse, verse.text);
 									}}
 								>
