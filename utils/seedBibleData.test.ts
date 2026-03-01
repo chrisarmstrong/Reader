@@ -128,6 +128,27 @@ describe('seedBibleData', () => {
       expect(entry).toBeNull();
     });
 
+    it('should not index stopwords', async () => {
+      await seedBibleData(mockBooks);
+
+      // Common words like "the", "and", "was" should be excluded
+      const theEntry = await BibleStorage.getSearchIndexEntry('the');
+      expect(theEntry).toBeNull();
+
+      const andEntry = await BibleStorage.getSearchIndexEntry('and');
+      expect(andEntry).toBeNull();
+
+      const wasEntry = await BibleStorage.getSearchIndexEntry('was');
+      expect(wasEntry).toBeNull();
+
+      // But meaningful words like "beginning" and "god" should still be indexed
+      const beginning = await BibleStorage.getSearchIndexEntry('beginning');
+      expect(beginning).not.toBeNull();
+
+      const god = await BibleStorage.getSearchIndexEntry('god');
+      expect(god).not.toBeNull();
+    });
+
     it('should call progress callback', async () => {
       const onProgress = vi.fn();
       await seedBibleData(mockBooks, onProgress);
@@ -146,7 +167,7 @@ describe('seedBibleData', () => {
       await seedBibleData(mockBooks);
 
       const version = await BibleStorage.getPreference('seedVersion');
-      expect(version).toBe(2);
+      expect(version).toBe(6);
     });
 
     it('should skip seeding on subsequent calls if version matches', async () => {

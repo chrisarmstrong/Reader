@@ -9,7 +9,7 @@ import type {
 import BibleStorage from "./BibleStorage";
 
 // Seed version — bump this to force a re-seed when the data/schema changes
-const SEED_VERSION = 5;
+const SEED_VERSION = 6;
 
 // How many books to process per chunk before yielding to the browser
 const BOOKS_PER_CHUNK = 3;
@@ -24,16 +24,54 @@ export interface SeedProgress {
 
 type ProgressCallback = (progress: SeedProgress) => void;
 
+// Common English words excluded from the search index. These words appear in
+// nearly every verse, so indexing them bloats IndexedDB without improving search
+// quality. Keeping the index smaller also reduces the chance of browser eviction.
+export const STOP_WORDS = new Set([
+	"the",
+	"and",
+	"of",
+	"to",
+	"in",
+	"that",
+	"it",
+	"is",
+	"was",
+	"for",
+	"be",
+	"as",
+	"he",
+	"his",
+	"not",
+	"on",
+	"with",
+	"but",
+	"by",
+	"they",
+	"at",
+	"or",
+	"an",
+	"if",
+	"so",
+	"my",
+	"me",
+	"we",
+	"no",
+	"do",
+	"up",
+	"ye",
+]);
+
 /**
  * Tokenize verse text into lowercase words, stripping punctuation.
- * Returns unique words for a given text.
+ * Filters out single-character words and stopwords.
  */
-function tokenize(text: string): string[] {
+export function tokenize(text: string): string[] {
 	return text
 		.toLowerCase()
 		.replace(/[^a-z0-9' ]/g, " ")
 		.split(/\s+/)
-		.filter((w) => w.length > 1);
+		.filter((w) => w.length > 1 && !STOP_WORDS.has(w));
 }
 
 /**

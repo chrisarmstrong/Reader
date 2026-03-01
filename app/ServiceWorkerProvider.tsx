@@ -19,6 +19,19 @@ export default function ServiceWorkerProvider({
 			return;
 		}
 
+		// Request persistent storage so the browser won't evict IndexedDB data
+		// (bookmarks, notes, reading positions) under storage pressure or after
+		// periods of inactivity (Safari's 7-day eviction policy).
+		if (navigator.storage?.persist) {
+			navigator.storage.persist().then((granted) => {
+				console.log(
+					granted
+						? "Persistent storage granted — data is safe from eviction"
+						: "Persistent storage denied — data may be evicted under pressure"
+				);
+			});
+		}
+
 		// Register service worker only in production
 		if ("serviceWorker" in navigator) {
 			window.addEventListener("load", () => {
