@@ -136,6 +136,10 @@
 	-webkit-tap-highlight-color: transparent;
 }
 
+.settingToggle + .settingToggle {
+	margin-top: 0;
+}
+
 .settingToggle:hover,
 .settingToggle:active {
 	opacity: 1;
