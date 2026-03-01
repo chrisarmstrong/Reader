@@ -321,13 +321,18 @@ function Reader({
 									? chapter.chapter
 									: chapter.verses[0]?.text.slice(0, 1)}
 							</h2>
+							{chapter.title && (
+								<span className={styles.psalmTitle}>
+									{chapter.title}
+								</span>
+							)}
 							{chapter.verses.map((verse, i) => (
 								<p
 									key={verse.verse}
 									id={chapter.chapter + `:` + verse.verse}
 									className={`${styles.verse} verse ${
 										verse.paragraph ? styles.newParagraph : ""
-									} ${
+									} ${verse.poetry ? styles.poetry : ""} ${
 										highlightVerse &&
 										highlightVerse === chapter.chapter + `:` + verse.verse
 											? styles.selected

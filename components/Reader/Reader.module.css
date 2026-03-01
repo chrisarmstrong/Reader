@@ -76,6 +76,27 @@
 	padding-left: 0;
 }
 
+.verse.poetry {
+	display: block;
+	padding-left: 2em;
+	text-indent: -1em;
+	line-height: 1.8;
+}
+
+.verse.poetry sup {
+	padding-left: 0;
+}
+
+.psalmTitle {
+	display: block;
+	font-family: var(--serif), georgia, serif;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 20px;
+	opacity: 0.6;
+	margin-bottom: 8px;
+}
+
 .verse.highlight {
 	background: var(--highlight-color);
 }

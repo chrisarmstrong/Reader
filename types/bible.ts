@@ -2,10 +2,12 @@ export interface Verse {
 	verse: string;
 	text: string;
 	paragraph?: boolean;
+	poetry?: boolean;
 }
 
 export interface Chapter {
 	chapter: string;
+	title?: string;
 	verses: Verse[];
 }
 

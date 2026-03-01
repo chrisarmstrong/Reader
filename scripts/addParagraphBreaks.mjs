@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 
 /**
- * Build-time script to extract paragraph break positions from a KJV OSIS XML
- * file and inject `"paragraph": true` into the app's per-book JSON data files.
+ * Build-time script to extract structural data from a KJV OSIS XML file
+ * and inject it into the app's per-book JSON data files:
  *
- * The OSIS XML uses <p> elements to wrap groups of verses that belong to the
- * same paragraph. This script identifies the first verse inside each <p> block
- * and marks it as a paragraph start — except for verse 1 of each chapter,
- * which inherently starts a new section due to the chapter break.
+ *   - `"paragraph": true`  on verses that start a new paragraph
+ *   - `"poetry": true`     on verses inside <lg>/<l> (line group) elements
+ *   - `"title": "..."`     on chapters that have a psalm superscription
+ *
+ * The OSIS XML uses <p> elements for prose paragraphs and <lg>/<l> for
+ * poetic lines. Psalm superscriptions appear as <title type="psalm">.
  *
  * Source: https://github.com/seven1m/open-bibles (eng-kjv.osis.xml)
  * License: Public Domain (KJV)
@@ -102,6 +104,13 @@ const appNameToOsis = Object.fromEntries(
 	Object.entries(osisToAppName).map(([osis, app]) => [app, osis])
 );
 
+/**
+ * Strip XML tags from a string, leaving only text content.
+ */
+function stripTags(s) {
+	return s.replace(/<[^>]+>/g, "").trim();
+}
+
 async function main() {
 	// 1. Get the OSIS XML
 	let xml;
@@ -119,15 +128,15 @@ async function main() {
 		console.log(`Cached to ${LOCAL_XML}`);
 	}
 
-	// 2. Extract paragraph-starting verses from the OSIS XML.
+	// ── 2a. Extract paragraph-starting verses ──────────────────────────
 	//    Scan for <p> opens and <verse osisID="..."> tags in document order.
 	//    The first verse encountered after each <p> open is a paragraph start.
-	const tokenRegex = /<p\b[^>]*>|<\/p\b[^>]*>|<verse\s+osisID="([^"]+)"/g;
+	const pTokenRegex = /<p\b[^>]*>|<\/p\b[^>]*>|<verse\s+osisID="([^"]+)"/g;
 	const paragraphVerses = new Set();
 	let needFirstVerse = false;
 	let match;
 
-	while ((match = tokenRegex.exec(xml)) !== null) {
+	while ((match = pTokenRegex.exec(xml)) !== null) {
 		const tag = match[0];
 		if (tag.startsWith("</p")) {
 			needFirstVerse = false;
@@ -143,10 +152,49 @@ async function main() {
 		`Found ${paragraphVerses.size} paragraph-starting verses in OSIS XML`
 	);
 
-	// 3. Update each book JSON file
+	// ── 2b. Extract poetic verses (inside <lg> blocks) ─────────────────
+	//    Verses wrapped in <lg><l>...</l></lg> are poetic lines.
+	const lgTokenRegex =
+		/<lg\b[^>]*>|<\/lg\b[^>]*>|<verse\s+osisID="([^"]+)"/g;
+	const poetryVerses = new Set();
+	let insideLg = false;
+
+	while ((match = lgTokenRegex.exec(xml)) !== null) {
+		const tag = match[0];
+		if (tag.startsWith("</lg")) {
+			insideLg = false;
+		} else if (tag.startsWith("<lg")) {
+			insideLg = true;
+		} else if (match[1] && insideLg) {
+			poetryVerses.add(match[1]);
+		}
+	}
+
+	console.log(`Found ${poetryVerses.size} poetic verses in OSIS XML`);
+
+	// ── 2c. Extract psalm titles (superscriptions) ─────────────────────
+	//    Pattern: <chapter osisRef="Ps.N" ...> ... <title type="psalm"...>TEXT</title>
+	const psalmTitleRegex =
+		/<chapter\s+osisRef="(Ps\.\d+)"[^/]*\/>\s*<title\s+type="psalm"[^>]*>([\s\S]*?)<\/title>/g;
+	// Map: "Ps.3" → "A Psalm of David, when he fled from Absalom his son."
+	const psalmTitles = new Map();
+
+	while ((match = psalmTitleRegex.exec(xml)) !== null) {
+		const chapterRef = match[1]; // e.g. "Ps.3"
+		const rawTitle = match[2];
+		const cleanTitle = stripTags(rawTitle).replace(/\s+/g, " ").trim();
+		if (cleanTitle) {
+			psalmTitles.set(chapterRef, cleanTitle);
+		}
+	}
+
+	console.log(`Found ${psalmTitles.size} psalm titles in OSIS XML`);
+
+	// ── 3. Update each book JSON file ──────────────────────────────────
 	const files = readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"));
-	let totalAdded = 0;
-	let totalRemoved = 0;
+	let totalParagraphsAdded = 0;
+	let totalPoetryAdded = 0;
+	let totalTitlesAdded = 0;
 	let booksUpdated = 0;
 
 	for (const file of files) {
@@ -159,61 +207,87 @@ async function main() {
 			continue;
 		}
 
-		let added = 0;
-		let removed = 0;
+		let paragraphsAdded = 0;
+		let poetryAdded = 0;
+		let titlesAdded = 0;
 
 		for (const chapter of book.chapters) {
+			// ── Psalm titles ──
+			const chapterRef = `${osisBook}.${chapter.chapter}`;
+			const psalmTitle = psalmTitles.get(chapterRef);
+			if (psalmTitle) {
+				chapter.title = psalmTitle;
+				titlesAdded++;
+			} else {
+				delete chapter.title;
+			}
+
+			// ── Verse-level: paragraph + poetry ──
 			chapter.verses = chapter.verses.map((v) => {
 				const osisId = `${osisBook}.${chapter.chapter}.${v.verse}`;
-				// Mark as paragraph if OSIS says so, but skip verse 1 of each chapter
-				// (the chapter break itself serves as the paragraph boundary)
+
 				const shouldBeParagraph =
 					paragraphVerses.has(osisId) && v.verse !== "1";
+				const shouldBePoetry = poetryVerses.has(osisId);
 
-				if (shouldBeParagraph && !v.paragraph) added++;
-				if (!shouldBeParagraph && v.paragraph) removed++;
+				if (shouldBeParagraph && !v.paragraph) paragraphsAdded++;
+				if (shouldBePoetry && !v.poetry) poetryAdded++;
 
-				// Rebuild the verse object with consistent property order:
-				// verse, paragraph (if true), text
+				// Rebuild verse object with consistent property order:
+				// verse, paragraph?, poetry?, text
 				const newVerse = { verse: v.verse };
 				if (shouldBeParagraph) newVerse.paragraph = true;
+				if (shouldBePoetry) newVerse.poetry = true;
 				newVerse.text = v.text;
 				return newVerse;
 			});
 		}
 
+		// Rebuild chapters with consistent property order:
+		// chapter, title?, verses
+		book.chapters = book.chapters.map((ch) => {
+			const newCh = { chapter: ch.chapter };
+			if (ch.title) newCh.title = ch.title;
+			newCh.verses = ch.verses;
+			return newCh;
+		});
+
 		writeFileSync(filePath, JSON.stringify(book, null, "\t") + "\n");
 
-		if (added > 0 || removed > 0) {
-			console.log(`  ${book.book}: +${added} -${removed} paragraph breaks`);
+		const changes = paragraphsAdded + poetryAdded + titlesAdded;
+		if (changes > 0) {
+			const parts = [];
+			if (paragraphsAdded) parts.push(`+${paragraphsAdded} paragraphs`);
+			if (poetryAdded) parts.push(`+${poetryAdded} poetry`);
+			if (titlesAdded) parts.push(`+${titlesAdded} titles`);
+			console.log(`  ${book.book}: ${parts.join(", ")}`);
 			booksUpdated++;
 		}
 
-		totalAdded += added;
-		totalRemoved += removed;
+		totalParagraphsAdded += paragraphsAdded;
+		totalPoetryAdded += poetryAdded;
+		totalTitlesAdded += titlesAdded;
 	}
 
 	console.log(
-		`\nDone: ${totalAdded} breaks added, ${totalRemoved} removed across ${booksUpdated} books`
+		`\nDone across ${booksUpdated} books: ${totalParagraphsAdded} paragraphs, ${totalPoetryAdded} poetry markers, ${totalTitlesAdded} psalm titles`
 	);
 
-	// Spot-check: show Philemon paragraph verses
+	// Spot-checks
 	const phlmVerses = [...paragraphVerses]
 		.filter((id) => id.startsWith("Phlm."))
 		.sort();
-	console.log(`\nSpot-check — Philemon paragraph starts in OSIS: ${phlmVerses.join(", ")}`);
-
-	// Spot-check: show Genesis paragraph verses (first 10)
-	const genVerses = [...paragraphVerses]
-		.filter((id) => id.startsWith("Gen."))
-		.sort((a, b) => {
-			const [, ca, va] = a.split(".");
-			const [, cb, vb] = b.split(".");
-			return Number(ca) - Number(cb) || Number(va) - Number(vb);
-		});
 	console.log(
-		`Spot-check — Genesis paragraph starts (first 10): ${genVerses.slice(0, 10).join(", ")}`
+		`\nSpot-check — Philemon paragraph starts: ${phlmVerses.join(", ")}`
 	);
+
+	const ps3Title = psalmTitles.get("Ps.3");
+	console.log(`Spot-check — Psalm 3 title: "${ps3Title}"`);
+
+	const poeticPsCount = [...poetryVerses].filter((id) =>
+		id.startsWith("Ps.")
+	).length;
+	console.log(`Spot-check — Poetic verses in Psalms: ${poeticPsCount}`);
 }
 
 main().catch((err) => {
