@@ -292,3 +292,15 @@
 	opacity: 0.85;
 	margin: 0 0 16px;
 }
+
+.inlineVerseLink {
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: rgba(0, 0, 0, 0.3);
+	text-underline-offset: 2px;
+	transition: text-decoration-color 0.2s;
+}
+
+.inlineVerseLink:hover {
+	text-decoration-color: rgba(0, 0, 0, 0.7);
+}

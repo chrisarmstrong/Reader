@@ -1,11 +1,35 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { IconArrowLeft, IconUser, IconMapPin } from "@tabler/icons-react";
 import Link from "next/link";
 import styles from "./VerseDetails.module.css";
 import type { BibleEntity, CrossReference } from "../../types/bible";
 import { getEntityVerseRefs } from "../../utils/getEntities";
+
+/**
+ * Parse markdown-style links in text and return React nodes.
+ * Converts "[Gen. 2:8](/genesis#2:8)" into clickable Link components.
+ */
+function renderLinkedText(text: string, onNavigate: () => void): ReactNode[] {
+	const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+	return parts.map((part, i) => {
+		const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+		if (match) {
+			return (
+				<Link
+					key={i}
+					href={match[2]}
+					className={styles.inlineVerseLink}
+					onClick={onNavigate}
+				>
+					{match[1]}
+				</Link>
+			);
+		}
+		return part;
+	});
+}
 
 interface EntityDetailProps {
 	entity: BibleEntity;
@@ -76,7 +100,9 @@ export default function EntityDetail({
 			</div>
 
 			{entity.description && (
-				<p className={styles.entityDescription}>{entity.description}</p>
+				<p className={styles.entityDescription}>
+					{renderLinkedText(entity.description, onClose)}
+				</p>
 			)}
 
 			<div className={styles.crossRefsSection}>
