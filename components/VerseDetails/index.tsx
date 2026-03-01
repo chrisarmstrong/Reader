@@ -240,7 +240,7 @@ export default function VerseDetails({
 							}}
 							aria-label="Close"
 						>
-							<IconX size={24} />
+							<IconX size={18} />
 						</button>
 					</div>
 
