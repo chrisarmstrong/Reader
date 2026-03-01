@@ -7,7 +7,7 @@ import type {
 import BibleStorage from "./BibleStorage";
 
 // Seed version — bump this to force a re-seed when the data/schema changes
-const SEED_VERSION = 3;
+const SEED_VERSION = 4;
 
 // How many books to process per chunk before yielding to the browser
 const BOOKS_PER_CHUNK = 3;
@@ -83,14 +83,20 @@ export async function seedBibleData(
 			for (const chapter of book.chapters) {
 				for (const verse of chapter.verses) {
 					const id = `${book.book}-${chapter.chapter}:${verse.verse}`;
-					verses.push({
+					const record: VerseRecord = {
 						id,
 						book: book.book,
 						bookIndex: book.index,
 						chapter: chapter.chapter,
 						verse: verse.verse,
 						text: verse.text,
-					});
+					};
+					if (verse.paragraph) record.paragraph = true;
+					if (verse.poetry) record.poetry = true;
+					if (verse.verse === "1" && chapter.title) {
+						record.chapterTitle = chapter.title;
+					}
+					verses.push(record);
 
 					// Build inverted index entries
 					const words = tokenize(verse.text);

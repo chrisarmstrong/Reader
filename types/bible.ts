@@ -56,6 +56,9 @@ export interface VerseRecord {
 	chapter: string;
 	verse: string;
 	text: string;
+	paragraph?: boolean;
+	poetry?: boolean;
+	chapterTitle?: string; // psalm superscription, attached to verse 1
 }
 
 export interface SearchIndexEntry {
