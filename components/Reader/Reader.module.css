@@ -66,6 +66,11 @@
 	font-variant-numeric: oldstyle-nums;
 }
 
+.verse.newParagraph::before {
+	content: "";
+	display: block;
+}
+
 .verse.newParagraph sup {
 	padding-left: 2em;
 }
