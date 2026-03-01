@@ -30,11 +30,15 @@ export default function Contents({
 	const router = useRouter();
 	const pointerStartRef = useRef<{ x: number; y: number } | null>(null);
 	const [redLetterEnabled, setRedLetterEnabled] = useState(true);
+	const [verseNumbersEnabled, setVerseNumbersEnabled] = useState(true);
 
-	// Load red letter preference on mount
+	// Load display preferences on mount
 	useEffect(() => {
 		BibleStorageInstance.getPreference("redLetterEnabled", true).then(
 			(val) => setRedLetterEnabled(val)
+		);
+		BibleStorageInstance.getPreference("verseNumbersEnabled", true).then(
+			(val) => setVerseNumbersEnabled(val)
 		);
 	}, []);
 
@@ -43,6 +47,13 @@ export default function Contents({
 		setRedLetterEnabled(newValue);
 		await BibleStorageInstance.savePreference("redLetterEnabled", newValue);
 		window.dispatchEvent(new Event("redLetterChanged"));
+	};
+
+	const handleVerseNumbersToggle = async () => {
+		const newValue = !verseNumbersEnabled;
+		setVerseNumbersEnabled(newValue);
+		await BibleStorageInstance.savePreference("verseNumbersEnabled", newValue);
+		window.location.reload();
 	};
 
 	// Close menu when ESC is pressed
@@ -226,6 +237,16 @@ export default function Contents({
 					<span
 						className={styles.toggleIndicator}
 						data-enabled={redLetterEnabled}
+					/>
+				</button>
+				<button
+					className={styles.settingToggle}
+					onClick={handleVerseNumbersToggle}
+				>
+					<span>Verse Numbers</span>
+					<span
+						className={styles.toggleIndicator}
+						data-enabled={verseNumbersEnabled}
 					/>
 				</button>
 				<Link
