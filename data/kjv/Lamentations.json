@@ -51,6 +51,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Is it nothing to you, all ye that pass by? behold, and see if there be any sorrow like unto my sorrow, which is done unto me, wherewith the LORD hath afflicted me in the day of his fierce anger."
 				},
 				{
@@ -75,6 +76,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "The LORD is righteous; for I have rebelled against his commandment: hear, I pray you, all people, and behold my sorrow: my virgins and my young men are gone into captivity."
 				},
 				{
@@ -144,7 +146,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "They say to their mothers, Where is corn and wine? when they swooned as the wounded in the streets of the city, when their soul was poured out into their mothers\u2019 bosom."
+					"text": "They say to their mothers, Where is corn and wine? when they swooned as the wounded in the streets of the city, when their soul was poured out into their mothers’ bosom."
 				},
 				{
 					"verse": "13",
@@ -176,6 +178,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Behold, O LORD, and consider to whom thou hast done this. Shall the women eat their fruit, and children of a span long? shall the priest and the prophet be slain in the sanctuary of the Lord?"
 				},
 				{
@@ -184,7 +187,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "Thou hast called as in a solemn day my terrors round about, so that in the day of the LORD\u2019s anger none escaped nor remained: those that I have swaddled and brought up hath mine enemy consumed."
+					"text": "Thou hast called as in a solemn day my terrors round about, so that in the day of the LORD’s anger none escaped nor remained: those that I have swaddled and brought up hath mine enemy consumed."
 				}
 			]
 		},
@@ -277,7 +280,8 @@
 				},
 				{
 					"verse": "22",
-					"text": "It is of the LORD\u2019s mercies that we are not consumed, because his compassions fail not."
+					"paragraph": true,
+					"text": "It is of the LORD’s mercies that we are not consumed, because his compassions fail not."
 				},
 				{
 					"verse": "23",
@@ -311,7 +315,10 @@
 					"verse": "30",
 					"text": "He giveth his cheek to him that smiteth him: he is filled full with reproach."
 				},
-				{ "verse": "31", "text": "For the LORD will not cast off for ever:" },
+				{
+					"verse": "31",
+					"text": "For the LORD will not cast off for ever:"
+				},
 				{
 					"verse": "32",
 					"text": "But though he cause grief, yet will he have compassion according to the multitude of his mercies."
@@ -442,6 +449,7 @@
 				},
 				{
 					"verse": "64",
+					"paragraph": true,
 					"text": "Render unto them a recompence, O LORD, according to the work of their hands."
 				},
 				{
@@ -507,6 +515,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "For the sins of her prophets, and the iniquities of her priests, that have shed the blood of the just in the midst of her,"
 				},
 				{
@@ -539,10 +548,12 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Rejoice and be glad, O daughter of Edom, that dwellest in the land of Uz; the cup also shall pass through unto thee: thou shalt be drunken, and shalt make thyself naked."
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "The punishment of thine iniquity is accomplished, O daughter of Zion; he will no more carry thee away into captivity: he will visit thine iniquity, O daughter of Edom; he will discover thy sins."
 				}
 			]

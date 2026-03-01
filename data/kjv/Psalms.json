@@ -68,7 +68,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "Thou shalt break them with a rod of iron; thou shalt dash them in pieces like a potter\u2019s vessel."
+					"text": "Thou shalt break them with a rod of iron; thou shalt dash them in pieces like a potter’s vessel."
 				},
 				{
 					"verse": "10",
@@ -228,7 +228,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "Return, O LORD, deliver my soul: oh save me for thy mercies\u2019 sake."
+					"text": "Return, O LORD, deliver my soul: oh save me for thy mercies’ sake."
 				},
 				{
 					"verse": "5",
@@ -468,7 +468,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "For the wicked boasteth of his heart\u2019s desire, and blesseth the covetous, whom the LORD abhorreth."
+					"text": "For the wicked boasteth of his heart’s desire, and blesseth the covetous, whom the LORD abhorreth."
 				},
 				{
 					"verse": "4",
@@ -549,7 +549,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "The LORD is in his holy temple, the LORD\u2019s throne is in heaven: his eyes behold, his eyelids try, the children of men."
+					"text": "The LORD is in his holy temple, the LORD’s throne is in heaven: his eyes behold, his eyelids try, the children of men."
 				},
 				{
 					"verse": "5",
@@ -806,7 +806,10 @@
 		{
 			"chapter": "18",
 			"verses": [
-				{ "verse": "1", "text": "I will love thee, O LORD, my strength." },
+				{
+					"verse": "1",
+					"text": "I will love thee, O LORD, my strength."
+				},
 				{
 					"verse": "2",
 					"text": "The LORD is my rock, and my fortress, and my deliverer; my God, my strength, in whom I will trust; my buckler, and the horn of my salvation, and my high tower."
@@ -933,7 +936,7 @@
 				},
 				{
 					"verse": "33",
-					"text": "He maketh my feet like hinds\u2019 feet, and setteth me upon my high places."
+					"text": "He maketh my feet like hinds’ feet, and setteth me upon my high places."
 				},
 				{
 					"verse": "34",
@@ -1116,7 +1119,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "Thou hast given him his heart\u2019s desire, and hast not withholden the request of his lips. Selah."
+					"text": "Thou hast given him his heart’s desire, and hast not withholden the request of his lips. Selah."
 				},
 				{
 					"verse": "3",
@@ -1201,11 +1204,11 @@
 				},
 				{
 					"verse": "9",
-					"text": "But thou art he that took me out of the womb: thou didst make me hope when I was upon my mother\u2019s breasts."
+					"text": "But thou art he that took me out of the womb: thou didst make me hope when I was upon my mother’s breasts."
 				},
 				{
 					"verse": "10",
-					"text": "I was cast upon thee from the womb: thou art my God from my mother\u2019s belly."
+					"text": "I was cast upon thee from the womb: thou art my God from my mother’s belly."
 				},
 				{
 					"verse": "11",
@@ -1249,7 +1252,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "Save me from the lion\u2019s mouth: for thou hast heard me from the horns of the unicorns."
+					"text": "Save me from the lion’s mouth: for thou hast heard me from the horns of the unicorns."
 				},
 				{
 					"verse": "22",
@@ -1277,7 +1280,7 @@
 				},
 				{
 					"verse": "28",
-					"text": "For the kingdom is the LORD\u2019s: and he is the governor among the nations."
+					"text": "For the kingdom is the LORD’s: and he is the governor among the nations."
 				},
 				{
 					"verse": "29",
@@ -1296,14 +1299,17 @@
 		{
 			"chapter": "23",
 			"verses": [
-				{ "verse": "1", "text": "The LORD is my shepherd; I shall not want." },
+				{
+					"verse": "1",
+					"text": "The LORD is my shepherd; I shall not want."
+				},
 				{
 					"verse": "2",
 					"text": "He maketh me to lie down in green pastures: he leadeth me beside the still waters."
 				},
 				{
 					"verse": "3",
-					"text": "He restoreth my soul: he leadeth me in the paths of righteousness for his name\u2019s sake."
+					"text": "He restoreth my soul: he leadeth me in the paths of righteousness for his name’s sake."
 				},
 				{
 					"verse": "4",
@@ -1324,7 +1330,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "The earth is the LORD\u2019s, and the fulness thereof; the world, and they that dwell therein."
+					"text": "The earth is the LORD’s, and the fulness thereof; the world, and they that dwell therein."
 				},
 				{
 					"verse": "2",
@@ -1367,7 +1373,10 @@
 		{
 			"chapter": "25",
 			"verses": [
-				{ "verse": "1", "text": "Unto thee, O LORD, do I lift up my soul." },
+				{
+					"verse": "1",
+					"text": "Unto thee, O LORD, do I lift up my soul."
+				},
 				{
 					"verse": "2",
 					"text": "O my God, I trust in thee: let me not be ashamed, let not mine enemies triumph over me."
@@ -1390,7 +1399,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "Remember not the sins of my youth, nor my transgressions: according to thy mercy remember thou me for thy goodness\u2019 sake, O LORD."
+					"text": "Remember not the sins of my youth, nor my transgressions: according to thy mercy remember thou me for thy goodness’ sake, O LORD."
 				},
 				{
 					"verse": "8",
@@ -1406,7 +1415,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "For thy name\u2019s sake, O LORD, pardon mine iniquity; for it is great."
+					"text": "For thy name’s sake, O LORD, pardon mine iniquity; for it is great."
 				},
 				{
 					"verse": "12",
@@ -1724,7 +1733,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "For thou art my rock and my fortress; therefore for thy name\u2019s sake lead me, and guide me."
+					"text": "For thou art my rock and my fortress; therefore for thy name’s sake lead me, and guide me."
 				},
 				{
 					"verse": "4",
@@ -1776,7 +1785,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "Make thy face to shine upon thy servant: save me for thy mercies\u2019 sake."
+					"text": "Make thy face to shine upon thy servant: save me for thy mercies’ sake."
 				},
 				{
 					"verse": "17",
@@ -2469,7 +2478,10 @@
 					"verse": "21",
 					"text": "Forsake me not, O LORD: O my God, be not far from me."
 				},
-				{ "verse": "22", "text": "Make haste to help me, O Lord my salvation." }
+				{
+					"verse": "22",
+					"text": "Make haste to help me, O Lord my salvation."
+				}
 			]
 		},
 		{
@@ -2838,7 +2850,7 @@
 				},
 				{
 					"verse": "26",
-					"text": "Arise for our help, and redeem us for thy mercies\u2019 sake."
+					"text": "Arise for our help, and redeem us for thy mercies’ sake."
 				}
 			]
 		},
@@ -2863,7 +2875,7 @@
 				},
 				{
 					"verse": "5",
-					"text": "Thine arrows are sharp in the heart of the king\u2019s enemies; whereby the people fall under thee."
+					"text": "Thine arrows are sharp in the heart of the king’s enemies; whereby the people fall under thee."
 				},
 				{
 					"verse": "6",
@@ -2879,11 +2891,11 @@
 				},
 				{
 					"verse": "9",
-					"text": "Kings\u2019 daughters were among thy honourable women: upon thy right hand did stand the queen in gold of Ophir."
+					"text": "Kings’ daughters were among thy honourable women: upon thy right hand did stand the queen in gold of Ophir."
 				},
 				{
 					"verse": "10",
-					"text": "Hearken, O daughter, and consider, and incline thine ear; forget also thine own people, and thy father\u2019s house;"
+					"text": "Hearken, O daughter, and consider, and incline thine ear; forget also thine own people, and thy father’s house;"
 				},
 				{
 					"verse": "11",
@@ -2895,7 +2907,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "The king\u2019s daughter is all glorious within: her clothing is of wrought gold."
+					"text": "The king’s daughter is all glorious within: her clothing is of wrought gold."
 				},
 				{
 					"verse": "14",
@@ -2903,7 +2915,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "With gladness and rejoicing shall they be brought: they shall enter into the king\u2019s palace."
+					"text": "With gladness and rejoicing shall they be brought: they shall enter into the king’s palace."
 				},
 				{
 					"verse": "16",
@@ -3016,7 +3028,10 @@
 					"verse": "2",
 					"text": "Beautiful for situation, the joy of the whole earth, is mount Zion, on the sides of the north, the city of the great King."
 				},
-				{ "verse": "3", "text": "God is known in her palaces for a refuge." },
+				{
+					"verse": "3",
+					"text": "God is known in her palaces for a refuge."
+				},
 				{
 					"verse": "4",
 					"text": "For, lo, the kings were assembled, they passed by together."
@@ -3070,7 +3085,10 @@
 					"verse": "1",
 					"text": "Hear this, all ye people; give ear, all ye inhabitants of the world:"
 				},
-				{ "verse": "2", "text": "Both low and high, rich and poor, together." },
+				{
+					"verse": "2",
+					"text": "Both low and high, rich and poor, together."
+				},
 				{
 					"verse": "3",
 					"text": "My mouth shall speak of wisdom; and the meditation of my heart shall be of understanding."
@@ -3226,7 +3244,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "Thou sittest and speakest against thy brother; thou slanderest thine own mother\u2019s son."
+					"text": "Thou sittest and speakest against thy brother; thou slanderest thine own mother’s son."
 				},
 				{
 					"verse": "21",
@@ -3807,7 +3825,10 @@
 		{
 			"chapter": "61",
 			"verses": [
-				{ "verse": "1", "text": "Hear my cry, O God; attend unto my prayer." },
+				{
+					"verse": "1",
+					"text": "Hear my cry, O God; attend unto my prayer."
+				},
 				{
 					"verse": "2",
 					"text": "From the end of the earth will I cry unto thee, when my heart is overwhelmed: lead me to the rock that is higher than I."
@@ -3826,7 +3847,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "Thou wilt prolong the king\u2019s life: and his years as many generations."
+					"text": "Thou wilt prolong the king’s life: and his years as many generations."
 				},
 				{
 					"verse": "7",
@@ -4045,7 +4066,10 @@
 		{
 			"chapter": "66",
 			"verses": [
-				{ "verse": "1", "text": "Make a joyful noise unto God, all ye lands:" },
+				{
+					"verse": "1",
+					"text": "Make a joyful noise unto God, all ye lands:"
+				},
 				{
 					"verse": "2",
 					"text": "Sing forth the honour of his name: make his praise glorious."
@@ -4335,7 +4359,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "I am become a stranger unto my brethren, and an alien unto my mother\u2019s children."
+					"text": "I am become a stranger unto my brethren, and an alien unto my mother’s children."
 				},
 				{
 					"verse": "9",
@@ -4501,7 +4525,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "By thee have I been holden up from the womb: thou art he that took me out of my mother\u2019s bowels: my praise shall be continually of thee."
+					"text": "By thee have I been holden up from the womb: thou art he that took me out of my mother’s bowels: my praise shall be continually of thee."
 				},
 				{
 					"verse": "7",
@@ -4582,7 +4606,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Give the king thy judgments, O God, and thy righteousness unto the king\u2019s son."
+					"text": "Give the king thy judgments, O God, and thy righteousness unto the king’s son."
 				},
 				{
 					"verse": "2",
@@ -5160,7 +5184,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "Man did eat angels\u2019 food: he sent them meat to the full."
+					"text": "Man did eat angels’ food: he sent them meat to the full."
 				},
 				{
 					"verse": "26",
@@ -5304,7 +5328,7 @@
 				},
 				{
 					"verse": "61",
-					"text": "And delivered his strength into captivity, and his glory into the enemy\u2019s hand."
+					"text": "And delivered his strength into captivity, and his glory into the enemy’s hand."
 				},
 				{
 					"verse": "62",
@@ -5389,7 +5413,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "Help us, O God of our salvation, for the glory of thy name: and deliver us, and purge away our sins, for thy name\u2019s sake."
+					"text": "Help us, O God of our salvation, for the glory of thy name: and deliver us, and purge away our sins, for thy name’s sake."
 				},
 				{
 					"verse": "10",
@@ -5539,7 +5563,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "So I gave them up unto their own hearts\u2019 lust: and they walked in their own counsels."
+					"text": "So I gave them up unto their own hearts’ lust: and they walked in their own counsels."
 				},
 				{
 					"verse": "13",
@@ -5859,7 +5883,10 @@
 		{
 			"chapter": "87",
 			"verses": [
-				{ "verse": "1", "text": "His foundation is in the holy mountains." },
+				{
+					"verse": "1",
+					"text": "His foundation is in the holy mountains."
+				},
 				{
 					"verse": "2",
 					"text": "The LORD loveth the gates of Zion more than all the dwellings of Jacob."
@@ -6349,7 +6376,10 @@
 					"verse": "7",
 					"text": "When the wicked spring as the grass, and when all the workers of iniquity do flourish; it is that they shall be destroyed for ever:"
 				},
-				{ "verse": "8", "text": "But thou, LORD, art most high for evermore." },
+				{
+					"verse": "8",
+					"text": "But thou, LORD, art most high for evermore."
+				},
 				{
 					"verse": "9",
 					"text": "For, lo, thine enemies, O LORD, for, lo, thine enemies shall perish; all the workers of iniquity shall be scattered."
@@ -6719,7 +6749,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "The king\u2019s strength also loveth judgment; thou dost establish equity, thou executest judgment and righteousness in Jacob."
+					"text": "The king’s strength also loveth judgment; thou dost establish equity, thou executest judgment and righteousness in Jacob."
 				},
 				{
 					"verse": "5",
@@ -6943,7 +6973,7 @@
 				},
 				{
 					"verse": "5",
-					"text": "Who satisfieth thy mouth with good things; so that thy youth is renewed like the eagle\u2019s."
+					"text": "Who satisfieth thy mouth with good things; so that thy youth is renewed like the eagle’s."
 				},
 				{
 					"verse": "6",
@@ -6991,7 +7021,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "But the mercy of the LORD is from everlasting to everlasting upon them that fear him, and his righteousness unto children\u2019s children;"
+					"text": "But the mercy of the LORD is from everlasting to everlasting upon them that fear him, and his righteousness unto children’s children;"
 				},
 				{
 					"verse": "18",
@@ -7076,7 +7106,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "And wine that maketh glad the heart of man, and oil to make his face to shine, and bread which strengtheneth man\u2019s heart."
+					"text": "And wine that maketh glad the heart of man, and oil to make his face to shine, and bread which strengtheneth man’s heart."
 				},
 				{
 					"verse": "16",
@@ -7378,7 +7408,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "Nevertheless he saved them for his name\u2019s sake, that he might make his mighty power to be known."
+					"text": "Nevertheless he saved them for his name’s sake, that he might make his mighty power to be known."
 				},
 				{
 					"verse": "9",
@@ -7651,7 +7681,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "They reel to and fro, and stagger like a drunken man, and are at their wit\u2019s end."
+					"text": "They reel to and fro, and stagger like a drunken man, and are at their wit’s end."
 				},
 				{
 					"verse": "28",
@@ -7779,7 +7809,10 @@
 		{
 			"chapter": "109",
 			"verses": [
-				{ "verse": "1", "text": "Hold not thy peace, O God of my praise;" },
+				{
+					"verse": "1",
+					"text": "Hold not thy peace, O God of my praise;"
+				},
 				{
 					"verse": "2",
 					"text": "For the mouth of the wicked and the mouth of the deceitful are opened against me: they have spoken against me with a lying tongue."
@@ -7858,7 +7891,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "But do thou for me, O GOD the Lord, for thy name\u2019s sake: because thy mercy is good, deliver thou me."
+					"text": "But do thou for me, O GOD the Lord, for thy name’s sake: because thy mercy is good, deliver thou me."
 				},
 				{
 					"verse": "22",
@@ -8038,7 +8071,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "From the rising of the sun unto the going down of the same the LORD\u2019s name is to be praised."
+					"text": "From the rising of the sun unto the going down of the same the LORD’s name is to be praised."
 				},
 				{
 					"verse": "4",
@@ -8108,7 +8141,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Not unto us, O LORD, not unto us, but unto thy name give glory, for thy mercy, and for thy truth\u2019s sake."
+					"text": "Not unto us, O LORD, not unto us, but unto thy name give glory, for thy mercy, and for thy truth’s sake."
 				},
 				{
 					"verse": "2",
@@ -8120,7 +8153,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "Their idols are silver and gold, the work of men\u2019s hands."
+					"text": "Their idols are silver and gold, the work of men’s hands."
 				},
 				{
 					"verse": "5",
@@ -8168,7 +8201,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "The heaven, even the heavens, are the LORD\u2019s: but the earth hath he given to the children of men."
+					"text": "The heaven, even the heavens, are the LORD’s: but the earth hath he given to the children of men."
 				},
 				{
 					"verse": "17",
@@ -8223,7 +8256,10 @@
 					"verse": "10",
 					"text": "I believed, therefore have I spoken: I was greatly afflicted:"
 				},
-				{ "verse": "11", "text": "I said in my haste, All men are liars." },
+				{
+					"verse": "11",
+					"text": "I said in my haste, All men are liars."
+				},
 				{
 					"verse": "12",
 					"text": "What shall I render unto the LORD for all his benefits toward me?"
@@ -8254,7 +8290,7 @@
 				},
 				{
 					"verse": "19",
-					"text": "In the courts of the LORD\u2019s house, in the midst of thee, O Jerusalem. Praise ye the LORD."
+					"text": "In the courts of the LORD’s house, in the midst of thee, O Jerusalem. Praise ye the LORD."
 				}
 			]
 		},
@@ -8364,7 +8400,7 @@
 				},
 				{
 					"verse": "23",
-					"text": "This is the LORD\u2019s doing; it is marvellous in our eyes."
+					"text": "This is the LORD’s doing; it is marvellous in our eyes."
 				},
 				{
 					"verse": "24",
@@ -8615,7 +8651,10 @@
 					"verse": "55",
 					"text": "I have remembered thy name, O LORD, in the night, and have kept thy law."
 				},
-				{ "verse": "56", "text": "This I had, because I kept thy precepts." },
+				{
+					"verse": "56",
+					"text": "This I had, because I kept thy precepts."
+				},
 				{
 					"verse": "57",
 					"text": "Thou art my portion, O LORD: I have said that I would keep thy words."
@@ -9201,7 +9240,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "For my brethren and companions\u2019 sakes, I will now say, Peace be within thee."
+					"text": "For my brethren and companions’ sakes, I will now say, Peace be within thee."
 				},
 				{
 					"verse": "9",
@@ -9311,7 +9350,10 @@
 					"verse": "4",
 					"text": "Turn again our captivity, O LORD, as the streams in the south."
 				},
-				{ "verse": "5", "text": "They that sow in tears shall reap in joy." },
+				{
+					"verse": "5",
+					"text": "They that sow in tears shall reap in joy."
+				},
 				{
 					"verse": "6",
 					"text": "He that goeth forth and weepeth, bearing precious seed, shall doubtless come again with rejoicing, bringing his sheaves with him."
@@ -9368,7 +9410,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "Yea, thou shalt see thy children\u2019s children, and peace upon Israel."
+					"text": "Yea, thou shalt see thy children’s children, and peace upon Israel."
 				}
 			]
 		},
@@ -9504,7 +9546,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "For thy servant David\u2019s sake turn not away the face of thine anointed."
+					"text": "For thy servant David’s sake turn not away the face of thine anointed."
 				},
 				{
 					"verse": "11",
@@ -9549,7 +9591,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "It is like the precious ointment upon the head, that ran down upon the beard, even Aaron\u2019s beard: that went down to the skirts of his garments;"
+					"text": "It is like the precious ointment upon the head, that ran down upon the beard, even Aaron’s beard: that went down to the skirts of his garments;"
 				},
 				{
 					"verse": "3",
@@ -9635,7 +9677,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "The idols of the heathen are silver and gold, the work of men\u2019s hands."
+					"text": "The idols of the heathen are silver and gold, the work of men’s hands."
 				},
 				{
 					"verse": "16",
@@ -9789,7 +9831,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "How shall we sing the LORD\u2019s song in a strange land?"
+					"text": "How shall we sing the LORD’s song in a strange land?"
 				},
 				{
 					"verse": "5",
@@ -9903,7 +9945,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "For thou hast possessed my reins: thou hast covered me in my mother\u2019s womb."
+					"text": "For thou hast possessed my reins: thou hast covered me in my mother’s womb."
 				},
 				{
 					"verse": "14",
@@ -9964,7 +10006,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "They have sharpened their tongues like a serpent; adders\u2019 poison is under their lips. Selah."
+					"text": "They have sharpened their tongues like a serpent; adders’ poison is under their lips. Selah."
 				},
 				{
 					"verse": "4",
@@ -10037,7 +10079,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "Our bones are scattered at the grave\u2019s mouth, as when one cutteth and cleaveth wood upon the earth."
+					"text": "Our bones are scattered at the grave’s mouth, as when one cutteth and cleaveth wood upon the earth."
 				},
 				{
 					"verse": "8",
@@ -10131,7 +10173,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "Quicken me, O LORD, for thy name\u2019s sake: for thy righteousness\u2019 sake bring my soul out of trouble."
+					"text": "Quicken me, O LORD, for thy name’s sake: for thy righteousness’ sake bring my soul out of trouble."
 				},
 				{
 					"verse": "12",

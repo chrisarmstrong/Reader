@@ -31,6 +31,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "The fear of the LORD is the beginning of knowledge: but fools despise wisdom and instruction."
 				},
 				{
@@ -43,6 +44,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "My son, if sinners entice thee, consent thou not."
 				},
 				{
@@ -83,6 +85,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Wisdom crieth without; she uttereth her voice in the streets:"
 				},
 				{
@@ -99,6 +102,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Because I have called, and ye refused; I have stretched out my hand, and no man regarded;"
 				},
 				{
@@ -180,6 +184,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "When wisdom entereth into thine heart, and knowledge is pleasant unto thy soul;"
 				},
 				{
@@ -253,6 +258,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Trust in the LORD with all thine heart; and lean not unto thine own understanding."
 				},
 				{
@@ -261,6 +267,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Be not wise in thine own eyes: fear the LORD, and depart from evil."
 				},
 				{
@@ -277,6 +284,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "My son, despise not the chastening of the LORD; neither be weary of his correction:"
 				},
 				{
@@ -285,6 +293,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Happy is the man that findeth wisdom, and the man that getteth understanding."
 				},
 				{
@@ -317,6 +326,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "My son, let not them depart from thine eyes: keep sound wisdom and discretion:"
 				},
 				{
@@ -341,6 +351,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "Withhold not good from them to whom it is due, when it is in the power of thine hand to do it."
 				},
 				{
@@ -353,10 +364,12 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "Strive not with a man without cause, if he have done thee no harm."
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "Envy thou not the oppressor, and choose none of his ways."
 				},
 				{
@@ -365,6 +378,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "The curse of the LORD is in the house of the wicked: but he blesseth the habitation of the just."
 				},
 				{
@@ -390,7 +404,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "For I was my father\u2019s son, tender and only beloved in the sight of my mother."
+					"text": "For I was my father’s son, tender and only beloved in the sight of my mother."
 				},
 				{
 					"verse": "4",
@@ -434,6 +448,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Enter not into the path of the wicked, and go not in the way of evil men."
 				},
 				{
@@ -458,6 +473,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "My son, attend to my words; incline thine ear unto my sayings."
 				},
 				{
@@ -470,6 +486,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Keep thy heart with all diligence; for out of it are the issues of life."
 				},
 				{
@@ -503,6 +520,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "For the lips of a strange woman drop as an honeycomb, and her mouth is smoother than oil:"
 				},
 				{
@@ -551,6 +569,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Drink waters out of thine own cistern, and running waters out of thine own well."
 				},
 				{
@@ -559,7 +578,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "Let them be only thine own, and not strangers\u2019 with thee."
+					"text": "Let them be only thine own, and not strangers’ with thee."
 				},
 				{
 					"verse": "18",
@@ -579,6 +598,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "His own iniquities shall take the wicked himself, and he shall be holden with the cords of his sins."
 				},
 				{
@@ -612,9 +632,13 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Go to the ant, thou sluggard; consider her ways, and be wise:"
 				},
-				{ "verse": "7", "text": "Which having no guide, overseer, or ruler," },
+				{
+					"verse": "7",
+					"text": "Which having no guide, overseer, or ruler,"
+				},
 				{
 					"verse": "8",
 					"text": "Provideth her meat in the summer, and gathereth her food in the harvest."
@@ -633,6 +657,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "A naughty person, a wicked man, walketh with a froward mouth."
 				},
 				{
@@ -649,6 +674,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "These six things doth the LORD hate: yea, seven are an abomination unto him:"
 				},
 				{
@@ -665,7 +691,8 @@
 				},
 				{
 					"verse": "20",
-					"text": "My son, keep thy father\u2019s commandment, and forsake not the law of thy mother:"
+					"paragraph": true,
+					"text": "My son, keep thy father’s commandment, and forsake not the law of thy mother:"
 				},
 				{
 					"verse": "21",
@@ -701,7 +728,7 @@
 				},
 				{
 					"verse": "29",
-					"text": "So he that goeth in to his neighbour\u2019s wife; whosoever toucheth her shall not be innocent."
+					"text": "So he that goeth in to his neighbour’s wife; whosoever toucheth her shall not be innocent."
 				},
 				{
 					"verse": "30",
@@ -754,6 +781,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "For at the window of my house I looked through my casement,"
 				},
 				{
@@ -826,6 +854,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Hearken unto me now therefore, O ye children, and attend to the words of my mouth."
 				},
 				{
@@ -1044,6 +1073,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "A foolish woman is clamorous: she is simple, and knoweth nothing."
 				},
 				{
@@ -1129,7 +1159,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "The rich man\u2019s wealth is his strong city: the destruction of the poor is their poverty."
+					"text": "The rich man’s wealth is his strong city: the destruction of the poor is their poverty."
 				},
 				{
 					"verse": "16",
@@ -1290,7 +1320,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "As a jewel of gold in a swine\u2019s snout, so is a fair woman which is without discretion."
+					"text": "As a jewel of gold in a swine’s snout, so is a fair woman which is without discretion."
 				},
 				{
 					"verse": "23",
@@ -1387,7 +1417,7 @@
 				},
 				{
 					"verse": "14",
-					"text": "A man shall be satisfied with good by the fruit of his mouth: and the recompence of a man\u2019s hands shall be rendered unto him."
+					"text": "A man shall be satisfied with good by the fruit of his mouth: and the recompence of a man’s hands shall be rendered unto him."
 				},
 				{
 					"verse": "15",
@@ -1395,7 +1425,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "A fool\u2019s wrath is presently known: but a prudent man covereth shame."
+					"text": "A fool’s wrath is presently known: but a prudent man covereth shame."
 				},
 				{
 					"verse": "17",
@@ -1452,7 +1482,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "A wise son heareth his father\u2019s instruction: but a scorner heareth not rebuke."
+					"text": "A wise son heareth his father’s instruction: but a scorner heareth not rebuke."
 				},
 				{
 					"verse": "2",
@@ -1480,7 +1510,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "The ransom of a man\u2019s life are his riches: but the poor heareth not rebuke."
+					"text": "The ransom of a man’s life are his riches: but the poor heareth not rebuke."
 				},
 				{
 					"verse": "9",
@@ -1536,7 +1566,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "A good man leaveth an inheritance to his children\u2019s children: and the wealth of the sinner is laid up for the just."
+					"text": "A good man leaveth an inheritance to his children’s children: and the wealth of the sinner is laid up for the just."
 				},
 				{
 					"verse": "23",
@@ -1665,7 +1695,7 @@
 				},
 				{
 					"verse": "28",
-					"text": "In the multitude of people is the king\u2019s honour: but in the want of people is the destruction of the prince."
+					"text": "In the multitude of people is the king’s honour: but in the want of people is the destruction of the prince."
 				},
 				{
 					"verse": "29",
@@ -1693,7 +1723,7 @@
 				},
 				{
 					"verse": "35",
-					"text": "The king\u2019s favour is toward a wise servant: but his wrath is against him that causeth shame."
+					"text": "The king’s favour is toward a wise servant: but his wrath is against him that causeth shame."
 				}
 			]
 		},
@@ -1718,7 +1748,7 @@
 				},
 				{
 					"verse": "5",
-					"text": "A fool despiseth his father\u2019s instruction: but he that regardeth reproof is prudent."
+					"text": "A fool despiseth his father’s instruction: but he that regardeth reproof is prudent."
 				},
 				{
 					"verse": "6",
@@ -1863,7 +1893,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "When a man\u2019s ways please the LORD, he maketh even his enemies to be at peace with him."
+					"text": "When a man’s ways please the LORD, he maketh even his enemies to be at peace with him."
 				},
 				{
 					"verse": "8",
@@ -1871,7 +1901,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "A man\u2019s heart deviseth his way: but the LORD directeth his steps."
+					"text": "A man’s heart deviseth his way: but the LORD directeth his steps."
 				},
 				{
 					"verse": "10",
@@ -1879,7 +1909,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "A just weight and balance are the LORD\u2019s: all the weights of the bag are his work."
+					"text": "A just weight and balance are the LORD’s: all the weights of the bag are his work."
 				},
 				{
 					"verse": "12",
@@ -1895,7 +1925,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "In the light of the king\u2019s countenance is life; and his favour is as a cloud of the latter rain."
+					"text": "In the light of the king’s countenance is life; and his favour is as a cloud of the latter rain."
 				},
 				{
 					"verse": "16",
@@ -1996,7 +2026,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "Children\u2019s children are the crown of old men; and the glory of children are their fathers."
+					"text": "Children’s children are the crown of old men; and the glory of children are their fathers."
 				},
 				{
 					"verse": "7",
@@ -2105,7 +2135,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "The words of a man\u2019s mouth are as deep waters, and the wellspring of wisdom as a flowing brook."
+					"text": "The words of a man’s mouth are as deep waters, and the wellspring of wisdom as a flowing brook."
 				},
 				{
 					"verse": "5",
@@ -2113,11 +2143,11 @@
 				},
 				{
 					"verse": "6",
-					"text": "A fool\u2019s lips enter into contention, and his mouth calleth for strokes."
+					"text": "A fool’s lips enter into contention, and his mouth calleth for strokes."
 				},
 				{
 					"verse": "7",
-					"text": "A fool\u2019s mouth is his destruction, and his lips are the snare of his soul."
+					"text": "A fool’s mouth is his destruction, and his lips are the snare of his soul."
 				},
 				{
 					"verse": "8",
@@ -2133,7 +2163,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "The rich man\u2019s wealth is his strong city, and as an high wall in his own conceit."
+					"text": "The rich man’s wealth is his strong city, and as an high wall in his own conceit."
 				},
 				{
 					"verse": "12",
@@ -2153,7 +2183,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "A man\u2019s gift maketh room for him, and bringeth him before great men."
+					"text": "A man’s gift maketh room for him, and bringeth him before great men."
 				},
 				{
 					"verse": "17",
@@ -2169,7 +2199,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "A man\u2019s belly shall be satisfied with the fruit of his mouth; and with the increase of his lips shall he be filled."
+					"text": "A man’s belly shall be satisfied with the fruit of his mouth; and with the increase of his lips shall he be filled."
 				},
 				{
 					"verse": "21",
@@ -2238,7 +2268,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "The king\u2019s wrath is as the roaring of a lion; but his favour is as dew upon the grass."
+					"text": "The king’s wrath is as the roaring of a lion; but his favour is as dew upon the grass."
 				},
 				{
 					"verse": "13",
@@ -2274,7 +2304,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "There are many devices in a man\u2019s heart; nevertheless the counsel of the LORD, that shall stand."
+					"text": "There are many devices in a man’s heart; nevertheless the counsel of the LORD, that shall stand."
 				},
 				{
 					"verse": "22",
@@ -2407,7 +2437,7 @@
 				},
 				{
 					"verse": "24",
-					"text": "Man\u2019s goings are of the LORD; how can a man then understand his own way?"
+					"text": "Man’s goings are of the LORD; how can a man then understand his own way?"
 				},
 				{
 					"verse": "25",
@@ -2440,7 +2470,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "The king\u2019s heart is in the hand of the LORD, as the rivers of water: he turneth it whithersoever he will."
+					"text": "The king’s heart is in the hand of the LORD, as the rivers of water: he turneth it whithersoever he will."
 				},
 				{
 					"verse": "2",
@@ -3040,7 +3070,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "Withdraw thy foot from thy neighbour\u2019s house; lest he be weary of thee, and so hate thee."
+					"text": "Withdraw thy foot from thy neighbour’s house; lest he be weary of thee, and so hate thee."
 				},
 				{
 					"verse": "18",
@@ -3101,7 +3131,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "A whip for the horse, a bridle for the ass, and a rod for the fool\u2019s back."
+					"text": "A whip for the horse, a bridle for the ass, and a rod for the fool’s back."
 				},
 				{
 					"verse": "4",
@@ -3218,13 +3248,16 @@
 				},
 				{
 					"verse": "3",
-					"text": "A stone is heavy, and the sand weighty; but a fool\u2019s wrath is heavier than them both."
+					"text": "A stone is heavy, and the sand weighty; but a fool’s wrath is heavier than them both."
 				},
 				{
 					"verse": "4",
 					"text": "Wrath is cruel, and anger is outrageous; but who is able to stand before envy?"
 				},
-				{ "verse": "5", "text": "Open rebuke is better than secret love." },
+				{
+					"verse": "5",
+					"text": "Open rebuke is better than secret love."
+				},
 				{
 					"verse": "6",
 					"text": "Faithful are the wounds of a friend; but the kisses of an enemy are deceitful."
@@ -3239,11 +3272,11 @@
 				},
 				{
 					"verse": "9",
-					"text": "Ointment and perfume rejoice the heart: so doth the sweetness of a man\u2019s friend by hearty counsel."
+					"text": "Ointment and perfume rejoice the heart: so doth the sweetness of a man’s friend by hearty counsel."
 				},
 				{
 					"verse": "10",
-					"text": "Thine own friend, and thy father\u2019s friend, forsake not; neither go into thy brother\u2019s house in the day of thy calamity: for better is a neighbour that is near than a brother far off."
+					"text": "Thine own friend, and thy father’s friend, forsake not; neither go into thy brother’s house in the day of thy calamity: for better is a neighbour that is near than a brother far off."
 				},
 				{
 					"verse": "11",
@@ -3311,7 +3344,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "And thou shalt have goats\u2019 milk enough for thy food, for the food of thy household, and for the maintenance for thy maidens."
+					"text": "And thou shalt have goats’ milk enough for thy food, for the food of thy household, and for the maintenance for thy maidens."
 				}
 			]
 		},
@@ -3525,7 +3558,7 @@
 				},
 				{
 					"verse": "23",
-					"text": "A man\u2019s pride shall bring him low: but honour shall uphold the humble in spirit."
+					"text": "A man’s pride shall bring him low: but honour shall uphold the humble in spirit."
 				},
 				{
 					"verse": "24",
@@ -3537,7 +3570,7 @@
 				},
 				{
 					"verse": "26",
-					"text": "Many seek the ruler\u2019s favour; but every man\u2019s judgment cometh from the LORD."
+					"text": "Many seek the ruler’s favour; but every man’s judgment cometh from the LORD."
 				},
 				{
 					"verse": "27",
@@ -3562,7 +3595,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "Who hath ascended up into heaven, or descended? who hath gathered the wind in his fists? who hath bound the waters in a garment? who hath established all the ends of the earth? what is his name, and what is his son\u2019s name, if thou canst tell?"
+					"text": "Who hath ascended up into heaven, or descended? who hath gathered the wind in his fists? who hath bound the waters in a garment? who hath established all the ends of the earth? what is his name, and what is his son’s name, if thou canst tell?"
 				},
 				{
 					"verse": "5",
@@ -3658,7 +3691,7 @@
 				},
 				{
 					"verse": "28",
-					"text": "The spider taketh hold with her hands, and is in kings\u2019 palaces."
+					"text": "The spider taketh hold with her hands, and is in kings’ palaces."
 				},
 				{
 					"verse": "29",
@@ -3723,6 +3756,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Who can find a virtuous woman? for her price is far above rubies."
 				},
 				{
@@ -3739,7 +3773,7 @@
 				},
 				{
 					"verse": "14",
-					"text": "She is like the merchants\u2019 ships; she bringeth her food from afar."
+					"text": "She is like the merchants’ ships; she bringeth her food from afar."
 				},
 				{
 					"verse": "15",

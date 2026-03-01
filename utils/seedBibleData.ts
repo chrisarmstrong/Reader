@@ -7,7 +7,7 @@ import type {
 import BibleStorage from "./BibleStorage";
 
 // Seed version — bump this to force a re-seed when the data/schema changes
-const SEED_VERSION = 2;
+const SEED_VERSION = 3;
 
 // How many books to process per chunk before yielding to the browser
 const BOOKS_PER_CHUNK = 3;

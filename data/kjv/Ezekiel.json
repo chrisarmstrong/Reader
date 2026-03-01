@@ -11,7 +11,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "In the fifth day of the month, which was the fifth year of king Jehoiachin\u2019s captivity,"
+					"text": "In the fifth day of the month, which was the fifth year of king Jehoiachin’s captivity,"
 				},
 				{
 					"verse": "3",
@@ -31,7 +31,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "And their feet were straight feet; and the sole of their feet was like the sole of a calf\u2019s foot: and they sparkled like the colour of burnished brass."
+					"text": "And their feet were straight feet; and the sole of their feet was like the sole of a calf’s foot: and they sparkled like the colour of burnished brass."
 				},
 				{
 					"verse": "8",
@@ -63,6 +63,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Now as I beheld the living creatures, behold one wheel upon the earth by the living creatures, with his four faces."
 				},
 				{
@@ -107,6 +108,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And above the firmament that was over their heads was the likeness of a throne, as the appearance of a sapphire stone: and upon the likeness of the throne was the likeness as the appearance of a man above upon it."
 				},
 				{
@@ -144,6 +146,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And thou, son of man, be not afraid of them, neither be afraid of their words, though briers and thorns be with thee, and thou dost dwell among scorpions: be not afraid of their words, nor be dismayed at their looks, though they be a rebellious house."
 				},
 				{
@@ -156,6 +159,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And when I looked, behold, an hand was sent unto me; and, lo, a roll of a book was therein;"
 				},
 				{
@@ -181,6 +185,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And he said unto me, Son of man, go, get thee unto the house of Israel, and speak with my words unto them."
 				},
 				{
@@ -225,6 +230,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Then I came to them of the captivity at Telabib, that dwelt by the river of Chebar, and I sat where they sat, and remained there astonished among them seven days."
 				},
 				{
@@ -253,6 +259,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And the hand of the LORD was there upon me; and he said unto me, Arise, go forth into the plain, and I will there talk with thee."
 				},
 				{
@@ -314,6 +321,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Take thou also unto thee wheat, and barley, and beans, and lentiles, and millet, and fitches, and put them in one vessel, and make thee bread thereof, according to the number of the days that thou shalt lie upon thy side, three hundred and ninety days shalt thou eat thereof."
 				},
 				{
@@ -338,7 +346,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "Then he said unto me, Lo, I have given thee cow\u2019s dung for man\u2019s dung, and thou shalt prepare thy bread therewith."
+					"text": "Then he said unto me, Lo, I have given thee cow’s dung for man’s dung, and thou shalt prepare thy bread therewith."
 				},
 				{
 					"verse": "16",
@@ -355,7 +363,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "And thou, son of man, take thee a sharp knife, take thee a barber\u2019s razor, and cause it to pass upon thine head and upon thy beard: then take thee balances to weigh, and divide the hair."
+					"text": "And thou, son of man, take thee a sharp knife, take thee a barber’s razor, and cause it to pass upon thine head and upon thy beard: then take thee balances to weigh, and divide the hair."
 				},
 				{
 					"verse": "2",
@@ -371,6 +379,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Thus saith the Lord GOD; This is Jerusalem: I have set it in the midst of the nations and countries that are round about her."
 				},
 				{
@@ -399,6 +408,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "A third part of thee shall die with the pestilence, and with famine shall they be consumed in the midst of thee: and a third part shall fall by the sword round about thee; and I will scatter a third part into all the winds, and I will draw out a sword after them."
 				},
 				{
@@ -456,6 +466,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Yet will I leave a remnant, that ye may have some that shall escape the sword among the nations, when ye shall be scattered through the countries."
 				},
 				{
@@ -468,6 +479,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Thus saith the Lord GOD; Smite with thine hand, and stamp with thy foot, and say, Alas for all the evil abominations of the house of Israel! for they shall fall by the sword, by the famine, and by the pestilence."
 				},
 				{
@@ -549,6 +561,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "But they that escape of them shall escape, and shall be on the mountains like doves of the valleys, all of them mourning, every one for his iniquity."
 				},
 				{
@@ -565,6 +578,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "As for the beauty of his ornament, he set it in majesty: but they made the images of their abominations and of their detestable things therein: therefore have I set it far from them."
 				},
 				{
@@ -577,6 +591,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Make a chain: for the land is full of bloody crimes, and the city is full of violence."
 				},
 				{
@@ -618,6 +633,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Then said he unto me, Son of man, lift up thine eyes now the way toward the north. So I lifted up mine eyes the way toward the north, and behold northward at the gate of the altar this image of jealousy in the entry."
 				},
 				{
@@ -626,6 +642,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And he brought me to the door of the court; and when I looked, behold a hole in the wall."
 				},
 				{
@@ -650,22 +667,25 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "He said also unto me, Turn thee yet again, and thou shalt see greater abominations that they do."
 				},
 				{
 					"verse": "14",
-					"text": "Then he brought me to the door of the gate of the LORD\u2019s house which was toward the north; and, behold, there sat women weeping for Tammuz."
+					"text": "Then he brought me to the door of the gate of the LORD’s house which was toward the north; and, behold, there sat women weeping for Tammuz."
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Then said he unto me, Hast thou seen this, O son of man? turn thee yet again, and thou shalt see greater abominations than these."
 				},
 				{
 					"verse": "16",
-					"text": "And he brought me into the inner court of the LORD\u2019s house, and, behold, at the door of the temple of the LORD, between the porch and the altar, were about five and twenty men, with their backs toward the temple of the LORD, and their faces toward the east; and they worshipped the sun toward the east."
+					"text": "And he brought me into the inner court of the LORD’s house, and, behold, at the door of the temple of the LORD, between the porch and the altar, were about five and twenty men, with their backs toward the temple of the LORD, and their faces toward the east; and they worshipped the sun toward the east."
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Then he said unto me, Hast thou seen this, O son of man? Is it a light thing to the house of Judah that they commit the abominations which they commit here? for they have filled the land with violence, and have returned to provoke me to anger: and, lo, they put the branch to their nose."
 				},
 				{
@@ -683,11 +703,11 @@
 				},
 				{
 					"verse": "2",
-					"text": "And, behold, six men came from the way of the higher gate, which lieth toward the north, and every man a slaughter weapon in his hand; and one man among them was clothed with linen, with a writer\u2019s inkhorn by his side: and they went in, and stood beside the brasen altar."
+					"text": "And, behold, six men came from the way of the higher gate, which lieth toward the north, and every man a slaughter weapon in his hand; and one man among them was clothed with linen, with a writer’s inkhorn by his side: and they went in, and stood beside the brasen altar."
 				},
 				{
 					"verse": "3",
-					"text": "And the glory of the God of Israel was gone up from the cherub, whereupon he was, to the threshold of the house. And he called to the man clothed with linen, which had the writer\u2019s inkhorn by his side;"
+					"text": "And the glory of the God of Israel was gone up from the cherub, whereupon he was, to the threshold of the house. And he called to the man clothed with linen, which had the writer’s inkhorn by his side;"
 				},
 				{
 					"verse": "4",
@@ -695,6 +715,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And to the others he said in mine hearing, Go ye after him through the city, and smite: let not your eye spare, neither have ye pity:"
 				},
 				{
@@ -707,6 +728,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And it came to pass, while they were slaying them, and I was left, that I fell upon my face, and cried, and said, Ah Lord GOD! wilt thou destroy all the residue of Israel in thy pouring out of thy fury upon Jerusalem?"
 				},
 				{
@@ -740,11 +762,11 @@
 				},
 				{
 					"verse": "4",
-					"text": "Then the glory of the LORD went up from the cherub, and stood over the threshold of the house; and the house was filled with the cloud, and the court was full of the brightness of the LORD\u2019s glory."
+					"text": "Then the glory of the LORD went up from the cherub, and stood over the threshold of the house; and the house was filled with the cloud, and the court was full of the brightness of the LORD’s glory."
 				},
 				{
 					"verse": "5",
-					"text": "And the sound of the cherubims\u2019 wings was heard even to the outer court, as the voice of the Almighty God when he speaketh."
+					"text": "And the sound of the cherubims’ wings was heard even to the outer court, as the voice of the Almighty God when he speaketh."
 				},
 				{
 					"verse": "6",
@@ -756,7 +778,8 @@
 				},
 				{
 					"verse": "8",
-					"text": "And there appeared in the cherubims the form of a man\u2019s hand under their wings."
+					"paragraph": true,
+					"text": "And there appeared in the cherubims the form of a man’s hand under their wings."
 				},
 				{
 					"verse": "9",
@@ -800,7 +823,7 @@
 				},
 				{
 					"verse": "19",
-					"text": "And the cherubims lifted up their wings, and mounted up from the earth in my sight: when they went out, the wheels also were beside them, and every one stood at the door of the east gate of the LORD\u2019s house; and the glory of the God of Israel was over them above."
+					"text": "And the cherubims lifted up their wings, and mounted up from the earth in my sight: when they went out, the wheels also were beside them, and every one stood at the door of the east gate of the LORD’s house; and the glory of the God of Israel was over them above."
 				},
 				{
 					"verse": "20",
@@ -821,7 +844,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Moreover the spirit lifted me up, and brought me unto the east gate of the LORD\u2019s house, which looketh eastward: and behold at the door of the gate five and twenty men; among whom I saw Jaazaniah the son of Azur, and Pelatiah the son of Benaiah, princes of the people."
+					"text": "Moreover the spirit lifted me up, and brought me unto the east gate of the LORD’s house, which looketh eastward: and behold at the door of the gate five and twenty men; among whom I saw Jaazaniah the son of Azur, and Pelatiah the son of Benaiah, princes of the people."
 				},
 				{
 					"verse": "2",
@@ -833,6 +856,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Therefore prophesy against them, prophesy, O son of man."
 				},
 				{
@@ -869,6 +893,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And it came to pass, when I prophesied, that Pelatiah the son of Benaiah died. Then fell I down upon my face, and cried with a loud voice, and said, Ah Lord GOD! wilt thou make a full end of the remnant of Israel?"
 				},
 				{
@@ -905,6 +930,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Then did the cherubims lift up their wings, and the wheels beside them; and the glory of the God of Israel was over them above."
 				},
 				{
@@ -913,6 +939,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Afterwards the spirit took me up, and brought me in a vision by the Spirit of God into Chaldea, to them of the captivity. So the vision that I had seen went up from me."
 				},
 				{
@@ -954,6 +981,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And in the morning came the word of the LORD unto me, saying,"
 				},
 				{
@@ -990,6 +1018,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Moreover the word of the LORD came to me, saying,"
 				},
 				{
@@ -1006,6 +1035,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And the word of the LORD came unto me, saying,"
 				},
 				{
@@ -1026,6 +1056,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "Again the word of the LORD came to me, saying,"
 				},
 				{
@@ -1079,6 +1110,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Because, even because they have seduced my people, saying, Peace; and there was no peace; and one built up a wall, and, lo, others daubed it with untempered morter:"
 				},
 				{
@@ -1107,6 +1139,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Likewise, thou son of man, set thy face against the daughters of thy people, which prophesy out of their own heart; and prophesy thou against them,"
 				},
 				{
@@ -1160,6 +1193,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Therefore say unto the house of Israel, Thus saith the Lord GOD; Repent, and turn yourselves from your idols; and turn away your faces from all your abominations."
 				},
 				{
@@ -1184,6 +1218,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "The word of the LORD came again to me, saying,"
 				},
 				{
@@ -1196,6 +1231,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "If I cause noisome beasts to pass through the land, and they spoil it, so that it be desolate, that no man may pass through because of the beasts:"
 				},
 				{
@@ -1204,6 +1240,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Or if I bring a sword upon that land, and say, Sword, go through the land; so that I cut off man and beast from it:"
 				},
 				{
@@ -1212,6 +1249,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Or if I send a pestilence into that land, and pour out my fury upon it in blood, to cut off from it man and beast:"
 				},
 				{
@@ -1224,6 +1262,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Yet, behold, therein shall be left a remnant that shall be brought forth, both sons and daughters: behold, they shall come forth unto you, and ye shall see their way and their doings: and ye shall be comforted concerning the evil that I have brought upon Jerusalem, even concerning all that I have brought upon it."
 				},
 				{
@@ -1257,6 +1296,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Therefore thus saith the Lord GOD; As the vine tree among the trees of the forest, which I have given to the fire for fuel, so will I give the inhabitants of Jerusalem."
 				},
 				{
@@ -1294,6 +1334,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And when I passed by thee, and saw thee polluted in thine own blood, I said unto thee when thou wast in thy blood, Live; yea, I said unto thee when thou wast in thy blood, Live."
 				},
 				{
@@ -1310,7 +1351,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "I clothed thee also with broidered work, and shod thee with badgers\u2019 skin, and I girded thee about with fine linen, and I covered thee with silk."
+					"text": "I clothed thee also with broidered work, and shod thee with badgers’ skin, and I girded thee about with fine linen, and I covered thee with silk."
 				},
 				{
 					"verse": "11",
@@ -1410,6 +1451,7 @@
 				},
 				{
 					"verse": "35",
+					"paragraph": true,
 					"text": "Wherefore, O harlot, hear the word of the LORD:"
 				},
 				{
@@ -1446,11 +1488,12 @@
 				},
 				{
 					"verse": "44",
+					"paragraph": true,
 					"text": "Behold, every one that useth proverbs shall use this proverb against thee, saying, As is the mother, so is her daughter."
 				},
 				{
 					"verse": "45",
-					"text": "Thou art thy mother\u2019s daughter, that lotheth her husband and her children; and thou art the sister of thy sisters, which lothed their husbands and their children: your mother was an Hittite, and your father an Amorite."
+					"text": "Thou art thy mother’s daughter, that lotheth her husband and her children; and thou art the sister of thy sisters, which lothed their husbands and their children: your mother was an Hittite, and your father an Amorite."
 				},
 				{
 					"verse": "46",
@@ -1510,6 +1553,7 @@
 				},
 				{
 					"verse": "60",
+					"paragraph": true,
 					"text": "Nevertheless I will remember my covenant with thee in the days of thy youth, and I will establish unto thee an everlasting covenant."
 				},
 				{
@@ -1571,6 +1615,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Moreover the word of the LORD came unto me, saying,"
 				},
 				{
@@ -1579,7 +1624,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "And hath taken of the king\u2019s seed, and made a covenant with him, and hath taken an oath of him: he hath also taken the mighty of the land:"
+					"text": "And hath taken of the king’s seed, and made a covenant with him, and hath taken an oath of him: he hath also taken the mighty of the land:"
 				},
 				{
 					"verse": "14",
@@ -1615,6 +1660,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Thus saith the Lord GOD; I will also take of the highest branch of the high cedar, and will set it; I will crop off from the top of his young twigs a tender one, and will plant it upon an high mountain and eminent:"
 				},
 				{
@@ -1636,7 +1682,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "What mean ye, that ye use this proverb concerning the land of Israel, saying, The fathers have eaten sour grapes, and the children\u2019s teeth are set on edge?"
+					"text": "What mean ye, that ye use this proverb concerning the land of Israel, saying, The fathers have eaten sour grapes, and the children’s teeth are set on edge?"
 				},
 				{
 					"verse": "3",
@@ -1648,11 +1694,12 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "But if a man be just, and do that which is lawful and right,"
 				},
 				{
 					"verse": "6",
-					"text": "And hath not eaten upon the mountains, neither hath lifted up his eyes to the idols of the house of Israel, neither hath defiled his neighbour\u2019s wife, neither hath come near to a menstruous woman,"
+					"text": "And hath not eaten upon the mountains, neither hath lifted up his eyes to the idols of the house of Israel, neither hath defiled his neighbour’s wife, neither hath come near to a menstruous woman,"
 				},
 				{
 					"verse": "7",
@@ -1668,11 +1715,12 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "If he beget a son that is a robber, a shedder of blood, and that doeth the like to any one of these things,"
 				},
 				{
 					"verse": "11",
-					"text": "And that doeth not any of those duties, but even hath eaten upon the mountains, and defiled his neighbour\u2019s wife,"
+					"text": "And that doeth not any of those duties, but even hath eaten upon the mountains, and defiled his neighbour’s wife,"
 				},
 				{
 					"verse": "12",
@@ -1684,11 +1732,12 @@
 				},
 				{
 					"verse": "14",
-					"text": "Now, lo, if he beget a son, that seeth all his father\u2019s sins which he hath done, and considereth, and doeth not such like,"
+					"paragraph": true,
+					"text": "Now, lo, if he beget a son, that seeth all his father’s sins which he hath done, and considereth, and doeth not such like,"
 				},
 				{
 					"verse": "15",
-					"text": "That hath not eaten upon the mountains, neither hath lifted up his eyes to the idols of the house of Israel, hath not defiled his neighbour\u2019s wife,"
+					"text": "That hath not eaten upon the mountains, neither hath lifted up his eyes to the idols of the house of Israel, hath not defiled his neighbour’s wife,"
 				},
 				{
 					"verse": "16",
@@ -1704,6 +1753,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Yet say ye, Why? doth not the son bear the iniquity of the father? When the son hath done that which is lawful and right, and hath kept all my statutes, and hath done them, he shall surely live."
 				},
 				{
@@ -1724,10 +1774,12 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "But when the righteous turneth away from his righteousness, and committeth iniquity, and doeth according to all the abominations that the wicked man doeth, shall he live? All his righteousness that he hath done shall not be mentioned: in his trespass that he hath trespassed, and in his sin that he hath sinned, in them shall he die."
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "Yet ye say, The way of the LORD is not equal. Hear now, O house of Israel; Is not my way equal? are not your ways unequal?"
 				},
 				{
@@ -1752,6 +1804,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "Cast away from you all your transgressions, whereby ye have transgressed; and make you a new heart and a new spirit: for why will ye die, O house of Israel?"
 				},
 				{
@@ -1801,6 +1854,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Thy mother is like a vine in thy blood, planted by the waters: she was fruitful and full of branches by reason of many waters."
 				},
 				{
@@ -1842,6 +1896,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And say unto them, Thus saith the Lord GOD; In the day when I chose Israel, and lifted up mine hand unto the seed of the house of Jacob, and made myself known unto them in the land of Egypt, when I lifted up mine hand unto them, saying, I am the LORD your God;"
 				},
 				{
@@ -1858,10 +1913,11 @@
 				},
 				{
 					"verse": "9",
-					"text": "But I wrought for my name\u2019s sake, that it should not be polluted before the heathen, among whom they were, in whose sight I made myself known unto them, in bringing them forth out of the land of Egypt."
+					"text": "But I wrought for my name’s sake, that it should not be polluted before the heathen, among whom they were, in whose sight I made myself known unto them, in bringing them forth out of the land of Egypt."
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Wherefore I caused them to go forth out of the land of Egypt, and brought them into the wilderness."
 				},
 				{
@@ -1878,7 +1934,7 @@
 				},
 				{
 					"verse": "14",
-					"text": "But I wrought for my name\u2019s sake, that it should not be polluted before the heathen, in whose sight I brought them out."
+					"text": "But I wrought for my name’s sake, that it should not be polluted before the heathen, in whose sight I brought them out."
 				},
 				{
 					"verse": "15",
@@ -1910,7 +1966,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "Nevertheless I withdrew mine hand, and wrought for my name\u2019s sake, that it should not be polluted in the sight of the heathen, in whose sight I brought them forth."
+					"text": "Nevertheless I withdrew mine hand, and wrought for my name’s sake, that it should not be polluted in the sight of the heathen, in whose sight I brought them forth."
 				},
 				{
 					"verse": "23",
@@ -1918,7 +1974,7 @@
 				},
 				{
 					"verse": "24",
-					"text": "Because they had not executed my judgments, but had despised my statutes, and had polluted my sabbaths, and their eyes were after their fathers\u2019 idols."
+					"text": "Because they had not executed my judgments, but had despised my statutes, and had polluted my sabbaths, and their eyes were after their fathers’ idols."
 				},
 				{
 					"verse": "25",
@@ -1930,6 +1986,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "Therefore, son of man, speak unto the house of Israel, and say unto them, Thus saith the Lord GOD; Yet in this your fathers have blasphemed me, in that they have committed a trespass against me."
 				},
 				{
@@ -1954,6 +2011,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "As I live, saith the Lord GOD, surely with a mighty hand, and with a stretched out arm, and with fury poured out, will I rule over you:"
 				},
 				{
@@ -1998,10 +2056,11 @@
 				},
 				{
 					"verse": "44",
-					"text": "And ye shall know that I am the LORD, when I have wrought with you for my name\u2019s sake, not according to your wicked ways, nor according to your corrupt doings, O ye house of Israel, saith the Lord GOD."
+					"text": "And ye shall know that I am the LORD, when I have wrought with you for my name’s sake, not according to your wicked ways, nor according to your corrupt doings, O ye house of Israel, saith the Lord GOD."
 				},
 				{
 					"verse": "45",
+					"paragraph": true,
 					"text": "Moreover the word of the LORD came unto me, saying,"
 				},
 				{
@@ -2055,6 +2114,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Again the word of the LORD came unto me, saying,"
 				},
 				{
@@ -2123,6 +2183,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And thou, profane wicked prince of Israel, whose day is come, when iniquity shall have an end,"
 				},
 				{
@@ -2135,6 +2196,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "And thou, son of man, prophesy and say, Thus saith the Lord GOD concerning the Ammonites, and concerning their reproach; even say thou, The sword, the sword is drawn: for the slaughter it is furbished, to consume because of the glittering:"
 				},
 				{
@@ -2196,11 +2258,11 @@
 				},
 				{
 					"verse": "10",
-					"text": "In thee have they discovered their fathers\u2019 nakedness: in thee have they humbled her that was set apart for pollution."
+					"text": "In thee have they discovered their fathers’ nakedness: in thee have they humbled her that was set apart for pollution."
 				},
 				{
 					"verse": "11",
-					"text": "And one hath committed abomination with his neighbour\u2019s wife; and another hath lewdly defiled his daughter in law; and another in thee hath humbled his sister, his father\u2019s daughter."
+					"text": "And one hath committed abomination with his neighbour’s wife; and another hath lewdly defiled his daughter in law; and another in thee hath humbled his sister, his father’s daughter."
 				},
 				{
 					"verse": "12",
@@ -2208,6 +2270,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Behold, therefore I have smitten mine hand at thy dishonest gain which thou hast made, and at thy blood which hath been in the midst of thee."
 				},
 				{
@@ -2248,6 +2311,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And the word of the LORD came unto me, saying,"
 				},
 				{
@@ -2373,6 +2437,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Therefore, O Aholibah, thus saith the Lord GOD; Behold, I will raise up thy lovers against thee, from whom thy mind is alienated, and I will bring them against thee on every side;"
 				},
 				{
@@ -2413,7 +2478,7 @@
 				},
 				{
 					"verse": "32",
-					"text": "Thus saith the Lord GOD; Thou shalt drink of thy sister\u2019s cup deep and large: thou shalt be laughed to scorn and had in derision; it containeth much."
+					"text": "Thus saith the Lord GOD; Thou shalt drink of thy sister’s cup deep and large: thou shalt be laughed to scorn and had in derision; it containeth much."
 				},
 				{
 					"verse": "33",
@@ -2429,6 +2494,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "The LORD said moreover unto me; Son of man, wilt thou judge Aholah and Aholibah? yea, declare unto them their abominations;"
 				},
 				{
@@ -2465,6 +2531,7 @@
 				},
 				{
 					"verse": "45",
+					"paragraph": true,
 					"text": "And the righteous men, they shall judge them after the manner of adulteresses, and after the manner of women that shed blood; because they are adulteresses, and blood is in their hands."
 				},
 				{
@@ -2510,6 +2577,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Wherefore thus saith the Lord GOD; Woe to the bloody city, to the pot whose scum is therein, and whose scum is not gone out of it! bring it out piece by piece; let no lot fall upon it."
 				},
 				{
@@ -2546,6 +2614,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Also the word of the LORD came unto me, saying,"
 				},
 				{
@@ -2562,6 +2631,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And the people said unto me, Wilt thou not tell us what these things are to us, that thou doest so?"
 				},
 				{
@@ -2631,6 +2701,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Thus saith the Lord GOD; Because that Moab and Seir do say, Behold, the house of Judah is like unto all the heathen;"
 				},
 				{
@@ -2647,6 +2718,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Thus saith the Lord GOD; Because that Edom hath dealt against the house of Judah by taking vengeance, and hath greatly offended, and revenged himself upon them;"
 				},
 				{
@@ -2659,6 +2731,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Thus saith the Lord GOD; Because the Philistines have dealt by revenge, and have taken vengeance with a despiteful heart, to destroy it for the old hatred;"
 				},
 				{
@@ -2700,6 +2773,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "For thus saith the Lord GOD; Behold, I will bring upon Tyrus Nebuchadrezzar king of Babylon, a king of kings, from the north, with horses, and with chariots, and with horsemen, and companies, and much people."
 				},
 				{
@@ -2732,6 +2806,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Thus saith the Lord GOD to Tyrus; Shall not the isles shake at the sound of thy fall, when the wounded cry, when the slaughter is made in the midst of thee?"
 				},
 				{
@@ -2990,6 +3065,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Again the word of the LORD came unto me, saying,"
 				},
 				{
@@ -3051,6 +3127,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Therefore thus saith the Lord GOD; Behold, I will bring a sword upon thee, and cut off man and beast out of thee."
 				},
 				{
@@ -3071,6 +3148,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Yet thus saith the Lord GOD; At the end of forty years will I gather the Egyptians from the people whither they were scattered:"
 				},
 				{
@@ -3087,6 +3165,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And it came to pass in the seven and twentieth year, in the first month, in the first day of the month, the word of the LORD came unto me, saying,"
 				},
 				{
@@ -3103,6 +3182,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "In that day will I cause the horn of the house of Israel to bud forth, and I will give thee the opening of the mouth in the midst of them; and they shall know that I am the LORD."
 				}
 			]
@@ -3188,6 +3268,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And it came to pass in the eleventh year, in the first month, in the seventh day of the month, that the word of the LORD came unto me, saying,"
 				},
 				{
@@ -3204,7 +3285,7 @@
 				},
 				{
 					"verse": "24",
-					"text": "And I will strengthen the arms of the king of Babylon, and put my sword in his hand: but I will break Pharaoh\u2019s arms, and he shall groan before him with the groanings of a deadly wounded man."
+					"text": "And I will strengthen the arms of the king of Babylon, and put my sword in his hand: but I will break Pharaoh’s arms, and he shall groan before him with the groanings of a deadly wounded man."
 				},
 				{
 					"verse": "25",
@@ -3229,6 +3310,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Behold, the Assyrian was a cedar in Lebanon with fair branches, and with a shadowing shroud, and of an high stature; and his top was among the thick boughs."
 				},
 				{
@@ -3257,6 +3339,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Therefore thus saith the Lord GOD; Because thou hast lifted up thyself in height, and he hath shot up his top among the thick boughs, and his heart is lifted up in his height;"
 				},
 				{
@@ -3289,6 +3372,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "To whom art thou thus like in glory and in greatness among the trees of Eden? yet shalt thou be brought down with the trees of Eden unto the nether parts of the earth: thou shalt lie in the midst of the uncircumcised with them that be slain by the sword. This is Pharaoh and all his multitude, saith the Lord GOD."
 				}
 			]
@@ -3338,6 +3422,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "For thus saith the Lord GOD; The sword of the king of Babylon shall come upon thee."
 				},
 				{
@@ -3362,6 +3447,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "It came to pass also in the twelfth year, in the fifteenth day of the month, that the word of the LORD came unto me, saying,"
 				},
 				{
@@ -3451,10 +3537,11 @@
 				},
 				{
 					"verse": "6",
-					"text": "But if the watchman see the sword come, and blow not the trumpet, and the people be not warned; if the sword come, and take any person from among them, he is taken away in his iniquity; but his blood will I require at the watchman\u2019s hand."
+					"text": "But if the watchman see the sword come, and blow not the trumpet, and the people be not warned; if the sword come, and take any person from among them, he is taken away in his iniquity; but his blood will I require at the watchman’s hand."
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "So thou, O son of man, I have set thee a watchman unto the house of Israel; therefore thou shalt hear the word at my mouth, and warn them from me."
 				},
 				{
@@ -3495,6 +3582,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Yet the children of thy people say, The way of the Lord is not equal: but as for them, their way is not equal."
 				},
 				{
@@ -3507,10 +3595,12 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Yet ye say, The way of the Lord is not equal. O ye house of Israel, I will judge you every one after his ways."
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And it came to pass in the twelfth year of our captivity, in the tenth month, in the fifth day of the month, that one that had escaped out of Jerusalem came unto me, saying, The city is smitten."
 				},
 				{
@@ -3531,7 +3621,7 @@
 				},
 				{
 					"verse": "26",
-					"text": "Ye stand upon your sword, ye work abomination, and ye defile every one his neighbour\u2019s wife: and shall ye possess the land?"
+					"text": "Ye stand upon your sword, ye work abomination, and ye defile every one his neighbour’s wife: and shall ye possess the land?"
 				},
 				{
 					"verse": "27",
@@ -3547,6 +3637,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "Also, thou son of man, the children of thy people still are talking against thee by the walls and in the doors of the houses, and speak one to another, every one to his brother, saying, Come, I pray you, and hear what is the word that cometh forth from the LORD."
 				},
 				{
@@ -3592,6 +3683,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Therefore, ye shepherds, hear the word of the LORD;"
 				},
 				{
@@ -3608,6 +3700,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "For thus saith the Lord GOD; Behold, I, even I, will both search my sheep, and seek them out."
 				},
 				{
@@ -3644,6 +3737,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Therefore thus saith the Lord GOD unto them; Behold, I, even I, will judge between the fat cattle and between the lean cattle."
 				},
 				{
@@ -3790,6 +3884,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "But ye, O mountains of Israel, ye shall shoot forth your branches, and yield your fruit to my people of Israel; for they are at hand to come."
 				},
 				{
@@ -3822,6 +3917,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Moreover the word of the LORD came unto me, saying,"
 				},
 				{
@@ -3842,11 +3938,12 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "But I had pity for mine holy name, which the house of Israel had profaned among the heathen, whither they went."
 				},
 				{
 					"verse": "22",
-					"text": "Therefore say unto the house of Israel, Thus saith the Lord GOD; I do not this for your sakes, O house of Israel, but for mine holy name\u2019s sake, which ye have profaned among the heathen, whither ye went."
+					"text": "Therefore say unto the house of Israel, Thus saith the Lord GOD; I do not this for your sakes, O house of Israel, but for mine holy name’s sake, which ye have profaned among the heathen, whither ye went."
 				},
 				{
 					"verse": "23",
@@ -3858,6 +3955,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "Then will I sprinkle clean water upon you, and ye shall be clean: from all your filthiness, and from all your idols, will I cleanse you."
 				},
 				{
@@ -3959,6 +4057,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Then he said unto me, Son of man, these bones are the whole house of Israel: behold, they say, Our bones are dried, and our hope is lost: we are cut off for our parts."
 				},
 				{
@@ -3975,6 +4074,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "The word of the LORD came again unto me, saying,"
 				},
 				{
@@ -3987,6 +4087,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And when the children of thy people shall speak unto thee, saying, Wilt thou not shew us what thou meanest by these?"
 				},
 				{
@@ -3995,6 +4096,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And the sticks whereon thou writest shall be in thine hand before their eyes."
 				},
 				{
@@ -4015,7 +4117,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "And they shall dwell in the land that I have given unto Jacob my servant, wherein your fathers have dwelt; and they shall dwell therein, even they, and their children, and their children\u2019s children for ever: and my servant David shall be their prince for ever."
+					"text": "And they shall dwell in the land that I have given unto Jacob my servant, wherein your fathers have dwelt; and they shall dwell therein, even they, and their children, and their children’s children for ever: and my servant David shall be their prince for ever."
 				},
 				{
 					"verse": "26",
@@ -4064,6 +4166,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "After many days thou shalt be visited: in the latter years thou shalt come into the land that is brought back from the sword, and is gathered out of many people, against the mountains of Israel, which have been always waste: but it is brought forth out of the nations, and they shall dwell safely all of them."
 				},
 				{
@@ -4088,6 +4191,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Therefore, son of man, prophesy and say unto Gog, Thus saith the Lord GOD; In that day when my people of Israel dwelleth safely, shalt thou not know it?"
 				},
 				{
@@ -4116,7 +4220,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "And I will call for a sword against him throughout all my mountains, saith the Lord GOD: every man\u2019s sword shall be against his brother."
+					"text": "And I will call for a sword against him throughout all my mountains, saith the Lord GOD: every man’s sword shall be against his brother."
 				},
 				{
 					"verse": "22",
@@ -4161,6 +4265,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Behold, it is come, and it is done, saith the Lord GOD; this is the day whereof I have spoken."
 				},
 				{
@@ -4173,6 +4278,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And it shall come to pass in that day, that I will give unto Gog a place there of graves in Israel, the valley of the passengers on the east of the sea: and it shall stop the noses of the passengers: and there shall they bury Gog and all his multitude: and they shall call it The valley of Hamongog."
 				},
 				{
@@ -4189,7 +4295,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "And the passengers that pass through the land, when any seeth a man\u2019s bone, then shall he set up a sign by it, till the buriers have buried it in the valley of Hamongog."
+					"text": "And the passengers that pass through the land, when any seeth a man’s bone, then shall he set up a sign by it, till the buriers have buried it in the valley of Hamongog."
 				},
 				{
 					"verse": "16",
@@ -4197,6 +4303,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And, thou son of man, thus saith the Lord GOD; Speak unto every feathered fowl, and to every beast of the field, Assemble yourselves, and come; gather yourselves on every side to my sacrifice that I do sacrifice for you, even a great sacrifice upon the mountains of Israel, that ye may eat flesh, and drink blood."
 				},
 				{
@@ -4221,6 +4328,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And the heathen shall know that the house of Israel went into captivity for their iniquity: because they trespassed against me, therefore hid I my face from them, and gave them into the hand of their enemies: so fell they all by the sword."
 				},
 				{
@@ -4237,7 +4345,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "When I have brought them again from the people, and gathered them out of their enemies\u2019 lands, and am sanctified in them in the sight of many nations;"
+					"text": "When I have brought them again from the people, and gathered them out of their enemies’ lands, and am sanctified in them in the sight of many nations;"
 				},
 				{
 					"verse": "28",
@@ -4270,10 +4378,11 @@
 				},
 				{
 					"verse": "5",
-					"text": "And behold a wall on the outside of the house round about, and in the man\u2019s hand a measuring reed of six cubits long by the cubit and an hand breadth: so he measured the breadth of the building, one reed; and the height, one reed."
+					"text": "And behold a wall on the outside of the house round about, and in the man’s hand a measuring reed of six cubits long by the cubit and an hand breadth: so he measured the breadth of the building, one reed; and the height, one reed."
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Then came he unto the gate which looketh toward the east, and went up the stairs thereof, and measured the threshold of the gate, which was one reed broad; and the other threshold of the gate, which was one reed broad."
 				},
 				{
@@ -4330,6 +4439,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And the gate of the outward court that looked toward the north, he measured the length thereof, and the breadth thereof."
 				},
 				{
@@ -4346,6 +4456,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "After that he brought me toward the south, and behold a gate toward the south: and he measured the posts thereof and the arches thereof according to these measures."
 				},
 				{
@@ -4378,6 +4489,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "And he brought me into the inner court toward the east: and he measured the gate according to these measures."
 				},
 				{
@@ -4406,6 +4518,7 @@
 				},
 				{
 					"verse": "39",
+					"paragraph": true,
 					"text": "And in the porch of the gate were two tables on this side, and two tables on that side, to slay thereon the burnt offering and the sin offering and the trespass offering."
 				},
 				{
@@ -4426,6 +4539,7 @@
 				},
 				{
 					"verse": "44",
+					"paragraph": true,
 					"text": "And without the inner gate were the chambers of the singers in the inner court, which was at the side of the north gate; and their prospect was toward the south: one at the side of the east gate having the prospect toward the north."
 				},
 				{
@@ -4442,6 +4556,7 @@
 				},
 				{
 					"verse": "48",
+					"paragraph": true,
 					"text": "And he brought me to the porch of the house, and measured each post of the porch, five cubits on this side, and five cubits on that side: and the breadth of the gate was three cubits on this side, and three cubits on that side."
 				},
 				{
@@ -4612,6 +4727,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Then said he unto me, The north chambers and the south chambers, which are before the separate place, they be holy chambers, where the priests that approach unto the LORD shall eat the most holy things: there shall they lay the most holy things, and the meat offering, and the sin offering, and the trespass offering; for the place is holy."
 				},
 				{
@@ -4636,6 +4752,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "He turned about to the west side, and measured five hundred reeds with the measuring reed."
 				},
 				{
@@ -4673,6 +4790,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And he said unto me, Son of man, the place of my throne, and the place of the soles of my feet, where I will dwell in the midst of the children of Israel for ever, and my holy name, shall the house of Israel no more defile, neither they, nor their kings, by their whoredom, nor by the carcases of their kings in their high places."
 				},
 				{
@@ -4685,6 +4803,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Thou son of man, shew the house to the house of Israel, that they may be ashamed of their iniquities: and let them measure the pattern."
 				},
 				{
@@ -4774,6 +4893,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Then brought he me the way of the north gate before the house: and I looked, and, behold, the glory of the LORD filled the house of the LORD: and I fell upon my face."
 				},
 				{
@@ -4794,6 +4914,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Thus saith the Lord GOD; No stranger, uncircumcised in heart, nor uncircumcised in flesh, shall enter into my sanctuary, of any stranger that is among the children of Israel."
 				},
 				{
@@ -4818,6 +4939,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "But the priests the Levites, the sons of Zadok, that kept the charge of my sanctuary when the children of Israel went astray from me, they shall come near to me to minister unto me, and they shall stand before me to offer unto me the fat and the blood, saith the Lord GOD:"
 				},
 				{
@@ -4826,6 +4948,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And it shall come to pass, that when they enter in at the gates of the inner court, they shall be clothed with linen garments; and no wool shall come upon them, whiles they minister in the gates of the inner court, and within."
 				},
 				{
@@ -4878,7 +5001,7 @@
 				},
 				{
 					"verse": "30",
-					"text": "And the first of all the firstfruits of all things, and every oblation of all, of every sort of your oblations, shall be the priest\u2019s: ye shall also give unto the priest the first of your dough, that he may cause the blessing to rest in thine house."
+					"text": "And the first of all the firstfruits of all things, and every oblation of all, of every sort of your oblations, shall be the priest’s: ye shall also give unto the priest the first of your dough, that he may cause the blessing to rest in thine house."
 				},
 				{
 					"verse": "31",
@@ -4911,10 +5034,12 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And ye shall appoint the possession of the city five thousand broad, and five and twenty thousand long, over against the oblation of the holy portion: it shall be for the whole house of Israel."
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And a portion shall be for the prince on the one side and on the other side of the oblation of the holy portion, and of the possession of the city, before the oblation of the holy portion, and before the possession of the city, from the west side westward, and from the east side eastward: and the length shall be over against one of the portions, from the west border unto the east border."
 				},
 				{
@@ -4923,6 +5048,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Thus saith the Lord GOD; Let it suffice you, O princes of Israel: remove violence and spoil, and execute judgment and justice, take away your exactions from my people, saith the Lord GOD."
 				},
 				{
@@ -4955,7 +5081,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "And it shall be the prince\u2019s part to give burnt offerings, and meat offerings, and drink offerings, in the feasts, and in the new moons, and in the sabbaths, in all solemnities of the house of Israel: he shall prepare the sin offering, and the meat offering, and the burnt offering, and the peace offerings, to make reconciliation for the house of Israel."
+					"text": "And it shall be the prince’s part to give burnt offerings, and meat offerings, and drink offerings, in the feasts, and in the new moons, and in the sabbaths, in all solemnities of the house of Israel: he shall prepare the sin offering, and the meat offering, and the burnt offering, and the peace offerings, to make reconciliation for the house of Israel."
 				},
 				{
 					"verse": "18",
@@ -5028,6 +5154,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "But when the people of the land shall come before the LORD in the solemn feasts, he that entereth in by the way of the north gate to worship shall go out by the way of the south gate; and he that entereth by the way of the south gate shall go forth by the way of the north gate: he shall not return by the way of the gate whereby he came in, but shall go forth over against it."
 				},
 				{
@@ -5056,18 +5183,20 @@
 				},
 				{
 					"verse": "16",
-					"text": "Thus saith the Lord GOD; If the prince give a gift unto any of his sons, the inheritance thereof shall be his sons\u2019; it shall be their possession by inheritance."
+					"paragraph": true,
+					"text": "Thus saith the Lord GOD; If the prince give a gift unto any of his sons, the inheritance thereof shall be his sons’; it shall be their possession by inheritance."
 				},
 				{
 					"verse": "17",
-					"text": "But if he give a gift of his inheritance to one of his servants, then it shall be his to the year of liberty; after it shall return to the prince: but his inheritance shall be his sons\u2019 for them."
+					"text": "But if he give a gift of his inheritance to one of his servants, then it shall be his to the year of liberty; after it shall return to the prince: but his inheritance shall be his sons’ for them."
 				},
 				{
 					"verse": "18",
-					"text": "Moreover the prince shall not take of the people\u2019s inheritance by oppression, to thrust them out of their possession; but he shall give his sons inheritance out of his own possession: that my people be not scattered every man from his possession."
+					"text": "Moreover the prince shall not take of the people’s inheritance by oppression, to thrust them out of their possession; but he shall give his sons inheritance out of his own possession: that my people be not scattered every man from his possession."
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "After he brought me through the entry, which was at the side of the gate, into the holy chambers of the priests, which looked toward the north: and, behold, there was a place on the two sides westward."
 				},
 				{
@@ -5117,6 +5246,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And he said unto me, Son of man, hast thou seen this? Then he brought me, and caused me to return to the brink of the river."
 				},
 				{
@@ -5145,6 +5275,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Thus saith the Lord GOD; This shall be the border, whereby ye shall inherit the land according to the twelve tribes of Israel: Joseph shall have two portions."
 				},
 				{
@@ -5181,6 +5312,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And it shall come to pass, that ye shall divide it by lot for an inheritance unto you, and to the strangers that sojourn among you, which shall beget children among you: and they shall be unto you as born in the country among the children of Israel; they shall have inheritance with you among the tribes of Israel."
 				},
 				{
@@ -5222,6 +5354,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And by the border of Judah, from the east side unto the west side, shall be the offering which ye shall offer of five and twenty thousand reeds in breadth, and in length as one of the other parts, from the east side unto the west side: and the sanctuary shall be in the midst of it."
 				},
 				{
@@ -5250,6 +5383,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And the five thousand, that are left in the breadth over against the five and twenty thousand, shall be a profane place for the city, for dwelling, and for suburbs: and the city shall be in the midst thereof."
 				},
 				{
@@ -5274,11 +5408,12 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And the residue shall be for the prince, on the one side and on the other of the holy oblation, and of the possession of the city, over against the five and twenty thousand of the oblation toward the east border, and westward over against the five and twenty thousand toward the west border, over against the portions for the prince: and it shall be the holy oblation; and the sanctuary of the house shall be in the midst thereof."
 				},
 				{
 					"verse": "22",
-					"text": "Moreover from the possession of the Levites, and from the possession of the city, being in the midst of that which is the prince\u2019s, between the border of Judah and the border of Benjamin, shall be for the prince."
+					"text": "Moreover from the possession of the Levites, and from the possession of the city, being in the midst of that which is the prince’s, between the border of Judah and the border of Benjamin, shall be for the prince."
 				},
 				{
 					"verse": "23",
@@ -5310,6 +5445,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "And these are the goings out of the city on the north side, four thousand and five hundred measures."
 				},
 				{

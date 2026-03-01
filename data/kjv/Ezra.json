@@ -23,6 +23,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Then rose up the chief of the fathers of Judah and Benjamin, and the priests, and the Levites, with all them whose spirit God had raised, to go up to build the house of the LORD which is in Jerusalem."
 				},
 				{
@@ -31,6 +32,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Also Cyrus the king brought forth the vessels of the house of the LORD, which Nebuchadnezzar had brought forth out of Jerusalem, and had put them in the house of his gods;"
 				},
 				{
@@ -130,17 +132,26 @@
 					"verse": "19",
 					"text": "The children of Hashum, two hundred twenty and three."
 				},
-				{ "verse": "20", "text": "The children of Gibbar, ninety and five." },
+				{
+					"verse": "20",
+					"text": "The children of Gibbar, ninety and five."
+				},
 				{
 					"verse": "21",
 					"text": "The children of Bethlehem, an hundred twenty and three."
 				},
-				{ "verse": "22", "text": "The men of Netophah, fifty and six." },
+				{
+					"verse": "22",
+					"text": "The men of Netophah, fifty and six."
+				},
 				{
 					"verse": "23",
 					"text": "The men of Anathoth, an hundred twenty and eight."
 				},
-				{ "verse": "24", "text": "The children of Azmaveth, forty and two." },
+				{
+					"verse": "24",
+					"text": "The children of Azmaveth, forty and two."
+				},
 				{
 					"verse": "25",
 					"text": "The children of Kirjatharim, Chephirah, and Beeroth, seven hundred and forty and three."
@@ -157,7 +168,10 @@
 					"verse": "28",
 					"text": "The men of Bethel and Ai, two hundred twenty and three."
 				},
-				{ "verse": "29", "text": "The children of Nebo, fifty and two." },
+				{
+					"verse": "29",
+					"text": "The children of Nebo, fifty and two."
+				},
 				{
 					"verse": "30",
 					"text": "The children of Magbish, an hundred fifty and six."
@@ -184,6 +198,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "The priests: the children of Jedaiah, of the house of Jeshua, nine hundred seventy and three."
 				},
 				{
@@ -200,18 +215,22 @@
 				},
 				{
 					"verse": "40",
+					"paragraph": true,
 					"text": "The Levites: the children of Jeshua and Kadmiel, of the children of Hodaviah, seventy and four."
 				},
 				{
 					"verse": "41",
+					"paragraph": true,
 					"text": "The singers: the children of Asaph, an hundred twenty and eight."
 				},
 				{
 					"verse": "42",
+					"paragraph": true,
 					"text": "The children of the porters: the children of Shallum, the children of Ater, the children of Talmon, the children of Akkub, the children of Hatita, the children of Shobai, in all an hundred thirty and nine."
 				},
 				{
 					"verse": "43",
+					"paragraph": true,
 					"text": "The Nethinims: the children of Ziha, the children of Hasupha, the children of Tabbaoth,"
 				},
 				{
@@ -260,7 +279,8 @@
 				},
 				{
 					"verse": "55",
-					"text": "The children of Solomon\u2019s servants: the children of Sotai, the children of Sophereth, the children of Peruda,"
+					"paragraph": true,
+					"text": "The children of Solomon’s servants: the children of Sotai, the children of Sophereth, the children of Peruda,"
 				},
 				{
 					"verse": "56",
@@ -272,11 +292,11 @@
 				},
 				{
 					"verse": "58",
-					"text": "All the Nethinims, and the children of Solomon\u2019s servants, were three hundred ninety and two."
+					"text": "All the Nethinims, and the children of Solomon’s servants, were three hundred ninety and two."
 				},
 				{
 					"verse": "59",
-					"text": "And these were they which went up from Telmelah, Telharsa, Cherub, Addan, and Immer: but they could not shew their father\u2019s house, and their seed, whether they were of Israel:"
+					"text": "And these were they which went up from Telmelah, Telharsa, Cherub, Addan, and Immer: but they could not shew their father’s house, and their seed, whether they were of Israel:"
 				},
 				{
 					"verse": "60",
@@ -284,6 +304,7 @@
 				},
 				{
 					"verse": "61",
+					"paragraph": true,
 					"text": "And of the children of the priests: the children of Habaiah, the children of Koz, the children of Barzillai; which took a wife of the daughters of Barzillai the Gileadite, and was called after their name:"
 				},
 				{
@@ -296,6 +317,7 @@
 				},
 				{
 					"verse": "64",
+					"paragraph": true,
 					"text": "The whole congregation together was forty and two thousand three hundred and threescore,"
 				},
 				{
@@ -312,11 +334,12 @@
 				},
 				{
 					"verse": "68",
+					"paragraph": true,
 					"text": "And some of the chief of the fathers, when they came to the house of the LORD which is at Jerusalem, offered freely for the house of God to set it up in his place:"
 				},
 				{
 					"verse": "69",
-					"text": "They gave after their ability unto the treasure of the work threescore and one thousand drams of gold, and five thousand pound of silver, and one hundred priests\u2019 garments."
+					"text": "They gave after their ability unto the treasure of the work threescore and one thousand drams of gold, and five thousand pound of silver, and one hundred priests’ garments."
 				},
 				{
 					"verse": "70",
@@ -357,6 +380,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Now in the second year of their coming unto the house of God at Jerusalem, in the second month, began Zerubbabel the son of Shealtiel, and Jeshua the son of Jozadak, and the remnant of their brethren the priests and the Levites, and all they that were come out of the captivity unto Jerusalem; and appointed the Levites, from twenty years old and upward, to set forward the work of the house of the LORD."
 				},
 				{
@@ -410,6 +434,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And in the days of Artaxerxes wrote Bishlam, Mithredath, Tabeel, and the rest of their companions, unto Artaxerxes king of Persia; and the writing of the letter was written in the Syrian tongue, and interpreted in the Syrian tongue."
 				},
 				{
@@ -426,6 +451,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "This is the copy of the letter that they sent unto him, even unto Artaxerxes the king; Thy servants the men on this side the river, and at such a time."
 				},
 				{
@@ -438,7 +464,7 @@
 				},
 				{
 					"verse": "14",
-					"text": "Now because we have maintenance from the king\u2019s palace, and it was not meet for us to see the king\u2019s dishonour, therefore have we sent and certified the king;"
+					"text": "Now because we have maintenance from the king’s palace, and it was not meet for us to see the king’s dishonour, therefore have we sent and certified the king;"
 				},
 				{
 					"verse": "15",
@@ -450,6 +476,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Then sent the king an answer unto Rehum the chancellor, and to Shimshai the scribe, and to the rest of their companions that dwell in Samaria, and unto the rest beyond the river, Peace, and at such a time."
 				},
 				{
@@ -474,7 +501,8 @@
 				},
 				{
 					"verse": "23",
-					"text": "Now when the copy of king Artaxerxes\u2019 letter was read before Rehum, and Shimshai the scribe, and their companions, they went up in haste to Jerusalem unto the Jews, and made them to cease by force and power."
+					"paragraph": true,
+					"text": "Now when the copy of king Artaxerxes’ letter was read before Rehum, and Shimshai the scribe, and their companions, they went up in haste to Jerusalem unto the Jews, and made them to cease by force and power."
 				},
 				{
 					"verse": "24",
@@ -495,6 +523,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "At the same time came to them Tatnai, governor on this side the river, and Shetharboznai, and their companions, and said thus unto them, Who hath commanded you to build this house, and to make up this wall?"
 				},
 				{
@@ -507,6 +536,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "The copy of the letter that Tatnai, governor on this side the river, and Shetharboznai, and his companions the Apharsachites, which were on this side the river, sent unto Darius the king:"
 				},
 				{
@@ -551,7 +581,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "Now therefore, if it seem good to the king, let there be search made in the king\u2019s treasure house, which is there at Babylon, whether it be so, that a decree was made of Cyrus the king to build this house of God at Jerusalem, and let the king send his pleasure to us concerning this matter."
+					"text": "Now therefore, if it seem good to the king, let there be search made in the king’s treasure house, which is there at Babylon, whether it be so, that a decree was made of Cyrus the king to build this house of God at Jerusalem, and let the king send his pleasure to us concerning this matter."
 				}
 			]
 		},
@@ -572,7 +602,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "With three rows of great stones, and a row of new timber: and let the expenses be given out of the king\u2019s house:"
+					"text": "With three rows of great stones, and a row of new timber: and let the expenses be given out of the king’s house:"
 				},
 				{
 					"verse": "5",
@@ -588,7 +618,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "Moreover I make a decree what ye shall do to the elders of these Jews for the building of this house of God: that of the king\u2019s goods, even of the tribute beyond the river, forthwith expenses be given unto these men, that they be not hindered."
+					"text": "Moreover I make a decree what ye shall do to the elders of these Jews for the building of this house of God: that of the king’s goods, even of the tribute beyond the river, forthwith expenses be given unto these men, that they be not hindered."
 				},
 				{
 					"verse": "9",
@@ -608,6 +638,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Then Tatnai, governor on this side the river, Shetharboznai, and their companions, according to that which Darius the king had sent, so they did speedily."
 				},
 				{
@@ -620,6 +651,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And the children of Israel, the priests, and the Levites, and the rest of the children of the captivity, kept the dedication of this house of God with joy,"
 				},
 				{
@@ -693,6 +725,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Now this is the copy of the letter that the king Artaxerxes gave unto Ezra the priest, the scribe, even a scribe of the words of the commandments of the LORD, and of his statutes to Israel."
 				},
 				{
@@ -729,7 +762,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "And whatsoever more shall be needful for the house of thy God, which thou shalt have occasion to bestow, bestow it out of the king\u2019s treasure house."
+					"text": "And whatsoever more shall be needful for the house of thy God, which thou shalt have occasion to bestow, bestow it out of the king’s treasure house."
 				},
 				{
 					"verse": "21",
@@ -757,11 +790,12 @@
 				},
 				{
 					"verse": "27",
-					"text": "Blessed be the LORD God of our fathers, which hath put such a thing as this in the king\u2019s heart, to beautify the house of the LORD which is in Jerusalem:"
+					"paragraph": true,
+					"text": "Blessed be the LORD God of our fathers, which hath put such a thing as this in the king’s heart, to beautify the house of the LORD which is in Jerusalem:"
 				},
 				{
 					"verse": "28",
-					"text": "And hath extended mercy unto me before the king, and his counsellors, and before all the king\u2019s mighty princes. And I was strengthened as the hand of the LORD my God was upon me, and I gathered together out of Israel chief men to go up with me."
+					"text": "And hath extended mercy unto me before the king, and his counsellors, and before all the king’s mighty princes. And I was strengthened as the hand of the LORD my God was upon me, and I gathered together out of Israel chief men to go up with me."
 				}
 			]
 		},
@@ -826,6 +860,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And I gathered them together to the river that runneth to Ahava; and there abode we in tents three days: and I viewed the people, and the priests, and found there none of the sons of Levi."
 				},
 				{
@@ -850,6 +885,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Then I proclaimed a fast there, at the river of Ahava, that we might afflict ourselves before our God, to seek of him a right way for us, and for our little ones, and for all our substance."
 				},
 				{
@@ -862,6 +898,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Then I separated twelve of the chief of the priests, Sherebiah, Hashabiah, and ten of their brethren with them,"
 				},
 				{
@@ -890,6 +927,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "Then we departed from the river of Ahava on the twelfth day of the first month, to go unto Jerusalem: and the hand of our God was upon us, and he delivered us from the hand of the enemy, and of such as lay in wait by the way."
 				},
 				{
@@ -898,6 +936,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "Now on the fourth day was the silver and the gold and the vessels weighed in the house of our God by the hand of Meremoth the son of Uriah the priest; and with him was Eleazar the son of Phinehas; and with them was Jozabad the son of Jeshua, and Noadiah the son of Binnui, Levites;"
 				},
 				{
@@ -910,7 +949,8 @@
 				},
 				{
 					"verse": "36",
-					"text": "And they delivered the king\u2019s commissions unto the king\u2019s lieutenants, and to the governors on this side the river: and they furthered the people, and the house of God."
+					"paragraph": true,
+					"text": "And they delivered the king’s commissions unto the king’s lieutenants, and to the governors on this side the river: and they furthered the people, and the house of God."
 				}
 			]
 		},
@@ -935,6 +975,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And at the evening sacrifice I arose up from my heaviness; and having rent my garment and my mantle, I fell upon my knees, and spread out my hands unto the LORD my God,"
 				},
 				{
@@ -1004,6 +1045,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Then Ezra rose up from before the house of God, and went into the chamber of Johanan the son of Eliashib: and when he came thither, he did eat no bread, nor drink water: for he mourned because of the transgression of them that had been carried away."
 				},
 				{
@@ -1016,6 +1058,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Then all the men of Judah and Benjamin gathered themselves together unto Jerusalem within three days. It was the ninth month, on the twentieth day of the month; and all the people sat in the street of the house of God, trembling because of this matter, and for the great rain."
 				},
 				{
@@ -1040,6 +1083,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Only Jonathan the son of Asahel and Jahaziah the son of Tikvah were employed about this matter: and Meshullam and Shabbethai the Levite helped them."
 				},
 				{
@@ -1052,6 +1096,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And among the sons of the priests there were found that had taken strange wives: namely, of the sons of Jeshua the son of Jozadak, and his brethren; Maaseiah, and Eliezer, and Jarib, and Gedaliah."
 				},
 				{
@@ -1106,7 +1151,10 @@
 					"verse": "31",
 					"text": "And of the sons of Harim; Eliezer, Ishijah, Malchiah, Shemaiah, Shimeon,"
 				},
-				{ "verse": "32", "text": "Benjamin, Malluch, and Shemariah." },
+				{
+					"verse": "32",
+					"text": "Benjamin, Malluch, and Shemariah."
+				},
 				{
 					"verse": "33",
 					"text": "Of the sons of Hashum; Mattenai, Mattathah, Zabad, Eliphelet, Jeremai, Manasseh, and Shimei."
@@ -1115,14 +1163,38 @@
 					"verse": "34",
 					"text": "Of the sons of Bani; Maadai, Amram, and Uel,"
 				},
-				{ "verse": "35", "text": "Benaiah, Bedeiah, Chelluh," },
-				{ "verse": "36", "text": "Vaniah, Meremoth, Eliashib," },
-				{ "verse": "37", "text": "Mattaniah, Mattenai, and Jaasau," },
-				{ "verse": "38", "text": "And Bani, and Binnui, Shimei," },
-				{ "verse": "39", "text": "And Shelemiah, and Nathan, and Adaiah," },
-				{ "verse": "40", "text": "Machnadebai, Shashai, Sharai," },
-				{ "verse": "41", "text": "Azareel, and Shelemiah, Shemariah," },
-				{ "verse": "42", "text": "Shallum, Amariah, and Joseph." },
+				{
+					"verse": "35",
+					"text": "Benaiah, Bedeiah, Chelluh,"
+				},
+				{
+					"verse": "36",
+					"text": "Vaniah, Meremoth, Eliashib,"
+				},
+				{
+					"verse": "37",
+					"text": "Mattaniah, Mattenai, and Jaasau,"
+				},
+				{
+					"verse": "38",
+					"text": "And Bani, and Binnui, Shimei,"
+				},
+				{
+					"verse": "39",
+					"text": "And Shelemiah, and Nathan, and Adaiah,"
+				},
+				{
+					"verse": "40",
+					"text": "Machnadebai, Shashai, Sharai,"
+				},
+				{
+					"verse": "41",
+					"text": "Azareel, and Shelemiah, Shemariah,"
+				},
+				{
+					"verse": "42",
+					"text": "Shallum, Amariah, and Joseph."
+				},
 				{
 					"verse": "43",
 					"text": "Of the sons of Nebo; Jeiel, Mattithiah, Zabad, Zebina, Jadau, and Joel, Benaiah."

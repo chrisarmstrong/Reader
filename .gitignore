@@ -35,8 +35,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# cross-reference source data (downloaded at build time)
+# build-time source data (downloaded by conversion scripts)
 scripts/cross_references_expanded.csv
+scripts/eng-kjv.osis.xml
 public/sw.js
 public/sw.js.map
 .gitignore

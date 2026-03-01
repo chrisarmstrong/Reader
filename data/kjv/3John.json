@@ -11,6 +11,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "Beloved, I wish above all things that thou mayest prosper and be in health, even as thy soul prospereth."
 				},
 				{
@@ -31,7 +32,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "Because that for his name\u2019s sake they went forth, taking nothing of the Gentiles."
+					"text": "Because that for his name’s sake they went forth, taking nothing of the Gentiles."
 				},
 				{
 					"verse": "8",
@@ -39,6 +40,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "I wrote unto the church: but Diotrephes, who loveth to have the preeminence among them, receiveth us not."
 				},
 				{
@@ -47,6 +49,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Beloved, follow not that which is evil, but that which is good. He that doeth good is of God: but he that doeth evil hath not seen God."
 				},
 				{
@@ -55,6 +58,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "I had many things to write, but I will not with ink and pen write unto thee:"
 				},
 				{

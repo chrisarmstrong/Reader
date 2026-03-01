@@ -15,6 +15,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Blessed be the God and Father of our Lord Jesus Christ, which according to his abundant mercy hath begotten us again unto a lively hope by the resurrection of Jesus Christ from the dead,"
 				},
 				{
@@ -71,7 +72,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "And if ye call on the Father, who without respect of persons judgeth according to every man\u2019s work, pass the time of your sojourning here in fear:"
+					"text": "And if ye call on the Father, who without respect of persons judgeth according to every man’s work, pass the time of your sojourning here in fear:"
 				},
 				{
 					"verse": "18",
@@ -152,6 +153,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Dearly beloved, I beseech you as strangers and pilgrims, abstain from fleshly lusts, which war against the soul;"
 				},
 				{
@@ -160,7 +162,8 @@
 				},
 				{
 					"verse": "13",
-					"text": "Submit yourselves to every ordinance of man for the Lord\u2019s sake: whether it be to the king, as supreme;"
+					"paragraph": true,
+					"text": "Submit yourselves to every ordinance of man for the Lord’s sake: whether it be to the king, as supreme;"
 				},
 				{
 					"verse": "14",
@@ -265,11 +268,12 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And who is he that will harm you, if ye be followers of that which is good?"
 				},
 				{
 					"verse": "14",
-					"text": "But and if ye suffer for righteousness\u2019 sake, happy are ye: and be not afraid of their terror, neither be troubled;"
+					"text": "But and if ye suffer for righteousness’ sake, happy are ye: and be not afraid of their terror, neither be troubled;"
 				},
 				{
 					"verse": "15",
@@ -334,6 +338,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "But the end of all things is at hand: be ye therefore sober, and watch unto prayer."
 				},
 				{
@@ -354,11 +359,12 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Beloved, think it not strange concerning the fiery trial which is to try you, as though some strange thing happened unto you:"
 				},
 				{
 					"verse": "13",
-					"text": "But rejoice, inasmuch as ye are partakers of Christ\u2019s sufferings; that, when his glory shall be revealed, ye may be glad also with exceeding joy."
+					"text": "But rejoice, inasmuch as ye are partakers of Christ’s sufferings; that, when his glory shall be revealed, ye may be glad also with exceeding joy."
 				},
 				{
 					"verse": "14",
@@ -366,7 +372,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "But let none of you suffer as a murderer, or as a thief, or as an evildoer, or as a busybody in other men\u2019s matters."
+					"text": "But let none of you suffer as a murderer, or as a thief, or as an evildoer, or as a busybody in other men’s matters."
 				},
 				{
 					"verse": "16",
@@ -399,7 +405,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "Neither as being lords over God\u2019s heritage, but being ensamples to the flock."
+					"text": "Neither as being lords over God’s heritage, but being ensamples to the flock."
 				},
 				{
 					"verse": "4",
@@ -411,6 +417,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Humble yourselves therefore under the mighty hand of God, that he may exalt you in due time:"
 				},
 				{
@@ -435,6 +442,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "By Silvanus, a faithful brother unto you, as I suppose, I have written briefly, exhorting, and testifying that this is the true grace of God wherein ye stand."
 				},
 				{

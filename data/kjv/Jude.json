@@ -15,6 +15,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Beloved, when I gave all diligence to write unto you of the common salvation, it was needful for me to write unto you, and exhort you that ye should earnestly contend for the faith which was once delivered unto the saints."
 				},
 				{
@@ -67,10 +68,11 @@
 				},
 				{
 					"verse": "16",
-					"text": "These are murmurers, complainers, walking after their own lusts; and their mouth speaketh great swelling words, having men\u2019s persons in admiration because of advantage."
+					"text": "These are murmurers, complainers, walking after their own lusts; and their mouth speaketh great swelling words, having men’s persons in admiration because of advantage."
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "But, beloved, remember ye the words which were spoken before of the apostles of our Lord Jesus Christ;"
 				},
 				{
@@ -99,6 +101,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Now unto him that is able to keep you from falling, and to present you faultless before the presence of his glory with exceeding joy,"
 				},
 				{

@@ -99,7 +99,7 @@
 				},
 				{
 					"verse": "24",
-					"text": "Who now rejoice in my sufferings for you, and fill up that which is behind of the afflictions of Christ in my flesh for his body\u2019s sake, which is the church:"
+					"text": "Who now rejoice in my sufferings for you, and fill up that which is behind of the afflictions of Christ in my flesh for his body’s sake, which is the church:"
 				},
 				{
 					"verse": "25",
@@ -148,6 +148,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "As ye have therefore received Christ Jesus the Lord, so walk ye in him:"
 				},
 				{
@@ -204,9 +205,13 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Wherefore if ye be dead with Christ from the rudiments of the world, why, as though living in the world, are ye subject to ordinances,"
 				},
-				{ "verse": "21", "text": "(Touch not; taste not; handle not;" },
+				{
+					"verse": "21",
+					"text": "(Touch not; taste not; handle not;"
+				},
 				{
 					"verse": "22",
 					"text": "Which all are to perish with the using;) after the commandments and doctrines of men?"
@@ -238,11 +243,12 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Mortify therefore your members which are upon the earth; fornication, uncleanness, inordinate affection, evil concupiscence, and covetousness, which is idolatry:"
 				},
 				{
 					"verse": "6",
-					"text": "For which things\u2019 sake the wrath of God cometh on the children of disobedience:"
+					"text": "For which things’ sake the wrath of God cometh on the children of disobedience:"
 				},
 				{
 					"verse": "7",
@@ -290,6 +296,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Wives, submit yourselves unto your own husbands, as it is fit in the Lord."
 				},
 				{
@@ -331,6 +338,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "Continue in prayer, and watch in the same with thanksgiving;"
 				},
 				{
@@ -351,6 +359,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "All my state shall Tychicus declare unto you, who is a beloved brother, and a faithful minister and fellowservant in the Lord:"
 				},
 				{
@@ -363,7 +372,8 @@
 				},
 				{
 					"verse": "10",
-					"text": "Aristarchus my fellowprisoner saluteth you, and Marcus, sister\u2019s son to Barnabas, (touching whom ye received commandments: if he come unto you, receive him;)"
+					"paragraph": true,
+					"text": "Aristarchus my fellowprisoner saluteth you, and Marcus, sister’s son to Barnabas, (touching whom ye received commandments: if he come unto you, receive him;)"
 				},
 				{
 					"verse": "11",
@@ -395,6 +405,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "The salutation by the hand of me Paul. Remember my bonds. Grace be with you. Amen."
 				}
 			]

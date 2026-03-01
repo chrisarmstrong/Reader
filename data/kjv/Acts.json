@@ -51,7 +51,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "Then returned they unto Jerusalem from the mount called Olivet, which is from Jerusalem a sabbath day\u2019s journey."
+					"text": "Then returned they unto Jerusalem from the mount called Olivet, which is from Jerusalem a sabbath day’s journey."
 				},
 				{
 					"verse": "13",
@@ -63,6 +63,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And in those days Peter stood up in the midst of the disciples, and said, (the number of names together were about an hundred and twenty,)"
 				},
 				{
@@ -168,6 +169,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "But Peter, standing up with the eleven, lifted up his voice, and said unto them, Ye men of Judaea, and all ye that dwell at Jerusalem, be this known unto you, and hearken to my words:"
 				},
 				{
@@ -250,13 +252,17 @@
 					"verse": "34",
 					"text": "For David is not ascended into the heavens: but he saith himself, The Lord said unto my Lord, Sit thou on my right hand,"
 				},
-				{ "verse": "35", "text": "Until I make thy foes thy footstool." },
+				{
+					"verse": "35",
+					"text": "Until I make thy foes thy footstool."
+				},
 				{
 					"verse": "36",
 					"text": "Therefore let all the house of Israel know assuredly, that God hath made that same Jesus, whom ye have crucified, both Lord and Christ."
 				},
 				{
 					"verse": "37",
+					"paragraph": true,
 					"text": "Now when they heard this, they were pricked in their heart, and said unto Peter and to the rest of the apostles, Men and brethren, what shall we do?"
 				},
 				{
@@ -273,11 +279,12 @@
 				},
 				{
 					"verse": "41",
+					"paragraph": true,
 					"text": "Then they that gladly received his word were baptized: and the same day there were added unto them about three thousand souls."
 				},
 				{
 					"verse": "42",
-					"text": "And they continued stedfastly in the apostles\u2019 doctrine and fellowship, and in breaking of bread, and in prayers."
+					"text": "And they continued stedfastly in the apostles’ doctrine and fellowship, and in breaking of bread, and in prayers."
 				},
 				{
 					"verse": "43",
@@ -310,7 +317,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "And a certain man lame from his mother\u2019s womb was carried, whom they laid daily at the gate of the temple which is called Beautiful, to ask alms of them that entered into the temple;"
+					"text": "And a certain man lame from his mother’s womb was carried, whom they laid daily at the gate of the temple which is called Beautiful, to ask alms of them that entered into the temple;"
 				},
 				{
 					"verse": "3",
@@ -346,10 +353,11 @@
 				},
 				{
 					"verse": "11",
-					"text": "And as the lame man which was healed held Peter and John, all the people ran together unto them in the porch that is called Solomon\u2019s, greatly wondering."
+					"text": "And as the lame man which was healed held Peter and John, all the people ran together unto them in the porch that is called Solomon’s, greatly wondering."
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And when Peter saw it, he answered unto the people, Ye men of Israel, why marvel ye at this? or why look ye so earnestly on us, as though by our own power or holiness we had made this man to walk?"
 				},
 				{
@@ -378,6 +386,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Repent ye therefore, and be converted, that your sins may be blotted out, when the times of refreshing shall come from the presence of the Lord;"
 				},
 				{
@@ -431,6 +440,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And it came to pass on the morrow, that their rulers, and elders, and scribes,"
 				},
 				{
@@ -463,6 +473,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Now when they saw the boldness of Peter and John, and perceived that they were unlearned and ignorant men, they marvelled; and they took knowledge of them, that they had been with Jesus."
 				},
 				{
@@ -503,6 +514,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And being let go, they went to their own company, and reported all that the chief priests and elders had said unto them."
 				},
 				{
@@ -535,6 +547,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And when they had prayed, the place was shaken where they were assembled together; and they were all filled with the Holy Ghost, and they spake the word of God with boldness."
 				},
 				{
@@ -551,7 +564,7 @@
 				},
 				{
 					"verse": "35",
-					"text": "And laid them down at the apostles\u2019 feet: and distribution was made unto every man according as he had need."
+					"text": "And laid them down at the apostles’ feet: and distribution was made unto every man according as he had need."
 				},
 				{
 					"verse": "36",
@@ -559,7 +572,7 @@
 				},
 				{
 					"verse": "37",
-					"text": "Having land, sold it, and brought the money, and laid it at the apostles\u2019 feet."
+					"text": "Having land, sold it, and brought the money, and laid it at the apostles’ feet."
 				}
 			]
 		},
@@ -572,7 +585,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "And kept back part of the price, his wife also being privy to it, and brought a certain part, and laid it at the apostles\u2019 feet."
+					"text": "And kept back part of the price, his wife also being privy to it, and brought a certain part, and laid it at the apostles’ feet."
 				},
 				{
 					"verse": "3",
@@ -612,7 +625,8 @@
 				},
 				{
 					"verse": "12",
-					"text": "And by the hands of the apostles were many signs and wonders wrought among the people; (and they were all with one accord in Solomon\u2019s porch."
+					"paragraph": true,
+					"text": "And by the hands of the apostles were many signs and wonders wrought among the people; (and they were all with one accord in Solomon’s porch."
 				},
 				{
 					"verse": "13",
@@ -632,6 +646,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Then the high priest rose up, and all they that were with him, (which is the sect of the Sadducees,) and were filled with indignation,"
 				},
 				{
@@ -676,10 +691,11 @@
 				},
 				{
 					"verse": "28",
-					"text": "Saying, Did not we straitly command you that ye should not teach in this name? and, behold, ye have filled Jerusalem with your doctrine, and intend to bring this man\u2019s blood upon us."
+					"text": "Saying, Did not we straitly command you that ye should not teach in this name? and, behold, ye have filled Jerusalem with your doctrine, and intend to bring this man’s blood upon us."
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "Then Peter and the other apostles answered and said, We ought to obey God rather than men."
 				},
 				{
@@ -696,6 +712,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "When they heard that, they were cut to the heart, and took counsel to slay them."
 				},
 				{
@@ -728,6 +745,7 @@
 				},
 				{
 					"verse": "41",
+					"paragraph": true,
 					"text": "And they departed from the presence of the council, rejoicing that they were counted worthy to suffer shame for his name."
 				},
 				{
@@ -757,6 +775,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And the saying pleased the whole multitude: and they chose Stephen, a man full of faith and of the Holy Ghost, and Philip, and Prochorus, and Nicanor, and Timon, and Parmenas, and Nicolas a proselyte of Antioch:"
 				},
 				{
@@ -773,6 +792,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Then there arose certain of the synagogue, which is called the synagogue of the Libertines, and Cyrenians, and Alexandrians, and of them of Cilicia and of Asia, disputing with Stephen."
 				},
 				{
@@ -854,7 +874,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "And at the second time Joseph was made known to his brethren; and Joseph\u2019s kindred was made known unto Pharaoh."
+					"text": "And at the second time Joseph was made known to his brethren; and Joseph’s kindred was made known unto Pharaoh."
 				},
 				{
 					"verse": "14",
@@ -882,11 +902,11 @@
 				},
 				{
 					"verse": "20",
-					"text": "In which time Moses was born, and was exceeding fair, and nourished up in his father\u2019s house three months:"
+					"text": "In which time Moses was born, and was exceeding fair, and nourished up in his father’s house three months:"
 				},
 				{
 					"verse": "21",
-					"text": "And when he was cast out, Pharaoh\u2019s daughter took him up, and nourished him for her own son."
+					"text": "And when he was cast out, Pharaoh’s daughter took him up, and nourished him for her own son."
 				},
 				{
 					"verse": "22",
@@ -950,6 +970,7 @@
 				},
 				{
 					"verse": "37",
+					"paragraph": true,
 					"text": "This is that Moses, which said unto the children of Israel, A prophet shall the Lord your God raise up unto you of your brethren, like unto me; him shall ye hear."
 				},
 				{
@@ -988,7 +1009,10 @@
 					"verse": "46",
 					"text": "Who found favour before God, and desired to find a tabernacle for the God of Jacob."
 				},
-				{ "verse": "47", "text": "But Solomon built him an house." },
+				{
+					"verse": "47",
+					"text": "But Solomon built him an house."
+				},
 				{
 					"verse": "48",
 					"text": "Howbeit the most High dwelleth not in temples made with hands; as saith the prophet,"
@@ -997,9 +1021,13 @@
 					"verse": "49",
 					"text": "Heaven is my throne, and earth is my footstool: what house will ye build me? saith the Lord: or what is the place of my rest?"
 				},
-				{ "verse": "50", "text": "Hath not my hand made all these things?" },
+				{
+					"verse": "50",
+					"text": "Hath not my hand made all these things?"
+				},
 				{
 					"verse": "51",
+					"paragraph": true,
 					"text": "Ye stiffnecked and uncircumcised in heart and ears, ye do always resist the Holy Ghost: as your fathers did, so do ye."
 				},
 				{
@@ -1012,6 +1040,7 @@
 				},
 				{
 					"verse": "54",
+					"paragraph": true,
 					"text": "When they heard these things, they were cut to the heart, and they gnashed on him with their teeth."
 				},
 				{
@@ -1028,7 +1057,7 @@
 				},
 				{
 					"verse": "58",
-					"text": "And cast him out of the city, and stoned him: and the witnesses laid down their clothes at a young man\u2019s feet, whose name was Saul."
+					"text": "And cast him out of the city, and stoned him: and the witnesses laid down their clothes at a young man’s feet, whose name was Saul."
 				},
 				{
 					"verse": "59",
@@ -1071,7 +1100,10 @@
 					"verse": "7",
 					"text": "For unclean spirits, crying with loud voice, came out of many that were possessed with them: and many taken with palsies, and that were lame, were healed."
 				},
-				{ "verse": "8", "text": "And there was great joy in that city." },
+				{
+					"verse": "8",
+					"text": "And there was great joy in that city."
+				},
 				{
 					"verse": "9",
 					"text": "But there was a certain man, called Simon, which beforetime in the same city used sorcery, and bewitched the people of Samaria, giving out that himself was some great one:"
@@ -1110,7 +1142,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "And when Simon saw that through laying on of the apostles\u2019 hands the Holy Ghost was given, he offered them money,"
+					"text": "And when Simon saw that through laying on of the apostles’ hands the Holy Ghost was given, he offered them money,"
 				},
 				{
 					"verse": "19",
@@ -1243,6 +1275,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And there was a certain disciple at Damascus, named Ananias; and to him said the Lord in a vision, Ananias. And he said, Behold, I am here, Lord."
 				},
 				{
@@ -1267,7 +1300,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "For I will shew him how great things he must suffer for my name\u2019s sake."
+					"text": "For I will shew him how great things he must suffer for my name’s sake."
 				},
 				{
 					"verse": "17",
@@ -1295,6 +1328,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And after that many days were fulfilled, the Jews took counsel to kill him:"
 				},
 				{
@@ -1331,6 +1365,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "And it came to pass, as Peter passed throughout all quarters, he came down also to the saints which dwelt at Lydda."
 				},
 				{
@@ -1416,6 +1451,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "On the morrow, as they went on their journey, and drew nigh unto the city, Peter went up upon the housetop to pray about the sixth hour:"
 				},
 				{
@@ -1448,7 +1484,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "Now while Peter doubted in himself what this vision which he had seen should mean, behold, the men which were sent from Cornelius had made enquiry for Simon\u2019s house, and stood before the gate,"
+					"text": "Now while Peter doubted in himself what this vision which he had seen should mean, behold, the men which were sent from Cornelius had made enquiry for Simon’s house, and stood before the gate,"
 				},
 				{
 					"verse": "18",
@@ -1456,6 +1492,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "While Peter thought on the vision, the Spirit said unto him, Behold, three men seek thee."
 				},
 				{
@@ -1516,6 +1553,7 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "Then Peter opened his mouth, and said, Of a truth I perceive that God is no respecter of persons:"
 				},
 				{
@@ -1556,6 +1594,7 @@
 				},
 				{
 					"verse": "44",
+					"paragraph": true,
 					"text": "While Peter yet spake these words, the Holy Ghost fell on all them which heard the word."
 				},
 				{
@@ -1625,7 +1664,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "And the Spirit bade me go with them, nothing doubting. Moreover these six brethren accompanied me, and we entered into the man\u2019s house:"
+					"text": "And the Spirit bade me go with them, nothing doubting. Moreover these six brethren accompanied me, and we entered into the man’s house:"
 				},
 				{
 					"verse": "13",
@@ -1653,6 +1692,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Now they which were scattered abroad upon the persecution that arose about Stephen travelled as far as Phenice, and Cyprus, and Antioch, preaching the word to none but unto the Jews only."
 				},
 				{
@@ -1665,6 +1705,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Then tidings of these things came unto the ears of the church which was in Jerusalem: and they sent forth Barnabas, that he should go as far as Antioch."
 				},
 				{
@@ -1685,6 +1726,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And in these days came prophets from Jerusalem unto Antioch."
 				},
 				{
@@ -1758,7 +1800,7 @@
 				},
 				{
 					"verse": "14",
-					"text": "And when she knew Peter\u2019s voice, she opened not the gate for gladness, but ran in, and told how Peter stood before the gate."
+					"text": "And when she knew Peter’s voice, she opened not the gate for gladness, but ran in, and told how Peter stood before the gate."
 				},
 				{
 					"verse": "15",
@@ -1782,7 +1824,8 @@
 				},
 				{
 					"verse": "20",
-					"text": "And Herod was highly displeased with them of Tyre and Sidon: but they came with one accord to him, and, having made Blastus the king\u2019s chamberlain their friend, desired peace; because their country was nourished by the king\u2019s country."
+					"paragraph": true,
+					"text": "And Herod was highly displeased with them of Tyre and Sidon: but they came with one accord to him, and, having made Blastus the king’s chamberlain their friend, desired peace; because their country was nourished by the king’s country."
 				},
 				{
 					"verse": "21",
@@ -1796,7 +1839,11 @@
 					"verse": "23",
 					"text": "And immediately the angel of the Lord smote him, because he gave not God the glory: and he was eaten of worms, and gave up the ghost."
 				},
-				{ "verse": "24", "text": "But the word of God grew and multiplied." },
+				{
+					"verse": "24",
+					"paragraph": true,
+					"text": "But the word of God grew and multiplied."
+				},
 				{
 					"verse": "25",
 					"text": "And Barnabas and Saul returned from Jerusalem, when they had fulfilled their ministry, and took with them John, whose surname was Mark."
@@ -1820,6 +1867,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "So they, being sent forth by the Holy Ghost, departed unto Seleucia; and from thence they sailed to Cyprus."
 				},
 				{
@@ -1860,6 +1908,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "But when they departed from Perga, they came to Antioch in Pisidia, and went into the synagogue on the sabbath day, and sat down."
 				},
 				{
@@ -1896,7 +1945,7 @@
 				},
 				{
 					"verse": "23",
-					"text": "Of this man\u2019s seed hath God according to his promise raised unto Israel a Saviour, Jesus:"
+					"text": "Of this man’s seed hath God according to his promise raised unto Israel a Saviour, Jesus:"
 				},
 				{
 					"verse": "24",
@@ -1922,7 +1971,10 @@
 					"verse": "29",
 					"text": "And when they had fulfilled all that was written of him, they took him down from the tree, and laid him in a sepulchre."
 				},
-				{ "verse": "30", "text": "But God raised him from the dead:" },
+				{
+					"verse": "30",
+					"text": "But God raised him from the dead:"
+				},
 				{
 					"verse": "31",
 					"text": "And he was seen many days of them which came up with him from Galilee to Jerusalem, who are his witnesses unto the people."
@@ -1953,6 +2005,7 @@
 				},
 				{
 					"verse": "38",
+					"paragraph": true,
 					"text": "Be it known unto you therefore, men and brethren, that through this man is preached unto you the forgiveness of sins:"
 				},
 				{
@@ -1977,6 +2030,7 @@
 				},
 				{
 					"verse": "44",
+					"paragraph": true,
 					"text": "And the next sabbath day came almost the whole city together to hear the word of God."
 				},
 				{
@@ -2040,10 +2094,14 @@
 					"verse": "6",
 					"text": "They were ware of it, and fled unto Lystra and Derbe, cities of Lycaonia, and unto the region that lieth round about:"
 				},
-				{ "verse": "7", "text": "And there they preached the gospel." },
+				{
+					"verse": "7",
+					"text": "And there they preached the gospel."
+				},
 				{
 					"verse": "8",
-					"text": "And there sat a certain man at Lystra, impotent in his feet, being a cripple from his mother\u2019s womb, who never had walked:"
+					"paragraph": true,
+					"text": "And there sat a certain man at Lystra, impotent in his feet, being a cripple from his mother’s womb, who never had walked:"
 				},
 				{
 					"verse": "9",
@@ -2087,6 +2145,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And there came thither certain Jews from Antioch and Iconium, who persuaded the people, and, having stoned Paul, drew him out of the city, supposing he had been dead."
 				},
 				{
@@ -2152,6 +2211,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And the apostles and elders came together for to consider of this matter."
 				},
 				{
@@ -2176,10 +2236,12 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Then all the multitude kept silence, and gave audience to Barnabas and Paul, declaring what miracles and wonders God had wrought among the Gentiles by them."
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And after they had held their peace, James answered, saying, Men and brethren, hearken unto me:"
 				},
 				{
@@ -2272,6 +2334,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "And some days after Paul said unto Barnabas, Let us go again and visit our brethren in every city where we have preached the word of the LORD, and see how they do."
 				},
 				{
@@ -2353,6 +2416,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And a certain woman named Lydia, a seller of purple, of the city of Thyatira, which worshipped God, heard us: whose heart the Lord opened, that she attended unto the things which were spoken of Paul."
 				},
 				{
@@ -2361,6 +2425,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And it came to pass, as we went to prayer, a certain damsel possessed with a spirit of divination met us, which brought her masters much gain by soothsaying:"
 				},
 				{
@@ -2373,6 +2438,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And when her masters saw that the hope of their gains was gone, they caught Paul and Silas, and drew them into the marketplace unto the rulers,"
 				},
 				{
@@ -2397,11 +2463,12 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And at midnight Paul and Silas prayed, and sang praises unto God: and the prisoners heard them."
 				},
 				{
 					"verse": "26",
-					"text": "And suddenly there was a great earthquake, so that the foundations of the prison were shaken: and immediately all the doors were opened, and every one\u2019s bands were loosed."
+					"text": "And suddenly there was a great earthquake, so that the foundations of the prison were shaken: and immediately all the doors were opened, and every one’s bands were loosed."
 				},
 				{
 					"verse": "27",
@@ -2482,6 +2549,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "But the Jews which believed not, moved with envy, took unto them certain lewd fellows of the baser sort, and gathered a company, and set all the city on an uproar, and assaulted the house of Jason, and sought to bring them out to the people."
 				},
 				{
@@ -2502,6 +2570,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And the brethren immediately sent away Paul and Silas by night unto Berea: who coming thither went into the synagogue of the Jews."
 				},
 				{
@@ -2526,6 +2595,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Now while Paul waited for them at Athens, his spirit was stirred in him, when he saw the city wholly given to idolatry."
 				},
 				{
@@ -2550,7 +2620,8 @@
 				},
 				{
 					"verse": "22",
-					"text": "Then Paul stood in the midst of Mars\u2019 hill, and said, Ye men of Athens, I perceive that in all things ye are too superstitious."
+					"paragraph": true,
+					"text": "Then Paul stood in the midst of Mars’ hill, and said, Ye men of Athens, I perceive that in all things ye are too superstitious."
 				},
 				{
 					"verse": "23",
@@ -2562,7 +2633,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "Neither is worshipped with men\u2019s hands, as though he needed any thing, seeing he giveth to all life, and breath, and all things;"
+					"text": "Neither is worshipped with men’s hands, as though he needed any thing, seeing he giveth to all life, and breath, and all things;"
 				},
 				{
 					"verse": "26",
@@ -2578,7 +2649,7 @@
 				},
 				{
 					"verse": "29",
-					"text": "Forasmuch then as we are the offspring of God, we ought not to think that the Godhead is like unto gold, or silver, or stone, graven by art and man\u2019s device."
+					"text": "Forasmuch then as we are the offspring of God, we ought not to think that the Godhead is like unto gold, or silver, or stone, graven by art and man’s device."
 				},
 				{
 					"verse": "30",
@@ -2590,9 +2661,13 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "And when they heard of the resurrection of the dead, some mocked: and others said, We will hear thee again of this matter."
 				},
-				{ "verse": "33", "text": "So Paul departed from among them." },
+				{
+					"verse": "33",
+					"text": "So Paul departed from among them."
+				},
 				{
 					"verse": "34",
 					"text": "Howbeit certain men clave unto him, and believed: among the which was Dionysius the Areopagite, and a woman named Damaris, and others with them."
@@ -2628,7 +2703,8 @@
 				},
 				{
 					"verse": "7",
-					"text": "And he departed thence, and entered into a certain man\u2019s house, named Justus, one that worshipped God, whose house joined hard to the synagogue."
+					"paragraph": true,
+					"text": "And he departed thence, and entered into a certain man’s house, named Justus, one that worshipped God, whose house joined hard to the synagogue."
 				},
 				{
 					"verse": "8",
@@ -2648,6 +2724,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And when Gallio was the deputy of Achaia, the Jews made insurrection with one accord against Paul, and brought him to the judgment seat,"
 				},
 				{
@@ -2662,13 +2739,17 @@
 					"verse": "15",
 					"text": "But if it be a question of words and names, and of your law, look ye to it; for I will be no judge of such matters."
 				},
-				{ "verse": "16", "text": "And he drave them from the judgment seat." },
+				{
+					"verse": "16",
+					"text": "And he drave them from the judgment seat."
+				},
 				{
 					"verse": "17",
 					"text": "Then all the Greeks took Sosthenes, the chief ruler of the synagogue, and beat him before the judgment seat. And Gallio cared for none of those things."
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And Paul after this tarried there yet a good while, and then took his leave of the brethren, and sailed thence into Syria, and with him Priscilla and Aquila; having shorn his head in Cenchrea: for he had a vow."
 				},
 				{
@@ -2693,6 +2774,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And a certain Jew named Apollos, born at Alexandria, an eloquent man, and mighty in the scriptures, came to Ephesus."
 				},
 				{
@@ -2726,7 +2808,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "And he said unto them, Unto what then were ye baptized? And they said, Unto John\u2019s baptism."
+					"text": "And he said unto them, Unto what then were ye baptized? And they said, Unto John’s baptism."
 				},
 				{
 					"verse": "4",
@@ -2740,7 +2822,10 @@
 					"verse": "6",
 					"text": "And when Paul had laid his hands upon them, the Holy Ghost came on them; and they spake with tongues, and prophesied."
 				},
-				{ "verse": "7", "text": "And all the men were about twelve." },
+				{
+					"verse": "7",
+					"text": "And all the men were about twelve."
+				},
 				{
 					"verse": "8",
 					"text": "And he went into the synagogue, and spake boldly for the space of three months, disputing and persuading the things concerning the kingdom of God."
@@ -2763,6 +2848,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Then certain of the vagabond Jews, exorcists, took upon them to call over them which had evil spirits the name of the LORD Jesus, saying, We adjure you by Jesus whom Paul preacheth."
 				},
 				{
@@ -2795,6 +2881,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "After these things were ended, Paul purposed in the spirit, when he had passed through Macedonia and Achaia, to go to Jerusalem, saying, After I have been there, I must also see Rome."
 				},
 				{
@@ -2827,7 +2914,7 @@
 				},
 				{
 					"verse": "29",
-					"text": "And the whole city was filled with confusion: and having caught Gaius and Aristarchus, men of Macedonia, Paul\u2019s companions in travel, they rushed with one accord into the theatre."
+					"text": "And the whole city was filled with confusion: and having caught Gaius and Aristarchus, men of Macedonia, Paul’s companions in travel, they rushed with one accord into the theatre."
 				},
 				{
 					"verse": "30",
@@ -2871,7 +2958,7 @@
 				},
 				{
 					"verse": "40",
-					"text": "For we are in danger to be called in question for this day\u2019s uproar, there being no cause whereby we may give an account of this concourse."
+					"text": "For we are in danger to be called in question for this day’s uproar, there being no cause whereby we may give an account of this concourse."
 				},
 				{
 					"verse": "41",
@@ -2898,7 +2985,10 @@
 					"verse": "4",
 					"text": "And there accompanied him into Asia Sopater of Berea; and of the Thessalonians, Aristarchus and Secundus; and Gaius of Derbe, and Timotheus; and of Asia, Tychicus and Trophimus."
 				},
-				{ "verse": "5", "text": "These going before tarried for us at Troas." },
+				{
+					"verse": "5",
+					"text": "These going before tarried for us at Troas."
+				},
 				{
 					"verse": "6",
 					"text": "And we sailed away from Philippi after the days of unleavened bread, and came unto them to Troas in five days; where we abode seven days."
@@ -2929,6 +3019,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And we went before to ship, and sailed unto Assos, there intending to take in Paul: for so had he appointed, minding himself to go afoot."
 				},
 				{
@@ -2945,6 +3036,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And from Miletus he sent to Ephesus, and called the elders of the church."
 				},
 				{
@@ -2989,6 +3081,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "Take heed therefore unto yourselves, and to all the flock, over the which the Holy Ghost hath made you overseers, to feed the church of God, which he hath purchased with his own blood."
 				},
 				{
@@ -3009,7 +3102,7 @@
 				},
 				{
 					"verse": "33",
-					"text": "I have coveted no man\u2019s silver, or gold, or apparel."
+					"text": "I have coveted no man’s silver, or gold, or apparel."
 				},
 				{
 					"verse": "34",
@@ -3021,11 +3114,12 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "And when he had thus spoken, he kneeled down, and prayed with them all."
 				},
 				{
 					"verse": "37",
-					"text": "And they all wept sore, and fell on Paul\u2019s neck, and kissed him,"
+					"text": "And they all wept sore, and fell on Paul’s neck, and kissed him,"
 				},
 				{
 					"verse": "38",
@@ -3066,7 +3160,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "And the next day we that were of Paul\u2019s company departed, and came unto Caesarea: and we entered into the house of Philip the evangelist, which was one of the seven; and abode with him."
+					"text": "And the next day we that were of Paul’s company departed, and came unto Caesarea: and we entered into the house of Philip the evangelist, which was one of the seven; and abode with him."
 				},
 				{
 					"verse": "9",
@@ -3078,7 +3172,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "And when he was come unto us, he took Paul\u2019s girdle, and bound his own hands and feet, and said, Thus saith the Holy Ghost, So shall the Jews at Jerusalem bind the man that owneth this girdle, and shall deliver him into the hands of the Gentiles."
+					"text": "And when he was come unto us, he took Paul’s girdle, and bound his own hands and feet, and said, Thus saith the Holy Ghost, So shall the Jews at Jerusalem bind the man that owneth this girdle, and shall deliver him into the hands of the Gentiles."
 				},
 				{
 					"verse": "12",
@@ -3094,6 +3188,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And after those days we took up our carriages, and went up to Jerusalem."
 				},
 				{
@@ -3142,6 +3237,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And when the seven days were almost ended, the Jews which were of Asia, when they saw him in the temple, stirred up all the people, and laid hands on him,"
 				},
 				{
@@ -3340,7 +3436,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "And they that stood by said, Revilest thou God\u2019s high priest?"
+					"text": "And they that stood by said, Revilest thou God’s high priest?"
 				},
 				{
 					"verse": "5",
@@ -3360,7 +3456,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "And there arose a great cry: and the scribes that were of the Pharisees\u2019 part arose, and strove, saying, We find no evil in this man: but if a spirit or an angel hath spoken to him, let us not fight against God."
+					"text": "And there arose a great cry: and the scribes that were of the Pharisees’ part arose, and strove, saying, We find no evil in this man: but if a spirit or an angel hath spoken to him, let us not fight against God."
 				},
 				{
 					"verse": "10",
@@ -3388,7 +3484,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "And when Paul\u2019s sister\u2019s son heard of their lying in wait, he went and entered into the castle, and told Paul."
+					"text": "And when Paul’s sister’s son heard of their lying in wait, he went and entered into the castle, and told Paul."
 				},
 				{
 					"verse": "17",
@@ -3422,7 +3518,10 @@
 					"verse": "24",
 					"text": "And provide them beasts, that they may set Paul on, and bring him safe unto Felix the governor."
 				},
-				{ "verse": "25", "text": "And he wrote a letter after this manner:" },
+				{
+					"verse": "25",
+					"text": "And he wrote a letter after this manner:"
+				},
 				{
 					"verse": "26",
 					"text": "Claudius Lysias unto the most excellent governor Felix sendeth greeting."
@@ -3461,7 +3560,7 @@
 				},
 				{
 					"verse": "35",
-					"text": "I will hear thee, said he, when thine accusers are also come. And he commanded him to be kept in Herod\u2019s judgment hall."
+					"text": "I will hear thee, said he, when thine accusers are also come. And he commanded him to be kept in Herod’s judgment hall."
 				}
 			]
 		},
@@ -3554,6 +3653,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And when Felix heard these things, having more perfect knowledge of that way, he deferred them, and said, When Lysias the chief captain shall come down, I will know the uttermost of your matter."
 				},
 				{
@@ -3562,6 +3662,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And after certain days, when Felix came with his wife Drusilla, which was a Jewess, he sent for Paul, and heard him concerning the faith in Christ."
 				},
 				{
@@ -3574,7 +3675,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "But after two years Porcius Festus came into Felix\u2019 room: and Felix, willing to shew the Jews a pleasure, left Paul bound."
+					"text": "But after two years Porcius Festus came into Felix’ room: and Felix, willing to shew the Jews a pleasure, left Paul bound."
 				}
 			]
 		},
@@ -3619,7 +3720,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "Then said Paul, I stand at Caesar\u2019s judgment seat, where I ought to be judged: to the Jews have I done no wrong, as thou very well knowest."
+					"text": "Then said Paul, I stand at Caesar’s judgment seat, where I ought to be judged: to the Jews have I done no wrong, as thou very well knowest."
 				},
 				{
 					"verse": "11",
@@ -3631,11 +3732,12 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And after certain days king Agrippa and Bernice came unto Caesarea to salute Festus."
 				},
 				{
 					"verse": "14",
-					"text": "And when they had been there many days, Festus declared Paul\u2019s cause unto the king, saying, There is a certain man left in bonds by Felix:"
+					"text": "And when they had been there many days, Festus declared Paul’s cause unto the king, saying, There is a certain man left in bonds by Felix:"
 				},
 				{
 					"verse": "15",
@@ -3671,7 +3773,8 @@
 				},
 				{
 					"verse": "23",
-					"text": "And on the morrow, when Agrippa was come, and Bernice, with great pomp, and was entered into the place of hearing, with the chief captains, and principal men of the city, at Festus\u2019 commandment Paul was brought forth."
+					"paragraph": true,
+					"text": "And on the morrow, when Agrippa was come, and Bernice, with great pomp, and was entered into the place of hearing, with the chief captains, and principal men of the city, at Festus’ commandment Paul was brought forth."
 				},
 				{
 					"verse": "24",
@@ -3720,7 +3823,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "Unto which promise our twelve tribes, instantly serving God day and night, hope to come. For which hope\u2019s sake, king Agrippa, I am accused of the Jews."
+					"text": "Unto which promise our twelve tribes, instantly serving God day and night, hope to come. For which hope’s sake, king Agrippa, I am accused of the Jews."
 				},
 				{
 					"verse": "8",
@@ -3788,6 +3891,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And as he thus spake for himself, Festus said with a loud voice, Paul, thou art beside thyself; much learning doth make thee mad."
 				},
 				{
@@ -3829,7 +3933,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "And when it was determined that we should sail into Italy, they delivered Paul and certain other prisoners unto one named Julius, a centurion of Augustus\u2019 band."
+					"text": "And when it was determined that we should sail into Italy, they delivered Paul and certain other prisoners unto one named Julius, a centurion of Augustus’ band."
 				},
 				{
 					"verse": "2",
@@ -3861,6 +3965,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Now when much time was spent, and when sailing was now dangerous, because the fast was now already past, Paul admonished them,"
 				},
 				{
@@ -3913,7 +4018,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "And now I exhort you to be of good cheer: for there shall be no loss of any man\u2019s life among you, but of the ship."
+					"text": "And now I exhort you to be of good cheer: for there shall be no loss of any man’s life among you, but of the ship."
 				},
 				{
 					"verse": "23",
@@ -3993,7 +4098,7 @@
 				},
 				{
 					"verse": "42",
-					"text": "And the soldiers\u2019 counsel was to kill the prisoners, lest any of them should swim out, and escape."
+					"text": "And the soldiers’ counsel was to kill the prisoners, lest any of them should swim out, and escape."
 				},
 				{
 					"verse": "43",
@@ -4034,6 +4139,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "In the same quarters were possessions of the chief man of the island, whose name was Publius; who received us, and lodged us three days courteously."
 				},
 				{
@@ -4050,6 +4156,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And after three months we departed in a ship of Alexandria, which had wintered in the isle, whose sign was Castor and Pollux."
 				},
 				{
@@ -4074,6 +4181,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And it came to pass, that after three days Paul called the chief of the Jews together: and when they were come together, he said unto them, Men and brethren, though I have committed nothing against the people, or customs of our fathers, yet was I delivered prisoner from Jerusalem into the hands of the Romans."
 				},
 				{
@@ -4126,6 +4234,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "And Paul dwelt two whole years in his own hired house, and received all that came in unto him,"
 				},
 				{

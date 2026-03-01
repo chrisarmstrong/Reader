@@ -39,11 +39,12 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "I John, who also am your brother, and companion in tribulation, and in the kingdom and patience of Jesus Christ, was in the isle that is called Patmos, for the word of God, and for the testimony of Jesus Christ."
 				},
 				{
 					"verse": "10",
-					"text": "I was in the Spirit on the Lord\u2019s day, and heard behind me a great voice, as of a trumpet,"
+					"text": "I was in the Spirit on the Lord’s day, and heard behind me a great voice, as of a trumpet,"
 				},
 				{
 					"verse": "11",
@@ -79,6 +80,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Write the things which thou hast seen, and the things which are, and the things which shall be hereafter;"
 				},
 				{
@@ -100,7 +102,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "And hast borne, and hast patience, and for my name\u2019s sake hast laboured, and hast not fainted."
+					"text": "And hast borne, and hast patience, and for my name’s sake hast laboured, and hast not fainted."
 				},
 				{
 					"verse": "4",
@@ -120,6 +122,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And unto the angel of the church in Smyrna write; These things saith the first and the last, which was dead, and is alive;"
 				},
 				{
@@ -136,11 +139,12 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And to the angel of the church in Pergamos write; These things saith he which hath the sharp sword with two edges;"
 				},
 				{
 					"verse": "13",
-					"text": "I know thy works, and where thou dwellest, even where Satan\u2019s seat is: and thou holdest fast my name, and hast not denied my faith, even in those days wherein Antipas was my faithful martyr, who was slain among you, where Satan dwelleth."
+					"text": "I know thy works, and where thou dwellest, even where Satan’s seat is: and thou holdest fast my name, and hast not denied my faith, even in those days wherein Antipas was my faithful martyr, who was slain among you, where Satan dwelleth."
 				},
 				{
 					"verse": "14",
@@ -160,6 +164,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And unto the angel of the church in Thyatira write; These things saith the Son of God, who hath his eyes like unto a flame of fire, and his feet are like fine brass;"
 				},
 				{
@@ -198,7 +203,10 @@
 					"verse": "27",
 					"text": "And he shall rule them with a rod of iron; as the vessels of a potter shall they be broken to shivers: even as I received of my Father."
 				},
-				{ "verse": "28", "text": "And I will give him the morning star." },
+				{
+					"verse": "28",
+					"text": "And I will give him the morning star."
+				},
 				{
 					"verse": "29",
 					"text": "He that hath an ear, let him hear what the Spirit saith unto the churches."
@@ -234,6 +242,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And to the angel of the church in Philadelphia write; These things saith he that is holy, he that is true, he that hath the key of David, he that openeth, and no man shutteth; and shutteth, and no man openeth;"
 				},
 				{
@@ -262,6 +271,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And unto the angel of the church of the Laodiceans write; These things saith the Amen, the faithful and true witness, the beginning of the creation of God;"
 				},
 				{
@@ -571,7 +581,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "And the smoke of the incense, which came with the prayers of the saints, ascended up before God out of the angel\u2019s hand."
+					"text": "And the smoke of the incense, which came with the prayers of the saints, ascended up before God out of the angel’s hand."
 				},
 				{
 					"verse": "5",
@@ -583,6 +593,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "The first angel sounded, and there followed hail and fire mingled with blood, and they were cast upon the earth: and the third part of trees was burnt up, and all green grass was burnt up."
 				},
 				{
@@ -607,6 +618,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And I beheld, and heard an angel flying through the midst of heaven, saying with a loud voice, Woe, woe, woe, to the inhabiters of the earth by reason of the other voices of the trumpet of the three angels, which are yet to sound!"
 				}
 			]
@@ -664,6 +676,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And the sixth angel sounded, and I heard a voice from the four horns of the golden altar which is before God,"
 				},
 				{
@@ -741,7 +754,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "And I took the little book out of the angel\u2019s hand, and ate it up; and it was in my mouth sweet as honey: and as soon as I had eaten it, my belly was bitter."
+					"text": "And I took the little book out of the angel’s hand, and ate it up; and it was in my mouth sweet as honey: and as soon as I had eaten it, my belly was bitter."
 				},
 				{
 					"verse": "11",
@@ -938,7 +951,10 @@
 					"verse": "8",
 					"text": "And all that dwell upon the earth shall worship him, whose names are not written in the book of life of the Lamb slain from the foundation of the world."
 				},
-				{ "verse": "9", "text": "If any man have an ear, let him hear." },
+				{
+					"verse": "9",
+					"text": "If any man have an ear, let him hear."
+				},
 				{
 					"verse": "10",
 					"text": "He that leadeth into captivity shall go into captivity: he that killeth with the sword must be killed with the sword. Here is the patience and the faith of the saints."
@@ -982,7 +998,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "And I looked, and, lo, a Lamb stood on the mount Sion, and with him an hundred forty and four thousand, having his Father\u2019s name written in their foreheads."
+					"text": "And I looked, and, lo, a Lamb stood on the mount Sion, and with him an hundred forty and four thousand, having his Father’s name written in their foreheads."
 				},
 				{
 					"verse": "2",
@@ -1002,6 +1018,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And I saw another angel fly in the midst of heaven, having the everlasting gospel to preach unto them that dwell on the earth, and to every nation, and kindred, and tongue, and people,"
 				},
 				{
@@ -1034,6 +1051,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And I looked, and behold a white cloud, and upon the cloud one sat like unto the Son of man, having on his head a golden crown, and in his hand a sharp sickle."
 				},
 				{
@@ -1435,6 +1453,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And I saw an angel standing in the sun; and he cried with a loud voice, saying to all the fowls that fly in the midst of heaven, Come and gather yourselves together unto the supper of the great God;"
 				},
 				{
@@ -1500,6 +1519,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And I saw a great white throne, and him that sat on it, from whose face the earth and the heaven fled away; and there was found no place for them."
 				},
 				{
@@ -1557,7 +1577,8 @@
 				},
 				{
 					"verse": "9",
-					"text": "And there came unto me one of the seven angels which had the seven vials full of the seven last plagues, and talked with me, saying, Come hither, I will shew thee the bride, the Lamb\u2019s wife."
+					"paragraph": true,
+					"text": "And there came unto me one of the seven angels which had the seven vials full of the seven last plagues, and talked with me, saying, Come hither, I will shew thee the bride, the Lamb’s wife."
 				},
 				{
 					"verse": "10",
@@ -1629,7 +1650,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "And there shall in no wise enter into it any thing that defileth, neither whatsoever worketh abomination, or maketh a lie: but they which are written in the Lamb\u2019s book of life."
+					"text": "And there shall in no wise enter into it any thing that defileth, neither whatsoever worketh abomination, or maketh a lie: but they which are written in the Lamb’s book of life."
 				}
 			]
 		},
@@ -1658,6 +1679,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And he said unto me, These sayings are faithful and true: and the Lord God of the holy prophets sent his angel to shew unto his servants the things which must shortly be done."
 				},
 				{
@@ -1698,14 +1720,17 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "I Jesus have sent mine angel to testify unto you these things in the churches. I am the root and the offspring of David, and the bright and morning star."
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And the Spirit and the bride say, Come. And let him that heareth say, Come. And let him that is athirst come. And whosoever will, let him take the water of life freely."
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "For I testify unto every man that heareth the words of the prophecy of this book, If any man shall add unto these things, God shall add unto him the plagues that are written in this book:"
 				},
 				{
@@ -1714,10 +1739,12 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "He which testifieth these things saith, Surely I come quickly. Amen. Even so, come, Lord Jesus."
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "The grace of our Lord Jesus Christ be with you all. Amen."
 				}
 			]

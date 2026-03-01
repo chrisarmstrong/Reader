@@ -21,9 +21,13 @@
 					"verse": "4",
 					"text": "Who gave himself for our sins, that he might deliver us from this present evil world, according to the will of God and our Father:"
 				},
-				{ "verse": "5", "text": "To whom be glory for ever and ever. Amen." },
+				{
+					"verse": "5",
+					"text": "To whom be glory for ever and ever. Amen."
+				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "I marvel that ye are so soon removed from him that called you into the grace of Christ unto another gospel:"
 				},
 				{
@@ -40,6 +44,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "For do I now persuade men, or God? or do I seek to please men? for if I yet pleased men, I should not be the servant of Christ."
 				},
 				{
@@ -52,15 +57,15 @@
 				},
 				{
 					"verse": "13",
-					"text": "For ye have heard of my conversation in time past in the Jews\u2019 religion, how that beyond measure I persecuted the church of God, and wasted it:"
+					"text": "For ye have heard of my conversation in time past in the Jews’ religion, how that beyond measure I persecuted the church of God, and wasted it:"
 				},
 				{
 					"verse": "14",
-					"text": "And profited in the Jews\u2019 religion above many my equals in mine own nation, being more exceedingly zealous of the traditions of my fathers."
+					"text": "And profited in the Jews’ religion above many my equals in mine own nation, being more exceedingly zealous of the traditions of my fathers."
 				},
 				{
 					"verse": "15",
-					"text": "But when it pleased God, who separated me from my mother\u2019s womb, and called me by his grace,"
+					"text": "But when it pleased God, who separated me from my mother’s womb, and called me by his grace,"
 				},
 				{
 					"verse": "16",
@@ -76,7 +81,7 @@
 				},
 				{
 					"verse": "19",
-					"text": "But other of the apostles saw I none, save James the Lord\u2019s brother."
+					"text": "But other of the apostles saw I none, save James the Lord’s brother."
 				},
 				{
 					"verse": "20",
@@ -94,7 +99,10 @@
 					"verse": "23",
 					"text": "But they had heard only, That he which persecuted us in times past now preacheth the faith which once he destroyed."
 				},
-				{ "verse": "24", "text": "And they glorified God in me." }
+				{
+					"verse": "24",
+					"text": "And they glorified God in me."
+				}
 			]
 		},
 		{
@@ -122,7 +130,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "But of these who seemed to be somewhat, (whatsoever they were, it maketh no matter to me: God accepteth no man\u2019s person:) for they who seemed to be somewhat in conference added nothing to me:"
+					"text": "But of these who seemed to be somewhat, (whatsoever they were, it maketh no matter to me: God accepteth no man’s person:) for they who seemed to be somewhat in conference added nothing to me:"
 				},
 				{
 					"verse": "7",
@@ -215,6 +223,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Know ye therefore that they which are of faith, the same are the children of Abraham."
 				},
 				{
@@ -247,7 +256,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "Brethren, I speak after the manner of men; Though it be but a man\u2019s covenant, yet if it be confirmed, no man disannulleth, or addeth thereto."
+					"text": "Brethren, I speak after the manner of men; Though it be but a man’s covenant, yet if it be confirmed, no man disannulleth, or addeth thereto."
 				},
 				{
 					"verse": "16",
@@ -279,6 +288,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "But before faith came, we were kept under the law, shut up unto the faith which should afterwards be revealed."
 				},
 				{
@@ -303,7 +313,7 @@
 				},
 				{
 					"verse": "29",
-					"text": "And if ye be Christ\u2019s, then are ye Abraham\u2019s seed, and heirs according to the promise."
+					"text": "And if ye be Christ’s, then are ye Abraham’s seed, and heirs according to the promise."
 				}
 			]
 		},
@@ -340,6 +350,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Howbeit then, when ye knew not God, ye did service unto them which by nature are no gods."
 				},
 				{
@@ -356,6 +367,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Brethren, I beseech you, be as I am; for I am as ye are: ye have not injured me at all."
 				},
 				{
@@ -392,6 +404,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Tell me, ye that desire to be under the law, do ye not hear the law?"
 				},
 				{
@@ -445,6 +458,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "Behold, I Paul say unto you, that if ye be circumcised, Christ shall profit you nothing."
 				},
 				{
@@ -471,7 +485,10 @@
 					"verse": "8",
 					"text": "This persuasion cometh not of him that calleth you."
 				},
-				{ "verse": "9", "text": "A little leaven leaveneth the whole lump." },
+				{
+					"verse": "9",
+					"text": "A little leaven leaveneth the whole lump."
+				},
 				{
 					"verse": "10",
 					"text": "I have confidence in you through the Lord, that ye will be none otherwise minded: but he that troubleth you shall bear his judgment, whosoever he be."
@@ -530,7 +547,7 @@
 				},
 				{
 					"verse": "24",
-					"text": "And they that are Christ\u2019s have crucified the flesh with the affections and lusts."
+					"text": "And they that are Christ’s have crucified the flesh with the affections and lusts."
 				},
 				{
 					"verse": "25",
@@ -551,7 +568,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "Bear ye one another\u2019s burdens, and so fulfil the law of Christ."
+					"text": "Bear ye one another’s burdens, and so fulfil the law of Christ."
 				},
 				{
 					"verse": "3",
@@ -561,7 +578,10 @@
 					"verse": "4",
 					"text": "But let every man prove his own work, and then shall he have rejoicing in himself alone, and not in another."
 				},
-				{ "verse": "5", "text": "For every man shall bear his own burden." },
+				{
+					"verse": "5",
+					"text": "For every man shall bear his own burden."
+				},
 				{
 					"verse": "6",
 					"text": "Let him that is taught in the word communicate unto him that teacheth in all good things."

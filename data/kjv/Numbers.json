@@ -23,30 +23,56 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And these are the names of the men that shall stand with you: of the tribe of Reuben; Elizur the son of Shedeur."
 				},
 				{
 					"verse": "6",
 					"text": "Of Simeon; Shelumiel the son of Zurishaddai."
 				},
-				{ "verse": "7", "text": "Of Judah; Nahshon the son of Amminadab." },
-				{ "verse": "8", "text": "Of Issachar; Nethaneel the son of Zuar." },
-				{ "verse": "9", "text": "Of Zebulun; Eliab the son of Helon." },
+				{
+					"verse": "7",
+					"text": "Of Judah; Nahshon the son of Amminadab."
+				},
+				{
+					"verse": "8",
+					"text": "Of Issachar; Nethaneel the son of Zuar."
+				},
+				{
+					"verse": "9",
+					"text": "Of Zebulun; Eliab the son of Helon."
+				},
 				{
 					"verse": "10",
 					"text": "Of the children of Joseph: of Ephraim; Elishama the son of Ammihud: of Manasseh; Gamaliel the son of Pedahzur."
 				},
-				{ "verse": "11", "text": "Of Benjamin; Abidan the son of Gideoni." },
-				{ "verse": "12", "text": "Of Dan; Ahiezer the son of Ammishaddai." },
-				{ "verse": "13", "text": "Of Asher; Pagiel the son of Ocran." },
-				{ "verse": "14", "text": "Of Gad; Eliasaph the son of Deuel." },
-				{ "verse": "15", "text": "Of Naphtali; Ahira the son of Enan." },
+				{
+					"verse": "11",
+					"text": "Of Benjamin; Abidan the son of Gideoni."
+				},
+				{
+					"verse": "12",
+					"text": "Of Dan; Ahiezer the son of Ammishaddai."
+				},
+				{
+					"verse": "13",
+					"text": "Of Asher; Pagiel the son of Ocran."
+				},
+				{
+					"verse": "14",
+					"text": "Of Gad; Eliasaph the son of Deuel."
+				},
+				{
+					"verse": "15",
+					"text": "Of Naphtali; Ahira the son of Enan."
+				},
 				{
 					"verse": "16",
 					"text": "These were the renowned of the congregation, princes of the tribes of their fathers, heads of thousands in Israel."
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And Moses and Aaron took these men which are expressed by their names:"
 				},
 				{
@@ -59,7 +85,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "And the children of Reuben, Israel\u2019s eldest son, by their generations, after their families, by the house of their fathers, according to the number of the names, by their polls, every male from twenty years old and upward, all that were able to go forth to war;"
+					"text": "And the children of Reuben, Israel’s eldest son, by their generations, after their families, by the house of their fathers, according to the number of the names, by their polls, every male from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
 					"verse": "21",
@@ -67,6 +93,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Of the children of Simeon, by their generations, after their families, by the house of their fathers, those that were numbered of them, according to the number of the names, by their polls, every male from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
@@ -75,6 +102,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Of the children of Gad, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
@@ -83,6 +111,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "Of the children of Judah, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
@@ -91,6 +120,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "Of the children of Issachar, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
@@ -99,6 +129,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "Of the children of Zebulun, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
@@ -107,6 +138,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "Of the children of Joseph, namely, of the children of Ephraim, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
@@ -115,6 +147,7 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "Of the children of Manasseh, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
@@ -123,6 +156,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "Of the children of Benjamin, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
@@ -131,6 +165,7 @@
 				},
 				{
 					"verse": "38",
+					"paragraph": true,
 					"text": "Of the children of Dan, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
@@ -139,6 +174,7 @@
 				},
 				{
 					"verse": "40",
+					"paragraph": true,
 					"text": "Of the children of Asher, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
@@ -147,6 +183,7 @@
 				},
 				{
 					"verse": "42",
+					"paragraph": true,
 					"text": "Of the children of Naphtali, throughout their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;"
 				},
 				{
@@ -167,6 +204,7 @@
 				},
 				{
 					"verse": "47",
+					"paragraph": true,
 					"text": "But the Levites after the tribe of their fathers were not numbered among them."
 				},
 				{
@@ -208,7 +246,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "Every man of the children of Israel shall pitch by his own standard, with the ensign of their father\u2019s house: far off about the tabernacle of the congregation shall they pitch."
+					"text": "Every man of the children of Israel shall pitch by his own standard, with the ensign of their father’s house: far off about the tabernacle of the congregation shall they pitch."
 				},
 				{
 					"verse": "3",
@@ -240,6 +278,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "On the south side shall be the standard of the camp of Reuben according to their armies: and the captain of the children of Reuben shall be Elizur the son of Shedeur."
 				},
 				{
@@ -268,10 +307,12 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Then the tabernacle of the congregation shall set forward with the camp of the Levites in the midst of the camp: as they encamp, so shall they set forward, every man in his place by their standards."
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "On the west side shall be the standard of the camp of Ephraim according to their armies: and the captain of the sons of Ephraim shall be Elishama the son of Ammihud."
 				},
 				{
@@ -300,6 +341,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "The standard of the camp of Dan shall be on the north side by their armies: and the captain of the children of Dan shall be Ahiezer the son of Ammishaddai."
 				},
 				{
@@ -316,6 +358,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "Then the tribe of Naphtali: and the captain of the children of Naphtali shall be Ahira the son of Enan."
 				},
 				{
@@ -328,6 +371,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "These are those which were numbered of the children of Israel by the house of their fathers: all those that were numbered of the camps throughout their hosts were six hundred thousand and three thousand and five hundred and fifty."
 				},
 				{
@@ -353,13 +397,17 @@
 				},
 				{
 					"verse": "3",
-					"text": "These are the names of the sons of Aaron, the priests which were anointed, whom he consecrated to minister in the priest\u2019s office."
+					"text": "These are the names of the sons of Aaron, the priests which were anointed, whom he consecrated to minister in the priest’s office."
 				},
 				{
 					"verse": "4",
-					"text": "And Nadab and Abihu died before the LORD, when they offered strange fire before the LORD, in the wilderness of Sinai, and they had no children: and Eleazar and Ithamar ministered in the priest\u2019s office in the sight of Aaron their father."
+					"text": "And Nadab and Abihu died before the LORD, when they offered strange fire before the LORD, in the wilderness of Sinai, and they had no children: and Eleazar and Ithamar ministered in the priest’s office in the sight of Aaron their father."
 				},
-				{ "verse": "5", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "5",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "6",
 					"text": "Bring the tribe of Levi near, and present them before Aaron the priest, that they may minister unto him."
@@ -378,9 +426,12 @@
 				},
 				{
 					"verse": "10",
-					"text": "And thou shalt appoint Aaron and his sons, and they shall wait on their priest\u2019s office: and the stranger that cometh nigh shall be put to death."
+					"text": "And thou shalt appoint Aaron and his sons, and they shall wait on their priest’s office: and the stranger that cometh nigh shall be put to death."
 				},
-				{ "verse": "11", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "11",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "12",
 					"text": "And I, behold, I have taken the Levites from among the children of Israel instead of all the firstborn that openeth the matrix among the children of Israel: therefore the Levites shall be mine;"
@@ -391,6 +442,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And the LORD spake unto Moses in the wilderness of Sinai, saying,"
 				},
 				{
@@ -443,6 +495,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And of Kohath was the family of the Amramites, and the family of the Izeharites, and the family of the Hebronites, and the family of the Uzzielites: these are the families of the Kohathites."
 				},
 				{
@@ -467,6 +520,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "Of Merari was the family of the Mahlites, and the family of the Mushites: these are the families of Merari."
 				},
 				{
@@ -487,6 +541,7 @@
 				},
 				{
 					"verse": "38",
+					"paragraph": true,
 					"text": "But those that encamp before the tabernacle toward the east, even before the tabernacle of the congregation eastward, shall be Moses, and Aaron and his sons, keeping the charge of the sanctuary for the charge of the children of Israel; and the stranger that cometh nigh shall be put to death."
 				},
 				{
@@ -495,6 +550,7 @@
 				},
 				{
 					"verse": "40",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Number all the firstborn of the males of the children of Israel from a month old and upward, and take the number of their names."
 				},
 				{
@@ -509,7 +565,11 @@
 					"verse": "43",
 					"text": "And all the firstborn males by the number of names, from a month old and upward, of those that were numbered of them, were twenty and two thousand two hundred and threescore and thirteen."
 				},
-				{ "verse": "44", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "44",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "45",
 					"text": "Take the Levites instead of all the firstborn among the children of Israel, and the cattle of the Levites instead of their cattle; and the Levites shall be mine: I am the LORD."
@@ -561,11 +621,12 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And when the camp setteth forward, Aaron shall come, and his sons, and they shall take down the covering vail, and cover the ark of testimony with it:"
 				},
 				{
 					"verse": "6",
-					"text": "And shall put thereon the covering of badgers\u2019 skins, and shall spread over it a cloth wholly of blue, and shall put in the staves thereof."
+					"text": "And shall put thereon the covering of badgers’ skins, and shall spread over it a cloth wholly of blue, and shall put in the staves thereof."
 				},
 				{
 					"verse": "7",
@@ -573,7 +634,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "And they shall spread upon them a cloth of scarlet, and cover the same with a covering of badgers\u2019 skins, and shall put in the staves thereof."
+					"text": "And they shall spread upon them a cloth of scarlet, and cover the same with a covering of badgers’ skins, and shall put in the staves thereof."
 				},
 				{
 					"verse": "9",
@@ -581,15 +642,15 @@
 				},
 				{
 					"verse": "10",
-					"text": "And they shall put it and all the vessels thereof within a covering of badgers\u2019 skins, and shall put it upon a bar."
+					"text": "And they shall put it and all the vessels thereof within a covering of badgers’ skins, and shall put it upon a bar."
 				},
 				{
 					"verse": "11",
-					"text": "And upon the golden altar they shall spread a cloth of blue, and cover it with a covering of badgers\u2019 skins, and shall put to the staves thereof:"
+					"text": "And upon the golden altar they shall spread a cloth of blue, and cover it with a covering of badgers’ skins, and shall put to the staves thereof:"
 				},
 				{
 					"verse": "12",
-					"text": "And they shall take all the instruments of ministry, wherewith they minister in the sanctuary, and put them in a cloth of blue, and cover them with a covering of badgers\u2019 skins, and shall put them on a bar:"
+					"text": "And they shall take all the instruments of ministry, wherewith they minister in the sanctuary, and put them in a cloth of blue, and cover them with a covering of badgers’ skins, and shall put them on a bar:"
 				},
 				{
 					"verse": "13",
@@ -597,7 +658,7 @@
 				},
 				{
 					"verse": "14",
-					"text": "And they shall put upon it all the vessels thereof, wherewith they minister about it, even the censers, the fleshhooks, and the shovels, and the basons, all the vessels of the altar; and they shall spread upon it a covering of badgers\u2019 skins, and put to the staves of it."
+					"text": "And they shall put upon it all the vessels thereof, wherewith they minister about it, even the censers, the fleshhooks, and the shovels, and the basons, all the vessels of the altar; and they shall spread upon it a covering of badgers’ skins, and put to the staves of it."
 				},
 				{
 					"verse": "15",
@@ -605,10 +666,12 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And to the office of Eleazar the son of Aaron the priest pertaineth the oil for the light, and the sweet incense, and the daily meat offering, and the anointing oil, and the oversight of all the tabernacle, and of all that therein is, in the sanctuary, and in the vessels thereof."
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And the LORD spake unto Moses and unto Aaron, saying,"
 				},
 				{
@@ -623,7 +686,11 @@
 					"verse": "20",
 					"text": "But they shall not go in to see when the holy things are covered, lest they die."
 				},
-				{ "verse": "21", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "21",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "22",
 					"text": "Take also the sum of the sons of Gershon, throughout the houses of their fathers, by their families;"
@@ -638,7 +705,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "And they shall bear the curtains of the tabernacle, and the tabernacle of the congregation, his covering, and the covering of the badgers\u2019 skins that is above upon it, and the hanging for the door of the tabernacle of the congregation,"
+					"text": "And they shall bear the curtains of the tabernacle, and the tabernacle of the congregation, his covering, and the covering of the badgers’ skins that is above upon it, and the hanging for the door of the tabernacle of the congregation,"
 				},
 				{
 					"verse": "26",
@@ -654,6 +721,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "As for the sons of Merari, thou shalt number them after their families, by the house of their fathers;"
 				},
 				{
@@ -674,6 +742,7 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "And Moses and Aaron and the chief of the congregation numbered the sons of the Kohathites after their families, and after the house of their fathers,"
 				},
 				{
@@ -706,6 +775,7 @@
 				},
 				{
 					"verse": "42",
+					"paragraph": true,
 					"text": "And those that were numbered of the families of the sons of Merari, throughout their families, by the house of their fathers,"
 				},
 				{
@@ -741,7 +811,10 @@
 		{
 			"chapter": "5",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Command the children of Israel, that they put out of the camp every leper, and every one that hath an issue, and whosoever is defiled by the dead:"
@@ -754,7 +827,11 @@
 					"verse": "4",
 					"text": "And the children of Israel did so, and put them out without the camp: as the LORD spake unto Moses, so did the children of Israel."
 				},
-				{ "verse": "5", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "5",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "6",
 					"text": "Speak unto the children of Israel, When a man or woman shall commit any sin that men commit, to do a trespass against the LORD, and that person be guilty;"
@@ -773,12 +850,16 @@
 				},
 				{
 					"verse": "10",
-					"text": "And every man\u2019s hallowed things shall be his: whatsoever any man giveth the priest, it shall be his."
+					"text": "And every man’s hallowed things shall be his: whatsoever any man giveth the priest, it shall be his."
 				},
-				{ "verse": "11", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "11",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "12",
-					"text": "Speak unto the children of Israel, and say unto them, If any man\u2019s wife go aside, and commit a trespass against him,"
+					"text": "Speak unto the children of Israel, and say unto them, If any man’s wife go aside, and commit a trespass against him,"
 				},
 				{
 					"verse": "13",
@@ -802,7 +883,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "And the priest shall set the woman before the LORD, and uncover the woman\u2019s head, and put the offering of memorial in her hands, which is the jealousy offering: and the priest shall have in his hand the bitter water that causeth the curse:"
+					"text": "And the priest shall set the woman before the LORD, and uncover the woman’s head, and put the offering of memorial in her hands, which is the jealousy offering: and the priest shall have in his hand the bitter water that causeth the curse:"
 				},
 				{
 					"verse": "19",
@@ -830,7 +911,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "Then the priest shall take the jealousy offering out of the woman\u2019s hand, and shall wave the offering before the LORD, and offer it upon the altar:"
+					"text": "Then the priest shall take the jealousy offering out of the woman’s hand, and shall wave the offering before the LORD, and offer it upon the altar:"
 				},
 				{
 					"verse": "26",
@@ -861,7 +942,10 @@
 		{
 			"chapter": "6",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Speak unto the children of Israel, and say unto them, When either man or woman shall separate themselves to vow a vow of a Nazarite, to separate themselves unto the LORD:"
@@ -908,6 +992,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And this is the law of the Nazarite, when the days of his separation are fulfilled: he shall be brought unto the door of the tabernacle of the congregation:"
 				},
 				{
@@ -942,12 +1027,19 @@
 					"verse": "21",
 					"text": "This is the law of the Nazarite who hath vowed, and of his offering unto the LORD for his separation, beside that that his hand shall get: according to the vow which he vowed, so he must do after the law of his separation."
 				},
-				{ "verse": "22", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "22",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "23",
 					"text": "Speak unto Aaron and unto his sons, saying, On this wise ye shall bless the children of Israel, saying unto them,"
 				},
-				{ "verse": "24", "text": "The LORD bless thee, and keep thee:" },
+				{
+					"verse": "24",
+					"text": "The LORD bless thee, and keep thee:"
+				},
 				{
 					"verse": "25",
 					"text": "The LORD make his face shine upon thee, and be gracious unto thee:"
@@ -977,7 +1069,10 @@
 					"verse": "3",
 					"text": "And they brought their offering before the LORD, six covered wagons, and twelve oxen; a wagon for two of the princes, and for each one an ox: and they brought them before the tabernacle."
 				},
-				{ "verse": "4", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "4",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "5",
 					"text": "Take it of them, that they may be to do the service of the tabernacle of the congregation; and thou shalt give them unto the Levites, to every man according to his service."
@@ -1000,6 +1095,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And the princes offered for dedicating of the altar in the day that it was anointed, even the princes offered their offering before the altar."
 				},
 				{
@@ -1008,6 +1104,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And he that offered his offering the first day was Nahshon the son of Amminadab, of the tribe of Judah:"
 				},
 				{
@@ -1022,13 +1119,17 @@
 					"verse": "15",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "16", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "16",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "17",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Nahshon the son of Amminadab."
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "On the second day Nethaneel the son of Zuar, prince of Issachar, did offer:"
 				},
 				{
@@ -1043,13 +1144,17 @@
 					"verse": "21",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "22", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "22",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "23",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Nethaneel the son of Zuar."
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "On the third day Eliab the son of Helon, prince of the children of Zebulun, did offer:"
 				},
 				{
@@ -1064,13 +1169,17 @@
 					"verse": "27",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "28", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "28",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "29",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Eliab the son of Helon."
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "On the fourth day Elizur the son of Shedeur, prince of the children of Reuben, did offer:"
 				},
 				{
@@ -1085,13 +1194,17 @@
 					"verse": "33",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "34", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "34",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "35",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Elizur the son of Shedeur."
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "On the fifth day Shelumiel the son of Zurishaddai, prince of the children of Simeon, did offer:"
 				},
 				{
@@ -1106,13 +1219,17 @@
 					"verse": "39",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "40", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "40",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "41",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Shelumiel the son of Zurishaddai."
 				},
 				{
 					"verse": "42",
+					"paragraph": true,
 					"text": "On the sixth day Eliasaph the son of Deuel, prince of the children of Gad, offered:"
 				},
 				{
@@ -1127,13 +1244,17 @@
 					"verse": "45",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "46", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "46",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "47",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Eliasaph the son of Deuel."
 				},
 				{
 					"verse": "48",
+					"paragraph": true,
 					"text": "On the seventh day Elishama the son of Ammihud, prince of the children of Ephraim, offered:"
 				},
 				{
@@ -1148,13 +1269,17 @@
 					"verse": "51",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "52", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "52",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "53",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Elishama the son of Ammihud."
 				},
 				{
 					"verse": "54",
+					"paragraph": true,
 					"text": "On the eighth day offered Gamaliel the son of Pedahzur, prince of the children of Manasseh:"
 				},
 				{
@@ -1169,13 +1294,17 @@
 					"verse": "57",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "58", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "58",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "59",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Gamaliel the son of Pedahzur."
 				},
 				{
 					"verse": "60",
+					"paragraph": true,
 					"text": "On the ninth day Abidan the son of Gideoni, prince of the children of Benjamin, offered:"
 				},
 				{
@@ -1190,13 +1319,17 @@
 					"verse": "63",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "64", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "64",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "65",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Abidan the son of Gideoni."
 				},
 				{
 					"verse": "66",
+					"paragraph": true,
 					"text": "On the tenth day Ahiezer the son of Ammishaddai, prince of the children of Dan, offered:"
 				},
 				{
@@ -1211,13 +1344,17 @@
 					"verse": "69",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "70", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "70",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "71",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Ahiezer the son of Ammishaddai."
 				},
 				{
 					"verse": "72",
+					"paragraph": true,
 					"text": "On the eleventh day Pagiel the son of Ocran, prince of the children of Asher, offered:"
 				},
 				{
@@ -1232,13 +1369,17 @@
 					"verse": "75",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "76", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "76",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "77",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Pagiel the son of Ocran."
 				},
 				{
 					"verse": "78",
+					"paragraph": true,
 					"text": "On the twelfth day Ahira the son of Enan, prince of the children of Naphtali, offered:"
 				},
 				{
@@ -1253,7 +1394,10 @@
 					"verse": "81",
 					"text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:"
 				},
-				{ "verse": "82", "text": "One kid of the goats for a sin offering:" },
+				{
+					"verse": "82",
+					"text": "One kid of the goats for a sin offering:"
+				},
 				{
 					"verse": "83",
 					"text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Ahira the son of Enan."
@@ -1287,7 +1431,10 @@
 		{
 			"chapter": "8",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Speak unto Aaron, and say unto him, When thou lightest the lamps, the seven lamps shall give light over against the candlestick."
@@ -1300,7 +1447,11 @@
 					"verse": "4",
 					"text": "And this work of the candlestick was of beaten gold, unto the shaft thereof, unto the flowers thereof, was beaten work: according unto the pattern which the LORD had shewed Moses, so he made the candlestick."
 				},
-				{ "verse": "5", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "5",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "6",
 					"text": "Take the Levites from among the children of Israel, and cleanse them."
@@ -1369,7 +1520,11 @@
 					"verse": "22",
 					"text": "And after that went the Levites in to do their service in the tabernacle of the congregation before Aaron, and before his sons: as the LORD had commanded Moses concerning the Levites, so did they unto them."
 				},
-				{ "verse": "23", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "23",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "24",
 					"text": "This is it that belongeth unto the Levites: from twenty and five years old and upward they shall go in to wait upon the service of the tabernacle of the congregation:"
@@ -1409,6 +1564,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And there were certain men, who were defiled by the dead body of a man, that they could not keep the passover on that day: and they came before Moses and before Aaron on that day:"
 				},
 				{
@@ -1419,7 +1575,11 @@
 					"verse": "8",
 					"text": "And Moses said unto them, Stand still, and I will hear what the LORD will command concerning you."
 				},
-				{ "verse": "9", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "9",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "10",
 					"text": "Speak unto the children of Israel, saying, If any man of you or of your posterity shall be unclean by reason of a dead body, or be in a journey afar off, yet he shall keep the passover unto the LORD."
@@ -1442,6 +1602,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And on the day that the tabernacle was reared up the cloud covered the tabernacle, namely, the tent of the testimony: and at even there was upon the tabernacle as it were the appearance of fire, until the morning."
 				},
 				{
@@ -1481,7 +1642,10 @@
 		{
 			"chapter": "10",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Make thee two trumpets of silver; of a whole piece shalt thou make them: that thou mayest use them for the calling of the assembly, and for the journeying of the camps."
@@ -1520,6 +1684,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And it came to pass on the twentieth day of the second month, in the second year, that the cloud was taken up from off the tabernacle of the testimony."
 				},
 				{
@@ -1532,6 +1697,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "In the first place went the standard of the camp of the children of Judah according to their armies: and over his host was Nahshon the son of Amminadab."
 				},
 				{
@@ -1548,6 +1714,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And the standard of the camp of Reuben set forward according to their armies: and over his host was Elizur the son of Shedeur."
 				},
 				{
@@ -1564,6 +1731,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And the standard of the camp of the children of Ephraim set forward according to their armies: and over his host was Elishama the son of Ammihud."
 				},
 				{
@@ -1576,6 +1744,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And the standard of the camp of the children of Dan set forward, which was the rereward of all the camps throughout their hosts: and over his host was Ahiezer the son of Ammishaddai."
 				},
 				{
@@ -1592,7 +1761,8 @@
 				},
 				{
 					"verse": "29",
-					"text": "And Moses said unto Hobab, the son of Raguel the Midianite, Moses\u2019 father in law, We are journeying unto the place of which the LORD said, I will give it you: come thou with us, and we will do thee good: for the LORD hath spoken good concerning Israel."
+					"paragraph": true,
+					"text": "And Moses said unto Hobab, the son of Raguel the Midianite, Moses’ father in law, We are journeying unto the place of which the LORD said, I will give it you: come thou with us, and we will do thee good: for the LORD hath spoken good concerning Israel."
 				},
 				{
 					"verse": "30",
@@ -1608,7 +1778,8 @@
 				},
 				{
 					"verse": "33",
-					"text": "And they departed from the mount of the LORD three days\u2019 journey: and the ark of the covenant of the LORD went before them in the three days\u2019 journey, to search out a resting place for them."
+					"paragraph": true,
+					"text": "And they departed from the mount of the LORD three days’ journey: and the ark of the covenant of the LORD went before them in the three days’ journey, to search out a resting place for them."
 				},
 				{
 					"verse": "34",
@@ -1641,6 +1812,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And the mixt multitude that was among them fell a lusting: and the children of Israel also wept again, and said, Who shall give us flesh to eat?"
 				},
 				{
@@ -1665,6 +1837,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Then Moses heard the people weep throughout their families, every man in the door of his tent: and the anger of the LORD was kindled greatly; Moses also was displeased."
 				},
 				{
@@ -1689,6 +1862,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Gather unto me seventy men of the elders of Israel, whom thou knowest to be the elders of the people, and officers over them; and bring them unto the tabernacle of the congregation, that they may stand there with thee."
 				},
 				{
@@ -1717,10 +1891,11 @@
 				},
 				{
 					"verse": "23",
-					"text": "And the LORD said unto Moses, Is the LORD\u2019s hand waxed short? thou shalt see now whether my word shall come to pass unto thee or not."
+					"text": "And the LORD said unto Moses, Is the LORD’s hand waxed short? thou shalt see now whether my word shall come to pass unto thee or not."
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And Moses went out, and told the people the words of the LORD, and gathered the seventy men of the elders of the people, and set them round about the tabernacle."
 				},
 				{
@@ -1741,7 +1916,7 @@
 				},
 				{
 					"verse": "29",
-					"text": "And Moses said unto him, Enviest thou for my sake? would God that all the LORD\u2019s people were prophets, and that the LORD would put his spirit upon them!"
+					"text": "And Moses said unto him, Enviest thou for my sake? would God that all the LORD’s people were prophets, and that the LORD would put his spirit upon them!"
 				},
 				{
 					"verse": "30",
@@ -1749,7 +1924,8 @@
 				},
 				{
 					"verse": "31",
-					"text": "And there went forth a wind from the LORD, and brought quails from the sea, and let them fall by the camp, as it were a day\u2019s journey on this side, and as it were a day\u2019s journey on the other side, round about the camp, and as it were two cubits high upon the face of the earth."
+					"paragraph": true,
+					"text": "And there went forth a wind from the LORD, and brought quails from the sea, and let them fall by the camp, as it were a day’s journey on this side, and as it were a day’s journey on the other side, round about the camp, and as it were two cubits high upon the face of the earth."
 				},
 				{
 					"verse": "32",
@@ -1818,7 +1994,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "Let her not be as one dead, of whom the flesh is half consumed when he cometh out of his mother\u2019s womb."
+					"text": "Let her not be as one dead, of whom the flesh is half consumed when he cometh out of his mother’s womb."
 				},
 				{
 					"verse": "13",
@@ -1826,6 +2002,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, If her father had but spit in her face, should she not be ashamed seven days? let her be shut out from the camp seven days, and after that let her be received in again."
 				},
 				{
@@ -1841,7 +2018,10 @@
 		{
 			"chapter": "13",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Send thou men, that they may search the land of Canaan, which I give unto the children of Israel: of every tribe of their fathers shall ye send a man, every one a ruler among them."
@@ -1904,6 +2084,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And Moses sent them to spy out the land of Canaan, and said unto them, Get you up this way southward, and go up into the mountain:"
 				},
 				{
@@ -1920,6 +2101,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "So they went up, and searched the land from the wilderness of Zin unto Rehob, as men come to Hamath."
 				},
 				{
@@ -1940,6 +2122,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And they went and came to Moses, and to Aaron, and to all the congregation of the children of Israel, unto the wilderness of Paran, to Kadesh; and brought back word unto them, and unto all the congregation, and shewed them the fruit of the land."
 				},
 				{
@@ -1997,6 +2180,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And Joshua the son of Nun, and Caleb the son of Jephunneh, which were of them that searched the land, rent their clothes:"
 				},
 				{
@@ -2017,6 +2201,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, How long will this people provoke me? and how long will it be ere they believe me, for all the signs which I have shewed among them?"
 				},
 				{
@@ -2025,6 +2210,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And Moses said unto the LORD, Then the Egyptians shall hear it, (for thou broughtest up this people in thy might from among them;)"
 				},
 				{
@@ -2033,6 +2219,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Now if thou shalt kill all this people as one man, then the nations which have heard the fame of thee will speak, saying,"
 				},
 				{
@@ -2077,6 +2264,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And the LORD spake unto Moses and unto Aaron, saying,"
 				},
 				{
@@ -2133,6 +2321,7 @@
 				},
 				{
 					"verse": "40",
+					"paragraph": true,
 					"text": "And they rose up early in the morning, and gat them up into the top of the mountain, saying, Lo, we be here, and will go up unto the place which the LORD hath promised: for we have sinned."
 				},
 				{
@@ -2160,7 +2349,10 @@
 		{
 			"chapter": "15",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Speak unto the children of Israel, and say unto them, When ye be come into the land of your habitations, which I give unto you,"
@@ -2221,7 +2413,11 @@
 					"verse": "16",
 					"text": "One law and one manner shall be for you, and for the stranger that sojourneth with you."
 				},
-				{ "verse": "17", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "17",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "18",
 					"text": "Speak unto the children of Israel, and say unto them, When ye come into the land whither I bring you,"
@@ -2240,6 +2436,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And if ye have erred, and not observed all these commandments, which the LORD hath spoken unto Moses,"
 				},
 				{
@@ -2260,6 +2457,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And if any soul sin through ignorance, then he shall bring a she goat of the first year for a sin offering."
 				},
 				{
@@ -2272,6 +2470,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "But the soul that doeth ought presumptuously, whether he be born in the land, or a stranger, the same reproacheth the LORD; and that soul shall be cut off from among his people."
 				},
 				{
@@ -2280,6 +2479,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "And while the children of Israel were in the wilderness, they found a man that gathered sticks upon the sabbath day."
 				},
 				{
@@ -2298,7 +2498,11 @@
 					"verse": "36",
 					"text": "And all the congregation brought him without the camp, and stoned him with stones, and he died; as the LORD commanded Moses."
 				},
-				{ "verse": "37", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "37",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "38",
 					"text": "Speak unto the children of Israel, and bid them that they make them fringes in the borders of their garments throughout their generations, and that they put upon the fringe of the borders a ribband of blue:"
@@ -2366,6 +2570,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And Moses sent to call Dathan and Abiram, the sons of Eliab: which said, We will not come up:"
 				},
 				{
@@ -2408,7 +2613,11 @@
 					"verse": "22",
 					"text": "And they fell upon their faces, and said, O God, the God of the spirits of all flesh, shall one man sin, and wilt thou be wroth with all the congregation?"
 				},
-				{ "verse": "23", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "23",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "24",
 					"text": "Speak unto the congregation, saying, Get you up from about the tabernacle of Korah, Dathan, and Abiram."
@@ -2439,6 +2648,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And it came to pass, as he had made an end of speaking all these words, that the ground clave asunder that was under them:"
 				},
 				{
@@ -2457,7 +2667,11 @@
 					"verse": "35",
 					"text": "And there came out a fire from the LORD, and consumed the two hundred and fifty men that offered incense."
 				},
-				{ "verse": "36", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "36",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "37",
 					"text": "Speak unto Eleazar the son of Aaron the priest, that he take up the censers out of the burning, and scatter thou the fire yonder; for they are hallowed."
@@ -2476,6 +2690,7 @@
 				},
 				{
 					"verse": "41",
+					"paragraph": true,
 					"text": "But on the morrow all the congregation of the children of Israel murmured against Moses and against Aaron, saying, Ye have killed the people of the LORD."
 				},
 				{
@@ -2486,13 +2701,18 @@
 					"verse": "43",
 					"text": "And Moses and Aaron came before the tabernacle of the congregation."
 				},
-				{ "verse": "44", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "44",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "45",
 					"text": "Get you up from among this congregation, that I may consume them as in a moment. And they fell upon their faces."
 				},
 				{
 					"verse": "46",
+					"paragraph": true,
 					"text": "And Moses said unto Aaron, Take a censer, and put fire therein from off the altar, and put on incense, and go quickly unto the congregation, and make an atonement for them: for there is wrath gone out from the LORD; the plague is begun."
 				},
 				{
@@ -2516,14 +2736,17 @@
 		{
 			"chapter": "17",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
-					"text": "Speak unto the children of Israel, and take of every one of them a rod according to the house of their fathers, of all their princes according to the house of their fathers twelve rods: write thou every man\u2019s name upon his rod."
+					"text": "Speak unto the children of Israel, and take of every one of them a rod according to the house of their fathers, of all their princes according to the house of their fathers twelve rods: write thou every man’s name upon his rod."
 				},
 				{
 					"verse": "3",
-					"text": "And thou shalt write Aaron\u2019s name upon the rod of Levi: for one rod shall be for the head of the house of their fathers."
+					"text": "And thou shalt write Aaron’s name upon the rod of Levi: for one rod shall be for the head of the house of their fathers."
 				},
 				{
 					"verse": "4",
@@ -2531,11 +2754,12 @@
 				},
 				{
 					"verse": "5",
-					"text": "And it shall come to pass, that the man\u2019s rod, whom I shall choose, shall blossom: and I will make to cease from me the murmurings of the children of Israel, whereby they murmur against you."
+					"text": "And it shall come to pass, that the man’s rod, whom I shall choose, shall blossom: and I will make to cease from me the murmurings of the children of Israel, whereby they murmur against you."
 				},
 				{
 					"verse": "6",
-					"text": "And Moses spake unto the children of Israel, and every one of their princes gave him a rod apiece, for each prince one, according to their fathers\u2019 houses, even twelve rods: and the rod of Aaron was among their rods."
+					"paragraph": true,
+					"text": "And Moses spake unto the children of Israel, and every one of their princes gave him a rod apiece, for each prince one, according to their fathers’ houses, even twelve rods: and the rod of Aaron was among their rods."
 				},
 				{
 					"verse": "7",
@@ -2551,7 +2775,8 @@
 				},
 				{
 					"verse": "10",
-					"text": "And the LORD said unto Moses, Bring Aaron\u2019s rod again before the testimony, to be kept for a token against the rebels; and thou shalt quite take away their murmurings from me, that they die not."
+					"paragraph": true,
+					"text": "And the LORD said unto Moses, Bring Aaron’s rod again before the testimony, to be kept for a token against the rebels; and thou shalt quite take away their murmurings from me, that they die not."
 				},
 				{
 					"verse": "11",
@@ -2572,7 +2797,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "And the LORD said unto Aaron, Thou and thy sons and thy father\u2019s house with thee shall bear the iniquity of the sanctuary: and thou and thy sons with thee shall bear the iniquity of your priesthood."
+					"text": "And the LORD said unto Aaron, Thou and thy sons and thy father’s house with thee shall bear the iniquity of the sanctuary: and thou and thy sons with thee shall bear the iniquity of your priesthood."
 				},
 				{
 					"verse": "2",
@@ -2596,10 +2821,11 @@
 				},
 				{
 					"verse": "7",
-					"text": "Therefore thou and thy sons with thee shall keep your priest\u2019s office for everything of the altar, and within the vail; and ye shall serve: I have given your priest\u2019s office unto you as a service of gift: and the stranger that cometh nigh shall be put to death."
+					"text": "Therefore thou and thy sons with thee shall keep your priest’s office for everything of the altar, and within the vail; and ye shall serve: I have given your priest’s office unto you as a service of gift: and the stranger that cometh nigh shall be put to death."
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And the LORD spake unto Aaron, Behold, I also have given thee the charge of mine heave offerings of all the hallowed things of the children of Israel; unto thee have I given them by reason of the anointing, and to thy sons, by an ordinance for ever."
 				},
 				{
@@ -2648,6 +2874,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And the LORD spake unto Aaron, Thou shalt have no inheritance in their land, neither shalt thou have any part among them: I am thy part and thine inheritance among the children of Israel."
 				},
 				{
@@ -2666,7 +2893,11 @@
 					"verse": "24",
 					"text": "But the tithes of the children of Israel, which they offer as an heave offering unto the LORD, I have given to the Levites to inherit: therefore I have said unto them, Among the children of Israel they shall have no inheritance."
 				},
-				{ "verse": "25", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "25",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "26",
 					"text": "Thus speak unto the Levites, and say unto them, When ye take of the children of Israel the tithes which I have given you from them for your inheritance, then ye shall offer up an heave offering of it for the LORD, even a tenth part of the tithe."
@@ -2677,7 +2908,7 @@
 				},
 				{
 					"verse": "28",
-					"text": "Thus ye also shall offer an heave offering unto the LORD of all your tithes, which ye receive of the children of Israel; and ye shall give thereof the LORD\u2019s heave offering to Aaron the priest."
+					"text": "Thus ye also shall offer an heave offering unto the LORD of all your tithes, which ye receive of the children of Israel; and ye shall give thereof the LORD’s heave offering to Aaron the priest."
 				},
 				{
 					"verse": "29",
@@ -2742,6 +2973,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "He that toucheth the dead body of any man shall be unclean seven days."
 				},
 				{
@@ -2817,7 +3049,11 @@
 					"verse": "6",
 					"text": "And Moses and Aaron went from the presence of the assembly unto the door of the tabernacle of the congregation, and they fell upon their faces: and the glory of the LORD appeared unto them."
 				},
-				{ "verse": "7", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "7",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "8",
 					"text": "Take the rod, and gather thou the assembly together, thou, and Aaron thy brother, and speak ye unto the rock before their eyes; and it shall give forth his water, and thou shalt bring forth to them water out of the rock: so thou shalt give the congregation and their beasts drink."
@@ -2836,6 +3072,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And the LORD spake unto Moses and Aaron, Because ye believed me not, to sanctify me in the eyes of the children of Israel, therefore ye shall not bring this congregation into the land which I have given them."
 				},
 				{
@@ -2844,6 +3081,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And Moses sent messengers from Kadesh unto the king of Edom, Thus saith thy brother Israel, Thou knowest all the travail that hath befallen us:"
 				},
 				{
@@ -2856,7 +3094,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "Let us pass, I pray thee, through thy country: we will not pass through the fields, or through the vineyards, neither will we drink of the water of the wells: we will go by the king\u2019s high way, we will not turn to the right hand nor to the left, until we have passed thy borders."
+					"text": "Let us pass, I pray thee, through thy country: we will not pass through the fields, or through the vineyards, neither will we drink of the water of the wells: we will go by the king’s high way, we will not turn to the right hand nor to the left, until we have passed thy borders."
 				},
 				{
 					"verse": "18",
@@ -2876,6 +3114,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And the children of Israel, even the whole congregation, journeyed from Kadesh, and came unto mount Hor."
 				},
 				{
@@ -2925,6 +3164,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And they journeyed from mount Hor by the way of the Red sea, to compass the land of Edom: and the soul of the people was much discouraged because of the way."
 				},
 				{
@@ -2937,6 +3177,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Therefore the people came to Moses, and said, We have sinned, for we have spoken against the LORD, and against thee; pray unto the LORD, that he take away the serpents from us. And Moses prayed for the people."
 				},
 				{
@@ -2949,6 +3190,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And the children of Israel set forward, and pitched in Oboth."
 				},
 				{
@@ -2957,6 +3199,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "From thence they removed, and pitched in the valley of Zared."
 				},
 				{
@@ -2977,6 +3220,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Then Israel sang this song, Spring up, O well; sing ye unto it:"
 				},
 				{
@@ -2993,11 +3237,12 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And Israel sent messengers unto Sihon king of the Amorites, saying,"
 				},
 				{
 					"verse": "22",
-					"text": "Let me pass through thy land: we will not turn into the fields, or into the vineyards; we will not drink of the waters of the well: but we will go along by the king\u2019s high way, until we be past thy borders."
+					"text": "Let me pass through thy land: we will not turn into the fields, or into the vineyards; we will not drink of the waters of the well: but we will go along by the king’s high way, until we be past thy borders."
 				},
 				{
 					"verse": "23",
@@ -3033,6 +3278,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "Thus Israel dwelt in the land of the Amorites."
 				},
 				{
@@ -3041,6 +3287,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "And they turned and went up by the way of Bashan: and Og the king of Bashan went out against them, he, and all his people, to the battle at Edrei."
 				},
 				{
@@ -3062,6 +3309,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "And Balak the son of Zippor saw all that Israel had done to the Amorites."
 				},
 				{
@@ -3114,6 +3362,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And Balak sent yet again princes, more, and more honourable than they."
 				},
 				{
@@ -3142,7 +3391,8 @@
 				},
 				{
 					"verse": "22",
-					"text": "And God\u2019s anger was kindled because he went: and the angel of the LORD stood in the way for an adversary against him. Now he was riding upon his ass, and his two servants were with him."
+					"paragraph": true,
+					"text": "And God’s anger was kindled because he went: and the angel of the LORD stood in the way for an adversary against him. Now he was riding upon his ass, and his two servants were with him."
 				},
 				{
 					"verse": "23",
@@ -3154,7 +3404,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "And when the ass saw the angel of the LORD, she thrust herself unto the wall, and crushed Balaam\u2019s foot against the wall: and he smote her again."
+					"text": "And when the ass saw the angel of the LORD, she thrust herself unto the wall, and crushed Balaam’s foot against the wall: and he smote her again."
 				},
 				{
 					"verse": "26",
@@ -3162,7 +3412,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "And when the ass saw the angel of the LORD, she fell down under Balaam: and Balaam\u2019s anger was kindled, and he smote the ass with a staff."
+					"text": "And when the ass saw the angel of the LORD, she fell down under Balaam: and Balaam’s anger was kindled, and he smote the ass with a staff."
 				},
 				{
 					"verse": "28",
@@ -3198,6 +3448,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "And when Balak heard that Balaam was come, he went out to meet him unto a city of Moab, which is in the border of Arnon, which is in the utmost coast."
 				},
 				{
@@ -3243,7 +3494,7 @@
 				},
 				{
 					"verse": "5",
-					"text": "And the LORD put a word in Balaam\u2019s mouth, and said, Return unto Balak, and thus thou shalt speak."
+					"text": "And the LORD put a word in Balaam’s mouth, and said, Return unto Balak, and thus thou shalt speak."
 				},
 				{
 					"verse": "6",
@@ -3279,6 +3530,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And he brought him into the field of Zophim, to the top of Pisgah, and built seven altars, and offered a bullock and a ram on every altar."
 				},
 				{
@@ -3323,6 +3575,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And Balak said unto Balaam, Neither curse them at all, nor bless them at all."
 				},
 				{
@@ -3331,6 +3584,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And Balak said unto Balaam, Come, I pray thee, I will bring thee unto another place; peradventure it will please God that thou mayest curse me them from thence."
 				},
 				{
@@ -3372,7 +3626,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "As the valleys are they spread forth, as gardens by the river\u2019s side, as the trees of lign aloes which the LORD hath planted, and as cedar trees beside the waters."
+					"text": "As the valleys are they spread forth, as gardens by the river’s side, as the trees of lign aloes which the LORD hath planted, and as cedar trees beside the waters."
 				},
 				{
 					"verse": "7",
@@ -3388,7 +3642,8 @@
 				},
 				{
 					"verse": "10",
-					"text": "And Balak\u2019s anger was kindled against Balaam, and he smote his hands together: and Balak said unto Balaam, I called thee to curse mine enemies, and, behold, thou hast altogether blessed them these three times."
+					"paragraph": true,
+					"text": "And Balak’s anger was kindled against Balaam, and he smote his hands together: and Balak said unto Balaam, I called thee to curse mine enemies, and, behold, thou hast altogether blessed them these three times."
 				},
 				{
 					"verse": "11",
@@ -3408,6 +3663,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And he took up his parable, and said, Balaam the son of Beor hath said, and the man whose eyes are open hath said:"
 				},
 				{
@@ -3428,6 +3684,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And when he looked on Amalek, he took up his parable, and said, Amalek was the first of the nations; but his latter end shall be that he perish for ever."
 				},
 				{
@@ -3477,6 +3734,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And, behold, one of the children of Israel came and brought unto his brethren a Midianitish woman in the sight of Moses, and in the sight of all the congregation of the children of Israel, who were weeping before the door of the tabernacle of the congregation."
 				},
 				{
@@ -3491,7 +3749,11 @@
 					"verse": "9",
 					"text": "And those that died in the plague were twenty and four thousand."
 				},
-				{ "verse": "10", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "10",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "11",
 					"text": "Phinehas, the son of Eleazar, the son of Aaron the priest, hath turned my wrath away from the children of Israel, while he was zealous for my sake among them, that I consumed not the children of Israel in my jealousy."
@@ -3512,11 +3774,18 @@
 					"verse": "15",
 					"text": "And the name of the Midianitish woman that was slain was Cozbi, the daughter of Zur; he was head over a people, and of a chief house in Midian."
 				},
-				{ "verse": "16", "text": "And the LORD spake unto Moses, saying," },
-				{ "verse": "17", "text": "Vex the Midianites, and smite them:" },
+				{
+					"verse": "16",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
+				{
+					"verse": "17",
+					"text": "Vex the Midianites, and smite them:"
+				},
 				{
 					"verse": "18",
-					"text": "For they vex you with their wiles, wherewith they have beguiled you in the matter of Peor, and in the matter of Cozbi, the daughter of a prince of Midian, their sister, which was slain in the day of the plague for Peor\u2019s sake."
+					"text": "For they vex you with their wiles, wherewith they have beguiled you in the matter of Peor, and in the matter of Cozbi, the daughter of a prince of Midian, their sister, which was slain in the day of the plague for Peor’s sake."
 				}
 			]
 		},
@@ -3529,7 +3798,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "Take the sum of all the congregation of the children of Israel, from twenty years old and upward, throughout their fathers\u2019 house, all that are able to go to war in Israel."
+					"text": "Take the sum of all the congregation of the children of Israel, from twenty years old and upward, throughout their fathers’ house, all that are able to go to war in Israel."
 				},
 				{
 					"verse": "3",
@@ -3541,6 +3810,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Reuben, the eldest son of Israel: the children of Reuben; Hanoch, of whom cometh the family of the Hanochites: of Pallu, the family of the Palluites:"
 				},
 				{
@@ -3551,7 +3821,10 @@
 					"verse": "7",
 					"text": "These are the families of the Reubenites: and they that were numbered of them were forty and three thousand and seven hundred and thirty."
 				},
-				{ "verse": "8", "text": "And the sons of Pallu; Eliab." },
+				{
+					"verse": "8",
+					"text": "And the sons of Pallu; Eliab."
+				},
 				{
 					"verse": "9",
 					"text": "And the sons of Eliab; Nemuel, and Dathan, and Abiram. This is that Dathan and Abiram, which were famous in the congregation, who strove against Moses and against Aaron in the company of Korah, when they strove against the LORD:"
@@ -3566,6 +3839,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "The sons of Simeon after their families: of Nemuel, the family of the Nemuelites: of Jamin, the family of the Jaminites: of Jachin, the family of the Jachinites:"
 				},
 				{
@@ -3578,6 +3852,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "The children of Gad after their families: of Zephon, the family of the Zephonites: of Haggi, the family of the Haggites: of Shuni, the family of the Shunites:"
 				},
 				{
@@ -3594,6 +3869,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "The sons of Judah were Er and Onan: and Er and Onan died in the land of Canaan."
 				},
 				{
@@ -3610,6 +3886,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Of the sons of Issachar after their families: of Tola, the family of the Tolaites: of Pua, the family of the Punites:"
 				},
 				{
@@ -3622,6 +3899,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "Of the sons of Zebulun after their families: of Sered, the family of the Sardites: of Elon, the family of the Elonites: of Jahleel, the family of the Jahleelites."
 				},
 				{
@@ -3630,6 +3908,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "The sons of Joseph after their families were Manasseh and Ephraim."
 				},
 				{
@@ -3650,6 +3929,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "And Zelophehad the son of Hepher had no sons, but daughters: and the names of the daughters of Zelophehad were Mahlah, and Noah, Hoglah, Milcah, and Tirzah."
 				},
 				{
@@ -3658,6 +3938,7 @@
 				},
 				{
 					"verse": "35",
+					"paragraph": true,
 					"text": "These are the sons of Ephraim after their families: of Shuthelah, the family of the Shuthalhites: of Becher, the family of the Bachrites: of Tahan, the family of the Tahanites."
 				},
 				{
@@ -3670,6 +3951,7 @@
 				},
 				{
 					"verse": "38",
+					"paragraph": true,
 					"text": "The sons of Benjamin after their families: of Bela, the family of the Belaites: of Ashbel, the family of the Ashbelites: of Ahiram, the family of the Ahiramites:"
 				},
 				{
@@ -3686,6 +3968,7 @@
 				},
 				{
 					"verse": "42",
+					"paragraph": true,
 					"text": "These are the sons of Dan after their families: of Shuham, the family of the Shuhamites. These are the families of Dan after their families."
 				},
 				{
@@ -3694,6 +3977,7 @@
 				},
 				{
 					"verse": "44",
+					"paragraph": true,
 					"text": "Of the children of Asher after their families: of Jimna, the family of the Jimnites: of Jesui, the family of the Jesuites: of Beriah, the family of the Beriites."
 				},
 				{
@@ -3710,6 +3994,7 @@
 				},
 				{
 					"verse": "48",
+					"paragraph": true,
 					"text": "Of the sons of Naphtali after their families: of Jahzeel, the family of the Jahzeelites: of Guni, the family of the Gunites:"
 				},
 				{
@@ -3724,7 +4009,11 @@
 					"verse": "51",
 					"text": "These were the numbered of the children of Israel, six hundred thousand and a thousand seven hundred and thirty."
 				},
-				{ "verse": "52", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "52",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "53",
 					"text": "Unto these the land shall be divided for an inheritance according to the number of names."
@@ -3743,6 +4032,7 @@
 				},
 				{
 					"verse": "57",
+					"paragraph": true,
 					"text": "And these are they that were numbered of the Levites after their families: of Gershon, the family of the Gershonites: of Kohath, the family of the Kohathites: of Merari, the family of the Merarites."
 				},
 				{
@@ -3751,7 +4041,7 @@
 				},
 				{
 					"verse": "59",
-					"text": "And the name of Amram\u2019s wife was Jochebed, the daughter of Levi, whom her mother bare to Levi in Egypt: and she bare unto Amram Aaron and Moses, and Miriam their sister."
+					"text": "And the name of Amram’s wife was Jochebed, the daughter of Levi, whom her mother bare to Levi in Egypt: and she bare unto Amram Aaron and Moses, and Miriam their sister."
 				},
 				{
 					"verse": "60",
@@ -3767,6 +4057,7 @@
 				},
 				{
 					"verse": "63",
+					"paragraph": true,
 					"text": "These are they that were numbered by Moses and Eleazar the priest, who numbered the children of Israel in the plains of Moab by Jordan near Jericho."
 				},
 				{
@@ -3802,10 +4093,14 @@
 					"verse": "5",
 					"text": "And Moses brought their cause before the LORD."
 				},
-				{ "verse": "6", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "6",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "7",
-					"text": "The daughters of Zelophehad speak right: thou shalt surely give them a possession of an inheritance among their father\u2019s brethren; and thou shalt cause the inheritance of their father to pass unto them."
+					"text": "The daughters of Zelophehad speak right: thou shalt surely give them a possession of an inheritance among their father’s brethren; and thou shalt cause the inheritance of their father to pass unto them."
 				},
 				{
 					"verse": "8",
@@ -3817,7 +4112,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "And if he have no brethren, then ye shall give his inheritance unto his father\u2019s brethren."
+					"text": "And if he have no brethren, then ye shall give his inheritance unto his father’s brethren."
 				},
 				{
 					"verse": "11",
@@ -3825,6 +4120,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Get thee up into this mount Abarim, and see the land which I have given unto the children of Israel."
 				},
 				{
@@ -3835,7 +4131,11 @@
 					"verse": "14",
 					"text": "For ye rebelled against my commandment in the desert of Zin, in the strife of the congregation, to sanctify me at the water before their eyes: that is the water of Meribah in Kadesh in the wilderness of Zin."
 				},
-				{ "verse": "15", "text": "And Moses spake unto the LORD, saying," },
+				{
+					"verse": "15",
+					"paragraph": true,
+					"text": "And Moses spake unto the LORD, saying,"
+				},
 				{
 					"verse": "16",
 					"text": "Let the LORD, the God of the spirits of all flesh, set a man over the congregation,"
@@ -3846,6 +4146,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Take thee Joshua the son of Nun, a man in whom is the spirit, and lay thine hand upon him;"
 				},
 				{
@@ -3873,7 +4174,10 @@
 		{
 			"chapter": "28",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Command the children of Israel, and say unto them, My offering, and my bread for my sacrifices made by fire, for a sweet savour unto me, shall ye observe to offer unto me in their due season."
@@ -3904,6 +4208,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And on the sabbath day two lambs of the first year without spot, and two tenth deals of flour for a meat offering, mingled with oil, and the drink offering thereof:"
 				},
 				{
@@ -3912,6 +4217,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And in the beginnings of your months ye shall offer a burnt offering unto the LORD; two young bullocks, and one ram, seven lambs of the first year without spot;"
 				},
 				{
@@ -3972,6 +4278,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "Also in the day of the firstfruits, when ye bring a new meat offering unto the LORD, after your weeks be out, ye shall have an holy convocation; ye shall do no servile work:"
 				},
 				{
@@ -4025,6 +4332,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And ye shall have on the tenth day of this seventh month an holy convocation; and ye shall afflict your souls: ye shall not do any work therein:"
 				},
 				{
@@ -4045,6 +4353,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And on the fifteenth day of the seventh month ye shall have an holy convocation; ye shall do no servile work, and ye shall keep a feast unto the LORD seven days:"
 				},
 				{
@@ -4065,6 +4374,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And on the second day ye shall offer twelve young bullocks, two rams, fourteen lambs of the first year without spot:"
 				},
 				{
@@ -4077,6 +4387,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And on the third day eleven bullocks, two rams, fourteen lambs of the first year without blemish;"
 				},
 				{
@@ -4089,6 +4400,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And on the fourth day ten bullocks, two rams, and fourteen lambs of the first year without blemish:"
 				},
 				{
@@ -4101,6 +4413,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And on the fifth day nine bullocks, two rams, and fourteen lambs of the first year without spot:"
 				},
 				{
@@ -4113,6 +4426,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "And on the sixth day eight bullocks, two rams, and fourteen lambs of the first year without blemish:"
 				},
 				{
@@ -4125,6 +4439,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "And on the seventh day seven bullocks, two rams, and fourteen lambs of the first year without blemish:"
 				},
 				{
@@ -4137,6 +4452,7 @@
 				},
 				{
 					"verse": "35",
+					"paragraph": true,
 					"text": "On the eighth day ye shall have a solemn assembly: ye shall do no servile work therein:"
 				},
 				{
@@ -4174,7 +4490,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "If a woman also vow a vow unto the LORD, and bind herself by a bond, being in her father\u2019s house in her youth;"
+					"text": "If a woman also vow a vow unto the LORD, and bind herself by a bond, being in her father’s house in her youth;"
 				},
 				{
 					"verse": "4",
@@ -4202,7 +4518,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "And if she vowed in her husband\u2019s house, or bound her soul by a bond with an oath;"
+					"text": "And if she vowed in her husband’s house, or bound her soul by a bond with an oath;"
 				},
 				{
 					"verse": "11",
@@ -4226,14 +4542,17 @@
 				},
 				{
 					"verse": "16",
-					"text": "These are the statutes, which the LORD commanded Moses, between a man and his wife, between the father and his daughter, being yet in her youth in her father\u2019s house."
+					"text": "These are the statutes, which the LORD commanded Moses, between a man and his wife, between the father and his daughter, being yet in her youth in her father’s house."
 				}
 			]
 		},
 		{
 			"chapter": "31",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Avenge the children of Israel of the Midianites: afterward shalt thou be gathered unto thy people."
@@ -4280,6 +4599,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And Moses, and Eleazar the priest, and all the princes of the congregation, went forth to meet them without the camp."
 				},
 				{
@@ -4308,10 +4628,11 @@
 				},
 				{
 					"verse": "20",
-					"text": "And purify all your raiment, and all that is made of skins, and all work of goats\u2019 hair, and all things made of wood."
+					"text": "And purify all your raiment, and all that is made of skins, and all work of goats’ hair, and all things made of wood."
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And Eleazar the priest said unto the men of war which went to the battle, This is the ordinance of the law which the LORD commanded Moses;"
 				},
 				{
@@ -4326,7 +4647,11 @@
 					"verse": "24",
 					"text": "And ye shall wash your clothes on the seventh day, and ye shall be clean, and afterward ye shall come into the camp."
 				},
-				{ "verse": "25", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "25",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "26",
 					"text": "Take the sum of the prey that was taken, both of man and of beast, thou, and Eleazar the priest, and the chief fathers of the congregation:"
@@ -4345,7 +4670,7 @@
 				},
 				{
 					"verse": "30",
-					"text": "And of the children of Israel\u2019s half, thou shalt take one portion of fifty, of the persons, of the beeves, of the asses, and of the flocks, of all manner of beasts, and give them unto the Levites, which keep the charge of the tabernacle of the LORD."
+					"text": "And of the children of Israel’s half, thou shalt take one portion of fifty, of the persons, of the beeves, of the asses, and of the flocks, of all manner of beasts, and give them unto the Levites, which keep the charge of the tabernacle of the LORD."
 				},
 				{
 					"verse": "31",
@@ -4355,8 +4680,14 @@
 					"verse": "32",
 					"text": "And the booty, being the rest of the prey which the men of war had caught, was six hundred thousand and seventy thousand and five thousand sheep,"
 				},
-				{ "verse": "33", "text": "And threescore and twelve thousand beeves," },
-				{ "verse": "34", "text": "And threescore and one thousand asses," },
+				{
+					"verse": "33",
+					"text": "And threescore and twelve thousand beeves,"
+				},
+				{
+					"verse": "34",
+					"text": "And threescore and one thousand asses,"
+				},
 				{
 					"verse": "35",
 					"text": "And thirty and two thousand persons in all, of women that had not known man by lying with him."
@@ -4367,44 +4698,51 @@
 				},
 				{
 					"verse": "37",
-					"text": "And the LORD\u2019s tribute of the sheep was six hundred and threescore and fifteen."
+					"text": "And the LORD’s tribute of the sheep was six hundred and threescore and fifteen."
 				},
 				{
 					"verse": "38",
-					"text": "And the beeves were thirty and six thousand; of which the LORD\u2019s tribute was threescore and twelve."
+					"text": "And the beeves were thirty and six thousand; of which the LORD’s tribute was threescore and twelve."
 				},
 				{
 					"verse": "39",
-					"text": "And the asses were thirty thousand and five hundred; of which the LORD\u2019s tribute was threescore and one."
+					"text": "And the asses were thirty thousand and five hundred; of which the LORD’s tribute was threescore and one."
 				},
 				{
 					"verse": "40",
-					"text": "And the persons were sixteen thousand; of which the LORD\u2019s tribute was thirty and two persons."
+					"text": "And the persons were sixteen thousand; of which the LORD’s tribute was thirty and two persons."
 				},
 				{
 					"verse": "41",
-					"text": "And Moses gave the tribute, which was the LORD\u2019s heave offering, unto Eleazar the priest, as the LORD commanded Moses."
+					"text": "And Moses gave the tribute, which was the LORD’s heave offering, unto Eleazar the priest, as the LORD commanded Moses."
 				},
 				{
 					"verse": "42",
-					"text": "And of the children of Israel\u2019s half, which Moses divided from the men that warred,"
+					"text": "And of the children of Israel’s half, which Moses divided from the men that warred,"
 				},
 				{
 					"verse": "43",
 					"text": "(Now the half that pertained unto the congregation was three hundred thousand and thirty thousand and seven thousand and five hundred sheep,"
 				},
-				{ "verse": "44", "text": "And thirty and six thousand beeves," },
+				{
+					"verse": "44",
+					"text": "And thirty and six thousand beeves,"
+				},
 				{
 					"verse": "45",
 					"text": "And thirty thousand asses and five hundred,"
 				},
-				{ "verse": "46", "text": "And sixteen thousand persons;)" },
+				{
+					"verse": "46",
+					"text": "And sixteen thousand persons;)"
+				},
 				{
 					"verse": "47",
-					"text": "Even of the children of Israel\u2019s half, Moses took one portion of fifty, both of man and of beast, and gave them unto the Levites, which kept the charge of the tabernacle of the LORD; as the LORD commanded Moses."
+					"text": "Even of the children of Israel’s half, Moses took one portion of fifty, both of man and of beast, and gave them unto the Levites, which kept the charge of the tabernacle of the LORD; as the LORD commanded Moses."
 				},
 				{
 					"verse": "48",
+					"paragraph": true,
 					"text": "And the officers which were over thousands of the host, the captains of thousands, and captains of hundreds, came near unto Moses:"
 				},
 				{
@@ -4458,6 +4796,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And Moses said unto the children of Gad and to the children of Reuben, Shall your brethren go to war, and shall ye sit here?"
 				},
 				{
@@ -4474,7 +4813,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "And the LORD\u2019s anger was kindled the same time, and he sware, saying,"
+					"text": "And the LORD’s anger was kindled the same time, and he sware, saying,"
 				},
 				{
 					"verse": "11",
@@ -4486,11 +4825,11 @@
 				},
 				{
 					"verse": "13",
-					"text": "And the LORD\u2019s anger was kindled against Israel, and he made them wander in the wilderness forty years, until all the generation, that had done evil in the sight of the LORD, was consumed."
+					"text": "And the LORD’s anger was kindled against Israel, and he made them wander in the wilderness forty years, until all the generation, that had done evil in the sight of the LORD, was consumed."
 				},
 				{
 					"verse": "14",
-					"text": "And, behold, ye are risen up in your fathers\u2019 stead, an increase of sinful men, to augment yet the fierce anger of the LORD toward Israel."
+					"text": "And, behold, ye are risen up in your fathers’ stead, an increase of sinful men, to augment yet the fierce anger of the LORD toward Israel."
 				},
 				{
 					"verse": "15",
@@ -4498,6 +4837,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And they came near unto him, and said, We will build sheepfolds here for our cattle, and cities for our little ones:"
 				},
 				{
@@ -4514,6 +4854,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And Moses said unto them, If ye will do this thing, if ye will go armed before the LORD to war,"
 				},
 				{
@@ -4570,6 +4911,7 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "And the children of Gad built Dibon, and Ataroth, and Aroer,"
 				},
 				{
@@ -4639,7 +4981,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "And they departed from before Pihahiroth, and passed through the midst of the sea into the wilderness, and went three days\u2019 journey in the wilderness of Etham, and pitched in Marah."
+					"text": "And they departed from before Pihahiroth, and passed through the midst of the sea into the wilderness, and went three days’ journey in the wilderness of Etham, and pitched in Marah."
 				},
 				{
 					"verse": "9",
@@ -4807,6 +5149,7 @@
 				},
 				{
 					"verse": "50",
+					"paragraph": true,
 					"text": "And the LORD spake unto Moses in the plains of Moab by Jordan near Jericho, saying,"
 				},
 				{
@@ -4823,7 +5166,7 @@
 				},
 				{
 					"verse": "54",
-					"text": "And ye shall divide the land by lot for an inheritance among your families: and to the more ye shall give the more inheritance, and to the fewer ye shall give the less inheritance: every man\u2019s inheritance shall be in the place where his lot falleth; according to the tribes of your fathers ye shall inherit."
+					"text": "And ye shall divide the land by lot for an inheritance among your families: and to the more ye shall give the more inheritance, and to the fewer ye shall give the less inheritance: every man’s inheritance shall be in the place where his lot falleth; according to the tribes of your fathers ye shall inherit."
 				},
 				{
 					"verse": "55",
@@ -4838,7 +5181,10 @@
 		{
 			"chapter": "34",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Command the children of Israel, and say unto them, When ye come into the land of Canaan; (this is the land that shall fall unto you for an inheritance, even the land of Canaan with the coasts thereof:)"
@@ -4869,6 +5215,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And the border shall go on to Ziphron, and the goings out of it shall be at Hazarenan: this shall be your north border."
 				},
 				{
@@ -4895,7 +5242,10 @@
 					"verse": "15",
 					"text": "The two tribes and the half tribe have received their inheritance on this side Jordan near Jericho eastward, toward the sunrising."
 				},
-				{ "verse": "16", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "16",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "17",
 					"text": "These are the names of the men which shall divide the land unto you: Eleazar the priest, and Joshua the son of Nun."
@@ -4985,7 +5335,11 @@
 					"verse": "8",
 					"text": "And the cities which ye shall give shall be of the possession of the children of Israel: from them that have many ye shall give many; but from them that have few ye shall give few: every one shall give of his cities unto the Levites according to his inheritance which he inheriteth."
 				},
-				{ "verse": "9", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "9",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "10",
 					"text": "Speak unto the children of Israel, and say unto them, When ye be come over Jordan into the land of Canaan;"
@@ -5133,7 +5487,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "For Mahlah, Tirzah, and Hoglah, and Milcah, and Noah, the daughters of Zelophehad, were married unto their father\u2019s brothers\u2019 sons:"
+					"text": "For Mahlah, Tirzah, and Hoglah, and Milcah, and Noah, the daughters of Zelophehad, were married unto their father’s brothers’ sons:"
 				},
 				{
 					"verse": "12",

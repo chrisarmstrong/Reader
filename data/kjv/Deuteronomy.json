@@ -11,7 +11,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "(There are eleven days\u2019 journey from Horeb by the way of mount Seir unto Kadeshbarnea.)"
+					"text": "(There are eleven days’ journey from Horeb by the way of mount Seir unto Kadeshbarnea.)"
 				},
 				{
 					"verse": "3",
@@ -39,6 +39,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And I spake unto you at that time, saying, I am not able to bear you myself alone:"
 				},
 				{
@@ -71,7 +72,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "Ye shall not respect persons in judgment; but ye shall hear the small as well as the great; ye shall not be afraid of the face of man; for the judgment is God\u2019s: and the cause that is too hard for you, bring it unto me, and I will hear it."
+					"text": "Ye shall not respect persons in judgment; but ye shall hear the small as well as the great; ye shall not be afraid of the face of man; for the judgment is God’s: and the cause that is too hard for you, bring it unto me, and I will hear it."
 				},
 				{
 					"verse": "18",
@@ -79,6 +80,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And when we departed from Horeb, we went through all that great and terrible wilderness, which ye saw by the way of the mountain of the Amorites, as the LORD our God commanded us; and we came to Kadeshbarnea."
 				},
 				{
@@ -91,6 +93,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And ye came near unto me every one of you, and said, We will send men before us, and they shall search us out the land, and bring us word again by what way we must go up, and into what cities we shall come."
 				},
 				{
@@ -198,7 +201,10 @@
 					"verse": "1",
 					"text": "Then we turned, and took our journey into the wilderness by the way of the Red sea, as the LORD spake unto me: and we compassed mount Seir many days."
 				},
-				{ "verse": "2", "text": "And the LORD spake unto me, saying," },
+				{
+					"verse": "2",
+					"text": "And the LORD spake unto me, saying,"
+				},
 				{
 					"verse": "3",
 					"text": "Ye have compassed this mountain long enough: turn you northward."
@@ -253,9 +259,13 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "So it came to pass, when all the men of war were consumed and dead from among the people,"
 				},
-				{ "verse": "17", "text": "That the LORD spake unto me, saying," },
+				{
+					"verse": "17",
+					"text": "That the LORD spake unto me, saying,"
+				},
 				{
 					"verse": "18",
 					"text": "Thou art to pass over through Ar, the coast of Moab, this day:"
@@ -282,6 +292,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Rise ye up, take your journey, and pass over the river Arnon: behold, I have given into thine hand Sihon the Amorite, king of Heshbon, and his land: begin to possess it, and contend with him in battle."
 				},
 				{
@@ -290,6 +301,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And I sent messengers out of the wilderness of Kedemoth unto Sihon king of Heshbon with words of peace, saying,"
 				},
 				{
@@ -397,7 +409,10 @@
 					"verse": "14",
 					"text": "Jair the son of Manasseh took all the country of Argob unto the coasts of Geshuri and Maachathi; and called them after his own name, Bashanhavothjair, unto this day."
 				},
-				{ "verse": "15", "text": "And I gave Gilead unto Machir." },
+				{
+					"verse": "15",
+					"text": "And I gave Gilead unto Machir."
+				},
 				{
 					"verse": "16",
 					"text": "And unto the Reubenites and unto the Gadites I gave from Gilead even unto the river Arnon half the valley, and the border even unto the river Jabbok, which is the border of the children of Ammon;"
@@ -408,6 +423,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And I commanded you at that time, saying, The LORD your God hath given you this land to possess it: ye shall pass over armed before your brethren the children of Israel, all that are meet for the war."
 				},
 				{
@@ -420,6 +436,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And I commanded Joshua at that time, saying, Thine eyes have seen all that the LORD your God hath done unto these two kings: so shall the LORD do unto all the kingdoms whither thou passest."
 				},
 				{
@@ -493,7 +510,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "Only take heed to thyself, and keep thy soul diligently, lest thou forget the things which thine eyes have seen, and lest they depart from thy heart all the days of thy life: but teach them thy sons, and thy sons\u2019 sons;"
+					"text": "Only take heed to thyself, and keep thy soul diligently, lest thou forget the things which thine eyes have seen, and lest they depart from thy heart all the days of thy life: but teach them thy sons, and thy sons’ sons;"
 				},
 				{
 					"verse": "10",
@@ -513,6 +530,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And the LORD commanded me at that time to teach you statutes and judgments, that ye might do them in the land whither ye go over to possess it."
 				},
 				{
@@ -557,7 +575,8 @@
 				},
 				{
 					"verse": "25",
-					"text": "When thou shalt beget children, and children\u2019s children, and ye shall have remained long in the land, and shall corrupt yourselves, and make a graven image, or the likeness of any thing, and shall do evil in the sight of the LORD thy God, to provoke him to anger:"
+					"paragraph": true,
+					"text": "When thou shalt beget children, and children’s children, and ye shall have remained long in the land, and shall corrupt yourselves, and make a graven image, or the likeness of any thing, and shall do evil in the sight of the LORD thy God, to provoke him to anger:"
 				},
 				{
 					"verse": "26",
@@ -569,7 +588,7 @@
 				},
 				{
 					"verse": "28",
-					"text": "And there ye shall serve gods, the work of men\u2019s hands, wood and stone, which neither see, nor hear, nor eat, nor smell."
+					"text": "And there ye shall serve gods, the work of men’s hands, wood and stone, which neither see, nor hear, nor eat, nor smell."
 				},
 				{
 					"verse": "29",
@@ -621,6 +640,7 @@
 				},
 				{
 					"verse": "41",
+					"paragraph": true,
 					"text": "Then Moses severed three cities on this side Jordan toward the sunrising;"
 				},
 				{
@@ -633,6 +653,7 @@
 				},
 				{
 					"verse": "44",
+					"paragraph": true,
 					"text": "And this is the law which Moses set before the children of Israel:"
 				},
 				{
@@ -682,9 +703,13 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "I am the LORD thy God, which brought thee out of the land of Egypt, from the house of bondage."
 				},
-				{ "verse": "7", "text": "Thou shalt have none other gods before me." },
+				{
+					"verse": "7",
+					"text": "Thou shalt have none other gods before me."
+				},
 				{
 					"verse": "8",
 					"text": "Thou shalt not make thee any graven image, or any likeness of any thing that is in heaven above, or that is in the earth beneath, or that is in the waters beneath the earth:"
@@ -719,21 +744,32 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Honour thy father and thy mother, as the LORD thy God hath commanded thee; that thy days may be prolonged, and that it may go well with thee, in the land which the LORD thy God giveth thee."
 				},
-				{ "verse": "17", "text": "Thou shalt not kill." },
-				{ "verse": "18", "text": "Neither shalt thou commit adultery." },
-				{ "verse": "19", "text": "Neither shalt thou steal." },
+				{
+					"verse": "17",
+					"text": "Thou shalt not kill."
+				},
+				{
+					"verse": "18",
+					"text": "Neither shalt thou commit adultery."
+				},
+				{
+					"verse": "19",
+					"text": "Neither shalt thou steal."
+				},
 				{
 					"verse": "20",
 					"text": "Neither shalt thou bear false witness against thy neighbour."
 				},
 				{
 					"verse": "21",
-					"text": "Neither shalt thou desire thy neighbour\u2019s wife, neither shalt thou covet thy neighbour\u2019s house, his field, or his manservant, or his maidservant, his ox, or his ass, or any thing that is thy neighbour\u2019s."
+					"text": "Neither shalt thou desire thy neighbour’s wife, neither shalt thou covet thy neighbour’s house, his field, or his manservant, or his maidservant, his ox, or his ass, or any thing that is thy neighbour’s."
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "These words the LORD spake unto all your assembly in the mount out of the midst of the fire, of the cloud, and of the thick darkness, with a great voice: and he added no more. And he wrote them in two tables of stone, and delivered them unto me."
 				},
 				{
@@ -791,10 +827,11 @@
 				},
 				{
 					"verse": "2",
-					"text": "That thou mightest fear the LORD thy God, to keep all his statutes and his commandments, which I command thee, thou, and thy son, and thy son\u2019s son, all the days of thy life; and that thy days may be prolonged."
+					"text": "That thou mightest fear the LORD thy God, to keep all his statutes and his commandments, which I command thee, thou, and thy son, and thy son’s son, all the days of thy life; and that thy days may be prolonged."
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Hear therefore, O Israel, and observe to do it; that it may be well with thee, and that ye may increase mightily, as the LORD God of thy fathers hath promised thee, in the land that floweth with milk and honey."
 				},
 				{
@@ -847,6 +884,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Ye shall not tempt the LORD your God, as ye tempted him in Massah."
 				},
 				{
@@ -867,7 +905,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "Then thou shalt say unto thy son, We were Pharaoh\u2019s bondmen in Egypt; and the LORD brought us out of Egypt with a mighty hand:"
+					"text": "Then thou shalt say unto thy son, We were Pharaoh’s bondmen in Egypt; and the LORD brought us out of Egypt with a mighty hand:"
 				},
 				{
 					"verse": "22",
@@ -936,6 +974,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Wherefore it shall come to pass, if ye hearken to these judgments, and keep, and do them, that the LORD thy God shall keep unto thee the covenant and the mercy which he sware unto thy fathers:"
 				},
 				{
@@ -1110,6 +1149,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Remember, and forget not, how thou provokedst the LORD thy God to wrath in the wilderness: from the day that thou didst depart out of the land of Egypt, until ye came unto this place, ye have been rebellious against the LORD."
 				},
 				{
@@ -1227,7 +1267,8 @@
 				},
 				{
 					"verse": "6",
-					"text": "And the children of Israel took their journey from Beeroth of the children of Jaakan to Mosera: there Aaron died, and there he was buried; and Eleazar his son ministered in the priest\u2019s office in his stead."
+					"paragraph": true,
+					"text": "And the children of Israel took their journey from Beeroth of the children of Jaakan to Mosera: there Aaron died, and there he was buried; and Eleazar his son ministered in the priest’s office in his stead."
 				},
 				{
 					"verse": "7",
@@ -1235,6 +1276,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "At that time the LORD separated the tribe of Levi, to bear the ark of the covenant of the LORD, to stand before the LORD to minister unto him, and to bless in his name, unto this day."
 				},
 				{
@@ -1251,6 +1293,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And now, Israel, what doth the LORD thy God require of thee, but to fear the LORD thy God, to walk in all his ways, and to love him, and to serve the LORD thy God with all thy heart and with all thy soul,"
 				},
 				{
@@ -1259,7 +1302,7 @@
 				},
 				{
 					"verse": "14",
-					"text": "Behold, the heaven and the heaven of heavens is the LORD\u2019s thy God, the earth also, with all that therein is."
+					"text": "Behold, the heaven and the heaven of heavens is the LORD’s thy God, the earth also, with all that therein is."
 				},
 				{
 					"verse": "15",
@@ -1336,6 +1379,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "For the land, whither thou goest in to possess it, is not as the land of Egypt, from whence ye came out, where thou sowedst thy seed, and wateredst it with thy foot, as a garden of herbs:"
 				},
 				{
@@ -1348,6 +1392,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And it shall come to pass, if ye shall hearken diligently unto my commandments which I command you this day, to love the LORD your God, and to serve him with all your heart and with all your soul,"
 				},
 				{
@@ -1364,10 +1409,11 @@
 				},
 				{
 					"verse": "17",
-					"text": "And then the LORD\u2019s wrath be kindled against you, and he shut up the heaven, that there be no rain, and that the land yield not her fruit; and lest ye perish quickly from off the good land which the LORD giveth you."
+					"text": "And then the LORD’s wrath be kindled against you, and he shut up the heaven, that there be no rain, and that the land yield not her fruit; and lest ye perish quickly from off the good land which the LORD giveth you."
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Therefore shall ye lay up these my words in your heart and in your soul, and bind them for a sign upon your hand, that they may be as frontlets between your eyes."
 				},
 				{
@@ -1384,6 +1430,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "For if ye shall diligently keep all these commandments which I command you, to do them, to love the LORD your God, to walk in all his ways, and to cleave unto him;"
 				},
 				{
@@ -1400,6 +1447,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "Behold, I set before you this day a blessing and a curse;"
 				},
 				{
@@ -1443,7 +1491,10 @@
 					"verse": "3",
 					"text": "And ye shall overthrow their altars, and break their pillars, and burn their groves with fire; and ye shall hew down the graven images of their gods, and destroy the names of them out of that place."
 				},
-				{ "verse": "4", "text": "Ye shall not do so unto the LORD your God." },
+				{
+					"verse": "4",
+					"text": "Ye shall not do so unto the LORD your God."
+				},
 				{
 					"verse": "5",
 					"text": "But unto the place which the LORD your God shall choose out of all your tribes to put his name there, even unto his habitation shall ye seek, and thither thou shalt come:"
@@ -1494,6 +1545,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Thou mayest not eat within thy gates the tithe of thy corn, or of thy wine, or of thy oil, or the firstlings of thy herds or of thy flock, nor any of thy vows which thou vowest, nor thy freewill offerings, or heave offering of thine hand:"
 				},
 				{
@@ -1506,6 +1558,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "When the LORD thy God shall enlarge thy border, as he hath promised thee, and thou shalt say, I will eat flesh, because thy soul longeth to eat flesh; thou mayest eat flesh, whatsoever thy soul lusteth after."
 				},
 				{
@@ -1542,6 +1595,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "When the LORD thy God shall cut off the nations from before thee, whither thou goest to possess them, and thou succeedest them, and dwellest in their land;"
 				},
 				{
@@ -1583,6 +1637,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "If thy brother, the son of thy mother, or thy son, or thy daughter, or the wife of thy bosom, or thy friend, which is as thine own soul, entice thee secretly, saying, Let us go and serve other gods, which thou hast not known, thou, nor thy fathers;"
 				},
 				{
@@ -1607,6 +1662,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "If thou shalt hear say in one of thy cities, which the LORD thy God hath given thee to dwell there, saying,"
 				},
 				{
@@ -1646,7 +1702,11 @@
 					"verse": "2",
 					"text": "For thou art an holy people unto the LORD thy God, and the LORD hath chosen thee to be a peculiar people unto himself, above all the nations that are upon the earth."
 				},
-				{ "verse": "3", "text": "Thou shalt not eat any abominable thing." },
+				{
+					"verse": "3",
+					"paragraph": true,
+					"text": "Thou shalt not eat any abominable thing."
+				},
 				{
 					"verse": "4",
 					"text": "These are the beasts which ye shall eat: the ox, the sheep, and the goat,"
@@ -1669,13 +1729,18 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "These ye shall eat of all that are in the waters: all that have fins and scales shall ye eat:"
 				},
 				{
 					"verse": "10",
 					"text": "And whatsoever hath not fins and scales ye may not eat; it is unclean unto you."
 				},
-				{ "verse": "11", "text": "Of all clean birds ye shall eat." },
+				{
+					"verse": "11",
+					"paragraph": true,
+					"text": "Of all clean birds ye shall eat."
+				},
 				{
 					"verse": "12",
 					"text": "But these are they of which ye shall not eat: the eagle, and the ossifrage, and the ospray,"
@@ -1684,7 +1749,10 @@
 					"verse": "13",
 					"text": "And the glede, and the kite, and the vulture after his kind,"
 				},
-				{ "verse": "14", "text": "And every raven after his kind," },
+				{
+					"verse": "14",
+					"text": "And every raven after his kind,"
+				},
 				{
 					"verse": "15",
 					"text": "And the owl, and the night hawk, and the cuckow, and the hawk after his kind,"
@@ -1705,10 +1773,14 @@
 					"verse": "19",
 					"text": "And every creeping thing that flieth is unclean unto you: they shall not be eaten."
 				},
-				{ "verse": "20", "text": "But of all clean fowls ye may eat." },
+				{
+					"verse": "20",
+					"text": "But of all clean fowls ye may eat."
+				},
 				{
 					"verse": "21",
-					"text": "Ye shall not eat of anything that dieth of itself: thou shalt give it unto the stranger that is in thy gates, that he may eat it; or thou mayest sell it unto an alien: for thou art an holy people unto the LORD thy God. Thou shalt not seethe a kid in his mother\u2019s milk."
+					"paragraph": true,
+					"text": "Ye shall not eat of anything that dieth of itself: thou shalt give it unto the stranger that is in thy gates, that he may eat it; or thou mayest sell it unto an alien: for thou art an holy people unto the LORD thy God. Thou shalt not seethe a kid in his mother’s milk."
 				},
 				{
 					"verse": "22",
@@ -1736,6 +1808,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "At the end of three years thou shalt bring forth all the tithe of thine increase the same year, and shalt lay it up within thy gates:"
 				},
 				{
@@ -1753,7 +1826,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "And this is the manner of the release: Every creditor that lendeth ought unto his neighbour shall release it; he shall not exact it of his neighbour, or of his brother; because it is called the LORD\u2019s release."
+					"text": "And this is the manner of the release: Every creditor that lendeth ought unto his neighbour shall release it; he shall not exact it of his neighbour, or of his brother; because it is called the LORD’s release."
 				},
 				{
 					"verse": "3",
@@ -1773,6 +1846,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "If there be among you a poor man of one of thy brethren within any of thy gates in thy land which the LORD thy God giveth thee, thou shalt not harden thine heart, nor shut thine hand from thy poor brother:"
 				},
 				{
@@ -1793,6 +1867,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And if thy brother, an Hebrew man, or an Hebrew woman, be sold unto thee, and serve thee six years; then in the seventh year thou shalt let him go free from thee."
 				},
 				{
@@ -1821,6 +1896,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "All the firstling males that come of thy herd and of thy flock thou shalt sanctify unto the LORD thy God: thou shalt do no work with the firstling of thy bullock, nor shear the firstling of thy sheep."
 				},
 				{
@@ -1878,6 +1954,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Seven weeks shalt thou number unto thee: begin to number the seven weeks from such time as thou beginnest to put the sickle to the corn."
 				},
 				{
@@ -1894,6 +1971,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Thou shalt observe the feast of tabernacles seven days, after that thou hast gathered in thy corn and thy wine:"
 				},
 				{
@@ -1906,6 +1984,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Three times in a year shall all thy males appear before the LORD thy God in the place which he shall choose; in the feast of unleavened bread, and in the feast of weeks, and in the feast of tabernacles: and they shall not appear before the LORD empty:"
 				},
 				{
@@ -1914,6 +1993,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Judges and officers shalt thou make thee in all thy gates, which the LORD thy God giveth thee, throughout thy tribes: and they shall judge the people with just judgment."
 				},
 				{
@@ -1926,6 +2006,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Thou shalt not plant thee a grove of any trees near unto the altar of the LORD thy God, which thou shalt make thee."
 				},
 				{
@@ -1943,6 +2024,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "If there be found among you, within any of thy gates which the LORD thy God giveth thee, man or woman, that hath wrought wickedness in the sight of the LORD thy God, in transgressing his covenant,"
 				},
 				{
@@ -1967,6 +2049,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "If there arise a matter too hard for thee in judgment, between blood and blood, between plea and plea, and between stroke and stroke, being matters of controversy within thy gates: then shalt thou arise, and get thee up into the place which the LORD thy God shall choose;"
 				},
 				{
@@ -1991,6 +2074,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "When thou art come unto the land which the LORD thy God giveth thee, and shalt possess it, and shalt dwell therein, and shalt say, I will set a king over me, like as all the nations that are about me;"
 				},
 				{
@@ -2032,7 +2116,8 @@
 				},
 				{
 					"verse": "3",
-					"text": "And this shall be the priest\u2019s due from the people, from them that offer a sacrifice, whether it be ox or sheep; and they shall give unto the priest the shoulder, and the two cheeks, and the maw."
+					"paragraph": true,
+					"text": "And this shall be the priest’s due from the people, from them that offer a sacrifice, whether it be ox or sheep; and they shall give unto the priest the shoulder, and the two cheeks, and the maw."
 				},
 				{
 					"verse": "4",
@@ -2044,6 +2129,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And if a Levite come from any of thy gates out of all Israel, where he sojourned, and come with all the desire of his mind unto the place which the LORD shall choose;"
 				},
 				{
@@ -2056,6 +2142,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "When thou art come into the land which the LORD thy God giveth thee, thou shalt not learn to do after the abominations of those nations."
 				},
 				{
@@ -2080,6 +2167,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "The LORD thy God will raise up unto thee a Prophet from the midst of thee, of thy brethren, like unto me; unto him ye shall hearken;"
 				},
 				{
@@ -2129,6 +2217,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And this is the case of the slayer, which shall flee thither, that he may live: Whoso killeth his neighbour ignorantly, whom he hated not in time past;"
 				},
 				{
@@ -2157,6 +2246,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "But if any man hate his neighbour, and lie in wait for him, and rise up against him, and smite him mortally that he die, and fleeth into one of these cities:"
 				},
 				{
@@ -2169,14 +2259,17 @@
 				},
 				{
 					"verse": "14",
-					"text": "Thou shalt not remove thy neighbour\u2019s landmark, which they of old time have set in thine inheritance, which thou shalt inherit in the land that the LORD thy God giveth thee to possess it."
+					"paragraph": true,
+					"text": "Thou shalt not remove thy neighbour’s landmark, which they of old time have set in thine inheritance, which thou shalt inherit in the land that the LORD thy God giveth thee to possess it."
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "One witness shall not rise up against a man for any iniquity, or for any sin, in any sin that he sinneth: at the mouth of two witnesses, or at the mouth of three witnesses, shall the matter be established."
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "If a false witness rise up against any man to testify against him that which is wrong;"
 				},
 				{
@@ -2222,6 +2315,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And the officers shall speak unto the people, saying, What man is there that hath built a new house, and hath not dedicated it? let him go and return to his house, lest he die in the battle, and another man dedicate it."
 				},
 				{
@@ -2234,7 +2328,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "And the officers shall speak further unto the people, and they shall say, What man is there that is fearful and fainthearted? let him go and return unto his house, lest his brethren\u2019s heart faint as well as his heart."
+					"text": "And the officers shall speak further unto the people, and they shall say, What man is there that is fearful and fainthearted? let him go and return unto his house, lest his brethren’s heart faint as well as his heart."
 				},
 				{
 					"verse": "9",
@@ -2242,6 +2336,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "When thou comest nigh unto a city to fight against it, then proclaim peace unto it."
 				},
 				{
@@ -2278,7 +2373,8 @@
 				},
 				{
 					"verse": "19",
-					"text": "When thou shalt besiege a city a long time, in making war against it to take it, thou shalt not destroy the trees thereof by forcing an axe against them: for thou mayest eat of them, and thou shalt not cut them down (for the tree of the field is man\u2019s life) to employ them in the siege:"
+					"paragraph": true,
+					"text": "When thou shalt besiege a city a long time, in making war against it to take it, thou shalt not destroy the trees thereof by forcing an axe against them: for thou mayest eat of them, and thou shalt not cut them down (for the tree of the field is man’s life) to employ them in the siege:"
 				},
 				{
 					"verse": "20",
@@ -2303,7 +2399,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "And the elders of that city shall bring down the heifer unto a rough valley, which is neither eared nor sown, and shall strike off the heifer\u2019s neck there in the valley:"
+					"text": "And the elders of that city shall bring down the heifer unto a rough valley, which is neither eared nor sown, and shall strike off the heifer’s neck there in the valley:"
 				},
 				{
 					"verse": "5",
@@ -2319,7 +2415,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "Be merciful, O LORD, unto thy people Israel, whom thou hast redeemed, and lay not innocent blood unto thy people of Israel\u2019s charge. And the blood shall be forgiven them."
+					"text": "Be merciful, O LORD, unto thy people Israel, whom thou hast redeemed, and lay not innocent blood unto thy people of Israel’s charge. And the blood shall be forgiven them."
 				},
 				{
 					"verse": "9",
@@ -2327,6 +2423,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "When thou goest forth to war against thine enemies, and the LORD thy God hath delivered them into thine hands, and thou hast taken them captive,"
 				},
 				{
@@ -2347,6 +2444,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "If a man have two wives, one beloved, and another hated, and they have born him children, both the beloved and the hated; and if the firstborn son be hers that was hated:"
 				},
 				{
@@ -2359,6 +2457,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "If a man have a stubborn and rebellious son, which will not obey the voice of his father, or the voice of his mother, and that, when they have chastened him, will not hearken unto them:"
 				},
 				{
@@ -2375,6 +2474,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And if a man have committed a sin worthy of death, and he be to be put to death, and thou hang him on a tree:"
 				},
 				{
@@ -2388,7 +2488,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Thou shalt not see thy brother\u2019s ox or his sheep go astray, and hide thyself from them: thou shalt in any case bring them again unto thy brother."
+					"text": "Thou shalt not see thy brother’s ox or his sheep go astray, and hide thyself from them: thou shalt in any case bring them again unto thy brother."
 				},
 				{
 					"verse": "2",
@@ -2396,19 +2496,22 @@
 				},
 				{
 					"verse": "3",
-					"text": "In like manner shalt thou do with his ass; and so shalt thou do with his raiment; and with all lost thing of thy brother\u2019s, which he hath lost, and thou hast found, shalt thou do likewise: thou mayest not hide thyself."
+					"text": "In like manner shalt thou do with his ass; and so shalt thou do with his raiment; and with all lost thing of thy brother’s, which he hath lost, and thou hast found, shalt thou do likewise: thou mayest not hide thyself."
 				},
 				{
 					"verse": "4",
-					"text": "Thou shalt not see thy brother\u2019s ass or his ox fall down by the way, and hide thyself from them: thou shalt surely help him to lift them up again."
+					"paragraph": true,
+					"text": "Thou shalt not see thy brother’s ass or his ox fall down by the way, and hide thyself from them: thou shalt surely help him to lift them up again."
 				},
 				{
 					"verse": "5",
-					"text": "The woman shall not wear that which pertaineth unto a man, neither shall a man put on a woman\u2019s garment: for all that do so are abomination unto the LORD thy God."
+					"paragraph": true,
+					"text": "The woman shall not wear that which pertaineth unto a man, neither shall a man put on a woman’s garment: for all that do so are abomination unto the LORD thy God."
 				},
 				{
 					"verse": "6",
-					"text": "If a bird\u2019s nest chance to be before thee in the way in any tree, or on the ground, whether they be young ones, or eggs, and the dam sitting upon the young, or upon the eggs, thou shalt not take the dam with the young:"
+					"paragraph": true,
+					"text": "If a bird’s nest chance to be before thee in the way in any tree, or on the ground, whether they be young ones, or eggs, and the dam sitting upon the young, or upon the eggs, thou shalt not take the dam with the young:"
 				},
 				{
 					"verse": "7",
@@ -2416,26 +2519,32 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "When thou buildest a new house, then thou shalt make a battlement for thy roof, that thou bring not blood upon thine house, if any man fall from thence."
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Thou shalt not sow thy vineyard with divers seeds: lest the fruit of thy seed which thou hast sown, and the fruit of thy vineyard, be defiled."
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Thou shalt not plow with an ox and an ass together."
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Thou shalt not wear a garment of divers sorts, as of woollen and linen together."
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Thou shalt make thee fringes upon the four quarters of thy vesture, wherewith thou coverest thyself."
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "If any man take a wife, and go in unto her, and hate her,"
 				},
 				{
@@ -2444,15 +2553,15 @@
 				},
 				{
 					"verse": "15",
-					"text": "Then shall the father of the damsel, and her mother, take and bring forth the tokens of the damsel\u2019s virginity unto the elders of the city in the gate:"
+					"text": "Then shall the father of the damsel, and her mother, take and bring forth the tokens of the damsel’s virginity unto the elders of the city in the gate:"
 				},
 				{
 					"verse": "16",
-					"text": "And the damsel\u2019s father shall say unto the elders, I gave my daughter unto this man to wife, and he hateth her;"
+					"text": "And the damsel’s father shall say unto the elders, I gave my daughter unto this man to wife, and he hateth her;"
 				},
 				{
 					"verse": "17",
-					"text": "And, lo, he hath given occasions of speech against her, saying, I found not thy daughter a maid; and yet these are the tokens of my daughter\u2019s virginity. And they shall spread the cloth before the elders of the city."
+					"text": "And, lo, he hath given occasions of speech against her, saying, I found not thy daughter a maid; and yet these are the tokens of my daughter’s virginity. And they shall spread the cloth before the elders of the city."
 				},
 				{
 					"verse": "18",
@@ -2468,22 +2577,25 @@
 				},
 				{
 					"verse": "21",
-					"text": "Then they shall bring out the damsel to the door of her father\u2019s house, and the men of her city shall stone her with stones that she die: because she hath wrought folly in Israel, to play the whore in her father\u2019s house: so shalt thou put evil away from among you."
+					"text": "Then they shall bring out the damsel to the door of her father’s house, and the men of her city shall stone her with stones that she die: because she hath wrought folly in Israel, to play the whore in her father’s house: so shalt thou put evil away from among you."
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "If a man be found lying with a woman married to an husband, then they shall both of them die, both the man that lay with the woman, and the woman: so shalt thou put away evil from Israel."
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "If a damsel that is a virgin be betrothed unto an husband, and a man find her in the city, and lie with her;"
 				},
 				{
 					"verse": "24",
-					"text": "Then ye shall bring them both out unto the gate of that city, and ye shall stone them with stones that they die; the damsel, because she cried not, being in the city; and the man, because he hath humbled his neighbour\u2019s wife: so thou shalt put away evil from among you."
+					"text": "Then ye shall bring them both out unto the gate of that city, and ye shall stone them with stones that they die; the damsel, because she cried not, being in the city; and the man, because he hath humbled his neighbour’s wife: so thou shalt put away evil from among you."
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "But if a man find a betrothed damsel in the field, and the man force her, and lie with her: then the man only that lay with her shall die:"
 				},
 				{
@@ -2496,15 +2608,17 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "If a man find a damsel that is a virgin, which is not betrothed, and lay hold on her, and lie with her, and they be found;"
 				},
 				{
 					"verse": "29",
-					"text": "Then the man that lay with her shall give unto the damsel\u2019s father fifty shekels of silver, and she shall be his wife; because he hath humbled her, he may not put her away all his days."
+					"text": "Then the man that lay with her shall give unto the damsel’s father fifty shekels of silver, and she shall be his wife; because he hath humbled her, he may not put her away all his days."
 				},
 				{
 					"verse": "30",
-					"text": "A man shall not take his father\u2019s wife, nor discover his father\u2019s skirt."
+					"paragraph": true,
+					"text": "A man shall not take his father’s wife, nor discover his father’s skirt."
 				}
 			]
 		},
@@ -2537,6 +2651,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Thou shalt not abhor an Edomite; for he is thy brother: thou shalt not abhor an Egyptian; because thou wast a stranger in his land."
 				},
 				{
@@ -2545,10 +2660,12 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "When the host goeth forth against thine enemies, then keep thee from every wicked thing."
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "If there be among you any man, that is not clean by reason of uncleanness that chanceth him by night, then shall he go abroad out of the camp, he shall not come within the camp:"
 				},
 				{
@@ -2557,6 +2674,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Thou shalt have a place also without the camp, whither thou shalt go forth abroad:"
 				},
 				{
@@ -2569,6 +2687,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Thou shalt not deliver unto his master the servant which is escaped from his master unto thee:"
 				},
 				{
@@ -2577,6 +2696,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "There shall be no whore of the daughters of Israel, nor a sodomite of the sons of Israel."
 				},
 				{
@@ -2585,6 +2705,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Thou shalt not lend upon usury to thy brother; usury of money, usury of victuals, usury of any thing that is lent upon usury:"
 				},
 				{
@@ -2593,6 +2714,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "When thou shalt vow a vow unto the LORD thy God, thou shalt not slack to pay it: for the LORD thy God will surely require it of thee; and it would be sin in thee."
 				},
 				{
@@ -2605,11 +2727,12 @@
 				},
 				{
 					"verse": "24",
-					"text": "When thou comest into thy neighbour\u2019s vineyard, then thou mayest eat grapes thy fill at thine own pleasure; but thou shalt not put any in thy vessel."
+					"paragraph": true,
+					"text": "When thou comest into thy neighbour’s vineyard, then thou mayest eat grapes thy fill at thine own pleasure; but thou shalt not put any in thy vessel."
 				},
 				{
 					"verse": "25",
-					"text": "When thou comest into the standing corn of thy neighbour, then thou mayest pluck the ears with thine hand; but thou shalt not move a sickle unto thy neighbour\u2019s standing corn."
+					"text": "When thou comest into the standing corn of thy neighbour, then thou mayest pluck the ears with thine hand; but thou shalt not move a sickle unto thy neighbour’s standing corn."
 				}
 			]
 		},
@@ -2622,7 +2745,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "And when she is departed out of his house, she may go and be another man\u2019s wife."
+					"text": "And when she is departed out of his house, she may go and be another man’s wife."
 				},
 				{
 					"verse": "3",
@@ -2634,18 +2757,22 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "When a man hath taken a new wife, he shall not go out to war, neither shall he be charged with any business: but he shall be free at home one year, and shall cheer up his wife which he hath taken."
 				},
 				{
 					"verse": "6",
-					"text": "No man shall take the nether or the upper millstone to pledge: for he taketh a man\u2019s life to pledge."
+					"paragraph": true,
+					"text": "No man shall take the nether or the upper millstone to pledge: for he taketh a man’s life to pledge."
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "If a man be found stealing any of his brethren of the children of Israel, and maketh merchandise of him, or selleth him; then that thief shall die; and thou shalt put evil away from among you."
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Take heed in the plague of leprosy, that thou observe diligently, and do according to all that the priests the Levites shall teach you: as I commanded them, so ye shall observe to do."
 				},
 				{
@@ -2654,6 +2781,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "When thou dost lend thy brother any thing, thou shalt not go into his house to fetch his pledge."
 				},
 				{
@@ -2670,6 +2798,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Thou shalt not oppress an hired servant that is poor and needy, whether he be of thy brethren, or of thy strangers that are in thy land within thy gates:"
 				},
 				{
@@ -2682,7 +2811,8 @@
 				},
 				{
 					"verse": "17",
-					"text": "Thou shalt not pervert the judgment of the stranger, nor of the fatherless; nor take a widow\u2019s raiment to pledge:"
+					"paragraph": true,
+					"text": "Thou shalt not pervert the judgment of the stranger, nor of the fatherless; nor take a widow’s raiment to pledge:"
 				},
 				{
 					"verse": "18",
@@ -2690,6 +2820,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "When thou cuttest down thine harvest in thy field, and hast forgot a sheaf in the field, thou shalt not go again to fetch it: it shall be for the stranger, for the fatherless, and for the widow: that the LORD thy God may bless thee in all the work of thine hands."
 				},
 				{
@@ -2723,11 +2854,13 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Thou shalt not muzzle the ox when he treadeth out the corn."
 				},
 				{
 					"verse": "5",
-					"text": "If brethren dwell together, and one of them die, and have no child, the wife of the dead shall not marry without unto a stranger: her husband\u2019s brother shall go in unto her, and take her to him to wife, and perform the duty of an husband\u2019s brother unto her."
+					"paragraph": true,
+					"text": "If brethren dwell together, and one of them die, and have no child, the wife of the dead shall not marry without unto a stranger: her husband’s brother shall go in unto her, and take her to him to wife, and perform the duty of an husband’s brother unto her."
 				},
 				{
 					"verse": "6",
@@ -2735,7 +2868,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "And if the man like not to take his brother\u2019s wife, then let his brother\u2019s wife go up to the gate unto the elders, and say, My husband\u2019s brother refuseth to raise up unto his brother a name in Israel, he will not perform the duty of my husband\u2019s brother."
+					"text": "And if the man like not to take his brother’s wife, then let his brother’s wife go up to the gate unto the elders, and say, My husband’s brother refuseth to raise up unto his brother a name in Israel, he will not perform the duty of my husband’s brother."
 				},
 				{
 					"verse": "8",
@@ -2743,7 +2876,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "Then shall his brother\u2019s wife come unto him in the presence of the elders, and loose his shoe from off his foot, and spit in his face, and shall answer and say, So shall it be done unto that man that will not build up his brother\u2019s house."
+					"text": "Then shall his brother’s wife come unto him in the presence of the elders, and loose his shoe from off his foot, and spit in his face, and shall answer and say, So shall it be done unto that man that will not build up his brother’s house."
 				},
 				{
 					"verse": "10",
@@ -2751,6 +2884,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "When men strive together one with another, and the wife of the one draweth near for to deliver her husband out of the hand of him that smiteth him, and putteth forth her hand, and taketh him by the secrets:"
 				},
 				{
@@ -2759,6 +2893,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Thou shalt not have in thy bag divers weights, a great and a small."
 				},
 				{
@@ -2775,6 +2910,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Remember what Amalek did unto thee by the way, when ye were come forth out of Egypt;"
 				},
 				{
@@ -2836,6 +2972,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "When thou hast made an end of tithing all the tithes of thine increase the third year, which is the year of tithing, and hast given it unto the Levite, the stranger, the fatherless, and the widow, that they may eat within thy gates, and be filled;"
 				},
 				{
@@ -2852,6 +2989,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "This day the LORD thy God hath commanded thee to do these statutes and judgments: thou shalt therefore keep and do them with all thine heart, and with all thy soul."
 				},
 				{
@@ -2905,6 +3043,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And Moses and the priests the Levites spake unto all Israel, saying, Take heed, and hearken, O Israel; this day thou art become the people of the LORD thy God."
 				},
 				{
@@ -2913,6 +3052,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And Moses charged the people the same day, saying,"
 				},
 				{
@@ -2925,6 +3065,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And the Levites shall speak, and say unto all the men of Israel with a loud voice,"
 				},
 				{
@@ -2937,7 +3078,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "Cursed be he that removeth his neighbour\u2019s landmark. And all the people shall say, Amen."
+					"text": "Cursed be he that removeth his neighbour’s landmark. And all the people shall say, Amen."
 				},
 				{
 					"verse": "18",
@@ -2949,7 +3090,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "Cursed be he that lieth with his father\u2019s wife; because he uncovereth his father\u2019s skirt. And all the people shall say, Amen."
+					"text": "Cursed be he that lieth with his father’s wife; because he uncovereth his father’s skirt. And all the people shall say, Amen."
 				},
 				{
 					"verse": "21",
@@ -2996,7 +3137,10 @@
 					"verse": "4",
 					"text": "Blessed shall be the fruit of thy body, and the fruit of thy ground, and the fruit of thy cattle, the increase of thy kine, and the flocks of thy sheep."
 				},
-				{ "verse": "5", "text": "Blessed shall be thy basket and thy store." },
+				{
+					"verse": "5",
+					"text": "Blessed shall be thy basket and thy store."
+				},
 				{
 					"verse": "6",
 					"text": "Blessed shalt thou be when thou comest in, and blessed shalt thou be when thou goest out."
@@ -3035,13 +3179,17 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "But it shall come to pass, if thou wilt not hearken unto the voice of the LORD thy God, to observe to do all his commandments and his statutes which I command thee this day; that all these curses shall come upon thee, and overtake thee:"
 				},
 				{
 					"verse": "16",
 					"text": "Cursed shalt thou be in the city, and cursed shalt thou be in the field."
 				},
-				{ "verse": "17", "text": "Cursed shall be thy basket and thy store." },
+				{
+					"verse": "17",
+					"text": "Cursed shall be thy basket and thy store."
+				},
 				{
 					"verse": "18",
 					"text": "Cursed shall be the fruit of thy body, and the fruit of thy land, the increase of thy kine, and the flocks of thy sheep."
@@ -3257,6 +3405,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "And Moses called unto all Israel, and said unto them, Ye have seen all that the LORD did before your eyes in the land of Egypt unto Pharaoh, and unto all his servants, and unto all his land;"
 				},
 				{
@@ -3289,6 +3438,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Ye stand this day all of you before the LORD your God; your captains of your tribes, your elders, and your officers, with all the men of Israel,"
 				},
 				{
@@ -3414,6 +3564,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "For this commandment which I command thee this day, it is not hidden from thee, neither is it far off."
 				},
 				{
@@ -3430,6 +3581,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "See, I have set before thee this day life and good, and death and evil;"
 				},
 				{
@@ -3483,6 +3635,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And Moses called unto Joshua, and said unto him in the sight of all Israel, Be strong and of a good courage: for thou must go with this people unto the land which the LORD hath sworn unto their fathers to give them; and thou shalt cause them to inherit it."
 				},
 				{
@@ -3491,6 +3644,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And Moses wrote this law, and delivered it unto the priests the sons of Levi, which bare the ark of the covenant of the LORD, and unto all the elders of Israel."
 				},
 				{
@@ -3511,6 +3665,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Behold, thy days approach that thou must die: call Joshua, and present yourselves in the tabernacle of the congregation, that I may give him a charge. And Moses and Joshua went, and presented themselves in the tabernacle of the congregation."
 				},
 				{
@@ -3519,6 +3674,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Behold, thou shalt sleep with thy fathers; and this people will rise up, and go a whoring after the gods of the strangers of the land, whither they go to be among them, and will forsake me, and break my covenant which I have made with them."
 				},
 				{
@@ -3543,6 +3699,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Moses therefore wrote this song the same day, and taught it the children of Israel."
 				},
 				{
@@ -3551,6 +3708,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And it came to pass, when Moses had made an end of writing the words of this law in a book, until they were finished,"
 				},
 				{
@@ -3567,6 +3725,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "Gather unto me all the elders of your tribes, and your officers, that I may speak these words in their ears, and call heaven and earth to record against them."
 				},
 				{
@@ -3608,6 +3767,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Remember the days of old, consider the years of many generations: ask thy father, and he will shew thee; thy elders, and they will tell thee."
 				},
 				{
@@ -3616,7 +3776,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "For the LORD\u2019s portion is his people; Jacob is the lot of his inheritance."
+					"text": "For the LORD’s portion is his people; Jacob is the lot of his inheritance."
 				},
 				{
 					"verse": "10",
@@ -3640,6 +3800,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "But Jeshurun waxed fat, and kicked: thou art waxen fat, thou art grown thick, thou art covered with fatness; then he forsook God which made him, and lightly esteemed the Rock of his salvation."
 				},
 				{
@@ -3756,6 +3917,7 @@
 				},
 				{
 					"verse": "44",
+					"paragraph": true,
 					"text": "And Moses came and spake all the words of this song in the ears of the people, he, and Hoshea the son of Nun."
 				},
 				{
@@ -3817,10 +3979,12 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Let Reuben live, and not die; and let not his men be few."
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And this is the blessing of Judah: and he said, Hear, LORD, the voice of Judah, and bring him unto his people: let his hands be sufficient for him; and be thou an help to him from his enemies."
 				},
 				{
@@ -3841,10 +4005,12 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And of Benjamin he said, The beloved of the LORD shall dwell in safety by him; and the Lord shall cover him all the day long, and he shall dwell between his shoulders."
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And of Joseph he said, Blessed of the LORD be his land, for the precious things of heaven, for the dew, and for the deep that coucheth beneath,"
 				},
 				{
@@ -3865,6 +4031,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And of Zebulun he said, Rejoice, Zebulun, in thy going out; and, Issachar, in thy tents."
 				},
 				{
@@ -3873,6 +4040,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And of Gad he said, Blessed be he that enlargeth Gad: he dwelleth as a lion, and teareth the arm with the crown of the head."
 				},
 				{
@@ -3881,14 +4049,17 @@
 				},
 				{
 					"verse": "22",
-					"text": "And of Dan he said, Dan is a lion\u2019s whelp: he shall leap from Bashan."
+					"paragraph": true,
+					"text": "And of Dan he said, Dan is a lion’s whelp: he shall leap from Bashan."
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And of Naphtali he said, O Naphtali, satisfied with favour, and full with the blessing of the LORD: possess thou the west and the south."
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And of Asher he said, Let Asher be blessed with children; let him be acceptable to his brethren, and let him dip his foot in oil."
 				},
 				{
@@ -3897,6 +4068,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "There is none like unto the God of Jeshurun, who rideth upon the heaven in thy help, and in his excellency on the sky."
 				},
 				{
@@ -3934,6 +4106,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "So Moses the servant of the LORD died there in the land of Moab, according to the word of the LORD."
 				},
 				{
@@ -3942,18 +4115,22 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated."
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And the children of Israel wept for Moses in the plains of Moab thirty days: so the days of weeping and mourning for Moses were ended."
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And Joshua the son of Nun was full of the spirit of wisdom; for Moses had laid his hands upon him: and the children of Israel hearkened unto him, and did as the LORD commanded Moses."
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And there arose not a prophet since in Israel like unto Moses, whom the LORD knew face to face,"
 				},
 				{

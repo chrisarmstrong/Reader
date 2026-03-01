@@ -15,6 +15,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "The pride of thine heart hath deceived thee, thou that dwellest in the clefts of the rock, whose habitation is high; that saith in his heart, Who shall bring me down to the ground?"
 				},
 				{
@@ -43,6 +44,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "For thy violence against thy brother Jacob shame shall cover thee, and thou shalt be cut off for ever."
 				},
 				{
@@ -71,6 +73,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "But upon mount Zion shall be deliverance, and there shall be holiness; and the house of Jacob shall possess their possessions."
 				},
 				{
@@ -87,7 +90,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "And saviours shall come up on mount Zion to judge the mount of Esau; and the kingdom shall be the LORD\u2019s."
+					"text": "And saviours shall come up on mount Zion to judge the mount of Esau; and the kingdom shall be the LORD’s."
 				}
 			]
 		}

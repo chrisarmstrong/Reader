@@ -51,6 +51,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "For our rejoicing is this, the testimony of our conscience, that in simplicity and godly sincerity, not with fleshly wisdom, but by the grace of God, we have had our conversation in the world, and more abundantly to you-ward."
 				},
 				{
@@ -63,6 +64,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And in this confidence I was minded to come unto you before, that ye might have a second benefit;"
 				},
 				{
@@ -152,7 +154,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "Furthermore, when I came to Troas to preach Christ\u2019s gospel, and a door was opened unto me of the Lord,"
+					"text": "Furthermore, when I came to Troas to preach Christ’s gospel, and a door was opened unto me of the Lord,"
 				},
 				{
 					"verse": "13",
@@ -193,6 +195,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And such trust have we through Christ to God-ward:"
 				},
 				{
@@ -262,7 +265,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "But have renounced the hidden things of dishonesty, not walking in craftiness, nor handling the word of God deceitfully; but by manifestation of the truth commending ourselves to every man\u2019s conscience in the sight of God."
+					"text": "But have renounced the hidden things of dishonesty, not walking in craftiness, nor handling the word of God deceitfully; but by manifestation of the truth commending ourselves to every man’s conscience in the sight of God."
 				},
 				{
 					"verse": "3",
@@ -274,7 +277,7 @@
 				},
 				{
 					"verse": "5",
-					"text": "For we preach not ourselves, but Christ Jesus the Lord; and ourselves your servants for Jesus\u2019 sake."
+					"text": "For we preach not ourselves, but Christ Jesus the Lord; and ourselves your servants for Jesus’ sake."
 				},
 				{
 					"verse": "6",
@@ -282,6 +285,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "But we have this treasure in earthen vessels, that the excellency of the power may be of God, and not of us."
 				},
 				{
@@ -298,7 +302,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "For we which live are alway delivered unto death for Jesus\u2019 sake, that the life also of Jesus might be made manifest in our mortal flesh."
+					"text": "For we which live are alway delivered unto death for Jesus’ sake, that the life also of Jesus might be made manifest in our mortal flesh."
 				},
 				{
 					"verse": "12",
@@ -357,7 +361,10 @@
 					"verse": "6",
 					"text": "Therefore we are always confident, knowing that, whilst we are at home in the body, we are absent from the Lord:"
 				},
-				{ "verse": "7", "text": "(For we walk by faith, not by sight:)" },
+				{
+					"verse": "7",
+					"text": "(For we walk by faith, not by sight:)"
+				},
 				{
 					"verse": "8",
 					"text": "We are confident, I say, and willing rather to be absent from the body, and to be present with the Lord."
@@ -372,6 +379,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Knowing therefore the terror of the Lord, we persuade men; but we are made manifest unto God; and I trust also are made manifest in your consciences."
 				},
 				{
@@ -408,7 +416,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "Now then we are ambassadors for Christ, as though God did beseech you by us: we pray you in Christ\u2019s stead, be ye reconciled to God."
+					"text": "Now then we are ambassadors for Christ, as though God did beseech you by us: we pray you in Christ’s stead, be ye reconciled to God."
 				},
 				{
 					"verse": "21",
@@ -461,6 +469,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "O ye Corinthians, our mouth is open unto you, our heart is enlarged."
 				},
 				{
@@ -502,6 +511,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "Receive us; we have wronged no man, we have corrupted no man, we have defrauded no man."
 				},
 				{
@@ -757,7 +767,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "Do ye look on things after the outward appearance? If any man trust to himself that he is Christ\u2019s, let him of himself think this again, that, as he is Christ\u2019s, even so are we Christ\u2019s."
+					"text": "Do ye look on things after the outward appearance? If any man trust to himself that he is Christ’s, let him of himself think this again, that, as he is Christ’s, even so are we Christ’s."
 				},
 				{
 					"verse": "8",
@@ -789,11 +799,11 @@
 				},
 				{
 					"verse": "15",
-					"text": "Not boasting of things without our measure, that is, of other men\u2019s labours; but having hope, when your faith is increased, that we shall be enlarged by you according to our rule abundantly,"
+					"text": "Not boasting of things without our measure, that is, of other men’s labours; but having hope, when your faith is increased, that we shall be enlarged by you according to our rule abundantly,"
 				},
 				{
 					"verse": "16",
-					"text": "To preach the gospel in the regions beyond you, and not to boast in another man\u2019s line of things made ready to our hand."
+					"text": "To preach the gospel in the regions beyond you, and not to boast in another man’s line of things made ready to our hand."
 				},
 				{
 					"verse": "17",
@@ -870,6 +880,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "I say again, Let no man think me a fool; if otherwise, yet as a fool receive me, that I may boast myself a little."
 				},
 				{
@@ -983,10 +994,11 @@
 				},
 				{
 					"verse": "10",
-					"text": "Therefore I take pleasure in infirmities, in reproaches, in necessities, in persecutions, in distresses for Christ\u2019s sake: for when I am weak, then am I strong."
+					"text": "Therefore I take pleasure in infirmities, in reproaches, in necessities, in persecutions, in distresses for Christ’s sake: for when I am weak, then am I strong."
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "I am become a fool in glorying; ye have compelled me: for I ought to have been commended of you: for in nothing am I behind the very chiefest apostles, though I be nothing."
 				},
 				{
@@ -1076,10 +1088,18 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Finally, brethren, farewell. Be perfect, be of good comfort, be of one mind, live in peace; and the God of love and peace shall be with you."
 				},
-				{ "verse": "12", "text": "Greet one another with an holy kiss." },
-				{ "verse": "13", "text": "All the saints salute you." },
+				{
+					"verse": "12",
+					"text": "Greet one another with an holy kiss."
+				},
+				{
+					"verse": "13",
+					"paragraph": true,
+					"text": "All the saints salute you."
+				},
 				{
 					"verse": "14",
 					"text": "The grace of the Lord Jesus Christ, and the love of God, and the communion of the Holy Ghost, be with you all. Amen."

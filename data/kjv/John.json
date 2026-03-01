@@ -9,7 +9,10 @@
 					"verse": "1",
 					"text": "In the beginning was the Word, and the Word was with God, and the Word was God."
 				},
-				{ "verse": "2", "text": "The same was in the beginning with God." },
+				{
+					"verse": "2",
+					"text": "The same was in the beginning with God."
+				},
 				{
 					"verse": "3",
 					"text": "All things were made by him; and without him was not any thing made that was made."
@@ -24,6 +27,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "There was a man sent from God, whose name was John."
 				},
 				{
@@ -60,6 +64,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "John bare witness of him, and cried, saying, This was he of whom I spake, He that cometh after me is preferred before me: for he was before me."
 				},
 				{
@@ -76,6 +81,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And this is the record of John, when the Jews sent priests and Levites from Jerusalem to ask him, Who art thou?"
 				},
 				{
@@ -108,7 +114,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "He it is, who coming after me is preferred before me, whose shoe\u2019s latchet I am not worthy to unloose."
+					"text": "He it is, who coming after me is preferred before me, whose shoe’s latchet I am not worthy to unloose."
 				},
 				{
 					"verse": "28",
@@ -116,6 +122,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "The next day John seeth Jesus coming unto him, and saith, Behold the Lamb of God, which taketh away the sin of the world."
 				},
 				{
@@ -140,6 +147,7 @@
 				},
 				{
 					"verse": "35",
+					"paragraph": true,
 					"text": "Again the next day after John stood, and two of his disciples;"
 				},
 				{
@@ -160,7 +168,7 @@
 				},
 				{
 					"verse": "40",
-					"text": "One of the two which heard John speak, and followed him, was Andrew, Simon Peter\u2019s brother."
+					"text": "One of the two which heard John speak, and followed him, was Andrew, Simon Peter’s brother."
 				},
 				{
 					"verse": "41",
@@ -172,6 +180,7 @@
 				},
 				{
 					"verse": "43",
+					"paragraph": true,
 					"text": "The day following Jesus would go forth into Galilee, and findeth Philip, and saith unto him, Follow me."
 				},
 				{
@@ -257,11 +266,13 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "After this he went down to Capernaum, he, and his mother, and his brethren, and his disciples: and they continued there not many days."
 				},
 				{
 					"verse": "13",
-					"text": "And the Jews\u2019 passover was at hand, and Jesus went up to Jerusalem,"
+					"paragraph": true,
+					"text": "And the Jews’ passover was at hand, and Jesus went up to Jerusalem,"
 				},
 				{
 					"verse": "14",
@@ -269,11 +280,11 @@
 				},
 				{
 					"verse": "15",
-					"text": "And when he had made a scourge of small cords, he drove them all out of the temple, and the sheep, and the oxen; and poured out the changers\u2019 money, and overthrew the tables;"
+					"text": "And when he had made a scourge of small cords, he drove them all out of the temple, and the sheep, and the oxen; and poured out the changers’ money, and overthrew the tables;"
 				},
 				{
 					"verse": "16",
-					"text": "And said unto them that sold doves, Take these things hence; make not my Father\u2019s house an house of merchandise."
+					"text": "And said unto them that sold doves, Take these things hence; make not my Father’s house an house of merchandise."
 				},
 				{
 					"verse": "17",
@@ -281,6 +292,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Then answered the Jews and said unto him, What sign shewest thou unto us, seeing that thou doest these things?"
 				},
 				{
@@ -291,13 +303,17 @@
 					"verse": "20",
 					"text": "Then said the Jews, Forty and six years was this temple in building, and wilt thou rear it up in three days?"
 				},
-				{ "verse": "21", "text": "But he spake of the temple of his body." },
+				{
+					"verse": "21",
+					"text": "But he spake of the temple of his body."
+				},
 				{
 					"verse": "22",
 					"text": "When therefore he was risen from the dead, his disciples remembered that he had said this unto them; and they believed the scripture, and the word which Jesus had said."
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Now when he was in Jerusalem at the passover, in the feast day, many believed in his name, when they saw the miracles which he did."
 				},
 				{
@@ -327,7 +343,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "Nicodemus saith unto him, How can a man be born when he is old? can he enter the second time into his mother\u2019s womb, and be born?"
+					"text": "Nicodemus saith unto him, How can a man be born when he is old? can he enter the second time into his mother’s womb, and be born?"
 				},
 				{
 					"verse": "5",
@@ -367,6 +383,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And as Moses lifted up the serpent in the wilderness, even so must the Son of man be lifted up:"
 				},
 				{
@@ -375,6 +392,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."
 				},
 				{
@@ -383,6 +401,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "He that believeth on him is not condemned: but he that believeth not is condemned already, because he hath not believed in the name of the only begotten Son of God."
 				},
 				{
@@ -399,16 +418,22 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "After these things came Jesus and his disciples into the land of Judaea; and there he tarried with them, and baptized."
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And John also was baptizing in Aenon near to Salim, because there was much water there: and they came, and were baptized."
 				},
-				{ "verse": "24", "text": "For John was not yet cast into prison." },
+				{
+					"verse": "24",
+					"text": "For John was not yet cast into prison."
+				},
 				{
 					"verse": "25",
-					"text": "Then there arose a question between some of John\u2019s disciples and the Jews about purifying."
+					"paragraph": true,
+					"text": "Then there arose a question between some of John’s disciples and the Jews about purifying."
 				},
 				{
 					"verse": "26",
@@ -424,9 +449,12 @@
 				},
 				{
 					"verse": "29",
-					"text": "He that hath the bride is the bridegroom: but the friend of the bridegroom, which standeth and heareth him, rejoiceth greatly because of the bridegroom\u2019s voice: this my joy therefore is fulfilled."
+					"text": "He that hath the bride is the bridegroom: but the friend of the bridegroom, which standeth and heareth him, rejoiceth greatly because of the bridegroom’s voice: this my joy therefore is fulfilled."
 				},
-				{ "verse": "30", "text": "He must increase, but I must decrease." },
+				{
+					"verse": "30",
+					"text": "He must increase, but I must decrease."
+				},
 				{
 					"verse": "31",
 					"text": "He that cometh from above is above all: he that is of the earth is earthly, and speaketh of the earth: he that cometh from heaven is above all."
@@ -468,14 +496,17 @@
 					"verse": "3",
 					"text": "He left Judaea, and departed again into Galilee."
 				},
-				{ "verse": "4", "text": "And he must needs go through Samaria." },
+				{
+					"verse": "4",
+					"text": "And he must needs go through Samaria."
+				},
 				{
 					"verse": "5",
 					"text": "Then cometh he to a city of Samaria, which is called Sychar, near to the parcel of ground that Jacob gave to his son Joseph."
 				},
 				{
 					"verse": "6",
-					"text": "Now Jacob\u2019s well was there. Jesus therefore, being wearied with his journey, sat thus on the well: and it was about the sixth hour."
+					"text": "Now Jacob’s well was there. Jesus therefore, being wearied with his journey, sat thus on the well: and it was about the sixth hour."
 				},
 				{
 					"verse": "7",
@@ -559,6 +590,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And upon this came his disciples, and marvelled that he talked with the woman: yet no man said, What seekest thou? or, Why talkest thou with her?"
 				},
 				{
@@ -575,6 +607,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "In the mean while his disciples prayed him, saying, Master, eat."
 				},
 				{
@@ -607,6 +640,7 @@
 				},
 				{
 					"verse": "39",
+					"paragraph": true,
 					"text": "And many of the Samaritans of that city believed on him for the saying of the woman, which testified, He told me all that ever I did."
 				},
 				{
@@ -623,6 +657,7 @@
 				},
 				{
 					"verse": "43",
+					"paragraph": true,
 					"text": "Now after two days he departed thence, and went into Galilee."
 				},
 				{
@@ -712,6 +747,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "The Jews therefore said unto him that was cured, It is the sabbath day: it is not lawful for thee to carry thy bed."
 				},
 				{
@@ -740,6 +776,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "But Jesus answered them, My Father worketh hitherto, and I work."
 				},
 				{
@@ -800,6 +837,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "There is another that beareth witness of me; and I know that the witness which he witnesseth of me is true."
 				},
 				{
@@ -816,6 +854,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "But I have greater witness than that of John: for the works which the Father hath given me to finish, the same works that I do, bear witness of me, that the Father hath sent me."
 				},
 				{
@@ -828,20 +867,24 @@
 				},
 				{
 					"verse": "39",
+					"paragraph": true,
 					"text": "Search the scriptures; for in them ye think ye have eternal life: and they are they which testify of me."
 				},
 				{
 					"verse": "40",
 					"text": "And ye will not come to me, that ye might have life."
 				},
-				{ "verse": "41", "text": "I receive not honour from men." },
+				{
+					"verse": "41",
+					"text": "I receive not honour from men."
+				},
 				{
 					"verse": "42",
 					"text": "But I know you, that ye have not the love of God in you."
 				},
 				{
 					"verse": "43",
-					"text": "I am come in my Father\u2019s name, and ye receive me not: if another shall come in his own name, him ye will receive."
+					"text": "I am come in my Father’s name, and ye receive me not: if another shall come in his own name, him ye will receive."
 				},
 				{
 					"verse": "44",
@@ -882,6 +925,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "When Jesus then lifted up his eyes, and saw a great company come unto him, he saith unto Philip, Whence shall we buy bread, that these may eat?"
 				},
 				{
@@ -894,7 +938,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "One of his disciples, Andrew, Simon Peter\u2019s brother, saith unto him,"
+					"text": "One of his disciples, Andrew, Simon Peter’s brother, saith unto him,"
 				},
 				{
 					"verse": "9",
@@ -922,6 +966,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "When Jesus therefore perceived that they would come and take him by force, to make him a king, he departed again into a mountain himself alone."
 				},
 				{
@@ -950,6 +995,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "The day following, when the people which stood on the other side of the sea saw that there was none other boat there, save that one whereinto his disciples were entered, and that Jesus went not with his disciples into the boat, but that his disciples were gone away alone;"
 				},
 				{
@@ -1018,7 +1064,7 @@
 				},
 				{
 					"verse": "39",
-					"text": "And this is the Father\u2019s will which hath sent me, that of all which he hath given me I should lose nothing, but should raise it up again at the last day."
+					"text": "And this is the Father’s will which hath sent me, that of all which he hath given me I should lose nothing, but should raise it up again at the last day."
 				},
 				{
 					"verse": "40",
@@ -1052,7 +1098,10 @@
 					"verse": "47",
 					"text": "Verily, verily, I say unto you, He that believeth on me hath everlasting life."
 				},
-				{ "verse": "48", "text": "I am that bread of life." },
+				{
+					"verse": "48",
+					"text": "I am that bread of life."
+				},
 				{
 					"verse": "49",
 					"text": "Your fathers did eat manna in the wilderness, and are dead."
@@ -1123,6 +1172,7 @@
 				},
 				{
 					"verse": "66",
+					"paragraph": true,
 					"text": "From that time many of his disciples went back, and walked no more with him."
 				},
 				{
@@ -1156,7 +1206,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "Now the Jews\u2019 feast of tabernacles was at hand."
+					"text": "Now the Jews’ feast of tabernacles was at hand."
 				},
 				{
 					"verse": "3",
@@ -1188,6 +1238,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "But when his brethren were gone up, then went he also up unto the feast, not openly, but as it were in secret."
 				},
 				{
@@ -1204,6 +1255,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Now about the midst of the feast Jesus went up into the temple, and taught."
 				},
 				{
@@ -1276,6 +1328,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "The Pharisees heard that the people murmured such things concerning him; and the Pharisees and the chief priests sent officers to take him."
 				},
 				{
@@ -1308,6 +1361,7 @@
 				},
 				{
 					"verse": "40",
+					"paragraph": true,
 					"text": "Many of the people therefore, when they heard this saying, said, Of a truth this is the Prophet."
 				},
 				{
@@ -1328,6 +1382,7 @@
 				},
 				{
 					"verse": "45",
+					"paragraph": true,
 					"text": "Then came the officers to the chief priests and Pharisees; and they said unto them, Why have ye not brought him?"
 				},
 				{
@@ -1358,13 +1413,19 @@
 					"verse": "52",
 					"text": "They answered and said unto him, Art thou also of Galilee? Search, and look: for out of Galilee ariseth no prophet."
 				},
-				{ "verse": "53", "text": "And every man went unto his own house." }
+				{
+					"verse": "53",
+					"text": "And every man went unto his own house."
+				}
 			]
 		},
 		{
 			"chapter": "8",
 			"verses": [
-				{ "verse": "1", "text": "Jesus went unto the mount of Olives." },
+				{
+					"verse": "1",
+					"text": "Jesus went unto the mount of Olives."
+				},
 				{
 					"verse": "2",
 					"text": "And early in the morning he came again into the temple, and all the people came unto him; and he sat down, and taught them."
@@ -1407,6 +1468,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Then spake Jesus again unto them, saying, I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life."
 				},
 				{
@@ -1417,7 +1479,10 @@
 					"verse": "14",
 					"text": "Jesus answered and said unto them, Though I bear record of myself, yet my record is true: for I know whence I came, and whither I go; but ye cannot tell whence I come, and whither I go."
 				},
-				{ "verse": "15", "text": "Ye judge after the flesh; I judge no man." },
+				{
+					"verse": "15",
+					"text": "Ye judge after the flesh; I judge no man."
+				},
 				{
 					"verse": "16",
 					"text": "And yet if I judge, my judgment is true: for I am not alone, but I and the Father that sent me."
@@ -1488,7 +1553,8 @@
 				},
 				{
 					"verse": "33",
-					"text": "They answered him, We be Abraham\u2019s seed, and were never in bondage to any man: how sayest thou, Ye shall be made free?"
+					"paragraph": true,
+					"text": "They answered him, We be Abraham’s seed, and were never in bondage to any man: how sayest thou, Ye shall be made free?"
 				},
 				{
 					"verse": "34",
@@ -1504,7 +1570,7 @@
 				},
 				{
 					"verse": "37",
-					"text": "I know that ye are Abraham\u2019s seed; but ye seek to kill me, because my word hath no place in you."
+					"text": "I know that ye are Abraham’s seed; but ye seek to kill me, because my word hath no place in you."
 				},
 				{
 					"verse": "38",
@@ -1512,7 +1578,7 @@
 				},
 				{
 					"verse": "39",
-					"text": "They answered and said unto him, Abraham is our father. Jesus saith unto them, If ye were Abraham\u2019s children, ye would do the works of Abraham."
+					"text": "They answered and said unto him, Abraham is our father. Jesus saith unto them, If ye were Abraham’s children, ye would do the works of Abraham."
 				},
 				{
 					"verse": "40",
@@ -1544,7 +1610,7 @@
 				},
 				{
 					"verse": "47",
-					"text": "He that is of God heareth God\u2019s words: ye therefore hear them not, because ye are not of God."
+					"text": "He that is of God heareth God’s words: ye therefore hear them not, because ye are not of God."
 				},
 				{
 					"verse": "48",
@@ -1629,6 +1695,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "The neighbours therefore, and they which before had seen him that he was blind, said, Is not this he that sat and begged?"
 				},
 				{
@@ -1649,6 +1716,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "They brought to the Pharisees him that aforetime was blind."
 				},
 				{
@@ -1709,7 +1777,7 @@
 				},
 				{
 					"verse": "28",
-					"text": "Then they reviled him, and said, Thou art his disciple; but we are Moses\u2019 disciples."
+					"text": "Then they reviled him, and said, Thou art his disciple; but we are Moses’ disciples."
 				},
 				{
 					"verse": "29",
@@ -1753,6 +1821,7 @@
 				},
 				{
 					"verse": "39",
+					"paragraph": true,
 					"text": "And Jesus said, For judgment I am come into this world, that they which see not might see; and that they which see might be made blind."
 				},
 				{
@@ -1842,6 +1911,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "There was a division therefore again among the Jews for these sayings."
 				},
 				{
@@ -1854,11 +1924,12 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And it was at Jerusalem the feast of the dedication, and it was winter."
 				},
 				{
 					"verse": "23",
-					"text": "And Jesus walked in the temple in Solomon\u2019s porch."
+					"text": "And Jesus walked in the temple in Solomon’s porch."
 				},
 				{
 					"verse": "24",
@@ -1866,7 +1937,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "Jesus answered them, I told you, and ye believed not: the works that I do in my Father\u2019s name, they bear witness of me."
+					"text": "Jesus answered them, I told you, and ye believed not: the works that I do in my Father’s name, they bear witness of me."
 				},
 				{
 					"verse": "26",
@@ -1882,9 +1953,12 @@
 				},
 				{
 					"verse": "29",
-					"text": "My Father, which gave them me, is greater than all; and no man is able to pluck them out of my Father\u2019s hand."
+					"text": "My Father, which gave them me, is greater than all; and no man is able to pluck them out of my Father’s hand."
 				},
-				{ "verse": "30", "text": "I and my Father are one." },
+				{
+					"verse": "30",
+					"text": "I and my Father are one."
+				},
 				{
 					"verse": "31",
 					"text": "Then the Jews took up stones again to stone him."
@@ -1929,7 +2003,10 @@
 					"verse": "41",
 					"text": "And many resorted unto him, and said, John did no miracle: but all things that John spake of this man were true."
 				},
-				{ "verse": "42", "text": "And many believed on him there." }
+				{
+					"verse": "42",
+					"text": "And many believed on him there."
+				}
 			]
 		},
 		{
@@ -2071,7 +2148,10 @@
 					"verse": "34",
 					"text": "And said, Where have ye laid him? They said unto him, Lord, come and see."
 				},
-				{ "verse": "35", "text": "Jesus wept." },
+				{
+					"verse": "35",
+					"text": "Jesus wept."
+				},
 				{
 					"verse": "36",
 					"text": "Then said the Jews, Behold how he loved him!"
@@ -2118,6 +2198,7 @@
 				},
 				{
 					"verse": "47",
+					"paragraph": true,
 					"text": "Then gathered the chief priests and the Pharisees a council, and said, What do we? for this man doeth many miracles."
 				},
 				{
@@ -2150,7 +2231,8 @@
 				},
 				{
 					"verse": "55",
-					"text": "And the Jews\u2019 passover was nigh at hand: and many went out of the country up to Jerusalem before the passover, to purify themselves."
+					"paragraph": true,
+					"text": "And the Jews’ passover was nigh at hand: and many went out of the country up to Jerusalem before the passover, to purify themselves."
 				},
 				{
 					"verse": "56",
@@ -2179,7 +2261,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "Then saith one of his disciples, Judas Iscariot, Simon\u2019s son, which should betray him,"
+					"text": "Then saith one of his disciples, Judas Iscariot, Simon’s son, which should betray him,"
 				},
 				{
 					"verse": "5",
@@ -2199,10 +2281,11 @@
 				},
 				{
 					"verse": "9",
-					"text": "Much people of the Jews therefore knew that he was there: and they came not for Jesus\u2019 sake only, but that they might see Lazarus also, whom he had raised from the dead."
+					"text": "Much people of the Jews therefore knew that he was there: and they came not for Jesus’ sake only, but that they might see Lazarus also, whom he had raised from the dead."
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "But the chief priests consulted that they might put Lazarus also to death;"
 				},
 				{
@@ -2211,6 +2294,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "On the next day much people that were come to the feast, when they heard that Jesus was coming to Jerusalem,"
 				},
 				{
@@ -2223,7 +2307,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "Fear not, daughter of Sion: behold, thy King cometh, sitting on an ass\u2019s colt."
+					"text": "Fear not, daughter of Sion: behold, thy King cometh, sitting on an ass’s colt."
 				},
 				{
 					"verse": "16",
@@ -2243,6 +2327,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And there were certain Greeks among them that came up to worship at the feast:"
 				},
 				{
@@ -2255,6 +2340,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And Jesus answered them, saying, The hour is come, that the Son of man should be glorified."
 				},
 				{
@@ -2311,6 +2397,7 @@
 				},
 				{
 					"verse": "37",
+					"paragraph": true,
 					"text": "But though he had done so many miracles before them, yet they believed not on him:"
 				},
 				{
@@ -2331,6 +2418,7 @@
 				},
 				{
 					"verse": "42",
+					"paragraph": true,
 					"text": "Nevertheless among the chief rulers also many believed on him; but because of the Pharisees they did not confess him, lest they should be put out of the synagogue:"
 				},
 				{
@@ -2339,6 +2427,7 @@
 				},
 				{
 					"verse": "44",
+					"paragraph": true,
 					"text": "Jesus cried and said, He that believeth on me, believeth not on me, but on him that sent me."
 				},
 				{
@@ -2376,7 +2465,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "And supper being ended, the devil having now put into the heart of Judas Iscariot, Simon\u2019s son, to betray him;"
+					"text": "And supper being ended, the devil having now put into the heart of Judas Iscariot, Simon’s son, to betray him;"
 				},
 				{
 					"verse": "3",
@@ -2388,7 +2477,7 @@
 				},
 				{
 					"verse": "5",
-					"text": "After that he poureth water into a bason, and began to wash the disciples\u2019 feet, and to wipe them with the towel wherewith he was girded."
+					"text": "After that he poureth water into a bason, and began to wash the disciples’ feet, and to wipe them with the towel wherewith he was girded."
 				},
 				{
 					"verse": "6",
@@ -2424,7 +2513,7 @@
 				},
 				{
 					"verse": "14",
-					"text": "If I then, your Lord and Master, have washed your feet; ye also ought to wash one another\u2019s feet."
+					"text": "If I then, your Lord and Master, have washed your feet; ye also ought to wash one another’s feet."
 				},
 				{
 					"verse": "15",
@@ -2440,6 +2529,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "I speak not of you all: I know whom I have chosen: but that the scripture may be fulfilled, He that eateth bread with me hath lifted up his heel against me."
 				},
 				{
@@ -2460,7 +2550,7 @@
 				},
 				{
 					"verse": "23",
-					"text": "Now there was leaning on Jesus\u2019 bosom one of his disciples, whom Jesus loved."
+					"text": "Now there was leaning on Jesus’ bosom one of his disciples, whom Jesus loved."
 				},
 				{
 					"verse": "24",
@@ -2468,7 +2558,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "He then lying on Jesus\u2019 breast saith unto him, Lord, who is it?"
+					"text": "He then lying on Jesus’ breast saith unto him, Lord, who is it?"
 				},
 				{
 					"verse": "26",
@@ -2492,6 +2582,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "Therefore, when he was gone out, Jesus said, Now is the Son of man glorified, and God is glorified in him."
 				},
 				{
@@ -2512,6 +2603,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "Simon Peter said unto him, Lord, whither goest thou? Jesus answered him, Whither I go, thou canst not follow me now; but thou shalt follow me afterwards."
 				},
 				{
@@ -2533,7 +2625,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "In my Father\u2019s house are many mansions: if it were not so, I would have told you. I go to prepare a place for you."
+					"text": "In my Father’s house are many mansions: if it were not so, I would have told you. I go to prepare a place for you."
 				},
 				{
 					"verse": "3",
@@ -2569,7 +2661,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "Believe me that I am in the Father, and the Father in me: or else believe me for the very works\u2019 sake."
+					"text": "Believe me that I am in the Father, and the Father in me: or else believe me for the very works’ sake."
 				},
 				{
 					"verse": "12",
@@ -2583,7 +2675,11 @@
 					"verse": "14",
 					"text": "If ye shall ask any thing in my name, I will do it."
 				},
-				{ "verse": "15", "text": "If ye love me, keep my commandments." },
+				{
+					"verse": "15",
+					"paragraph": true,
+					"text": "If ye love me, keep my commandments."
+				},
 				{
 					"verse": "16",
 					"text": "And I will pray the Father, and he shall give you another Comforter, that he may abide with you for ever;"
@@ -2618,7 +2714,7 @@
 				},
 				{
 					"verse": "24",
-					"text": "He that loveth me not keepeth not my sayings: and the word which ye hear is not mine, but the Father\u2019s which sent me."
+					"text": "He that loveth me not keepeth not my sayings: and the word which ye hear is not mine, but the Father’s which sent me."
 				},
 				{
 					"verse": "25",
@@ -2691,7 +2787,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "If ye keep my commandments, ye shall abide in my love; even as I have kept my Father\u2019s commandments, and abide in his love."
+					"text": "If ye keep my commandments, ye shall abide in my love; even as I have kept my Father’s commandments, and abide in his love."
 				},
 				{
 					"verse": "11",
@@ -2735,13 +2831,16 @@
 				},
 				{
 					"verse": "21",
-					"text": "But all these things will they do unto you for my name\u2019s sake, because they know not him that sent me."
+					"text": "But all these things will they do unto you for my name’s sake, because they know not him that sent me."
 				},
 				{
 					"verse": "22",
 					"text": "If I had not come and spoken unto them, they had not had sin: but now they have no cloak for their sin."
 				},
-				{ "verse": "23", "text": "He that hateth me hateth my Father also." },
+				{
+					"verse": "23",
+					"text": "He that hateth me hateth my Father also."
+				},
 				{
 					"verse": "24",
 					"text": "If I had not done among them the works which none other man did, they had not had sin: but now have they both seen and hated both me and my Father."
@@ -2795,7 +2894,10 @@
 					"verse": "8",
 					"text": "And when he is come, he will reprove the world of sin, and of righteousness, and of judgment:"
 				},
-				{ "verse": "9", "text": "Of sin, because they believe not on me;" },
+				{
+					"verse": "9",
+					"text": "Of sin, because they believe not on me;"
+				},
 				{
 					"verse": "10",
 					"text": "Of righteousness, because I go to my Father, and ye see me no more;"
@@ -2880,7 +2982,10 @@
 					"verse": "30",
 					"text": "Now are we sure that thou knowest all things, and needest not that any man should ask thee: by this we believe that thou camest forth from God."
 				},
-				{ "verse": "31", "text": "Jesus answered them, Do ye now believe?" },
+				{
+					"verse": "31",
+					"text": "Jesus answered them, Do ye now believe?"
+				},
 				{
 					"verse": "32",
 					"text": "Behold, the hour cometh, yea, is now come, that ye shall be scattered, every man to his own, and shall leave me alone: and yet I am not alone, because the Father is with me."
@@ -3041,7 +3146,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "Then Simon Peter having a sword drew it, and smote the high priest\u2019s servant, and cut off his right ear. The servant\u2019s name was Malchus."
+					"text": "Then Simon Peter having a sword drew it, and smote the high priest’s servant, and cut off his right ear. The servant’s name was Malchus."
 				},
 				{
 					"verse": "11",
@@ -3061,6 +3166,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And Simon Peter followed Jesus, and so did another disciple: that disciple was known unto the high priest, and went in with Jesus into the palace of the high priest."
 				},
 				{
@@ -3069,7 +3175,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "Then saith the damsel that kept the door unto Peter, Art not thou also one of this man\u2019s disciples? He saith, I am not."
+					"text": "Then saith the damsel that kept the door unto Peter, Art not thou also one of this man’s disciples? He saith, I am not."
 				},
 				{
 					"verse": "18",
@@ -3077,6 +3183,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "The high priest then asked Jesus of his disciples, and of his doctrine."
 				},
 				{
@@ -3113,6 +3220,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "Then led they Jesus from Caiaphas unto the hall of judgment: and it was early; and they themselves went not into the judgment hall, lest they should be defiled; but that they might eat the passover."
 				},
 				{
@@ -3198,6 +3306,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "When Pilate therefore heard that saying, he was the more afraid;"
 				},
 				{
@@ -3214,10 +3323,11 @@
 				},
 				{
 					"verse": "12",
-					"text": "And from thenceforth Pilate sought to release him: but the Jews cried out, saying, If thou let this man go, thou art not Caesar\u2019s friend: whosoever maketh himself a king speaketh against Caesar."
+					"text": "And from thenceforth Pilate sought to release him: but the Jews cried out, saying, If thou let this man go, thou art not Caesar’s friend: whosoever maketh himself a king speaketh against Caesar."
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "When Pilate therefore heard that saying, he brought Jesus forth, and sat down in the judgment seat in a place that is called the Pavement, but in the Hebrew, Gabbatha."
 				},
 				{
@@ -3242,6 +3352,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And Pilate wrote a title, and put it on the cross. And the writing was, JESUS OF NAZARETH THE KING OF THE JEWS."
 				},
 				{
@@ -3258,6 +3369,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Then the soldiers, when they had crucified Jesus, took his garments, and made four parts, to every soldier a part; and also his coat: now the coat was without seam, woven from the top throughout."
 				},
 				{
@@ -3266,7 +3378,8 @@
 				},
 				{
 					"verse": "25",
-					"text": "Now there stood by the cross of Jesus his mother, and his mother\u2019s sister, Mary the wife of Cleophas, and Mary Magdalene."
+					"paragraph": true,
+					"text": "Now there stood by the cross of Jesus his mother, and his mother’s sister, Mary the wife of Cleophas, and Mary Magdalene."
 				},
 				{
 					"verse": "26",
@@ -3278,6 +3391,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "After this, Jesus knowing that all things were now accomplished, that the scripture might be fulfilled, saith, I thirst."
 				},
 				{
@@ -3318,6 +3432,7 @@
 				},
 				{
 					"verse": "38",
+					"paragraph": true,
 					"text": "And after this Joseph of Arimathaea, being a disciple of Jesus, but secretly for fear of the Jews, besought Pilate that he might take away the body of Jesus: and Pilate gave him leave. He came therefore, and took the body of Jesus."
 				},
 				{
@@ -3334,7 +3449,7 @@
 				},
 				{
 					"verse": "42",
-					"text": "There laid they Jesus therefore because of the Jews\u2019 preparation day; for the sepulchre was nigh at hand."
+					"text": "There laid they Jesus therefore because of the Jews’ preparation day; for the sepulchre was nigh at hand."
 				}
 			]
 		},
@@ -3383,6 +3498,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "But Mary stood without at the sepulchre weeping: and as she wept, she stooped down, and looked into the sepulchre,"
 				},
 				{
@@ -3415,6 +3531,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Then the same day at evening, being the first day of the week, when the doors were shut where the disciples were assembled for fear of the Jews, came Jesus and stood in the midst, and saith unto them, Peace be unto you."
 				},
 				{
@@ -3435,6 +3552,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "But Thomas, one of the twelve, called Didymus, was not with them when Jesus came."
 				},
 				{
@@ -3443,6 +3561,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And after eight days again his disciples were within, and Thomas with them: then came Jesus, the doors being shut, and stood in the midst, and said, Peace be unto you."
 				},
 				{
@@ -3459,6 +3578,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "And many other signs truly did Jesus in the presence of his disciples, which are not written in this book:"
 				},
 				{
@@ -3496,7 +3616,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "Therefore that disciple whom Jesus loved saith unto Peter, It is the Lord. Now when Simon Peter heard that it was the Lord, he girt his fisher\u2019s coat unto him, (for he was naked,) and did cast himself into the sea."
+					"text": "Therefore that disciple whom Jesus loved saith unto Peter, It is the Lord. Now when Simon Peter heard that it was the Lord, he girt his fisher’s coat unto him, (for he was naked,) and did cast himself into the sea."
 				},
 				{
 					"verse": "8",
@@ -3528,6 +3648,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "So when they had dined, Jesus saith to Simon Peter, Simon, son of Jonas, lovest thou me more than these? He saith unto him, Yea, Lord; thou knowest that I love thee. He saith unto him, Feed my lambs."
 				},
 				{

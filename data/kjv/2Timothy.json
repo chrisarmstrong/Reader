@@ -120,7 +120,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "Therefore I endure all things for the elect\u2019s sakes, that they may also obtain the salvation which is in Christ Jesus with eternal glory."
+					"text": "Therefore I endure all things for the elect’s sakes, that they may also obtain the salvation which is in Christ Jesus with eternal glory."
 				},
 				{
 					"verse": "11",
@@ -164,7 +164,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "If a man therefore purge himself from these, he shall be a vessel unto honour, sanctified, and meet for the master\u2019s use, and prepared unto every good work."
+					"text": "If a man therefore purge himself from these, he shall be a vessel unto honour, sanctified, and meet for the master’s use, and prepared unto every good work."
 				},
 				{
 					"verse": "22",
@@ -296,7 +296,11 @@
 					"verse": "8",
 					"text": "Henceforth there is laid up for me a crown of righteousness, which the Lord, the righteous judge, shall give me at that day: and not to me only, but unto all them also that love his appearing."
 				},
-				{ "verse": "9", "text": "Do thy diligence to come shortly unto me:" },
+				{
+					"verse": "9",
+					"paragraph": true,
+					"text": "Do thy diligence to come shortly unto me:"
+				},
 				{
 					"verse": "10",
 					"text": "For Demas hath forsaken me, having loved this present world, and is departed unto Thessalonica; Crescens to Galatia, Titus unto Dalmatia."
@@ -305,7 +309,10 @@
 					"verse": "11",
 					"text": "Only Luke is with me. Take Mark, and bring him with thee: for he is profitable to me for the ministry."
 				},
-				{ "verse": "12", "text": "And Tychicus have I sent to Ephesus." },
+				{
+					"verse": "12",
+					"text": "And Tychicus have I sent to Ephesus."
+				},
 				{
 					"verse": "13",
 					"text": "The cloke that I left at Troas with Carpus, when thou comest, bring with thee, and the books, but especially the parchments."
@@ -332,6 +339,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Salute Prisca and Aquila, and the household of Onesiphorus."
 				},
 				{
@@ -344,6 +352,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "The Lord Jesus Christ be with thy spirit. Grace be with you. Amen."
 				}
 			]

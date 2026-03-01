@@ -23,6 +23,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "This then is the message which we have heard of him, and declare unto you, that God is light, and in him is no darkness at all."
 				},
 				{
@@ -76,6 +77,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Brethren, I write no new commandment unto you, but an old commandment which ye had from the beginning. The old commandment is the word which ye have heard from the beginning."
 				},
 				{
@@ -96,7 +98,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "I write unto you, little children, because your sins are forgiven you for his name\u2019s sake."
+					"text": "I write unto you, little children, because your sins are forgiven you for his name’s sake."
 				},
 				{
 					"verse": "13",
@@ -120,6 +122,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Little children, it is the last time: and as ye have heard that antichrist shall come, even now are there many antichrists; whereby we know that it is the last time."
 				},
 				{
@@ -217,10 +220,11 @@
 				},
 				{
 					"verse": "12",
-					"text": "Not as Cain, who was of that wicked one, and slew his brother. And wherefore slew he him? Because his own works were evil, and his brother\u2019s righteous."
+					"text": "Not as Cain, who was of that wicked one, and slew his brother. And wherefore slew he him? Because his own works were evil, and his brother’s righteous."
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Marvel not, my brethren, if the world hate you."
 				},
 				{
@@ -237,7 +241,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "But whoso hath this world\u2019s good, and seeth his brother have need, and shutteth up his bowels of compassion from him, how dwelleth the love of God in him?"
+					"text": "But whoso hath this world’s good, and seeth his brother have need, and shutteth up his bowels of compassion from him, how dwelleth the love of God in him?"
 				},
 				{
 					"verse": "18",
@@ -298,6 +302,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Beloved, let us love one another: for love is of God; and every one that loveth is born of God, and knoweth God."
 				},
 				{
@@ -344,7 +349,10 @@
 					"verse": "18",
 					"text": "There is no fear in love; but perfect love casteth out fear: because fear hath torment. He that feareth is not made perfect in love."
 				},
-				{ "verse": "19", "text": "We love him, because he first loved us." },
+				{
+					"verse": "19",
+					"text": "We love him, because he first loved us."
+				},
 				{
 					"verse": "20",
 					"text": "If a man say, I love God, and hateth his brother, he is a liar: for he that loveth not his brother whom he hath seen, how can he love God whom he hath not seen?"
