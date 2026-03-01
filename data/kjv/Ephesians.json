@@ -15,6 +15,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Blessed be the God and Father of our Lord Jesus Christ, who hath blessed us with all spiritual blessings in heavenly places in Christ:"
 				},
 				{
@@ -63,6 +64,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Wherefore I also, after I heard of your faith in the Lord Jesus, and love unto all the saints,"
 				},
 				{
@@ -134,13 +136,17 @@
 					"verse": "8",
 					"text": "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God:"
 				},
-				{ "verse": "9", "text": "Not of works, lest any man should boast." },
+				{
+					"verse": "9",
+					"text": "Not of works, lest any man should boast."
+				},
 				{
 					"verse": "10",
 					"text": "For we are his workmanship, created in Christ Jesus unto good works, which God hath before ordained that we should walk in them."
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Wherefore remember, that ye being in time past Gentiles in the flesh, who are called Uncircumcision by that which is called the Circumcision in the flesh made by hands;"
 				},
 				{
@@ -270,6 +276,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Now unto him that is able to do exceeding abundantly above all that we ask or think, according to the power that worketh in us,"
 				},
 				{
@@ -297,7 +304,10 @@
 					"verse": "4",
 					"text": "There is one body, and one Spirit, even as ye are called in one hope of your calling;"
 				},
-				{ "verse": "5", "text": "One Lord, one faith, one baptism," },
+				{
+					"verse": "5",
+					"text": "One Lord, one faith, one baptism,"
+				},
 				{
 					"verse": "6",
 					"text": "One God and Father of all, who is above all, and through all, and in you all."
@@ -344,6 +354,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "This I say therefore, and testify in the Lord, that ye henceforth walk not as other Gentiles walk, in the vanity of their mind,"
 				},
 				{
@@ -354,7 +365,10 @@
 					"verse": "19",
 					"text": "Who being past feeling have given themselves over unto lasciviousness, to work all uncleanness with greediness."
 				},
-				{ "verse": "20", "text": "But ye have not so learned Christ;" },
+				{
+					"verse": "20",
+					"text": "But ye have not so learned Christ;"
+				},
 				{
 					"verse": "21",
 					"text": "If so be that ye have heard him, and have been taught by him, as the truth is in Jesus:"
@@ -363,20 +377,27 @@
 					"verse": "22",
 					"text": "That ye put off concerning the former conversation the old man, which is corrupt according to the deceitful lusts;"
 				},
-				{ "verse": "23", "text": "And be renewed in the spirit of your mind;" },
+				{
+					"verse": "23",
+					"text": "And be renewed in the spirit of your mind;"
+				},
 				{
 					"verse": "24",
 					"text": "And that ye put on the new man, which after God is created in righteousness and true holiness."
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "Wherefore putting away lying, speak every man truth with his neighbour: for we are members one of another."
 				},
 				{
 					"verse": "26",
 					"text": "Be ye angry, and sin not: let not the sun go down upon your wrath:"
 				},
-				{ "verse": "27", "text": "Neither give place to the devil." },
+				{
+					"verse": "27",
+					"text": "Neither give place to the devil."
+				},
 				{
 					"verse": "28",
 					"text": "Let him that stole steal no more: but rather let him labour, working with his hands the thing which is good, that he may have to give to him that needeth."
@@ -395,7 +416,7 @@
 				},
 				{
 					"verse": "32",
-					"text": "And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ\u2019s sake hath forgiven you."
+					"text": "And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ’s sake hath forgiven you."
 				}
 			]
 		},
@@ -426,7 +447,10 @@
 					"verse": "6",
 					"text": "Let no man deceive you with vain words: for because of these things cometh the wrath of God upon the children of disobedience."
 				},
-				{ "verse": "7", "text": "Be not ye therefore partakers with them." },
+				{
+					"verse": "7",
+					"text": "Be not ye therefore partakers with them."
+				},
 				{
 					"verse": "8",
 					"text": "For ye were sometimes darkness, but now are ye light in the Lord: walk as children of light:"
@@ -435,7 +459,10 @@
 					"verse": "9",
 					"text": "(For the fruit of the Spirit is in all goodness and righteousness and truth;)"
 				},
-				{ "verse": "10", "text": "Proving what is acceptable unto the Lord." },
+				{
+					"verse": "10",
+					"text": "Proving what is acceptable unto the Lord."
+				},
 				{
 					"verse": "11",
 					"text": "And have no fellowship with the unfruitful works of darkness, but rather reprove them."
@@ -571,6 +598,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Finally, my brethren, be strong in the Lord, and in the power of his might."
 				},
 				{
@@ -615,6 +643,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "But that ye also may know my affairs, and how I do, Tychicus, a beloved brother and faithful minister in the Lord, shall make known to you all things:"
 				},
 				{
@@ -623,6 +652,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Peace be to the brethren, and love with faith, from God the Father and the Lord Jesus Christ."
 				},
 				{

@@ -31,6 +31,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "In that night did God appear unto Solomon, and said unto him, Ask what I shall give thee."
 				},
 				{
@@ -55,6 +56,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Then Solomon came from his journey to the high place that was at Gibeon to Jerusalem, from before the tabernacle of the congregation, and reigned over Israel."
 				},
 				{
@@ -67,7 +69,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "And Solomon had horses brought out of Egypt, and linen yarn: the king\u2019s merchants received the linen yarn at a price."
+					"text": "And Solomon had horses brought out of Egypt, and linen yarn: the king’s merchants received the linen yarn at a price."
 				},
 				{
 					"verse": "17",
@@ -88,6 +90,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "And Solomon sent to Huram the king of Tyre, saying, As thou didst deal with David my father, and didst send him cedars to build him an house to dwell therein, even so deal with me."
 				},
 				{
@@ -120,6 +123,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Then Huram the king of Tyre answered in writing, which he sent to Solomon, Because the LORD hath loved his people, he hath made thee king over them."
 				},
 				{
@@ -128,7 +132,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "And now I have sent a cunning man, endued with understanding, of Huram my father\u2019s,"
+					"text": "And now I have sent a cunning man, endued with understanding, of Huram my father’s,"
 				},
 				{
 					"verse": "14",
@@ -144,6 +148,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And Solomon numbered all the strangers that were in the land of Israel, after the numbering wherewith David his father had numbered them; and they were found an hundred and fifty thousand and three thousand and six hundred."
 				},
 				{
@@ -165,6 +170,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Now these are the things wherein Solomon was instructed for the building of the house of God. The length by cubits after the first measure was threescore cubits, and the breadth twenty cubits."
 				},
 				{
@@ -197,6 +203,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And the wings of the cherubims were twenty cubits long: one wing of the one cherub was five cubits, reaching to the wall of the house: and the other wing was likewise five cubits, reaching to the wing of the other cherub."
 				},
 				{
@@ -209,6 +216,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And he made the vail of blue, and purple, and crimson, and fine linen, and wrought cherubims thereon."
 				},
 				{
@@ -234,6 +242,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "Also he made a molten sea of ten cubits from brim to brim, round in compass, and five cubits the height thereof; and a line of thirty cubits did compass it round about."
 				},
 				{
@@ -250,6 +259,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "He made also ten lavers, and put five on the right hand, and five on the left, to wash in them: such things as they offered for the burnt offering they washed in them; but the sea was for the priests to wash in."
 				},
 				{
@@ -262,6 +272,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Furthermore he made the court of the priests, and the great court, and doors for the court, and overlaid the doors of them with brass."
 				},
 				{
@@ -284,7 +295,10 @@
 					"verse": "14",
 					"text": "He made also bases, and lavers made he upon the bases;"
 				},
-				{ "verse": "15", "text": "One sea, and twelve oxen under it." },
+				{
+					"verse": "15",
+					"text": "One sea, and twelve oxen under it."
+				},
 				{
 					"verse": "16",
 					"text": "The pots also, and the shovels, and the fleshhooks, and all their instruments, did Huram his father make to king Solomon for the house of the LORD of bright brass."
@@ -299,6 +313,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And Solomon made all the vessels that were for the house of God, the golden altar also, and the tables whereon the shewbread was set;"
 				},
 				{
@@ -324,6 +339,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "Then Solomon assembled the elders of Israel, and all the heads of the tribes, the chief of the fathers of the children of Israel, unto Jerusalem, to bring up the ark of the covenant of the LORD out of the city of David, which is Zion."
 				},
 				{
@@ -360,6 +376,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And it came to pass, when the priests were come out of the holy place: (for all the priests that were present were sanctified, and did not then wait by course:"
 				},
 				{
@@ -425,6 +442,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And he stood before the altar of the LORD in the presence of all the congregation of Israel, and spread forth his hands:"
 				},
 				{
@@ -465,6 +483,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "If a man sin against his neighbour, and an oath be laid upon him to make him swear, and the oath come before thine altar in this house;"
 				},
 				{
@@ -473,6 +492,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And if thy people Israel be put to the worse before the enemy, because they have sinned against thee; and shall return and confess thy name, and pray and make supplication before thee in this house;"
 				},
 				{
@@ -481,6 +501,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "When the heaven is shut up, and there is no rain, because they have sinned against thee; yet if they pray toward this place, and confess thy name, and turn from their sin, when thou dost afflict them;"
 				},
 				{
@@ -489,6 +510,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "If there be dearth in the land, if there be pestilence, if there be blasting, or mildew, locusts, or caterpillers; if their enemies besiege them in the cities of their land; whatsoever sore or whatsoever sickness there be:"
 				},
 				{
@@ -505,7 +527,8 @@
 				},
 				{
 					"verse": "32",
-					"text": "Moreover concerning the stranger, which is not of thy people Israel, but is come from a far country for thy great name\u2019s sake, and thy mighty hand, and thy stretched out arm; if they come and pray in this house;"
+					"paragraph": true,
+					"text": "Moreover concerning the stranger, which is not of thy people Israel, but is come from a far country for thy great name’s sake, and thy mighty hand, and thy stretched out arm; if they come and pray in this house;"
 				},
 				{
 					"verse": "33",
@@ -558,7 +581,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "And the priests could not enter into the house of the LORD, because the glory of the LORD had filled the LORD\u2019s house."
+					"text": "And the priests could not enter into the house of the LORD, because the glory of the LORD had filled the LORD’s house."
 				},
 				{
 					"verse": "3",
@@ -566,6 +589,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Then the king and all the people offered sacrifices before the LORD."
 				},
 				{
@@ -582,6 +606,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Also at the same time Solomon kept the feast seven days, and all Israel with him, a very great congregation, from the entering in of Hamath unto the river of Egypt."
 				},
 				{
@@ -594,10 +619,11 @@
 				},
 				{
 					"verse": "11",
-					"text": "Thus Solomon finished the house of the LORD, and the king\u2019s house: and all that came into Solomon\u2019s heart to make in the house of the LORD, and in his own house, he prosperously effected."
+					"text": "Thus Solomon finished the house of the LORD, and the king’s house: and all that came into Solomon’s heart to make in the house of the LORD, and in his own house, he prosperously effected."
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And the LORD appeared to Solomon by night, and said unto him, I have heard thy prayer, and have chosen this place to myself for an house of sacrifice."
 				},
 				{
@@ -671,6 +697,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "As for all the people that were left of the Hittites, and the Amorites, and the Perizzites, and the Hivites, and the Jebusites, which were not of Israel,"
 				},
 				{
@@ -683,14 +710,16 @@
 				},
 				{
 					"verse": "10",
-					"text": "And these were the chief of king Solomon\u2019s officers, even two hundred and fifty, that bare rule over the people."
+					"text": "And these were the chief of king Solomon’s officers, even two hundred and fifty, that bare rule over the people."
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And Solomon brought up the daughter of Pharaoh out of the city of David unto the house that he had built for her: for he said, My wife shall not dwell in the house of David king of Israel, because the places are holy, whereunto the ark of the LORD hath come."
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Then Solomon offered burnt offerings unto the LORD on the altar of the LORD, which he had built before the porch,"
 				},
 				{
@@ -699,6 +728,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And he appointed, according to the order of David his father, the courses of the priests to their service, and the Levites to their charges, to praise and minister before the priests, as the duty of every day required: the porters also by their courses at every gate: for so had David the man of God commanded."
 				},
 				{
@@ -711,6 +741,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Then went Solomon to Eziongeber, and to Eloth, at the sea side in the land of Edom."
 				},
 				{
@@ -764,7 +795,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "And the king made of the algum trees terraces to the house of the LORD, and to the king\u2019s palace, and harps and psalteries for singers: and there were none such seen before in the land of Judah."
+					"text": "And the king made of the algum trees terraces to the house of the LORD, and to the king’s palace, and harps and psalteries for singers: and there were none such seen before in the land of Judah."
 				},
 				{
 					"verse": "12",
@@ -772,6 +803,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Now the weight of gold that came to Solomon in one year was six hundred and threescore and six talents of gold;"
 				},
 				{
@@ -780,6 +812,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And king Solomon made two hundred targets of beaten gold: six hundred shekels of beaten gold went to one target."
 				},
 				{
@@ -800,11 +833,12 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And all the drinking vessels of king Solomon were of gold, and all the vessels of the house of the forest of Lebanon were of pure gold: none were of silver; it was not any thing accounted of in the days of Solomon."
 				},
 				{
 					"verse": "21",
-					"text": "For the king\u2019s ships went to Tarshish with the servants of Huram: every three years once came the ships of Tarshish bringing gold, and silver, ivory, and apes, and peacocks."
+					"text": "For the king’s ships went to Tarshish with the servants of Huram: every three years once came the ships of Tarshish bringing gold, and silver, ivory, and apes, and peacocks."
 				},
 				{
 					"verse": "22",
@@ -812,6 +846,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And all the kings of the earth sought the presence of Solomon, to hear his wisdom, that God had put in his heart."
 				},
 				{
@@ -820,10 +855,12 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And Solomon had four thousand stalls for horses and chariots, and twelve thousand horsemen; whom he bestowed in the chariot cities, and with the king at Jerusalem."
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And he reigned over all the kings from the river even unto the land of the Philistines, and to the border of Egypt."
 				},
 				{
@@ -836,6 +873,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "Now the rest of the acts of Solomon, first and last, are they not written in the book of Nathan the prophet, and in the prophecy of Ahijah the Shilonite, and in the visions of Iddo the seer against Jeroboam the son of Nebat?"
 				},
 				{
@@ -873,6 +911,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And king Rehoboam took counsel with the old men that had stood before Solomon his father while he yet lived, saying, What counsel give ye me to return answer to this people?"
 				},
 				{
@@ -889,7 +928,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "And the young men that were brought up with him spake unto him, saying, Thus shalt thou answer the people that spake unto thee, saying, Thy father made our yoke heavy, but make thou it somewhat lighter for us; thus shalt thou say unto them, My little finger shall be thicker than my father\u2019s loins."
+					"text": "And the young men that were brought up with him spake unto him, saying, Thus shalt thou answer the people that spake unto thee, saying, Thy father made our yoke heavy, but make thou it somewhat lighter for us; thus shalt thou say unto them, My little finger shall be thicker than my father’s loins."
 				},
 				{
 					"verse": "11",
@@ -913,6 +952,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And when all Israel saw that the king would not hearken unto them, the people answered the king, saying, What portion have we in David? and we have none inheritance in the son of Jesse: every man to your tents, O Israel: and now, David, see to thine own house. So all Israel went to their tents."
 				},
 				{
@@ -950,15 +990,25 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And Rehoboam dwelt in Jerusalem, and built cities for defence in Judah."
 				},
 				{
 					"verse": "6",
 					"text": "He built even Bethlehem, and Etam, and Tekoa,"
 				},
-				{ "verse": "7", "text": "And Bethzur, and Shoco, and Adullam," },
-				{ "verse": "8", "text": "And Gath, and Mareshah, and Ziph," },
-				{ "verse": "9", "text": "And Adoraim, and Lachish, and Azekah," },
+				{
+					"verse": "7",
+					"text": "And Bethzur, and Shoco, and Adullam,"
+				},
+				{
+					"verse": "8",
+					"text": "And Gath, and Mareshah, and Ziph,"
+				},
+				{
+					"verse": "9",
+					"text": "And Adoraim, and Lachish, and Azekah,"
+				},
 				{
 					"verse": "10",
 					"text": "And Zorah, and Aijalon, and Hebron, which are in Judah and in Benjamin fenced cities."
@@ -973,11 +1023,12 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And the priests and the Levites that were in all Israel resorted to him out of all their coasts."
 				},
 				{
 					"verse": "14",
-					"text": "For the Levites left their suburbs and their possession, and came to Judah and Jerusalem: for Jeroboam and his sons had cast them off from executing the priest\u2019s office unto the LORD:"
+					"text": "For the Levites left their suburbs and their possession, and came to Judah and Jerusalem: for Jeroboam and his sons had cast them off from executing the priest’s office unto the LORD:"
 				},
 				{
 					"verse": "15",
@@ -993,6 +1044,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And Rehoboam took him Mahalath the daughter of Jerimoth the son of David to wife, and Abihail the daughter of Eliab the son of Jesse;"
 				},
 				{
@@ -1038,6 +1090,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Then came Shemaiah the prophet to Rehoboam, and to the princes of Judah, that were gathered together to Jerusalem because of Shishak, and said unto them, Thus saith the LORD, Ye have forsaken me, and therefore have I also left you in the hand of Shishak."
 				},
 				{
@@ -1054,11 +1107,11 @@
 				},
 				{
 					"verse": "9",
-					"text": "So Shishak king of Egypt came up against Jerusalem, and took away the treasures of the house of the LORD, and the treasures of the king\u2019s house; he took all: he carried away also the shields of gold which Solomon had made."
+					"text": "So Shishak king of Egypt came up against Jerusalem, and took away the treasures of the house of the LORD, and the treasures of the king’s house; he took all: he carried away also the shields of gold which Solomon had made."
 				},
 				{
 					"verse": "10",
-					"text": "Instead of which king Rehoboam made shields of brass, and committed them to the hands of the chief of the guard, that kept the entrance of the king\u2019s house."
+					"text": "Instead of which king Rehoboam made shields of brass, and committed them to the hands of the chief of the guard, that kept the entrance of the king’s house."
 				},
 				{
 					"verse": "11",
@@ -1070,7 +1123,8 @@
 				},
 				{
 					"verse": "13",
-					"text": "So king Rehoboam strengthened himself in Jerusalem, and reigned: for Rehoboam was one and forty years old when he began to reign, and he reigned seventeen years in Jerusalem, the city which the LORD had chosen out of all the tribes of Israel, to put his name there. And his mother\u2019s name was Naamah an Ammonitess."
+					"paragraph": true,
+					"text": "So king Rehoboam strengthened himself in Jerusalem, and reigned: for Rehoboam was one and forty years old when he began to reign, and he reigned seventeen years in Jerusalem, the city which the LORD had chosen out of all the tribes of Israel, to put his name there. And his mother’s name was Naamah an Ammonitess."
 				},
 				{
 					"verse": "14",
@@ -1095,7 +1149,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "He reigned three years in Jerusalem. His mother\u2019s name also was Michaiah the daughter of Uriel of Gibeah. And there was war between Abijah and Jeroboam."
+					"text": "He reigned three years in Jerusalem. His mother’s name also was Michaiah the daughter of Uriel of Gibeah. And there was war between Abijah and Jeroboam."
 				},
 				{
 					"verse": "3",
@@ -1103,6 +1157,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And Abijah stood up upon mount Zemaraim, which is in mount Ephraim, and said, Hear me, thou Jeroboam, and all Israel;"
 				},
 				{
@@ -1139,6 +1194,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "But Jeroboam caused an ambushment to come about behind them: so they were before Judah, and the ambushment was behind them."
 				},
 				{
@@ -1171,6 +1227,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "But Abijah waxed mighty, and married fourteen wives, and begat twenty and two sons, and sixteen daughters."
 				},
 				{
@@ -1204,6 +1261,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And he built fenced cities in Judah: for the land had rest, and he had no war in those years; because the LORD had given him rest."
 				},
 				{
@@ -1216,6 +1274,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And there came out against them Zerah the Ethiopian with an host of a thousand thousand, and three hundred chariots; and came unto Mareshah."
 				},
 				{
@@ -1309,6 +1368,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And also concerning Maachah the mother of Asa the king, he removed her from being queen, because she had made an idol in a grove: and Asa cut down her idol, and stamped it, and burnt it at the brook Kidron."
 				},
 				{
@@ -1317,6 +1377,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And he brought into the house of God the things that his father had dedicated, and that he himself had dedicated, silver, and gold, and vessels."
 				},
 				{
@@ -1334,7 +1395,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "Then Asa brought out silver and gold out of the treasures of the house of the LORD and of the king\u2019s house, and sent to Benhadad king of Syria, that dwelt at Damascus, saying,"
+					"text": "Then Asa brought out silver and gold out of the treasures of the house of the LORD and of the king’s house, and sent to Benhadad king of Syria, that dwelt at Damascus, saying,"
 				},
 				{
 					"verse": "3",
@@ -1354,6 +1415,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And at that time Hanani the seer came to Asa king of Judah, and said unto him, Because thou hast relied on the king of Syria, and not relied on the LORD thy God, therefore is the host of the king of Syria escaped out of thine hand."
 				},
 				{
@@ -1370,6 +1432,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And, behold, the acts of Asa, first and last, lo, they are written in the book of the kings of Judah and Israel."
 				},
 				{
@@ -1378,11 +1441,12 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And Asa slept with his fathers, and died in the one and fortieth year of his reign."
 				},
 				{
 					"verse": "14",
-					"text": "And they buried him in his own sepulchres, which he had made for himself in the city of David, and laid him in the bed which was filled with sweet odours and divers kinds of spices prepared by the apothecaries\u2019 art: and they made a very great burning for him."
+					"text": "And they buried him in his own sepulchres, which he had made for himself in the city of David, and laid him in the bed which was filled with sweet odours and divers kinds of spices prepared by the apothecaries’ art: and they made a very great burning for him."
 				}
 			]
 		},
@@ -1415,6 +1479,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Also in the third year of his reign he sent to his princes, even to Benhail, and to Obadiah, and to Zechariah, and to Nethaneel, and to Michaiah, to teach in the cities of Judah."
 				},
 				{
@@ -1427,6 +1492,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And the fear of the LORD fell upon all the kingdoms of the lands that were round about Judah, so that they made no war against Jehoshaphat."
 				},
 				{
@@ -1435,6 +1501,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And Jehoshaphat waxed great exceedingly; and he built in Judah castles, and cities of store."
 				},
 				{
@@ -1484,11 +1551,12 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And Jehoshaphat said unto the king of Israel, Enquire, I pray thee, at the word of the LORD to day."
 				},
 				{
 					"verse": "5",
-					"text": "Therefore the king of Israel gathered together of prophets four hundred men, and said unto them, Shall we go to Ramothgilead to battle, or shall I forbear? And they said, Go up; for God will deliver it into the king\u2019s hand."
+					"text": "Therefore the king of Israel gathered together of prophets four hundred men, and said unto them, Shall we go to Ramothgilead to battle, or shall I forbear? And they said, Go up; for God will deliver it into the king’s hand."
 				},
 				{
 					"verse": "6",
@@ -1568,7 +1636,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "Then the king of Israel said, Take ye Micaiah, and carry him back to Amon the governor of the city, and to Joash the king\u2019s son;"
+					"text": "Then the king of Israel said, Take ye Micaiah, and carry him back to Amon the governor of the city, and to Joash the king’s son;"
 				},
 				{
 					"verse": "26",
@@ -1629,6 +1697,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And he set judges in the land throughout all the fenced cities of Judah, city by city,"
 				},
 				{
@@ -1641,6 +1710,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Moreover in Jerusalem did Jehoshaphat set of the Levites, and of the priests, and of the chief of the fathers of Israel, for the judgment of the LORD, and for controversies, when they returned to Jerusalem."
 				},
 				{
@@ -1653,7 +1723,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "And, behold, Amariah the chief priest is over you in all matters of the LORD; and Zebadiah the son of Ishmael, the ruler of the house of Judah, for all the king\u2019s matters: also the Levites shall be officers before you. Deal courageously, and the LORD shall be with the good."
+					"text": "And, behold, Amariah the chief priest is over you in all matters of the LORD; and Zebadiah the son of Ishmael, the ruler of the house of Judah, for all the king’s matters: also the Levites shall be officers before you. Deal courageously, and the LORD shall be with the good."
 				}
 			]
 		},
@@ -1678,6 +1748,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And Jehoshaphat stood in the congregation of Judah and Jerusalem, in the house of the LORD, before the new court,"
 				},
 				{
@@ -1714,11 +1785,12 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Then upon Jahaziel the son of Zechariah, the son of Benaiah, the son of Jeiel, the son of Mattaniah, a Levite of the sons of Asaph, came the Spirit of the LORD in the midst of the congregation;"
 				},
 				{
 					"verse": "15",
-					"text": "And he said, Hearken ye, all Judah, and ye inhabitants of Jerusalem, and thou king Jehoshaphat, Thus saith the LORD unto you, Be not afraid nor dismayed by reason of this great multitude; for the battle is not yours, but God\u2019s."
+					"text": "And he said, Hearken ye, all Judah, and ye inhabitants of Jerusalem, and thou king Jehoshaphat, Thus saith the LORD unto you, Be not afraid nor dismayed by reason of this great multitude; for the battle is not yours, but God’s."
 				},
 				{
 					"verse": "16",
@@ -1738,6 +1810,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And they rose early in the morning, and went forth into the wilderness of Tekoa: and as they went forth, Jehoshaphat stood and said, Hear me, O Judah, and ye inhabitants of Jerusalem; Believe in the LORD your God, so shall ye be established; believe his prophets, so shall ye prosper."
 				},
 				{
@@ -1746,6 +1819,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And when they began to sing and to praise, the LORD set ambushments against the children of Ammon, Moab, and mount Seir, which were come against Judah; and they were smitten."
 				},
 				{
@@ -1762,6 +1836,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And on the fourth day they assembled themselves in the valley of Berachah; for there they blessed the LORD: therefore the name of the same place was called, The valley of Berachah, unto this day."
 				},
 				{
@@ -1782,7 +1857,8 @@
 				},
 				{
 					"verse": "31",
-					"text": "And Jehoshaphat reigned over Judah: he was thirty and five years old when he began to reign, and he reigned twenty and five years in Jerusalem. And his mother\u2019s name was Azubah the daughter of Shilhi."
+					"paragraph": true,
+					"text": "And Jehoshaphat reigned over Judah: he was thirty and five years old when he began to reign, and he reigned twenty and five years in Jerusalem. And his mother’s name was Azubah the daughter of Shilhi."
 				},
 				{
 					"verse": "32",
@@ -1798,6 +1874,7 @@
 				},
 				{
 					"verse": "35",
+					"paragraph": true,
 					"text": "And after this did Jehoshaphat king of Judah join himself with Ahaziah king of Israel, who did very wickedly:"
 				},
 				{
@@ -1831,6 +1908,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Jehoram was thirty and two years old when he began to reign, and he reigned eight years in Jerusalem."
 				},
 				{
@@ -1843,6 +1921,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "In his days the Edomites revolted from under the dominion of Judah, and made themselves a king."
 				},
 				{
@@ -1859,11 +1938,12 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And there came a writing to him from Elijah the prophet, saying, Thus saith the LORD God of David thy father, Because thou hast not walked in the ways of Jehoshaphat thy father, nor in the ways of Asa king of Judah,"
 				},
 				{
 					"verse": "13",
-					"text": "But hast walked in the way of the kings of Israel, and hast made Judah and the inhabitants of Jerusalem to go a whoring, like to the whoredoms of the house of Ahab, and also hast slain thy brethren of thy father\u2019s house, which were better than thyself:"
+					"text": "But hast walked in the way of the kings of Israel, and hast made Judah and the inhabitants of Jerusalem to go a whoring, like to the whoredoms of the house of Ahab, and also hast slain thy brethren of thy father’s house, which were better than thyself:"
 				},
 				{
 					"verse": "14",
@@ -1875,14 +1955,16 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Moreover the LORD stirred up against Jehoram the spirit of the Philistines, and of the Arabians, that were near the Ethiopians:"
 				},
 				{
 					"verse": "17",
-					"text": "And they came up into Judah, and brake into it, and carried away all the substance that was found in the king\u2019s house, and his sons also, and his wives; so that there was never a son left him, save Jehoahaz, the youngest of his sons."
+					"text": "And they came up into Judah, and brake into it, and carried away all the substance that was found in the king’s house, and his sons also, and his wives; so that there was never a son left him, save Jehoahaz, the youngest of his sons."
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And after all this the LORD smote him in his bowels with an incurable disease."
 				},
 				{
@@ -1904,7 +1986,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "Forty and two years old was Ahaziah when he began to reign, and he reigned one year in Jerusalem. His mother\u2019s name also was Athaliah the daughter of Omri."
+					"text": "Forty and two years old was Ahaziah when he began to reign, and he reigned one year in Jerusalem. His mother’s name also was Athaliah the daughter of Omri."
 				},
 				{
 					"verse": "3",
@@ -1916,6 +1998,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "He walked also after their counsel, and went with Jehoram the son of Ahab king of Israel to war against Hazael king of Syria at Ramothgilead: and the Syrians smote Joram."
 				},
 				{
@@ -1936,11 +2019,12 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "But when Athaliah the mother of Ahaziah saw that her son was dead, she arose and destroyed all the seed royal of the house of Judah."
 				},
 				{
 					"verse": "11",
-					"text": "But Jehoshabeath, the daughter of the king, took Joash the son of Ahaziah, and stole him from among the king\u2019s sons that were slain, and put him and his nurse in a bedchamber. So Jehoshabeath, the daughter of king Jehoram, the wife of Jehoiada the priest, (for she was the sister of Ahaziah,) hid him from Athaliah, so that she slew him not."
+					"text": "But Jehoshabeath, the daughter of the king, took Joash the son of Ahaziah, and stole him from among the king’s sons that were slain, and put him and his nurse in a bedchamber. So Jehoshabeath, the daughter of king Jehoram, the wife of Jehoiada the priest, (for she was the sister of Ahaziah,) hid him from Athaliah, so that she slew him not."
 				},
 				{
 					"verse": "12",
@@ -1961,7 +2045,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "And all the congregation made a covenant with the king in the house of God. And he said unto them, Behold, the king\u2019s son shall reign, as the LORD hath said of the sons of David."
+					"text": "And all the congregation made a covenant with the king in the house of God. And he said unto them, Behold, the king’s son shall reign, as the LORD hath said of the sons of David."
 				},
 				{
 					"verse": "4",
@@ -1969,7 +2053,7 @@
 				},
 				{
 					"verse": "5",
-					"text": "And a third part shall be at the king\u2019s house; and a third part at the gate of the foundation: and all the people shall be in the courts of the house of the LORD."
+					"text": "And a third part shall be at the king’s house; and a third part at the gate of the foundation: and all the people shall be in the courts of the house of the LORD."
 				},
 				{
 					"verse": "6",
@@ -1985,7 +2069,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "Moreover Jehoiada the priest delivered to the captains of hundreds spears, and bucklers, and shields, that had been king David\u2019s, which were in the house of God."
+					"text": "Moreover Jehoiada the priest delivered to the captains of hundreds spears, and bucklers, and shields, that had been king David’s, which were in the house of God."
 				},
 				{
 					"verse": "10",
@@ -1993,10 +2077,11 @@
 				},
 				{
 					"verse": "11",
-					"text": "Then they brought out the king\u2019s son, and put upon him the crown, and gave him the testimony, and made him king. And Jehoiada and his sons anointed him, and said, God save the king."
+					"text": "Then they brought out the king’s son, and put upon him the crown, and gave him the testimony, and made him king. And Jehoiada and his sons anointed him, and said, God save the king."
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Now when Athaliah heard the noise of the people running and praising the king, she came to the people into the house of the LORD:"
 				},
 				{
@@ -2009,11 +2094,12 @@
 				},
 				{
 					"verse": "15",
-					"text": "So they laid hands on her; and when she was come to the entering of the horse gate by the king\u2019s house, they slew her there."
+					"text": "So they laid hands on her; and when she was come to the entering of the horse gate by the king’s house, they slew her there."
 				},
 				{
 					"verse": "16",
-					"text": "And Jehoiada made a covenant between him, and between all the people, and between the king, that they should be the LORD\u2019s people."
+					"paragraph": true,
+					"text": "And Jehoiada made a covenant between him, and between all the people, and between the king, that they should be the LORD’s people."
 				},
 				{
 					"verse": "17",
@@ -2029,7 +2115,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "And he took the captains of hundreds, and the nobles, and the governors of the people, and all the people of the land, and brought down the king from the house of the LORD: and they came through the high gate into the king\u2019s house, and set the king upon the throne of the kingdom."
+					"text": "And he took the captains of hundreds, and the nobles, and the governors of the people, and all the people of the land, and brought down the king from the house of the LORD: and they came through the high gate into the king’s house, and set the king upon the throne of the kingdom."
 				},
 				{
 					"verse": "21",
@@ -2042,7 +2128,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Joash was seven years old when he began to reign, and he reigned forty years in Jerusalem. His mother\u2019s name also was Zibiah of Beersheba."
+					"text": "Joash was seven years old when he began to reign, and he reigned forty years in Jerusalem. His mother’s name also was Zibiah of Beersheba."
 				},
 				{
 					"verse": "2",
@@ -2054,6 +2140,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And it came to pass after this, that Joash was minded to repair the house of the LORD."
 				},
 				{
@@ -2070,7 +2157,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "And at the king\u2019s commandment they made a chest, and set it without at the gate of the house of the LORD."
+					"text": "And at the king’s commandment they made a chest, and set it without at the gate of the house of the LORD."
 				},
 				{
 					"verse": "9",
@@ -2082,7 +2169,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "Now it came to pass, that at what time the chest was brought unto the king\u2019s office by the hand of the Levites, and when they saw that there was much money, the king\u2019s scribe and the high priest\u2019s officer came and emptied the chest, and took it, and carried it to his place again. Thus they did day by day, and gathered money in abundance."
+					"text": "Now it came to pass, that at what time the chest was brought unto the king’s office by the hand of the Levites, and when they saw that there was much money, the king’s scribe and the high priest’s officer came and emptied the chest, and took it, and carried it to his place again. Thus they did day by day, and gathered money in abundance."
 				},
 				{
 					"verse": "12",
@@ -2098,6 +2185,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "But Jehoiada waxed old, and was full of days when he died; an hundred and thirty years old was he when he died."
 				},
 				{
@@ -2130,6 +2218,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And it came to pass at the end of the year, that the host of Syria came up against him: and they came to Judah and Jerusalem, and destroyed all the princes of the people from among the people, and sent all the spoil of them unto the king of Damascus."
 				},
 				{
@@ -2146,6 +2235,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "Now concerning his sons, and the greatness of the burdens laid upon him, and the repairing of the house of God, behold, they are written in the story of the book of the kings. And Amaziah his son reigned in his stead."
 				}
 			]
@@ -2155,7 +2245,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Amaziah was twenty and five years old when he began to reign, and he reigned twenty and nine years in Jerusalem. And his mother\u2019s name was Jehoaddan of Jerusalem."
+					"text": "Amaziah was twenty and five years old when he began to reign, and he reigned twenty and nine years in Jerusalem. And his mother’s name was Jehoaddan of Jerusalem."
 				},
 				{
 					"verse": "2",
@@ -2163,6 +2253,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Now it came to pass, when the kingdom was established to him, that he slew his servants that had killed the king his father."
 				},
 				{
@@ -2171,6 +2262,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Moreover Amaziah gathered Judah together, and made them captains over thousands, and captains over hundreds, according to the houses of their fathers, throughout all Judah and Benjamin: and he numbered them from twenty years old and above, and found them three hundred thousand choice men, able to go forth to war, that could handle spear and shield."
 				},
 				{
@@ -2195,6 +2287,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And Amaziah strengthened himself, and led forth his people, and went to the valley of salt, and smote of the children of Seir ten thousand."
 				},
 				{
@@ -2203,10 +2296,12 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "But the soldiers of the army which Amaziah sent back, that they should not go with him to battle, fell upon the cities of Judah, from Samaria even unto Bethhoron, and smote three thousand of them, and took much spoil."
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Now it came to pass, after that Amaziah was come from the slaughter of the Edomites, that he brought the gods of the children of Seir, and set them up to be his gods, and bowed down himself before them, and burned incense unto them."
 				},
 				{
@@ -2215,10 +2310,11 @@
 				},
 				{
 					"verse": "16",
-					"text": "And it came to pass, as he talked with him, that the king said unto him, Art thou made of the king\u2019s counsel? forbear; why shouldest thou be smitten? Then the prophet forbare, and said, I know that God hath determined to destroy thee, because thou hast done this, and hast not hearkened unto my counsel."
+					"text": "And it came to pass, as he talked with him, that the king said unto him, Art thou made of the king’s counsel? forbear; why shouldest thou be smitten? Then the prophet forbare, and said, I know that God hath determined to destroy thee, because thou hast done this, and hast not hearkened unto my counsel."
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Then Amaziah king of Judah took advice, and sent to Joash, the son of Jehoahaz, the son of Jehu, king of Israel, saying, Come, let us see one another in the face."
 				},
 				{
@@ -2247,10 +2343,11 @@
 				},
 				{
 					"verse": "24",
-					"text": "And he took all the gold and the silver, and all the vessels that were found in the house of God with Obededom, and the treasures of the king\u2019s house, the hostages also, and returned to Samaria."
+					"text": "And he took all the gold and the silver, and all the vessels that were found in the house of God with Obededom, and the treasures of the king’s house, the hostages also, and returned to Samaria."
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And Amaziah the son of Joash king of Judah lived after the death of Joash son of Jehoahaz king of Israel fifteen years."
 				},
 				{
@@ -2259,6 +2356,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "Now after the time that Amaziah did turn away from following the LORD they made a conspiracy against him in Jerusalem; and he fled to Lachish: but they sent to Lachish after him, and slew him there."
 				},
 				{
@@ -2280,7 +2378,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "Sixteen years old was Uzziah when he began to reign, and he reigned fifty and two years in Jerusalem. His mother\u2019s name also was Jecoliah of Jerusalem."
+					"text": "Sixteen years old was Uzziah when he began to reign, and he reigned fifty and two years in Jerusalem. His mother’s name also was Jecoliah of Jerusalem."
 				},
 				{
 					"verse": "4",
@@ -2312,7 +2410,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "Moreover Uzziah had an host of fighting men, that went out to war by bands, according to the number of their account by the hand of Jeiel the scribe and Maaseiah the ruler, under the hand of Hananiah, one of the king\u2019s captains."
+					"text": "Moreover Uzziah had an host of fighting men, that went out to war by bands, according to the number of their account by the hand of Jeiel the scribe and Maaseiah the ruler, under the hand of Hananiah, one of the king’s captains."
 				},
 				{
 					"verse": "12",
@@ -2332,6 +2430,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "But when he was strong, his heart was lifted up to his destruction: for he transgressed against the LORD his God, and went into the temple of the LORD to burn incense upon the altar of incense."
 				},
 				{
@@ -2352,10 +2451,11 @@
 				},
 				{
 					"verse": "21",
-					"text": "And Uzziah the king was a leper unto the day of his death, and dwelt in a several house, being a leper; for he was cut off from the house of the LORD: and Jotham his son was over the king\u2019s house, judging the people of the land."
+					"text": "And Uzziah the king was a leper unto the day of his death, and dwelt in a several house, being a leper; for he was cut off from the house of the LORD: and Jotham his son was over the king’s house, judging the people of the land."
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Now the rest of the acts of Uzziah, first and last, did Isaiah the prophet, the son of Amoz, write."
 				},
 				{
@@ -2369,7 +2469,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Jotham was twenty and five years old when he began to reign, and he reigned sixteen years in Jerusalem. His mother\u2019s name also was Jerushah, the daughter of Zadok."
+					"text": "Jotham was twenty and five years old when he began to reign, and he reigned sixteen years in Jerusalem. His mother’s name also was Jerushah, the daughter of Zadok."
 				},
 				{
 					"verse": "2",
@@ -2385,6 +2485,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "He fought also with the king of the Ammonites, and prevailed against them. And the children of Ammon gave him the same year an hundred talents of silver, and ten thousand measures of wheat, and ten thousand of barley. So much did the children of Ammon pay unto him, both the second year, and the third."
 				},
 				{
@@ -2393,6 +2494,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Now the rest of the acts of Jotham, and all his wars, and his ways, lo, they are written in the book of the kings of Israel and Judah."
 				},
 				{
@@ -2401,6 +2503,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And Jotham slept with his fathers, and they buried him in the city of David: and Ahaz his son reigned in his stead."
 				}
 			]
@@ -2430,11 +2533,12 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "For Pekah the son of Remaliah slew in Judah an hundred and twenty thousand in one day, which were all valiant men; because they had forsaken the LORD God of their fathers."
 				},
 				{
 					"verse": "7",
-					"text": "And Zichri, a mighty man of Ephraim, slew Maaseiah the king\u2019s son, and Azrikam the governor of the house, and Elkanah that was next to the king."
+					"text": "And Zichri, a mighty man of Ephraim, slew Maaseiah the king’s son, and Azrikam the governor of the house, and Elkanah that was next to the king."
 				},
 				{
 					"verse": "8",
@@ -2470,6 +2574,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "At that time did king Ahaz send unto the kings of Assyria to help him."
 				},
 				{
@@ -2494,6 +2599,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And in the time of his distress did he trespass yet more against the LORD: this is that king Ahaz."
 				},
 				{
@@ -2510,6 +2616,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "Now the rest of his acts and of all his ways, first and last, behold, they are written in the book of the kings of Judah and Israel."
 				},
 				{
@@ -2523,7 +2630,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Hezekiah began to reign when he was five and twenty years old, and he reigned nine and twenty years in Jerusalem. And his mother\u2019s name was Abijah, the daughter of Zechariah."
+					"text": "Hezekiah began to reign when he was five and twenty years old, and he reigned nine and twenty years in Jerusalem. And his mother’s name was Abijah, the daughter of Zechariah."
 				},
 				{
 					"verse": "2",
@@ -2531,6 +2638,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "He in the first year of his reign, in the first month, opened the doors of the house of the LORD, and repaired them."
 				},
 				{
@@ -2567,6 +2675,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Then the Levites arose, Mahath the son of Amasai, and Joel the son of Azariah, of the sons of the Kohathites: and of the sons of Merari, Kish the son of Abdi, and Azariah the son of Jehalelel: and of the Gershonites; Joah the son of Zimmah, and Eden the son of Joah:"
 				},
 				{
@@ -2599,6 +2708,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Then Hezekiah the king rose early, and gathered the rulers of the city, and went up to the house of the LORD."
 				},
 				{
@@ -2619,7 +2729,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "And he set the Levites in the house of the LORD with cymbals, with psalteries, and with harps, according to the commandment of David, and of Gad the king\u2019s seer, and Nathan the prophet: for so was the commandment of the LORD by his prophets."
+					"text": "And he set the Levites in the house of the LORD with cymbals, with psalteries, and with harps, according to the commandment of David, and of Gad the king’s seer, and Nathan the prophet: for so was the commandment of the LORD by his prophets."
 				},
 				{
 					"verse": "26",
@@ -2720,6 +2830,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And there assembled at Jerusalem much people to keep the feast of unleavened bread in the second month, a very great congregation."
 				},
 				{
@@ -2776,6 +2887,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "Then the priests the Levites arose and blessed the people: and their voice was heard, and their prayer came up to his holy dwelling place, even unto heaven."
 				}
 			]
@@ -2789,11 +2901,12 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "And Hezekiah appointed the courses of the priests and the Levites after their courses, every man according to his service, the priests and Levites for burnt offerings and for peace offerings, to minister, and to give thanks, and to praise in the gates of the tents of the LORD."
 				},
 				{
 					"verse": "3",
-					"text": "He appointed also the king\u2019s portion of his substance for the burnt offerings, to wit, for the morning and evening burnt offerings, and the burnt offerings for the sabbaths, and for the new moons, and for the set feasts, as it is written in the law of the LORD."
+					"text": "He appointed also the king’s portion of his substance for the burnt offerings, to wit, for the morning and evening burnt offerings, and the burnt offerings for the sabbaths, and for the new moons, and for the set feasts, as it is written in the law of the LORD."
 				},
 				{
 					"verse": "4",
@@ -2801,6 +2914,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And as soon as the commandment came abroad, the children of Israel brought in abundance the firstfruits of corn, wine, and oil, and honey, and of all the increase of the field; and the tithe of all things brought they in abundantly."
 				},
 				{
@@ -2825,6 +2939,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Then Hezekiah commanded to prepare chambers in the house of the LORD; and they prepared them,"
 				},
 				{
@@ -2861,6 +2976,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And thus did Hezekiah throughout all Judah, and wrought that which was good and right and truth before the LORD his God."
 				},
 				{
@@ -2906,6 +3022,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "After this did Sennacherib king of Assyria send his servants to Jerusalem, (but he himself laid siege against Lachish, and all his power with him,) unto Hezekiah king of Judah, and unto all Judah that were at Jerusalem, saying,"
 				},
 				{
@@ -2942,7 +3059,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "Then they cried with a loud voice in the Jews\u2019 speech unto the people of Jerusalem that were on the wall, to affright them, and to trouble them; that they might take the city."
+					"text": "Then they cried with a loud voice in the Jews’ speech unto the people of Jerusalem that were on the wall, to affright them, and to trouble them; that they might take the city."
 				},
 				{
 					"verse": "19",
@@ -2954,6 +3071,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And the LORD sent an angel, which cut off all the mighty men of valour, and the leaders and captains in the camp of the king of Assyria. So he returned with shame of face to his own land. And when he was come into the house of his god, they that came forth of his own bowels slew him there with the sword."
 				},
 				{
@@ -2966,6 +3084,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "In those days Hezekiah was sick to the death, and prayed unto the LORD: and he spake unto him, and he gave him a sign."
 				},
 				{
@@ -2978,6 +3097,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And Hezekiah had exceeding much riches and honour: and he made himself treasuries for silver, and for gold, and for precious stones, and for spices, and for shields, and for all manner of pleasant jewels;"
 				},
 				{
@@ -2994,10 +3114,12 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "Howbeit in the business of the ambassadors of the princes of Babylon, who sent unto him to enquire of the wonder that was done in the land, God left him, to try him, that he might know all that was in his heart."
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "Now the rest of the acts of Hezekiah, and his goodness, behold, they are written in the vision of Isaiah the prophet, the son of Amoz, and in the book of the kings of Judah and Israel."
 				},
 				{
@@ -3019,6 +3141,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "For he built again the high places which Hezekiah his father had broken down, and he reared up altars for Baalim, and made groves, and worshipped all the host of heaven, and served them."
 				},
 				{
@@ -3051,6 +3174,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Wherefore the LORD brought upon them the captains of the host of the king of Assyria, which took Manasseh among the thorns, and bound him with fetters, and carried him to Babylon."
 				},
 				{
@@ -3079,6 +3203,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Now the rest of the acts of Manasseh, and his prayer unto his God, and the words of the seers that spake to him in the name of the LORD God of Israel, behold, they are written in the book of the kings of Israel."
 				},
 				{
@@ -3087,10 +3212,12 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "So Manasseh slept with his fathers, and they buried him in his own house: and Amon his son reigned in his stead."
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Amon was two and twenty years old when he began to reign, and reigned two years in Jerusalem."
 				},
 				{
@@ -3107,6 +3234,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "But the people of the land slew all them that had conspired against king Amon; and the people of the land made Josiah his son king in his stead."
 				}
 			]
@@ -3124,6 +3252,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "For in the eighth year of his reign, while he was yet young, he began to seek after the God of David his father: and in the twelfth year he began to purge Judah and Jerusalem from the high places, and the groves, and the carved images, and the molten images."
 				},
 				{
@@ -3144,6 +3273,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Now in the eighteenth year of his reign, when he had purged the land, and the house, he sent Shaphan the son of Azaliah, and Maaseiah the governor of the city, and Joah the son of Joahaz the recorder, to repair the house of the LORD his God."
 				},
 				{
@@ -3168,6 +3298,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And when they brought out the money that was brought into the house of the LORD, Hilkiah the priest found a book of the law of the LORD given by Moses."
 				},
 				{
@@ -3192,7 +3323,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "And the king commanded Hilkiah, and Ahikam the son of Shaphan, and Abdon the son of Micah, and Shaphan the scribe, and Asaiah a servant of the king\u2019s, saying,"
+					"text": "And the king commanded Hilkiah, and Ahikam the son of Shaphan, and Abdon the son of Micah, and Shaphan the scribe, and Asaiah a servant of the king’s, saying,"
 				},
 				{
 					"verse": "21",
@@ -3204,6 +3335,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And she answered them, Thus saith the LORD God of Israel, Tell ye the man that sent you to me,"
 				},
 				{
@@ -3228,6 +3360,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "Then the king sent and gathered together all the elders of Judah and Jerusalem."
 				},
 				{
@@ -3277,7 +3410,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "And Josiah gave to the people, of the flock, lambs and kids, all for the passover offerings, for all that were present, to the number of thirty thousand, and three thousand bullocks: these were of the king\u2019s substance."
+					"text": "And Josiah gave to the people, of the flock, lambs and kids, all for the passover offerings, for all that were present, to the number of thirty thousand, and three thousand bullocks: these were of the king’s substance."
 				},
 				{
 					"verse": "8",
@@ -3289,7 +3422,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "So the service was prepared, and the priests stood in their place, and the Levites in their courses, according to the king\u2019s commandment."
+					"text": "So the service was prepared, and the priests stood in their place, and the Levites in their courses, according to the king’s commandment."
 				},
 				{
 					"verse": "11",
@@ -3309,7 +3442,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "And the singers the sons of Asaph were in their place, according to the commandment of David, and Asaph, and Heman, and Jeduthun the king\u2019s seer; and the porters waited at every gate; they might not depart from their service; for their brethren the Levites prepared for them."
+					"text": "And the singers the sons of Asaph were in their place, according to the commandment of David, and Asaph, and Heman, and Jeduthun the king’s seer; and the porters waited at every gate; they might not depart from their service; for their brethren the Levites prepared for them."
 				},
 				{
 					"verse": "16",
@@ -3329,6 +3462,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "After all this, when Josiah had prepared the temple, Necho king of Egypt came up to fight against Charchemish by Euphrates: and Josiah went out against him."
 				},
 				{
@@ -3349,6 +3483,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And Jeremiah lamented for Josiah: and all the singing men and the singing women spake of Josiah in their lamentations to this day, and made them an ordinance in Israel: and, behold, they are written in the lamentations."
 				},
 				{
@@ -3366,7 +3501,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Then the people of the land took Jehoahaz the son of Josiah, and made him king in his father\u2019s stead in Jerusalem."
+					"text": "Then the people of the land took Jehoahaz the son of Josiah, and made him king in his father’s stead in Jerusalem."
 				},
 				{
 					"verse": "2",
@@ -3378,6 +3513,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And the king of Egypt made Eliakim his brother king over Judah and Jerusalem, and turned his name to Jehoiakim. And Necho took Jehoahaz his brother, and carried him to Egypt."
 				},
 				{
@@ -3406,6 +3542,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Zedekiah was one and twenty years old when he began to reign, and reigned eleven years in Jerusalem."
 				},
 				{
@@ -3418,6 +3555,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Moreover all the chief of the priests, and the people, transgressed very much after all the abominations of the heathen; and polluted the house of the LORD which he had hallowed in Jerusalem."
 				},
 				{
@@ -3450,6 +3588,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Now in the first year of Cyrus king of Persia, that the word of the LORD spoken by the mouth of Jeremiah might be accomplished, the LORD stirred up the spirit of Cyrus king of Persia, that he made a proclamation throughout all his kingdom, and put it also in writing, saying,"
 				},
 				{

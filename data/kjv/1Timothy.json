@@ -15,6 +15,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "As I besought thee to abide still at Ephesus, when I went into Macedonia, that thou mightest charge some that they teach no other doctrine,"
 				},
 				{
@@ -138,7 +139,10 @@
 					"verse": "12",
 					"text": "But I suffer not a woman to teach, nor to usurp authority over the man, but to be in silence."
 				},
-				{ "verse": "13", "text": "For Adam was first formed, then Eve." },
+				{
+					"verse": "13",
+					"text": "For Adam was first formed, then Eve."
+				},
 				{
 					"verse": "14",
 					"text": "And Adam was not deceived, but the woman being deceived was in the transgression."
@@ -247,7 +251,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "But refuse profane and old wives\u2019 fables, and exercise thyself rather unto godliness."
+					"text": "But refuse profane and old wives’ fables, and exercise thyself rather unto godliness."
 				},
 				{
 					"verse": "8",
@@ -261,7 +265,11 @@
 					"verse": "10",
 					"text": "For therefore we both labour and suffer reproach, because we trust in the living God, who is the Saviour of all men, specially of those that believe."
 				},
-				{ "verse": "11", "text": "These things command and teach." },
+				{
+					"verse": "11",
+					"paragraph": true,
+					"text": "These things command and teach."
+				},
 				{
 					"verse": "12",
 					"text": "Let no man despise thy youth; but be thou an example of the believers, in word, in conversation, in charity, in spirit, in faith, in purity."
@@ -295,7 +303,10 @@
 					"verse": "2",
 					"text": "The elder women as mothers; the younger as sisters, with all purity."
 				},
-				{ "verse": "3", "text": "Honour widows that are widows indeed." },
+				{
+					"verse": "3",
+					"text": "Honour widows that are widows indeed."
+				},
 				{
 					"verse": "4",
 					"text": "But if any widow have children or nephews, let them learn first to shew piety at home, and to requite their parents: for that is good and acceptable before God."
@@ -322,7 +333,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "Well reported of for good works; if she have brought up children, if she have lodged strangers, if she have washed the saints\u2019 feet, if she have relieved the afflicted, if she have diligently followed every good work."
+					"text": "Well reported of for good works; if she have brought up children, if she have lodged strangers, if she have washed the saints’ feet, if she have relieved the afflicted, if she have diligently followed every good work."
 				},
 				{
 					"verse": "11",
@@ -370,15 +381,15 @@
 				},
 				{
 					"verse": "22",
-					"text": "Lay hands suddenly on no man, neither be partaker of other men\u2019s sins: keep thyself pure."
+					"text": "Lay hands suddenly on no man, neither be partaker of other men’s sins: keep thyself pure."
 				},
 				{
 					"verse": "23",
-					"text": "Drink no longer water, but use a little wine for thy stomach\u2019s sake and thine often infirmities."
+					"text": "Drink no longer water, but use a little wine for thy stomach’s sake and thine often infirmities."
 				},
 				{
 					"verse": "24",
-					"text": "Some men\u2019s sins are open beforehand, going before to judgment; and some men they follow after."
+					"text": "Some men’s sins are open beforehand, going before to judgment; and some men they follow after."
 				},
 				{
 					"verse": "25",
@@ -399,6 +410,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "If any man teach otherwise, and consent not to wholesome words, even the words of our Lord Jesus Christ, and to the doctrine which is according to godliness;"
 				},
 				{

@@ -40,11 +40,10 @@
 				},
 				{
 					"verse": "9",
-					"text": "Yet for love\u2019s sake I rather beseech thee, being such an one as Paul the aged, and now also a prisoner of Jesus Christ."
+					"text": "Yet for love’s sake I rather beseech thee, being such an one as Paul the aged, and now also a prisoner of Jesus Christ."
 				},
 				{
 					"verse": "10",
-					"paragraph": true,
 					"text": "I beseech thee for my son Onesimus, whom I have begotten in my bonds:"
 				},
 				{
@@ -73,7 +72,6 @@
 				},
 				{
 					"verse": "17",
-					"paragraph": true,
 					"text": "If thou count me therefore a partner, receive him as myself."
 				},
 				{
@@ -90,6 +88,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Having confidence in thy obedience I wrote unto thee, knowing that thou wilt also do more than I say."
 				},
 				{
@@ -107,6 +106,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "The grace of our Lord Jesus Christ be with your spirit. Amen."
 				}
 			]

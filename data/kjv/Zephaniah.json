@@ -35,11 +35,11 @@
 				},
 				{
 					"verse": "8",
-					"text": "And it shall come to pass in the day of the LORD\u2019s sacrifice, that I will punish the princes, and the king\u2019s children, and all such as are clothed with strange apparel."
+					"text": "And it shall come to pass in the day of the LORD’s sacrifice, that I will punish the princes, and the king’s children, and all such as are clothed with strange apparel."
 				},
 				{
 					"verse": "9",
-					"text": "In the same day also will I punish all those that leap on the threshold, which fill their masters\u2019 houses with violence and deceit."
+					"text": "In the same day also will I punish all those that leap on the threshold, which fill their masters’ houses with violence and deceit."
 				},
 				{
 					"verse": "10",
@@ -75,7 +75,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "Neither their silver nor their gold shall be able to deliver them in the day of the LORD\u2019s wrath; but the whole land shall be devoured by the fire of his jealousy: for he shall make even a speedy riddance of all them that dwell in the land."
+					"text": "Neither their silver nor their gold shall be able to deliver them in the day of the LORD’s wrath; but the whole land shall be devoured by the fire of his jealousy: for he shall make even a speedy riddance of all them that dwell in the land."
 				}
 			]
 		},
@@ -88,14 +88,15 @@
 				},
 				{
 					"verse": "2",
-					"text": "Before the decree bring forth, before the day pass as the chaff, before the fierce anger of the LORD come upon you, before the day of the LORD\u2019s anger come upon you."
+					"text": "Before the decree bring forth, before the day pass as the chaff, before the fierce anger of the LORD come upon you, before the day of the LORD’s anger come upon you."
 				},
 				{
 					"verse": "3",
-					"text": "Seek ye the LORD, all ye meek of the earth, which have wrought his judgment; seek righteousness, seek meekness: it may be ye shall be hid in the day of the LORD\u2019s anger."
+					"text": "Seek ye the LORD, all ye meek of the earth, which have wrought his judgment; seek righteousness, seek meekness: it may be ye shall be hid in the day of the LORD’s anger."
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "For Gaza shall be forsaken, and Ashkelon a desolation: they shall drive out Ashdod at the noon day, and Ekron shall be rooted up."
 				},
 				{
@@ -112,6 +113,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "I have heard the reproach of Moab, and the revilings of the children of Ammon, whereby they have reproached my people, and magnified themselves against their border."
 				},
 				{
@@ -128,6 +130,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Ye Ethiopians also, ye shall be slain by my sword."
 				},
 				{
@@ -177,6 +180,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Therefore wait ye upon me, saith the LORD, until the day that I rise up to the prey: for my determination is to gather the nations, that I may assemble the kingdoms, to pour upon them mine indignation, even all my fierce anger: for all the earth shall be devoured with the fire of my jealousy."
 				},
 				{
@@ -201,6 +205,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Sing, O daughter of Zion; shout, O Israel; be glad and rejoice with all the heart, O daughter of Jerusalem."
 				},
 				{

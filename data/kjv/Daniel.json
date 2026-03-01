@@ -15,15 +15,16 @@
 				},
 				{
 					"verse": "3",
-					"text": "And the king spake unto Ashpenaz the master of his eunuchs, that he should bring certain of the children of Israel, and of the king\u2019s seed, and of the princes;"
+					"paragraph": true,
+					"text": "And the king spake unto Ashpenaz the master of his eunuchs, that he should bring certain of the children of Israel, and of the king’s seed, and of the princes;"
 				},
 				{
 					"verse": "4",
-					"text": "Children in whom was no blemish, but well favoured, and skilful in all wisdom, and cunning in knowledge, and understanding science, and such as had ability in them to stand in the king\u2019s palace, and whom they might teach the learning and the tongue of the Chaldeans."
+					"text": "Children in whom was no blemish, but well favoured, and skilful in all wisdom, and cunning in knowledge, and understanding science, and such as had ability in them to stand in the king’s palace, and whom they might teach the learning and the tongue of the Chaldeans."
 				},
 				{
 					"verse": "5",
-					"text": "And the king appointed them a daily provision of the king\u2019s meat, and of the wine which he drank: so nourishing them three years, that at the end thereof they might stand before the king."
+					"text": "And the king appointed them a daily provision of the king’s meat, and of the wine which he drank: so nourishing them three years, that at the end thereof they might stand before the king."
 				},
 				{
 					"verse": "6",
@@ -35,7 +36,8 @@
 				},
 				{
 					"verse": "8",
-					"text": "But Daniel purposed in his heart that he would not defile himself with the portion of the king\u2019s meat, nor with the wine which he drank: therefore he requested of the prince of the eunuchs that he might not defile himself."
+					"paragraph": true,
+					"text": "But Daniel purposed in his heart that he would not defile himself with the portion of the king’s meat, nor with the wine which he drank: therefore he requested of the prince of the eunuchs that he might not defile himself."
 				},
 				{
 					"verse": "9",
@@ -55,7 +57,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "Then let our countenances be looked upon before thee, and the countenance of the children that eat of the portion of the king\u2019s meat: and as thou seest, deal with thy servants."
+					"text": "Then let our countenances be looked upon before thee, and the countenance of the children that eat of the portion of the king’s meat: and as thou seest, deal with thy servants."
 				},
 				{
 					"verse": "14",
@@ -63,7 +65,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "And at the end of ten days their countenances appeared fairer and fatter in flesh than all the children which did eat the portion of the king\u2019s meat."
+					"text": "And at the end of ten days their countenances appeared fairer and fatter in flesh than all the children which did eat the portion of the king’s meat."
 				},
 				{
 					"verse": "16",
@@ -71,6 +73,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "As for these four children, God gave them knowledge and skill in all learning and wisdom: and Daniel had understanding in all visions and dreams."
 				},
 				{
@@ -132,7 +135,8 @@
 				},
 				{
 					"verse": "10",
-					"text": "The Chaldeans answered before the king, and said, There is not a man upon the earth that can shew the king\u2019s matter: therefore there is no king, lord, nor ruler, that asked such things at any magician, or astrologer, or Chaldean."
+					"paragraph": true,
+					"text": "The Chaldeans answered before the king, and said, There is not a man upon the earth that can shew the king’s matter: therefore there is no king, lord, nor ruler, that asked such things at any magician, or astrologer, or Chaldean."
 				},
 				{
 					"verse": "11",
@@ -148,11 +152,12 @@
 				},
 				{
 					"verse": "14",
-					"text": "Then Daniel answered with counsel and wisdom to Arioch the captain of the king\u2019s guard, which was gone forth to slay the wise men of Babylon:"
+					"paragraph": true,
+					"text": "Then Daniel answered with counsel and wisdom to Arioch the captain of the king’s guard, which was gone forth to slay the wise men of Babylon:"
 				},
 				{
 					"verse": "15",
-					"text": "He answered and said to Arioch the king\u2019s captain, Why is the decree so hasty from the king? Then Arioch made the thing known to Daniel."
+					"text": "He answered and said to Arioch the king’s captain, Why is the decree so hasty from the king? Then Arioch made the thing known to Daniel."
 				},
 				{
 					"verse": "16",
@@ -168,6 +173,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Then was the secret revealed unto Daniel in a night vision. Then Daniel blessed the God of heaven."
 				},
 				{
@@ -184,10 +190,11 @@
 				},
 				{
 					"verse": "23",
-					"text": "I thank thee, and praise thee, O thou God of my fathers, who hast given me wisdom and might, and hast made known unto me now what we desired of thee: for thou hast now made known unto us the king\u2019s matter."
+					"text": "I thank thee, and praise thee, O thou God of my fathers, who hast given me wisdom and might, and hast made known unto me now what we desired of thee: for thou hast now made known unto us the king’s matter."
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Therefore Daniel went in unto Arioch, whom the king had ordained to destroy the wise men of Babylon: he went and said thus unto him; Destroy not the wise men of Babylon: bring me in before the king, and I will shew unto the king the interpretation."
 				},
 				{
@@ -216,11 +223,12 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "Thou, O king, sawest, and behold a great image. This great image, whose brightness was excellent, stood before thee; and the form thereof was terrible."
 				},
 				{
 					"verse": "32",
-					"text": "This image\u2019s head was of fine gold, his breast and his arms of silver, his belly and his thighs of brass,"
+					"text": "This image’s head was of fine gold, his breast and his arms of silver, his belly and his thighs of brass,"
 				},
 				{
 					"verse": "33",
@@ -236,6 +244,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "This is the dream; and we will tell the interpretation thereof before the king."
 				},
 				{
@@ -256,7 +265,7 @@
 				},
 				{
 					"verse": "41",
-					"text": "And whereas thou sawest the feet and toes, part of potters\u2019 clay, and part of iron, the kingdom shall be divided; but there shall be in it of the strength of the iron, forasmuch as thou sawest the iron mixed with miry clay."
+					"text": "And whereas thou sawest the feet and toes, part of potters’ clay, and part of iron, the kingdom shall be divided; but there shall be in it of the strength of the iron, forasmuch as thou sawest the iron mixed with miry clay."
 				},
 				{
 					"verse": "42",
@@ -276,6 +285,7 @@
 				},
 				{
 					"verse": "46",
+					"paragraph": true,
 					"text": "Then the king Nebuchadnezzar fell upon his face, and worshipped Daniel, and commanded that they should offer an oblation and sweet odours unto him."
 				},
 				{
@@ -325,6 +335,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Wherefore at that time certain Chaldeans came near, and accused the Jews."
 				},
 				{
@@ -345,6 +356,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Then Nebuchadnezzar in his rage and fury commanded to bring Shadrach, Meshach, and Abednego. Then they brought these men before the king."
 				},
 				{
@@ -369,6 +381,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Then was Nebuchadnezzar full of fury, and the form of his visage was changed against Shadrach, Meshach, and Abednego: therefore he spake, and commanded that they should heat the furnace one seven times more than it was wont to be heated."
 				},
 				{
@@ -381,7 +394,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "Therefore because the king\u2019s commandment was urgent, and the furnace exceeding hot, the flame of the fire slew those men that took up Shadrach, Meshach, and Abednego."
+					"text": "Therefore because the king’s commandment was urgent, and the furnace exceeding hot, the flame of the fire slew those men that took up Shadrach, Meshach, and Abednego."
 				},
 				{
 					"verse": "23",
@@ -397,15 +410,16 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "Then Nebuchadnezzar came near to the mouth of the burning fiery furnace, and spake, and said, Shadrach, Meshach, and Abednego, ye servants of the most high God, come forth, and come hither. Then Shadrach, Meshach, and Abednego, came forth of the midst of the fire."
 				},
 				{
 					"verse": "27",
-					"text": "And the princes, governors, and captains, and the king\u2019s counsellors, being gathered together, saw these men, upon whose bodies the fire had no power, nor was an hair of their head singed, neither were their coats changed, nor the smell of fire had passed on them."
+					"text": "And the princes, governors, and captains, and the king’s counsellors, being gathered together, saw these men, upon whose bodies the fire had no power, nor was an hair of their head singed, neither were their coats changed, nor the smell of fire had passed on them."
 				},
 				{
 					"verse": "28",
-					"text": "Then Nebuchadnezzar spake, and said, Blessed be the God of Shadrach, Meshach, and Abednego, who hath sent his angel, and delivered his servants that trusted in him, and have changed the king\u2019s word, and yielded their bodies, that they might not serve nor worship any god, except their own God."
+					"text": "Then Nebuchadnezzar spake, and said, Blessed be the God of Shadrach, Meshach, and Abednego, who hath sent his angel, and delivered his servants that trusted in him, and have changed the king’s word, and yielded their bodies, that they might not serve nor worship any god, except their own God."
 				},
 				{
 					"verse": "29",
@@ -434,6 +448,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "I Nebuchadnezzar was at rest in mine house, and flourishing in my palace:"
 				},
 				{
@@ -450,6 +465,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "But at the last Daniel came in before me, whose name was Belteshazzar, according to the name of my God, and in whom is the spirit of the holy gods: and before him I told the dream, saying,"
 				},
 				{
@@ -482,7 +498,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "Let his heart be changed from man\u2019s, and let a beast\u2019s heart be given unto him; and let seven times pass over him."
+					"text": "Let his heart be changed from man’s, and let a beast’s heart be given unto him; and let seven times pass over him."
 				},
 				{
 					"verse": "17",
@@ -494,6 +510,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Then Daniel, whose name was Belteshazzar, was astonied for one hour, and his thoughts troubled him. The king spake, and said, Belteshazzar, let not the dream, or the interpretation thereof, trouble thee. Belteshazzar answered and said, My lord, the dream be to them that hate thee, and the interpretation thereof to thine enemies."
 				},
 				{
@@ -530,6 +547,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "All this came upon the king Nebuchadnezzar."
 				},
 				{
@@ -542,7 +560,7 @@
 				},
 				{
 					"verse": "31",
-					"text": "While the word was in the king\u2019s mouth, there fell a voice from heaven, saying, O king Nebuchadnezzar, to thee it is spoken; The kingdom is departed from thee."
+					"text": "While the word was in the king’s mouth, there fell a voice from heaven, saying, O king Nebuchadnezzar, to thee it is spoken; The kingdom is departed from thee."
 				},
 				{
 					"verse": "32",
@@ -550,7 +568,7 @@
 				},
 				{
 					"verse": "33",
-					"text": "The same hour was the thing fulfilled upon Nebuchadnezzar: and he was driven from men, and did eat grass as oxen, and his body was wet with the dew of heaven, till his hairs were grown like eagles\u2019 feathers, and his nails like birds\u2019 claws."
+					"text": "The same hour was the thing fulfilled upon Nebuchadnezzar: and he was driven from men, and did eat grass as oxen, and his body was wet with the dew of heaven, till his hairs were grown like eagles’ feathers, and his nails like birds’ claws."
 				},
 				{
 					"verse": "34",
@@ -591,11 +609,12 @@
 				},
 				{
 					"verse": "5",
-					"text": "In the same hour came forth fingers of a man\u2019s hand, and wrote over against the candlestick upon the plaister of the wall of the king\u2019s palace: and the king saw the part of the hand that wrote."
+					"paragraph": true,
+					"text": "In the same hour came forth fingers of a man’s hand, and wrote over against the candlestick upon the plaister of the wall of the king’s palace: and the king saw the part of the hand that wrote."
 				},
 				{
 					"verse": "6",
-					"text": "Then the king\u2019s countenance was changed, and his thoughts troubled him, so that the joints of his loins were loosed, and his knees smote one against another."
+					"text": "Then the king’s countenance was changed, and his thoughts troubled him, so that the joints of his loins were loosed, and his knees smote one against another."
 				},
 				{
 					"verse": "7",
@@ -603,7 +622,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "Then came in all the king\u2019s wise men: but they could not read the writing, nor make known to the king the interpretation thereof."
+					"text": "Then came in all the king’s wise men: but they could not read the writing, nor make known to the king the interpretation thereof."
 				},
 				{
 					"verse": "9",
@@ -611,6 +630,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Now the queen by reason of the words of the king and his lords came into the banquet house: and the queen spake and said, O king, live for ever: let not thy thoughts trouble thee, nor let thy countenance be changed:"
 				},
 				{
@@ -639,6 +659,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Then Daniel answered and said before the king, Let thy gifts be to thyself, and give thy rewards to another; yet I will read the writing unto the king, and make known to him the interpretation."
 				},
 				{
@@ -671,6 +692,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And this is the writing that was written, MENE, MENE, TEKEL, UPHARSIN."
 				},
 				{
@@ -691,6 +713,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "In that night was Belshazzar the king of the Chaldeans slain."
 				},
 				{
@@ -716,6 +739,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Then the presidents and princes sought to find occasion against Daniel concerning the kingdom; but they could find none occasion nor fault; forasmuch as he was faithful, neither was there any error or fault found in him."
 				},
 				{
@@ -740,6 +764,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Now when Daniel knew that the writing was signed, he went into his house; and his windows being open in his chamber toward Jerusalem, he kneeled upon his knees three times a day, and prayed, and gave thanks before his God, as he did aforetime."
 				},
 				{
@@ -748,7 +773,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "Then they came near, and spake before the king concerning the king\u2019s decree; Hast thou not signed a decree, that every man that shall ask a petition of any God or man within thirty days, save of thee, O king, shall be cast into the den of lions? The king answered and said, The thing is true, according to the law of the Medes and Persians, which altereth not."
+					"text": "Then they came near, and spake before the king concerning the king’s decree; Hast thou not signed a decree, that every man that shall ask a petition of any God or man within thirty days, save of thee, O king, shall be cast into the den of lions? The king answered and said, The thing is true, according to the law of the Medes and Persians, which altereth not."
 				},
 				{
 					"verse": "13",
@@ -772,6 +797,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Then the king went to his palace, and passed the night fasting: neither were instruments of musick brought before him: and his sleep went from him."
 				},
 				{
@@ -788,7 +814,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "My God hath sent his angel, and hath shut the lions\u2019 mouths, that they have not hurt me: forasmuch as before him innocency was found in me; and also before thee, O king, have I done no hurt."
+					"text": "My God hath sent his angel, and hath shut the lions’ mouths, that they have not hurt me: forasmuch as before him innocency was found in me; and also before thee, O king, have I done no hurt."
 				},
 				{
 					"verse": "23",
@@ -796,10 +822,12 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And the king commanded, and they brought those men which had accused Daniel, and they cast them into the den of lions, them, their children, and their wives; and the lions had the mastery of them, and brake all their bones in pieces or ever they came at the bottom of the den."
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "Then king Darius wrote unto all people, nations, and languages, that dwell in all the earth; Peace be multiplied unto you."
 				},
 				{
@@ -833,7 +861,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "The first was like a lion, and had eagle\u2019s wings: I beheld till the wings thereof were plucked, and it was lifted up from the earth, and made stand upon the feet as a man, and a man\u2019s heart was given to it."
+					"text": "The first was like a lion, and had eagle’s wings: I beheld till the wings thereof were plucked, and it was lifted up from the earth, and made stand upon the feet as a man, and a man’s heart was given to it."
 				},
 				{
 					"verse": "5",
@@ -853,6 +881,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "I beheld till the thrones were cast down, and the Ancient of days did sit, whose garment was white as snow, and the hair of his head like the pure wool: his throne was like the fiery flame, and his wheels as burning fire."
 				},
 				{
@@ -877,6 +906,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "I Daniel was grieved in my spirit in the midst of my body, and the visions of my head troubled me."
 				},
 				{
@@ -986,6 +1016,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Then I heard one saint speaking, and another saint said unto that certain saint which spake, How long shall be the vision concerning the daily sacrifice, and the transgression of desolation, to give both the sanctuary and the host to be trodden under foot?"
 				},
 				{
@@ -994,11 +1025,12 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And it came to pass, when I, even I Daniel, had seen the vision, and sought for the meaning, then, behold, there stood before me as the appearance of a man."
 				},
 				{
 					"verse": "16",
-					"text": "And I heard a man\u2019s voice between the banks of Ulai, which called, and said, Gabriel, make this man to understand the vision."
+					"text": "And I heard a man’s voice between the banks of Ulai, which called, and said, Gabriel, make this man to understand the vision."
 				},
 				{
 					"verse": "17",
@@ -1042,7 +1074,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "And I Daniel fainted, and was sick certain days; afterward I rose up, and did the king\u2019s business; and I was astonished at the vision, but none understood it."
+					"text": "And I Daniel fainted, and was sick certain days; afterward I rose up, and did the king’s business; and I was astonished at the vision, but none understood it."
 				}
 			]
 		},
@@ -1059,6 +1091,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "And I set my face unto the Lord God, to seek by prayer and supplications, with fasting, and sackcloth, and ashes:"
 				},
 				{
@@ -1111,11 +1144,12 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "O LORD, according to all thy righteousness, I beseech thee, let thine anger and thy fury be turned away from thy city Jerusalem, thy holy mountain: because for our sins, and for the iniquities of our fathers, Jerusalem and thy people are become a reproach to all that are about us."
 				},
 				{
 					"verse": "17",
-					"text": "Now therefore, O our God, hear the prayer of thy servant, and his supplications, and cause thy face to shine upon thy sanctuary that is desolate, for the Lord\u2019s sake."
+					"text": "Now therefore, O our God, hear the prayer of thy servant, and his supplications, and cause thy face to shine upon thy sanctuary that is desolate, for the Lord’s sake."
 				},
 				{
 					"verse": "18",
@@ -1127,6 +1161,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And whiles I was speaking, and praying, and confessing my sin and the sin of my people Israel, and presenting my supplication before the LORD my God for the holy mountain of my God;"
 				},
 				{
@@ -1200,6 +1235,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And, behold, an hand touched me, which set me upon my knees and upon the palms of my hands."
 				},
 				{
@@ -1269,11 +1305,12 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And the king of the south shall be strong, and one of his princes; and he shall be strong above him, and have dominion; his dominion shall be a great dominion."
 				},
 				{
 					"verse": "6",
-					"text": "And in the end of years they shall join themselves together; for the king\u2019s daughter of the south shall come to the king of the north to make an agreement: but she shall not retain the power of the arm; neither shall he stand, nor his arm: but she shall be given up, and they that brought her, and he that begat her, and he that strengthened her in these times."
+					"text": "And in the end of years they shall join themselves together; for the king’s daughter of the south shall come to the king of the north to make an agreement: but she shall not retain the power of the arm; neither shall he stand, nor his arm: but she shall be given up, and they that brought her, and he that begat her, and he that strengthened her in these times."
 				},
 				{
 					"verse": "7",
@@ -1345,7 +1382,7 @@
 				},
 				{
 					"verse": "24",
-					"text": "He shall enter peaceably even upon the fattest places of the province; and he shall do that which his fathers have not done, nor his fathers\u2019 fathers; he shall scatter among them the prey, and spoil, and riches: yea, and he shall forecast his devices against the strong holds, even for a time."
+					"text": "He shall enter peaceably even upon the fattest places of the province; and he shall do that which his fathers have not done, nor his fathers’ fathers; he shall scatter among them the prey, and spoil, and riches: yea, and he shall forecast his devices against the strong holds, even for a time."
 				},
 				{
 					"verse": "25",
@@ -1357,7 +1394,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "And both these kings\u2019 hearts shall be to do mischief, and they shall speak lies at one table; but it shall not prosper: for yet the end shall be at the time appointed."
+					"text": "And both these kings’ hearts shall be to do mischief, and they shall speak lies at one table; but it shall not prosper: for yet the end shall be at the time appointed."
 				},
 				{
 					"verse": "28",
@@ -1369,6 +1406,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "For the ships of Chittim shall come against him: therefore he shall be grieved, and return, and have indignation against the holy covenant: so shall he do; he shall even return, and have intelligence with them that forsake the holy covenant."
 				},
 				{
@@ -1454,6 +1492,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Then I Daniel looked, and, behold, there stood other two, the one on this side of the bank of the river, and the other on that side of the bank of the river."
 				},
 				{

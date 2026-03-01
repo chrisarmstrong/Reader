@@ -66,14 +66,63 @@
 	font-variant-numeric: oldstyle-nums;
 }
 
-.verse.newParagraph::before {
-	content: "";
+.verse.newParagraph {
 	display: block;
-	height: 24px;
 }
 
 .verse.newParagraph sup {
+	padding-left: 1lh;
+}
+
+.chapterNumber + .verse.newParagraph sup,
+.psalmTitle + .verse.newParagraph sup {
 	padding-left: 0;
+}
+
+.verse.poetry {
+	display: block;
+	padding-left: 2em;
+	text-indent: -1em;
+	line-height: 1.8;
+}
+
+.verse.poetry sup {
+	padding-left: 0;
+}
+
+.psalm {
+	margin-bottom: 48px;
+}
+
+.psalm .chapterNumber {
+	float: none;
+	display: block;
+	text-align: center;
+	margin-right: 0;
+	line-height: 1;
+	margin-bottom: 8px;
+}
+
+.psalm .chapterNumber + p sup {
+	display: inline;
+}
+
+.psalm .verse.poetry {
+	padding-left: 0;
+	text-indent: 0;
+	text-wrap: pretty;
+}
+
+.psalmTitle {
+	display: block;
+	font-family: var(--serif), georgia, serif;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 20px;
+	opacity: 0.6;
+	text-align: center;
+	text-wrap: balance;
+	margin-bottom: 8px;
 }
 
 .verse.highlight {

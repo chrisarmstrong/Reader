@@ -23,6 +23,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Behold ye among the heathen, and regard, and wonder marvellously: for I will work a work in your days, which ye will not believe, though it be told you."
 				},
 				{
@@ -51,6 +52,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Art thou not from everlasting, O LORD my God, mine Holy One? we shall not die. O LORD, thou hast ordained them for judgment; and, O mighty God, thou hast established them for correction."
 				},
 				{
@@ -96,6 +98,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Yea also, because he transgresseth by wine, he is a proud man, neither keepeth at home, who enlargeth his desire as hell, and is as death, and cannot be satisfied, but gathereth unto him all nations, and heapeth unto him all people:"
 				},
 				{
@@ -108,10 +111,11 @@
 				},
 				{
 					"verse": "8",
-					"text": "Because thou hast spoiled many nations, all the remnant of the people shall spoil thee; because of men\u2019s blood, and for the violence of the land, of the city, and of all that dwell therein."
+					"text": "Because thou hast spoiled many nations, all the remnant of the people shall spoil thee; because of men’s blood, and for the violence of the land, of the city, and of all that dwell therein."
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Woe to him that coveteth an evil covetousness to his house, that he may set his nest on high, that he may be delivered from the power of evil!"
 				},
 				{
@@ -124,6 +128,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Woe to him that buildeth a town with blood, and stablisheth a city by iniquity!"
 				},
 				{
@@ -136,18 +141,20 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Woe unto him that giveth his neighbour drink, that puttest thy bottle to him, and makest him drunken also, that thou mayest look on their nakedness!"
 				},
 				{
 					"verse": "16",
-					"text": "Thou art filled with shame for glory: drink thou also, and let thy foreskin be uncovered: the cup of the LORD\u2019s right hand shall be turned unto thee, and shameful spewing shall be on thy glory."
+					"text": "Thou art filled with shame for glory: drink thou also, and let thy foreskin be uncovered: the cup of the LORD’s right hand shall be turned unto thee, and shameful spewing shall be on thy glory."
 				},
 				{
 					"verse": "17",
-					"text": "For the violence of Lebanon shall cover thee, and the spoil of beasts, which made them afraid, because of men\u2019s blood, and for the violence of the land, of the city, and of all that dwell therein."
+					"text": "For the violence of Lebanon shall cover thee, and the spoil of beasts, which made them afraid, because of men’s blood, and for the violence of the land, of the city, and of all that dwell therein."
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "What profiteth the graven image that the maker thereof hath graven it; the molten image, and a teacher of lies, that the maker of his work trusteth therein, to make dumb idols?"
 				},
 				{
@@ -229,6 +236,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Although the fig tree shall not blossom, neither shall fruit be in the vines; the labour of the olive shall fail, and the fields shall yield no meat; the flock shall be cut off from the fold, and there shall be no herd in the stalls:"
 				},
 				{
@@ -237,7 +245,7 @@
 				},
 				{
 					"verse": "19",
-					"text": "The LORD God is my strength, and he will make my feet like hinds\u2019 feet, and he will make me to walk upon mine high places. To the chief singer on my stringed instruments."
+					"text": "The LORD God is my strength, and he will make my feet like hinds’ feet, and he will make me to walk upon mine high places. To the chief singer on my stringed instruments."
 				}
 			]
 		}

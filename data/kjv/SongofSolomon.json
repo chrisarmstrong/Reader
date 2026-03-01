@@ -5,7 +5,10 @@
 		{
 			"chapter": "1",
 			"verses": [
-				{ "verse": "1", "text": "The song of songs, which is Solomon\u2019s." },
+				{
+					"verse": "1",
+					"text": "The song of songs, which is Solomon’s."
+				},
 				{
 					"verse": "2",
 					"text": "Let him kiss me with the kisses of his mouth: for thy love is better than wine."
@@ -24,7 +27,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "Look not upon me, because I am black, because the sun hath looked upon me: my mother\u2019s children were angry with me; they made me the keeper of the vineyards; but mine own vineyard have I not kept."
+					"text": "Look not upon me, because I am black, because the sun hath looked upon me: my mother’s children were angry with me; they made me the keeper of the vineyards; but mine own vineyard have I not kept."
 				},
 				{
 					"verse": "7",
@@ -32,11 +35,12 @@
 				},
 				{
 					"verse": "8",
-					"text": "If thou know not, O thou fairest among women, go thy way forth by the footsteps of the flock, and feed thy kids beside the shepherds\u2019 tents."
+					"paragraph": true,
+					"text": "If thou know not, O thou fairest among women, go thy way forth by the footsteps of the flock, and feed thy kids beside the shepherds’ tents."
 				},
 				{
 					"verse": "9",
-					"text": "I have compared thee, O my love, to a company of horses in Pharaoh\u2019s chariots."
+					"text": "I have compared thee, O my love, to a company of horses in Pharaoh’s chariots."
 				},
 				{
 					"verse": "10",
@@ -48,6 +52,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "While the king sitteth at his table, my spikenard sendeth forth the smell thereof."
 				},
 				{
@@ -60,7 +65,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "Behold, thou art fair, my love; behold, thou art fair; thou hast doves\u2019 eyes."
+					"text": "Behold, thou art fair, my love; behold, thou art fair; thou hast doves’ eyes."
 				},
 				{
 					"verse": "16",
@@ -105,6 +110,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "The voice of my beloved! behold, he cometh leaping upon the mountains, skipping upon the hills."
 				},
 				{
@@ -129,6 +135,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "O my dove, that art in the clefts of the rock, in the secret places of the stairs, let me see thy countenance, let me hear thy voice; for sweet is thy voice, and thy countenance is comely."
 				},
 				{
@@ -137,6 +144,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "My beloved is mine, and I am his: he feedeth among the lilies."
 				},
 				{
@@ -162,7 +170,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "It was but a little that I passed from them, but I found him whom my soul loveth: I held him, and would not let him go, until I had brought him into my mother\u2019s house, and into the chamber of her that conceived me."
+					"text": "It was but a little that I passed from them, but I found him whom my soul loveth: I held him, and would not let him go, until I had brought him into my mother’s house, and into the chamber of her that conceived me."
 				},
 				{
 					"verse": "5",
@@ -170,11 +178,12 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Who is this that cometh out of the wilderness like pillars of smoke, perfumed with myrrh and frankincense, with all powders of the merchant?"
 				},
 				{
 					"verse": "7",
-					"text": "Behold his bed, which is Solomon\u2019s; threescore valiant men are about it, of the valiant of Israel."
+					"text": "Behold his bed, which is Solomon’s; threescore valiant men are about it, of the valiant of Israel."
 				},
 				{
 					"verse": "8",
@@ -199,7 +208,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Behold, thou art fair, my love; behold, thou art fair; thou hast doves\u2019 eyes within thy locks: thy hair is as a flock of goats, that appear from mount Gilead."
+					"text": "Behold, thou art fair, my love; behold, thou art fair; thou hast doves’ eyes within thy locks: thy hair is as a flock of goats, that appear from mount Gilead."
 				},
 				{
 					"verse": "2",
@@ -227,7 +236,8 @@
 				},
 				{
 					"verse": "8",
-					"text": "Come with me from Lebanon, my spouse, with me from Lebanon: look from the top of Amana, from the top of Shenir and Hermon, from the lions\u2019 dens, from the mountains of the leopards."
+					"paragraph": true,
+					"text": "Come with me from Lebanon, my spouse, with me from Lebanon: look from the top of Amana, from the top of Shenir and Hermon, from the lions’ dens, from the mountains of the leopards."
 				},
 				{
 					"verse": "9",
@@ -259,6 +269,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Awake, O north wind; and come, thou south; blow upon my garden, that the spices thereof may flow out. Let my beloved come into his garden, and eat his pleasant fruits."
 				}
 			]
@@ -272,6 +283,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "I sleep, but my heart waketh: it is the voice of my beloved that knocketh, saying, Open to me, my sister, my love, my dove, my undefiled: for my head is filled with dew, and my locks with the drops of the night."
 				},
 				{
@@ -300,6 +312,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "What is thy beloved more than another beloved, O thou fairest among women? what is thy beloved more than another beloved, that thou dost so charge us?"
 				},
 				{
@@ -345,10 +358,11 @@
 				},
 				{
 					"verse": "3",
-					"text": "I am my beloved\u2019s, and my beloved is mine: he feedeth among the lilies."
+					"text": "I am my beloved’s, and my beloved is mine: he feedeth among the lilies."
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Thou art beautiful, O my love, as Tirzah, comely as Jerusalem, terrible as an army with banners."
 				},
 				{
@@ -373,6 +387,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Who is she that looketh forth as the morning, fair as the moon, clear as the sun, and terrible as an army with banners?"
 				},
 				{
@@ -394,7 +409,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "How beautiful are thy feet with shoes, O prince\u2019s daughter! the joints of thy thighs are like jewels, the work of the hands of a cunning workman."
+					"text": "How beautiful are thy feet with shoes, O prince’s daughter! the joints of thy thighs are like jewels, the work of the hands of a cunning workman."
 				},
 				{
 					"verse": "2",
@@ -430,7 +445,8 @@
 				},
 				{
 					"verse": "10",
-					"text": "I am my beloved\u2019s, and his desire is toward me."
+					"paragraph": true,
+					"text": "I am my beloved’s, and his desire is toward me."
 				},
 				{
 					"verse": "11",
@@ -455,7 +471,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "I would lead thee, and bring thee into my mother\u2019s house, who would instruct me: I would cause thee to drink of spiced wine of the juice of my pomegranate."
+					"text": "I would lead thee, and bring thee into my mother’s house, who would instruct me: I would cause thee to drink of spiced wine of the juice of my pomegranate."
 				},
 				{
 					"verse": "3",
@@ -471,6 +487,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Set me as a seal upon thine heart, as a seal upon thine arm: for love is strong as death; jealousy is cruel as the grave: the coals thereof are coals of fire, which hath a most vehement flame."
 				},
 				{
@@ -479,6 +496,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "We have a little sister, and she hath no breasts: what shall we do for our sister in the day when she shall be spoken for?"
 				},
 				{
@@ -503,6 +521,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Make haste, my beloved, and be thou like to a roe or to a young hart upon the mountains of spices."
 				}
 			]

@@ -100,6 +100,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "For this cause also thank we God without ceasing, because, when ye received the word of God which ye heard of us, ye received it not as the word of men, but as it is in truth, the word of God, which effectually worketh also in you that believe."
 				},
 				{
@@ -116,6 +117,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "But we, brethren, being taken from you for a short time in presence, not in heart, endeavoured the more abundantly to see your face with great desire."
 				},
 				{
@@ -126,7 +128,10 @@
 					"verse": "19",
 					"text": "For what is our hope, or joy, or crown of rejoicing? Are not even ye in the presence of our Lord Jesus Christ at his coming?"
 				},
-				{ "verse": "20", "text": "For ye are our glory and joy." }
+				{
+					"verse": "20",
+					"text": "For ye are our glory and joy."
+				}
 			]
 		},
 		{
@@ -239,6 +244,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "But I would not have you to be ignorant, brethren, concerning them which are asleep, that ye sorrow not, even as others which have no hope."
 				},
 				{
@@ -312,11 +318,12 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And we beseech you, brethren, to know them which labour among you, and are over you in the Lord, and admonish you;"
 				},
 				{
 					"verse": "13",
-					"text": "And to esteem them very highly in love for their work\u2019s sake. And be at peace among yourselves."
+					"text": "And to esteem them very highly in love for their work’s sake. And be at peace among yourselves."
 				},
 				{
 					"verse": "14",
@@ -326,19 +333,34 @@
 					"verse": "15",
 					"text": "See that none render evil for evil unto any man; but ever follow that which is good, both among yourselves, and to all men."
 				},
-				{ "verse": "16", "text": "Rejoice evermore." },
-				{ "verse": "17", "text": "Pray without ceasing." },
+				{
+					"verse": "16",
+					"text": "Rejoice evermore."
+				},
+				{
+					"verse": "17",
+					"text": "Pray without ceasing."
+				},
 				{
 					"verse": "18",
 					"text": "In every thing give thanks: for this is the will of God in Christ Jesus concerning you."
 				},
-				{ "verse": "19", "text": "Quench not the Spirit." },
-				{ "verse": "20", "text": "Despise not prophesyings." },
+				{
+					"verse": "19",
+					"text": "Quench not the Spirit."
+				},
+				{
+					"verse": "20",
+					"text": "Despise not prophesyings."
+				},
 				{
 					"verse": "21",
 					"text": "Prove all things; hold fast that which is good."
 				},
-				{ "verse": "22", "text": "Abstain from all appearance of evil." },
+				{
+					"verse": "22",
+					"text": "Abstain from all appearance of evil."
+				},
 				{
 					"verse": "23",
 					"text": "And the very God of peace sanctify you wholly; and I pray God your whole spirit and soul and body be preserved blameless unto the coming of our Lord Jesus Christ."
@@ -347,14 +369,23 @@
 					"verse": "24",
 					"text": "Faithful is he that calleth you, who also will do it."
 				},
-				{ "verse": "25", "text": "Brethren, pray for us." },
-				{ "verse": "26", "text": "Greet all the brethren with an holy kiss." },
+				{
+					"verse": "25",
+					"paragraph": true,
+					"text": "Brethren, pray for us."
+				},
+				{
+					"verse": "26",
+					"paragraph": true,
+					"text": "Greet all the brethren with an holy kiss."
+				},
 				{
 					"verse": "27",
 					"text": "I charge you by the Lord that this epistle be read unto all the holy brethren."
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "The grace of our Lord Jesus Christ be with you. Amen."
 				}
 			]

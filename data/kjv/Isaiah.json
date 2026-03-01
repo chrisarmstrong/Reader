@@ -15,7 +15,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "The ox knoweth his owner, and the ass his master\u2019s crib: but Israel doth not know, my people doth not consider."
+					"text": "The ox knoweth his owner, and the ass his master’s crib: but Israel doth not know, my people doth not consider."
 				},
 				{
 					"verse": "4",
@@ -23,6 +23,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Why should ye be stricken any more? ye will revolt more and more: the whole head is sick, and the whole heart faint."
 				},
 				{
@@ -43,6 +44,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Hear the word of the LORD, ye rulers of Sodom; give ear unto the law of our God, ye people of Gomorrah."
 				},
 				{
@@ -67,6 +69,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Wash you, make you clean; put away the evil of your doings from before mine eyes; cease to do evil;"
 				},
 				{
@@ -87,6 +90,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "How is the faithful city become an harlot! it was full of judgment; righteousness lodged in it; but now murderers."
 				},
 				{
@@ -103,6 +107,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And I will turn my hand upon thee, and purely purge away thy dross, and take away all thy tin:"
 				},
 				{
@@ -115,6 +120,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "And the destruction of the transgressors and of the sinners shall be together, and they that forsake the LORD shall be consumed."
 				},
 				{
@@ -140,7 +146,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "And it shall come to pass in the last days, that the mountain of the LORD\u2019s house shall be established in the top of the mountains, and shall be exalted above the hills; and all nations shall flow unto it."
+					"text": "And it shall come to pass in the last days, that the mountain of the LORD’s house shall be established in the top of the mountains, and shall be exalted above the hills; and all nations shall flow unto it."
 				},
 				{
 					"verse": "3",
@@ -156,6 +162,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Therefore thou hast forsaken thy people the house of Jacob, because they be replenished from the east, and are soothsayers like the Philistines, and they please themselves in the children of strangers."
 				},
 				{
@@ -172,6 +179,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Enter into the rock, and hide thee in the dust, for fear of the LORD, and for the glory of his majesty."
 				},
 				{
@@ -202,7 +210,10 @@
 					"verse": "17",
 					"text": "And the loftiness of man shall be bowed down, and the haughtiness of men shall be made low: and the LORD alone shall be exalted in that day."
 				},
-				{ "verse": "18", "text": "And the idols he shall utterly abolish." },
+				{
+					"verse": "18",
+					"text": "And the idols he shall utterly abolish."
+				},
 				{
 					"verse": "19",
 					"text": "And they shall go into the holes of the rocks, and into the caves of the earth, for fear of the LORD, and for the glory of his majesty, when he ariseth to shake terribly the earth."
@@ -258,6 +269,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "The shew of their countenance doth witness against them; and they declare their sin as Sodom, they hide it not. Woe unto their soul! for they have rewarded evil unto themselves."
 				},
 				{
@@ -270,6 +282,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "As for my people, children are their oppressors, and women rule over them. O my people, they which lead thee cause thee to err, and destroy the way of thy paths."
 				},
 				{
@@ -286,6 +299,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Moreover the LORD saith, Because the daughters of Zion are haughty, and walk with stretched forth necks and wanton eyes, walking and mincing as they go, and making a tinkling with their feet:"
 				},
 				{
@@ -304,7 +318,10 @@
 					"verse": "20",
 					"text": "The bonnets, and the ornaments of the legs, and the headbands, and the tablets, and the earrings,"
 				},
-				{ "verse": "21", "text": "The rings, and nose jewels," },
+				{
+					"verse": "21",
+					"text": "The rings, and nose jewels,"
+				},
 				{
 					"verse": "22",
 					"text": "The changeable suits of apparel, and the mantles, and the wimples, and the crisping pins,"
@@ -389,6 +406,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Woe unto them that join house to house, that lay field to field, till there be no place, that they may be placed alone in the midst of the earth!"
 				},
 				{
@@ -401,6 +419,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Woe unto them that rise up early in the morning, that they may follow strong drink; that continue until night, till wine inflame them!"
 				},
 				{
@@ -409,6 +428,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Therefore my people are gone into captivity, because they have no knowledge: and their honourable men are famished, and their multitude dried up with thirst."
 				},
 				{
@@ -437,6 +457,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Woe unto them that call evil good, and good evil; that put darkness for light, and light for darkness; that put bitter for sweet, and sweet for bitter!"
 				},
 				{
@@ -461,6 +482,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And he will lift up an ensign to the nations from far, and will hiss unto them from the end of the earth: and, behold, they shall come with speed swiftly:"
 				},
 				{
@@ -469,7 +491,7 @@
 				},
 				{
 					"verse": "28",
-					"text": "Whose arrows are sharp, and all their bows bent, their horses\u2019 hoofs shall be counted like flint, and their wheels like a whirlwind:"
+					"text": "Whose arrows are sharp, and all their bows bent, their horses’ hoofs shall be counted like flint, and their wheels like a whirlwind:"
 				},
 				{
 					"verse": "29",
@@ -502,6 +524,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Then said I, Woe is me! for I am undone; because I am a man of unclean lips, and I dwell in the midst of a people of unclean lips: for mine eyes have seen the King, the LORD of hosts."
 				},
 				{
@@ -518,6 +541,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And he said, Go, and tell this people, Hear ye indeed, but understand not; and see ye indeed, but perceive not."
 				},
 				{
@@ -534,6 +558,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "But yet in it shall be a tenth, and it shall return, and shall be eaten: as a teil tree, and as an oak, whose substance is in them, when they cast their leaves: so the holy seed shall be the substance thereof."
 				}
 			]
@@ -551,7 +576,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "Then said the LORD unto Isaiah, Go forth now to meet Ahaz, thou, and Shearjashub thy son, at the end of the conduit of the upper pool in the highway of the fuller\u2019s field;"
+					"text": "Then said the LORD unto Isaiah, Go forth now to meet Ahaz, thou, and Shearjashub thy son, at the end of the conduit of the upper pool in the highway of the fuller’s field;"
 				},
 				{
 					"verse": "4",
@@ -575,10 +600,11 @@
 				},
 				{
 					"verse": "9",
-					"text": "And the head of Ephraim is Samaria, and the head of Samaria is Remaliah\u2019s son. If ye will not believe, surely ye shall not be established."
+					"text": "And the head of Ephraim is Samaria, and the head of Samaria is Remaliah’s son. If ye will not believe, surely ye shall not be established."
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Moreover the LORD spake again unto Ahaz, saying,"
 				},
 				{
@@ -607,7 +633,8 @@
 				},
 				{
 					"verse": "17",
-					"text": "The LORD shall bring upon thee, and upon thy people, and upon thy father\u2019s house, days that have not come, from the day that Ephraim departed from Judah; even the king of Assyria."
+					"paragraph": true,
+					"text": "The LORD shall bring upon thee, and upon thy people, and upon thy father’s house, days that have not come, from the day that Ephraim departed from Judah; even the king of Assyria."
 				},
 				{
 					"verse": "18",
@@ -648,7 +675,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Moreover the LORD said unto me, Take thee a great roll, and write in it with a man\u2019s pen concerning Mahershalalhashbaz."
+					"text": "Moreover the LORD said unto me, Take thee a great roll, and write in it with a man’s pen concerning Mahershalalhashbaz."
 				},
 				{
 					"verse": "2",
@@ -662,10 +689,14 @@
 					"verse": "4",
 					"text": "For before the child shall have knowledge to cry, My father, and my mother, the riches of Damascus and the spoil of Samaria shall be taken away before the king of Assyria."
 				},
-				{ "verse": "5", "text": "The LORD spake also unto me again, saying," },
+				{
+					"verse": "5",
+					"paragraph": true,
+					"text": "The LORD spake also unto me again, saying,"
+				},
 				{
 					"verse": "6",
-					"text": "Forasmuch as this people refuseth the waters of Shiloah that go softly, and rejoice in Rezin and Remaliah\u2019s son;"
+					"text": "Forasmuch as this people refuseth the waters of Shiloah that go softly, and rejoice in Rezin and Remaliah’s son;"
 				},
 				{
 					"verse": "7",
@@ -677,6 +708,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Associate yourselves, O ye people, and ye shall be broken in pieces; and give ear, all ye of far countries: gird yourselves, and ye shall be broken in pieces; gird yourselves, and ye shall be broken in pieces."
 				},
 				{
@@ -685,6 +717,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "For the LORD spake thus to me with a strong hand, and instructed me that I should not walk in the way of this people, saying,"
 				},
 				{
@@ -717,6 +750,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And when they shall say unto you, Seek unto them that have familiar spirits, and unto wizards that peep, and that mutter: should not a people seek unto their God? for the living to the dead?"
 				},
 				{
@@ -766,6 +800,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "The Lord sent a word into Jacob, and it hath lighted upon Israel."
 				},
 				{
@@ -786,6 +821,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "For the people turneth not unto him that smiteth them, neither do they seek the LORD of hosts."
 				},
 				{
@@ -806,6 +842,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "For wickedness burneth as the fire: it shall devour the briers and thorns, and shall kindle in the thickets of the forest, and they shall mount up like the lifting up of smoke."
 				},
 				{
@@ -843,6 +880,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "O Assyrian, the rod of mine anger, and the staff in their hand is mine indignation."
 				},
 				{
@@ -903,6 +941,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And it shall come to pass in that day, that the remnant of Israel, and such as are escaped of the house of Jacob, shall no more again stay upon him that smote them; but shall stay upon the LORD, the Holy One of Israel, in truth."
 				},
 				{
@@ -919,6 +958,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Therefore thus saith the Lord GOD of hosts, O my people that dwellest in Zion, be not afraid of the Assyrian: he shall smite thee with a rod, and shall lift up his staff against thee, after the manner of Egypt."
 				},
 				{
@@ -996,7 +1036,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "And the sucking child shall play on the hole of the asp, and the weaned child shall put his hand on the cockatrice\u2019 den."
+					"text": "And the sucking child shall play on the hole of the asp, and the weaned child shall put his hand on the cockatrice’ den."
 				},
 				{
 					"verse": "9",
@@ -1004,6 +1044,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And in that day there shall be a root of Jesse, which shall stand for an ensign of the people; to it shall the Gentiles seek: and his rest shall be glorious."
 				},
 				{
@@ -1086,11 +1127,12 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Howl ye; for the day of the LORD is at hand; it shall come as a destruction from the Almighty."
 				},
 				{
 					"verse": "7",
-					"text": "Therefore shall all hands be faint, and every man\u2019s heart shall melt:"
+					"text": "Therefore shall all hands be faint, and every man’s heart shall melt:"
 				},
 				{
 					"verse": "8",
@@ -1138,7 +1180,8 @@
 				},
 				{
 					"verse": "19",
-					"text": "And Babylon, the glory of kingdoms, the beauty of the Chaldees\u2019 excellency, shall be as when God overthrew Sodom and Gomorrah."
+					"paragraph": true,
+					"text": "And Babylon, the glory of kingdoms, the beauty of the Chaldees’ excellency, shall be as when God overthrew Sodom and Gomorrah."
 				},
 				{
 					"verse": "20",
@@ -1171,6 +1214,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "That thou shalt take up this proverb against the king of Babylon, and say, How hath the oppressor ceased! the golden city ceased!"
 				},
 				{
@@ -1251,6 +1295,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "The LORD of hosts hath sworn, saying, Surely as I have thought, so shall it come to pass; and as I have purposed, so shall it stand:"
 				},
 				{
@@ -1271,7 +1316,8 @@
 				},
 				{
 					"verse": "29",
-					"text": "Rejoice not thou, whole Palestina, because the rod of him that smote thee is broken: for out of the serpent\u2019s root shall come forth a cockatrice, and his fruit shall be a fiery flying serpent."
+					"paragraph": true,
+					"text": "Rejoice not thou, whole Palestina, because the rod of him that smote thee is broken: for out of the serpent’s root shall come forth a cockatrice, and his fruit shall be a fiery flying serpent."
 				},
 				{
 					"verse": "30",
@@ -1353,6 +1399,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "We have heard of the pride of Moab; he is very proud: even of his haughtiness, and his pride, and his wrath: but his lies shall not be so."
 				},
 				{
@@ -1365,6 +1412,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Therefore I will bewail with the weeping of Jazer the vine of Sibmah: I will water thee with my tears, O Heshbon, and Elealeh: for the shouting for thy summer fruits and for thy harvest is fallen."
 				},
 				{
@@ -1377,6 +1425,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And it shall come to pass, when it is seen that Moab is weary on the high place, that he shall come to his sanctuary to pray; but he shall not prevail."
 				},
 				{
@@ -1414,6 +1463,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Yet gleaning grapes shall be left in it, as the shaking of an olive tree, two or three berries in the top of the uppermost bough, four or five in the outmost fruitful branches thereof, saith the LORD God of Israel."
 				},
 				{
@@ -1426,6 +1476,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "In that day shall his strong cities be as a forsaken bough, and an uppermost branch, which they left because of the children of Israel: and there shall be desolation."
 				},
 				{
@@ -1438,6 +1489,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Woe to the multitude of many people, which make a noise like the noise of the seas; and to the rushing of nations, that make a rushing like the rushing of mighty waters!"
 				},
 				{
@@ -1479,6 +1531,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "In that time shall the present be brought unto the LORD of hosts of a people scattered and peeled, and from a people terrible from their beginning hitherto; a nation meted out and trodden under foot, whose land the rivers have spoiled, to the place of the name of the LORD of hosts, the mount Zion."
 				}
 			]
@@ -1528,6 +1581,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Surely the princes of Zoan are fools, the counsel of the wise counsellors of Pharaoh is become brutish: how say ye unto Pharaoh, I am the son of the wise, the son of ancient kings?"
 				},
 				{
@@ -1556,6 +1610,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "In that day shall five cities in the land of Egypt speak the language of Canaan, and swear to the LORD of hosts; one shall be called, The city of destruction."
 				},
 				{
@@ -1576,6 +1631,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "In that day shall there be a highway out of Egypt to Assyria, and the Assyrian shall come into Egypt, and the Egyptian into Assyria, and the Egyptians shall serve with the Assyrians."
 				},
 				{
@@ -1662,6 +1718,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "The burden of Dumah. He calleth to me out of Seir, Watchman, what of the night? Watchman, what of the night?"
 				},
 				{
@@ -1670,6 +1727,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "The burden upon Arabia. In the forest in Arabia shall ye lodge, O ye travelling companies of Dedanim."
 				},
 				{
@@ -1723,6 +1781,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And he discovered the covering of Judah, and thou didst look in that day to the armour of the house of the forest."
 				},
 				{
@@ -1751,6 +1810,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Thus saith the Lord GOD of hosts, Go, get thee unto this treasurer, even unto Shebna, which is over the house, and say,"
 				},
 				{
@@ -1763,7 +1823,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "He will surely violently turn and toss thee like a ball into a large country: there shalt thou die, and there the chariots of thy glory shall be the shame of thy lord\u2019s house."
+					"text": "He will surely violently turn and toss thee like a ball into a large country: there shalt thou die, and there the chariots of thy glory shall be the shame of thy lord’s house."
 				},
 				{
 					"verse": "19",
@@ -1771,6 +1831,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And it shall come to pass in that day, that I will call my servant Eliakim the son of Hilkiah:"
 				},
 				{
@@ -1783,11 +1844,11 @@
 				},
 				{
 					"verse": "23",
-					"text": "And I will fasten him as a nail in a sure place; and he shall be for a glorious throne to his father\u2019s house."
+					"text": "And I will fasten him as a nail in a sure place; and he shall be for a glorious throne to his father’s house."
 				},
 				{
 					"verse": "24",
-					"text": "And they shall hang upon him all the glory of his father\u2019s house, the offspring and the issue, all vessels of small quantity, from the vessels of cups, even to all the vessels of flagons."
+					"text": "And they shall hang upon him all the glory of his father’s house, the offspring and the issue, all vessels of small quantity, from the vessels of cups, even to all the vessels of flagons."
 				},
 				{
 					"verse": "25",
@@ -1864,6 +1925,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And it shall come to pass after the end of seventy years, that the LORD will visit Tyre, and she shall turn to her hire, and shall commit fornication with all the kingdoms of the world upon the face of the earth."
 				},
 				{
@@ -1925,6 +1987,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "When thus it shall be in the midst of the land among the people, there shall be as the shaking of an olive tree, and as the gleaning grapes when the vintage is done."
 				},
 				{
@@ -1937,6 +2000,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "From the uttermost part of the earth have we heard songs, even glory to the righteous. But I said, My leanness, my leanness, woe unto me! the treacherous dealers have dealt treacherously; yea, the treacherous dealers have dealt very treacherously."
 				},
 				{
@@ -1994,6 +2058,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And in this mountain shall the LORD of hosts make unto all people a feast of fat things, a feast of wines on the lees, of fat things full of marrow, of wines on the lees well refined."
 				},
 				{
@@ -2006,6 +2071,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And it shall be said in that day, Lo, this is our God; we have waited for him, and he will save us: this is the LORD; we have waited for him, we will be glad and rejoice in his salvation."
 				},
 				{
@@ -2043,6 +2109,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "For he bringeth down them that dwell on high; the lofty city, he layeth it low; he layeth it low, even to the ground; he bringeth it even to the dust."
 				},
 				{
@@ -2071,6 +2138,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "LORD, thou wilt ordain peace for us: for thou also hast wrought all our works in us."
 				},
 				{
@@ -2103,6 +2171,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Come, my people, enter thou into thy chambers, and shut thy doors about thee: hide thyself as it were for a little moment, until the indignation be overpast."
 				},
 				{
@@ -2140,6 +2209,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Hath he smitten him, as he smote those that smote him? or is he slain according to the slaughter of them that are slain by him?"
 				},
 				{
@@ -2160,6 +2230,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And it shall come to pass in that day, that the LORD shall beat off from the channel of the river unto the stream of Egypt, and ye shall be gathered one by one, O ye children of Israel."
 				},
 				{
@@ -2189,6 +2260,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "In that day shall the LORD of hosts be for a crown of glory, and for a diadem of beauty, unto the residue of his people,"
 				},
 				{
@@ -2197,6 +2269,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "But they also have erred through wine, and through strong drink are out of the way; the priest and the prophet have erred through strong drink, they are swallowed up of wine, they are out of the way through strong drink; they err in vision, they stumble in judgment."
 				},
 				{
@@ -2205,6 +2278,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Whom shall he teach knowledge? and whom shall he make to understand doctrine? them that are weaned from the milk, and drawn from the breasts."
 				},
 				{
@@ -2225,6 +2299,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Wherefore hear the word of the LORD, ye scornful men, that rule this people which is in Jerusalem."
 				},
 				{
@@ -2233,6 +2308,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Therefore thus saith the Lord GOD, Behold, I lay in Zion for a foundation a stone, a tried stone, a precious corner stone, a sure foundation: he that believeth shall not make haste."
 				},
 				{
@@ -2241,6 +2317,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And your covenant with death shall be disannulled, and your agreement with hell shall not stand; when the overflowing scourge shall pass through, then ye shall be trodden down by it."
 				},
 				{
@@ -2261,6 +2338,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Give ye ear, and hear my voice; hearken, and hear my speech."
 				},
 				{
@@ -2318,6 +2396,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And the multitude of all the nations that fight against Ariel, even all that fight against her and her munition, and that distress her, shall be as a dream of a night vision."
 				},
 				{
@@ -2342,6 +2421,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Wherefore the Lord said, Forasmuch as this people draw near me with their mouth, and with their lips do honour me, but have removed their heart far from me, and their fear toward me is taught by the precept of men:"
 				},
 				{
@@ -2354,7 +2434,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "Surely your turning of things upside down shall be esteemed as the potter\u2019s clay: for shall the work say of him that made it, He made me not? or shall the thing framed say of him that framed it, He had no understanding?"
+					"text": "Surely your turning of things upside down shall be esteemed as the potter’s clay: for shall the work say of him that made it, He made me not? or shall the thing framed say of him that framed it, He had no understanding?"
 				},
 				{
 					"verse": "17",
@@ -2362,6 +2442,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And in that day shall the deaf hear the words of the book, and the eyes of the blind shall see out of obscurity, and out of darkness."
 				},
 				{
@@ -2423,6 +2504,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Now go, write it before them in a table, and note it in a book, that it may be for the time to come for ever and ever:"
 				},
 				{
@@ -2447,7 +2529,7 @@
 				},
 				{
 					"verse": "14",
-					"text": "And he shall break it as the breaking of the potters\u2019 vessel that is broken in pieces; he shall not spare: so that there shall not be found in the bursting of it a sherd to take fire from the hearth, or to take water withal out of the pit."
+					"text": "And he shall break it as the breaking of the potters’ vessel that is broken in pieces; he shall not spare: so that there shall not be found in the bursting of it a sherd to take fire from the hearth, or to take water withal out of the pit."
 				},
 				{
 					"verse": "15",
@@ -2463,6 +2545,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And therefore will the LORD wait, that he may be gracious unto you, and therefore will he be exalted, that he may have mercy upon you: for the LORD is a God of judgment: blessed are all they that wait for him."
 				},
 				{
@@ -2499,6 +2582,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "Behold, the name of the LORD cometh from far, burning with his anger, and the burden thereof is heavy: his lips are full of indignation, and his tongue as a devouring fire:"
 				},
 				{
@@ -2552,6 +2636,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Turn ye unto him from whom the children of Israel have deeply revolted."
 				},
 				{
@@ -2560,6 +2645,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Then shall the Assyrian fall with the sword, not of a mighty man; and the sword, not of a mean man, shall devour him: but he shall flee from the sword, and his young men shall be discomfited."
 				},
 				{
@@ -2605,6 +2691,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Rise up, ye women that are at ease; hear my voice, ye careless daughters; give ear unto my speech."
 				},
 				{
@@ -2706,6 +2793,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Hear, ye that are far off, what I have done; and, ye that are near, acknowledge my might."
 				},
 				{
@@ -2787,7 +2875,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "For it is the day of the LORD\u2019s vengeance, and the year of recompences for the controversy of Zion."
+					"text": "For it is the day of the LORD’s vengeance, and the year of recompences for the controversy of Zion."
 				},
 				{
 					"verse": "9",
@@ -2819,6 +2907,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Seek ye out of the book of the LORD, and read: no one of these shall fail, none shall want her mate: for my mouth it hath commanded, and his spirit it hath gathered them."
 				},
 				{
@@ -2840,6 +2929,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Strengthen ye the weak hands, and confirm the feeble knees."
 				},
 				{
@@ -2881,14 +2971,15 @@
 				},
 				{
 					"verse": "2",
-					"text": "And the king of Assyria sent Rabshakeh from Lachish to Jerusalem unto king Hezekiah with a great army. And he stood by the conduit of the upper pool in the highway of the fuller\u2019s field."
+					"text": "And the king of Assyria sent Rabshakeh from Lachish to Jerusalem unto king Hezekiah with a great army. And he stood by the conduit of the upper pool in the highway of the fuller’s field."
 				},
 				{
 					"verse": "3",
-					"text": "Then came forth unto him Eliakim, Hilkiah\u2019s son, which was over the house, and Shebna the scribe, and Joah, Asaph\u2019s son, the recorder."
+					"text": "Then came forth unto him Eliakim, Hilkiah’s son, which was over the house, and Shebna the scribe, and Joah, Asaph’s son, the recorder."
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And Rabshakeh said unto them, Say ye now to Hezekiah, Thus saith the great king, the king of Assyria, What confidence is this wherein thou trustest?"
 				},
 				{
@@ -2909,7 +3000,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "How then wilt thou turn away the face of one captain of the least of my master\u2019s servants, and put thy trust on Egypt for chariots and for horsemen?"
+					"text": "How then wilt thou turn away the face of one captain of the least of my master’s servants, and put thy trust on Egypt for chariots and for horsemen?"
 				},
 				{
 					"verse": "10",
@@ -2917,15 +3008,17 @@
 				},
 				{
 					"verse": "11",
-					"text": "Then said Eliakim and Shebna and Joah unto Rabshakeh, Speak, I pray thee, unto thy servants in the Syrian language; for we understand it: and speak not to us in the Jews\u2019 language, in the ears of the people that are on the wall."
+					"paragraph": true,
+					"text": "Then said Eliakim and Shebna and Joah unto Rabshakeh, Speak, I pray thee, unto thy servants in the Syrian language; for we understand it: and speak not to us in the Jews’ language, in the ears of the people that are on the wall."
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "But Rabshakeh said, Hath my master sent me to thy master and to thee to speak these words? hath he not sent me to the men that sit upon the wall, that they may eat their own dung, and drink their own piss with you?"
 				},
 				{
 					"verse": "13",
-					"text": "Then Rabshakeh stood, and cried with a loud voice in the Jews\u2019 language, and said, Hear ye the words of the great king, the king of Assyria."
+					"text": "Then Rabshakeh stood, and cried with a loud voice in the Jews’ language, and said, Hear ye the words of the great king, the king of Assyria."
 				},
 				{
 					"verse": "14",
@@ -2957,10 +3050,11 @@
 				},
 				{
 					"verse": "21",
-					"text": "But they held their peace, and answered him not a word: for the king\u2019s commandment was, saying, Answer him not."
+					"text": "But they held their peace, and answered him not a word: for the king’s commandment was, saying, Answer him not."
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Then came Eliakim, the son of Hilkiah, that was over the household, and Shebna the scribe, and Joah, the son of Asaph, the recorder, to Hezekiah with their clothes rent, and told him the words of Rabshakeh."
 				}
 			]
@@ -2990,6 +3084,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And Isaiah said unto them, Thus shall ye say unto your master, Thus saith the LORD, Be not afraid of the words that thou hast heard, wherewith the servants of the king of Assyria have blasphemed me."
 				},
 				{
@@ -2998,6 +3093,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "So Rabshakeh returned, and found the king of Assyria warring against Libnah: for he had heard that he was departed from Lachish."
 				},
 				{
@@ -3022,9 +3118,13 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And Hezekiah received the letter from the hand of the messengers, and read it: and Hezekiah went up unto the house of the LORD, and spread it before the LORD."
 				},
-				{ "verse": "15", "text": "And Hezekiah prayed unto the LORD, saying," },
+				{
+					"verse": "15",
+					"text": "And Hezekiah prayed unto the LORD, saying,"
+				},
 				{
 					"verse": "16",
 					"text": "O LORD of hosts, God of Israel, that dwellest between the cherubims, thou art the God, even thou alone, of all the kingdoms of the earth: thou hast made heaven and earth."
@@ -3039,7 +3139,7 @@
 				},
 				{
 					"verse": "19",
-					"text": "And have cast their gods into the fire: for they were no gods, but the work of men\u2019s hands, wood and stone: therefore they have destroyed them."
+					"text": "And have cast their gods into the fire: for they were no gods, but the work of men’s hands, wood and stone: therefore they have destroyed them."
 				},
 				{
 					"verse": "20",
@@ -3047,6 +3147,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Then Isaiah the son of Amoz sent unto Hezekiah, saying, Thus saith the LORD God of Israel, Whereas thou hast prayed to me against Sennacherib king of Assyria:"
 				},
 				{
@@ -3103,7 +3204,7 @@
 				},
 				{
 					"verse": "35",
-					"text": "For I will defend this city to save it for mine own sake, and for my servant David\u2019s sake."
+					"text": "For I will defend this city to save it for mine own sake, and for my servant David’s sake."
 				},
 				{
 					"verse": "36",
@@ -3111,6 +3212,7 @@
 				},
 				{
 					"verse": "37",
+					"paragraph": true,
 					"text": "So Sennacherib king of Assyria departed, and went and returned, and dwelt at Nineveh."
 				},
 				{
@@ -3136,6 +3238,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Then came the word of the LORD to Isaiah, saying,"
 				},
 				{
@@ -3156,6 +3259,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "The writing of Hezekiah king of Judah, when he had been sick, and was recovered of his sickness:"
 				},
 				{
@@ -3168,7 +3272,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "Mine age is departed, and is removed from me as a shepherd\u2019s tent: I have cut off like a weaver my life: he will cut me off with pining sickness: from day even to night wilt thou make an end of me."
+					"text": "Mine age is departed, and is removed from me as a shepherd’s tent: I have cut off like a weaver my life: he will cut me off with pining sickness: from day even to night wilt thou make an end of me."
 				},
 				{
 					"verse": "13",
@@ -3225,6 +3329,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Then came Isaiah the prophet unto king Hezekiah, and said unto him, What said these men? and from whence came they unto thee? And Hezekiah said, They are come from a far country unto me, even from Babylon."
 				},
 				{
@@ -3258,10 +3363,11 @@
 				},
 				{
 					"verse": "2",
-					"text": "Speak ye comfortably to Jerusalem, and cry unto her, that her warfare is accomplished, that her iniquity is pardoned: for she hath received of the LORD\u2019s hand double for all her sins."
+					"text": "Speak ye comfortably to Jerusalem, and cry unto her, that her warfare is accomplished, that her iniquity is pardoned: for she hath received of the LORD’s hand double for all her sins."
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "The voice of him that crieth in the wilderness, Prepare ye the way of the LORD, make straight in the desert a highway for our God."
 				},
 				{
@@ -3286,6 +3392,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "O Zion, that bringest good tidings, get thee up into the high mountain; O Jerusalem, that bringest good tidings, lift up thy voice with strength; lift it up, be not afraid; say unto the cities of Judah, Behold your God!"
 				},
 				{
@@ -3298,6 +3405,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Who hath measured the waters in the hollow of his hand, and meted out heaven with the span, and comprehended the dust of the earth in a measure, and weighed the mountains in scales, and the hills in a balance?"
 				},
 				{
@@ -3322,6 +3430,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "To whom then will ye liken God? or what likeness will ye compare unto him?"
 				},
 				{
@@ -3362,6 +3471,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "Hast thou not known? hast thou not heard, that the everlasting God, the LORD, the Creator of the ends of the earth, fainteth not, neither is weary? there is no searching of his understanding."
 				},
 				{
@@ -3419,6 +3529,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness."
 				},
 				{
@@ -3520,6 +3631,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Thus saith God the LORD, he that created the heavens, and stretched them out; he that spread forth the earth, and that which cometh out of it; he that giveth breath unto the people upon it, and spirit to them that walk therein:"
 				},
 				{
@@ -3568,6 +3680,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "They shall be turned back, they shall be greatly ashamed, that trust in graven images, that say to the molten images, Ye are our gods."
 				},
 				{
@@ -3576,7 +3689,7 @@
 				},
 				{
 					"verse": "19",
-					"text": "Who is blind, but my servant? or deaf, as my messenger that I sent? who is blind as he that is perfect, and blind as the LORD\u2019s servant?"
+					"text": "Who is blind, but my servant? or deaf, as my messenger that I sent? who is blind as he that is perfect, and blind as the LORD’s servant?"
 				},
 				{
 					"verse": "20",
@@ -3584,7 +3697,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "The LORD is well pleased for his righteousness\u2019 sake; he will magnify the law, and make it honourable."
+					"text": "The LORD is well pleased for his righteousness’ sake; he will magnify the law, and make it honourable."
 				},
 				{
 					"verse": "22",
@@ -3637,6 +3750,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Bring forth the blind people that have eyes, and the deaf that have ears."
 				},
 				{
@@ -3661,6 +3775,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Thus saith the LORD, your redeemer, the Holy One of Israel; For your sake I have sent to Babylon, and have brought down all their nobles, and the Chaldeans, whose cry is in the ships."
 				},
 				{
@@ -3677,6 +3792,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Remember ye not the former things, neither consider the things of old."
 				},
 				{
@@ -3693,6 +3809,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "But thou hast not called upon me, O Jacob; but thou hast been weary of me, O Israel."
 				},
 				{
@@ -3742,7 +3859,7 @@
 				},
 				{
 					"verse": "5",
-					"text": "One shall say, I am the LORD\u2019s; and another shall call himself by the name of Jacob; and another shall subscribe with his hand unto the LORD, and surname himself by the name of Israel."
+					"text": "One shall say, I am the LORD’s; and another shall call himself by the name of Jacob; and another shall subscribe with his hand unto the LORD, and surname himself by the name of Israel."
 				},
 				{
 					"verse": "6",
@@ -3758,6 +3875,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "They that make a graven image are all of them vanity; and their delectable things shall not profit; and they are their own witnesses; they see not, nor know; that they may be ashamed."
 				},
 				{
@@ -3806,6 +3924,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Remember these, O Jacob and Israel; for thou art my servant: I have formed thee; thou art my servant: O Israel, thou shalt not be forgotten of me."
 				},
 				{
@@ -3855,10 +3974,11 @@
 				},
 				{
 					"verse": "4",
-					"text": "For Jacob my servant\u2019s sake, and Israel mine elect, I have even called thee by thy name: I have surnamed thee, though thou hast not known me."
+					"text": "For Jacob my servant’s sake, and Israel mine elect, I have even called thee by thy name: I have surnamed thee, though thou hast not known me."
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "I am the LORD, and there is none else, there is no God beside me: I girded thee, though thou hast not known me:"
 				},
 				{
@@ -3919,6 +4039,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Assemble yourselves and come; draw near together, ye that are escaped of the nations: they have no knowledge that set up the wood of their graven image, and pray unto a god that cannot save."
 				},
 				{
@@ -3964,6 +4085,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "To whom will ye liken me, and make me equal, and compare me, that we may be like?"
 				},
 				{
@@ -3992,6 +4114,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Hearken unto me, ye stouthearted, that are far from righteousness:"
 				},
 				{
@@ -4025,10 +4148,12 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "I was wroth with my people, I have polluted mine inheritance, and given them into thine hand: thou didst shew them no mercy; upon the ancient hast thou very heavily laid thy yoke."
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And thou saidst, I shall be a lady for ever: so that thou didst not lay these things to thy heart, neither didst remember the latter end of it."
 				},
 				{
@@ -4041,10 +4166,12 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "For thou hast trusted in thy wickedness: thou hast said, None seeth me. Thy wisdom and thy knowledge, it hath perverted thee; and thou hast said in thine heart, I am, and none else beside me."
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Therefore shall evil come upon thee; thou shalt not know from whence it riseth: and mischief shall fall upon thee; thou shalt not be able to put it off: and desolation shall come upon thee suddenly, which thou shalt not know."
 				},
 				{
@@ -4102,7 +4229,8 @@
 				},
 				{
 					"verse": "9",
-					"text": "For my name\u2019s sake will I defer mine anger, and for my praise will I refrain for thee, that I cut thee not off."
+					"paragraph": true,
+					"text": "For my name’s sake will I defer mine anger, and for my praise will I refrain for thee, that I cut thee not off."
 				},
 				{
 					"verse": "10",
@@ -4114,6 +4242,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Hearken unto me, O Jacob and Israel, my called; I am he; I am the first, I also am the last."
 				},
 				{
@@ -4130,6 +4259,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Come ye near unto me, hear ye this; I have not spoken in secret from the beginning; from the time that it was, there am I: and now the Lord GOD, and his Spirit, hath sent me."
 				},
 				{
@@ -4146,6 +4276,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Go ye forth of Babylon, flee ye from the Chaldeans, with a voice of singing declare ye, tell this, utter it even to the end of the earth; say ye, The LORD hath redeemed his servant Jacob."
 				},
 				{
@@ -4179,6 +4310,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And now, saith the LORD that formed me from the womb to be his servant, to bring Jacob again to him, Though Israel be not gathered, yet shall I be glorious in the eyes of the LORD, and my God shall be my strength."
 				},
 				{
@@ -4211,6 +4343,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Sing, O heavens; and be joyful, O earth; and break forth into singing, O mountains: for the LORD hath comforted his people, and will have mercy upon his afflicted."
 				},
 				{
@@ -4231,6 +4364,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Lift up thine eyes round about, and behold: all these gather themselves together, and come to thee. As I live, saith the LORD, thou shalt surely clothe thee with them all, as with an ornament, and bind them on thee, as a bride doeth."
 				},
 				{
@@ -4255,6 +4389,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Shall the prey be taken from the mighty, or the lawful captive delivered?"
 				},
 				{
@@ -4272,7 +4407,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Thus saith the LORD, Where is the bill of your mother\u2019s divorcement, whom I have put away? or which of my creditors is it to whom I have sold you? Behold, for your iniquities have ye sold yourselves, and for your transgressions is your mother put away."
+					"text": "Thus saith the LORD, Where is the bill of your mother’s divorcement, whom I have put away? or which of my creditors is it to whom I have sold you? Behold, for your iniquities have ye sold yourselves, and for your transgressions is your mother put away."
 				},
 				{
 					"verse": "2",
@@ -4288,6 +4423,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "The Lord GOD hath opened mine ear, and I was not rebellious, neither turned away back."
 				},
 				{
@@ -4296,6 +4432,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "For the Lord GOD will help me; therefore shall I not be confounded: therefore have I set my face like a flint, and I know that I shall not be ashamed."
 				},
 				{
@@ -4308,6 +4445,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Who is among you that feareth the LORD, that obeyeth the voice of his servant, that walketh in darkness, and hath no light? let him trust in the name of the LORD, and stay upon his God."
 				},
 				{
@@ -4333,6 +4471,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Hearken unto me, my people; and give ear unto me, O my nation: for a law shall proceed from me, and I will make my judgment to rest for a light of the people."
 				},
 				{
@@ -4345,6 +4484,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Hearken unto me, ye that know righteousness, the people in whose heart is my law; fear ye not the reproach of men, neither be ye afraid of their revilings."
 				},
 				{
@@ -4353,6 +4493,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Awake, awake, put on strength, O arm of the LORD; awake, as in the ancient days, in the generations of old. Art thou not it that hath cut Rahab, and wounded the dragon?"
 				},
 				{
@@ -4385,6 +4526,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Awake, awake, stand up, O Jerusalem, which hast drunk at the hand of the LORD the cup of his fury; thou hast drunken the dregs of the cup of trembling, and wrung them out."
 				},
 				{
@@ -4401,6 +4543,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Therefore hear now this, thou afflicted, and drunken, but not with wine:"
 				},
 				{
@@ -4442,6 +4585,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "How beautiful upon the mountains are the feet of him that bringeth good tidings, that publisheth peace; that bringeth good tidings of good, that publisheth salvation; that saith unto Zion, Thy God reigneth!"
 				},
 				{
@@ -4450,6 +4594,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Break forth into joy, sing together, ye waste places of Jerusalem: for the LORD hath comforted his people, he hath redeemed Jerusalem."
 				},
 				{
@@ -4458,6 +4603,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Depart ye, depart ye, go ye out from thence, touch no unclean thing; go ye out of the midst of her; be ye clean, that bear the vessels of the LORD."
 				},
 				{
@@ -4466,6 +4612,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Behold, my servant shall deal prudently, he shall be exalted and extolled, and be very high."
 				},
 				{
@@ -4495,6 +4642,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Surely he hath borne our griefs, and carried our sorrows: yet we did esteem him stricken, smitten of God, and afflicted."
 				},
 				{
@@ -4519,6 +4667,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Yet it pleased the LORD to bruise him; he hath put him to grief: when thou shalt make his soul an offering for sin, he shall see his seed, he shall prolong his days, and the pleasure of the LORD shall prosper in his hand."
 				},
 				{
@@ -4576,6 +4725,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "O thou afflicted, tossed with tempest, and not comforted, behold, I will lay thy stones with fair colours, and lay thy foundations with sapphires."
 				},
 				{
@@ -4600,6 +4750,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "No weapon that is formed against thee shall prosper; and every tongue that shall rise against thee in judgment thou shalt condemn. This is the heritage of the servants of the LORD, and their righteousness is of me, saith the LORD."
 				}
 			]
@@ -4629,6 +4780,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Seek ye the LORD while he may be found, call ye upon him while he is near:"
 				},
 				{
@@ -4637,6 +4789,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "For my thoughts are not your thoughts, neither are your ways my ways, saith the LORD."
 				},
 				{
@@ -4674,6 +4827,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Neither let the son of the stranger, that hath joined himself to the LORD, speak, saying, The LORD hath utterly separated me from his people: neither let the eunuch say, Behold, I am a dry tree."
 				},
 				{
@@ -4698,6 +4852,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "All ye beasts of the field, come to devour, yea, all ye beasts in the forest."
 				},
 				{
@@ -4727,6 +4882,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "But draw near hither, ye sons of the sorceress, the seed of the adulterer and the whore."
 				},
 				{
@@ -4767,6 +4923,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "When thou criest, let thy companies deliver thee; but the wind shall carry them all away; vanity shall take them: but he that putteth his trust in me shall possess the land, and shall inherit my holy mountain;"
 				},
 				{
@@ -4816,6 +4973,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Wherefore have we fasted, say they, and thou seest not? wherefore have we afflicted our soul, and thou takest no knowledge? Behold, in the day of your fast ye find pleasure, and exact all your labours."
 				},
 				{
@@ -4836,6 +4994,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Then shall thy light break forth as the morning, and thine health shall spring forth speedily: and thy righteousness shall go before thee; the glory of the LORD shall be thy rereward."
 				},
 				{
@@ -4856,6 +5015,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "If thou turn away thy foot from the sabbath, from doing thy pleasure on my holy day; and call the sabbath a delight, the holy of the LORD, honourable; and shalt honour him, not doing thine own ways, nor finding thine own pleasure, nor speaking thine own words:"
 				},
 				{
@@ -4869,7 +5029,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Behold, the LORD\u2019s hand is not shortened, that it cannot save; neither his ear heavy, that it cannot hear:"
+					"text": "Behold, the LORD’s hand is not shortened, that it cannot save; neither his ear heavy, that it cannot hear:"
 				},
 				{
 					"verse": "2",
@@ -4885,7 +5045,7 @@
 				},
 				{
 					"verse": "5",
-					"text": "They hatch cockatrice\u2019 eggs, and weave the spider\u2019s web: he that eateth of their eggs dieth, and that which is crushed breaketh out into a viper."
+					"text": "They hatch cockatrice’ eggs, and weave the spider’s web: he that eateth of their eggs dieth, and that which is crushed breaketh out into a viper."
 				},
 				{
 					"verse": "6",
@@ -4901,6 +5061,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Therefore is judgment far from us, neither doth justice overtake us: we wait for light, but behold obscurity; for brightness, but we walk in darkness."
 				},
 				{
@@ -4929,6 +5090,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And he saw that there was no man, and wondered that there was no intercessor: therefore his arm brought salvation unto him; and his righteousness, it sustained him."
 				},
 				{
@@ -4945,11 +5107,12 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And the Redeemer shall come to Zion, and unto them that turn from transgression in Jacob, saith the LORD."
 				},
 				{
 					"verse": "21",
-					"text": "As for me, this is my covenant with them, saith the LORD; My spirit that is upon thee, and my words which I have put in thy mouth, shall not depart out of thy mouth, nor out of the mouth of thy seed, nor out of the mouth of thy seed\u2019s seed, saith the LORD, from henceforth and for ever."
+					"text": "As for me, this is my covenant with them, saith the LORD; My spirit that is upon thee, and my words which I have put in thy mouth, shall not depart out of thy mouth, nor out of the mouth of thy seed, nor out of the mouth of thy seed’s seed, saith the LORD, from henceforth and for ever."
 				}
 			]
 		},
@@ -5063,6 +5226,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And they shall build the old wastes, they shall raise up the former desolations, and they shall repair the waste cities, the desolations of many generations."
 				},
 				{
@@ -5075,6 +5239,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "For your shame ye shall have double; and for confusion they shall rejoice in their portion: therefore in their land they shall possess the double: everlasting joy shall be unto them."
 				},
 				{
@@ -5100,7 +5265,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "For Zion\u2019s sake will I not hold my peace, and for Jerusalem\u2019s sake I will not rest, until the righteousness thereof go forth as brightness, and the salvation thereof as a lamp that burneth."
+					"text": "For Zion’s sake will I not hold my peace, and for Jerusalem’s sake I will not rest, until the righteousness thereof go forth as brightness, and the salvation thereof as a lamp that burneth."
 				},
 				{
 					"verse": "2",
@@ -5116,6 +5281,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "For as a young man marrieth a virgin, so shall thy sons marry thee: and as the bridegroom rejoiceth over the bride, so shall thy God rejoice over thee."
 				},
 				{
@@ -5136,6 +5302,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Go through, go through the gates; prepare ye the way of the people; cast up, cast up the highway; gather out the stones; lift up a standard for the people."
 				},
 				{
@@ -5177,6 +5344,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "I will mention the lovingkindnesses of the LORD, and the praises of the LORD, according to all that the LORD hath bestowed on us, and the great goodness toward the house of Israel, which he hath bestowed on them according to his mercies, and according to the multitude of his lovingkindnesses."
 				},
 				{
@@ -5189,6 +5357,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "But they rebelled, and vexed his holy Spirit: therefore he was turned to be their enemy, and he fought against them."
 				},
 				{
@@ -5209,6 +5378,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Look down from heaven, and behold from the habitation of thy holiness and of thy glory: where is thy zeal and thy strength, the sounding of thy bowels and of thy mercies toward me? are they restrained?"
 				},
 				{
@@ -5217,7 +5387,8 @@
 				},
 				{
 					"verse": "17",
-					"text": "O LORD, why hast thou made us to err from thy ways, and hardened our heart from thy fear? Return for thy servants\u2019 sake, the tribes of thine inheritance."
+					"paragraph": true,
+					"text": "O LORD, why hast thou made us to err from thy ways, and hardened our heart from thy fear? Return for thy servants’ sake, the tribes of thine inheritance."
 				},
 				{
 					"verse": "18",
@@ -5266,6 +5437,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Be not wroth very sore, O LORD, neither remember iniquity for ever: behold, see, we beseech thee, we are all thy people."
 				},
 				{
@@ -5299,7 +5471,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "Which remain among the graves, and lodge in the monuments, which eat swine\u2019s flesh, and broth of abominable things is in their vessels;"
+					"text": "Which remain among the graves, and lodge in the monuments, which eat swine’s flesh, and broth of abominable things is in their vessels;"
 				},
 				{
 					"verse": "5",
@@ -5315,7 +5487,8 @@
 				},
 				{
 					"verse": "8",
-					"text": "Thus saith the LORD, As the new wine is found in the cluster, and one saith, Destroy it not; for a blessing is in it: so will I do for my servants\u2019 sakes, that I may not destroy them all."
+					"paragraph": true,
+					"text": "Thus saith the LORD, As the new wine is found in the cluster, and one saith, Destroy it not; for a blessing is in it: so will I do for my servants’ sakes, that I may not destroy them all."
 				},
 				{
 					"verse": "9",
@@ -5327,6 +5500,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "But ye are they that forsake the LORD, that forget my holy mountain, that prepare a table for that troop, and that furnish the drink offering unto that number."
 				},
 				{
@@ -5351,6 +5525,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "For, behold, I create new heavens and a new earth: and the former shall not be remembered, nor come into mind."
 				},
 				{
@@ -5383,7 +5558,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "The wolf and the lamb shall feed together, and the lion shall eat straw like the bullock: and dust shall be the serpent\u2019s meat. They shall not hurt nor destroy in all my holy mountain, saith the LORD."
+					"text": "The wolf and the lamb shall feed together, and the lion shall eat straw like the bullock: and dust shall be the serpent’s meat. They shall not hurt nor destroy in all my holy mountain, saith the LORD."
 				}
 			]
 		},
@@ -5400,7 +5575,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "He that killeth an ox is as if he slew a man; he that sacrificeth a lamb, as if he cut off a dog\u2019s neck; he that offereth an oblation, as if he offered swine\u2019s blood; he that burneth incense, as if he blessed an idol. Yea, they have chosen their own ways, and their soul delighteth in their abominations."
+					"text": "He that killeth an ox is as if he slew a man; he that sacrificeth a lamb, as if he cut off a dog’s neck; he that offereth an oblation, as if he offered swine’s blood; he that burneth incense, as if he blessed an idol. Yea, they have chosen their own ways, and their soul delighteth in their abominations."
 				},
 				{
 					"verse": "4",
@@ -5408,7 +5583,8 @@
 				},
 				{
 					"verse": "5",
-					"text": "Hear the word of the LORD, ye that tremble at his word; Your brethren that hated you, that cast you out for my name\u2019s sake, said, Let the LORD be glorified: but he shall appear to your joy, and they shall be ashamed."
+					"paragraph": true,
+					"text": "Hear the word of the LORD, ye that tremble at his word; Your brethren that hated you, that cast you out for my name’s sake, said, Let the LORD be glorified: but he shall appear to your joy, and they shall be ashamed."
 				},
 				{
 					"verse": "6",
@@ -5456,7 +5632,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "They that sanctify themselves, and purify themselves in the gardens behind one tree in the midst, eating swine\u2019s flesh, and the abomination, and the mouse, shall be consumed together, saith the LORD."
+					"text": "They that sanctify themselves, and purify themselves in the gardens behind one tree in the midst, eating swine’s flesh, and the abomination, and the mouse, shall be consumed together, saith the LORD."
 				},
 				{
 					"verse": "18",

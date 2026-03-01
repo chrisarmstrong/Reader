@@ -75,6 +75,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Now the birth of Jesus Christ was on this wise: When as his mother Mary was espoused to Joseph, before they came together, she was found with child of the Holy Ghost."
 				},
 				{
@@ -152,6 +153,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And when they were come into the house, they saw the young child with Mary his mother, and fell down, and worshipped him: and when they had opened their treasures, they presented unto him gifts; gold, and frankincense, and myrrh."
 				},
 				{
@@ -172,6 +174,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Then Herod, when he saw that he was mocked of the wise men, was exceeding wroth, and sent forth, and slew all the children that were in Bethlehem, and in all the coasts thereof, from two years old and under, according to the time which he had diligently enquired of the wise men."
 				},
 				{
@@ -184,11 +187,12 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "But when Herod was dead, behold, an angel of the Lord appeareth in a dream to Joseph in Egypt,"
 				},
 				{
 					"verse": "20",
-					"text": "Saying, Arise, and take the young child and his mother, and go into the land of Israel: for they are dead which sought the young child\u2019s life."
+					"text": "Saying, Arise, and take the young child and his mother, and go into the land of Israel: for they are dead which sought the young child’s life."
 				},
 				{
 					"verse": "21",
@@ -221,7 +225,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "And the same John had his raiment of camel\u2019s hair, and a leathern girdle about his loins; and his meat was locusts and wild honey."
+					"text": "And the same John had his raiment of camel’s hair, and a leathern girdle about his loins; and his meat was locusts and wild honey."
 				},
 				{
 					"verse": "5",
@@ -233,6 +237,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "But when he saw many of the Pharisees and Sadducees come to his baptism, he said unto them, O generation of vipers, who hath warned you to flee from the wrath to come?"
 				},
 				{
@@ -257,6 +262,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Then cometh Jesus from Galilee to Jordan unto John, to be baptized of him."
 				},
 				{
@@ -326,6 +332,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Now when Jesus had heard that John was cast into prison, he departed into Galilee;"
 				},
 				{
@@ -350,6 +357,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And Jesus, walking by the sea of Galilee, saw two brethren, Simon called Peter, and Andrew his brother, casting a net into the sea: for they were fishers."
 				},
 				{
@@ -370,6 +378,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And Jesus went about all Galilee, teaching in their synagogues, and preaching the gospel of the kingdom, and healing all manner of sickness and all manner of disease among the people."
 				},
 				{
@@ -423,7 +432,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "Blessed are they which are persecuted for righteousness\u2019 sake: for theirs is the kingdom of heaven."
+					"text": "Blessed are they which are persecuted for righteousness’ sake: for theirs is the kingdom of heaven."
 				},
 				{
 					"verse": "11",
@@ -435,6 +444,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Ye are the salt of the earth: but if the salt have lost his savour, wherewith shall it be salted? it is thenceforth good for nothing, but to be cast out, and to be trodden under foot of men."
 				},
 				{
@@ -451,6 +461,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Think not that I am come to destroy the law, or the prophets: I am not come to destroy, but to fulfil."
 				},
 				{
@@ -467,6 +478,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Ye have heard that it was said by them of old time, Thou shalt not kill; and whosoever shall kill shall be in danger of the judgment:"
 				},
 				{
@@ -491,6 +503,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "Ye have heard that it was said by them of old time, Thou shalt not commit adultery:"
 				},
 				{
@@ -515,11 +528,12 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "Again, ye have heard that it hath been said by them of old time, Thou shalt not forswear thyself, but shalt perform unto the Lord thine oaths:"
 				},
 				{
 					"verse": "34",
-					"text": "But I say unto you, Swear not at all; neither by heaven; for it is God\u2019s throne:"
+					"text": "But I say unto you, Swear not at all; neither by heaven; for it is God’s throne:"
 				},
 				{
 					"verse": "35",
@@ -535,6 +549,7 @@
 				},
 				{
 					"verse": "38",
+					"paragraph": true,
 					"text": "Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth:"
 				},
 				{
@@ -555,6 +570,7 @@
 				},
 				{
 					"verse": "43",
+					"paragraph": true,
 					"text": "Ye have heard that it hath been said, Thou shalt love thy neighbour, and hate thine enemy."
 				},
 				{
@@ -600,6 +616,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And when thou prayest, thou shalt not be as the hypocrites are: for they love to pray standing in the synagogues and in the corners of the streets, that they may be seen of men. Verily I say unto you, They have their reward."
 				},
 				{
@@ -622,7 +639,10 @@
 					"verse": "10",
 					"text": "Thy kingdom come. Thy will be done in earth, as it is in heaven."
 				},
-				{ "verse": "11", "text": "Give us this day our daily bread." },
+				{
+					"verse": "11",
+					"text": "Give us this day our daily bread."
+				},
 				{
 					"verse": "12",
 					"text": "And forgive us our debts, as we forgive our debtors."
@@ -641,6 +661,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Moreover when ye fast, be not, as the hypocrites, of a sad countenance: for they disfigure their faces, that they may appear unto men to fast. Verily I say unto you, They have their reward."
 				},
 				{
@@ -653,6 +674,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Lay not up for yourselves treasures upon earth, where moth and rust doth corrupt, and where thieves break through and steal:"
 				},
 				{
@@ -673,6 +695,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "No man can serve two masters: for either he will hate the one, and love the other; or else he will hold to the one, and despise the other. Ye cannot serve God and mammon."
 				},
 				{
@@ -720,14 +743,17 @@
 		{
 			"chapter": "7",
 			"verses": [
-				{ "verse": "1", "text": "Judge not, that ye be not judged." },
+				{
+					"verse": "1",
+					"text": "Judge not, that ye be not judged."
+				},
 				{
 					"verse": "2",
 					"text": "For with what judgment ye judge, ye shall be judged: and with what measure ye mete, it shall be measured to you again."
 				},
 				{
 					"verse": "3",
-					"text": "And why beholdest thou the mote that is in thy brother\u2019s eye, but considerest not the beam that is in thine own eye?"
+					"text": "And why beholdest thou the mote that is in thy brother’s eye, but considerest not the beam that is in thine own eye?"
 				},
 				{
 					"verse": "4",
@@ -735,14 +761,16 @@
 				},
 				{
 					"verse": "5",
-					"text": "Thou hypocrite, first cast out the beam out of thine own eye; and then shalt thou see clearly to cast out the mote out of thy brother\u2019s eye."
+					"text": "Thou hypocrite, first cast out the beam out of thine own eye; and then shalt thou see clearly to cast out the mote out of thy brother’s eye."
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Give not that which is holy unto the dogs, neither cast ye your pearls before swine, lest they trample them under their feet, and turn again and rend you."
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:"
 				},
 				{
@@ -767,6 +795,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Enter ye in at the strait gate: for wide is the gate, and broad is the way, that leadeth to destruction, and many there be which go in thereat:"
 				},
 				{
@@ -775,7 +804,8 @@
 				},
 				{
 					"verse": "15",
-					"text": "Beware of false prophets, which come to you in sheep\u2019s clothing, but inwardly they are ravening wolves."
+					"paragraph": true,
+					"text": "Beware of false prophets, which come to you in sheep’s clothing, but inwardly they are ravening wolves."
 				},
 				{
 					"verse": "16",
@@ -799,6 +829,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Not every one that saith unto me, Lord, Lord, shall enter into the kingdom of heaven; but he that doeth the will of my Father which is in heaven."
 				},
 				{
@@ -811,6 +842,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Therefore whosoever heareth these sayings of mine, and doeth them, I will liken him unto a wise man, which built his house upon a rock:"
 				},
 				{
@@ -856,6 +888,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And when Jesus was entered into Capernaum, there came unto him a centurion, beseeching him,"
 				},
 				{
@@ -892,7 +925,8 @@
 				},
 				{
 					"verse": "14",
-					"text": "And when Jesus was come into Peter\u2019s house, he saw his wife\u2019s mother laid, and sick of a fever."
+					"paragraph": true,
+					"text": "And when Jesus was come into Peter’s house, he saw his wife’s mother laid, and sick of a fever."
 				},
 				{
 					"verse": "15",
@@ -900,6 +934,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "When the even was come, they brought unto him many that were possessed with devils: and he cast out the spirits with his word, and healed all that were sick:"
 				},
 				{
@@ -908,6 +943,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Now when Jesus saw great multitudes about him, he gave commandment to depart unto the other side."
 				},
 				{
@@ -928,6 +964,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And when he was entered into a ship, his disciples followed him."
 				},
 				{
@@ -948,6 +985,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "And when he was come to the other side into the country of the Gergesenes, there met him two possessed with devils, coming out of the tombs, exceeding fierce, so that no man might pass by that way."
 				},
 				{
@@ -1003,17 +1041,22 @@
 					"verse": "6",
 					"text": "But that ye may know that the Son of man hath power on earth to forgive sins, (then saith he to the sick of the palsy,) Arise, take up thy bed, and go unto thine house."
 				},
-				{ "verse": "7", "text": "And he arose, and departed to his house." },
+				{
+					"verse": "7",
+					"text": "And he arose, and departed to his house."
+				},
 				{
 					"verse": "8",
 					"text": "But when the multitudes saw it, they marvelled, and glorified God, which had given such power unto men."
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And as Jesus passed forth from thence, he saw a man, named Matthew, sitting at the receipt of custom: and he saith unto him, Follow me. And he arose, and followed him."
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And it came to pass, as Jesus sat at meat in the house, behold, many publicans and sinners came and sat down with him and his disciples."
 				},
 				{
@@ -1030,6 +1073,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Then came to him the disciples of John, saying, Why do we and the Pharisees fast oft, but thy disciples fast not?"
 				},
 				{
@@ -1046,6 +1090,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "While he spake these things unto them, behold, there came a certain ruler, and worshipped him, saying, My daughter is even now dead: but come and lay thy hand upon her, and she shall live."
 				},
 				{
@@ -1054,6 +1099,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And, behold, a woman, which was diseased with an issue of blood twelve years, came behind him, and touched the hem of his garment:"
 				},
 				{
@@ -1066,7 +1112,7 @@
 				},
 				{
 					"verse": "23",
-					"text": "And when Jesus came into the ruler\u2019s house, and saw the minstrels and the people making a noise,"
+					"text": "And when Jesus came into the ruler’s house, and saw the minstrels and the people making a noise,"
 				},
 				{
 					"verse": "24",
@@ -1082,6 +1128,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And when Jesus departed thence, two blind men followed him, crying, and saying, Thou son of David, have mercy on us."
 				},
 				{
@@ -1102,6 +1149,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "As they went out, behold, they brought to him a dumb man possessed with a devil."
 				},
 				{
@@ -1118,6 +1166,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "But when he saw the multitudes, he was moved with compassion on them, because they fainted, and were scattered abroad, as sheep having no shepherd."
 				},
 				{
@@ -1177,7 +1226,10 @@
 					"verse": "11",
 					"text": "And into whatsoever city or town ye shall enter, enquire who in it is worthy; and there abide till ye go thence."
 				},
-				{ "verse": "12", "text": "And when ye come into an house, salute it." },
+				{
+					"verse": "12",
+					"text": "And when ye come into an house, salute it."
+				},
 				{
 					"verse": "13",
 					"text": "And if the house be worthy, let your peace come upon it: but if it be not worthy, let your peace return to you."
@@ -1192,6 +1244,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Behold, I send you forth as sheep in the midst of wolves: be ye therefore wise as serpents, and harmless as doves."
 				},
 				{
@@ -1216,7 +1269,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "And ye shall be hated of all men for my name\u2019s sake: but he that endureth to the end shall be saved."
+					"text": "And ye shall be hated of all men for my name’s sake: but he that endureth to the end shall be saved."
 				},
 				{
 					"verse": "23",
@@ -1272,7 +1325,7 @@
 				},
 				{
 					"verse": "36",
-					"text": "And a man\u2019s foes shall be they of his own household."
+					"text": "And a man’s foes shall be they of his own household."
 				},
 				{
 					"verse": "37",
@@ -1288,11 +1341,12 @@
 				},
 				{
 					"verse": "40",
+					"paragraph": true,
 					"text": "He that receiveth you receiveth me, and he that receiveth me receiveth him that sent me."
 				},
 				{
 					"verse": "41",
-					"text": "He that receiveth a prophet in the name of a prophet shall receive a prophet\u2019s reward; and he that receiveth a righteous man in the name of a righteous man shall receive a righteous man\u2019s reward."
+					"text": "He that receiveth a prophet in the name of a prophet shall receive a prophet’s reward; and he that receiveth a righteous man in the name of a righteous man shall receive a righteous man’s reward."
 				},
 				{
 					"verse": "42",
@@ -1329,11 +1383,12 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And as they departed, Jesus began to say unto the multitudes concerning John, What went ye out into the wilderness to see? A reed shaken with the wind?"
 				},
 				{
 					"verse": "8",
-					"text": "But what went ye out for to see? A man clothed in soft raiment? behold, they that wear soft clothing are in kings\u2019 houses."
+					"text": "But what went ye out for to see? A man clothed in soft raiment? behold, they that wear soft clothing are in kings’ houses."
 				},
 				{
 					"verse": "9",
@@ -1359,9 +1414,13 @@
 					"verse": "14",
 					"text": "And if ye will receive it, this is Elias, which was for to come."
 				},
-				{ "verse": "15", "text": "He that hath ears to hear, let him hear." },
+				{
+					"verse": "15",
+					"text": "He that hath ears to hear, let him hear."
+				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "But whereunto shall I liken this generation? It is like unto children sitting in the markets, and calling unto their fellows,"
 				},
 				{
@@ -1378,6 +1437,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Then began he to upbraid the cities wherein most of his mighty works were done, because they repented not:"
 				},
 				{
@@ -1398,6 +1458,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "At that time Jesus answered and said, I thank thee, O Father, Lord of heaven and earth, because thou hast hid these things from the wise and prudent, and hast revealed them unto babes."
 				},
 				{
@@ -1410,6 +1471,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest."
 				},
 				{
@@ -1463,6 +1525,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And, behold, there was a man which had his hand withered. And they asked him, saying, Is it lawful to heal on the sabbath days? that they might accuse him."
 				},
 				{
@@ -1479,6 +1542,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Then the Pharisees went out, and held a council against him, how they might destroy him."
 				},
 				{
@@ -1505,9 +1569,13 @@
 					"verse": "20",
 					"text": "A bruised reed shall he not break, and smoking flax shall he not quench, till he send forth judgment unto victory."
 				},
-				{ "verse": "21", "text": "And in his name shall the Gentiles trust." },
+				{
+					"verse": "21",
+					"text": "And in his name shall the Gentiles trust."
+				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Then was brought unto him one possessed with a devil, blind, and dumb: and he healed him, insomuch that the blind and dumb both spake and saw."
 				},
 				{
@@ -1536,7 +1604,7 @@
 				},
 				{
 					"verse": "29",
-					"text": "Or else how can one enter into a strong man\u2019s house, and spoil his goods, except he first bind the strong man? and then he will spoil his house."
+					"text": "Or else how can one enter into a strong man’s house, and spoil his goods, except he first bind the strong man? and then he will spoil his house."
 				},
 				{
 					"verse": "30",
@@ -1544,6 +1612,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "Wherefore I say unto you, All manner of sin and blasphemy shall be forgiven unto men: but the blasphemy against the Holy Ghost shall not be forgiven unto men."
 				},
 				{
@@ -1572,6 +1641,7 @@
 				},
 				{
 					"verse": "38",
+					"paragraph": true,
 					"text": "Then certain of the scribes and of the Pharisees answered, saying, Master, we would see a sign from thee."
 				},
 				{
@@ -1580,7 +1650,7 @@
 				},
 				{
 					"verse": "40",
-					"text": "For as Jonas was three days and three nights in the whale\u2019s belly; so shall the Son of man be three days and three nights in the heart of the earth."
+					"text": "For as Jonas was three days and three nights in the whale’s belly; so shall the Son of man be three days and three nights in the heart of the earth."
 				},
 				{
 					"verse": "41",
@@ -1604,6 +1674,7 @@
 				},
 				{
 					"verse": "46",
+					"paragraph": true,
 					"text": "While he yet talked to the people, behold, his mother and his brethren stood without, desiring to speak with him."
 				},
 				{
@@ -1659,7 +1730,10 @@
 					"verse": "8",
 					"text": "But other fell into good ground, and brought forth fruit, some an hundredfold, some sixtyfold, some thirtyfold."
 				},
-				{ "verse": "9", "text": "Who hath ears to hear, let him hear." },
+				{
+					"verse": "9",
+					"text": "Who hath ears to hear, let him hear."
+				},
 				{
 					"verse": "10",
 					"text": "And the disciples came, and said unto him, Why speakest thou unto them in parables?"
@@ -1682,7 +1756,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "For this people\u2019s heart is waxed gross, and their ears are dull of hearing, and their eyes they have closed; lest at any time they should see with their eyes and hear with their ears, and should understand with their heart, and should be converted, and I should heal them."
+					"text": "For this people’s heart is waxed gross, and their ears are dull of hearing, and their eyes they have closed; lest at any time they should see with their eyes and hear with their ears, and should understand with their heart, and should be converted, and I should heal them."
 				},
 				{
 					"verse": "16",
@@ -1694,6 +1768,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Hear ye therefore the parable of the sower."
 				},
 				{
@@ -1718,6 +1793,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Another parable put he forth unto them, saying, The kingdom of heaven is likened unto a man which sowed good seed in his field:"
 				},
 				{
@@ -1746,6 +1822,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "Another parable put he forth unto them, saying, The kingdom of heaven is like to a grain of mustard seed, which a man took, and sowed in his field:"
 				},
 				{
@@ -1754,6 +1831,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "Another parable spake he unto them; The kingdom of heaven is like unto leaven, which a woman took, and hid in three measures of meal, till the whole was leavened."
 				},
 				{
@@ -1798,10 +1876,12 @@
 				},
 				{
 					"verse": "44",
+					"paragraph": true,
 					"text": "Again, the kingdom of heaven is like unto treasure hid in a field; the which when a man hath found, he hideth, and for joy thereof goeth and selleth all that he hath, and buyeth that field."
 				},
 				{
 					"verse": "45",
+					"paragraph": true,
 					"text": "Again, the kingdom of heaven is like unto a merchant man, seeking goodly pearls:"
 				},
 				{
@@ -1810,6 +1890,7 @@
 				},
 				{
 					"verse": "47",
+					"paragraph": true,
 					"text": "Again, the kingdom of heaven is like unto a net, that was cast into the sea, and gathered of every kind:"
 				},
 				{
@@ -1834,6 +1915,7 @@
 				},
 				{
 					"verse": "53",
+					"paragraph": true,
 					"text": "And it came to pass, that when Jesus had finished these parables, he departed thence."
 				},
 				{
@@ -1842,7 +1924,7 @@
 				},
 				{
 					"verse": "55",
-					"text": "Is not this the carpenter\u2019s son? is not his mother called Mary? and his brethren, James, and Joses, and Simon, and Judas?"
+					"text": "Is not this the carpenter’s son? is not his mother called Mary? and his brethren, James, and Joses, and Simon, and Judas?"
 				},
 				{
 					"verse": "56",
@@ -1871,7 +1953,8 @@
 				},
 				{
 					"verse": "3",
-					"text": "For Herod had laid hold on John, and bound him, and put him in prison for Herodias\u2019 sake, his brother Philip\u2019s wife."
+					"paragraph": true,
+					"text": "For Herod had laid hold on John, and bound him, and put him in prison for Herodias’ sake, his brother Philip’s wife."
 				},
 				{
 					"verse": "4",
@@ -1883,7 +1966,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "But when Herod\u2019s birthday was kept, the daughter of Herodias danced before them, and pleased Herod."
+					"text": "But when Herod’s birthday was kept, the daughter of Herodias danced before them, and pleased Herod."
 				},
 				{
 					"verse": "7",
@@ -1891,11 +1974,11 @@
 				},
 				{
 					"verse": "8",
-					"text": "And she, being before instructed of her mother, said, Give me here John Baptist\u2019s head in a charger."
+					"text": "And she, being before instructed of her mother, said, Give me here John Baptist’s head in a charger."
 				},
 				{
 					"verse": "9",
-					"text": "And the king was sorry: nevertheless for the oath\u2019s sake, and them which sat with him at meat, he commanded it to be given her."
+					"text": "And the king was sorry: nevertheless for the oath’s sake, and them which sat with him at meat, he commanded it to be given her."
 				},
 				{
 					"verse": "10",
@@ -1911,6 +1994,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "When Jesus heard of it, he departed thence by ship into a desert place apart: and when the people had heard thereof, they followed him on foot out of the cities."
 				},
 				{
@@ -1919,6 +2003,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And when it was evening, his disciples came to him, saying, This is a desert place, and the time is now past; send the multitude away, that they may go into the villages, and buy themselves victuals."
 				},
 				{
@@ -1929,7 +2014,10 @@
 					"verse": "17",
 					"text": "And they say unto him, We have here but five loaves, and two fishes."
 				},
-				{ "verse": "18", "text": "He said, Bring them hither to me." },
+				{
+					"verse": "18",
+					"text": "He said, Bring them hither to me."
+				},
 				{
 					"verse": "19",
 					"text": "And he commanded the multitude to sit down on the grass, and took the five loaves, and the two fishes, and looking up to heaven, he blessed, and brake, and gave the loaves to his disciples, and the disciples to the multitude."
@@ -1944,6 +2032,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And straightway Jesus constrained his disciples to get into a ship, and to go before him unto the other side, while he sent the multitudes away."
 				},
 				{
@@ -1992,6 +2081,7 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "And when they were gone over, they came into the land of Gennesaret."
 				},
 				{
@@ -2045,6 +2135,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And he called the multitude, and said unto them, Hear, and understand:"
 				},
 				{
@@ -2089,6 +2180,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Then Jesus went thence, and departed into the coasts of Tyre and Sidon."
 				},
 				{
@@ -2109,11 +2201,11 @@
 				},
 				{
 					"verse": "26",
-					"text": "But he answered and said, It is not meet to take the children\u2019s bread, and to cast it to dogs."
+					"text": "But he answered and said, It is not meet to take the children’s bread, and to cast it to dogs."
 				},
 				{
 					"verse": "27",
-					"text": "And she said, Truth, Lord: yet the dogs eat of the crumbs which fall from their masters\u2019 table."
+					"text": "And she said, Truth, Lord: yet the dogs eat of the crumbs which fall from their masters’ table."
 				},
 				{
 					"verse": "28",
@@ -2125,7 +2217,7 @@
 				},
 				{
 					"verse": "30",
-					"text": "And great multitudes came unto him, having with them those that were lame, blind, dumb, maimed, and many others, and cast them down at Jesus\u2019 feet; and he healed them:"
+					"text": "And great multitudes came unto him, having with them those that were lame, blind, dumb, maimed, and many others, and cast them down at Jesus’ feet; and he healed them:"
 				},
 				{
 					"verse": "31",
@@ -2133,6 +2225,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "Then Jesus called his disciples unto him, and said, I have compassion on the multitude, because they continue with me now three days, and have nothing to eat: and I will not send them away fasting, lest they faint in the way."
 				},
 				{
@@ -2190,6 +2283,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Then Jesus said unto them, Take heed and beware of the leaven of the Pharisees and of the Sadducees."
 				},
 				{
@@ -2218,6 +2312,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "When Jesus came into the coasts of Caesarea Philippi, he asked his disciples, saying, Whom do men say that I the Son of man am?"
 				},
 				{
@@ -2250,6 +2345,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "From that time forth began Jesus to shew unto his disciples, how that he must go unto Jerusalem, and suffer many things of the elders and chief priests and scribes, and be killed, and be raised again the third day."
 				},
 				{
@@ -2262,6 +2358,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Then said Jesus unto his disciples, If any man will come after me, let him deny himself, and take up his cross, and follow me."
 				},
 				{
@@ -2339,6 +2436,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And when they were come to the multitude, there came to him a certain man, kneeling down to him, and saying,"
 				},
 				{
@@ -2371,6 +2469,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And while they abode in Galilee, Jesus said unto them, The Son of man shall be betrayed into the hands of men:"
 				},
 				{
@@ -2379,6 +2478,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And when they were come to Capernaum, they that received tribute money came to Peter, and said, Doth not your master pay tribute?"
 				},
 				{
@@ -2424,6 +2524,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Woe unto the world because of offences! for it must needs be that offences come; but woe to that man by whom the offence cometh!"
 				},
 				{
@@ -2456,6 +2557,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Moreover if thy brother shall trespass against thee, go and tell him his fault between thee and him alone: if he shall hear thee, thou hast gained thy brother."
 				},
 				{
@@ -2480,6 +2582,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Then came Peter to him, and said, Lord, how oft shall my brother sin against me, and I forgive him? till seven times?"
 				},
 				{
@@ -2488,6 +2591,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Therefore is the kingdom of heaven likened unto a certain king, which would take account of his servants."
 				},
 				{
@@ -2553,6 +2657,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "The Pharisees also came unto him, tempting him, and saying unto him, Is it lawful for a man to put away his wife for every cause?"
 				},
 				{
@@ -2581,6 +2686,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "His disciples say unto him, If the case of the man be so with his wife, it is not good to marry."
 				},
 				{
@@ -2589,10 +2695,11 @@
 				},
 				{
 					"verse": "12",
-					"text": "For there are some eunuchs, which were so born from their mother\u2019s womb: and there are some eunuchs, which were made eunuchs of men: and there be eunuchs, which have made themselves eunuchs for the kingdom of heaven\u2019s sake. He that is able to receive it, let him receive it."
+					"text": "For there are some eunuchs, which were so born from their mother’s womb: and there are some eunuchs, which were made eunuchs of men: and there be eunuchs, which have made themselves eunuchs for the kingdom of heaven’s sake. He that is able to receive it, let him receive it."
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Then were there brought unto him little children, that he should put his hands on them, and pray: and the disciples rebuked them."
 				},
 				{
@@ -2605,6 +2712,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And, behold, one came and said unto him, Good Master, what good thing shall I do, that I may have eternal life?"
 				},
 				{
@@ -2633,6 +2741,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Then said Jesus unto his disciples, Verily I say unto you, That a rich man shall hardly enter into the kingdom of heaven."
 				},
 				{
@@ -2649,6 +2758,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "Then answered Peter and said unto him, Behold, we have forsaken all, and followed thee; what shall we have therefore?"
 				},
 				{
@@ -2657,7 +2767,7 @@
 				},
 				{
 					"verse": "29",
-					"text": "And every one that hath forsaken houses, or brethren, or sisters, or father, or mother, or wife, or children, or lands, for my name\u2019s sake, shall receive an hundredfold, and shall inherit everlasting life."
+					"text": "And every one that hath forsaken houses, or brethren, or sisters, or father, or mother, or wife, or children, or lands, for my name’s sake, shall receive an hundredfold, and shall inherit everlasting life."
 				},
 				{
 					"verse": "30",
@@ -2734,6 +2844,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And Jesus going up to Jerusalem took the twelve disciples apart in the way, and said unto them,"
 				},
 				{
@@ -2746,7 +2857,8 @@
 				},
 				{
 					"verse": "20",
-					"text": "Then came to him the mother of Zebedee\u2019s children with her sons, worshipping him, and desiring a certain thing of him."
+					"paragraph": true,
+					"text": "Then came to him the mother of Zebedee’s children with her sons, worshipping him, and desiring a certain thing of him."
 				},
 				{
 					"verse": "21",
@@ -2786,6 +2898,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "And, behold, two blind men sitting by the way side, when they heard that Jesus passed by, cried out, saying, Have mercy on us, O Lord, thou son of David."
 				},
 				{
@@ -2855,6 +2968,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And Jesus went into the temple of God, and cast out all them that sold and bought in the temple, and overthrew the tables of the moneychangers, and the seats of them that sold doves,"
 				},
 				{
@@ -2875,6 +2989,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And he left them, and went out of the city into Bethany; and he lodged there."
 				},
 				{
@@ -2899,6 +3014,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And when he was come into the temple, the chief priests and the elders of the people came unto him as he was teaching, and said, By what authority doest thou these things? and who gave thee this authority?"
 				},
 				{
@@ -2919,6 +3035,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "But what think ye? A certain man had two sons; and he came to the first, and said, Son, go work to day in my vineyard."
 				},
 				{
@@ -2939,6 +3056,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "Hear another parable: There was a certain householder, which planted a vineyard, and hedged it round about, and digged a winepress in it, and built a tower, and let it out to husbandmen, and went into a far country:"
 				},
 				{
@@ -2975,7 +3093,7 @@
 				},
 				{
 					"verse": "42",
-					"text": "Jesus saith unto them, Did ye never read in the scriptures, The stone which the builders rejected, the same is become the head of the corner: this is the Lord\u2019s doing, and it is marvellous in our eyes?"
+					"text": "Jesus saith unto them, Did ye never read in the scriptures, The stone which the builders rejected, the same is become the head of the corner: this is the Lord’s doing, and it is marvellous in our eyes?"
 				},
 				{
 					"verse": "43",
@@ -3040,6 +3158,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And when the king came in to see the guests, he saw there a man which had not on a wedding garment:"
 				},
 				{
@@ -3050,9 +3169,13 @@
 					"verse": "13",
 					"text": "Then said the king to the servants, Bind him hand and foot, and take him away, and cast him into outer darkness; there shall be weeping and gnashing of teeth."
 				},
-				{ "verse": "14", "text": "For many are called, but few are chosen." },
+				{
+					"verse": "14",
+					"text": "For many are called, but few are chosen."
+				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Then went the Pharisees, and took counsel how they might entangle him in his talk."
 				},
 				{
@@ -3077,7 +3200,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "They say unto him, Caesar\u2019s. Then saith he unto them, Render therefore unto Caesar the things which are Caesar\u2019s; and unto God the things that are God\u2019s."
+					"text": "They say unto him, Caesar’s. Then saith he unto them, Render therefore unto Caesar the things which are Caesar’s; and unto God the things that are God’s."
 				},
 				{
 					"verse": "22",
@@ -3085,6 +3208,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "The same day came to him the Sadducees, which say that there is no resurrection, and asked him,"
 				},
 				{
@@ -3099,7 +3223,10 @@
 					"verse": "26",
 					"text": "Likewise the second also, and the third, unto the seventh."
 				},
-				{ "verse": "27", "text": "And last of all the woman died also." },
+				{
+					"verse": "27",
+					"text": "And last of all the woman died also."
+				},
 				{
 					"verse": "28",
 					"text": "Therefore in the resurrection whose wife shall she be of the seven? for they all had her."
@@ -3126,6 +3253,7 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "But when the Pharisees had heard that he had put the Sadducees to silence, they were gathered together."
 				},
 				{
@@ -3140,7 +3268,10 @@
 					"verse": "37",
 					"text": "Jesus said unto him, Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind."
 				},
-				{ "verse": "38", "text": "This is the first and great commandment." },
+				{
+					"verse": "38",
+					"text": "This is the first and great commandment."
+				},
 				{
 					"verse": "39",
 					"text": "And the second is like unto it, Thou shalt love thy neighbour as thyself."
@@ -3151,6 +3282,7 @@
 				},
 				{
 					"verse": "41",
+					"paragraph": true,
 					"text": "While the Pharisees were gathered together, Jesus asked them,"
 				},
 				{
@@ -3184,7 +3316,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "Saying, The scribes and the Pharisees sit in Moses\u2019 seat:"
+					"text": "Saying, The scribes and the Pharisees sit in Moses’ seat:"
 				},
 				{
 					"verse": "3",
@@ -3192,7 +3324,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "For they bind heavy burdens and grievous to be borne, and lay them on men\u2019s shoulders; but they themselves will not move them with one of their fingers."
+					"text": "For they bind heavy burdens and grievous to be borne, and lay them on men’s shoulders; but they themselves will not move them with one of their fingers."
 				},
 				{
 					"verse": "5",
@@ -3228,11 +3360,12 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "But woe unto you, scribes and Pharisees, hypocrites! for ye shut up the kingdom of heaven against men: for ye neither go in yourselves, neither suffer ye them that are entering to go in."
 				},
 				{
 					"verse": "14",
-					"text": "Woe unto you, scribes and Pharisees, hypocrites! for ye devour widows\u2019 houses, and for a pretence make long prayer: therefore ye shall receive the greater damnation."
+					"text": "Woe unto you, scribes and Pharisees, hypocrites! for ye devour widows’ houses, and for a pretence make long prayer: therefore ye shall receive the greater damnation."
 				},
 				{
 					"verse": "15",
@@ -3284,7 +3417,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "Woe unto you, scribes and Pharisees, hypocrites! for ye are like unto whited sepulchres, which indeed appear beautiful outward, but are within full of dead men\u2019s bones, and of all uncleanness."
+					"text": "Woe unto you, scribes and Pharisees, hypocrites! for ye are like unto whited sepulchres, which indeed appear beautiful outward, but are within full of dead men’s bones, and of all uncleanness."
 				},
 				{
 					"verse": "28",
@@ -3312,6 +3445,7 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "Wherefore, behold, I send unto you prophets, and wise men, and scribes: and some of them ye shall kill and crucify; and some of them shall ye scourge in your synagogues, and persecute them from city to city:"
 				},
 				{
@@ -3349,6 +3483,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "And as he sat upon the mount of Olives, the disciples came unto him privately, saying, Tell us, when shall these things be? and what shall be the sign of thy coming, and of the end of the world?"
 				},
 				{
@@ -3367,10 +3502,13 @@
 					"verse": "7",
 					"text": "For nation shall rise against nation, and kingdom against kingdom: and there shall be famines, and pestilences, and earthquakes, in divers places."
 				},
-				{ "verse": "8", "text": "All these are the beginning of sorrows." },
+				{
+					"verse": "8",
+					"text": "All these are the beginning of sorrows."
+				},
 				{
 					"verse": "9",
-					"text": "Then shall they deliver you up to be afflicted, and shall kill you: and ye shall be hated of all nations for my name\u2019s sake."
+					"text": "Then shall they deliver you up to be afflicted, and shall kill you: and ye shall be hated of all nations for my name’s sake."
 				},
 				{
 					"verse": "10",
@@ -3422,7 +3560,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "And except those days should be shortened, there should no flesh be saved: but for the elect\u2019s sake those days shall be shortened."
+					"text": "And except those days should be shortened, there should no flesh be saved: but for the elect’s sake those days shall be shortened."
 				},
 				{
 					"verse": "23",
@@ -3432,7 +3570,10 @@
 					"verse": "24",
 					"text": "For there shall arise false Christs, and false prophets, and shall shew great signs and wonders; insomuch that, if it were possible, they shall deceive the very elect."
 				},
-				{ "verse": "25", "text": "Behold, I have told you before." },
+				{
+					"verse": "25",
+					"text": "Behold, I have told you before."
+				},
 				{
 					"verse": "26",
 					"text": "Wherefore if they shall say unto you, Behold, he is in the desert; go not forth: behold, he is in the secret chambers; believe it not."
@@ -3447,6 +3588,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "Immediately after the tribulation of those days shall the sun be darkened, and the moon shall not give her light, and the stars shall fall from heaven, and the powers of the heavens shall be shaken:"
 				},
 				{
@@ -3475,6 +3617,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "But of that day and hour knoweth no man, no, not the angels of heaven, but my Father only."
 				},
 				{
@@ -3499,6 +3642,7 @@
 				},
 				{
 					"verse": "42",
+					"paragraph": true,
 					"text": "Watch therefore: for ye know not what hour your Lord doth come."
 				},
 				{
@@ -3596,6 +3740,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "For the kingdom of heaven is as a man travelling into a far country, who called his own servants, and delivered unto them his goods."
 				},
 				{
@@ -3612,7 +3757,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "But he that had received one went and digged in the earth, and hid his lord\u2019s money."
+					"text": "But he that had received one went and digged in the earth, and hid his lord’s money."
 				},
 				{
 					"verse": "19",
@@ -3664,6 +3809,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "When the Son of man shall come in his glory, and all the holy angels with him, then shall he sit upon the throne of his glory:"
 				},
 				{
@@ -3753,6 +3899,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Now when Jesus was in Bethany, in the house of Simon the leper,"
 				},
 				{
@@ -3785,6 +3932,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Then one of the twelve, called Judas Iscariot, went unto the chief priests,"
 				},
 				{
@@ -3797,6 +3945,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Now the first day of the feast of unleavened bread the disciples came to Jesus, saying unto him, Where wilt thou that we prepare for thee to eat the passover?"
 				},
 				{
@@ -3833,6 +3982,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And as they were eating, Jesus took bread, and blessed it, and brake it, and gave it to the disciples, and said, Take, eat; this is my body."
 				},
 				{
@@ -3845,7 +3995,7 @@
 				},
 				{
 					"verse": "29",
-					"text": "But I say unto you, I will not drink henceforth of this fruit of the vine, until that day when I drink it new with you in my Father\u2019s kingdom."
+					"text": "But I say unto you, I will not drink henceforth of this fruit of the vine, until that day when I drink it new with you in my Father’s kingdom."
 				},
 				{
 					"verse": "30",
@@ -3873,6 +4023,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "Then cometh Jesus with them unto a place called Gethsemane, and saith unto the disciples, Sit ye here, while I go and pray yonder."
 				},
 				{
@@ -3917,6 +4068,7 @@
 				},
 				{
 					"verse": "47",
+					"paragraph": true,
 					"text": "And while he yet spake, lo, Judas, one of the twelve, came, and with him a great multitude with swords and staves, from the chief priests and elders of the people."
 				},
 				{
@@ -3933,7 +4085,7 @@
 				},
 				{
 					"verse": "51",
-					"text": "And, behold, one of them which were with Jesus stretched out his hand, and drew his sword, and struck a servant of the high priest\u2019s, and smote off his ear."
+					"text": "And, behold, one of them which were with Jesus stretched out his hand, and drew his sword, and struck a servant of the high priest’s, and smote off his ear."
 				},
 				{
 					"verse": "52",
@@ -3957,11 +4109,12 @@
 				},
 				{
 					"verse": "57",
+					"paragraph": true,
 					"text": "And they that had laid hold on Jesus led him away to Caiaphas the high priest, where the scribes and the elders were assembled."
 				},
 				{
 					"verse": "58",
-					"text": "But Peter followed him afar off unto the high priest\u2019s palace, and went in, and sat with the servants, to see the end."
+					"text": "But Peter followed him afar off unto the high priest’s palace, and went in, and sat with the servants, to see the end."
 				},
 				{
 					"verse": "59",
@@ -4005,6 +4158,7 @@
 				},
 				{
 					"verse": "69",
+					"paragraph": true,
 					"text": "Now Peter sat without in the palace: and a damsel came unto him, saying, Thou also wast with Jesus of Galilee."
 				},
 				{
@@ -4046,6 +4200,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Then Judas, which had betrayed him, when he saw that he was condemned, repented himself, and brought again the thirty pieces of silver to the chief priests and elders,"
 				},
 				{
@@ -4062,7 +4217,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "And they took counsel, and bought with them the potter\u2019s field, to bury strangers in."
+					"text": "And they took counsel, and bought with them the potter’s field, to bury strangers in."
 				},
 				{
 					"verse": "8",
@@ -4074,7 +4229,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "And gave them for the potter\u2019s field, as the Lord appointed me."
+					"text": "And gave them for the potter’s field, as the Lord appointed me."
 				},
 				{
 					"verse": "11",
@@ -4110,6 +4265,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "When he was set down on the judgment seat, his wife sent unto him, saying, Have thou nothing to do with that just man: for I have suffered many things this day in a dream because of him."
 				},
 				{
@@ -4130,6 +4286,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "When Pilate saw that he could prevail nothing, but that rather a tumult was made, he took water, and washed his hands before the multitude, saying, I am innocent of the blood of this just person: see ye to it."
 				},
 				{
@@ -4138,6 +4295,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "Then released he Barabbas unto them: and when he had scourged Jesus, he delivered him to be crucified."
 				},
 				{
@@ -4150,6 +4308,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "And when they had platted a crown of thorns, they put it upon his head, and a reed in his right hand: and they bowed the knee before him, and mocked him, saying, Hail, King of the Jews!"
 				},
 				{
@@ -4170,13 +4329,17 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "They gave him vinegar to drink mingled with gall: and when he had tasted thereof, he would not drink."
 				},
 				{
 					"verse": "35",
 					"text": "And they crucified him, and parted his garments, casting lots: that it might be fulfilled which was spoken by the prophet, They parted my garments among them, and upon my vesture did they cast lots."
 				},
-				{ "verse": "36", "text": "And sitting down they watched him there;" },
+				{
+					"verse": "36",
+					"text": "And sitting down they watched him there;"
+				},
 				{
 					"verse": "37",
 					"text": "And set up over his head his accusation written, THIS IS JESUS THE KING OF THE JEWS."
@@ -4187,6 +4350,7 @@
 				},
 				{
 					"verse": "39",
+					"paragraph": true,
 					"text": "And they that passed by reviled him, wagging their heads,"
 				},
 				{
@@ -4231,6 +4395,7 @@
 				},
 				{
 					"verse": "50",
+					"paragraph": true,
 					"text": "Jesus, when he had cried again with a loud voice, yielded up the ghost."
 				},
 				{
@@ -4255,11 +4420,11 @@
 				},
 				{
 					"verse": "56",
-					"text": "Among which was Mary Magdalene, and Mary the mother of James and Joses, and the mother of Zebedee\u2019s children."
+					"text": "Among which was Mary Magdalene, and Mary the mother of James and Joses, and the mother of Zebedee’s children."
 				},
 				{
 					"verse": "57",
-					"text": "When the even was come, there came a rich man of Arimathaea, named Joseph, who also himself was Jesus\u2019 disciple:"
+					"text": "When the even was come, there came a rich man of Arimathaea, named Joseph, who also himself was Jesus’ disciple:"
 				},
 				{
 					"verse": "58",
@@ -4279,6 +4444,7 @@
 				},
 				{
 					"verse": "62",
+					"paragraph": true,
 					"text": "Now the next day, that followed the day of the preparation, the chief priests and Pharisees came together unto Pilate,"
 				},
 				{
@@ -4336,6 +4502,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And as they went to tell his disciples, behold, Jesus met them, saying, All hail. And they came and held him by the feet, and worshipped him."
 				},
 				{
@@ -4344,6 +4511,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Now when they were going, behold, some of the watch came into the city, and shewed unto the chief priests all the things that were done."
 				},
 				{
@@ -4356,7 +4524,7 @@
 				},
 				{
 					"verse": "14",
-					"text": "And if this come to the governor\u2019s ears, we will persuade him, and secure you."
+					"text": "And if this come to the governor’s ears, we will persuade him, and secure you."
 				},
 				{
 					"verse": "15",
@@ -4364,6 +4532,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Then the eleven disciples went away into Galilee, into a mountain where Jesus had appointed them."
 				},
 				{

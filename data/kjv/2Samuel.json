@@ -55,11 +55,12 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And David said unto the young man that told him, Whence art thou? And he answered, I am the son of a stranger, an Amalekite."
 				},
 				{
 					"verse": "14",
-					"text": "And David said unto him, How wast thou not afraid to stretch forth thine hand to destroy the LORD\u2019s anointed?"
+					"text": "And David said unto him, How wast thou not afraid to stretch forth thine hand to destroy the LORD’s anointed?"
 				},
 				{
 					"verse": "15",
@@ -67,10 +68,11 @@
 				},
 				{
 					"verse": "16",
-					"text": "And David said unto him, Thy blood be upon thy head; for thy mouth hath testified against thee, saying, I have slain the LORD\u2019s anointed."
+					"text": "And David said unto him, Thy blood be upon thy head; for thy mouth hath testified against thee, saying, I have slain the LORD’s anointed."
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And David lamented with this lamentation over Saul and over Jonathan his son:"
 				},
 				{
@@ -124,7 +126,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "So David went up thither, and his two wives also, Ahinoam the Jezreelitess, and Abigail Nabal\u2019s wife the Carmelite."
+					"text": "So David went up thither, and his two wives also, Ahinoam the Jezreelitess, and Abigail Nabal’s wife the Carmelite."
 				},
 				{
 					"verse": "3",
@@ -136,6 +138,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And David sent messengers unto the men of Jabeshgilead, and said unto them, Blessed be ye of the LORD, that ye have shewed this kindness unto your lord, even unto Saul, and have buried him."
 				},
 				{
@@ -148,7 +151,8 @@
 				},
 				{
 					"verse": "8",
-					"text": "But Abner the son of Ner, captain of Saul\u2019s host, took Ishbosheth the son of Saul, and brought him over to Mahanaim;"
+					"paragraph": true,
+					"text": "But Abner the son of Ner, captain of Saul’s host, took Ishbosheth the son of Saul, and brought him over to Mahanaim;"
 				},
 				{
 					"verse": "9",
@@ -156,7 +160,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "Ishbosheth Saul\u2019s son was forty years old when he began to reign over Israel, and reigned two years. But the house of Judah followed David."
+					"text": "Ishbosheth Saul’s son was forty years old when he began to reign over Israel, and reigned two years. But the house of Judah followed David."
 				},
 				{
 					"verse": "11",
@@ -164,6 +168,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And Abner the son of Ner, and the servants of Ishbosheth the son of Saul, went out from Mahanaim to Gibeon."
 				},
 				{
@@ -180,7 +185,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "And they caught every one his fellow by the head, and thrust his sword in his fellow\u2019s side; so they fell down together: wherefore that place was called Helkathhazzurim, which is in Gibeon."
+					"text": "And they caught every one his fellow by the head, and thrust his sword in his fellow’s side; so they fell down together: wherefore that place was called Helkathhazzurim, which is in Gibeon."
 				},
 				{
 					"verse": "17",
@@ -188,6 +193,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And there were three sons of Zeruiah there, Joab, and Abishai, and Asahel: and Asahel was as light of foot as a wild roe."
 				},
 				{
@@ -216,6 +222,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And the children of Benjamin gathered themselves together after Abner, and became one troop, and stood on the top of an hill."
 				},
 				{
@@ -236,14 +243,15 @@
 				},
 				{
 					"verse": "30",
-					"text": "And Joab returned from following Abner: and when he had gathered all the people together, there lacked of David\u2019s servants nineteen men and Asahel."
+					"text": "And Joab returned from following Abner: and when he had gathered all the people together, there lacked of David’s servants nineteen men and Asahel."
 				},
 				{
 					"verse": "31",
-					"text": "But the servants of David had smitten of Benjamin, and of Abner\u2019s men, so that three hundred and threescore men died."
+					"text": "But the servants of David had smitten of Benjamin, and of Abner’s men, so that three hundred and threescore men died."
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "And they took up Asahel, and buried him in the sepulchre of his father, which was in Bethlehem. And Joab and his men went all night, and they came to Hebron at break of day."
 				}
 			]
@@ -257,6 +265,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "And unto David were sons born in Hebron: and his firstborn was Amnon, of Ahinoam the Jezreelitess;"
 				},
 				{
@@ -269,19 +278,20 @@
 				},
 				{
 					"verse": "5",
-					"text": "And the sixth, Ithream, by Eglah David\u2019s wife. These were born to David in Hebron."
+					"text": "And the sixth, Ithream, by Eglah David’s wife. These were born to David in Hebron."
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And it came to pass, while there was war between the house of Saul and the house of David, that Abner made himself strong for the house of Saul."
 				},
 				{
 					"verse": "7",
-					"text": "And Saul had a concubine, whose name was Rizpah, the daughter of Aiah: and Ishbosheth said to Abner, Wherefore hast thou gone in unto my father\u2019s concubine?"
+					"text": "And Saul had a concubine, whose name was Rizpah, the daughter of Aiah: and Ishbosheth said to Abner, Wherefore hast thou gone in unto my father’s concubine?"
 				},
 				{
 					"verse": "8",
-					"text": "Then was Abner very wroth for the words of Ishbosheth, and said, Am I a dog\u2019s head, which against Judah do shew kindness this day unto the house of Saul thy father, to his brethren, and to his friends, and have not delivered thee into the hand of David, that thou chargest me to day with a fault concerning this woman?"
+					"text": "Then was Abner very wroth for the words of Ishbosheth, and said, Am I a dog’s head, which against Judah do shew kindness this day unto the house of Saul thy father, to his brethren, and to his friends, and have not delivered thee into the hand of David, that thou chargest me to day with a fault concerning this woman?"
 				},
 				{
 					"verse": "9",
@@ -297,15 +307,17 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And Abner sent messengers to David on his behalf, saying, Whose is the land? saying also, Make thy league with me, and, behold, my hand shall be with thee, to bring about all Israel unto thee."
 				},
 				{
 					"verse": "13",
-					"text": "And he said, Well; I will make a league with thee: but one thing I require of thee, that is, Thou shalt not see my face, except thou first bring Michal Saul\u2019s daughter, when thou comest to see my face."
+					"paragraph": true,
+					"text": "And he said, Well; I will make a league with thee: but one thing I require of thee, that is, Thou shalt not see my face, except thou first bring Michal Saul’s daughter, when thou comest to see my face."
 				},
 				{
 					"verse": "14",
-					"text": "And David sent messengers to Ishbosheth Saul\u2019s son, saying, Deliver me my wife Michal, which I espoused to me for an hundred foreskins of the Philistines."
+					"text": "And David sent messengers to Ishbosheth Saul’s son, saying, Deliver me my wife Michal, which I espoused to me for an hundred foreskins of the Philistines."
 				},
 				{
 					"verse": "15",
@@ -317,6 +329,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And Abner had communication with the elders of Israel, saying, Ye sought for David in times past to be king over you:"
 				},
 				{
@@ -337,6 +350,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And, behold, the servants of David and Joab came from pursuing a troop, and brought in a great spoil with them: but Abner was not with David in Hebron; for he had sent him away, and he was gone in peace."
 				},
 				{
@@ -361,11 +375,12 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "And afterward when David heard it, he said, I and my kingdom are guiltless before the LORD for ever from the blood of Abner the son of Ner:"
 				},
 				{
 					"verse": "29",
-					"text": "Let it rest on the head of Joab, and on all his father\u2019s house; and let there not fail from the house of Joab one that hath an issue, or that is a leper, or that leaneth on a staff, or that falleth on the sword, or that lacketh bread."
+					"text": "Let it rest on the head of Joab, and on all his father’s house; and let there not fail from the house of Joab one that hath an issue, or that is a leper, or that leaneth on a staff, or that falleth on the sword, or that lacketh bread."
 				},
 				{
 					"verse": "30",
@@ -373,6 +388,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And David said to Joab, and to all the people that were with him, Rend your clothes, and gird you with sackcloth, and mourn before Abner. And king David himself followed the bier."
 				},
 				{
@@ -414,11 +430,11 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "And when Saul\u2019s son heard that Abner was dead in Hebron, his hands were feeble, and all the Israelites were troubled."
+					"text": "And when Saul’s son heard that Abner was dead in Hebron, his hands were feeble, and all the Israelites were troubled."
 				},
 				{
 					"verse": "2",
-					"text": "And Saul\u2019s son had two men that were captains of bands: the name of the one was Baanah, and the name of the other Rechab, the sons of Rimmon a Beerothite, of the children of Benjamin: (for Beeroth also was reckoned to Benjamin."
+					"text": "And Saul’s son had two men that were captains of bands: the name of the one was Baanah, and the name of the other Rechab, the sons of Rimmon a Beerothite, of the children of Benjamin: (for Beeroth also was reckoned to Benjamin."
 				},
 				{
 					"verse": "3",
@@ -426,7 +442,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "And Jonathan, Saul\u2019s son, had a son that was lame of his feet. He was five years old when the tidings came of Saul and Jonathan out of Jezreel, and his nurse took him up, and fled: and it came to pass, as she made haste to flee, that he fell, and became lame. And his name was Mephibosheth."
+					"text": "And Jonathan, Saul’s son, had a son that was lame of his feet. He was five years old when the tidings came of Saul and Jonathan out of Jezreel, and his nurse took him up, and fled: and it came to pass, as she made haste to flee, that he fell, and became lame. And his name was Mephibosheth."
 				},
 				{
 					"verse": "5",
@@ -446,6 +462,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And David answered Rechab and Baanah his brother, the sons of Rimmon the Beerothite, and said unto them, As the LORD liveth, who hath redeemed my soul out of all adversity,"
 				},
 				{
@@ -479,6 +496,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "David was thirty years old when he began to reign, and he reigned forty years."
 				},
 				{
@@ -487,6 +505,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And the king and his men went to Jerusalem unto the Jebusites, the inhabitants of the land: which spake unto David, saying, Except thou take away the blind and the lame, thou shalt not come in hither: thinking, David cannot come in hither."
 				},
 				{
@@ -495,7 +514,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "And David said on that day, Whosoever getteth up to the gutter, and smiteth the Jebusites, and the lame and the blind, that are hated of David\u2019s soul, he shall be chief and captain. Wherefore they said, The blind and the lame shall not come into the house."
+					"text": "And David said on that day, Whosoever getteth up to the gutter, and smiteth the Jebusites, and the lame and the blind, that are hated of David’s soul, he shall be chief and captain. Wherefore they said, The blind and the lame shall not come into the house."
 				},
 				{
 					"verse": "9",
@@ -507,14 +526,16 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And Hiram king of Tyre sent messengers to David, and cedar trees, and carpenters, and masons: and they built David an house."
 				},
 				{
 					"verse": "12",
-					"text": "And David perceived that the LORD had established him king over Israel, and that he had exalted his kingdom for his people Israel\u2019s sake."
+					"text": "And David perceived that the LORD had established him king over Israel, and that he had exalted his kingdom for his people Israel’s sake."
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And David took him more concubines and wives out of Jerusalem, after he was come from Hebron: and there were yet sons and daughters born to David."
 				},
 				{
@@ -525,9 +546,13 @@
 					"verse": "15",
 					"text": "Ibhar also, and Elishua, and Nepheg, and Japhia,"
 				},
-				{ "verse": "16", "text": "And Elishama, and Eliada, and Eliphalet." },
+				{
+					"verse": "16",
+					"text": "And Elishama, and Eliada, and Eliphalet."
+				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "But when the Philistines heard that they had anointed David king over Israel, all the Philistines came up to seek David; and David heard of it, and went down to the hold."
 				},
 				{
@@ -548,6 +573,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And the Philistines came up yet again, and spread themselves in the valley of Rephaim."
 				},
 				{
@@ -589,7 +615,8 @@
 				},
 				{
 					"verse": "6",
-					"text": "And when they came to Nachon\u2019s threshingfloor, Uzzah put forth his hand to the ark of God, and took hold of it; for the oxen shook it."
+					"paragraph": true,
+					"text": "And when they came to Nachon’s threshingfloor, Uzzah put forth his hand to the ark of God, and took hold of it; for the oxen shook it."
 				},
 				{
 					"verse": "7",
@@ -613,6 +640,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And it was told king David, saying, The LORD hath blessed the house of Obededom, and all that pertaineth unto him, because of the ark of God. So David went and brought up the ark of God from the house of Obededom into the city of David with gladness."
 				},
 				{
@@ -629,10 +657,11 @@
 				},
 				{
 					"verse": "16",
-					"text": "And as the ark of the LORD came into the city of David, Michal Saul\u2019s daughter looked through a window, and saw king David leaping and dancing before the LORD; and she despised him in her heart."
+					"text": "And as the ark of the LORD came into the city of David, Michal Saul’s daughter looked through a window, and saw king David leaping and dancing before the LORD; and she despised him in her heart."
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And they brought in the ark of the LORD, and set it in his place, in the midst of the tabernacle that David had pitched for it: and David offered burnt offerings and peace offerings before the LORD."
 				},
 				{
@@ -645,6 +674,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Then David returned to bless his household. And Michal the daughter of Saul came out to meet David, and said, How glorious was the king of Israel to day, who uncovered himself to day in the eyes of the handmaids of his servants, as one of the vain fellows shamelessly uncovereth himself!"
 				},
 				{
@@ -678,6 +708,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And it came to pass that night, that the word of the LORD came unto Nathan, saying,"
 				},
 				{
@@ -710,6 +741,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And when thy days be fulfilled, and thou shalt sleep with thy fathers, I will set up thy seed after thee, which shall proceed out of thy bowels, and I will establish his kingdom."
 				},
 				{
@@ -734,11 +766,12 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Then went king David in, and sat before the LORD, and he said, Who am I, O Lord GOD? and what is my house, that thou hast brought me hitherto?"
 				},
 				{
 					"verse": "19",
-					"text": "And this was yet a small thing in thy sight, O Lord GOD; but thou hast spoken also of thy servant\u2019s house for a great while to come. And is this the manner of man, O Lord GOD?"
+					"text": "And this was yet a small thing in thy sight, O Lord GOD; but thou hast spoken also of thy servant’s house for a great while to come. And is this the manner of man, O Lord GOD?"
 				},
 				{
 					"verse": "20",
@@ -746,7 +779,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "For thy word\u2019s sake, and according to thine own heart, hast thou done all these great things, to make thy servant know them."
+					"text": "For thy word’s sake, and according to thine own heart, hast thou done all these great things, to make thy servant know them."
 				},
 				{
 					"verse": "22",
@@ -791,10 +824,11 @@
 				},
 				{
 					"verse": "2",
-					"text": "And he smote Moab, and measured them with a line, casting them down to the ground; even with two lines measured he to put to death, and with one full line to keep alive. And so the Moabites became David\u2019s servants, and brought gifts."
+					"text": "And he smote Moab, and measured them with a line, casting them down to the ground; even with two lines measured he to put to death, and with one full line to keep alive. And so the Moabites became David’s servants, and brought gifts."
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "David smote also Hadadezer, the son of Rehob, king of Zobah, as he went to recover his border at the river Euphrates."
 				},
 				{
@@ -819,6 +853,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "When Toi king of Hamath heard that David had smitten all the host of Hadadezer,"
 				},
 				{
@@ -839,7 +874,8 @@
 				},
 				{
 					"verse": "14",
-					"text": "And he put garrisons in Edom; throughout all Edom put he garrisons, and all they of Edom became David\u2019s servants. And the LORD preserved David whithersoever he went."
+					"paragraph": true,
+					"text": "And he put garrisons in Edom; throughout all Edom put he garrisons, and all they of Edom became David’s servants. And the LORD preserved David whithersoever he went."
 				},
 				{
 					"verse": "15",
@@ -855,7 +891,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "And Benaiah the son of Jehoiada was over both the Cherethites and the Pelethites; and David\u2019s sons were chief rulers."
+					"text": "And Benaiah the son of Jehoiada was over both the Cherethites and the Pelethites; and David’s sons were chief rulers."
 				}
 			]
 		},
@@ -864,7 +900,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "And David said, Is there yet any that is left of the house of Saul, that I may shew him kindness for Jonathan\u2019s sake?"
+					"text": "And David said, Is there yet any that is left of the house of Saul, that I may shew him kindness for Jonathan’s sake?"
 				},
 				{
 					"verse": "2",
@@ -880,6 +916,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Then king David sent, and fetched him out of the house of Machir, the son of Ammiel, from Lodebar."
 				},
 				{
@@ -888,7 +925,8 @@
 				},
 				{
 					"verse": "7",
-					"text": "And David said unto him, Fear not: for I will surely shew thee kindness for Jonathan thy father\u2019s sake, and will restore thee all the land of Saul thy father; and thou shalt eat bread at my table continually."
+					"paragraph": true,
+					"text": "And David said unto him, Fear not: for I will surely shew thee kindness for Jonathan thy father’s sake, and will restore thee all the land of Saul thy father; and thou shalt eat bread at my table continually."
 				},
 				{
 					"verse": "8",
@@ -896,15 +934,16 @@
 				},
 				{
 					"verse": "9",
-					"text": "Then the king called to Ziba, Saul\u2019s servant, and said unto him, I have given unto thy master\u2019s son all that pertained to Saul and to all his house."
+					"paragraph": true,
+					"text": "Then the king called to Ziba, Saul’s servant, and said unto him, I have given unto thy master’s son all that pertained to Saul and to all his house."
 				},
 				{
 					"verse": "10",
-					"text": "Thou therefore, and thy sons, and thy servants, shall till the land for him, and thou shalt bring in the fruits, that thy master\u2019s son may have food to eat: but Mephibosheth thy master\u2019s son shall eat bread alway at my table. Now Ziba had fifteen sons and twenty servants."
+					"text": "Thou therefore, and thy sons, and thy servants, shall till the land for him, and thou shalt bring in the fruits, that thy master’s son may have food to eat: but Mephibosheth thy master’s son shall eat bread alway at my table. Now Ziba had fifteen sons and twenty servants."
 				},
 				{
 					"verse": "11",
-					"text": "Then said Ziba unto the king, According to all that my lord the king hath commanded his servant, so shall thy servant do. As for Mephibosheth, said the king, he shall eat at my table, as one of the king\u2019s sons."
+					"text": "Then said Ziba unto the king, According to all that my lord the king hath commanded his servant, so shall thy servant do. As for Mephibosheth, said the king, he shall eat at my table, as one of the king’s sons."
 				},
 				{
 					"verse": "12",
@@ -912,7 +951,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "So Mephibosheth dwelt in Jerusalem: for he did eat continually at the king\u2019s table; and was lame on both his feet."
+					"text": "So Mephibosheth dwelt in Jerusalem: for he did eat continually at the king’s table; and was lame on both his feet."
 				}
 			]
 		},
@@ -925,7 +964,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "Then said David, I will shew kindness unto Hanun the son of Nahash, as his father shewed kindness unto me. And David sent to comfort him by the hand of his servants for his father. And David\u2019s servants came into the land of the children of Ammon."
+					"text": "Then said David, I will shew kindness unto Hanun the son of Nahash, as his father shewed kindness unto me. And David sent to comfort him by the hand of his servants for his father. And David’s servants came into the land of the children of Ammon."
 				},
 				{
 					"verse": "3",
@@ -933,7 +972,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "Wherefore Hanun took David\u2019s servants, and shaved off the one half of their beards, and cut off their garments in the middle, even to their buttocks, and sent them away."
+					"text": "Wherefore Hanun took David’s servants, and shaved off the one half of their beards, and cut off their garments in the middle, even to their buttocks, and sent them away."
 				},
 				{
 					"verse": "5",
@@ -941,6 +980,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And when the children of Ammon saw that they stank before David, the children of Ammon sent and hired the Syrians of Bethrehob, and the Syrians of Zoba, twenty thousand footmen, and of king Maacah a thousand men, and of Ishtob twelve thousand men."
 				},
 				{
@@ -977,6 +1017,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And when the Syrians saw that they were smitten before Israel, they gathered themselves together."
 				},
 				{
@@ -1006,7 +1047,8 @@
 				},
 				{
 					"verse": "2",
-					"text": "And it came to pass in an eveningtide, that David arose from off his bed, and walked upon the roof of the king\u2019s house: and from the roof he saw a woman washing herself; and the woman was very beautiful to look upon."
+					"paragraph": true,
+					"text": "And it came to pass in an eveningtide, that David arose from off his bed, and walked upon the roof of the king’s house: and from the roof he saw a woman washing herself; and the woman was very beautiful to look upon."
 				},
 				{
 					"verse": "3",
@@ -1022,6 +1064,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And David sent to Joab, saying, Send me Uriah the Hittite. And Joab sent Uriah to David."
 				},
 				{
@@ -1030,11 +1073,11 @@
 				},
 				{
 					"verse": "8",
-					"text": "And David said to Uriah, Go down to thy house, and wash thy feet. And Uriah departed out of the king\u2019s house, and there followed him a mess of meat from the king."
+					"text": "And David said to Uriah, Go down to thy house, and wash thy feet. And Uriah departed out of the king’s house, and there followed him a mess of meat from the king."
 				},
 				{
 					"verse": "9",
-					"text": "But Uriah slept at the door of the king\u2019s house with all the servants of his lord, and went not down to his house."
+					"text": "But Uriah slept at the door of the king’s house with all the servants of his lord, and went not down to his house."
 				},
 				{
 					"verse": "10",
@@ -1054,6 +1097,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And it came to pass in the morning, that David wrote a letter to Joab, and sent it by the hand of Uriah."
 				},
 				{
@@ -1070,6 +1114,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Then Joab sent and told David all the things concerning the war;"
 				},
 				{
@@ -1078,7 +1123,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "And if so be that the king\u2019s wrath arise, and he say unto thee, Wherefore approached ye so nigh unto the city when ye did fight? knew ye not that they would shoot from the wall?"
+					"text": "And if so be that the king’s wrath arise, and he say unto thee, Wherefore approached ye so nigh unto the city when ye did fight? knew ye not that they would shoot from the wall?"
 				},
 				{
 					"verse": "21",
@@ -1086,6 +1131,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "So the messenger went, and came and shewed David all that Joab had sent him for."
 				},
 				{
@@ -1094,7 +1140,7 @@
 				},
 				{
 					"verse": "24",
-					"text": "And the shooters shot from off the wall upon thy servants; and some of the king\u2019s servants be dead, and thy servant Uriah the Hittite is dead also."
+					"text": "And the shooters shot from off the wall upon thy servants; and some of the king’s servants be dead, and thy servant Uriah the Hittite is dead also."
 				},
 				{
 					"verse": "25",
@@ -1102,6 +1148,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And when the wife of Uriah heard that Uriah her husband was dead, she mourned for her husband."
 				},
 				{
@@ -1127,11 +1174,11 @@
 				},
 				{
 					"verse": "4",
-					"text": "And there came a traveller unto the rich man, and he spared to take of his own flock and of his own herd, to dress for the wayfaring man that was come unto him; but took the poor man\u2019s lamb, and dressed it for the man that was come to him."
+					"text": "And there came a traveller unto the rich man, and he spared to take of his own flock and of his own herd, to dress for the wayfaring man that was come unto him; but took the poor man’s lamb, and dressed it for the man that was come to him."
 				},
 				{
 					"verse": "5",
-					"text": "And David\u2019s anger was greatly kindled against the man; and he said to Nathan, As the LORD liveth, the man that hath done this thing shall surely die:"
+					"text": "And David’s anger was greatly kindled against the man; and he said to Nathan, As the LORD liveth, the man that hath done this thing shall surely die:"
 				},
 				{
 					"verse": "6",
@@ -1139,11 +1186,12 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And Nathan said to David, Thou art the man. Thus saith the LORD God of Israel, I anointed thee king over Israel, and I delivered thee out of the hand of Saul;"
 				},
 				{
 					"verse": "8",
-					"text": "And I gave thee thy master\u2019s house, and thy master\u2019s wives into thy bosom, and gave thee the house of Israel and of Judah; and if that had been too little, I would moreover have given unto thee such and such things."
+					"text": "And I gave thee thy master’s house, and thy master’s wives into thy bosom, and gave thee the house of Israel and of Judah; and if that had been too little, I would moreover have given unto thee such and such things."
 				},
 				{
 					"verse": "9",
@@ -1171,7 +1219,8 @@
 				},
 				{
 					"verse": "15",
-					"text": "And Nathan departed unto his house. And the LORD struck the child that Uriah\u2019s wife bare unto David, and it was very sick."
+					"paragraph": true,
+					"text": "And Nathan departed unto his house. And the LORD struck the child that Uriah’s wife bare unto David, and it was very sick."
 				},
 				{
 					"verse": "16",
@@ -1207,6 +1256,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And David comforted Bathsheba his wife, and went in unto her, and lay with her: and she bare a son, and he called his name Solomon: and the LORD loved him."
 				},
 				{
@@ -1215,6 +1265,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And Joab fought against Rabbah of the children of Ammon, and took the royal city."
 				},
 				{
@@ -1231,7 +1282,7 @@
 				},
 				{
 					"verse": "30",
-					"text": "And he took their king\u2019s crown from off his head, the weight whereof was a talent of gold with the precious stones: and it was set on David\u2019s head. And he brought forth the spoil of the city in great abundance."
+					"text": "And he took their king’s crown from off his head, the weight whereof was a talent of gold with the precious stones: and it was set on David’s head. And he brought forth the spoil of the city in great abundance."
 				},
 				{
 					"verse": "31",
@@ -1252,11 +1303,11 @@
 				},
 				{
 					"verse": "3",
-					"text": "But Amnon had a friend, whose name was Jonadab, the son of Shimeah David\u2019s brother: and Jonadab was a very subtil man."
+					"text": "But Amnon had a friend, whose name was Jonadab, the son of Shimeah David’s brother: and Jonadab was a very subtil man."
 				},
 				{
 					"verse": "4",
-					"text": "And he said unto him, Why art thou, being the king\u2019s son, lean from day to day? wilt thou not tell me? And Amnon said unto him, I love Tamar, my brother Absalom\u2019s sister."
+					"text": "And he said unto him, Why art thou, being the king’s son, lean from day to day? wilt thou not tell me? And Amnon said unto him, I love Tamar, my brother Absalom’s sister."
 				},
 				{
 					"verse": "5",
@@ -1264,15 +1315,16 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "So Amnon lay down, and made himself sick: and when the king was come to see him, Amnon said unto the king, I pray thee, let Tamar my sister come, and make me a couple of cakes in my sight, that I may eat at her hand."
 				},
 				{
 					"verse": "7",
-					"text": "Then David sent home to Tamar, saying, Go now to thy brother Amnon\u2019s house, and dress him meat."
+					"text": "Then David sent home to Tamar, saying, Go now to thy brother Amnon’s house, and dress him meat."
 				},
 				{
 					"verse": "8",
-					"text": "So Tamar went to her brother Amnon\u2019s house; and he was laid down. And she took flour, and kneaded it, and made cakes in his sight, and did bake the cakes."
+					"text": "So Tamar went to her brother Amnon’s house; and he was laid down. And she took flour, and kneaded it, and made cakes in his sight, and did bake the cakes."
 				},
 				{
 					"verse": "9",
@@ -1300,6 +1352,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Then Amnon hated her exceedingly; so that the hatred wherewith he hated her was greater than the love wherewith he had loved her. And Amnon said unto her, Arise, be gone."
 				},
 				{
@@ -1312,18 +1365,20 @@
 				},
 				{
 					"verse": "18",
-					"text": "And she had a garment of divers colours upon her: for with such robes were the king\u2019s daughters that were virgins apparelled. Then his servant brought her out, and bolted the door after her."
+					"text": "And she had a garment of divers colours upon her: for with such robes were the king’s daughters that were virgins apparelled. Then his servant brought her out, and bolted the door after her."
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And Tamar put ashes on her head, and rent her garment of divers colours that was on her, and laid her hand on her head, and went on crying."
 				},
 				{
 					"verse": "20",
-					"text": "And Absalom her brother said unto her, Hath Amnon thy brother been with thee? but hold now thy peace, my sister: he is thy brother; regard not this thing. So Tamar remained desolate in her brother Absalom\u2019s house."
+					"text": "And Absalom her brother said unto her, Hath Amnon thy brother been with thee? but hold now thy peace, my sister: he is thy brother; regard not this thing. So Tamar remained desolate in her brother Absalom’s house."
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "But when king David heard of all these things, he was very wroth."
 				},
 				{
@@ -1332,7 +1387,8 @@
 				},
 				{
 					"verse": "23",
-					"text": "And it came to pass after two full years, that Absalom had sheepshearers in Baalhazor, which is beside Ephraim: and Absalom invited all the king\u2019s sons."
+					"paragraph": true,
+					"text": "And it came to pass after two full years, that Absalom had sheepshearers in Baalhazor, which is beside Ephraim: and Absalom invited all the king’s sons."
 				},
 				{
 					"verse": "24",
@@ -1348,19 +1404,21 @@
 				},
 				{
 					"verse": "27",
-					"text": "But Absalom pressed him, that he let Amnon and all the king\u2019s sons go with him."
+					"text": "But Absalom pressed him, that he let Amnon and all the king’s sons go with him."
 				},
 				{
 					"verse": "28",
-					"text": "Now Absalom had commanded his servants, saying, Mark ye now when Amnon\u2019s heart is merry with wine, and when I say unto you, Smite Amnon; then kill him, fear not: have not I commanded you? be courageous, and be valiant."
+					"paragraph": true,
+					"text": "Now Absalom had commanded his servants, saying, Mark ye now when Amnon’s heart is merry with wine, and when I say unto you, Smite Amnon; then kill him, fear not: have not I commanded you? be courageous, and be valiant."
 				},
 				{
 					"verse": "29",
-					"text": "And the servants of Absalom did unto Amnon as Absalom had commanded. Then all the king\u2019s sons arose, and every man gat him up upon his mule, and fled."
+					"text": "And the servants of Absalom did unto Amnon as Absalom had commanded. Then all the king’s sons arose, and every man gat him up upon his mule, and fled."
 				},
 				{
 					"verse": "30",
-					"text": "And it came to pass, while they were in the way, that tidings came to David, saying, Absalom hath slain all the king\u2019s sons, and there is not one of them left."
+					"paragraph": true,
+					"text": "And it came to pass, while they were in the way, that tidings came to David, saying, Absalom hath slain all the king’s sons, and there is not one of them left."
 				},
 				{
 					"verse": "31",
@@ -1368,11 +1426,11 @@
 				},
 				{
 					"verse": "32",
-					"text": "And Jonadab, the son of Shimeah David\u2019s brother, answered and said, Let not my lord suppose that they have slain all the young men the king\u2019s sons; for Amnon only is dead: for by the appointment of Absalom this hath been determined from the day that he forced his sister Tamar."
+					"text": "And Jonadab, the son of Shimeah David’s brother, answered and said, Let not my lord suppose that they have slain all the young men the king’s sons; for Amnon only is dead: for by the appointment of Absalom this hath been determined from the day that he forced his sister Tamar."
 				},
 				{
 					"verse": "33",
-					"text": "Now therefore let not my lord the king take the thing to his heart, to think that all the king\u2019s sons are dead: for Amnon only is dead."
+					"text": "Now therefore let not my lord the king take the thing to his heart, to think that all the king’s sons are dead: for Amnon only is dead."
 				},
 				{
 					"verse": "34",
@@ -1380,14 +1438,15 @@
 				},
 				{
 					"verse": "35",
-					"text": "And Jonadab said unto the king, Behold, the king\u2019s sons come: as thy servant said, so it is."
+					"text": "And Jonadab said unto the king, Behold, the king’s sons come: as thy servant said, so it is."
 				},
 				{
 					"verse": "36",
-					"text": "And it came to pass, as soon as he had made an end of speaking, that, behold, the king\u2019s sons came, and lifted up their voice and wept: and the king also and all his servants wept very sore."
+					"text": "And it came to pass, as soon as he had made an end of speaking, that, behold, the king’s sons came, and lifted up their voice and wept: and the king also and all his servants wept very sore."
 				},
 				{
 					"verse": "37",
+					"paragraph": true,
 					"text": "But Absalom fled, and went to Talmai, the son of Ammihud, king of Geshur. And David mourned for his son every day."
 				},
 				{
@@ -1405,7 +1464,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Now Joab the son of Zeruiah perceived that the king\u2019s heart was toward Absalom."
+					"text": "Now Joab the son of Zeruiah perceived that the king’s heart was toward Absalom."
 				},
 				{
 					"verse": "2",
@@ -1417,6 +1476,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And when the woman of Tekoah spake to the king, she fell on her face to the ground, and did obeisance, and said, Help, O king."
 				},
 				{
@@ -1437,7 +1497,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "And the woman of Tekoah said unto the king, My lord, O king, the iniquity be on me, and on my father\u2019s house: and the king and his throne be guiltless."
+					"text": "And the woman of Tekoah said unto the king, My lord, O king, the iniquity be on me, and on my father’s house: and the king and his throne be guiltless."
 				},
 				{
 					"verse": "10",
@@ -1485,6 +1545,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And the king said unto Joab, Behold now, I have done this thing: go therefore, bring the young man Absalom again."
 				},
 				{
@@ -1497,15 +1558,16 @@
 				},
 				{
 					"verse": "24",
-					"text": "And the king said, Let him turn to his own house, and let him not see my face. So Absalom returned to his own house, and saw not the king\u2019s face."
+					"text": "And the king said, Let him turn to his own house, and let him not see my face. So Absalom returned to his own house, and saw not the king’s face."
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "But in all Israel there was none to be so much praised as Absalom for his beauty: from the sole of his foot even to the crown of his head there was no blemish in him."
 				},
 				{
 					"verse": "26",
-					"text": "And when he polled his head, (for it was at every year\u2019s end that he polled it: because the hair was heavy on him, therefore he polled it:) he weighed the hair of his head at two hundred shekels after the king\u2019s weight."
+					"text": "And when he polled his head, (for it was at every year’s end that he polled it: because the hair was heavy on him, therefore he polled it:) he weighed the hair of his head at two hundred shekels after the king’s weight."
 				},
 				{
 					"verse": "27",
@@ -1513,7 +1575,8 @@
 				},
 				{
 					"verse": "28",
-					"text": "So Absalom dwelt two full years in Jerusalem, and saw not the king\u2019s face."
+					"paragraph": true,
+					"text": "So Absalom dwelt two full years in Jerusalem, and saw not the king’s face."
 				},
 				{
 					"verse": "29",
@@ -1521,7 +1584,7 @@
 				},
 				{
 					"verse": "30",
-					"text": "Therefore he said unto his servants, See, Joab\u2019s field is near mine, and he hath barley there; go and set it on fire. And Absalom\u2019s servants set the field on fire."
+					"text": "Therefore he said unto his servants, See, Joab’s field is near mine, and he hath barley there; go and set it on fire. And Absalom’s servants set the field on fire."
 				},
 				{
 					"verse": "31",
@@ -1529,7 +1592,7 @@
 				},
 				{
 					"verse": "32",
-					"text": "And Absalom answered Joab, Behold, I sent unto thee, saying, Come hither, that I may send thee to the king, to say, Wherefore am I come from Geshur? it had been good for me to have been there still: now therefore let me see the king\u2019s face; and if there be any iniquity in me, let him kill me."
+					"text": "And Absalom answered Joab, Behold, I sent unto thee, saying, Come hither, that I may send thee to the king, to say, Wherefore am I come from Geshur? it had been good for me to have been there still: now therefore let me see the king’s face; and if there be any iniquity in me, let him kill me."
 				},
 				{
 					"verse": "33",
@@ -1566,6 +1629,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And it came to pass after forty years, that Absalom said unto the king, I pray thee, let me go and pay my vow, which I have vowed unto the LORD, in Hebron."
 				},
 				{
@@ -1578,6 +1642,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "But Absalom sent spies throughout all the tribes of Israel, saying, As soon as ye hear the sound of the trumpet, then ye shall say, Absalom reigneth in Hebron."
 				},
 				{
@@ -1586,10 +1651,11 @@
 				},
 				{
 					"verse": "12",
-					"text": "And Absalom sent for Ahithophel the Gilonite, David\u2019s counsellor, from his city, even from Giloh, while he offered sacrifices. And the conspiracy was strong; for the people increased continually with Absalom."
+					"text": "And Absalom sent for Ahithophel the Gilonite, David’s counsellor, from his city, even from Giloh, while he offered sacrifices. And the conspiracy was strong; for the people increased continually with Absalom."
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And there came a messenger to David, saying, The hearts of the men of Israel are after Absalom."
 				},
 				{
@@ -1598,7 +1664,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "And the king\u2019s servants said unto the king, Behold, thy servants are ready to do whatsoever my lord the king shall appoint."
+					"text": "And the king’s servants said unto the king, Behold, thy servants are ready to do whatsoever my lord the king shall appoint."
 				},
 				{
 					"verse": "16",
@@ -1614,6 +1680,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Then said the king to Ittai the Gittite, Wherefore goest thou also with us? return to thy place, and abide with the king: for thou art a stranger, and also an exile."
 				},
 				{
@@ -1634,6 +1701,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And lo Zadok also, and all the Levites were with him, bearing the ark of the covenant of God: and they set down the ark of God; and Abiathar went up, until all the people had done passing out of the city."
 				},
 				{
@@ -1658,14 +1726,17 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "And David went up by the ascent of mount Olivet, and wept as he went up, and had his head covered, and he went barefoot: and all the people that was with him covered every man his head, and they went up, weeping as they went up."
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And one told David, saying, Ahithophel is among the conspirators with Absalom. And David said, O LORD, I pray thee, turn the counsel of Ahithophel into foolishness."
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "And it came to pass, that when David was come to the top of the mount, where he worshipped God, behold, Hushai the Archite came to meet him with his coat rent, and earth upon his head:"
 				},
 				{
@@ -1674,19 +1745,19 @@
 				},
 				{
 					"verse": "34",
-					"text": "But if thou return to the city, and say unto Absalom, I will be thy servant, O king; as I have been thy father\u2019s servant hitherto, so will I now also be thy servant: then mayest thou for me defeat the counsel of Ahithophel."
+					"text": "But if thou return to the city, and say unto Absalom, I will be thy servant, O king; as I have been thy father’s servant hitherto, so will I now also be thy servant: then mayest thou for me defeat the counsel of Ahithophel."
 				},
 				{
 					"verse": "35",
-					"text": "And hast thou not there with thee Zadok and Abiathar the priests? therefore it shall be, that what thing soever thou shalt hear out of the king\u2019s house, thou shalt tell it to Zadok and Abiathar the priests."
+					"text": "And hast thou not there with thee Zadok and Abiathar the priests? therefore it shall be, that what thing soever thou shalt hear out of the king’s house, thou shalt tell it to Zadok and Abiathar the priests."
 				},
 				{
 					"verse": "36",
-					"text": "Behold, they have there with them their two sons, Ahimaaz Zadok\u2019s son, and Jonathan Abiathar\u2019s son; and by them ye shall send unto me every thing that ye can hear."
+					"text": "Behold, they have there with them their two sons, Ahimaaz Zadok’s son, and Jonathan Abiathar’s son; and by them ye shall send unto me every thing that ye can hear."
 				},
 				{
 					"verse": "37",
-					"text": "So Hushai David\u2019s friend came into the city, and Absalom came into Jerusalem."
+					"text": "So Hushai David’s friend came into the city, and Absalom came into Jerusalem."
 				}
 			]
 		},
@@ -1699,11 +1770,11 @@
 				},
 				{
 					"verse": "2",
-					"text": "And the king said unto Ziba, What meanest thou by these? And Ziba said, The asses be for the king\u2019s household to ride on; and the bread and summer fruit for the young men to eat; and the wine, that such as be faint in the wilderness may drink."
+					"text": "And the king said unto Ziba, What meanest thou by these? And Ziba said, The asses be for the king’s household to ride on; and the bread and summer fruit for the young men to eat; and the wine, that such as be faint in the wilderness may drink."
 				},
 				{
 					"verse": "3",
-					"text": "And the king said, And where is thy master\u2019s son? And Ziba said unto the king, Behold, he abideth at Jerusalem: for he said, To day shall the house of Israel restore me the kingdom of my father."
+					"text": "And the king said, And where is thy master’s son? And Ziba said unto the king, Behold, he abideth at Jerusalem: for he said, To day shall the house of Israel restore me the kingdom of my father."
 				},
 				{
 					"verse": "4",
@@ -1711,6 +1782,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And when king David came to Bahurim, behold, thence came out a man of the family of the house of Saul, whose name was Shimei, the son of Gera: he came forth, and cursed still as he came."
 				},
 				{
@@ -1727,6 +1799,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Then said Abishai the son of Zeruiah unto the king, Why should this dead dog curse my lord the king? let me go over, I pray thee, and take off his head."
 				},
 				{
@@ -1743,7 +1816,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "And as David and his men went by the way, Shimei went along on the hill\u2019s side over against him, and cursed as he went, and threw stones at him, and cast dust."
+					"text": "And as David and his men went by the way, Shimei went along on the hill’s side over against him, and cursed as he went, and threw stones at him, and cast dust."
 				},
 				{
 					"verse": "14",
@@ -1751,11 +1824,12 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And Absalom, and all the people the men of Israel, came to Jerusalem, and Ahithophel with him."
 				},
 				{
 					"verse": "16",
-					"text": "And it came to pass, when Hushai the Archite, David\u2019s friend, was come unto Absalom, that Hushai said unto Absalom, God save the king, God save the king."
+					"text": "And it came to pass, when Hushai the Archite, David’s friend, was come unto Absalom, that Hushai said unto Absalom, God save the king, God save the king."
 				},
 				{
 					"verse": "17",
@@ -1767,19 +1841,20 @@
 				},
 				{
 					"verse": "19",
-					"text": "And again, whom should I serve? should I not serve in the presence of his son? as I have served in thy father\u2019s presence, so will I be in thy presence."
+					"text": "And again, whom should I serve? should I not serve in the presence of his son? as I have served in thy father’s presence, so will I be in thy presence."
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Then said Absalom to Ahithophel, Give counsel among you what we shall do."
 				},
 				{
 					"verse": "21",
-					"text": "And Ahithophel said unto Absalom, Go in unto thy father\u2019s concubines, which he hath left to keep the house; and all Israel shall hear that thou art abhorred of thy father: then shall the hands of all that are with thee be strong."
+					"text": "And Ahithophel said unto Absalom, Go in unto thy father’s concubines, which he hath left to keep the house; and all Israel shall hear that thou art abhorred of thy father: then shall the hands of all that are with thee be strong."
 				},
 				{
 					"verse": "22",
-					"text": "So they spread Absalom a tent upon the top of the house; and Absalom went in unto his father\u2019s concubines in the sight of all Israel."
+					"text": "So they spread Absalom a tent upon the top of the house; and Absalom went in unto his father’s concubines in the sight of all Israel."
 				},
 				{
 					"verse": "23",
@@ -1848,6 +1923,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Then said Hushai unto Zadok and to Abiathar the priests, Thus and thus did Ahithophel counsel Absalom and the elders of Israel; and thus and thus have I counselled."
 				},
 				{
@@ -1860,15 +1936,15 @@
 				},
 				{
 					"verse": "18",
-					"text": "Nevertheless a lad saw them, and told Absalom: but they went both of them away quickly, and came to a man\u2019s house in Bahurim, which had a well in his court; whither they went down."
+					"text": "Nevertheless a lad saw them, and told Absalom: but they went both of them away quickly, and came to a man’s house in Bahurim, which had a well in his court; whither they went down."
 				},
 				{
 					"verse": "19",
-					"text": "And the woman took and spread a covering over the well\u2019s mouth, and spread ground corn thereon; and the thing was not known."
+					"text": "And the woman took and spread a covering over the well’s mouth, and spread ground corn thereon; and the thing was not known."
 				},
 				{
 					"verse": "20",
-					"text": "And when Absalom\u2019s servants came to the woman to the house, they said, Where is Ahimaaz and Jonathan? And the woman said unto them, They be gone over the brook of water. And when they had sought and could not find them, they returned to Jerusalem."
+					"text": "And when Absalom’s servants came to the woman to the house, they said, Where is Ahimaaz and Jonathan? And the woman said unto them, They be gone over the brook of water. And when they had sought and could not find them, they returned to Jerusalem."
 				},
 				{
 					"verse": "21",
@@ -1880,6 +1956,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And when Ahithophel saw that his counsel was not followed, he saddled his ass, and arose, and gat him home to his house, to his city, and put his household in order, and hanged himself, and died, and was buried in the sepulchre of his father."
 				},
 				{
@@ -1888,7 +1965,8 @@
 				},
 				{
 					"verse": "25",
-					"text": "And Absalom made Amasa captain of the host instead of Joab: which Amasa was a man\u2019s son, whose name was Ithra an Israelite, that went in to Abigail the daughter of Nahash, sister to Zeruiah Joab\u2019s mother."
+					"paragraph": true,
+					"text": "And Absalom made Amasa captain of the host instead of Joab: which Amasa was a man’s son, whose name was Ithra an Israelite, that went in to Abigail the daughter of Nahash, sister to Zeruiah Joab’s mother."
 				},
 				{
 					"verse": "26",
@@ -1896,6 +1974,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And it came to pass, when David was come to Mahanaim, that Shobi the son of Nahash of Rabbah of the children of Ammon, and Machir the son of Ammiel of Lodebar, and Barzillai the Gileadite of Rogelim,"
 				},
 				{
@@ -1917,7 +1996,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "And David sent forth a third part of the people under the hand of Joab, and a third part under the hand of Abishai the son of Zeruiah, Joab\u2019s brother, and a third part under the hand of Ittai the Gittite. And the king said unto the people, I will surely go forth with you myself also."
+					"text": "And David sent forth a third part of the people under the hand of Joab, and a third part under the hand of Abishai the son of Zeruiah, Joab’s brother, and a third part under the hand of Ittai the Gittite. And the king said unto the people, I will surely go forth with you myself also."
 				},
 				{
 					"verse": "3",
@@ -1933,6 +2012,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "So the people went out into the field against Israel: and the battle was in the wood of Ephraim;"
 				},
 				{
@@ -1945,6 +2025,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And Absalom met the servants of David. And Absalom rode upon a mule, and the mule went under the thick boughs of a great oak, and his head caught hold of the oak, and he was taken up between the heaven and the earth; and the mule that was under him went away."
 				},
 				{
@@ -1957,7 +2038,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "And the man said unto Joab, Though I should receive a thousand shekels of silver in mine hand, yet would I not put forth mine hand against the king\u2019s son: for in our hearing the king charged thee and Abishai and Ittai, saying, Beware that none touch the young man Absalom."
+					"text": "And the man said unto Joab, Though I should receive a thousand shekels of silver in mine hand, yet would I not put forth mine hand against the king’s son: for in our hearing the king charged thee and Abishai and Ittai, saying, Beware that none touch the young man Absalom."
 				},
 				{
 					"verse": "13",
@@ -1969,7 +2050,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "And ten young men that bare Joab\u2019s armour compassed about and smote Absalom, and slew him."
+					"text": "And ten young men that bare Joab’s armour compassed about and smote Absalom, and slew him."
 				},
 				{
 					"verse": "16",
@@ -1981,15 +2062,17 @@
 				},
 				{
 					"verse": "18",
-					"text": "Now Absalom in his lifetime had taken and reared up for himself a pillar, which is in the king\u2019s dale: for he said, I have no son to keep my name in remembrance: and he called the pillar after his own name: and it is called unto this day, Absalom\u2019s place."
+					"paragraph": true,
+					"text": "Now Absalom in his lifetime had taken and reared up for himself a pillar, which is in the king’s dale: for he said, I have no son to keep my name in remembrance: and he called the pillar after his own name: and it is called unto this day, Absalom’s place."
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Then said Ahimaaz the son of Zadok, Let me now run, and bear the king tidings, how that the LORD hath avenged him of his enemies."
 				},
 				{
 					"verse": "20",
-					"text": "And Joab said unto him, Thou shalt not bear tidings this day, but thou shalt bear tidings another day: but this day thou shalt bear no tidings, because the king\u2019s son is dead."
+					"text": "And Joab said unto him, Thou shalt not bear tidings this day, but thou shalt bear tidings another day: but this day thou shalt bear no tidings, because the king’s son is dead."
 				},
 				{
 					"verse": "21",
@@ -2025,7 +2108,7 @@
 				},
 				{
 					"verse": "29",
-					"text": "And the king said, Is the young man Absalom safe? And Ahimaaz answered, When Joab sent the king\u2019s servant, and me thy servant, I saw a great tumult, but I knew not what it was."
+					"text": "And the king said, Is the young man Absalom safe? And Ahimaaz answered, When Joab sent the king’s servant, and me thy servant, I saw a great tumult, but I knew not what it was."
 				},
 				{
 					"verse": "30",
@@ -2041,6 +2124,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "And the king was much moved, and went up to the chamber over the gate, and wept: and as he went, thus he said, O my son Absalom, my son, my son Absalom! would God I had died for thee, O Absalom, my son, my son!"
 				}
 			]
@@ -2082,6 +2166,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And all the people were at strife throughout all the tribes of Israel, saying, The king saved us out of the hand of our enemies, and he delivered us out of the hand of the Philistines; and now he is fled out of the land for Absalom."
 				},
 				{
@@ -2090,6 +2175,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And king David sent to Zadok and to Abiathar the priests, saying, Speak unto the elders of Judah, saying, Why are ye the last to bring the king back to his house? seeing the speech of all Israel is come to the king, even to his house."
 				},
 				{
@@ -2110,6 +2196,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And Shimei the son of Gera, a Benjamite, which was of Bahurim, hasted and came down with the men of Judah to meet king David."
 				},
 				{
@@ -2118,7 +2205,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "And there went over a ferry boat to carry over the king\u2019s household, and to do what he thought good. And Shimei the son of Gera fell down before the king, as he was come over Jordan;"
+					"text": "And there went over a ferry boat to carry over the king’s household, and to do what he thought good. And Shimei the son of Gera fell down before the king, as he was come over Jordan;"
 				},
 				{
 					"verse": "19",
@@ -2130,7 +2217,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "But Abishai the son of Zeruiah answered and said, Shall not Shimei be put to death for this, because he cursed the LORD\u2019s anointed?"
+					"text": "But Abishai the son of Zeruiah answered and said, Shall not Shimei be put to death for this, because he cursed the LORD’s anointed?"
 				},
 				{
 					"verse": "22",
@@ -2142,6 +2229,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And Mephibosheth the son of Saul came down to meet the king, and had neither dressed his feet, nor trimmed his beard, nor washed his clothes, from the day the king departed until the day he came again in peace."
 				},
 				{
@@ -2158,7 +2246,7 @@
 				},
 				{
 					"verse": "28",
-					"text": "For all of my father\u2019s house were but dead men before my lord the king: yet didst thou set thy servant among them that did eat at thine own table. What right therefore have I yet to cry any more unto the king?"
+					"text": "For all of my father’s house were but dead men before my lord the king: yet didst thou set thy servant among them that did eat at thine own table. What right therefore have I yet to cry any more unto the king?"
 				},
 				{
 					"verse": "29",
@@ -2170,6 +2258,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And Barzillai the Gileadite came down from Rogelim, and went over Jordan with the king, to conduct him over Jordan."
 				},
 				{
@@ -2210,11 +2299,12 @@
 				},
 				{
 					"verse": "41",
-					"text": "And, behold, all the men of Israel came to the king, and said unto the king, Why have our brethren the men of Judah stolen thee away, and have brought the king, and his household, and all David\u2019s men with him, over Jordan?"
+					"paragraph": true,
+					"text": "And, behold, all the men of Israel came to the king, and said unto the king, Why have our brethren the men of Judah stolen thee away, and have brought the king, and his household, and all David’s men with him, over Jordan?"
 				},
 				{
 					"verse": "42",
-					"text": "And all the men of Judah answered the men of Israel, Because the king is near of kin to us: wherefore then be ye angry for this matter? have we eaten at all of the king\u2019s cost? or hath he given us any gift?"
+					"text": "And all the men of Judah answered the men of Israel, Because the king is near of kin to us: wherefore then be ye angry for this matter? have we eaten at all of the king’s cost? or hath he given us any gift?"
 				},
 				{
 					"verse": "43",
@@ -2235,10 +2325,12 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "And David came to his house at Jerusalem; and the king took the ten women his concubines, whom he had left to keep the house, and put them in ward, and fed them, but went not in unto them. So they were shut up unto the day of their death, living in widowhood."
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Then said the king to Amasa, Assemble me the men of Judah within three days, and be thou here present."
 				},
 				{
@@ -2247,15 +2339,15 @@
 				},
 				{
 					"verse": "6",
-					"text": "And David said to Abishai, Now shall Sheba the son of Bichri do us more harm than did Absalom: take thou thy lord\u2019s servants, and pursue after him, lest he get him fenced cities, and escape us."
+					"text": "And David said to Abishai, Now shall Sheba the son of Bichri do us more harm than did Absalom: take thou thy lord’s servants, and pursue after him, lest he get him fenced cities, and escape us."
 				},
 				{
 					"verse": "7",
-					"text": "And there went out after him Joab\u2019s men, and the Cherethites, and the Pelethites, and all the mighty men: and they went out of Jerusalem, to pursue after Sheba the son of Bichri."
+					"text": "And there went out after him Joab’s men, and the Cherethites, and the Pelethites, and all the mighty men: and they went out of Jerusalem, to pursue after Sheba the son of Bichri."
 				},
 				{
 					"verse": "8",
-					"text": "When they were at the great stone which is in Gibeon, Amasa went before them. And Joab\u2019s garment that he had put on was girded unto him, and upon it a girdle with a sword fastened upon his loins in the sheath thereof; and as he went forth it fell out."
+					"text": "When they were at the great stone which is in Gibeon, Amasa went before them. And Joab’s garment that he had put on was girded unto him, and upon it a girdle with a sword fastened upon his loins in the sheath thereof; and as he went forth it fell out."
 				},
 				{
 					"verse": "9",
@@ -2263,11 +2355,11 @@
 				},
 				{
 					"verse": "10",
-					"text": "But Amasa took no heed to the sword that was in Joab\u2019s hand: so he smote him therewith in the fifth rib, and shed out his bowels to the ground, and struck him not again; and he died. So Joab and Abishai his brother pursued after Sheba the son of Bichri."
+					"text": "But Amasa took no heed to the sword that was in Joab’s hand: so he smote him therewith in the fifth rib, and shed out his bowels to the ground, and struck him not again; and he died. So Joab and Abishai his brother pursued after Sheba the son of Bichri."
 				},
 				{
 					"verse": "11",
-					"text": "And one of Joab\u2019s men stood by him, and said, He that favoureth Joab, and he that is for David, let him go after Joab."
+					"text": "And one of Joab’s men stood by him, and said, He that favoureth Joab, and he that is for David, let him go after Joab."
 				},
 				{
 					"verse": "12",
@@ -2279,6 +2371,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And he went through all the tribes of Israel unto Abel, and to Bethmaachah, and all the Berites: and they were gathered together, and went also after him."
 				},
 				{
@@ -2287,6 +2380,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Then cried a wise woman out of the city, Hear, hear; say, I pray you, unto Joab, Come near hither, that I may speak with thee."
 				},
 				{
@@ -2315,6 +2409,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Now Joab was over all the host of Israel: and Benaiah the son of Jehoiada was over the Cherethites and over the Pelethites:"
 				},
 				{
@@ -2360,7 +2455,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "But the king spared Mephibosheth, the son of Jonathan the son of Saul, because of the LORD\u2019s oath that was between them, between David and Jonathan the son of Saul."
+					"text": "But the king spared Mephibosheth, the son of Jonathan the son of Saul, because of the LORD’s oath that was between them, between David and Jonathan the son of Saul."
 				},
 				{
 					"verse": "8",
@@ -2372,6 +2467,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And Rizpah the daughter of Aiah took sackcloth, and spread it for her upon the rock, from the beginning of harvest until water dropped upon them out of heaven, and suffered neither the birds of the air to rest on them by day, nor the beasts of the field by night."
 				},
 				{
@@ -2380,6 +2476,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And David went and took the bones of Saul and the bones of Jonathan his son from the men of Jabeshgilead, which had stolen them from the street of Bethshan, where the Philistines had hanged them, when the Philistines had slain Saul in Gilboa:"
 				},
 				{
@@ -2392,6 +2489,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Moreover the Philistines had yet war again with Israel; and David went down, and his servants with him, and fought against the Philistines: and David waxed faint."
 				},
 				{
@@ -2408,7 +2506,7 @@
 				},
 				{
 					"verse": "19",
-					"text": "And there was again a battle in Gob with the Philistines, where Elhanan the son of Jaareoregim, a Bethlehemite, slew the brother of Goliath the Gittite, the staff of whose spear was like a weaver\u2019s beam."
+					"text": "And there was again a battle in Gob with the Philistines, where Elhanan the son of Jaareoregim, a Bethlehemite, slew the brother of Goliath the Gittite, the staff of whose spear was like a weaver’s beam."
 				},
 				{
 					"verse": "20",
@@ -2561,7 +2659,7 @@
 				},
 				{
 					"verse": "34",
-					"text": "He maketh my feet like hinds\u2019 feet: and setteth me upon my high places."
+					"text": "He maketh my feet like hinds’ feet: and setteth me upon my high places."
 				},
 				{
 					"verse": "35",
@@ -2658,6 +2756,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "But the sons of Belial shall be all of them as thorns thrust away, because they cannot be taken with hands:"
 				},
 				{
@@ -2666,6 +2765,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "These be the names of the mighty men whom David had: The Tachmonite that sat in the seat, chief among the captains; the same was Adino the Eznite: he lift up his spear against eight hundred, whom he slew at one time."
 				},
 				{
@@ -2718,7 +2818,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "And he slew an Egyptian, a goodly man: and the Egyptian had a spear in his hand; but he went down to him with a staff, and plucked the spear out of the Egyptian\u2019s hand, and slew him with his own spear."
+					"text": "And he slew an Egyptian, a goodly man: and the Egyptian had a spear in his hand; but he went down to him with a staff, and plucked the spear out of the Egyptian’s hand, and slew him with his own spear."
 				},
 				{
 					"verse": "22",
@@ -2732,7 +2832,10 @@
 					"verse": "24",
 					"text": "Asahel the brother of Joab was one of the thirty; Elhanan the son of Dodo of Bethlehem,"
 				},
-				{ "verse": "25", "text": "Shammah the Harodite, Elika the Harodite," },
+				{
+					"verse": "25",
+					"text": "Shammah the Harodite, Elika the Harodite,"
+				},
 				{
 					"verse": "26",
 					"text": "Helez the Paltite, Ira the son of Ikkesh the Tekoite,"
@@ -2769,7 +2872,10 @@
 					"verse": "34",
 					"text": "Eliphelet the son of Ahasbai, the son of the Maachathite, Eliam the son of Ahithophel the Gilonite,"
 				},
-				{ "verse": "35", "text": "Hezrai the Carmelite, Paarai the Arbite," },
+				{
+					"verse": "35",
+					"text": "Hezrai the Carmelite, Paarai the Arbite,"
+				},
 				{
 					"verse": "36",
 					"text": "Igal the son of Nathan of Zobah, Bani the Gadite,"
@@ -2778,8 +2884,14 @@
 					"verse": "37",
 					"text": "Zelek the Ammonite, Nahari the Beerothite, armourbearer to Joab the son of Zeruiah,"
 				},
-				{ "verse": "38", "text": "Ira an Ithrite, Gareb an Ithrite," },
-				{ "verse": "39", "text": "Uriah the Hittite: thirty and seven in all." }
+				{
+					"verse": "38",
+					"text": "Ira an Ithrite, Gareb an Ithrite,"
+				},
+				{
+					"verse": "39",
+					"text": "Uriah the Hittite: thirty and seven in all."
+				}
 			]
 		},
 		{
@@ -2799,10 +2911,11 @@
 				},
 				{
 					"verse": "4",
-					"text": "Notwithstanding the king\u2019s word prevailed against Joab, and against the captains of the host. And Joab and the captains of the host went out from the presence of the king, to number the people of Israel."
+					"text": "Notwithstanding the king’s word prevailed against Joab, and against the captains of the host. And Joab and the captains of the host went out from the presence of the king, to number the people of Israel."
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And they passed over Jordan, and pitched in Aroer, on the right side of the city that lieth in the midst of the river of Gad, and toward Jazer:"
 				},
 				{
@@ -2823,11 +2936,12 @@
 				},
 				{
 					"verse": "10",
-					"text": "And David\u2019s heart smote him after that he had numbered the people. And David said unto the LORD, I have sinned greatly in that I have done: and now, I beseech thee, O LORD, take away the iniquity of thy servant; for I have done very foolishly."
+					"paragraph": true,
+					"text": "And David’s heart smote him after that he had numbered the people. And David said unto the LORD, I have sinned greatly in that I have done: and now, I beseech thee, O LORD, take away the iniquity of thy servant; for I have done very foolishly."
 				},
 				{
 					"verse": "11",
-					"text": "For when David was up in the morning, the word of the LORD came unto the prophet Gad, David\u2019s seer, saying,"
+					"text": "For when David was up in the morning, the word of the LORD came unto the prophet Gad, David’s seer, saying,"
 				},
 				{
 					"verse": "12",
@@ -2835,7 +2949,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "So Gad came to David, and told him, and said unto him, Shall seven years of famine come unto thee in thy land? or wilt thou flee three months before thine enemies, while they pursue thee? or that there be three days\u2019 pestilence in thy land? now advise, and see what answer I shall return to him that sent me."
+					"text": "So Gad came to David, and told him, and said unto him, Shall seven years of famine come unto thee in thy land? or wilt thou flee three months before thine enemies, while they pursue thee? or that there be three days’ pestilence in thy land? now advise, and see what answer I shall return to him that sent me."
 				},
 				{
 					"verse": "14",
@@ -2843,6 +2957,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "So the LORD sent a pestilence upon Israel from the morning even to the time appointed: and there died of the people from Dan even to Beersheba seventy thousand men."
 				},
 				{
@@ -2851,10 +2966,11 @@
 				},
 				{
 					"verse": "17",
-					"text": "And David spake unto the LORD when he saw the angel that smote the people, and said, Lo, I have sinned, and I have done wickedly: but these sheep, what have they done? let thine hand, I pray thee, be against me, and against my father\u2019s house."
+					"text": "And David spake unto the LORD when he saw the angel that smote the people, and said, Lo, I have sinned, and I have done wickedly: but these sheep, what have they done? let thine hand, I pray thee, be against me, and against my father’s house."
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And Gad came that day to David, and said unto him, Go up, rear an altar unto the LORD in the threshingfloor of Araunah the Jebusite."
 				},
 				{

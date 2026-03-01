@@ -11,7 +11,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "Thus speaketh the LORD of hosts, saying, This people say, The time is not come, the time that the LORD\u2019s house should be built."
+					"text": "Thus speaketh the LORD of hosts, saying, This people say, The time is not come, the time that the LORD’s house should be built."
 				},
 				{
 					"verse": "3",
@@ -31,6 +31,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Thus saith the LORD of hosts; Consider your ways."
 				},
 				{
@@ -51,11 +52,12 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Then Zerubbabel the son of Shealtiel, and Joshua the son of Josedech, the high priest, with all the remnant of the people, obeyed the voice of the LORD their God, and the words of Haggai the prophet, as the LORD their God had sent him, and the people did fear before the LORD."
 				},
 				{
 					"verse": "13",
-					"text": "Then spake Haggai the LORD\u2019s messenger in the LORD\u2019s message unto the people, saying, I am with you, saith the LORD."
+					"text": "Then spake Haggai the LORD’s messenger in the LORD’s message unto the people, saying, I am with you, saith the LORD."
 				},
 				{
 					"verse": "14",
@@ -108,6 +110,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "In the four and twentieth day of the ninth month, in the second year of Darius, came the word of the LORD by Haggai the prophet, saying,"
 				},
 				{
@@ -140,7 +143,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "Consider now from this day and upward, from the four and twentieth day of the ninth month, even from the day that the foundation of the LORD\u2019s temple was laid, consider it."
+					"text": "Consider now from this day and upward, from the four and twentieth day of the ninth month, even from the day that the foundation of the LORD’s temple was laid, consider it."
 				},
 				{
 					"verse": "19",
@@ -148,6 +151,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And again the word of the LORD came unto Haggai in the four and twentieth day of the month, saying,"
 				},
 				{

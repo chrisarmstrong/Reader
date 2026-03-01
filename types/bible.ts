@@ -2,10 +2,12 @@ export interface Verse {
 	verse: string;
 	text: string;
 	paragraph?: boolean;
+	poetry?: boolean;
 }
 
 export interface Chapter {
 	chapter: string;
+	title?: string;
 	verses: Verse[];
 }
 
@@ -54,6 +56,16 @@ export interface VerseRecord {
 	chapter: string;
 	verse: string;
 	text: string;
+	paragraph?: boolean;
+	poetry?: boolean;
+}
+
+export interface ChapterRecord {
+	id: string; // "Psalms-3"
+	book: string;
+	bookIndex: number;
+	chapter: string;
+	title?: string; // psalm superscription
 }
 
 export interface SearchIndexEntry {

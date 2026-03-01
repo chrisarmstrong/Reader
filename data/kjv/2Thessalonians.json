@@ -15,6 +15,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "We are bound to thank God always for you, brethren, as it is meet, because that your faith groweth exceedingly, and the charity of every one of you all toward each other aboundeth;"
 				},
 				{
@@ -108,6 +109,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "But we are bound to give thanks alway to God for you, brethren beloved of the Lord, because God hath from the beginning chosen you to salvation through sanctification of the Spirit and belief of the truth:"
 				},
 				{
@@ -153,6 +155,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Now we command you, brethren, in the name of our Lord Jesus Christ, that ye withdraw yourselves from every brother that walketh disorderly, and not after the tradition which he received of us."
 				},
 				{
@@ -161,7 +164,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "Neither did we eat any man\u2019s bread for nought; but wrought with labour and travail night and day, that we might not be chargeable to any of you:"
+					"text": "Neither did we eat any man’s bread for nought; but wrought with labour and travail night and day, that we might not be chargeable to any of you:"
 				},
 				{
 					"verse": "9",
@@ -197,6 +200,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "The salutation of Paul with mine own hand, which is the token in every epistle: so I write."
 				},
 				{

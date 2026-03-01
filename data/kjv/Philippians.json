@@ -51,6 +51,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "But I would ye should understand, brethren, that the things which happened unto me have fallen out rather unto the furtherance of the gospel;"
 				},
 				{
@@ -176,6 +177,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Wherefore, my beloved, as ye have always obeyed, not as in my presence only, but now much more in my absence, work out your own salvation with fear and trembling."
 				},
 				{
@@ -204,6 +206,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "But I trust in the Lord Jesus to send Timotheus shortly unto you, that I also may be of good comfort, when I know your state."
 				},
 				{
@@ -212,7 +215,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "For all seek their own, not the things which are Jesus Christ\u2019s."
+					"text": "For all seek their own, not the things which are Jesus Christ’s."
 				},
 				{
 					"verse": "22",
@@ -261,6 +264,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "Beware of dogs, beware of evil workers, beware of the concision."
 				},
 				{
@@ -382,6 +386,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "But I rejoiced in the Lord greatly, that now at the last your care of me hath flourished again; wherein ye were also careful, but ye lacked opportunity."
 				},
 				{
@@ -426,14 +431,16 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Salute every saint in Christ Jesus. The brethren which are with me greet you."
 				},
 				{
 					"verse": "22",
-					"text": "All the saints salute you, chiefly they that are of Caesar\u2019s household."
+					"text": "All the saints salute you, chiefly they that are of Caesar’s household."
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "The grace of our Lord Jesus Christ be with you all. Amen."
 				}
 			]

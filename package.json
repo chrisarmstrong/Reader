@@ -11,7 +11,8 @@
 		"test:ui": "vitest --ui",
 		"test:run": "vitest run",
 		"test:coverage": "vitest run --coverage",
-		"convert-crossrefs": "node scripts/convertCrossRefs.mjs"
+		"convert-crossrefs": "node scripts/convertCrossRefs.mjs",
+		"add-paragraphs": "node scripts/addParagraphBreaks.mjs"
 	},
 	"dependencies": {
 		"@mantine/core": "^8.3.12",

@@ -27,6 +27,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Now there was a day when the sons of God came to present themselves before the LORD, and Satan came also among them."
 				},
 				{
@@ -55,7 +56,8 @@
 				},
 				{
 					"verse": "13",
-					"text": "And there was a day when his sons and his daughters were eating and drinking wine in their eldest brother\u2019s house:"
+					"paragraph": true,
+					"text": "And there was a day when his sons and his daughters were eating and drinking wine in their eldest brother’s house:"
 				},
 				{
 					"verse": "14",
@@ -75,7 +77,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "While he was yet speaking, there came also another, and said, Thy sons and thy daughters were eating and drinking wine in their eldest brother\u2019s house:"
+					"text": "While he was yet speaking, there came also another, and said, Thy sons and thy daughters were eating and drinking wine in their eldest brother’s house:"
 				},
 				{
 					"verse": "19",
@@ -87,7 +89,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "And said, Naked came I out of my mother\u2019s womb, and naked shall I return thither: the LORD gave, and the LORD hath taken away; blessed be the name of the LORD."
+					"text": "And said, Naked came I out of my mother’s womb, and naked shall I return thither: the LORD gave, and the LORD hath taken away; blessed be the name of the LORD."
 				},
 				{
 					"verse": "22",
@@ -124,6 +126,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "So went Satan forth from the presence of the LORD, and smote Job with sore boils from the sole of his foot unto his crown."
 				},
 				{
@@ -132,6 +135,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Then said his wife unto him, Dost thou still retain thine integrity? curse God, and die."
 				},
 				{
@@ -140,7 +144,8 @@
 				},
 				{
 					"verse": "11",
-					"text": "Now when Job\u2019s three friends heard of all this evil that was come upon him, they came every one from his own place; Eliphaz the Temanite, and Bildad the Shuhite, and Zophar the Naamathite: for they had made an appointment together to come to mourn with him and to comfort him."
+					"paragraph": true,
+					"text": "Now when Job’s three friends heard of all this evil that was come upon him, they came every one from his own place; Eliphaz the Temanite, and Bildad the Shuhite, and Zophar the Naamathite: for they had made an appointment together to come to mourn with him and to comfort him."
 				},
 				{
 					"verse": "12",
@@ -159,7 +164,10 @@
 					"verse": "1",
 					"text": "After this opened Job his mouth, and cursed his day."
 				},
-				{ "verse": "2", "text": "And Job spake, and said," },
+				{
+					"verse": "2",
+					"text": "And Job spake, and said,"
+				},
 				{
 					"verse": "3",
 					"text": "Let the day perish wherein I was born, and the night in which it was said, There is a man child conceived."
@@ -190,7 +198,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "Because it shut not up the doors of my mother\u2019s womb, nor hid sorrow from mine eyes."
+					"text": "Because it shut not up the doors of my mother’s womb, nor hid sorrow from mine eyes."
 				},
 				{
 					"verse": "11",
@@ -303,7 +311,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "The old lion perisheth for lack of prey, and the stout lion\u2019s whelps are scattered abroad."
+					"text": "The old lion perisheth for lack of prey, and the stout lion’s whelps are scattered abroad."
 				},
 				{
 					"verse": "12",
@@ -463,7 +471,10 @@
 		{
 			"chapter": "6",
 			"verses": [
-				{ "verse": "1", "text": "But Job answered and said," },
+				{
+					"verse": "1",
+					"text": "But Job answered and said,"
+				},
 				{
 					"verse": "2",
 					"text": "Oh that my grief were throughly weighed, and my calamity laid in the balances together!"
@@ -550,7 +561,7 @@
 				},
 				{
 					"verse": "23",
-					"text": "Or, Deliver me from the enemy\u2019s hand? or, Redeem me from the hand of the mighty?"
+					"text": "Or, Deliver me from the enemy’s hand? or, Redeem me from the hand of the mighty?"
 				},
 				{
 					"verse": "24",
@@ -607,7 +618,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "My days are swifter than a weaver\u2019s shuttle, and are spent without hope."
+					"text": "My days are swifter than a weaver’s shuttle, and are spent without hope."
 				},
 				{
 					"verse": "7",
@@ -674,7 +685,10 @@
 		{
 			"chapter": "8",
 			"verses": [
-				{ "verse": "1", "text": "Then answered Bildad the Shuhite, and said," },
+				{
+					"verse": "1",
+					"text": "Then answered Bildad the Shuhite, and said,"
+				},
 				{
 					"verse": "2",
 					"text": "How long wilt thou speak these things? and how long shall the words of thy mouth be like a strong wind?"
@@ -721,11 +735,11 @@
 				},
 				{
 					"verse": "13",
-					"text": "So are the paths of all that forget God; and the hypocrite\u2019s hope shall perish:"
+					"text": "So are the paths of all that forget God; and the hypocrite’s hope shall perish:"
 				},
 				{
 					"verse": "14",
-					"text": "Whose hope shall be cut off, and whose trust shall be a spider\u2019s web."
+					"text": "Whose hope shall be cut off, and whose trust shall be a spider’s web."
 				},
 				{
 					"verse": "15",
@@ -764,7 +778,10 @@
 		{
 			"chapter": "9",
 			"verses": [
-				{ "verse": "1", "text": "Then Job answered and said," },
+				{
+					"verse": "1",
+					"text": "Then Job answered and said,"
+				},
 				{
 					"verse": "2",
 					"text": "I know it is so of a truth: but how should man be just with God?"
@@ -873,7 +890,10 @@
 					"verse": "28",
 					"text": "I am afraid of all my sorrows, I know that thou wilt not hold me innocent."
 				},
-				{ "verse": "29", "text": "If I be wicked, why then labour I in vain?" },
+				{
+					"verse": "29",
+					"text": "If I be wicked, why then labour I in vain?"
+				},
 				{
 					"verse": "30",
 					"text": "If I wash myself with snow water, and make my hands never so clean;"
@@ -921,7 +941,7 @@
 				},
 				{
 					"verse": "5",
-					"text": "Are thy days as the days of man? are thy years as man\u2019s days,"
+					"text": "Are thy days as the days of man? are thy years as man’s days,"
 				},
 				{
 					"verse": "6",
@@ -1042,7 +1062,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "For vain man would be wise, though man be born like a wild ass\u2019s colt."
+					"text": "For vain man would be wise, though man be born like a wild ass’s colt."
 				},
 				{
 					"verse": "13",
@@ -1081,7 +1101,10 @@
 		{
 			"chapter": "12",
 			"verses": [
-				{ "verse": "1", "text": "And Job answered and said," },
+				{
+					"verse": "1",
+					"text": "And Job answered and said,"
+				},
 				{
 					"verse": "2",
 					"text": "No doubt but ye are the people, and wisdom shall die with you."
@@ -1538,7 +1561,10 @@
 		{
 			"chapter": "16",
 			"verses": [
-				{ "verse": "1", "text": "Then Job answered and said," },
+				{
+					"verse": "1",
+					"text": "Then Job answered and said,"
+				},
 				{
 					"verse": "2",
 					"text": "I have heard many such things: miserable comforters are ye all."
@@ -1549,7 +1575,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "I also could speak as ye do: if your soul were in my soul\u2019s stead, I could heap up words against you, and shake mine head at you."
+					"text": "I also could speak as ye do: if your soul were in my soul’s stead, I could heap up words against you, and shake mine head at you."
 				},
 				{
 					"verse": "5",
@@ -1697,7 +1723,10 @@
 		{
 			"chapter": "18",
 			"verses": [
-				{ "verse": "1", "text": "Then answered Bildad the Shuhite, and said," },
+				{
+					"verse": "1",
+					"text": "Then answered Bildad the Shuhite, and said,"
+				},
 				{
 					"verse": "2",
 					"text": "How long will it be ere ye make an end of words? mark, and afterwards we will speak."
@@ -1783,7 +1812,10 @@
 		{
 			"chapter": "19",
 			"verses": [
-				{ "verse": "1", "text": "Then Job answered and said," },
+				{
+					"verse": "1",
+					"text": "Then Job answered and said,"
+				},
 				{
 					"verse": "2",
 					"text": "How long will ye vex my soul, and break me in pieces with words?"
@@ -1846,7 +1878,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "My breath is strange to my wife, though I intreated for the children\u2019s sake of mine own body."
+					"text": "My breath is strange to my wife, though I intreated for the children’s sake of mine own body."
 				},
 				{
 					"verse": "18",
@@ -1963,7 +1995,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "He shall suck the poison of asps: the viper\u2019s tongue shall slay him."
+					"text": "He shall suck the poison of asps: the viper’s tongue shall slay him."
 				},
 				{
 					"verse": "17",
@@ -2022,7 +2054,10 @@
 		{
 			"chapter": "21",
 			"verses": [
-				{ "verse": "1", "text": "But Job answered and said," },
+				{
+					"verse": "1",
+					"text": "But Job answered and said,"
+				},
 				{
 					"verse": "2",
 					"text": "Hear diligently my speech, and let this be your consolations."
@@ -2285,7 +2320,10 @@
 		{
 			"chapter": "23",
 			"verses": [
-				{ "verse": "1", "text": "Then Job answered and said," },
+				{
+					"verse": "1",
+					"text": "Then Job answered and said,"
+				},
 				{
 					"verse": "2",
 					"text": "Even to day is my complaint bitter: my stroke is heavier than my groaning."
@@ -2365,7 +2403,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "They drive away the ass of the fatherless, they take the widow\u2019s ox for a pledge."
+					"text": "They drive away the ass of the fatherless, they take the widow’s ox for a pledge."
 				},
 				{
 					"verse": "4",
@@ -2460,7 +2498,10 @@
 		{
 			"chapter": "25",
 			"verses": [
-				{ "verse": "1", "text": "Then answered Bildad the Shuhite, and said," },
+				{
+					"verse": "1",
+					"text": "Then answered Bildad the Shuhite, and said,"
+				},
 				{
 					"verse": "2",
 					"text": "Dominion and fear are with him, he maketh peace in his high places."
@@ -2486,7 +2527,10 @@
 		{
 			"chapter": "26",
 			"verses": [
-				{ "verse": "1", "text": "But Job answered and said," },
+				{
+					"verse": "1",
+					"text": "But Job answered and said,"
+				},
 				{
 					"verse": "2",
 					"text": "How hast thou helped him that is without power? how savest thou the arm that hath no strength?"
@@ -2667,11 +2711,11 @@
 				},
 				{
 					"verse": "7",
-					"text": "There is a path which no fowl knoweth, and which the vulture\u2019s eye hath not seen:"
+					"text": "There is a path which no fowl knoweth, and which the vulture’s eye hath not seen:"
 				},
 				{
 					"verse": "8",
-					"text": "The lion\u2019s whelps have not trodden it, nor the fierce lion passed by it."
+					"text": "The lion’s whelps have not trodden it, nor the fierce lion passed by it."
 				},
 				{
 					"verse": "9",
@@ -2808,7 +2852,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "The blessing of him that was ready to perish came upon me: and I caused the widow\u2019s heart to sing for joy."
+					"text": "The blessing of him that was ready to perish came upon me: and I caused the widow’s heart to sing for joy."
 				},
 				{
 					"verse": "14",
@@ -3026,7 +3070,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "If mine heart have been deceived by a woman, or if I have laid wait at my neighbour\u2019s door;"
+					"text": "If mine heart have been deceived by a woman, or if I have laid wait at my neighbour’s door;"
 				},
 				{
 					"verse": "10",
@@ -3062,7 +3106,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "(For from my youth he was brought up with me, as with a father, and I have guided her from my mother\u2019s womb;)"
+					"text": "(For from my youth he was brought up with me, as with a father, and I have guided her from my mother’s womb;)"
 				},
 				{
 					"verse": "19",
@@ -3239,7 +3283,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "Let me not, I pray you, accept any man\u2019s person, neither let me give flattering titles unto man."
+					"text": "Let me not, I pray you, accept any man’s person, neither let me give flattering titles unto man."
 				},
 				{
 					"verse": "22",
@@ -3272,7 +3316,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "Behold, I am according to thy wish in God\u2019s stead: I also am formed out of the clay."
+					"text": "Behold, I am according to thy wish in God’s stead: I also am formed out of the clay."
 				},
 				{
 					"verse": "7",
@@ -3348,7 +3392,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "His flesh shall be fresher than a child\u2019s: he shall return to the days of his youth:"
+					"text": "His flesh shall be fresher than a child’s: he shall return to the days of his youth:"
 				},
 				{
 					"verse": "26",
@@ -3387,7 +3431,10 @@
 		{
 			"chapter": "34",
 			"verses": [
-				{ "verse": "1", "text": "Furthermore Elihu answered and said," },
+				{
+					"verse": "1",
+					"text": "Furthermore Elihu answered and said,"
+				},
 				{
 					"verse": "2",
 					"text": "Hear my words, O ye wise men; and give ear unto me, ye that have knowledge."
@@ -3537,10 +3584,13 @@
 		{
 			"chapter": "35",
 			"verses": [
-				{ "verse": "1", "text": "Elihu spake moreover, and said," },
+				{
+					"verse": "1",
+					"text": "Elihu spake moreover, and said,"
+				},
 				{
 					"verse": "2",
-					"text": "Thinkest thou this to be right, that thou saidst, My righteousness is more than God\u2019s?"
+					"text": "Thinkest thou this to be right, that thou saidst, My righteousness is more than God’s?"
 				},
 				{
 					"verse": "3",
@@ -3603,10 +3653,13 @@
 		{
 			"chapter": "36",
 			"verses": [
-				{ "verse": "1", "text": "Elihu also proceeded, and said," },
+				{
+					"verse": "1",
+					"text": "Elihu also proceeded, and said,"
+				},
 				{
 					"verse": "2",
-					"text": "Suffer me a little, and I will shew thee that I have yet to speak on God\u2019s behalf."
+					"text": "Suffer me a little, and I will shew thee that I have yet to speak on God’s behalf."
 				},
 				{
 					"verse": "3",
@@ -4132,12 +4185,19 @@
 		{
 			"chapter": "40",
 			"verses": [
-				{ "verse": "1", "text": "Moreover the LORD answered Job, and said," },
+				{
+					"verse": "1",
+					"text": "Moreover the LORD answered Job, and said,"
+				},
 				{
 					"verse": "2",
 					"text": "Shall he that contendeth with the Almighty instruct him? he that reproveth God, let him answer it."
 				},
-				{ "verse": "3", "text": "Then Job answered the LORD, and said," },
+				{
+					"verse": "3",
+					"paragraph": true,
+					"text": "Then Job answered the LORD, and said,"
+				},
 				{
 					"verse": "4",
 					"text": "Behold, I am vile; what shall I answer thee? I will lay mine hand upon my mouth."
@@ -4148,6 +4208,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Then answered the LORD unto Job out of the whirlwind, and said,"
 				},
 				{
@@ -4184,6 +4245,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Behold now behemoth, which I made with thee; he eateth grass as an ox."
 				},
 				{
@@ -4368,7 +4430,10 @@
 		{
 			"chapter": "42",
 			"verses": [
-				{ "verse": "1", "text": "Then Job answered the LORD, and said," },
+				{
+					"verse": "1",
+					"text": "Then Job answered the LORD, and said,"
+				},
 				{
 					"verse": "2",
 					"text": "I know that thou canst do every thing, and that no thought can be withholden from thee."
@@ -4391,6 +4456,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And it was so, that after the LORD had spoken these words unto Job, the LORD said to Eliphaz the Temanite, My wrath is kindled against thee, and against thy two friends: for ye have not spoken of me the thing that is right, as my servant Job hath."
 				},
 				{
@@ -4427,9 +4493,12 @@
 				},
 				{
 					"verse": "16",
-					"text": "After this lived Job an hundred and forty years, and saw his sons, and his sons\u2019 sons, even four generations."
+					"text": "After this lived Job an hundred and forty years, and saw his sons, and his sons’ sons, even four generations."
 				},
-				{ "verse": "17", "text": "So Job died, being old and full of days." }
+				{
+					"verse": "17",
+					"text": "So Job died, being old and full of days."
+				}
 			]
 		}
 	]

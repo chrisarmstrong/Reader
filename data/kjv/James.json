@@ -11,6 +11,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "My brethren, count it all joy when ye fall into divers temptations;"
 				},
 				{
@@ -65,7 +66,10 @@
 					"verse": "15",
 					"text": "Then when lust hath conceived, it bringeth forth sin: and sin, when it is finished, bringeth forth death."
 				},
-				{ "verse": "16", "text": "Do not err, my beloved brethren." },
+				{
+					"verse": "16",
+					"text": "Do not err, my beloved brethren."
+				},
 				{
 					"verse": "17",
 					"text": "Every good gift and every perfect gift is from above, and cometh down from the Father of lights, with whom is no variableness, neither shadow of turning."
@@ -76,6 +80,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Wherefore, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath:"
 				},
 				{
@@ -104,7 +109,7 @@
 				},
 				{
 					"verse": "26",
-					"text": "If any man among you seem to be religious, and bridleth not his tongue, but deceiveth his own heart, this man\u2019s religion is vain."
+					"text": "If any man among you seem to be religious, and bridleth not his tongue, but deceiveth his own heart, this man’s religion is vain."
 				},
 				{
 					"verse": "27",
@@ -234,7 +239,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "Behold, we put bits in the horses\u2019 mouths, that they may obey us; and we turn about their whole body."
+					"text": "Behold, we put bits in the horses’ mouths, that they may obey us; and we turn about their whole body."
 				},
 				{
 					"verse": "4",
@@ -351,6 +356,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Go to now, ye that say, To day or to morrow we will go into such a city, and continue there a year, and buy and sell, and get gain:"
 				},
 				{
@@ -400,6 +406,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Be patient therefore, brethren, unto the coming of the Lord. Behold, the husbandman waiteth for the precious fruit of the earth, and hath long patience for it, until he receive the early and latter rain."
 				},
 				{

@@ -43,6 +43,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Declare ye it not at Gath, weep ye not at all: in the house of Aphrah roll thyself in the dust."
 				},
 				{
@@ -88,6 +89,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "In that day shall one take up a parable against you, and lament with a doleful lamentation, and say, We be utterly spoiled: he hath changed the portion of my people: how hath he removed it from me! turning away he hath divided our fields."
 				},
 				{
@@ -100,6 +102,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "O thou that art named the house of Jacob, is the spirit of the LORD straitened? are these his doings? do not my words do good to him that walketh uprightly?"
 				},
 				{
@@ -120,6 +123,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "I will surely assemble, O Jacob, all of thee; I will surely gather the remnant of Israel; I will put them together as the sheep of Bozrah, as the flock in the midst of their fold: they shall make great noise by reason of the multitude of men."
 				},
 				{
@@ -149,6 +153,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Thus saith the LORD concerning the prophets that make my people err, that bite with their teeth, and cry, Peace; and he that putteth not into their mouths, they even prepare war against him."
 				},
 				{
@@ -161,6 +166,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "But truly I am full of power by the spirit of the LORD, and of judgment, and of might, to declare unto Jacob his transgression, and to Israel his sin."
 				},
 				{
@@ -194,6 +200,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "And he shall judge among many people, and rebuke strong nations afar off; and they shall beat their swords into plowshares, and their spears into pruninghooks: nation shall not lift up a sword against nation, neither shall they learn war any more."
 				},
 				{
@@ -214,6 +221,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And thou, O tower of the flock, the strong hold of the daughter of Zion, unto thee shall it come, even the first dominion; the kingdom shall come to the daughter of Jerusalem."
 				},
 				{
@@ -226,6 +234,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Now also many nations are gathered against thee, that say, Let her be defiled, and let our eye look upon Zion."
 				},
 				{
@@ -255,6 +264,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And he shall stand and feed in the strength of the LORD, in the majesty of the name of the LORD his God; and they shall abide: for now shall he be great unto the ends of the earth."
 				},
 				{
@@ -271,6 +281,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And the remnant of Jacob shall be among the Gentiles in the midst of many people as a lion among the beasts of the forest, as a young lion among the flocks of sheep: who, if he go through, both treadeth down, and teareth in pieces, and none can deliver."
 				},
 				{
@@ -312,7 +323,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "Hear ye, O mountains, the LORD\u2019s controversy, and ye strong foundations of the earth: for the LORD hath a controversy with his people, and he will plead with Israel."
+					"text": "Hear ye, O mountains, the LORD’s controversy, and ye strong foundations of the earth: for the LORD hath a controversy with his people, and he will plead with Israel."
 				},
 				{
 					"verse": "3",
@@ -328,6 +339,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Wherewith shall I come before the LORD, and bow myself before the high God? shall I come before him with burnt offerings, with calves of a year old?"
 				},
 				{
@@ -340,10 +352,11 @@
 				},
 				{
 					"verse": "9",
-					"text": "The LORD\u2019s voice crieth unto the city, and the man of wisdom shall see thy name: hear ye the rod, and who hath appointed it."
+					"text": "The LORD’s voice crieth unto the city, and the man of wisdom shall see thy name: hear ye the rod, and who hath appointed it."
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Are there yet the treasures of wickedness in the house of the wicked, and the scant measure that is abominable?"
 				},
 				{
@@ -368,6 +381,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "For the statutes of Omri are kept, and all the works of the house of Ahab, and ye walk in their counsels; that I should make thee a desolation, and the inhabitants thereof an hissing: therefore ye shall bear the reproach of my people."
 				}
 			]
@@ -385,6 +399,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "That they may do evil with both hands earnestly, the prince asketh, and the judge asketh for a reward; and the great man, he uttereth his mischievous desire: so they wrap it up."
 				},
 				{
@@ -393,11 +408,12 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Trust ye not in a friend, put ye not confidence in a guide: keep the doors of thy mouth from her that lieth in thy bosom."
 				},
 				{
 					"verse": "6",
-					"text": "For the son dishonoureth the father, the daughter riseth up against her mother, the daughter in law against her mother in law; a man\u2019s enemies are the men of his own house."
+					"text": "For the son dishonoureth the father, the daughter riseth up against her mother, the daughter in law against her mother in law; a man’s enemies are the men of his own house."
 				},
 				{
 					"verse": "7",
@@ -405,6 +421,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Rejoice not against me, O mine enemy: when I fall, I shall arise; when I sit in darkness, the LORD shall be a light unto me."
 				},
 				{
@@ -429,6 +446,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Feed thy people with thy rod, the flock of thine heritage, which dwell solitarily in the wood, in the midst of Carmel: let them feed in Bashan and Gilead, as in the days of old."
 				},
 				{
@@ -437,6 +455,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "The nations shall see and be confounded at all their might: they shall lay their hand upon their mouth, their ears shall be deaf."
 				},
 				{

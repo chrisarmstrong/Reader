@@ -5,12 +5,25 @@
 		{
 			"chapter": "1",
 			"verses": [
-				{ "verse": "1", "text": "Adam, Sheth, Enosh," },
-				{ "verse": "2", "text": "Kenan, Mahalaleel, Jered," },
-				{ "verse": "3", "text": "Henoch, Methuselah, Lamech," },
-				{ "verse": "4", "text": "Noah, Shem, Ham, and Japheth." },
+				{
+					"verse": "1",
+					"text": "Adam, Sheth, Enosh,"
+				},
+				{
+					"verse": "2",
+					"text": "Kenan, Mahalaleel, Jered,"
+				},
+				{
+					"verse": "3",
+					"text": "Henoch, Methuselah, Lamech,"
+				},
+				{
+					"verse": "4",
+					"text": "Noah, Shem, Ham, and Japheth."
+				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "The sons of Japheth; Gomer, and Magog, and Madai, and Javan, and Tubal, and Meshech, and Tiras."
 				},
 				{
@@ -23,6 +36,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "The sons of Ham; Cush, and Mizraim, Put, and Canaan."
 				},
 				{
@@ -59,6 +73,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "The sons of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram, and Uz, and Hul, and Gether, and Meshech."
 				},
 				{
@@ -67,35 +82,62 @@
 				},
 				{
 					"verse": "19",
-					"text": "And unto Eber were born two sons: the name of the one was Peleg; because in his days the earth was divided: and his brother\u2019s name was Joktan."
+					"text": "And unto Eber were born two sons: the name of the one was Peleg; because in his days the earth was divided: and his brother’s name was Joktan."
 				},
 				{
 					"verse": "20",
 					"text": "And Joktan begat Almodad, and Sheleph, and Hazarmaveth, and Jerah,"
 				},
-				{ "verse": "21", "text": "Hadoram also, and Uzal, and Diklah," },
-				{ "verse": "22", "text": "And Ebal, and Abimael, and Sheba," },
+				{
+					"verse": "21",
+					"text": "Hadoram also, and Uzal, and Diklah,"
+				},
+				{
+					"verse": "22",
+					"text": "And Ebal, and Abimael, and Sheba,"
+				},
 				{
 					"verse": "23",
 					"text": "And Ophir, and Havilah, and Jobab. All these were the sons of Joktan."
 				},
-				{ "verse": "24", "text": "Shem, Arphaxad, Shelah," },
-				{ "verse": "25", "text": "Eber, Peleg, Reu," },
-				{ "verse": "26", "text": "Serug, Nahor, Terah," },
-				{ "verse": "27", "text": "Abram; the same is Abraham." },
-				{ "verse": "28", "text": "The sons of Abraham; Isaac, and Ishmael." },
+				{
+					"verse": "24",
+					"paragraph": true,
+					"text": "Shem, Arphaxad, Shelah,"
+				},
+				{
+					"verse": "25",
+					"text": "Eber, Peleg, Reu,"
+				},
+				{
+					"verse": "26",
+					"text": "Serug, Nahor, Terah,"
+				},
+				{
+					"verse": "27",
+					"text": "Abram; the same is Abraham."
+				},
+				{
+					"verse": "28",
+					"text": "The sons of Abraham; Isaac, and Ishmael."
+				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "These are their generations: The firstborn of Ishmael, Nebaioth; then Kedar, and Adbeel, and Mibsam,"
 				},
-				{ "verse": "30", "text": "Mishma, and Dumah, Massa, Hadad, and Tema," },
+				{
+					"verse": "30",
+					"text": "Mishma, and Dumah, Massa, Hadad, and Tema,"
+				},
 				{
 					"verse": "31",
 					"text": "Jetur, Naphish, and Kedemah. These are the sons of Ishmael."
 				},
 				{
 					"verse": "32",
-					"text": "Now the sons of Keturah, Abraham\u2019s concubine: she bare Zimran, and Jokshan, and Medan, and Midian, and Ishbak, and Shuah. And the sons of Jokshan; Sheba, and Dedan."
+					"paragraph": true,
+					"text": "Now the sons of Keturah, Abraham’s concubine: she bare Zimran, and Jokshan, and Medan, and Midian, and Ishbak, and Shuah. And the sons of Jokshan; Sheba, and Dedan."
 				},
 				{
 					"verse": "33",
@@ -107,6 +149,7 @@
 				},
 				{
 					"verse": "35",
+					"paragraph": true,
 					"text": "The sons of Esau; Eliphaz, Reuel, and Jeush, and Jaalam, and Korah."
 				},
 				{
@@ -123,7 +166,7 @@
 				},
 				{
 					"verse": "39",
-					"text": "And the sons of Lotan; Hori, and Homam: and Timna was Lotan\u2019s sister."
+					"text": "And the sons of Lotan; Hori, and Homam: and Timna was Lotan’s sister."
 				},
 				{
 					"verse": "40",
@@ -139,6 +182,7 @@
 				},
 				{
 					"verse": "43",
+					"paragraph": true,
 					"text": "Now these are the kings that reigned in the land of Edom before any king reigned over the children of Israel; Bela the son of Beor: and the name of his city was Dinhabah."
 				},
 				{
@@ -167,14 +211,21 @@
 				},
 				{
 					"verse": "50",
-					"text": "And when Baalhanan was dead, Hadad reigned in his stead: and the name of his city was Pai; and his wife\u2019s name was Mehetabel, the daughter of Matred, the daughter of Mezahab."
+					"text": "And when Baalhanan was dead, Hadad reigned in his stead: and the name of his city was Pai; and his wife’s name was Mehetabel, the daughter of Matred, the daughter of Mezahab."
 				},
 				{
 					"verse": "51",
+					"paragraph": true,
 					"text": "Hadad died also. And the dukes of Edom were; duke Timnah, duke Aliah, duke Jetheth,"
 				},
-				{ "verse": "52", "text": "Duke Aholibamah, duke Elah, duke Pinon," },
-				{ "verse": "53", "text": "Duke Kenaz, duke Teman, duke Mibzar," },
+				{
+					"verse": "52",
+					"text": "Duke Aholibamah, duke Elah, duke Pinon,"
+				},
+				{
+					"verse": "53",
+					"text": "Duke Kenaz, duke Teman, duke Mibzar,"
+				},
 				{
 					"verse": "54",
 					"text": "Duke Magdiel, duke Iram. These are the dukes of Edom."
@@ -194,13 +245,17 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "The sons of Judah; Er, and Onan, and Shelah: which three were born unto him of the daughter of Shua the Canaanitess. And Er, the firstborn of Judah, was evil in the sight of the LORD; and he slew him."
 				},
 				{
 					"verse": "4",
 					"text": "And Tamar his daughter in law bore him Pharez and Zerah. All the sons of Judah were five."
 				},
-				{ "verse": "5", "text": "The sons of Pharez; Hezron, and Hamul." },
+				{
+					"verse": "5",
+					"text": "The sons of Pharez; Hezron, and Hamul."
+				},
 				{
 					"verse": "6",
 					"text": "And the sons of Zerah; Zimri, and Ethan, and Heman, and Calcol, and Dara: five of them in all."
@@ -209,7 +264,10 @@
 					"verse": "7",
 					"text": "And the sons of Carmi; Achar, the troubler of Israel, who transgressed in the thing accursed."
 				},
-				{ "verse": "8", "text": "And the sons of Ethan; Azariah." },
+				{
+					"verse": "8",
+					"text": "And the sons of Ethan; Azariah."
+				},
 				{
 					"verse": "9",
 					"text": "The sons also of Hezron, that were born unto him; Jerahmeel, and Ram, and Chelubai."
@@ -222,13 +280,23 @@
 					"verse": "11",
 					"text": "And Nahshon begat Salma, and Salma begat Boaz,"
 				},
-				{ "verse": "12", "text": "And Boaz begat Obed, and Obed begat Jesse," },
+				{
+					"verse": "12",
+					"text": "And Boaz begat Obed, and Obed begat Jesse,"
+				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And Jesse begat his firstborn Eliab, and Abinadab the second, and Shimma the third,"
 				},
-				{ "verse": "14", "text": "Nethaneel the fourth, Raddai the fifth," },
-				{ "verse": "15", "text": "Ozem the sixth, David the seventh:" },
+				{
+					"verse": "14",
+					"text": "Nethaneel the fourth, Raddai the fifth,"
+				},
+				{
+					"verse": "15",
+					"text": "Ozem the sixth, David the seventh:"
+				},
 				{
 					"verse": "16",
 					"text": "Whose sisters were Zeruiah, and Abigail. And the sons of Zeruiah; Abishai, and Joab, and Asahel, three."
@@ -239,15 +307,20 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And Caleb the son of Hezron begat children of Azubah his wife, and of Jerioth: her sons are these; Jesher, and Shobab, and Ardon."
 				},
 				{
 					"verse": "19",
 					"text": "And when Azubah was dead, Caleb took unto him Ephrath, which bare him Hur."
 				},
-				{ "verse": "20", "text": "And Hur begat Uri, and Uri begat Bezaleel." },
+				{
+					"verse": "20",
+					"text": "And Hur begat Uri, and Uri begat Bezaleel."
+				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And afterward Hezron went in to the daughter of Machir the father of Gilead, whom he married when he was threescore years old; and she bare him Segub."
 				},
 				{
@@ -260,10 +333,11 @@
 				},
 				{
 					"verse": "24",
-					"text": "And after that Hezron was dead in Calebephratah, then Abiah Hezron\u2019s wife bare him Ashur the father of Tekoa."
+					"text": "And after that Hezron was dead in Calebephratah, then Abiah Hezron’s wife bare him Ashur the father of Tekoa."
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And the sons of Jerahmeel the firstborn of Hezron were, Ram the firstborn, and Bunah, and Oren, and Ozem, and Ahijah."
 				},
 				{
@@ -300,6 +374,7 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "Now Sheshan had no sons, but daughters. And Sheshan had a servant, an Egyptian, whose name was Jarha."
 				},
 				{
@@ -332,6 +407,7 @@
 				},
 				{
 					"verse": "42",
+					"paragraph": true,
 					"text": "Now the sons of Caleb the brother of Jerahmeel were, Mesha his firstborn, which was the father of Ziph; and the sons of Mareshah the father of Hebron."
 				},
 				{
@@ -348,7 +424,7 @@
 				},
 				{
 					"verse": "46",
-					"text": "And Ephah, Caleb\u2019s concubine, bare Haran, and Moza, and Gazez: and Haran begat Gazez."
+					"text": "And Ephah, Caleb’s concubine, bare Haran, and Moza, and Gazez: and Haran begat Gazez."
 				},
 				{
 					"verse": "47",
@@ -356,7 +432,7 @@
 				},
 				{
 					"verse": "48",
-					"text": "Maachah, Caleb\u2019s concubine, bare Sheber, and Tirhanah."
+					"text": "Maachah, Caleb’s concubine, bare Sheber, and Tirhanah."
 				},
 				{
 					"verse": "49",
@@ -364,6 +440,7 @@
 				},
 				{
 					"verse": "50",
+					"paragraph": true,
 					"text": "These were the sons of Caleb the son of Hur, the firstborn of Ephratah; Shobal the father of Kirjathjearim,"
 				},
 				{
@@ -411,8 +488,14 @@
 					"verse": "5",
 					"text": "And these were born unto him in Jerusalem; Shimea, and Shobab, and Nathan, and Solomon, four, of Bathshua the daughter of Ammiel:"
 				},
-				{ "verse": "6", "text": "Ibhar also, and Elishama, and Eliphelet," },
-				{ "verse": "7", "text": "And Nogah, and Nepheg, and Japhia," },
+				{
+					"verse": "6",
+					"text": "Ibhar also, and Elishama, and Eliphelet,"
+				},
+				{
+					"verse": "7",
+					"text": "And Nogah, and Nepheg, and Japhia,"
+				},
 				{
 					"verse": "8",
 					"text": "And Elishama, and Eliada, and Eliphelet, nine."
@@ -423,7 +506,8 @@
 				},
 				{
 					"verse": "10",
-					"text": "And Solomon\u2019s son was Rehoboam, Abia his son, Asa his son, Jehoshaphat his son,"
+					"paragraph": true,
+					"text": "And Solomon’s son was Rehoboam, Abia his son, Asa his son, Jehoshaphat his son,"
 				},
 				{
 					"verse": "11",
@@ -437,7 +521,10 @@
 					"verse": "13",
 					"text": "Ahaz his son, Hezekiah his son, Manasseh his son,"
 				},
-				{ "verse": "14", "text": "Amon his son, Josiah his son." },
+				{
+					"verse": "14",
+					"text": "Amon his son, Josiah his son."
+				},
 				{
 					"verse": "15",
 					"text": "And the sons of Josiah were, the firstborn Johanan, the second Jehoiakim, the third Zedekiah, the fourth Shallum."
@@ -448,6 +535,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And the sons of Jeconiah; Assir, Salathiel his son,"
 				},
 				{
@@ -501,6 +589,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And Ashur the father of Tekoa had two wives, Helah and Naarah."
 				},
 				{
@@ -517,6 +606,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And Jabez was more honourable than his brethren: and his mother called his name Jabez, saying, Because I bare him with sorrow."
 				},
 				{
@@ -525,6 +615,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And Chelub the brother of Shuah begat Mehir, which was the father of Eshton."
 				},
 				{
@@ -565,6 +656,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "The sons of Shelah the son of Judah were, Er the father of Lecah, and Laadah the father of Mareshah, and the families of the house of them that wrought fine linen, of the house of Ashbea,"
 				},
 				{
@@ -577,6 +669,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "The sons of Simeon were, Nemuel, and Jamin, Jarib, Zerah, and Shaul:"
 				},
 				{
@@ -595,7 +688,10 @@
 					"verse": "28",
 					"text": "And they dwelt at Beersheba, and Moladah, and Hazarshual,"
 				},
-				{ "verse": "29", "text": "And at Bilhah, and at Ezem, and at Tolad," },
+				{
+					"verse": "29",
+					"text": "And at Bilhah, and at Ezem, and at Tolad,"
+				},
 				{
 					"verse": "30",
 					"text": "And at Bethuel, and at Hormah, and at Ziklag,"
@@ -634,6 +730,7 @@
 				},
 				{
 					"verse": "39",
+					"paragraph": true,
 					"text": "And they went to the entrance of Gedor, even unto the east side of the valley, to seek pasture for their flocks."
 				},
 				{
@@ -659,11 +756,11 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Now the sons of Reuben the firstborn of Israel, (for he was the firstborn; but, forasmuch as he defiled his father\u2019s bed, his birthright was given unto the sons of Joseph the son of Israel: and the genealogy is not to be reckoned after the birthright."
+					"text": "Now the sons of Reuben the firstborn of Israel, (for he was the firstborn; but, forasmuch as he defiled his father’s bed, his birthright was given unto the sons of Joseph the son of Israel: and the genealogy is not to be reckoned after the birthright."
 				},
 				{
 					"verse": "2",
-					"text": "For Judah prevailed above his brethren, and of him came the chief ruler; but the birthright was Joseph\u2019s:)"
+					"text": "For Judah prevailed above his brethren, and of him came the chief ruler; but the birthright was Joseph’s:)"
 				},
 				{
 					"verse": "3",
@@ -673,7 +770,10 @@
 					"verse": "4",
 					"text": "The sons of Joel; Shemaiah his son, Gog his son, Shimei his son,"
 				},
-				{ "verse": "5", "text": "Micah his son, Reaia his son, Baal his son," },
+				{
+					"verse": "5",
+					"text": "Micah his son, Reaia his son, Baal his son,"
+				},
 				{
 					"verse": "6",
 					"text": "Beerah his son, whom Tilgathpilneser king of Assyria carried away captive: he was prince of the Reubenites."
@@ -696,6 +796,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And the children of Gad dwelt over against them, in the land of Bashan unto Salcah:"
 				},
 				{
@@ -724,6 +825,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "The sons of Reuben, and the Gadites, and half the tribe of Manasseh, of valiant men, men able to bear buckler and sword, and to shoot with bow, and skilful in war, were four and forty thousand seven hundred and threescore, that went out to the war."
 				},
 				{
@@ -744,6 +846,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And the children of the half tribe of Manasseh dwelt in the land: they increased from Bashan unto Baalhermon and Senir, and unto mount Hermon."
 				},
 				{
@@ -752,6 +855,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And they transgressed against the God of their fathers, and went a whoring after the gods of the people of the land, whom God destroyed before them."
 				},
 				{
@@ -777,6 +881,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Eleazar begat Phinehas, Phinehas begat Abishua,"
 				},
 				{
@@ -801,7 +906,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "And Johanan begat Azariah, (he it is that executed the priest\u2019s office in the temple that Solomon built in Jerusalem:)"
+					"text": "And Johanan begat Azariah, (he it is that executed the priest’s office in the temple that Solomon built in Jerusalem:)"
 				},
 				{
 					"verse": "11",
@@ -825,6 +930,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "The sons of Levi; Gershom, Kohath, and Merari."
 				},
 				{
@@ -957,6 +1063,7 @@
 				},
 				{
 					"verse": "49",
+					"paragraph": true,
 					"text": "But Aaron and his sons offered upon the altar of the burnt offering, and on the altar of incense, and were appointed for all the work of the place most holy, and to make an atonement for Israel, according to all that Moses the servant of God had commanded."
 				},
 				{
@@ -971,9 +1078,13 @@
 					"verse": "52",
 					"text": "Meraioth his son, Amariah his son, Ahitub his son,"
 				},
-				{ "verse": "53", "text": "Zadok his son, Ahimaaz his son." },
+				{
+					"verse": "53",
+					"text": "Zadok his son, Ahimaaz his son."
+				},
 				{
 					"verse": "54",
+					"paragraph": true,
 					"text": "Now these are their dwelling places throughout their castles in their coasts, of the sons of Aaron, of the families of the Kohathites: for theirs was the lot."
 				},
 				{
@@ -1095,7 +1206,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "And the sons of Tola; Uzzi, and Rephaiah, and Jeriel, and Jahmai, and Jibsam, and Shemuel, heads of their father\u2019s house, to wit, of Tola: they were valiant men of might in their generations; whose number was in the days of David two and twenty thousand and six hundred."
+					"text": "And the sons of Tola; Uzzi, and Rephaiah, and Jeriel, and Jahmai, and Jibsam, and Shemuel, heads of their father’s house, to wit, of Tola: they were valiant men of might in their generations; whose number was in the days of David two and twenty thousand and six hundred."
 				},
 				{
 					"verse": "3",
@@ -1111,6 +1222,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "The sons of Benjamin; Bela, and Becher, and Jediael, three."
 				},
 				{
@@ -1139,15 +1251,17 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "The sons of Naphtali; Jahziel, and Guni, and Jezer, and Shallum, the sons of Bilhah."
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "The sons of Manasseh; Ashriel, whom she bare: (but his concubine the Aramitess bare Machir the father of Gilead:"
 				},
 				{
 					"verse": "15",
-					"text": "And Machir took to wife the sister of Huppim and Shuppim, whose sister\u2019s name was Maachah;) and the name of the second was Zelophehad: and Zelophehad had daughters."
+					"text": "And Machir took to wife the sister of Huppim and Shuppim, whose sister’s name was Maachah;) and the name of the second was Zelophehad: and Zelophehad had daughters."
 				},
 				{
 					"verse": "16",
@@ -1167,10 +1281,12 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And the sons of Ephraim; Shuthelah, and Bered his son, and Tahath his son, and Eladah his son, and Tahath his son,"
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And Zabad his son, and Shuthelah his son, and Ezer, and Elead, whom the men of Gath that were born in that land slew, because they came down to take away their cattle."
 				},
 				{
@@ -1179,6 +1295,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And when he went in to his wife, she conceived, and bare a son, and he called his name Beriah, because it went evil with his house."
 				},
 				{
@@ -1193,9 +1310,13 @@
 					"verse": "26",
 					"text": "Laadan his son, Ammihud his son, Elishama his son,"
 				},
-				{ "verse": "27", "text": "Non his son, Jehoshuah his son," },
+				{
+					"verse": "27",
+					"text": "Non his son, Jehoshuah his son,"
+				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "And their possessions and habitations were, Bethel and the towns thereof, and eastward Naaran, and westward Gezer, with the towns thereof; Shechem also and the towns thereof, unto Gaza and the towns thereof:"
 				},
 				{
@@ -1204,6 +1325,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "The sons of Asher; Imnah, and Isuah, and Ishuai, and Beriah, and Serah their sister."
 				},
 				{
@@ -1244,7 +1366,7 @@
 				},
 				{
 					"verse": "40",
-					"text": "All these were the children of Asher, heads of their father\u2019s house, choice and mighty men of valour, chief of the princes. And the number throughout the genealogy of them that were apt to the war and to battle was twenty and six thousand men."
+					"text": "All these were the children of Asher, heads of their father’s house, choice and mighty men of valour, chief of the princes. And the number throughout the genealogy of them that were apt to the war and to battle was twenty and six thousand men."
 				}
 			]
 		},
@@ -1255,13 +1377,22 @@
 					"verse": "1",
 					"text": "Now Benjamin begat Bela his firstborn, Ashbel the second, and Aharah the third,"
 				},
-				{ "verse": "2", "text": "Nohah the fourth, and Rapha the fifth." },
+				{
+					"verse": "2",
+					"text": "Nohah the fourth, and Rapha the fifth."
+				},
 				{
 					"verse": "3",
 					"text": "And the sons of Bela were, Addar, and Gera, and Abihud,"
 				},
-				{ "verse": "4", "text": "And Abishua, and Naaman, and Ahoah," },
-				{ "verse": "5", "text": "And Gera, and Shephuphan, and Huram." },
+				{
+					"verse": "4",
+					"text": "And Abishua, and Naaman, and Ahoah,"
+				},
+				{
+					"verse": "5",
+					"text": "And Gera, and Shephuphan, and Huram."
+				},
 				{
 					"verse": "6",
 					"text": "And these are the sons of Ehud: these are the heads of the fathers of the inhabitants of Geba, and they removed them to Manahath:"
@@ -1282,7 +1413,10 @@
 					"verse": "10",
 					"text": "And Jeuz, and Shachia, and Mirma. These were his sons, heads of the fathers."
 				},
-				{ "verse": "11", "text": "And of Hushim he begat Abitub, and Elpaal." },
+				{
+					"verse": "11",
+					"text": "And of Hushim he begat Abitub, and Elpaal."
+				},
 				{
 					"verse": "12",
 					"text": "The sons of Elpaal; Eber, and Misham, and Shamed, who built Ono, and Lod, with the towns thereof:"
@@ -1291,8 +1425,14 @@
 					"verse": "13",
 					"text": "Beriah also, and Shema, who were heads of the fathers of the inhabitants of Aijalon, who drove away the inhabitants of Gath:"
 				},
-				{ "verse": "14", "text": "And Ahio, Shashak, and Jeremoth," },
-				{ "verse": "15", "text": "And Zebadiah, and Arad, and Ader," },
+				{
+					"verse": "14",
+					"text": "And Ahio, Shashak, and Jeremoth,"
+				},
+				{
+					"verse": "15",
+					"text": "And Zebadiah, and Arad, and Ader,"
+				},
 				{
 					"verse": "16",
 					"text": "And Michael, and Ispah, and Joha, the sons of Beriah;"
@@ -1305,15 +1445,30 @@
 					"verse": "18",
 					"text": "Ishmerai also, and Jezliah, and Jobab, the sons of Elpaal;"
 				},
-				{ "verse": "19", "text": "And Jakim, and Zichri, and Zabdi," },
-				{ "verse": "20", "text": "And Elienai, and Zilthai, and Eliel," },
+				{
+					"verse": "19",
+					"text": "And Jakim, and Zichri, and Zabdi,"
+				},
+				{
+					"verse": "20",
+					"text": "And Elienai, and Zilthai, and Eliel,"
+				},
 				{
 					"verse": "21",
 					"text": "And Adaiah, and Beraiah, and Shimrath, the sons of Shimhi;"
 				},
-				{ "verse": "22", "text": "And Ishpan, and Heber, and Eliel," },
-				{ "verse": "23", "text": "And Abdon, and Zichri, and Hanan," },
-				{ "verse": "24", "text": "And Hananiah, and Elam, and Antothijah," },
+				{
+					"verse": "22",
+					"text": "And Ishpan, and Heber, and Eliel,"
+				},
+				{
+					"verse": "23",
+					"text": "And Abdon, and Zichri, and Hanan,"
+				},
+				{
+					"verse": "24",
+					"text": "And Hananiah, and Elam, and Antothijah,"
+				},
 				{
 					"verse": "25",
 					"text": "And Iphedeiah, and Penuel, the sons of Shashak;"
@@ -1332,19 +1487,23 @@
 				},
 				{
 					"verse": "29",
-					"text": "And at Gibeon dwelt the father of Gibeon; whose wife\u2019s name was Maachah:"
+					"text": "And at Gibeon dwelt the father of Gibeon; whose wife’s name was Maachah:"
 				},
 				{
 					"verse": "30",
 					"text": "And his firstborn son Abdon, and Zur, and Kish, and Baal, and Nadab,"
 				},
-				{ "verse": "31", "text": "And Gedor, and Ahio, and Zacher." },
+				{
+					"verse": "31",
+					"text": "And Gedor, and Ahio, and Zacher."
+				},
 				{
 					"verse": "32",
 					"text": "And Mikloth begat Shimeah. And these also dwelt with their brethren in Jerusalem, over against them."
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "And Ner begat Kish, and Kish begat Saul, and Saul begat Jonathan, and Malchishua, and Abinadab, and Eshbaal."
 				},
 				{
@@ -1373,7 +1532,7 @@
 				},
 				{
 					"verse": "40",
-					"text": "And the sons of Ulam were mighty men of valour, archers, and had many sons, and sons\u2019 sons, an hundred and fifty. All these are of the sons of Benjamin."
+					"text": "And the sons of Ulam were mighty men of valour, archers, and had many sons, and sons’ sons, an hundred and fifty. All these are of the sons of Benjamin."
 				}
 			]
 		},
@@ -1386,6 +1545,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "Now the first inhabitants that dwelt in their possessions in their cities were, the Israelites, the priests, Levites, and the Nethinims."
 				},
 				{
@@ -1418,6 +1578,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And of the priests; Jedaiah, and Jehoiarib, and Jachin,"
 				},
 				{
@@ -1450,7 +1611,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "Who hitherto waited in the king\u2019s gate eastward: they were porters in the companies of the children of Levi."
+					"text": "Who hitherto waited in the king’s gate eastward: they were porters in the companies of the children of Levi."
 				},
 				{
 					"verse": "19",
@@ -1486,6 +1647,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And they lodged round about the house of God, because the charge was upon them, and the opening thereof every morning pertained to them."
 				},
 				{
@@ -1518,7 +1680,8 @@
 				},
 				{
 					"verse": "35",
-					"text": "And in Gibeon dwelt the father of Gibeon, Jehiel, whose wife\u2019s name was Maachah,"
+					"paragraph": true,
+					"text": "And in Gibeon dwelt the father of Gibeon, Jehiel, whose wife’s name was Maachah,"
 				},
 				{
 					"verse": "36",
@@ -1591,6 +1754,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And it came to pass on the morrow, when the Philistines came to strip the slain, that they found Saul and his sons fallen in mount Gilboa."
 				},
 				{
@@ -1603,6 +1767,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And when all Jabeshgilead heard all that the Philistines had done to Saul,"
 				},
 				{
@@ -1611,6 +1776,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "So Saul died for his transgression which he committed against the LORD, even against the word of the LORD, which he kept not, and also for asking counsel of one that had a familiar spirit, to enquire of it;"
 				},
 				{
@@ -1636,6 +1802,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And David and all Israel went to Jerusalem, which is Jebus; where the Jebusites were, the inhabitants of the land."
 				},
 				{
@@ -1660,6 +1827,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "These also are the chief of the mighty men whom David had, who strengthened themselves with him in his kingdom, and with all Israel, to make him king, according to the word of the LORD concerning Israel."
 				},
 				{
@@ -1680,11 +1848,12 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Now three of the thirty captains went down to the rock to David, into the cave of Adullam; and the host of the Philistines encamped in the valley of Rephaim."
 				},
 				{
 					"verse": "16",
-					"text": "And David was then in the hold, and the Philistines\u2019 garrison was then at Bethlehem."
+					"text": "And David was then in the hold, and the Philistines’ garrison was then at Bethlehem."
 				},
 				{
 					"verse": "17",
@@ -1700,6 +1869,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And Abishai the brother of Joab, he was chief of the three: for lifting up his spear against three hundred, he slew them, and had a name among the three."
 				},
 				{
@@ -1712,7 +1882,7 @@
 				},
 				{
 					"verse": "23",
-					"text": "And he slew an Egyptian, a man of great stature, five cubits high; and in the Egyptian\u2019s hand was a spear like a weaver\u2019s beam; and he went down to him with a staff, and plucked the spear out of the Egyptian\u2019s hand, and slew him with his own spear."
+					"text": "And he slew an Egyptian, a man of great stature, five cubits high; and in the Egyptian’s hand was a spear like a weaver’s beam; and he went down to him with a staff, and plucked the spear out of the Egyptian’s hand, and slew him with his own spear."
 				},
 				{
 					"verse": "24",
@@ -1724,14 +1894,21 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "Also the valiant men of the armies were, Asahel the brother of Joab, Elhanan the son of Dodo of Bethlehem,"
 				},
-				{ "verse": "27", "text": "Shammoth the Harorite, Helez the Pelonite," },
+				{
+					"verse": "27",
+					"text": "Shammoth the Harorite, Helez the Pelonite,"
+				},
 				{
 					"verse": "28",
 					"text": "Ira the son of Ikkesh the Tekoite, Abiezer the Antothite,"
 				},
-				{ "verse": "29", "text": "Sibbecai the Hushathite, Ilai the Ahohite," },
+				{
+					"verse": "29",
+					"text": "Sibbecai the Hushathite, Ilai the Ahohite,"
+				},
 				{
 					"verse": "30",
 					"text": "Maharai the Netophathite, Heled the son of Baanah the Netophathite,"
@@ -1772,8 +1949,14 @@
 					"verse": "39",
 					"text": "Zelek the Ammonite, Naharai the Berothite, the armourbearer of Joab the son of Zeruiah,"
 				},
-				{ "verse": "40", "text": "Ira the Ithrite, Gareb the Ithrite," },
-				{ "verse": "41", "text": "Uriah the Hittite, Zabad the son of Ahlai," },
+				{
+					"verse": "40",
+					"text": "Ira the Ithrite, Gareb the Ithrite,"
+				},
+				{
+					"verse": "41",
+					"text": "Uriah the Hittite, Zabad the son of Ahlai,"
+				},
 				{
 					"verse": "42",
 					"text": "Adina the son of Shiza the Reubenite, a captain of the Reubenites, and thirty with him,"
@@ -1794,7 +1977,10 @@
 					"verse": "46",
 					"text": "Eliel the Mahavite, and Jeribai, and Joshaviah, the sons of Elnaam, and Ithmah the Moabite,"
 				},
-				{ "verse": "47", "text": "Eliel, and Obed, and Jasiel the Mesobaite." }
+				{
+					"verse": "47",
+					"text": "Eliel, and Obed, and Jasiel the Mesobaite."
+				}
 			]
 		},
 		{
@@ -1806,7 +1992,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "They were armed with bows, and could use both the right hand and the left in hurling stones and shooting arrows out of a bow, even of Saul\u2019s brethren of Benjamin."
+					"text": "They were armed with bows, and could use both the right hand and the left in hurling stones and shooting arrows out of a bow, even of Saul’s brethren of Benjamin."
 				},
 				{
 					"verse": "3",
@@ -1836,9 +2022,18 @@
 					"verse": "9",
 					"text": "Ezer the first, Obadiah the second, Eliab the third,"
 				},
-				{ "verse": "10", "text": "Mishmannah the fourth, Jeremiah the fifth," },
-				{ "verse": "11", "text": "Attai the sixth, Eliel the seventh," },
-				{ "verse": "12", "text": "Johanan the eighth, Elzabad the ninth," },
+				{
+					"verse": "10",
+					"text": "Mishmannah the fourth, Jeremiah the fifth,"
+				},
+				{
+					"verse": "11",
+					"text": "Attai the sixth, Eliel the seventh,"
+				},
+				{
+					"verse": "12",
+					"text": "Johanan the eighth, Elzabad the ninth,"
+				},
 				{
 					"verse": "13",
 					"text": "Jeremiah the tenth, Machbanai the eleventh."
@@ -1881,6 +2076,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And these are the numbers of the bands that were ready armed to the war, and came to David to Hebron, to turn the kingdom of Saul to him, according to the word of the LORD."
 				},
 				{
@@ -1901,7 +2097,7 @@
 				},
 				{
 					"verse": "28",
-					"text": "And Zadok, a young man mighty of valour, and of his father\u2019s house twenty and two captains."
+					"text": "And Zadok, a young man mighty of valour, and of his father’s house twenty and two captains."
 				},
 				{
 					"verse": "29",
@@ -1990,6 +2186,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And when they came unto the threshingfloor of Chidon, Uzza put forth his hand to hold the ark; for the oxen stumbled."
 				},
 				{
@@ -2027,17 +2224,28 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "And David took more wives at Jerusalem: and David begat more sons and daughters."
 				},
 				{
 					"verse": "4",
 					"text": "Now these are the names of his children which he had in Jerusalem; Shammua, and Shobab, Nathan, and Solomon,"
 				},
-				{ "verse": "5", "text": "And Ibhar, and Elishua, and Elpalet," },
-				{ "verse": "6", "text": "And Nogah, and Nepheg, and Japhia," },
-				{ "verse": "7", "text": "And Elishama, and Beeliada, and Eliphalet." },
+				{
+					"verse": "5",
+					"text": "And Ibhar, and Elishua, and Elpalet,"
+				},
+				{
+					"verse": "6",
+					"text": "And Nogah, and Nepheg, and Japhia,"
+				},
+				{
+					"verse": "7",
+					"text": "And Elishama, and Beeliada, and Eliphalet."
+				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And when the Philistines heard that David was anointed king over all Israel, all the Philistines went up to seek David. And David heard of it, and went out against them."
 				},
 				{
@@ -2179,6 +2387,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "So David, and the elders of Israel, and the captains over thousands, went to bring up the ark of the covenant of the LORD out of the house of Obededom with joy."
 				},
 				{
@@ -2195,6 +2404,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "And it came to pass, as the ark of the covenant of the LORD came to the city of David, that Michal, the daughter of Saul looking out at a window saw king David dancing and playing: and she despised him in her heart."
 				}
 			]
@@ -2216,6 +2426,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And he appointed certain of the Levites to minister before the ark of the LORD, and to record, and to thank and praise the LORD God of Israel:"
 				},
 				{
@@ -2228,6 +2439,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Then on that day David delivered first this psalm to thank the LORD into the hand of Asaph and his brethren."
 				},
 				{
@@ -2348,7 +2560,8 @@
 				},
 				{
 					"verse": "37",
-					"text": "So he left there before the ark of the covenant of the LORD Asaph and his brethren, to minister before the ark continually, as every day\u2019s work required:"
+					"paragraph": true,
+					"text": "So he left there before the ark of the covenant of the LORD Asaph and his brethren, to minister before the ark continually, as every day’s work required:"
 				},
 				{
 					"verse": "38",
@@ -2389,6 +2602,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "And it came to pass the same night, that the word of God came to Nathan, saying,"
 				},
 				{
@@ -2421,6 +2635,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And it shall come to pass, when thy days be expired that thou must go to be with thy fathers, that I will raise up thy seed after thee, which shall be of thy sons; and I will establish his kingdom."
 				},
 				{
@@ -2441,11 +2656,12 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And David the king came and sat before the LORD, and said, Who am I, O LORD God, and what is mine house, that thou hast brought me hitherto?"
 				},
 				{
 					"verse": "17",
-					"text": "And yet this was a small thing in thine eyes, O God; for thou hast also spoken of thy servant\u2019s house for a great while to come, and hast regarded me according to the estate of a man of high degree, O LORD God."
+					"text": "And yet this was a small thing in thine eyes, O God; for thou hast also spoken of thy servant’s house for a great while to come, and hast regarded me according to the estate of a man of high degree, O LORD God."
 				},
 				{
 					"verse": "18",
@@ -2453,7 +2669,7 @@
 				},
 				{
 					"verse": "19",
-					"text": "O LORD, for thy servant\u2019s sake, and according to thine own heart, hast thou done all this greatness, in making known all these great things."
+					"text": "O LORD, for thy servant’s sake, and according to thine own heart, hast thou done all this greatness, in making known all these great things."
 				},
 				{
 					"verse": "20",
@@ -2498,10 +2714,11 @@
 				},
 				{
 					"verse": "2",
-					"text": "And he smote Moab; and the Moabites became David\u2019s servants, and brought gifts."
+					"text": "And he smote Moab; and the Moabites became David’s servants, and brought gifts."
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "And David smote Hadarezer king of Zobah unto Hamath, as he went to stablish his dominion by the river Euphrates."
 				},
 				{
@@ -2514,7 +2731,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "Then David put garrisons in Syriadamascus; and the Syrians became David\u2019s servants, and brought gifts. Thus the LORD preserved David whithersoever he went."
+					"text": "Then David put garrisons in Syriadamascus; and the Syrians became David’s servants, and brought gifts. Thus the LORD preserved David whithersoever he went."
 				},
 				{
 					"verse": "7",
@@ -2526,6 +2743,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Now when Tou king of Hamath heard how David had smitten all the host of Hadarezer king of Zobah;"
 				},
 				{
@@ -2534,6 +2752,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Them also king David dedicated unto the LORD, with the silver and the gold that he brought from all these nations; from Edom, and from Moab, and from the children of Ammon, and from the Philistines, and from Amalek."
 				},
 				{
@@ -2542,10 +2761,12 @@
 				},
 				{
 					"verse": "13",
-					"text": "And he put garrisons in Edom; and all the Edomites became David\u2019s servants. Thus the LORD preserved David whithersoever he went."
+					"paragraph": true,
+					"text": "And he put garrisons in Edom; and all the Edomites became David’s servants. Thus the LORD preserved David whithersoever he went."
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "So David reigned over all Israel, and executed judgment and justice among all his people."
 				},
 				{
@@ -2579,7 +2800,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "Wherefore Hanun took David\u2019s servants, and shaved them, and cut off their garments in the midst hard by their buttocks, and sent them away."
+					"text": "Wherefore Hanun took David’s servants, and shaved them, and cut off their garments in the midst hard by their buttocks, and sent them away."
 				},
 				{
 					"verse": "5",
@@ -2587,6 +2808,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And when the children of Ammon saw that they had made themselves odious to David, Hanun and the children of Ammon sent a thousand talents of silver to hire them chariots and horsemen out of Mesopotamia, and out of Syriamaachah, and out of Zobah."
 				},
 				{
@@ -2627,6 +2849,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And when the Syrians saw that they were put to the worse before Israel, they sent messengers, and drew forth the Syrians that were beyond the river: and Shophach the captain of the host of Hadarezer went before them."
 				},
 				{
@@ -2652,7 +2875,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "And David took the crown of their king from off his head, and found it to weigh a talent of gold, and there were precious stones in it; and it was set upon David\u2019s head: and he brought also exceeding much spoil out of the city."
+					"text": "And David took the crown of their king from off his head, and found it to weigh a talent of gold, and there were precious stones in it; and it was set upon David’s head: and he brought also exceeding much spoil out of the city."
 				},
 				{
 					"verse": "3",
@@ -2660,11 +2883,12 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And it came to pass after this, that there arose war at Gezer with the Philistines; at which time Sibbechai the Hushathite slew Sippai, that was of the children of the giant: and they were subdued."
 				},
 				{
 					"verse": "5",
-					"text": "And there was war again with the Philistines; and Elhanan the son of Jair slew Lahmi the brother of Goliath the Gittite, whose spear staff was like a weaver\u2019s beam."
+					"text": "And there was war again with the Philistines; and Elhanan the son of Jair slew Lahmi the brother of Goliath the Gittite, whose spear staff was like a weaver’s beam."
 				},
 				{
 					"verse": "6",
@@ -2672,7 +2896,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "But when he defied Israel, Jonathan the son of Shimea David\u2019s brother slew him."
+					"text": "But when he defied Israel, Jonathan the son of Shimea David’s brother slew him."
 				},
 				{
 					"verse": "8",
@@ -2693,19 +2917,20 @@
 				},
 				{
 					"verse": "3",
-					"text": "And Joab answered, The LORD make his people an hundred times so many more as they be: but, my lord the king, are they not all my lord\u2019s servants? why then doth my lord require this thing? why will he be a cause of trespass to Israel?"
+					"text": "And Joab answered, The LORD make his people an hundred times so many more as they be: but, my lord the king, are they not all my lord’s servants? why then doth my lord require this thing? why will he be a cause of trespass to Israel?"
 				},
 				{
 					"verse": "4",
-					"text": "Nevertheless the king\u2019s word prevailed against Joab. Wherefore Joab departed, and went throughout all Israel, and came to Jerusalem."
+					"text": "Nevertheless the king’s word prevailed against Joab. Wherefore Joab departed, and went throughout all Israel, and came to Jerusalem."
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And Joab gave the sum of the number of the people unto David. And all they of Israel were a thousand thousand and an hundred thousand men that drew sword: and Judah was four hundred threescore and ten thousand men that drew sword."
 				},
 				{
 					"verse": "6",
-					"text": "But Levi and Benjamin counted he not among them: for the king\u2019s word was abominable to Joab."
+					"text": "But Levi and Benjamin counted he not among them: for the king’s word was abominable to Joab."
 				},
 				{
 					"verse": "7",
@@ -2717,7 +2942,8 @@
 				},
 				{
 					"verse": "9",
-					"text": "And the LORD spake unto Gad, David\u2019s seer, saying,"
+					"paragraph": true,
+					"text": "And the LORD spake unto Gad, David’s seer, saying,"
 				},
 				{
 					"verse": "10",
@@ -2729,7 +2955,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "Either three years\u2019 famine; or three months to be destroyed before thy foes, while that the sword of thine enemies overtaketh thee; or else three days the sword of the LORD, even the pestilence, in the land, and the angel of the LORD destroying throughout all the coasts of Israel. Now therefore advise thyself what word I shall bring again to him that sent me."
+					"text": "Either three years’ famine; or three months to be destroyed before thy foes, while that the sword of thine enemies overtaketh thee; or else three days the sword of the LORD, even the pestilence, in the land, and the angel of the LORD destroying throughout all the coasts of Israel. Now therefore advise thyself what word I shall bring again to him that sent me."
 				},
 				{
 					"verse": "13",
@@ -2737,6 +2963,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "So the LORD sent pestilence upon Israel: and there fell of Israel seventy thousand men."
 				},
 				{
@@ -2749,10 +2976,11 @@
 				},
 				{
 					"verse": "17",
-					"text": "And David said unto God, Is it not I that commanded the people to be numbered? even I it is that have sinned and done evil indeed; but as for these sheep, what have they done? let thine hand, I pray thee, O LORD my God, be on me, and on my father\u2019s house; but not on thy people, that they should be plagued."
+					"text": "And David said unto God, Is it not I that commanded the people to be numbered? even I it is that have sinned and done evil indeed; but as for these sheep, what have they done? let thine hand, I pray thee, O LORD my God, be on me, and on my father’s house; but not on thy people, that they should be plagued."
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Then the angel of the LORD commanded Gad to say to David, that David should go up, and set up an altar unto the LORD in the threshingfloor of Ornan the Jebusite."
 				},
 				{
@@ -2793,6 +3021,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "At that time when David saw that the LORD had answered him in the threshingfloor of Ornan the Jebusite, then he sacrificed there."
 				},
 				{
@@ -2830,6 +3059,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Then he called for Solomon his son, and charged him to build an house for the LORD God of Israel."
 				},
 				{
@@ -2874,6 +3104,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "David also commanded all the princes of Israel to help Solomon his son, saying,"
 				},
 				{
@@ -2895,6 +3126,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "And he gathered together all the princes of Israel, with the priests and the Levites."
 				},
 				{
@@ -2915,6 +3147,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Of the Gershonites were, Laadan, and Shimei."
 				},
 				{
@@ -2931,10 +3164,11 @@
 				},
 				{
 					"verse": "11",
-					"text": "And Jahath was the chief, and Zizah the second: but Jeush and Beriah had not many sons; therefore they were in one reckoning, according to their father\u2019s house."
+					"text": "And Jahath was the chief, and Zizah the second: but Jeush and Beriah had not many sons; therefore they were in one reckoning, according to their father’s house."
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "The sons of Kohath; Amram, Izhar, Hebron, and Uzziel, four."
 				},
 				{
@@ -2957,7 +3191,10 @@
 					"verse": "17",
 					"text": "And the sons of Eliezer were, Rehabiah the chief. And Eliezer had none other sons; but the sons of Rehabiah were very many."
 				},
-				{ "verse": "18", "text": "Of the sons of Izhar; Shelomith the chief." },
+				{
+					"verse": "18",
+					"text": "Of the sons of Izhar; Shelomith the chief."
+				},
 				{
 					"verse": "19",
 					"text": "Of the sons of Hebron; Jeriah the first, Amariah the second, Jahaziel the third, and Jekameam the fourth."
@@ -2968,6 +3205,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "The sons of Merari; Mahli, and Mushi. The sons of Mahli; Eleazar, and Kish."
 				},
 				{
@@ -2980,6 +3218,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "These were the sons of Levi after the house of their fathers; even the chief of the fathers, as they were counted by number of names by their polls, that did the work for the service of the house of the LORD, from the age of twenty years and upward."
 				},
 				{
@@ -3025,7 +3264,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "But Nadab and Abihu died before their father, and had no children: therefore Eleazar and Ithamar executed the priest\u2019s office."
+					"text": "But Nadab and Abihu died before their father, and had no children: therefore Eleazar and Ithamar executed the priest’s office."
 				},
 				{
 					"verse": "3",
@@ -3047,7 +3286,10 @@
 					"verse": "7",
 					"text": "Now the first lot came forth to Jehoiarib, the second to Jedaiah,"
 				},
-				{ "verse": "8", "text": "The third to Harim, the fourth to Seorim," },
+				{
+					"verse": "8",
+					"text": "The third to Harim, the fourth to Seorim,"
+				},
 				{
 					"verse": "9",
 					"text": "The fifth to Malchijah, the sixth to Mijamin,"
@@ -3094,6 +3336,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And the rest of the sons of Levi were these: Of the sons of Amram; Shubael: of the sons of Shubael; Jehdeiah."
 				},
 				{
@@ -3122,9 +3365,13 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "The sons of Merari by Jaaziah; Beno, and Shoham, and Zaccur, and Ibri."
 				},
-				{ "verse": "28", "text": "Of Mahli came Eleazar, who had no sons." },
+				{
+					"verse": "28",
+					"text": "Of Mahli came Eleazar, who had no sons."
+				},
 				{
 					"verse": "29",
 					"text": "Concerning Kish: the son of Kish was Jerahmeel."
@@ -3160,11 +3407,11 @@
 				},
 				{
 					"verse": "5",
-					"text": "All these were the sons of Heman the king\u2019s seer in the words of God, to lift up the horn. And God gave to Heman fourteen sons and three daughters."
+					"text": "All these were the sons of Heman the king’s seer in the words of God, to lift up the horn. And God gave to Heman fourteen sons and three daughters."
 				},
 				{
 					"verse": "6",
-					"text": "All these were under the hands of their father for song in the house of the LORD, with cymbals, psalteries, and harps, for the service of the house of God, according to the king\u2019s order to Asaph, Jeduthun, and Heman."
+					"text": "All these were under the hands of their father for song in the house of the LORD, with cymbals, psalteries, and harps, for the service of the house of God, according to the king’s order to Asaph, Jeduthun, and Heman."
 				},
 				{
 					"verse": "7",
@@ -3172,6 +3419,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And they cast lots, ward against ward, as well the small as the great, the teacher as the scholar."
 				},
 				{
@@ -3321,6 +3569,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And they cast lots, as well the small as the great, according to the house of their fathers, for every gate."
 				},
 				{
@@ -3349,6 +3598,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And of the Levites, Ahijah was over the treasures of the house of God, and over the treasures of the dedicated things."
 				},
 				{
@@ -3385,6 +3635,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "Of the Izharites, Chenaniah and his sons were for the outward business over Israel, for officers and judges."
 				},
 				{
@@ -3466,6 +3717,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Furthermore over the tribes of Israel: the ruler of the Reubenites was Eliezer the son of Zichri: of the Simeonites, Shephatiah the son of Maachah:"
 				},
 				{
@@ -3494,6 +3746,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "But David took not the number of them from twenty years old and under: because the LORD had said he would increase Israel like to the stars of the heavens."
 				},
 				{
@@ -3502,7 +3755,8 @@
 				},
 				{
 					"verse": "25",
-					"text": "And over the king\u2019s treasures was Azmaveth the son of Adiel: and over the storehouses in the fields, in the cities, and in the villages, and in the castles, was Jehonathan the son of Uzziah:"
+					"paragraph": true,
+					"text": "And over the king’s treasures was Azmaveth the son of Adiel: and over the storehouses in the fields, in the cities, and in the villages, and in the castles, was Jehonathan the son of Uzziah:"
 				},
 				{
 					"verse": "26",
@@ -3526,19 +3780,19 @@
 				},
 				{
 					"verse": "31",
-					"text": "And over the flocks was Jaziz the Hagerite. All these were the rulers of the substance which was king David\u2019s."
+					"text": "And over the flocks was Jaziz the Hagerite. All these were the rulers of the substance which was king David’s."
 				},
 				{
 					"verse": "32",
-					"text": "Also Jonathan David\u2019s uncle was a counsellor, a wise man, and a scribe: and Jehiel the son of Hachmoni was with the king\u2019s sons:"
+					"text": "Also Jonathan David’s uncle was a counsellor, a wise man, and a scribe: and Jehiel the son of Hachmoni was with the king’s sons:"
 				},
 				{
 					"verse": "33",
-					"text": "And Ahithophel was the king\u2019s counsellor: and Hushai the Archite was the king\u2019s companion:"
+					"text": "And Ahithophel was the king’s counsellor: and Hushai the Archite was the king’s companion:"
 				},
 				{
 					"verse": "34",
-					"text": "And after Ahithophel was Jehoiada the son of Benaiah, and Abiathar: and the general of the king\u2019s army was Joab."
+					"text": "And after Ahithophel was Jehoiada the son of Benaiah, and Abiathar: and the general of the king’s army was Joab."
 				}
 			]
 		},
@@ -3579,6 +3833,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And thou, Solomon my son, know thou the God of thy father, and serve him with a perfect heart and with a willing mind: for the LORD searcheth all hearts, and understandeth all the imaginations of the thoughts: if thou seek him, he will be found of thee; but if thou forsake him, he will cast thee off for ever."
 				},
 				{
@@ -3587,6 +3842,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Then David gave to Solomon his son the pattern of the porch, and of the houses thereof, and of the treasuries thereof, and of the upper chambers thereof, and of the inner parlours thereof, and of the place of the mercy seat,"
 				},
 				{
@@ -3656,7 +3912,8 @@
 				},
 				{
 					"verse": "6",
-					"text": "Then the chief of the fathers and princes of the tribes of Israel, and the captains of thousands and of hundreds, with the rulers of the king\u2019s work, offered willingly,"
+					"paragraph": true,
+					"text": "Then the chief of the fathers and princes of the tribes of Israel, and the captains of thousands and of hundreds, with the rulers of the king’s work, offered willingly,"
 				},
 				{
 					"verse": "7",
@@ -3672,6 +3929,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Wherefore David blessed the LORD before all the congregation: and David said, Blessed be thou, LORD God of Israel our father, for ever and ever."
 				},
 				{
@@ -3712,6 +3970,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And David said to all the congregation, Now bless the LORD your God. And all the congregation blessed the LORD God of their fathers, and bowed down their heads, and worshipped the LORD, and the king."
 				},
 				{
@@ -3736,6 +3995,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "Thus David the son of Jesse reigned over all Israel."
 				},
 				{

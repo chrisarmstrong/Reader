@@ -7,7 +7,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Paul, a servant of God, and an apostle of Jesus Christ, according to the faith of God\u2019s elect, and the acknowledging of the truth which is after godliness;"
+					"text": "Paul, a servant of God, and an apostle of Jesus Christ, according to the faith of God’s elect, and the acknowledging of the truth which is after godliness;"
 				},
 				{
 					"verse": "2",
@@ -23,6 +23,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "For this cause left I thee in Crete, that thou shouldest set in order the things that are wanting, and ordain elders in every city, as I had appointed thee:"
 				},
 				{
@@ -47,7 +48,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "Whose mouths must be stopped, who subvert whole houses, teaching things which they ought not, for filthy lucre\u2019s sake."
+					"text": "Whose mouths must be stopped, who subvert whole houses, teaching things which they ought not, for filthy lucre’s sake."
 				},
 				{
 					"verse": "12",
@@ -185,6 +186,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "When I shall send Artemas unto thee, or Tychicus, be diligent to come unto me to Nicopolis: for I have determined there to winter."
 				},
 				{
@@ -197,6 +199,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "All that are with me salute thee. Greet them that love us in the faith. Grace be with you all. Amen."
 				}
 			]

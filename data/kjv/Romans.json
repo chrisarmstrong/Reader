@@ -35,6 +35,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "First, I thank my God through Jesus Christ for you all, that your faith is spoken of throughout the whole world."
 				},
 				{
@@ -75,6 +76,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who hold the truth in unrighteousness;"
 				},
 				{
@@ -99,6 +101,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "Wherefore God also gave them up to uncleanness through the lusts of their own hearts, to dishonour their own bodies between themselves:"
 				},
 				{
@@ -204,6 +207,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Behold, thou art called a Jew, and restest in the law, and makest thy boast of God,"
 				},
 				{
@@ -293,6 +297,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "What then? are we better than they? No, in no wise: for we have before proved both Jews and Gentiles, that they are all under sin;"
 				},
 				{
@@ -315,12 +320,25 @@
 					"verse": "14",
 					"text": "Whose mouth is full of cursing and bitterness:"
 				},
-				{ "verse": "15", "text": "Their feet are swift to shed blood:" },
-				{ "verse": "16", "text": "Destruction and misery are in their ways:" },
-				{ "verse": "17", "text": "And the way of peace have they not known:" },
-				{ "verse": "18", "text": "There is no fear of God before their eyes." },
+				{
+					"verse": "15",
+					"text": "Their feet are swift to shed blood:"
+				},
+				{
+					"verse": "16",
+					"text": "Destruction and misery are in their ways:"
+				},
+				{
+					"verse": "17",
+					"text": "And the way of peace have they not known:"
+				},
+				{
+					"verse": "18",
+					"text": "There is no fear of God before their eyes."
+				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Now we know that what things soever the law saith, it saith to them who are under the law: that every mouth may be stopped, and all the world may become guilty before God."
 				},
 				{
@@ -329,6 +347,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "But now the righteousness of God without the law is manifested, being witnessed by the law and the prophets;"
 				},
 				{
@@ -450,7 +469,7 @@
 				},
 				{
 					"verse": "19",
-					"text": "And being not weak in faith, he considered not his own body now dead, when he was about an hundred years old, neither yet the deadness of Sarah\u2019s womb:"
+					"text": "And being not weak in faith, he considered not his own body now dead, when he was about an hundred years old, neither yet the deadness of Sarah’s womb:"
 				},
 				{
 					"verse": "20",
@@ -527,6 +546,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Wherefore, as by one man sin entered into the world, and death by sin; and so death passed upon all men, for that all have sinned:"
 				},
 				{
@@ -535,7 +555,7 @@
 				},
 				{
 					"verse": "14",
-					"text": "Nevertheless death reigned from Adam to Moses, even over them that had not sinned after the similitude of Adam\u2019s transgression, who is the figure of him that was to come."
+					"text": "Nevertheless death reigned from Adam to Moses, even over them that had not sinned after the similitude of Adam’s transgression, who is the figure of him that was to come."
 				},
 				{
 					"verse": "15",
@@ -547,7 +567,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "For if by one man\u2019s offence death reigned by one; much more they which receive abundance of grace and of the gift of righteousness shall reign in life by one, Jesus Christ.)"
+					"text": "For if by one man’s offence death reigned by one; much more they which receive abundance of grace and of the gift of righteousness shall reign in life by one, Jesus Christ.)"
 				},
 				{
 					"verse": "18",
@@ -555,7 +575,7 @@
 				},
 				{
 					"verse": "19",
-					"text": "For as by one man\u2019s disobedience many were made sinners, so by the obedience of one shall many be made righteous."
+					"text": "For as by one man’s disobedience many were made sinners, so by the obedience of one shall many be made righteous."
 				},
 				{
 					"verse": "20",
@@ -594,7 +614,10 @@
 					"verse": "6",
 					"text": "Knowing this, that our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin."
 				},
-				{ "verse": "7", "text": "For he that is dead is freed from sin." },
+				{
+					"verse": "7",
+					"text": "For he that is dead is freed from sin."
+				},
 				{
 					"verse": "8",
 					"text": "Now if we be dead with Christ, we believe that we shall also live with him:"
@@ -690,6 +713,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "What shall we say then? Is the law sin? God forbid. Nay, I had not known sin, but by the law: for I had not known lust, except the law had said, Thou shalt not covet."
 				},
 				{
@@ -815,6 +839,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Therefore, brethren, we are debtors, not to the flesh, to live after the flesh."
 				},
 				{
@@ -839,6 +864,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "For I reckon that the sufferings of this present time are not worthy to be compared with the glory which shall be revealed in us."
 				},
 				{
@@ -899,7 +925,7 @@
 				},
 				{
 					"verse": "33",
-					"text": "Who shall lay any thing to the charge of God\u2019s elect? It is God that justifieth."
+					"text": "Who shall lay any thing to the charge of God’s elect? It is God that justifieth."
 				},
 				{
 					"verse": "34",
@@ -952,6 +978,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Not as though the word of God hath taken none effect. For they are not all Israel, which are of Israel:"
 				},
 				{
@@ -984,6 +1011,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "What shall we say then? Is there unrighteousness with God? God forbid."
 				},
 				{
@@ -1069,7 +1097,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Brethren, my heart\u2019s desire and prayer to God for Israel is, that they might be saved."
+					"text": "Brethren, my heart’s desire and prayer to God for Israel is, that they might be saved."
 				},
 				{
 					"verse": "2",
@@ -1077,7 +1105,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "For they being ignorant of God\u2019s righteousness, and going about to establish their own righteousness, have not submitted themselves unto the righteousness of God."
+					"text": "For they being ignorant of God’s righteousness, and going about to establish their own righteousness, have not submitted themselves unto the righteousness of God."
 				},
 				{
 					"verse": "4",
@@ -1182,6 +1210,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "What then? Israel hath not obtained that which he seeketh for; but the election hath obtained it, and the rest were blinded."
 				},
 				{
@@ -1206,6 +1235,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "For I speak to you Gentiles, inasmuch as I am the apostle of the Gentiles, I magnify mine office:"
 				},
 				{
@@ -1254,6 +1284,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "For I would not, brethren, that ye should be ignorant of this mystery, lest ye should be wise in your own conceits; that blindness in part is happened to Israel, until the fulness of the Gentiles be come in."
 				},
 				{
@@ -1266,7 +1297,7 @@
 				},
 				{
 					"verse": "28",
-					"text": "As concerning the gospel, they are enemies for your sakes: but as touching the election, they are beloved for the fathers\u2019 sakes."
+					"text": "As concerning the gospel, they are enemies for your sakes: but as touching the election, they are beloved for the fathers’ sakes."
 				},
 				{
 					"verse": "29",
@@ -1286,6 +1317,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "O the depth of the riches both of the wisdom and knowledge of God! how unsearchable are his judgments, and his ways past finding out!"
 				},
 				{
@@ -1315,6 +1347,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "For I say, through the grace given unto me, to every man that is among you, not to think of himself more highly than he ought to think; but to think soberly, according as God hath dealt to every man the measure of faith."
 				},
 				{
@@ -1339,6 +1372,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Let love be without dissimulation. Abhor that which is evil; cleave to that which is good."
 				},
 				{
@@ -1416,7 +1450,7 @@
 				},
 				{
 					"verse": "6",
-					"text": "For for this cause pay ye tribute also: for they are God\u2019s ministers, attending continually upon this very thing."
+					"text": "For for this cause pay ye tribute also: for they are God’s ministers, attending continually upon this very thing."
 				},
 				{
 					"verse": "7",
@@ -1469,7 +1503,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "Who art thou that judgest another man\u2019s servant? to his own master he standeth or falleth. Yea, he shall be holden up: for God is able to make him stand."
+					"text": "Who art thou that judgest another man’s servant? to his own master he standeth or falleth. Yea, he shall be holden up: for God is able to make him stand."
 				},
 				{
 					"verse": "5",
@@ -1485,7 +1519,7 @@
 				},
 				{
 					"verse": "8",
-					"text": "For whether we live, we live unto the Lord; and whether we die, we die unto the Lord: whether we live therefore, or die, we are the Lord\u2019s."
+					"text": "For whether we live, we live unto the Lord; and whether we die, we die unto the Lord: whether we live therefore, or die, we are the Lord’s."
 				},
 				{
 					"verse": "9",
@@ -1505,7 +1539,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "Let us not therefore judge one another any more: but judge this rather, that no man put a stumblingblock or an occasion to fall in his brother\u2019s way."
+					"text": "Let us not therefore judge one another any more: but judge this rather, that no man put a stumblingblock or an occasion to fall in his brother’s way."
 				},
 				{
 					"verse": "14",
@@ -1515,7 +1549,10 @@
 					"verse": "15",
 					"text": "But if thy brother be grieved with thy meat, now walkest thou not charitably. Destroy not him with thy meat, for whom Christ died."
 				},
-				{ "verse": "16", "text": "Let not then your good be evil spoken of:" },
+				{
+					"verse": "16",
+					"text": "Let not then your good be evil spoken of:"
+				},
 				{
 					"verse": "17",
 					"text": "For the kingdom of God is not meat and drink; but righteousness, and peace, and joy in the Holy Ghost."
@@ -1575,6 +1612,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Wherefore receive ye one another, as Christ also received us to the glory of God."
 				},
 				{
@@ -1627,7 +1665,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "Yea, so have I strived to preach the gospel, not where Christ was named, lest I should build upon another man\u2019s foundation:"
+					"text": "Yea, so have I strived to preach the gospel, not where Christ was named, lest I should build upon another man’s foundation:"
 				},
 				{
 					"verse": "21",
@@ -1667,7 +1705,8 @@
 				},
 				{
 					"verse": "30",
-					"text": "Now I beseech you, brethren, for the Lord Jesus Christ\u2019s sake, and for the love of the Spirit, that ye strive together with me in your prayers to God for me;"
+					"paragraph": true,
+					"text": "Now I beseech you, brethren, for the Lord Jesus Christ’s sake, and for the love of the Spirit, that ye strive together with me in your prayers to God for me;"
 				},
 				{
 					"verse": "31",
@@ -1677,7 +1716,10 @@
 					"verse": "32",
 					"text": "That I may come unto you with joy by the will of God, and may with you be refreshed."
 				},
-				{ "verse": "33", "text": "Now the God of peace be with you all. Amen." }
+				{
+					"verse": "33",
+					"text": "Now the God of peace be with you all. Amen."
+				}
 			]
 		},
 		{
@@ -1703,19 +1745,25 @@
 					"verse": "5",
 					"text": "Likewise greet the church that is in their house. Salute my well-beloved Epaenetus, who is the firstfruits of Achaia unto Christ."
 				},
-				{ "verse": "6", "text": "Greet Mary, who bestowed much labour on us." },
+				{
+					"verse": "6",
+					"text": "Greet Mary, who bestowed much labour on us."
+				},
 				{
 					"verse": "7",
 					"text": "Salute Andronicus and Junia, my kinsmen, and my fellow-prisoners, who are of note among the apostles, who also were in Christ before me."
 				},
-				{ "verse": "8", "text": "Greet Amplias my beloved in the Lord." },
+				{
+					"verse": "8",
+					"text": "Greet Amplias my beloved in the Lord."
+				},
 				{
 					"verse": "9",
 					"text": "Salute Urbane, our helper in Christ, and Stachys my beloved."
 				},
 				{
 					"verse": "10",
-					"text": "Salute Apelles approved in Christ. Salute them which are of Aristobulus\u2019 household."
+					"text": "Salute Apelles approved in Christ. Salute them which are of Aristobulus’ household."
 				},
 				{
 					"verse": "11",
@@ -1743,6 +1791,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Now I beseech you, brethren, mark them which cause divisions and offences contrary to the doctrine which ye have learned; and avoid them."
 				},
 				{
@@ -1759,6 +1808,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Timotheus my workfellow, and Lucius, and Jason, and Sosipater, my kinsmen, salute you."
 				},
 				{
@@ -1775,6 +1825,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "Now to him that is of power to stablish you according to my gospel, and the preaching of Jesus Christ, according to the revelation of the mystery, which was kept secret since the world began,"
 				},
 				{

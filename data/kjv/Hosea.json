@@ -27,6 +27,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And she conceived again, and bare a daughter. And God said unto him, Call her name Loruhamah: for I will no more have mercy upon the house of Israel; but I will utterly take them away."
 				},
 				{
@@ -35,6 +36,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Now when she had weaned Loruhamah, she conceived, and bare a son."
 				},
 				{
@@ -43,6 +45,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Yet the number of the children of Israel shall be as the sand of the sea, which cannot be measured nor numbered; and it shall come to pass, that in the place where it was said unto them, Ye are not my people, there it shall be said unto them, Ye are the sons of the living God."
 				},
 				{
@@ -76,6 +79,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Therefore, behold, I will hedge up thy way with thorns, and make a wall, that she shall not find her paths."
 				},
 				{
@@ -108,6 +112,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Therefore, behold, I will allure her, and bring her into the wilderness, and speak comfortably unto her."
 				},
 				{
@@ -198,6 +203,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "My people are destroyed for lack of knowledge: because thou hast rejected knowledge, I will also reject thee, that thou shalt be no priest to me: seeing thou hast forgotten the law of thy God, I will also forget thy children."
 				},
 				{
@@ -222,6 +228,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "My people ask counsel at their stocks, and their staff declareth unto them: for the spirit of whoredoms hath caused them to err, and they have gone a whoring from under their God."
 				},
 				{
@@ -234,13 +241,17 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Though thou, Israel, play the harlot, yet let not Judah offend; and come not ye unto Gilgal, neither go ye up to Bethaven, nor swear, The LORD liveth."
 				},
 				{
 					"verse": "16",
 					"text": "For Israel slideth back as a backsliding heifer: now the LORD will feed them as a lamb in a large place."
 				},
-				{ "verse": "17", "text": "Ephraim is joined to idols: let him alone." },
+				{
+					"verse": "17",
+					"text": "Ephraim is joined to idols: let him alone."
+				},
 				{
 					"verse": "18",
 					"text": "Their drink is sour: they have committed whoredom continually: her rulers with shame do love, Give ye."
@@ -312,6 +323,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "I will go and return to my place, till they acknowledge their offence, and seek my face: in their affliction they will seek me early."
 				}
 			]
@@ -333,6 +345,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "O Ephraim, what shall I do unto thee? O Judah, what shall I do unto thee? for your goodness is as a morning cloud, and as the early dew it goeth away."
 				},
 				{
@@ -410,6 +423,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "Ephraim also is like a silly dove without heart: they call to Egypt, they go to Assyria."
 				},
 				{
@@ -455,6 +469,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "Thy calf, O Samaria, hath cast thee off; mine anger is kindled against them: how long will it be ere they attain to innocency?"
 				},
 				{
@@ -508,7 +523,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "They shall not dwell in the LORD\u2019s land; but Ephraim shall return to Egypt, and they shall eat unclean things in Assyria."
+					"text": "They shall not dwell in the LORD’s land; but Ephraim shall return to Egypt, and they shall eat unclean things in Assyria."
 				},
 				{
 					"verse": "4",
@@ -654,6 +669,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "He shall not return into the land of Egypt, but the Assyrian shall be his king, because they refused to return."
 				},
 				{
@@ -715,6 +731,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "He is a merchant, the balances of deceit are in his hand: he loveth to oppress."
 				},
 				{
@@ -768,6 +785,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "I did know thee in the wilderness, in the land of great drought."
 				},
 				{
@@ -808,6 +826,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Though he be fruitful among his brethren, an east wind shall come, the wind of the LORD shall come up from the wilderness, and his spring shall become dry, and his fountain shall be dried up: he shall spoil the treasure of all pleasant vessels."
 				},
 				{
@@ -833,6 +852,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "I will heal their backsliding, I will love them freely: for mine anger is turned away from him."
 				},
 				{

@@ -19,6 +19,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "I thank my God always on your behalf, for the grace of God which is given you by Jesus Christ;"
 				},
 				{
@@ -43,6 +44,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Now I beseech you, brethren, by the name of our Lord Jesus Christ, that ye all speak the same thing, and that there be no divisions among you; but that ye be perfectly joined together in the same mind and in the same judgment."
 				},
 				{
@@ -75,6 +77,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "For the preaching of the cross is to them that perish foolishness; but unto us which are saved it is the power of God."
 				},
 				{
@@ -148,7 +151,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "And my speech and my preaching was not with enticing words of man\u2019s wisdom, but in demonstration of the Spirit and of power:"
+					"text": "And my speech and my preaching was not with enticing words of man’s wisdom, but in demonstration of the Spirit and of power:"
 				},
 				{
 					"verse": "5",
@@ -184,7 +187,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "Which things also we speak, not in the words which man\u2019s wisdom teacheth, but which the Holy Ghost teacheth; comparing spiritual things with spiritual."
+					"text": "Which things also we speak, not in the words which man’s wisdom teacheth, but which the Holy Ghost teacheth; comparing spiritual things with spiritual."
 				},
 				{
 					"verse": "14",
@@ -213,6 +216,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "For ye are yet carnal: for whereas there is among you envying, and strife, and divisions, are ye not carnal, and walk as men?"
 				},
 				{
@@ -237,7 +241,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "For we are labourers together with God: ye are God\u2019s husbandry, ye are God\u2019s building."
+					"text": "For we are labourers together with God: ye are God’s husbandry, ye are God’s building."
 				},
 				{
 					"verse": "10",
@@ -253,15 +257,15 @@
 				},
 				{
 					"verse": "13",
-					"text": "Every man\u2019s work shall be made manifest: for the day shall declare it, because it shall be revealed by fire; and the fire shall try every man\u2019s work of what sort it is."
+					"text": "Every man’s work shall be made manifest: for the day shall declare it, because it shall be revealed by fire; and the fire shall try every man’s work of what sort it is."
 				},
 				{
 					"verse": "14",
-					"text": "If any man\u2019s work abide which he hath built thereupon, he shall receive a reward."
+					"text": "If any man’s work abide which he hath built thereupon, he shall receive a reward."
 				},
 				{
 					"verse": "15",
-					"text": "If any man\u2019s work shall be burned, he shall suffer loss: but he himself shall be saved; yet so as by fire."
+					"text": "If any man’s work shall be burned, he shall suffer loss: but he himself shall be saved; yet so as by fire."
 				},
 				{
 					"verse": "16",
@@ -273,6 +277,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "Let no man deceive himself. If any man among you seemeth to be wise in this world, let him become a fool, that he may be wise."
 				},
 				{
@@ -293,7 +298,7 @@
 				},
 				{
 					"verse": "23",
-					"text": "And ye are Christ\u2019s; and Christ is God\u2019s."
+					"text": "And ye are Christ’s; and Christ is God’s."
 				}
 			]
 		},
@@ -310,7 +315,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "But with me it is a very small thing that I should be judged of you, or of man\u2019s judgment: yea, I judge not mine own self."
+					"text": "But with me it is a very small thing that I should be judged of you, or of man’s judgment: yea, I judge not mine own self."
 				},
 				{
 					"verse": "4",
@@ -338,7 +343,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "We are fools for Christ\u2019s sake, but ye are wise in Christ; we are weak, but ye are strong; ye are honourable, but we are despised."
+					"text": "We are fools for Christ’s sake, but ye are wise in Christ; we are weak, but ye are strong; ye are honourable, but we are despised."
 				},
 				{
 					"verse": "11",
@@ -391,7 +396,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "It is reported commonly that there is fornication among you, and such fornication as is not so much as named among the Gentiles, that one should have his father\u2019s wife."
+					"text": "It is reported commonly that there is fornication among you, and such fornication as is not so much as named among the Gentiles, that one should have his father’s wife."
 				},
 				{
 					"verse": "2",
@@ -492,6 +497,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "All things are lawful unto me, but all things are not expedient: all things are lawful for me, but I will not be brought under the power of any."
 				},
 				{
@@ -524,7 +530,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "For ye are bought with a price: therefore glorify God in your body, and in your spirit, which are God\u2019s."
+					"text": "For ye are bought with a price: therefore glorify God in your body, and in your spirit, which are God’s."
 				}
 			]
 		},
@@ -561,6 +567,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "I say therefore to the unmarried and widows, It is good for them if they abide even as I."
 				},
 				{
@@ -617,7 +624,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "For he that is called in the Lord, being a servant, is the Lord\u2019s freeman: likewise also he that is called, being free, is Christ\u2019s servant."
+					"text": "For he that is called in the Lord, being a servant, is the Lord’s freeman: likewise also he that is called, being free, is Christ’s servant."
 				},
 				{
 					"verse": "23",
@@ -629,6 +636,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "Now concerning virgins I have no commandment of the Lord: yet I give my judgment, as one that hath obtained mercy of the Lord to be faithful."
 				},
 				{
@@ -734,7 +742,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "For if any man see thee which hast knowledge sit at meat in the idol\u2019s temple, shall not the conscience of him which is weak be emboldened to eat those things which are offered to idols;"
+					"text": "For if any man see thee which hast knowledge sit at meat in the idol’s temple, shall not the conscience of him which is weak be emboldened to eat those things which are offered to idols;"
 				},
 				{
 					"verse": "11",
@@ -765,7 +773,10 @@
 					"verse": "3",
 					"text": "Mine answer to them that do examine me is this,"
 				},
-				{ "verse": "4", "text": "Have we not power to eat and to drink?" },
+				{
+					"verse": "4",
+					"text": "Have we not power to eat and to drink?"
+				},
 				{
 					"verse": "5",
 					"text": "Have we not power to lead about a sister, a wife, as well as other apostles, and as the brethren of the Lord, and Cephas?"
@@ -840,7 +851,7 @@
 				},
 				{
 					"verse": "23",
-					"text": "And this I do for the gospel\u2019s sake, that I might be partaker thereof with you."
+					"text": "And this I do for the gospel’s sake, that I might be partaker thereof with you."
 				},
 				{
 					"verse": "24",
@@ -871,7 +882,10 @@
 					"verse": "2",
 					"text": "And were all baptized unto Moses in the cloud and in the sea;"
 				},
-				{ "verse": "3", "text": "And did all eat the same spiritual meat;" },
+				{
+					"verse": "3",
+					"text": "And did all eat the same spiritual meat;"
+				},
 				{
 					"verse": "4",
 					"text": "And did all drink the same spiritual drink: for they drank of that spiritual Rock that followed them: and that Rock was Christ."
@@ -914,6 +928,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Wherefore, my dearly beloved, flee from idolatry."
 				},
 				{
@@ -942,7 +957,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "Ye cannot drink the cup of the Lord, and the cup of devils: ye cannot be partakers of the Lord\u2019s table, and of the table of devils."
+					"text": "Ye cannot drink the cup of the Lord, and the cup of devils: ye cannot be partakers of the Lord’s table, and of the table of devils."
 				},
 				{
 					"verse": "22",
@@ -954,7 +969,7 @@
 				},
 				{
 					"verse": "24",
-					"text": "Let no man seek his own, but every man another\u2019s wealth."
+					"text": "Let no man seek his own, but every man another’s wealth."
 				},
 				{
 					"verse": "25",
@@ -962,7 +977,7 @@
 				},
 				{
 					"verse": "26",
-					"text": "For the earth is the Lord\u2019s, and the fulness thereof."
+					"text": "For the earth is the Lord’s, and the fulness thereof."
 				},
 				{
 					"verse": "27",
@@ -970,11 +985,11 @@
 				},
 				{
 					"verse": "28",
-					"text": "But if any man say unto you, This is offered in sacrifice unto idols, eat not for his sake that shewed it, and for conscience sake: for the earth is the Lord\u2019s, and the fulness thereof:"
+					"text": "But if any man say unto you, This is offered in sacrifice unto idols, eat not for his sake that shewed it, and for conscience sake: for the earth is the Lord’s, and the fulness thereof:"
 				},
 				{
 					"verse": "29",
-					"text": "Conscience, I say, not thine own, but of the other: for why is my liberty judged of another man\u2019s conscience?"
+					"text": "Conscience, I say, not thine own, but of the other: for why is my liberty judged of another man’s conscience?"
 				},
 				{
 					"verse": "30",
@@ -1003,6 +1018,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "Now I praise you, brethren, that ye remember me in all things, and keep the ordinances, as I delivered them to you."
 				},
 				{
@@ -1063,6 +1079,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "Now in this that I declare unto you I praise you not, that ye come together not for the better, but for the worse."
 				},
 				{
@@ -1075,7 +1092,7 @@
 				},
 				{
 					"verse": "20",
-					"text": "When ye come together therefore into one place, this is not to eat the Lord\u2019s supper."
+					"text": "When ye come together therefore into one place, this is not to eat the Lord’s supper."
 				},
 				{
 					"verse": "21",
@@ -1099,7 +1116,7 @@
 				},
 				{
 					"verse": "26",
-					"text": "For as often as ye eat this bread, and drink this cup, ye do shew the Lord\u2019s death till he come."
+					"text": "For as often as ye eat this bread, and drink this cup, ye do shew the Lord’s death till he come."
 				},
 				{
 					"verse": "27",
@@ -1111,7 +1128,7 @@
 				},
 				{
 					"verse": "29",
-					"text": "For he that eateth and drinketh unworthily, eateth and drinketh damnation to himself, not discerning the Lord\u2019s body."
+					"text": "For he that eateth and drinketh unworthily, eateth and drinketh damnation to himself, not discerning the Lord’s body."
 				},
 				{
 					"verse": "30",
@@ -1190,7 +1207,10 @@
 					"verse": "13",
 					"text": "For by one Spirit are we all baptized into one body, whether we be Jews or Gentiles, whether we be bond or free; and have been all made to drink into one Spirit."
 				},
-				{ "verse": "14", "text": "For the body is not one member, but many." },
+				{
+					"verse": "14",
+					"text": "For the body is not one member, but many."
+				},
 				{
 					"verse": "15",
 					"text": "If the foot shall say, Because I am not the hand, I am not of the body; is it therefore not of the body?"
@@ -1576,7 +1596,7 @@
 				},
 				{
 					"verse": "23",
-					"text": "But every man in his own order: Christ the firstfruits; afterward they that are Christ\u2019s at his coming."
+					"text": "But every man in his own order: Christ the firstfruits; afterward they that are Christ’s at his coming."
 				},
 				{
 					"verse": "24",
@@ -1602,7 +1622,10 @@
 					"verse": "29",
 					"text": "Else what shall they do which are baptized for the dead, if the dead rise not at all? why are they then baptized for the dead?"
 				},
-				{ "verse": "30", "text": "And why stand we in jeopardy every hour?" },
+				{
+					"verse": "30",
+					"text": "And why stand we in jeopardy every hour?"
+				},
 				{
 					"verse": "31",
 					"text": "I protest by your rejoicing which I have in Christ Jesus our LORD, I die daily."
@@ -1621,6 +1644,7 @@
 				},
 				{
 					"verse": "35",
+					"paragraph": true,
 					"text": "But some man will say, How are the dead raised up? and with what body do they come?"
 				},
 				{
@@ -1772,7 +1796,10 @@
 					"verse": "13",
 					"text": "Watch ye, stand fast in the faith, quit you like men, be strong."
 				},
-				{ "verse": "14", "text": "Let all your things be done with charity." },
+				{
+					"verse": "14",
+					"text": "Let all your things be done with charity."
+				},
 				{
 					"verse": "15",
 					"text": "I beseech you, brethren, (ye know the house of Stephanas, that it is the firstfruits of Achaia, and that they have addicted themselves to the ministry of the saints,)"
@@ -1791,6 +1818,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "The churches of Asia salute you. Aquila and Priscilla salute you much in the Lord, with the church that is in their house."
 				},
 				{

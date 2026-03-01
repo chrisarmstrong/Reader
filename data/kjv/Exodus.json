@@ -9,9 +9,18 @@
 					"verse": "1",
 					"text": "Now these are the names of the children of Israel, which came into Egypt; every man and his household came with Jacob."
 				},
-				{ "verse": "2", "text": "Reuben, Simeon, Levi, and Judah," },
-				{ "verse": "3", "text": "Issachar, Zebulun, and Benjamin," },
-				{ "verse": "4", "text": "Dan, and Naphtali, Gad, and Asher." },
+				{
+					"verse": "2",
+					"text": "Reuben, Simeon, Levi, and Judah,"
+				},
+				{
+					"verse": "3",
+					"text": "Issachar, Zebulun, and Benjamin,"
+				},
+				{
+					"verse": "4",
+					"text": "Dan, and Naphtali, Gad, and Asher."
+				},
 				{
 					"verse": "5",
 					"text": "And all the souls that came out of the loins of Jacob were seventy souls: for Joseph was in Egypt already."
@@ -22,6 +31,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And the children of Israel were fruitful, and increased abundantly, and multiplied, and waxed exceeding mighty; and the land was filled with them."
 				},
 				{
@@ -54,6 +64,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And the king of Egypt spake to the Hebrew midwives, of which the name of the one was Shiphrah, and the name of the other Puah:"
 				},
 				{
@@ -99,7 +110,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "And when she could not longer hide him, she took for him an ark of bulrushes, and daubed it with slime and with pitch, and put the child therein; and she laid it in the flags by the river\u2019s brink."
+					"text": "And when she could not longer hide him, she took for him an ark of bulrushes, and daubed it with slime and with pitch, and put the child therein; and she laid it in the flags by the river’s brink."
 				},
 				{
 					"verse": "4",
@@ -107,30 +118,32 @@
 				},
 				{
 					"verse": "5",
-					"text": "And the daughter of Pharaoh came down to wash herself at the river; and her maidens walked along by the river\u2019s side; and when she saw the ark among the flags, she sent her maid to fetch it."
+					"paragraph": true,
+					"text": "And the daughter of Pharaoh came down to wash herself at the river; and her maidens walked along by the river’s side; and when she saw the ark among the flags, she sent her maid to fetch it."
 				},
 				{
 					"verse": "6",
-					"text": "And when she had opened it, she saw the child: and, behold, the babe wept. And she had compassion on him, and said, This is one of the Hebrews\u2019 children."
+					"text": "And when she had opened it, she saw the child: and, behold, the babe wept. And she had compassion on him, and said, This is one of the Hebrews’ children."
 				},
 				{
 					"verse": "7",
-					"text": "Then said his sister to Pharaoh\u2019s daughter, Shall I go and call to thee a nurse of the Hebrew women, that she may nurse the child for thee?"
+					"text": "Then said his sister to Pharaoh’s daughter, Shall I go and call to thee a nurse of the Hebrew women, that she may nurse the child for thee?"
 				},
 				{
 					"verse": "8",
-					"text": "And Pharaoh\u2019s daughter said to her, Go. And the maid went and called the child\u2019s mother."
+					"text": "And Pharaoh’s daughter said to her, Go. And the maid went and called the child’s mother."
 				},
 				{
 					"verse": "9",
-					"text": "And Pharaoh\u2019s daughter said unto her, Take this child away, and nurse it for me, and I will give thee thy wages. And the woman took the child, and nursed it."
+					"text": "And Pharaoh’s daughter said unto her, Take this child away, and nurse it for me, and I will give thee thy wages. And the woman took the child, and nursed it."
 				},
 				{
 					"verse": "10",
-					"text": "And the child grew, and she brought him unto Pharaoh\u2019s daughter, and he became her son. And she called his name Moses: and she said, Because I drew him out of the water."
+					"text": "And the child grew, and she brought him unto Pharaoh’s daughter, and he became her son. And she called his name Moses: and she said, Because I drew him out of the water."
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And it came to pass in those days, when Moses was grown, that he went out unto his brethren, and looked on their burdens: and he spied an Egyptian smiting an Hebrew, one of his brethren."
 				},
 				{
@@ -151,7 +164,7 @@
 				},
 				{
 					"verse": "16",
-					"text": "Now the priest of Midian had seven daughters: and they came and drew water, and filled the troughs to water their father\u2019s flock."
+					"text": "Now the priest of Midian had seven daughters: and they came and drew water, and filled the troughs to water their father’s flock."
 				},
 				{
 					"verse": "17",
@@ -179,6 +192,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And it came to pass in process of time, that the king of Egypt died: and the children of Israel sighed by reason of the bondage, and they cried, and their cry came up unto God by reason of the bondage."
 				},
 				{
@@ -220,6 +234,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And the LORD said, I have surely seen the affliction of my people which are in Egypt, and have heard their cry by reason of their taskmasters; for I know their sorrows;"
 				},
 				{
@@ -236,6 +251,7 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And Moses said unto God, Who am I, that I should go unto Pharaoh, and that I should bring forth the children of Israel out of Egypt?"
 				},
 				{
@@ -264,10 +280,11 @@
 				},
 				{
 					"verse": "18",
-					"text": "And they shall hearken to thy voice: and thou shalt come, thou and the elders of Israel, unto the king of Egypt, and ye shall say unto him, The LORD God of the Hebrews hath met with us: and now let us go, we beseech thee, three days\u2019 journey into the wilderness, that we may sacrifice to the LORD our God."
+					"text": "And they shall hearken to thy voice: and thou shalt come, thou and the elders of Israel, unto the king of Egypt, and ye shall say unto him, The LORD God of the Hebrews hath met with us: and now let us go, we beseech thee, three days’ journey into the wilderness, that we may sacrifice to the LORD our God."
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And I am sure that the king of Egypt will not let you go, no, not by a mighty hand."
 				},
 				{
@@ -309,6 +326,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And the LORD said furthermore unto him, Put now thine hand into thy bosom. And he put his hand into his bosom: and when he took it out, behold, his hand was leprous as snow."
 				},
 				{
@@ -325,11 +343,12 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And Moses said unto the LORD, O my LORD, I am not eloquent, neither heretofore, nor since thou hast spoken unto thy servant: but I am slow of speech, and of a slow tongue."
 				},
 				{
 					"verse": "11",
-					"text": "And the LORD said unto him, Who hath made man\u2019s mouth? or who maketh the dumb, or deaf, or the seeing, or the blind? have not I the LORD?"
+					"text": "And the LORD said unto him, Who hath made man’s mouth? or who maketh the dumb, or deaf, or the seeing, or the blind? have not I the LORD?"
 				},
 				{
 					"verse": "12",
@@ -357,6 +376,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And Moses went and returned to Jethro his father in law, and said unto him, Let me go, I pray thee, and return unto my brethren which are in Egypt, and see whether they be yet alive. And Jethro said to Moses, Go in peace."
 				},
 				{
@@ -381,6 +401,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And it came to pass by the way in the inn, that the LORD met him, and sought to kill him."
 				},
 				{
@@ -393,6 +414,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And the LORD said to Aaron, Go into the wilderness to meet Moses. And he went, and met him in the mount of God, and kissed him."
 				},
 				{
@@ -401,6 +423,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "And Moses and Aaron went and gathered together all the elders of the children of Israel:"
 				},
 				{
@@ -426,7 +449,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "And they said, The God of the Hebrews hath met with us: let us go, we pray thee, three days\u2019 journey into the desert, and sacrifice unto the LORD our God; lest he fall upon us with pestilence, or with the sword."
+					"text": "And they said, The God of the Hebrews hath met with us: let us go, we pray thee, three days’ journey into the desert, and sacrifice unto the LORD our God; lest he fall upon us with pestilence, or with the sword."
 				},
 				{
 					"verse": "4",
@@ -454,6 +477,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And the taskmasters of the people went out, and their officers, and they spake to the people, saying, Thus saith Pharaoh, I will not give you straw."
 				},
 				{
@@ -470,10 +494,11 @@
 				},
 				{
 					"verse": "14",
-					"text": "And the officers of the children of Israel, which Pharaoh\u2019s taskmasters had set over them, were beaten, and demanded, Wherefore have ye not fulfilled your task in making brick both yesterday and to day, as heretofore?"
+					"text": "And the officers of the children of Israel, which Pharaoh’s taskmasters had set over them, were beaten, and demanded, Wherefore have ye not fulfilled your task in making brick both yesterday and to day, as heretofore?"
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Then the officers of the children of Israel came and cried unto Pharaoh, saying, Wherefore dealest thou thus with thy servants?"
 				},
 				{
@@ -494,6 +519,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And they met Moses and Aaron, who stood in the way, as they came forth from Pharaoh:"
 				},
 				{
@@ -547,9 +573,13 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And Moses spake so unto the children of Israel: but they hearkened not unto Moses for anguish of spirit, and for cruel bondage."
 				},
-				{ "verse": "10", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "10",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "11",
 					"text": "Go in, speak unto Pharaoh king of Egypt, that he let the children of Israel go out of his land."
@@ -564,7 +594,8 @@
 				},
 				{
 					"verse": "14",
-					"text": "These be the heads of their fathers\u2019 houses: The sons of Reuben the firstborn of Israel; Hanoch, and Pallu, Hezron, and Carmi: these be the families of Reuben."
+					"paragraph": true,
+					"text": "These be the heads of their fathers’ houses: The sons of Reuben the firstborn of Israel; Hanoch, and Pallu, Hezron, and Carmi: these be the families of Reuben."
 				},
 				{
 					"verse": "15",
@@ -572,6 +603,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And these are the names of the sons of Levi according to their generations; Gershon, and Kohath, and Merari: and the years of the life of Levi were an hundred thirty and seven years."
 				},
 				{
@@ -588,10 +620,11 @@
 				},
 				{
 					"verse": "20",
-					"text": "And Amram took him Jochebed his father\u2019s sister to wife; and she bare him Aaron and Moses: and the years of the life of Amram were an hundred and thirty and seven years."
+					"text": "And Amram took him Jochebed his father’s sister to wife; and she bare him Aaron and Moses: and the years of the life of Amram were an hundred and thirty and seven years."
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And the sons of Izhar; Korah, and Nepheg, and Zichri."
 				},
 				{
@@ -608,7 +641,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "And Eleazar Aaron\u2019s son took him one of the daughters of Putiel to wife; and she bare him Phinehas: these are the heads of the fathers of the Levites according to their families."
+					"text": "And Eleazar Aaron’s son took him one of the daughters of Putiel to wife; and she bare him Phinehas: these are the heads of the fathers of the Levites according to their families."
 				},
 				{
 					"verse": "26",
@@ -620,6 +653,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "And it came to pass on the day when the LORD spake unto Moses in the land of Egypt,"
 				},
 				{
@@ -645,7 +679,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "And I will harden Pharaoh\u2019s heart, and multiply my signs and my wonders in the land of Egypt."
+					"text": "And I will harden Pharaoh’s heart, and multiply my signs and my wonders in the land of Egypt."
 				},
 				{
 					"verse": "4",
@@ -665,6 +699,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And the LORD spake unto Moses and unto Aaron, saying,"
 				},
 				{
@@ -673,6 +708,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And Moses and Aaron went in unto Pharaoh, and they did so as the LORD had commanded: and Aaron cast down his rod before Pharaoh, and before his servants, and it became a serpent."
 				},
 				{
@@ -681,19 +717,20 @@
 				},
 				{
 					"verse": "12",
-					"text": "For they cast down every man his rod, and they became serpents: but Aaron\u2019s rod swallowed up their rods."
+					"text": "For they cast down every man his rod, and they became serpents: but Aaron’s rod swallowed up their rods."
 				},
 				{
 					"verse": "13",
-					"text": "And he hardened Pharaoh\u2019s heart, that he hearkened not unto them; as the LORD had said."
+					"text": "And he hardened Pharaoh’s heart, that he hearkened not unto them; as the LORD had said."
 				},
 				{
 					"verse": "14",
-					"text": "And the LORD said unto Moses, Pharaoh\u2019s heart is hardened, he refuseth to let the people go."
+					"paragraph": true,
+					"text": "And the LORD said unto Moses, Pharaoh’s heart is hardened, he refuseth to let the people go."
 				},
 				{
 					"verse": "15",
-					"text": "Get thee unto Pharaoh in the morning; lo, he goeth out unto the water; and thou shalt stand by the river\u2019s brink against he come; and the rod which was turned to a serpent shalt thou take in thine hand."
+					"text": "Get thee unto Pharaoh in the morning; lo, he goeth out unto the water; and thou shalt stand by the river’s brink against he come; and the rod which was turned to a serpent shalt thou take in thine hand."
 				},
 				{
 					"verse": "16",
@@ -709,6 +746,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And the LORD spake unto Moses, Say unto Aaron, Take thy rod, and stretch out thine hand upon the waters of Egypt, upon their streams, upon their rivers, and upon their ponds, and upon all their pools of water, that they may become blood; and that there may be blood throughout all the land of Egypt, both in vessels of wood, and in vessels of stone."
 				},
 				{
@@ -721,7 +759,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "And the magicians of Egypt did so with their enchantments: and Pharaoh\u2019s heart was hardened, neither did he hearken unto them; as the LORD had said."
+					"text": "And the magicians of Egypt did so with their enchantments: and Pharaoh’s heart was hardened, neither did he hearken unto them; as the LORD had said."
 				},
 				{
 					"verse": "23",
@@ -758,6 +796,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And the LORD spake unto Moses, Say unto Aaron, Stretch forth thine hand with thy rod over the streams, over the rivers, and over the ponds, and cause frogs to come up upon the land of Egypt."
 				},
 				{
@@ -770,6 +809,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Then Pharaoh called for Moses and Aaron, and said, Intreat the LORD, that he may take away the frogs from me, and from my people; and I will let the people go, that they may do sacrifice unto the LORD."
 				},
 				{
@@ -802,6 +842,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Say unto Aaron, Stretch out thy rod, and smite the dust of the land, that it may become lice throughout all the land of Egypt."
 				},
 				{
@@ -814,10 +855,11 @@
 				},
 				{
 					"verse": "19",
-					"text": "Then the magicians said unto Pharaoh, This is the finger of God: and Pharaoh\u2019s heart was hardened, and he hearkened not unto them; as the LORD had said."
+					"text": "Then the magicians said unto Pharaoh, This is the finger of God: and Pharaoh’s heart was hardened, and he hearkened not unto them; as the LORD had said."
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Rise up early in the morning, and stand before Pharaoh; lo, he cometh forth to the water; and say unto him, Thus saith the LORD, Let my people go, that they may serve me."
 				},
 				{
@@ -834,10 +876,11 @@
 				},
 				{
 					"verse": "24",
-					"text": "And the LORD did so; and there came a grievous swarm of flies into the house of Pharaoh, and into his servants\u2019 houses, and into all the land of Egypt: the land was corrupted by reason of the swarm of flies."
+					"text": "And the LORD did so; and there came a grievous swarm of flies into the house of Pharaoh, and into his servants’ houses, and into all the land of Egypt: the land was corrupted by reason of the swarm of flies."
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And Pharaoh called for Moses and for Aaron, and said, Go ye, sacrifice to your God in the land."
 				},
 				{
@@ -846,7 +889,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "We will go three days\u2019 journey into the wilderness, and sacrifice to the LORD our God, as he shall command us."
+					"text": "We will go three days’ journey into the wilderness, and sacrifice to the LORD our God, as he shall command us."
 				},
 				{
 					"verse": "28",
@@ -887,7 +930,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "And the LORD shall sever between the cattle of Israel and the cattle of Egypt: and there shall nothing die of all that is the children\u2019s of Israel."
+					"text": "And the LORD shall sever between the cattle of Israel and the cattle of Egypt: and there shall nothing die of all that is the children’s of Israel."
 				},
 				{
 					"verse": "5",
@@ -903,6 +946,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses and unto Aaron, Take to you handfuls of ashes of the furnace, and let Moses sprinkle it toward the heaven in the sight of Pharaoh."
 				},
 				{
@@ -923,6 +967,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Rise up early in the morning, and stand before Pharaoh, and say unto him, Thus saith the LORD God of the Hebrews, Let my people go, that they may serve me."
 				},
 				{
@@ -959,6 +1004,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Stretch forth thine hand toward heaven, that there may be hail in all the land of Egypt, upon man, and upon beast, and upon every herb of the field, throughout the land of Egypt."
 				},
 				{
@@ -979,6 +1025,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And Pharaoh sent, and called for Moses and Aaron, and said unto them, I have sinned this time: the LORD is righteous, and I and my people are wicked."
 				},
 				{
@@ -987,7 +1034,7 @@
 				},
 				{
 					"verse": "29",
-					"text": "And Moses said unto him, As soon as I am gone out of the city, I will spread abroad my hands unto the LORD; and the thunder shall cease, neither shall there be any more hail; that thou mayest know how that the earth is the LORD\u2019s."
+					"text": "And Moses said unto him, As soon as I am gone out of the city, I will spread abroad my hands unto the LORD; and the thunder shall cease, neither shall there be any more hail; that thou mayest know how that the earth is the LORD’s."
 				},
 				{
 					"verse": "30",
@@ -1024,7 +1071,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "And that thou mayest tell in the ears of thy son, and of thy son\u2019s son, what things I have wrought in Egypt, and my signs which I have done among them; that ye may know how that I am the LORD."
+					"text": "And that thou mayest tell in the ears of thy son, and of thy son’s son, what things I have wrought in Egypt, and my signs which I have done among them; that ye may know how that I am the LORD."
 				},
 				{
 					"verse": "3",
@@ -1040,11 +1087,11 @@
 				},
 				{
 					"verse": "6",
-					"text": "And they shall fill thy houses, and the houses of all thy servants, and the houses of all the Egyptians; which neither thy fathers, nor thy fathers\u2019 fathers have seen, since the day that they were upon the earth unto this day. And he turned himself, and went out from Pharaoh."
+					"text": "And they shall fill thy houses, and the houses of all thy servants, and the houses of all the Egyptians; which neither thy fathers, nor thy fathers’ fathers have seen, since the day that they were upon the earth unto this day. And he turned himself, and went out from Pharaoh."
 				},
 				{
 					"verse": "7",
-					"text": "And Pharaoh\u2019s servants said unto him, How long shall this man be a snare unto us? let the men go, that they may serve the LORD their God: knowest thou not yet that Egypt is destroyed?"
+					"text": "And Pharaoh’s servants said unto him, How long shall this man be a snare unto us? let the men go, that they may serve the LORD their God: knowest thou not yet that Egypt is destroyed?"
 				},
 				{
 					"verse": "8",
@@ -1060,10 +1107,11 @@
 				},
 				{
 					"verse": "11",
-					"text": "Not so: go now ye that are men, and serve the LORD; for that ye did desire. And they were driven out from Pharaoh\u2019s presence."
+					"text": "Not so: go now ye that are men, and serve the LORD; for that ye did desire. And they were driven out from Pharaoh’s presence."
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Stretch out thine hand over the land of Egypt for the locusts, that they may come up upon the land of Egypt, and eat every herb of the land, even all that the hail hath left."
 				},
 				{
@@ -1080,6 +1128,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "Then Pharaoh called for Moses and Aaron in haste; and he said, I have sinned against the LORD your God, and against you."
 				},
 				{
@@ -1096,10 +1145,11 @@
 				},
 				{
 					"verse": "20",
-					"text": "But the LORD hardened Pharaoh\u2019s heart, so that he would not let the children of Israel go."
+					"text": "But the LORD hardened Pharaoh’s heart, so that he would not let the children of Israel go."
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Stretch out thine hand toward heaven, that there may be darkness over the land of Egypt, even darkness which may be felt."
 				},
 				{
@@ -1112,6 +1162,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And Pharaoh called unto Moses, and said, Go ye, serve the LORD; only let your flocks and your herds be stayed: let your little ones also go with you."
 				},
 				{
@@ -1124,7 +1175,8 @@
 				},
 				{
 					"verse": "27",
-					"text": "But the LORD hardened Pharaoh\u2019s heart, and he would not let them go."
+					"paragraph": true,
+					"text": "But the LORD hardened Pharaoh’s heart, and he would not let them go."
 				},
 				{
 					"verse": "28",
@@ -1149,7 +1201,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "And the LORD gave the people favour in the sight of the Egyptians. Moreover the man Moses was very great in the land of Egypt, in the sight of Pharaoh\u2019s servants, and in the sight of the people."
+					"text": "And the LORD gave the people favour in the sight of the Egyptians. Moreover the man Moses was very great in the land of Egypt, in the sight of Pharaoh’s servants, and in the sight of the people."
 				},
 				{
 					"verse": "4",
@@ -1177,7 +1229,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "And Moses and Aaron did all these wonders before Pharaoh: and the LORD hardened Pharaoh\u2019s heart, so that he would not let the children of Israel go out of his land."
+					"text": "And Moses and Aaron did all these wonders before Pharaoh: and the LORD hardened Pharaoh’s heart, so that he would not let the children of Israel go out of his land."
 				}
 			]
 		},
@@ -1194,6 +1246,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Speak ye unto all the congregation of Israel, saying, In the tenth day of this month they shall take to them every man a lamb, according to the house of their fathers, a lamb for an house:"
 				},
 				{
@@ -1226,7 +1279,8 @@
 				},
 				{
 					"verse": "11",
-					"text": "And thus shall ye eat it; with your loins girded, your shoes on your feet, and your staff in your hand; and ye shall eat it in haste: it is the LORD\u2019s passover."
+					"paragraph": true,
+					"text": "And thus shall ye eat it; with your loins girded, your shoes on your feet, and your staff in your hand; and ye shall eat it in haste: it is the LORD’s passover."
 				},
 				{
 					"verse": "12",
@@ -1254,6 +1308,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "In the first month, on the fourteenth day of the month at even, ye shall eat unleavened bread, until the one and twentieth day of the month at even."
 				},
 				{
@@ -1266,6 +1321,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Then Moses called for all the elders of Israel, and said unto them, Draw out and take you a lamb according to your families, and kill the passover."
 				},
 				{
@@ -1290,7 +1346,7 @@
 				},
 				{
 					"verse": "27",
-					"text": "That ye shall say, It is the sacrifice of the LORD\u2019s passover, who passed over the houses of the children of Israel in Egypt, when he smote the Egyptians, and delivered our houses. And the people bowed the head and worshipped."
+					"text": "That ye shall say, It is the sacrifice of the LORD’s passover, who passed over the houses of the children of Israel in Egypt, when he smote the Egyptians, and delivered our houses. And the people bowed the head and worshipped."
 				},
 				{
 					"verse": "28",
@@ -1298,6 +1354,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "And it came to pass, that at midnight the LORD smote all the firstborn in the land of Egypt, from the firstborn of Pharaoh that sat on his throne unto the firstborn of the captive that was in the dungeon; and all the firstborn of cattle."
 				},
 				{
@@ -1306,6 +1363,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And he called for Moses and Aaron by night, and said, Rise up, and get you forth from among my people, both ye and the children of Israel; and go, serve the LORD, as ye have said."
 				},
 				{
@@ -1330,6 +1388,7 @@
 				},
 				{
 					"verse": "37",
+					"paragraph": true,
 					"text": "And the children of Israel journeyed from Rameses to Succoth, about six hundred thousand on foot that were men, beside children."
 				},
 				{
@@ -1342,6 +1401,7 @@
 				},
 				{
 					"verse": "40",
+					"paragraph": true,
 					"text": "Now the sojourning of the children of Israel, who dwelt in Egypt, was four hundred and thirty years."
 				},
 				{
@@ -1354,11 +1414,12 @@
 				},
 				{
 					"verse": "43",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses and Aaron, This is the ordinance of the passover: There shall no stranger eat thereof:"
 				},
 				{
 					"verse": "44",
-					"text": "But every man\u2019s servant that is bought for money, when thou hast circumcised him, then shall he eat thereof."
+					"text": "But every man’s servant that is bought for money, when thou hast circumcised him, then shall he eat thereof."
 				},
 				{
 					"verse": "45",
@@ -1393,18 +1454,26 @@
 		{
 			"chapter": "13",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Sanctify unto me all the firstborn, whatsoever openeth the womb among the children of Israel, both of man and of beast: it is mine."
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "And Moses said unto the people, Remember this day, in which ye came out from Egypt, out of the house of bondage; for by strength of hand the LORD brought you out from this place: there shall no leavened bread be eaten."
 				},
-				{ "verse": "4", "text": "This day came ye out in the month Abib." },
+				{
+					"verse": "4",
+					"text": "This day came ye out in the month Abib."
+				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And it shall be when the LORD shall bring thee into the land of the Canaanites, and the Hittites, and the Amorites, and the Hivites, and the Jebusites, which he sware unto thy fathers to give thee, a land flowing with milk and honey, that thou shalt keep this service in this month."
 				},
 				{
@@ -1417,11 +1486,12 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And thou shalt shew thy son in that day, saying, This is done because of that which the LORD did unto me when I came forth out of Egypt."
 				},
 				{
 					"verse": "9",
-					"text": "And it shall be for a sign unto thee upon thine hand, and for a memorial between thine eyes, that the LORD\u2019s law may be in thy mouth: for with a strong hand hath the LORD brought thee out of Egypt."
+					"text": "And it shall be for a sign unto thee upon thine hand, and for a memorial between thine eyes, that the LORD’s law may be in thy mouth: for with a strong hand hath the LORD brought thee out of Egypt."
 				},
 				{
 					"verse": "10",
@@ -1429,11 +1499,12 @@
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And it shall be when the LORD shall bring thee into the land of the Canaanites, as he sware unto thee and to thy fathers, and shall give it thee,"
 				},
 				{
 					"verse": "12",
-					"text": "That thou shalt set apart unto the LORD all that openeth the matrix, and every firstling that cometh of a beast which thou hast; the males shall be the LORD\u2019s."
+					"text": "That thou shalt set apart unto the LORD all that openeth the matrix, and every firstling that cometh of a beast which thou hast; the males shall be the LORD’s."
 				},
 				{
 					"verse": "13",
@@ -1441,6 +1512,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And it shall be when thy son asketh thee in time to come, saying, What is this? that thou shalt say unto him, By strength of hand the LORD brought us out from Egypt, from the house of bondage:"
 				},
 				{
@@ -1453,6 +1525,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And it came to pass, when Pharaoh had let the people go, that God led them not through the way of the land of the Philistines, although that was near; for God said, Lest peradventure the people repent when they see war, and they return to Egypt:"
 				},
 				{
@@ -1465,6 +1538,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And they took their journey from Succoth, and encamped in Etham, in the edge of the wilderness."
 				},
 				{
@@ -1480,7 +1554,10 @@
 		{
 			"chapter": "14",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Speak unto the children of Israel, that they turn and encamp before Pihahiroth, between Migdol and the sea, over against Baalzephon: before it shall ye encamp by the sea."
@@ -1491,10 +1568,11 @@
 				},
 				{
 					"verse": "4",
-					"text": "And I will harden Pharaoh\u2019s heart, that he shall follow after them; and I will be honoured upon Pharaoh, and upon all his host; that the Egyptians may know that I am the LORD. And they did so."
+					"text": "And I will harden Pharaoh’s heart, that he shall follow after them; and I will be honoured upon Pharaoh, and upon all his host; that the Egyptians may know that I am the LORD. And they did so."
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And it was told the king of Egypt that the people fled: and the heart of Pharaoh and of his servants was turned against the people, and they said, Why have we done this, that we have let Israel go from serving us?"
 				},
 				{
@@ -1515,6 +1593,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And when Pharaoh drew nigh, the children of Israel lifted up their eyes, and, behold, the Egyptians marched after them; and they were sore afraid: and the children of Israel cried out unto the LORD."
 				},
 				{
@@ -1527,6 +1606,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And Moses said unto the people, Fear ye not, stand still, and see the salvation of the LORD, which he will shew to you to day: for the Egyptians whom ye have seen to day, ye shall see them again no more for ever."
 				},
 				{
@@ -1535,6 +1615,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Wherefore criest thou unto me? speak unto the children of Israel, that they go forward:"
 				},
 				{
@@ -1551,6 +1632,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And the angel of God, which went before the camp of Israel, removed and went behind them; and the pillar of the cloud went from before their face, and stood behind them:"
 				},
 				{
@@ -1567,7 +1649,8 @@
 				},
 				{
 					"verse": "23",
-					"text": "And the Egyptians pursued, and went in after them to the midst of the sea, even all Pharaoh\u2019s horses, his chariots, and his horsemen."
+					"paragraph": true,
+					"text": "And the Egyptians pursued, and went in after them to the midst of the sea, even all Pharaoh’s horses, his chariots, and his horsemen."
 				},
 				{
 					"verse": "24",
@@ -1579,6 +1662,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Stretch out thine hand over the sea, that the waters may come again upon the Egyptians, upon their chariots, and upon their horsemen."
 				},
 				{
@@ -1612,7 +1696,7 @@
 				},
 				{
 					"verse": "2",
-					"text": "The LORD is my strength and song, and he is become my salvation: he is my God, and I will prepare him an habitation; my father\u2019s God, and I will exalt him."
+					"text": "The LORD is my strength and song, and he is become my salvation: he is my God, and I will prepare him an habitation; my father’s God, and I will exalt him."
 				},
 				{
 					"verse": "3",
@@ -1620,7 +1704,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "Pharaoh\u2019s chariots and his host hath he cast into the sea: his chosen captains also are drowned in the Red sea."
+					"text": "Pharaoh’s chariots and his host hath he cast into the sea: his chosen captains also are drowned in the Red sea."
 				},
 				{
 					"verse": "5",
@@ -1674,13 +1758,17 @@
 					"verse": "17",
 					"text": "Thou shalt bring them in, and plant them in the mountain of thine inheritance, in the place, O LORD, which thou hast made for thee to dwell in, in the Sanctuary, O LORD, which thy hands have established."
 				},
-				{ "verse": "18", "text": "The LORD shall reign for ever and ever." },
+				{
+					"verse": "18",
+					"text": "The LORD shall reign for ever and ever."
+				},
 				{
 					"verse": "19",
 					"text": "For the horse of Pharaoh went in with his chariots and with his horsemen into the sea, and the LORD brought again the waters of the sea upon them; but the children of Israel went on dry land in the midst of the sea."
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And Miriam the prophetess, the sister of Aaron, took a timbrel in her hand; and all the women went out after her with timbrels and with dances."
 				},
 				{
@@ -1693,6 +1781,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "And when they came to Marah, they could not drink of the waters of Marah, for they were bitter: therefore the name of it was called Marah."
 				},
 				{
@@ -1709,6 +1798,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And they came to Elim, where were twelve wells of water, and threescore and ten palm trees: and they encamped there by the waters."
 				}
 			]
@@ -1730,6 +1820,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "Then said the LORD unto Moses, Behold, I will rain bread from heaven for you; and the people shall go out and gather a certain rate every day, that I may prove them, whether they will walk in my law, or no."
 				},
 				{
@@ -1750,13 +1841,18 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And Moses spake unto Aaron, Say unto all the congregation of the children of Israel, Come near before the LORD: for he hath heard your murmurings."
 				},
 				{
 					"verse": "10",
 					"text": "And it came to pass, as Aaron spake unto the whole congregation of the children of Israel, that they looked toward the wilderness, and, behold, the glory of the LORD appeared in the cloud."
 				},
-				{ "verse": "11", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "11",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "12",
 					"text": "I have heard the murmurings of the children of Israel: speak unto them, saying, At even ye shall eat flesh, and in the morning ye shall be filled with bread; and ye shall know that I am the LORD your God."
@@ -1775,6 +1871,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "This is the thing which the LORD hath commanded, Gather of it every man according to his eating, an omer for every man, according to the number of your persons; take ye every man for them which are in his tents."
 				},
 				{
@@ -1799,6 +1896,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And it came to pass, that on the sixth day they gathered twice as much bread, two omers for one man: and all the rulers of the congregation came and told Moses."
 				},
 				{
@@ -1819,6 +1917,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And it came to pass, that there went out some of the people on the seventh day for to gather, and they found none."
 				},
 				{
@@ -1829,13 +1928,17 @@
 					"verse": "29",
 					"text": "See, for that the LORD hath given you the sabbath, therefore he giveth you on the sixth day the bread of two days; abide ye every man in his place, let no man go out of his place on the seventh day."
 				},
-				{ "verse": "30", "text": "So the people rested on the seventh day." },
+				{
+					"verse": "30",
+					"text": "So the people rested on the seventh day."
+				},
 				{
 					"verse": "31",
 					"text": "And the house of Israel called the name thereof Manna: and it was like coriander seed, white; and the taste of it was like wafers made with honey."
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "And Moses said, This is the thing which the LORD commandeth, Fill an omer of it to be kept for your generations; that they may see the bread wherewith I have fed you in the wilderness, when I brought you forth from the land of Egypt."
 				},
 				{
@@ -1850,7 +1953,10 @@
 					"verse": "35",
 					"text": "And the children of Israel did eat manna forty years, until they came to a land inhabited; they did eat manna, until they came unto the borders of the land of Canaan."
 				},
-				{ "verse": "36", "text": "Now an omer is the tenth part of an ephah." }
+				{
+					"verse": "36",
+					"text": "Now an omer is the tenth part of an ephah."
+				}
 			]
 		},
 		{
@@ -1886,6 +1992,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "Then came Amalek, and fought with Israel in Rephidim."
 				},
 				{
@@ -1902,7 +2009,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "But Moses\u2019 hands were heavy; and they took a stone, and put it under him, and he sat thereon; and Aaron and Hur stayed up his hands, the one on the one side, and the other on the other side; and his hands were steady until the going down of the sun."
+					"text": "But Moses’ hands were heavy; and they took a stone, and put it under him, and he sat thereon; and Aaron and Hur stayed up his hands, the one on the one side, and the other on the other side; and his hands were steady until the going down of the sun."
 				},
 				{
 					"verse": "13",
@@ -1927,11 +2034,11 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "When Jethro, the priest of Midian, Moses\u2019 father in law, heard of all that God had done for Moses, and for Israel his people, and that the LORD had brought Israel out of Egypt;"
+					"text": "When Jethro, the priest of Midian, Moses’ father in law, heard of all that God had done for Moses, and for Israel his people, and that the LORD had brought Israel out of Egypt;"
 				},
 				{
 					"verse": "2",
-					"text": "Then Jethro, Moses\u2019 father in law, took Zipporah, Moses\u2019 wife, after he had sent her back,"
+					"text": "Then Jethro, Moses’ father in law, took Zipporah, Moses’ wife, after he had sent her back,"
 				},
 				{
 					"verse": "3",
@@ -1943,7 +2050,7 @@
 				},
 				{
 					"verse": "5",
-					"text": "And Jethro, Moses\u2019 father in law, came with his sons and his wife unto Moses into the wilderness, where he encamped at the mount of God:"
+					"text": "And Jethro, Moses’ father in law, came with his sons and his wife unto Moses into the wilderness, where he encamped at the mount of God:"
 				},
 				{
 					"verse": "6",
@@ -1951,11 +2058,12 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And Moses went out to meet his father in law, and did obeisance, and kissed him; and they asked each other of their welfare; and they came into the tent."
 				},
 				{
 					"verse": "8",
-					"text": "And Moses told his father in law all that the LORD had done unto Pharaoh and to the Egyptians for Israel\u2019s sake, and all the travail that had come upon them by the way, and how the LORD delivered them."
+					"text": "And Moses told his father in law all that the LORD had done unto Pharaoh and to the Egyptians for Israel’s sake, and all the travail that had come upon them by the way, and how the LORD delivered them."
 				},
 				{
 					"verse": "9",
@@ -1971,15 +2079,16 @@
 				},
 				{
 					"verse": "12",
-					"text": "And Jethro, Moses\u2019 father in law, took a burnt offering and sacrifices for God: and Aaron came, and all the elders of Israel, to eat bread with Moses\u2019 father in law before God."
+					"text": "And Jethro, Moses’ father in law, took a burnt offering and sacrifices for God: and Aaron came, and all the elders of Israel, to eat bread with Moses’ father in law before God."
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And it came to pass on the morrow, that Moses sat to judge the people: and the people stood by Moses from the morning unto the evening."
 				},
 				{
 					"verse": "14",
-					"text": "And when Moses\u2019 father in law saw all that he did to the people, he said, What is this thing that thou doest to the people? why sittest thou thyself alone, and all the people stand by thee from morning unto even?"
+					"text": "And when Moses’ father in law saw all that he did to the people, he said, What is this thing that thou doest to the people? why sittest thou thyself alone, and all the people stand by thee from morning unto even?"
 				},
 				{
 					"verse": "15",
@@ -1991,7 +2100,7 @@
 				},
 				{
 					"verse": "17",
-					"text": "And Moses\u2019 father in law said unto him, The thing that thou doest is not good."
+					"text": "And Moses’ father in law said unto him, The thing that thou doest is not good."
 				},
 				{
 					"verse": "18",
@@ -2031,6 +2140,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And Moses let his father in law depart; and he went his way into his own land."
 				}
 			]
@@ -2052,7 +2162,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "Ye have seen what I did unto the Egyptians, and how I bare you on eagles\u2019 wings, and brought you unto myself."
+					"text": "Ye have seen what I did unto the Egyptians, and how I bare you on eagles’ wings, and brought you unto myself."
 				},
 				{
 					"verse": "5",
@@ -2064,6 +2174,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And Moses came and called for the elders of the people, and laid before their faces all these words which the LORD commanded him."
 				},
 				{
@@ -2076,6 +2187,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Go unto the people, and sanctify them to day and to morrow, and let them wash their clothes,"
 				},
 				{
@@ -2092,6 +2204,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And Moses went down from the mount unto the people, and sanctified the people; and they washed their clothes."
 				},
 				{
@@ -2100,6 +2213,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And it came to pass on the third day in the morning, that there were thunders and lightnings, and a thick cloud upon the mount, and the voice of the trumpet exceeding loud; so that all the people that was in the camp trembled."
 				},
 				{
@@ -2143,12 +2257,18 @@
 		{
 			"chapter": "20",
 			"verses": [
-				{ "verse": "1", "text": "And God spake all these words, saying," },
+				{
+					"verse": "1",
+					"text": "And God spake all these words, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "I am the LORD thy God, which have brought thee out of the land of Egypt, out of the house of bondage."
 				},
-				{ "verse": "3", "text": "Thou shalt have no other gods before me." },
+				{
+					"verse": "3",
+					"text": "Thou shalt have no other gods before me."
+				},
 				{
 					"verse": "4",
 					"text": "Thou shalt not make unto thee any graven image, or any likeness of any thing that is in heaven above, or that is in the earth beneath, or that is in the water under the earth:"
@@ -2165,7 +2285,10 @@
 					"verse": "7",
 					"text": "Thou shalt not take the name of the LORD thy God in vain; for the LORD will not hold him guiltless that taketh his name in vain."
 				},
-				{ "verse": "8", "text": "Remember the sabbath day, to keep it holy." },
+				{
+					"verse": "8",
+					"text": "Remember the sabbath day, to keep it holy."
+				},
 				{
 					"verse": "9",
 					"text": "Six days shalt thou labour, and do all thy work:"
@@ -2180,21 +2303,32 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Honour thy father and thy mother: that thy days may be long upon the land which the LORD thy God giveth thee."
 				},
-				{ "verse": "13", "text": "Thou shalt not kill." },
-				{ "verse": "14", "text": "Thou shalt not commit adultery." },
-				{ "verse": "15", "text": "Thou shalt not steal." },
+				{
+					"verse": "13",
+					"text": "Thou shalt not kill."
+				},
+				{
+					"verse": "14",
+					"text": "Thou shalt not commit adultery."
+				},
+				{
+					"verse": "15",
+					"text": "Thou shalt not steal."
+				},
 				{
 					"verse": "16",
 					"text": "Thou shalt not bear false witness against thy neighbour."
 				},
 				{
 					"verse": "17",
-					"text": "Thou shalt not covet thy neighbour\u2019s house, thou shalt not covet thy neighbour\u2019s wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor any thing that is thy neighbour\u2019s."
+					"text": "Thou shalt not covet thy neighbour’s house, thou shalt not covet thy neighbour’s wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor any thing that is thy neighbour’s."
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And all the people saw the thunderings, and the lightnings, and the noise of the trumpet, and the mountain smoking: and when the people saw it, they removed, and stood afar off."
 				},
 				{
@@ -2211,6 +2345,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Thus thou shalt say unto the children of Israel, Ye have seen that I have talked with you from heaven."
 				},
 				{
@@ -2219,6 +2354,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "An altar of earth thou shalt make unto me, and shalt sacrifice thereon thy burnt offerings, and thy peace offerings, thy sheep, and thine oxen: in all places where I record my name I will come unto thee, and I will bless thee."
 				},
 				{
@@ -2248,7 +2384,7 @@
 				},
 				{
 					"verse": "4",
-					"text": "If his master have given him a wife, and she have born him sons or daughters; the wife and her children shall be her master\u2019s, and he shall go out by himself."
+					"text": "If his master have given him a wife, and she have born him sons or daughters; the wife and her children shall be her master’s, and he shall go out by himself."
 				},
 				{
 					"verse": "5",
@@ -2260,6 +2396,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And if a man sell his daughter to be a maidservant, she shall not go out as the menservants do."
 				},
 				{
@@ -2280,6 +2417,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "He that smiteth a man, so that he die, shall be surely put to death."
 				},
 				{
@@ -2292,18 +2430,22 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And he that smiteth his father, or his mother, shall be surely put to death."
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And he that stealeth a man, and selleth him, or if he be found in his hand, he shall surely be put to death."
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And he that curseth his father, or his mother, shall surely be put to death."
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And if men strive together, and one smite another with a stone, or with his fist, and he die not, but keepeth his bed:"
 				},
 				{
@@ -2312,6 +2454,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And if a man smite his servant, or his maid, with a rod, and he die under his hand; he shall be surely punished."
 				},
 				{
@@ -2320,7 +2463,8 @@
 				},
 				{
 					"verse": "22",
-					"text": "If men strive, and hurt a woman with child, so that her fruit depart from her, and yet no mischief follow: he shall be surely punished, according as the woman\u2019s husband will lay upon him; and he shall pay as the judges determine."
+					"paragraph": true,
+					"text": "If men strive, and hurt a woman with child, so that her fruit depart from her, and yet no mischief follow: he shall be surely punished, according as the woman’s husband will lay upon him; and he shall pay as the judges determine."
 				},
 				{
 					"verse": "23",
@@ -2336,14 +2480,16 @@
 				},
 				{
 					"verse": "26",
-					"text": "And if a man smite the eye of his servant, or the eye of his maid, that it perish; he shall let him go free for his eye\u2019s sake."
+					"paragraph": true,
+					"text": "And if a man smite the eye of his servant, or the eye of his maid, that it perish; he shall let him go free for his eye’s sake."
 				},
 				{
 					"verse": "27",
-					"text": "And if he smite out his manservant\u2019s tooth, or his maidservant\u2019s tooth; he shall let him go free for his tooth\u2019s sake."
+					"text": "And if he smite out his manservant’s tooth, or his maidservant’s tooth; he shall let him go free for his tooth’s sake."
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "If an ox gore a man or a woman, that they die: then the ox shall be surely stoned, and his flesh shall not be eaten; but the owner of the ox shall be quit."
 				},
 				{
@@ -2364,6 +2510,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "And if a man shall open a pit, or if a man shall dig a pit, and not cover it, and an ox or an ass fall therein;"
 				},
 				{
@@ -2372,7 +2519,8 @@
 				},
 				{
 					"verse": "35",
-					"text": "And if one man\u2019s ox hurt another\u2019s, that he die; then they shall sell the live ox, and divide the money of it; and the dead ox also they shall divide."
+					"paragraph": true,
+					"text": "And if one man’s ox hurt another’s, that he die; then they shall sell the live ox, and divide the money of it; and the dead ox also they shall divide."
 				},
 				{
 					"verse": "36",
@@ -2389,6 +2537,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "If a thief be found breaking up, and be smitten that he die, there shall no blood be shed for him."
 				},
 				{
@@ -2401,19 +2550,22 @@
 				},
 				{
 					"verse": "5",
-					"text": "If a man shall cause a field or vineyard to be eaten, and shall put in his beast, and shall feed in another man\u2019s field; of the best of his own field, and of the best of his own vineyard, shall he make restitution."
+					"paragraph": true,
+					"text": "If a man shall cause a field or vineyard to be eaten, and shall put in his beast, and shall feed in another man’s field; of the best of his own field, and of the best of his own vineyard, shall he make restitution."
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "If fire break out, and catch in thorns, so that the stacks of corn, or the standing corn, or the field, be consumed therewith; he that kindled the fire shall surely make restitution."
 				},
 				{
 					"verse": "7",
-					"text": "If a man shall deliver unto his neighbour money or stuff to keep, and it be stolen out of the man\u2019s house; if the thief be found, let him pay double."
+					"paragraph": true,
+					"text": "If a man shall deliver unto his neighbour money or stuff to keep, and it be stolen out of the man’s house; if the thief be found, let him pay double."
 				},
 				{
 					"verse": "8",
-					"text": "If the thief be not found, then the master of the house shall be brought unto the judges, to see whether he have put his hand unto his neighbour\u2019s goods."
+					"text": "If the thief be not found, then the master of the house shall be brought unto the judges, to see whether he have put his hand unto his neighbour’s goods."
 				},
 				{
 					"verse": "9",
@@ -2425,7 +2577,7 @@
 				},
 				{
 					"verse": "11",
-					"text": "Then shall an oath of the LORD be between them both, that he hath not put his hand unto his neighbour\u2019s goods; and the owner of it shall accept thereof, and he shall not make it good."
+					"text": "Then shall an oath of the LORD be between them both, that he hath not put his hand unto his neighbour’s goods; and the owner of it shall accept thereof, and he shall not make it good."
 				},
 				{
 					"verse": "12",
@@ -2437,6 +2589,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And if a man borrow ought of his neighbour, and it be hurt, or die, the owner thereof being not with it, he shall surely make it good."
 				},
 				{
@@ -2445,27 +2598,36 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And if a man entice a maid that is not betrothed, and lie with her, he shall surely endow her to be his wife."
 				},
 				{
 					"verse": "17",
 					"text": "If her father utterly refuse to give her unto him, he shall pay money according to the dowry of virgins."
 				},
-				{ "verse": "18", "text": "Thou shalt not suffer a witch to live." },
+				{
+					"verse": "18",
+					"paragraph": true,
+					"text": "Thou shalt not suffer a witch to live."
+				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "Whosoever lieth with a beast shall surely be put to death."
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "He that sacrificeth unto any god, save unto the LORD only, he shall be utterly destroyed."
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Thou shalt neither vex a stranger, nor oppress him: for ye were strangers in the land of Egypt."
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Ye shall not afflict any widow, or fatherless child."
 				},
 				{
@@ -2478,11 +2640,12 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "If thou lend money to any of my people that is poor by thee, thou shalt not be to him as an usurer, neither shalt thou lay upon him usury."
 				},
 				{
 					"verse": "26",
-					"text": "If thou at all take thy neighbour\u2019s raiment to pledge, thou shalt deliver it unto him by that the sun goeth down:"
+					"text": "If thou at all take thy neighbour’s raiment to pledge, thou shalt deliver it unto him by that the sun goeth down:"
 				},
 				{
 					"verse": "27",
@@ -2490,10 +2653,12 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "Thou shalt not revile the gods, nor curse the ruler of thy people."
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "Thou shalt not delay to offer the first of thy ripe fruits, and of thy liquors: the firstborn of thy sons shalt thou give unto me."
 				},
 				{
@@ -2502,6 +2667,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And ye shall be holy men unto me: neither shall ye eat any flesh that is torn of beasts in the field; ye shall cast it to the dogs."
 				}
 			]
@@ -2515,15 +2681,18 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "Thou shalt not follow a multitude to do evil; neither shalt thou speak in a cause to decline after many to wrest judgment:"
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "Neither shalt thou countenance a poor man in his cause."
 				},
 				{
 					"verse": "4",
-					"text": "If thou meet thine enemy\u2019s ox or his ass going astray, thou shalt surely bring it back to him again."
+					"paragraph": true,
+					"text": "If thou meet thine enemy’s ox or his ass going astray, thou shalt surely bring it back to him again."
 				},
 				{
 					"verse": "5",
@@ -2539,10 +2708,12 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And thou shalt take no gift: for the gift blindeth the wise, and perverteth the words of the righteous."
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Also thou shalt not oppress a stranger: for ye know the heart of a stranger, seeing ye were strangers in the land of Egypt."
 				},
 				{
@@ -2563,6 +2734,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Three times thou shalt keep a feast unto me in the year."
 				},
 				{
@@ -2583,10 +2755,11 @@
 				},
 				{
 					"verse": "19",
-					"text": "The first of the firstfruits of thy land thou shalt bring into the house of the LORD thy God. Thou shalt not seethe a kid in his mother\u2019s milk."
+					"text": "The first of the firstfruits of thy land thou shalt bring into the house of the LORD thy God. Thou shalt not seethe a kid in his mother’s milk."
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "Behold, I send an Angel before thee, to keep thee in the way, and to bring thee into the place which I have prepared."
 				},
 				{
@@ -2611,6 +2784,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "There shall nothing cast their young, nor be barren, in thy land: the number of thy days I will fulfil."
 				},
 				{
@@ -2656,6 +2830,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "And Moses came and told the people all the words of the LORD, and all the judgments: and all the people answered with one voice, and said, All the words which the LORD hath said will we do."
 				},
 				{
@@ -2680,6 +2855,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "Then went up Moses, and Aaron, Nadab, and Abihu, and seventy of the elders of Israel:"
 				},
 				{
@@ -2692,6 +2868,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Come up to me into the mount, and be there: and I will give thee tables of stone, and a law, and commandments which I have written; that thou mayest teach them."
 				},
 				{
@@ -2723,7 +2900,10 @@
 		{
 			"chapter": "25",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Speak unto the children of Israel, that they bring me an offering: of every man that giveth it willingly with his heart ye shall take my offering."
@@ -2734,11 +2914,11 @@
 				},
 				{
 					"verse": "4",
-					"text": "And blue, and purple, and scarlet, and fine linen, and goats\u2019 hair,"
+					"text": "And blue, and purple, and scarlet, and fine linen, and goats’ hair,"
 				},
 				{
 					"verse": "5",
-					"text": "And rams\u2019 skins dyed red, and badgers\u2019 skins, and shittim wood,"
+					"text": "And rams’ skins dyed red, and badgers’ skins, and shittim wood,"
 				},
 				{
 					"verse": "6",
@@ -2758,6 +2938,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And they shall make an ark of shittim wood: two cubits and a half shall be the length thereof, and a cubit and a half the breadth thereof, and a cubit and a half the height thereof."
 				},
 				{
@@ -2810,6 +2991,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Thou shalt also make a table of shittim wood: two cubits shall be the length thereof, and a cubit the breadth thereof, and a cubit and a half the height thereof."
 				},
 				{
@@ -2842,6 +3024,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And thou shalt make a candlestick of pure gold: of beaten work shall the candlestick be made: his shaft, and his branches, his bowls, his knops, and his flowers, shall be of the same."
 				},
 				{
@@ -2911,7 +3094,8 @@
 				},
 				{
 					"verse": "7",
-					"text": "And thou shalt make curtains of goats\u2019 hair to be a covering upon the tabernacle: eleven curtains shalt thou make."
+					"paragraph": true,
+					"text": "And thou shalt make curtains of goats’ hair to be a covering upon the tabernacle: eleven curtains shalt thou make."
 				},
 				{
 					"verse": "8",
@@ -2939,10 +3123,11 @@
 				},
 				{
 					"verse": "14",
-					"text": "And thou shalt make a covering for the tent of rams\u2019 skins dyed red, and a covering above of badgers\u2019 skins."
+					"text": "And thou shalt make a covering for the tent of rams’ skins dyed red, and a covering above of badgers’ skins."
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And thou shalt make boards for the tabernacle of shittim wood standing up."
 				},
 				{
@@ -2987,6 +3172,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And thou shalt make bars of shittim wood; five for the boards of the one side of the tabernacle,"
 				},
 				{
@@ -3007,6 +3193,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And thou shalt make a vail of blue, and purple, and scarlet, and fine twined linen of cunning work: with cherubims shall it be made:"
 				},
 				{
@@ -3015,6 +3202,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "And thou shalt hang up the vail under the taches, that thou mayest bring in thither within the vail the ark of the testimony: and the vail shall divide unto you between the holy place and the most holy."
 				},
 				{
@@ -3072,6 +3260,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And thou shalt make the court of the tabernacle: for the south side southward there shall be hangings for the court of fine twined linen of an hundred cubits long for one side:"
 				},
 				{
@@ -3084,6 +3273,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And for the breadth of the court on the west side shall be hangings of fifty cubits: their pillars ten, and their sockets ten."
 				},
 				{
@@ -3100,6 +3290,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And for the gate of the court shall be an hanging of twenty cubits, of blue, and purple, and scarlet, and fine twined linen, wrought with needlework: and their pillars shall be four, and their sockets four."
 				},
 				{
@@ -3108,6 +3299,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "The length of the court shall be an hundred cubits, and the breadth fifty every where, and the height five cubits of fine twined linen, and their sockets of brass."
 				},
 				{
@@ -3116,6 +3308,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And thou shalt command the children of Israel, that they bring thee pure oil olive beaten for the light, to cause the lamp to burn always."
 				},
 				{
@@ -3129,7 +3322,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "And take thou unto thee Aaron thy brother, and his sons with him, from among the children of Israel, that he may minister unto me in the priest\u2019s office, even Aaron, Nadab and Abihu, Eleazar and Ithamar, Aaron\u2019s sons."
+					"text": "And take thou unto thee Aaron thy brother, and his sons with him, from among the children of Israel, that he may minister unto me in the priest’s office, even Aaron, Nadab and Abihu, Eleazar and Ithamar, Aaron’s sons."
 				},
 				{
 					"verse": "2",
@@ -3137,11 +3330,11 @@
 				},
 				{
 					"verse": "3",
-					"text": "And thou shalt speak unto all that are wise hearted, whom I have filled with the spirit of wisdom, that they may make Aaron\u2019s garments to consecrate him, that he may minister unto me in the priest\u2019s office."
+					"text": "And thou shalt speak unto all that are wise hearted, whom I have filled with the spirit of wisdom, that they may make Aaron’s garments to consecrate him, that he may minister unto me in the priest’s office."
 				},
 				{
 					"verse": "4",
-					"text": "And these are the garments which they shall make; a breastplate, and an ephod, and a robe, and a broidered coat, a mitre, and a girdle: and they shall make holy garments for Aaron thy brother, and his sons, that he may minister unto me in the priest\u2019s office."
+					"text": "And these are the garments which they shall make; a breastplate, and an ephod, and a robe, and a broidered coat, a mitre, and a girdle: and they shall make holy garments for Aaron thy brother, and his sons, that he may minister unto me in the priest’s office."
 				},
 				{
 					"verse": "5",
@@ -3149,6 +3342,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And they shall make the ephod of gold, of blue, and of purple, of scarlet, and fine twined linen, with cunning work."
 				},
 				{
@@ -3175,13 +3369,18 @@
 					"verse": "12",
 					"text": "And thou shalt put the two stones upon the shoulders of the ephod for stones of memorial unto the children of Israel: and Aaron shall bear their names before the LORD upon his two shoulders for a memorial."
 				},
-				{ "verse": "13", "text": "And thou shalt make ouches of gold;" },
+				{
+					"verse": "13",
+					"paragraph": true,
+					"text": "And thou shalt make ouches of gold;"
+				},
 				{
 					"verse": "14",
 					"text": "And two chains of pure gold at the ends; of wreathen work shalt thou make them, and fasten the wreathen chains to the ouches."
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And thou shalt make the breastplate of judgment with cunning work; after the work of the ephod thou shalt make it; of gold, of blue, and of purple, and of scarlet, and of fine twined linen, shalt thou make it."
 				},
 				{
@@ -3210,6 +3409,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And thou shalt make upon the breastplate chains at the ends of wreathen work of pure gold."
 				},
 				{
@@ -3226,6 +3426,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And thou shalt make two rings of gold, and thou shalt put them upon the two ends of the breastplate in the border thereof, which is in the side of the ephod inward."
 				},
 				{
@@ -3242,10 +3443,12 @@
 				},
 				{
 					"verse": "30",
-					"text": "And thou shalt put in the breastplate of judgment the Urim and the Thummim; and they shall be upon Aaron\u2019s heart, when he goeth in before the LORD: and Aaron shall bear the judgment of the children of Israel upon his heart before the LORD continually."
+					"paragraph": true,
+					"text": "And thou shalt put in the breastplate of judgment the Urim and the Thummim; and they shall be upon Aaron’s heart, when he goeth in before the LORD: and Aaron shall bear the judgment of the children of Israel upon his heart before the LORD continually."
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And thou shalt make the robe of the ephod all of blue."
 				},
 				{
@@ -3254,6 +3457,7 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "And beneath upon the hem of it thou shalt make pomegranates of blue, and of purple, and of scarlet, round about the hem thereof; and bells of gold between them round about:"
 				},
 				{
@@ -3266,6 +3470,7 @@
 				},
 				{
 					"verse": "36",
+					"paragraph": true,
 					"text": "And thou shalt make a plate of pure gold, and grave upon it, like the engravings of a signet, HOLINESS TO THE LORD."
 				},
 				{
@@ -3274,19 +3479,21 @@
 				},
 				{
 					"verse": "38",
-					"text": "And it shall be upon Aaron\u2019s forehead, that Aaron may bear the iniquity of the holy things, which the children of Israel shall hallow in all their holy gifts; and it shall be always upon his forehead, that they may be accepted before the LORD."
+					"text": "And it shall be upon Aaron’s forehead, that Aaron may bear the iniquity of the holy things, which the children of Israel shall hallow in all their holy gifts; and it shall be always upon his forehead, that they may be accepted before the LORD."
 				},
 				{
 					"verse": "39",
+					"paragraph": true,
 					"text": "And thou shalt embroider the coat of fine linen, and thou shalt make the mitre of fine linen, and thou shalt make the girdle of needlework."
 				},
 				{
 					"verse": "40",
-					"text": "And for Aaron\u2019s sons thou shalt make coats, and thou shalt make for them girdles, and bonnets shalt thou make for them, for glory and for beauty."
+					"paragraph": true,
+					"text": "And for Aaron’s sons thou shalt make coats, and thou shalt make for them girdles, and bonnets shalt thou make for them, for glory and for beauty."
 				},
 				{
 					"verse": "41",
-					"text": "And thou shalt put them upon Aaron thy brother, and his sons with him; and shalt anoint them, and consecrate them, and sanctify them, that they may minister unto me in the priest\u2019s office."
+					"text": "And thou shalt put them upon Aaron thy brother, and his sons with him; and shalt anoint them, and consecrate them, and sanctify them, that they may minister unto me in the priest’s office."
 				},
 				{
 					"verse": "42",
@@ -3303,7 +3510,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "And this is the thing that thou shalt do unto them to hallow them, to minister unto me in the priest\u2019s office: Take one young bullock, and two rams without blemish,"
+					"text": "And this is the thing that thou shalt do unto them to hallow them, to minister unto me in the priest’s office: Take one young bullock, and two rams without blemish,"
 				},
 				{
 					"verse": "2",
@@ -3335,7 +3542,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "And thou shalt gird them with girdles, Aaron and his sons, and put the bonnets on them: and the priest\u2019s office shall be theirs for a perpetual statute: and thou shalt consecrate Aaron and his sons."
+					"text": "And thou shalt gird them with girdles, Aaron and his sons, and put the bonnets on them: and the priest’s office shall be theirs for a perpetual statute: and thou shalt consecrate Aaron and his sons."
 				},
 				{
 					"verse": "10",
@@ -3359,6 +3566,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "Thou shalt also take one ram; and Aaron and his sons shall put their hands upon the head of the ram."
 				},
 				{
@@ -3375,6 +3583,7 @@
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And thou shalt take the other ram; and Aaron and his sons shall put their hands upon the head of the ram."
 				},
 				{
@@ -3383,7 +3592,7 @@
 				},
 				{
 					"verse": "21",
-					"text": "And thou shalt take of the blood that is upon the altar, and of the anointing oil, and sprinkle it upon Aaron, and upon his garments, and upon his sons, and upon the garments of his sons with him: and he shall be hallowed, and his garments, and his sons, and his sons\u2019 garments with him."
+					"text": "And thou shalt take of the blood that is upon the altar, and of the anointing oil, and sprinkle it upon Aaron, and upon his garments, and upon his sons, and upon the garments of his sons with him: and he shall be hallowed, and his garments, and his sons, and his sons’ garments with him."
 				},
 				{
 					"verse": "22",
@@ -3403,7 +3612,7 @@
 				},
 				{
 					"verse": "26",
-					"text": "And thou shalt take the breast of the ram of Aaron\u2019s consecration, and wave it for a wave offering before the LORD: and it shall be thy part."
+					"text": "And thou shalt take the breast of the ram of Aaron’s consecration, and wave it for a wave offering before the LORD: and it shall be thy part."
 				},
 				{
 					"verse": "27",
@@ -3411,11 +3620,12 @@
 				},
 				{
 					"verse": "28",
-					"text": "And it shall be Aaron\u2019s and his sons\u2019 by a statute for ever from the children of Israel: for it is an heave offering: and it shall be an heave offering from the children of Israel of the sacrifice of their peace offerings, even their heave offering unto the LORD."
+					"text": "And it shall be Aaron’s and his sons’ by a statute for ever from the children of Israel: for it is an heave offering: and it shall be an heave offering from the children of Israel of the sacrifice of their peace offerings, even their heave offering unto the LORD."
 				},
 				{
 					"verse": "29",
-					"text": "And the holy garments of Aaron shall be his sons\u2019 after him, to be anointed therein, and to be consecrated in them."
+					"paragraph": true,
+					"text": "And the holy garments of Aaron shall be his sons’ after him, to be anointed therein, and to be consecrated in them."
 				},
 				{
 					"verse": "30",
@@ -3423,6 +3633,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And thou shalt take the ram of the consecration, and seethe his flesh in the holy place."
 				},
 				{
@@ -3451,6 +3662,7 @@
 				},
 				{
 					"verse": "38",
+					"paragraph": true,
 					"text": "Now this is that which thou shalt offer upon the altar; two lambs of the first year day by day continually."
 				},
 				{
@@ -3475,10 +3687,11 @@
 				},
 				{
 					"verse": "44",
-					"text": "And I will sanctify the tabernacle of the congregation, and the altar: I will sanctify also both Aaron and his sons, to minister to me in the priest\u2019s office."
+					"text": "And I will sanctify the tabernacle of the congregation, and the altar: I will sanctify also both Aaron and his sons, to minister to me in the priest’s office."
 				},
 				{
 					"verse": "45",
+					"paragraph": true,
 					"text": "And I will dwell among the children of Israel, and will be their God."
 				},
 				{
@@ -3530,7 +3743,11 @@
 					"verse": "10",
 					"text": "And Aaron shall make an atonement upon the horns of it once in a year with the blood of the sin offering of atonements: once in the year shall he make atonement upon it throughout your generations: it is most holy unto the LORD."
 				},
-				{ "verse": "11", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "11",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "12",
 					"text": "When thou takest the sum of the children of Israel after their number, then shall they give every man a ransom for his soul unto the LORD, when thou numberest them; that there be no plague among them, when thou numberest them."
@@ -3551,7 +3768,11 @@
 					"verse": "16",
 					"text": "And thou shalt take the atonement money of the children of Israel, and shalt appoint it for the service of the tabernacle of the congregation; that it may be a memorial unto the children of Israel before the LORD, to make an atonement for your souls."
 				},
-				{ "verse": "17", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "17",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "18",
 					"text": "Thou shalt also make a laver of brass, and his foot also of brass, to wash withal: and thou shalt put it between the tabernacle of the congregation and the altar, and thou shalt put water therein."
@@ -3570,6 +3791,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Moreover the LORD spake unto Moses, saying,"
 				},
 				{
@@ -3602,7 +3824,7 @@
 				},
 				{
 					"verse": "30",
-					"text": "And thou shalt anoint Aaron and his sons, and consecrate them, that they may minister unto me in the priest\u2019s office."
+					"text": "And thou shalt anoint Aaron and his sons, and consecrate them, that they may minister unto me in the priest’s office."
 				},
 				{
 					"verse": "31",
@@ -3610,7 +3832,7 @@
 				},
 				{
 					"verse": "32",
-					"text": "Upon man\u2019s flesh shall it not be poured, neither shall ye make any other like it, after the composition of it: it is holy, and it shall be holy unto you."
+					"text": "Upon man’s flesh shall it not be poured, neither shall ye make any other like it, after the composition of it: it is holy, and it shall be holy unto you."
 				},
 				{
 					"verse": "33",
@@ -3618,6 +3840,7 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Take unto thee sweet spices, stacte, and onycha, and galbanum; these sweet spices with pure frankincense: of each shall there be a like weight:"
 				},
 				{
@@ -3641,7 +3864,10 @@
 		{
 			"chapter": "31",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "See, I have called by name Bezaleel the son of Uri, the son of Hur, of the tribe of Judah:"
@@ -3676,13 +3902,17 @@
 				},
 				{
 					"verse": "10",
-					"text": "And the cloths of service, and the holy garments for Aaron the priest, and the garments of his sons, to minister in the priest\u2019s office,"
+					"text": "And the cloths of service, and the holy garments for Aaron the priest, and the garments of his sons, to minister in the priest’s office,"
 				},
 				{
 					"verse": "11",
 					"text": "And the anointing oil, and sweet incense for the holy place: according to all that I have commanded thee shall they do."
 				},
-				{ "verse": "12", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "12",
+					"paragraph": true,
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "13",
 					"text": "Speak thou also unto the children of Israel, saying, Verily my sabbaths ye shall keep: for it is a sign between me and you throughout your generations; that ye may know that I am the LORD that doth sanctify you."
@@ -3705,6 +3935,7 @@
 				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "And he gave unto Moses, when he had made an end of communing with him upon mount Sinai, two tables of testimony, tables of stone, written with the finger of God."
 				}
 			]
@@ -3738,6 +3969,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And the LORD said unto Moses, Go, get thee down; for thy people, which thou broughtest out of the land of Egypt, have corrupted themselves:"
 				},
 				{
@@ -3770,6 +4002,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And Moses turned, and went down from the mount, and the two tables of the testimony were in his hand: the tables were written on both their sides; on the one side and on the other were they written."
 				},
 				{
@@ -3786,7 +4019,8 @@
 				},
 				{
 					"verse": "19",
-					"text": "And it came to pass, as soon as he came nigh unto the camp, that he saw the calf, and the dancing: and Moses\u2019 anger waxed hot, and he cast the tables out of his hands, and brake them beneath the mount."
+					"paragraph": true,
+					"text": "And it came to pass, as soon as he came nigh unto the camp, that he saw the calf, and the dancing: and Moses’ anger waxed hot, and he cast the tables out of his hands, and brake them beneath the mount."
 				},
 				{
 					"verse": "20",
@@ -3810,11 +4044,12 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And when Moses saw that the people were naked; (for Aaron had made them naked unto their shame among their enemies:)"
 				},
 				{
 					"verse": "26",
-					"text": "Then Moses stood in the gate of the camp, and said, Who is on the LORD\u2019s side? let him come unto me. And all the sons of Levi gathered themselves together unto him."
+					"text": "Then Moses stood in the gate of the camp, and said, Who is on the LORD’s side? let him come unto me. And all the sons of Levi gathered themselves together unto him."
 				},
 				{
 					"verse": "27",
@@ -3830,6 +4065,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "And it came to pass on the morrow, that Moses said unto the people, Ye have sinned a great sin: and now I will go up unto the LORD; peradventure I shall make an atonement for your sin."
 				},
 				{
@@ -3871,6 +4107,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And when the people heard these evil tidings, they mourned: and no man did put on him his ornaments."
 				},
 				{
@@ -3903,6 +4140,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And Moses said unto the LORD, See, thou sayest unto me, Bring up this people: and thou hast not let me know whom thou wilt send with me. Yet thou hast said, I know thee by name, and thou hast also found grace in my sight."
 				},
 				{
@@ -3968,6 +4206,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And he hewed two tables of stone like unto the first; and Moses rose up early in the morning, and went up unto mount Sinai, as the LORD had commanded him, and took in his hand the two tables of stone."
 				},
 				{
@@ -3980,7 +4219,7 @@
 				},
 				{
 					"verse": "7",
-					"text": "Keeping mercy for thousands, forgiving iniquity and transgression and sin, and that will by no means clear the guilty; visiting the iniquity of the fathers upon the children, and upon the children\u2019s children, unto the third and to the fourth generation."
+					"text": "Keeping mercy for thousands, forgiving iniquity and transgression and sin, and that will by no means clear the guilty; visiting the iniquity of the fathers upon the children, and upon the children’s children, unto the third and to the fourth generation."
 				},
 				{
 					"verse": "8",
@@ -3992,6 +4231,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And he said, Behold, I make a covenant: before all thy people I will do marvels, such as have not been done in all the earth, nor in any nation: and all the people among which thou art shall see the work of the LORD: for it is a terrible thing that I will do with thee."
 				},
 				{
@@ -4018,9 +4258,13 @@
 					"verse": "16",
 					"text": "And thou take of their daughters unto thy sons, and their daughters go a whoring after their gods, and make thy sons go a whoring after their gods."
 				},
-				{ "verse": "17", "text": "Thou shalt make thee no molten gods." },
+				{
+					"verse": "17",
+					"text": "Thou shalt make thee no molten gods."
+				},
 				{
 					"verse": "18",
+					"paragraph": true,
 					"text": "The feast of unleavened bread shalt thou keep. Seven days thou shalt eat unleavened bread, as I commanded thee, in the time of the month Abib: for in the month Abib thou camest out from Egypt."
 				},
 				{
@@ -4033,14 +4277,17 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Six days thou shalt work, but on the seventh day thou shalt rest: in earing time and in harvest thou shalt rest."
 				},
 				{
 					"verse": "22",
-					"text": "And thou shalt observe the feast of weeks, of the firstfruits of wheat harvest, and the feast of ingathering at the year\u2019s end."
+					"paragraph": true,
+					"text": "And thou shalt observe the feast of weeks, of the firstfruits of wheat harvest, and the feast of ingathering at the year’s end."
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "Thrice in the year shall all your menchildren appear before the LORD God, the God of Israel."
 				},
 				{
@@ -4053,7 +4300,7 @@
 				},
 				{
 					"verse": "26",
-					"text": "The first of the firstfruits of thy land thou shalt bring unto the house of the LORD thy God. Thou shalt not seethe a kid in his mother\u2019s milk."
+					"text": "The first of the firstfruits of thy land thou shalt bring unto the house of the LORD thy God. Thou shalt not seethe a kid in his mother’s milk."
 				},
 				{
 					"verse": "27",
@@ -4065,7 +4312,8 @@
 				},
 				{
 					"verse": "29",
-					"text": "And it came to pass, when Moses came down from mount Sinai with the two tables of testimony in Moses\u2019 hand, when he came down from the mount, that Moses wist not that the skin of his face shone while he talked with him."
+					"paragraph": true,
+					"text": "And it came to pass, when Moses came down from mount Sinai with the two tables of testimony in Moses’ hand, when he came down from the mount, that Moses wist not that the skin of his face shone while he talked with him."
 				},
 				{
 					"verse": "30",
@@ -4089,7 +4337,7 @@
 				},
 				{
 					"verse": "35",
-					"text": "And the children of Israel saw the face of Moses, that the skin of Moses\u2019 face shone: and Moses put the vail upon his face again, until he went in to speak with him."
+					"text": "And the children of Israel saw the face of Moses, that the skin of Moses’ face shone: and Moses put the vail upon his face again, until he went in to speak with him."
 				}
 			]
 		},
@@ -4110,6 +4358,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And Moses spake unto all the congregation of the children of Israel, saying, This is the thing which the LORD commanded, saying,"
 				},
 				{
@@ -4118,11 +4367,11 @@
 				},
 				{
 					"verse": "6",
-					"text": "And blue, and purple, and scarlet, and fine linen, and goats\u2019 hair,"
+					"text": "And blue, and purple, and scarlet, and fine linen, and goats’ hair,"
 				},
 				{
 					"verse": "7",
-					"text": "And rams\u2019 skins dyed red, and badgers\u2019 skins, and shittim wood,"
+					"text": "And rams’ skins dyed red, and badgers’ skins, and shittim wood,"
 				},
 				{
 					"verse": "8",
@@ -4170,15 +4419,16 @@
 				},
 				{
 					"verse": "19",
-					"text": "The cloths of service, to do service in the holy place, the holy garments for Aaron the priest, and the garments of his sons, to minister in the priest\u2019s office."
+					"text": "The cloths of service, to do service in the holy place, the holy garments for Aaron the priest, and the garments of his sons, to minister in the priest’s office."
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And all the congregation of the children of Israel departed from the presence of Moses."
 				},
 				{
 					"verse": "21",
-					"text": "And they came, every one whose heart stirred him up, and every one whom his spirit made willing, and they brought the LORD\u2019s offering to the work of the tabernacle of the congregation, and for all his service, and for the holy garments."
+					"text": "And they came, every one whose heart stirred him up, and every one whom his spirit made willing, and they brought the LORD’s offering to the work of the tabernacle of the congregation, and for all his service, and for the holy garments."
 				},
 				{
 					"verse": "22",
@@ -4186,11 +4436,11 @@
 				},
 				{
 					"verse": "23",
-					"text": "And every man, with whom was found blue, and purple, and scarlet, and fine linen, and goats\u2019 hair, and red skins of rams, and badgers\u2019 skins, brought them."
+					"text": "And every man, with whom was found blue, and purple, and scarlet, and fine linen, and goats’ hair, and red skins of rams, and badgers’ skins, brought them."
 				},
 				{
 					"verse": "24",
-					"text": "Every one that did offer an offering of silver and brass brought the LORD\u2019s offering: and every man, with whom was found shittim wood for any work of the service, brought it."
+					"text": "Every one that did offer an offering of silver and brass brought the LORD’s offering: and every man, with whom was found shittim wood for any work of the service, brought it."
 				},
 				{
 					"verse": "25",
@@ -4198,7 +4448,7 @@
 				},
 				{
 					"verse": "26",
-					"text": "And all the women whose heart stirred them up in wisdom spun goats\u2019 hair."
+					"text": "And all the women whose heart stirred them up in wisdom spun goats’ hair."
 				},
 				{
 					"verse": "27",
@@ -4214,6 +4464,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "And Moses said unto the children of Israel, See, the LORD hath called by name Bezaleel the son of Uri, the son of Hur, of the tribe of Judah;"
 				},
 				{
@@ -4259,6 +4510,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And they spake unto Moses, saying, The people bring much more than enough for the service of the work, which the LORD commanded to make."
 				},
 				{
@@ -4271,6 +4523,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And every wise hearted man among them that wrought the work of the tabernacle made ten curtains of fine twined linen, and blue, and purple, and scarlet: with cherubims of cunning work made he them."
 				},
 				{
@@ -4295,7 +4548,8 @@
 				},
 				{
 					"verse": "14",
-					"text": "And he made curtains of goats\u2019 hair for the tent over the tabernacle: eleven curtains he made them."
+					"paragraph": true,
+					"text": "And he made curtains of goats’ hair for the tent over the tabernacle: eleven curtains he made them."
 				},
 				{
 					"verse": "15",
@@ -4315,10 +4569,11 @@
 				},
 				{
 					"verse": "19",
-					"text": "And he made a covering for the tent of rams\u2019 skins dyed red, and a covering of badgers\u2019 skins above that."
+					"text": "And he made a covering for the tent of rams’ skins dyed red, and a covering of badgers’ skins above that."
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And he made boards for the tabernacle of shittim wood, standing up."
 				},
 				{
@@ -4363,6 +4618,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And he made bars of shittim wood; five for the boards of the one side of the tabernacle,"
 				},
 				{
@@ -4379,6 +4635,7 @@
 				},
 				{
 					"verse": "35",
+					"paragraph": true,
 					"text": "And he made a vail of blue, and purple, and scarlet, and fine twined linen: with cherubims made he it of cunning work."
 				},
 				{
@@ -4387,6 +4644,7 @@
 				},
 				{
 					"verse": "37",
+					"paragraph": true,
 					"text": "And he made an hanging for the tabernacle door of blue, and purple, and scarlet, and fine twined linen, of needlework;"
 				},
 				{
@@ -4420,6 +4678,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And he made the mercy seat of pure gold: two cubits and a half was the length thereof, and one cubit and a half the breadth thereof."
 				},
 				{
@@ -4436,6 +4695,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And he made the table of shittim wood: two cubits was the length thereof, and a cubit the breadth thereof, and a cubit and a half the height thereof:"
 				},
 				{
@@ -4464,6 +4724,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And he made the candlestick of pure gold: of beaten work made he the candlestick; his shaft, and his branch, his bowls, his knops, and his flowers, were of the same:"
 				},
 				{
@@ -4496,6 +4757,7 @@
 				},
 				{
 					"verse": "25",
+					"paragraph": true,
 					"text": "And he made the incense altar of shittim wood: the length of it was a cubit, and the breadth of it a cubit; it was foursquare; and two cubits was the height of it; the horns thereof were of the same."
 				},
 				{
@@ -4512,6 +4774,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "And he made the holy anointing oil, and the pure incense of sweet spices, according to the work of the apothecary."
 				}
 			]
@@ -4549,10 +4812,12 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And he made the laver of brass, and the foot of it of brass, of the lookingglasses of the women assembling, which assembled at the door of the tabernacle of the congregation."
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And he made the court: on the south side southward the hangings of the court were of fine twined linen, an hundred cubits:"
 				},
 				{
@@ -4601,6 +4866,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "This is the sum of the tabernacle, even of the tabernacle of testimony, as it was counted, according to the commandment of Moses, for the service of the Levites, by the hand of Ithamar, son to Aaron the priest."
 				},
 				{
@@ -4670,6 +4936,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And they wrought onyx stones inclosed in ouches of gold, graven, as signets are graven, with the names of the children of Israel."
 				},
 				{
@@ -4678,6 +4945,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And he made the breastplate of cunning work, like the work of the ephod; of gold, blue, and purple, and scarlet, and fine twined linen."
 				},
 				{
@@ -4734,6 +5002,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And he made the robe of the ephod of woven work, all of blue."
 				},
 				{
@@ -4754,6 +5023,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And they made coats of fine linen of woven work for Aaron, and for his sons,"
 				},
 				{
@@ -4766,6 +5036,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "And they made the plate of the holy crown of pure gold, and wrote upon it a writing, like to the engravings of a signet, HOLINESS TO THE LORD."
 				},
 				{
@@ -4774,15 +5045,17 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "Thus was all the work of the tabernacle of the tent of the congregation finished: and the children of Israel did according to all that the LORD commanded Moses, so did they."
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "And they brought the tabernacle unto Moses, the tent, and all his furniture, his taches, his boards, his bars, and his pillars, and his sockets,"
 				},
 				{
 					"verse": "34",
-					"text": "And the covering of rams\u2019 skins dyed red, and the covering of badgers\u2019 skins, and the vail of the covering,"
+					"text": "And the covering of rams’ skins dyed red, and the covering of badgers’ skins, and the vail of the covering,"
 				},
 				{
 					"verse": "35",
@@ -4810,7 +5083,7 @@
 				},
 				{
 					"verse": "41",
-					"text": "The cloths of service to do service in the holy place, and the holy garments for Aaron the priest, and his sons\u2019 garments, to minister in the priest\u2019s office."
+					"text": "The cloths of service to do service in the holy place, and the holy garments for Aaron the priest, and his sons’ garments, to minister in the priest’s office."
 				},
 				{
 					"verse": "42",
@@ -4825,7 +5098,10 @@
 		{
 			"chapter": "40",
 			"verses": [
-				{ "verse": "1", "text": "And the LORD spake unto Moses, saying," },
+				{
+					"verse": "1",
+					"text": "And the LORD spake unto Moses, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "On the first day of the first month shalt thou set up the tabernacle of the tent of the congregation."
@@ -4872,7 +5148,7 @@
 				},
 				{
 					"verse": "13",
-					"text": "And thou shalt put upon Aaron the holy garments, and anoint him, and sanctify him; that he may minister unto me in the priest\u2019s office."
+					"text": "And thou shalt put upon Aaron the holy garments, and anoint him, and sanctify him; that he may minister unto me in the priest’s office."
 				},
 				{
 					"verse": "14",
@@ -4880,7 +5156,7 @@
 				},
 				{
 					"verse": "15",
-					"text": "And thou shalt anoint them, as thou didst anoint their father, that they may minister unto me in the priest\u2019s office: for their anointing shall surely be an everlasting priesthood throughout their generations."
+					"text": "And thou shalt anoint them, as thou didst anoint their father, that they may minister unto me in the priest’s office: for their anointing shall surely be an everlasting priesthood throughout their generations."
 				},
 				{
 					"verse": "16",
@@ -4888,6 +5164,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And it came to pass in the first month in the second year, on the first day of the month, that the tabernacle was reared up."
 				},
 				{
@@ -4900,6 +5177,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And he took and put the testimony into the ark, and set the staves on the ark, and put the mercy seat above upon the ark:"
 				},
 				{
@@ -4908,6 +5186,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And he put the table in the tent of the congregation, upon the side of the tabernacle northward, without the vail."
 				},
 				{
@@ -4916,6 +5195,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And he put the candlestick in the tent of the congregation, over against the table, on the side of the tabernacle southward."
 				},
 				{
@@ -4924,6 +5204,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And he put the golden altar in the tent of the congregation before the vail:"
 				},
 				{
@@ -4932,6 +5213,7 @@
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "And he set up the hanging at the door of the tabernacle."
 				},
 				{
@@ -4940,6 +5222,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "And he set the laver between the tent of the congregation and the altar, and put water there, to wash withal."
 				},
 				{
@@ -4956,6 +5239,7 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "Then a cloud covered the tent of the congregation, and the glory of the LORD filled the tabernacle."
 				},
 				{

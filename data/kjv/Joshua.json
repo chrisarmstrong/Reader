@@ -7,7 +7,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "Now after the death of Moses the servant of the LORD it came to pass, that the LORD spake unto Joshua the son of Nun, Moses\u2019 minister, saying,"
+					"text": "Now after the death of Moses the servant of the LORD it came to pass, that the LORD spake unto Joshua the son of Nun, Moses’ minister, saying,"
 				},
 				{
 					"verse": "2",
@@ -43,6 +43,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "Then Joshua commanded the officers of the people, saying,"
 				},
 				{
@@ -51,6 +52,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And to the Reubenites, and to the Gadites, and to half the tribe of Manasseh, spake Joshua, saying,"
 				},
 				{
@@ -63,10 +65,11 @@
 				},
 				{
 					"verse": "15",
-					"text": "Until the LORD have given your brethren rest, as he hath given you, and they also have possessed the land which the LORD your God giveth them: then ye shall return unto the land of your possession, and enjoy it, which Moses the LORD\u2019s servant gave you on this side Jordan toward the sunrising."
+					"text": "Until the LORD have given your brethren rest, as he hath given you, and they also have possessed the land which the LORD your God giveth them: then ye shall return unto the land of your possession, and enjoy it, which Moses the LORD’s servant gave you on this side Jordan toward the sunrising."
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And they answered Joshua, saying, All that thou commandest us we will do, and whithersoever thou sendest us, we will go."
 				},
 				{
@@ -84,7 +87,7 @@
 			"verses": [
 				{
 					"verse": "1",
-					"text": "And Joshua the son of Nun sent out of Shittim two men to spy secretly, saying, Go view the land, even Jericho. And they went, and came into an harlot\u2019s house, named Rahab, and lodged there."
+					"text": "And Joshua the son of Nun sent out of Shittim two men to spy secretly, saying, Go view the land, even Jericho. And they went, and came into an harlot’s house, named Rahab, and lodged there."
 				},
 				{
 					"verse": "2",
@@ -112,6 +115,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And before they were laid down, she came up unto them upon the roof;"
 				},
 				{
@@ -128,7 +132,7 @@
 				},
 				{
 					"verse": "12",
-					"text": "Now therefore, I pray you, swear unto me by the LORD, since I have shewed you kindness, that ye will also shew kindness unto my father\u2019s house, and give me a true token:"
+					"text": "Now therefore, I pray you, swear unto me by the LORD, since I have shewed you kindness, that ye will also shew kindness unto my father’s house, and give me a true token:"
 				},
 				{
 					"verse": "13",
@@ -152,7 +156,7 @@
 				},
 				{
 					"verse": "18",
-					"text": "Behold, when we come into the land, thou shalt bind this line of scarlet thread in the window which thou didst let us down by: and thou shalt bring thy father, and thy mother, and thy brethren, and all thy father\u2019s household, home unto thee."
+					"text": "Behold, when we come into the land, thou shalt bind this line of scarlet thread in the window which thou didst let us down by: and thou shalt bring thy father, and thy mother, and thy brethren, and all thy father’s household, home unto thee."
 				},
 				{
 					"verse": "19",
@@ -172,6 +176,7 @@
 				},
 				{
 					"verse": "23",
+					"paragraph": true,
 					"text": "So the two men returned, and descended from the mountain, and passed over, and came to Joshua the son of Nun, and told him all things that befell them:"
 				},
 				{
@@ -209,6 +214,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And the LORD said unto Joshua, This day will I begin to magnify thee in the sight of all Israel, that they may know that, as I was with Moses, so I will be with thee."
 				},
 				{
@@ -217,6 +223,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And Joshua said unto the children of Israel, Come hither, and hear the words of the LORD your God."
 				},
 				{
@@ -237,6 +244,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And it came to pass, when the people removed from their tents, to pass over Jordan, and the priests bearing the ark of the covenant before the people;"
 				},
 				{
@@ -266,7 +274,7 @@
 				},
 				{
 					"verse": "3",
-					"text": "And command ye them, saying, Take you hence out of the midst of Jordan, out of the place where the priests\u2019 feet stood firm, twelve stones, and ye shall carry them over with you, and leave them in the lodging place, where ye shall lodge this night."
+					"text": "And command ye them, saying, Take you hence out of the midst of Jordan, out of the place where the priests’ feet stood firm, twelve stones, and ye shall carry them over with you, and leave them in the lodging place, where ye shall lodge this night."
 				},
 				{
 					"verse": "4",
@@ -294,6 +302,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "For the priests which bare the ark stood in the midst of Jordan, until everything was finished that the LORD commanded Joshua to speak unto the people, according to all that Moses commanded Joshua: and the people hasted and passed over."
 				},
 				{
@@ -310,9 +319,13 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "On that day the LORD magnified Joshua in the sight of all Israel; and they feared him, as they feared Moses, all the days of his life."
 				},
-				{ "verse": "15", "text": "And the LORD spake unto Joshua, saying," },
+				{
+					"verse": "15",
+					"text": "And the LORD spake unto Joshua, saying,"
+				},
 				{
 					"verse": "16",
 					"text": "Command the priests that bear the ark of the testimony, that they come up out of Jordan."
@@ -323,10 +336,11 @@
 				},
 				{
 					"verse": "18",
-					"text": "And it came to pass, when the priests that bare the ark of the covenant of the LORD were come up out of the midst of Jordan, and the soles of the priests\u2019 feet were lifted up unto the dry land, that the waters of Jordan returned unto their place, and flowed over all his banks, as they did before."
+					"text": "And it came to pass, when the priests that bare the ark of the covenant of the LORD were come up out of the midst of Jordan, and the soles of the priests’ feet were lifted up unto the dry land, that the waters of Jordan returned unto their place, and flowed over all his banks, as they did before."
 				},
 				{
 					"verse": "19",
+					"paragraph": true,
 					"text": "And the people came up out of Jordan on the tenth day of the first month, and encamped in Gilgal, in the east border of Jericho."
 				},
 				{
@@ -360,6 +374,7 @@
 				},
 				{
 					"verse": "2",
+					"paragraph": true,
 					"text": "At that time the LORD said unto Joshua, Make thee sharp knives, and circumcise again the children of Israel the second time."
 				},
 				{
@@ -392,6 +407,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And the children of Israel encamped in Gilgal, and kept the passover on the fourteenth day of the month at even in the plains of Jericho."
 				},
 				{
@@ -400,19 +416,22 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And the manna ceased on the morrow after they had eaten of the old corn of the land; neither had the children of Israel manna any more; but they did eat of the fruit of the land of Canaan that year."
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And it came to pass, when Joshua was by Jericho, that he lifted up his eyes and looked, and, behold, there stood a man over against him with his sword drawn in his hand: and Joshua went unto him, and said unto him, Art thou for us, or for our adversaries?"
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And he said, Nay; but as captain of the host of the LORD am I now come. And Joshua fell on his face to the earth, and did worship, and said unto him, What saith my lord unto his servant?"
 				},
 				{
 					"verse": "15",
-					"text": "And the captain of the LORD\u2019s host said unto Joshua, Loose thy shoe from off thy foot; for the place whereon thou standest is holy. And Joshua did so."
+					"text": "And the captain of the LORD’s host said unto Joshua, Loose thy shoe from off thy foot; for the place whereon thou standest is holy. And Joshua did so."
 				}
 			]
 		},
@@ -433,15 +452,16 @@
 				},
 				{
 					"verse": "4",
-					"text": "And seven priests shall bear before the ark seven trumpets of rams\u2019 horns: and the seventh day ye shall compass the city seven times, and the priests shall blow with the trumpets."
+					"text": "And seven priests shall bear before the ark seven trumpets of rams’ horns: and the seventh day ye shall compass the city seven times, and the priests shall blow with the trumpets."
 				},
 				{
 					"verse": "5",
-					"text": "And it shall come to pass, that when they make a long blast with the ram\u2019s horn, and when ye hear the sound of the trumpet, all the people shall shout with a great shout; and the wall of the city shall fall down flat, and the people shall ascend up every man straight before him."
+					"text": "And it shall come to pass, that when they make a long blast with the ram’s horn, and when ye hear the sound of the trumpet, all the people shall shout with a great shout; and the wall of the city shall fall down flat, and the people shall ascend up every man straight before him."
 				},
 				{
 					"verse": "6",
-					"text": "And Joshua the son of Nun called the priests, and said unto them, Take up the ark of the covenant, and let seven priests bear seven trumpets of rams\u2019 horns before the ark of the LORD."
+					"paragraph": true,
+					"text": "And Joshua the son of Nun called the priests, and said unto them, Take up the ark of the covenant, and let seven priests bear seven trumpets of rams’ horns before the ark of the LORD."
 				},
 				{
 					"verse": "7",
@@ -449,10 +469,12 @@
 				},
 				{
 					"verse": "8",
-					"text": "And it came to pass, when Joshua had spoken unto the people, that the seven priests bearing the seven trumpets of rams\u2019 horns passed on before the LORD, and blew with the trumpets: and the ark of the covenant of the LORD followed them."
+					"paragraph": true,
+					"text": "And it came to pass, when Joshua had spoken unto the people, that the seven priests bearing the seven trumpets of rams’ horns passed on before the LORD, and blew with the trumpets: and the ark of the covenant of the LORD followed them."
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And the armed men went before the priests that blew with the trumpets, and the rereward came after the ark, the priests going on, and blowing with the trumpets."
 				},
 				{
@@ -465,11 +487,12 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "And Joshua rose early in the morning, and the priests took up the ark of the LORD."
 				},
 				{
 					"verse": "13",
-					"text": "And seven priests bearing seven trumpets of rams\u2019 horns before the ark of the LORD went on continually, and blew with the trumpets: and the armed men went before them; but the rereward came after the ark of the LORD, the priests going on, and blowing with the trumpets."
+					"text": "And seven priests bearing seven trumpets of rams’ horns before the ark of the LORD went on continually, and blew with the trumpets: and the armed men went before them; but the rereward came after the ark of the LORD, the priests going on, and blowing with the trumpets."
 				},
 				{
 					"verse": "14",
@@ -485,6 +508,7 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And the city shall be accursed, even it, and all that are therein, to the LORD: only Rahab the harlot shall live, she and all that are with her in the house, because she hid the messengers that we sent."
 				},
 				{
@@ -505,7 +529,7 @@
 				},
 				{
 					"verse": "22",
-					"text": "But Joshua had said unto the two men that had spied out the country, Go into the harlot\u2019s house, and bring out thence the woman, and all that she hath, as ye sware unto her."
+					"text": "But Joshua had said unto the two men that had spied out the country, Go into the harlot’s house, and bring out thence the woman, and all that she hath, as ye sware unto her."
 				},
 				{
 					"verse": "23",
@@ -517,7 +541,7 @@
 				},
 				{
 					"verse": "25",
-					"text": "And Joshua saved Rahab the harlot alive, and her father\u2019s household, and all that she had; and she dwelleth in Israel even unto this day; because she hid the messengers, which Joshua sent to spy out Jericho."
+					"text": "And Joshua saved Rahab the harlot alive, and her father’s household, and all that she had; and she dwelleth in Israel even unto this day; because she hid the messengers, which Joshua sent to spy out Jericho."
 				},
 				{
 					"verse": "26",
@@ -554,6 +578,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And Joshua rent his clothes, and fell to the earth upon his face before the ark of the LORD until the eventide, he and the elders of Israel, and put dust upon their heads."
 				},
 				{
@@ -594,6 +619,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "So Joshua rose up early in the morning, and brought Israel by their tribes; and the tribe of Judah was taken:"
 				},
 				{
@@ -618,6 +644,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "So Joshua sent messengers, and they ran unto the tent; and, behold, it was hid in his tent, and the silver under it."
 				},
 				{
@@ -651,6 +678,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "So Joshua arose, and all the people of war, to go up against Ai: and Joshua chose out thirty thousand mighty men of valour, and sent them away by night."
 				},
 				{
@@ -695,6 +723,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "And it came to pass, when the king of Ai saw it, that they hasted and rose up early, and the men of the city went out against Israel to battle, he and all his people, at a time appointed, before the plain; but he wist not that there were liers in ambush against him behind the city."
 				},
 				{
@@ -759,6 +788,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "Then Joshua built an altar unto the LORD God of Israel in mount Ebal,"
 				},
 				{
@@ -767,6 +797,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "And he wrote there upon the stones a copy of the law of Moses, which he wrote in the presence of the children of Israel."
 				},
 				{
@@ -796,6 +827,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "And when the inhabitants of Gibeon heard what Joshua had done unto Jericho and to Ai,"
 				},
 				{
@@ -848,6 +880,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And it came to pass at the end of three days after they had made a league with them, that they heard that they were their neighbours, and that they dwelt among them."
 				},
 				{
@@ -872,6 +905,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "And Joshua called for them, and he spake unto them, saying, Wherefore have ye beguiled us, saying, We are very far from you; when ye dwell among us?"
 				},
 				{
@@ -921,6 +955,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And the men of Gibeon sent unto Joshua to the camp to Gilgal, saying, Slack not thy hand from thy servants; come up to us quickly, and save us, and help us: for all the kings of the Amorites that dwell in the mountains are gathered together against us."
 				},
 				{
@@ -929,6 +964,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And the LORD said unto Joshua, Fear them not: for I have delivered them into thine hand; there shall not a man of them stand before thee."
 				},
 				{
@@ -945,6 +981,7 @@
 				},
 				{
 					"verse": "12",
+					"paragraph": true,
 					"text": "Then spake Joshua to the LORD in the day when the LORD delivered up the Amorites before the children of Israel, and he said in the sight of Israel, Sun, stand thou still upon Gibeon; and thou, Moon, in the valley of Ajalon."
 				},
 				{
@@ -957,6 +994,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And Joshua returned, and all Israel with him, unto the camp to Gilgal."
 				},
 				{
@@ -1005,10 +1043,11 @@
 				},
 				{
 					"verse": "27",
-					"text": "And it came to pass at the time of the going down of the sun, that Joshua commanded, and they took them down off the trees, and cast them into the cave wherein they had been hid, and laid great stones in the cave\u2019s mouth, which remain until this very day."
+					"text": "And it came to pass at the time of the going down of the sun, that Joshua commanded, and they took them down off the trees, and cast them into the cave wherein they had been hid, and laid great stones in the cave’s mouth, which remain until this very day."
 				},
 				{
 					"verse": "28",
+					"paragraph": true,
 					"text": "And that day Joshua took Makkedah, and smote it with the edge of the sword, and the king thereof he utterly destroyed, them, and all the souls that were therein; he let none remain: and he did to the king of Makkedah as he did unto the king of Jericho."
 				},
 				{
@@ -1021,6 +1060,7 @@
 				},
 				{
 					"verse": "31",
+					"paragraph": true,
 					"text": "And Joshua passed from Libnah, and all Israel with him, unto Lachish, and encamped against it, and fought against it:"
 				},
 				{
@@ -1029,10 +1069,12 @@
 				},
 				{
 					"verse": "33",
+					"paragraph": true,
 					"text": "Then Horam king of Gezer came up to help Lachish; and Joshua smote him and his people, until he had left him none remaining."
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "And from Lachish Joshua passed unto Eglon, and all Israel with him; and they encamped against it, and fought against it:"
 				},
 				{
@@ -1049,6 +1091,7 @@
 				},
 				{
 					"verse": "38",
+					"paragraph": true,
 					"text": "And Joshua returned, and all Israel with him, to Debir; and fought against it:"
 				},
 				{
@@ -1057,6 +1100,7 @@
 				},
 				{
 					"verse": "40",
+					"paragraph": true,
 					"text": "So Joshua smote all the country of the hills, and of the south, and of the vale, and of the springs, and all their kings: he left none remaining, but utterly destroyed all that breathed, as the LORD God of Israel commanded."
 				},
 				{
@@ -1098,6 +1142,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "And the LORD said unto Joshua, Be not afraid because of them: for to morrow about this time will I deliver them up all slain before Israel: thou shalt hough their horses, and burn their chariots with fire."
 				},
 				{
@@ -1114,6 +1159,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And Joshua at that time turned back, and took Hazor, and smote the king thereof with the sword: for Hazor beforetime was the head of all those kingdoms."
 				},
 				{
@@ -1134,6 +1180,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "As the LORD commanded Moses his servant, so did Moses command Joshua, and so did Joshua; he left nothing undone of all that the LORD commanded Moses."
 				},
 				{
@@ -1158,6 +1205,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "And at that time came Joshua, and cut off the Anakims from the mountains, from Hebron, from Debir, from Anab, and from all the mountains of Judah, and from all the mountains of Israel: Joshua destroyed them utterly with their cities."
 				},
 				{
@@ -1187,6 +1235,7 @@
 				},
 				{
 					"verse": "4",
+					"paragraph": true,
 					"text": "And the coast of Og king of Bashan, which was of the remnant of the giants, that dwelt at Ashtaroth and at Edrei,"
 				},
 				{
@@ -1199,6 +1248,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And these are the kings of the country which Joshua and the children of Israel smote on this side Jordan on the west, from Baalgad in the valley of Lebanon even unto the mount Halak, that goeth up to Seir; which Joshua gave unto the tribes of Israel for a possession according to their divisions;"
 				},
 				{
@@ -1207,6 +1257,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "The king of Jericho, one; the king of Ai, which is beside Bethel, one;"
 				},
 				{
@@ -1332,6 +1383,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And Moses gave unto the tribe of the children of Reuben inheritance according to their families."
 				},
 				{
@@ -1342,7 +1394,10 @@
 					"verse": "17",
 					"text": "Heshbon, and all her cities that are in the plain; Dibon, and Bamothbaal, and Bethbaalmeon,"
 				},
-				{ "verse": "18", "text": "And Jahaza, and Kedemoth, and Mephaath," },
+				{
+					"verse": "18",
+					"text": "And Jahaza, and Kedemoth, and Mephaath,"
+				},
 				{
 					"verse": "19",
 					"text": "And Kirjathaim, and Sibmah, and Zarethshahar in the mount of the valley,"
@@ -1357,6 +1412,7 @@
 				},
 				{
 					"verse": "22",
+					"paragraph": true,
 					"text": "Balaam also the son of Beor, the soothsayer, did the children of Israel slay with the sword among them that were slain by them."
 				},
 				{
@@ -1385,6 +1441,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "And Moses gave inheritance unto the half tribe of Manasseh: and this was the possession of the half tribe of the children of Manasseh by their families."
 				},
 				{
@@ -1430,6 +1487,7 @@
 				},
 				{
 					"verse": "6",
+					"paragraph": true,
 					"text": "Then the children of Judah came unto Joshua in Gilgal: and Caleb the son of Jephunneh the Kenezite said unto him, Thou knowest the thing that the LORD said unto Moses the man of God concerning me and thee in Kadeshbarnea."
 				},
 				{
@@ -1442,7 +1500,7 @@
 				},
 				{
 					"verse": "9",
-					"text": "And Moses sware on that day, saying, Surely the land whereon thy feet have trodden shall be thine inheritance, and thy children\u2019s for ever, because thou hast wholly followed the LORD my God."
+					"text": "And Moses sware on that day, saying, Surely the land whereon thy feet have trodden shall be thine inheritance, and thy children’s for ever, because thou hast wholly followed the LORD my God."
 				},
 				{
 					"verse": "10",
@@ -1523,6 +1581,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "And unto Caleb the son of Jephunneh he gave a part among the children of Judah, according to the commandment of the LORD to Joshua, even the city of Arba the father of Anak, which city is Hebron."
 				},
 				{
@@ -1535,6 +1594,7 @@
 				},
 				{
 					"verse": "16",
+					"paragraph": true,
 					"text": "And Caleb said, He that smiteth Kirjathsepher, and taketh it, to him will I give Achsah my daughter to wife."
 				},
 				{
@@ -1557,14 +1617,26 @@
 					"verse": "21",
 					"text": "And the uttermost cities of the tribe of the children of Judah toward the coast of Edom southward were Kabzeel, and Eder, and Jagur,"
 				},
-				{ "verse": "22", "text": "And Kinah, and Dimonah, and Adadah," },
-				{ "verse": "23", "text": "And Kedesh, and Hazor, and Ithnan," },
-				{ "verse": "24", "text": "Ziph, and Telem, and Bealoth," },
+				{
+					"verse": "22",
+					"text": "And Kinah, and Dimonah, and Adadah,"
+				},
+				{
+					"verse": "23",
+					"text": "And Kedesh, and Hazor, and Ithnan,"
+				},
+				{
+					"verse": "24",
+					"text": "Ziph, and Telem, and Bealoth,"
+				},
 				{
 					"verse": "25",
 					"text": "And Hazor, Hadattah, and Kerioth, and Hezron, which is Hazor,"
 				},
-				{ "verse": "26", "text": "Amam, and Shema, and Moladah," },
+				{
+					"verse": "26",
+					"text": "Amam, and Shema, and Moladah,"
+				},
 				{
 					"verse": "27",
 					"text": "And Hazargaddah, and Heshmon, and Bethpalet,"
@@ -1573,9 +1645,18 @@
 					"verse": "28",
 					"text": "And Hazarshual, and Beersheba, and Bizjothjah,"
 				},
-				{ "verse": "29", "text": "Baalah, and Iim, and Azem," },
-				{ "verse": "30", "text": "And Eltolad, and Chesil, and Hormah," },
-				{ "verse": "31", "text": "And Ziklag, and Madmannah, and Sansannah," },
+				{
+					"verse": "29",
+					"text": "Baalah, and Iim, and Azem,"
+				},
+				{
+					"verse": "30",
+					"text": "And Eltolad, and Chesil, and Hormah,"
+				},
+				{
+					"verse": "31",
+					"text": "And Ziklag, and Madmannah, and Sansannah,"
+				},
 				{
 					"verse": "32",
 					"text": "And Lebaoth, and Shilhim, and Ain, and Rimmon: all the cities are twenty and nine, with their villages:"
@@ -1588,26 +1669,50 @@
 					"verse": "34",
 					"text": "And Zanoah, and Engannim, Tappuah, and Enam,"
 				},
-				{ "verse": "35", "text": "Jarmuth, and Adullam, Socoh, and Azekah," },
+				{
+					"verse": "35",
+					"text": "Jarmuth, and Adullam, Socoh, and Azekah,"
+				},
 				{
 					"verse": "36",
 					"text": "And Sharaim, and Adithaim, and Gederah, and Gederothaim; fourteen cities with their villages:"
 				},
-				{ "verse": "37", "text": "Zenan, and Hadashah, and Migdalgad," },
-				{ "verse": "38", "text": "And Dilean, and Mizpeh, and Joktheel," },
-				{ "verse": "39", "text": "Lachish, and Bozkath, and Eglon," },
-				{ "verse": "40", "text": "And Cabbon, and Lahmam, and Kithlish," },
+				{
+					"verse": "37",
+					"text": "Zenan, and Hadashah, and Migdalgad,"
+				},
+				{
+					"verse": "38",
+					"text": "And Dilean, and Mizpeh, and Joktheel,"
+				},
+				{
+					"verse": "39",
+					"text": "Lachish, and Bozkath, and Eglon,"
+				},
+				{
+					"verse": "40",
+					"text": "And Cabbon, and Lahmam, and Kithlish,"
+				},
 				{
 					"verse": "41",
 					"text": "And Gederoth, Bethdagon, and Naamah, and Makkedah; sixteen cities with their villages:"
 				},
-				{ "verse": "42", "text": "Libnah, and Ether, and Ashan," },
-				{ "verse": "43", "text": "And Jiphtah, and Ashnah, and Nezib," },
+				{
+					"verse": "42",
+					"text": "Libnah, and Ether, and Ashan,"
+				},
+				{
+					"verse": "43",
+					"text": "And Jiphtah, and Ashnah, and Nezib,"
+				},
 				{
 					"verse": "44",
 					"text": "And Keilah, and Achzib, and Mareshah; nine cities with their villages:"
 				},
-				{ "verse": "45", "text": "Ekron, with her towns and her villages:" },
+				{
+					"verse": "45",
+					"text": "Ekron, with her towns and her villages:"
+				},
 				{
 					"verse": "46",
 					"text": "From Ekron even unto the sea, all that lay near Ashdod, with their villages:"
@@ -1618,30 +1723,49 @@
 				},
 				{
 					"verse": "48",
+					"paragraph": true,
 					"text": "And in the mountains, Shamir, and Jattir, and Socoh,"
 				},
 				{
 					"verse": "49",
 					"text": "And Dannah, and Kirjathsannah, which is Debir,"
 				},
-				{ "verse": "50", "text": "And Anab, and Eshtemoh, and Anim," },
+				{
+					"verse": "50",
+					"text": "And Anab, and Eshtemoh, and Anim,"
+				},
 				{
 					"verse": "51",
 					"text": "And Goshen, and Holon, and Giloh; eleven cities with their villages:"
 				},
-				{ "verse": "52", "text": "Arab, and Dumah, and Eshean," },
-				{ "verse": "53", "text": "And Janum, and Bethtappuah, and Aphekah," },
+				{
+					"verse": "52",
+					"text": "Arab, and Dumah, and Eshean,"
+				},
+				{
+					"verse": "53",
+					"text": "And Janum, and Bethtappuah, and Aphekah,"
+				},
 				{
 					"verse": "54",
 					"text": "And Humtah, and Kirjatharba, which is Hebron, and Zior; nine cities with their villages:"
 				},
-				{ "verse": "55", "text": "Maon, Carmel, and Ziph, and Juttah," },
-				{ "verse": "56", "text": "And Jezreel, and Jokdeam, and Zanoah," },
+				{
+					"verse": "55",
+					"text": "Maon, Carmel, and Ziph, and Juttah,"
+				},
+				{
+					"verse": "56",
+					"text": "And Jezreel, and Jokdeam, and Zanoah,"
+				},
 				{
 					"verse": "57",
 					"text": "Cain, Gibeah, and Timnah; ten cities with their villages:"
 				},
-				{ "verse": "58", "text": "Halhul, Bethzur, and Gedor," },
+				{
+					"verse": "58",
+					"text": "Halhul, Bethzur, and Gedor,"
+				},
 				{
 					"verse": "59",
 					"text": "And Maarath, and Bethanoth, and Eltekon; six cities with their villages:"
@@ -1685,6 +1809,7 @@
 				},
 				{
 					"verse": "5",
+					"paragraph": true,
 					"text": "And the border of the children of Ephraim according to their families was thus: even the border of their inheritance on the east side was Atarothaddar, unto Bethhoron the upper;"
 				},
 				{
@@ -1722,6 +1847,7 @@
 				},
 				{
 					"verse": "3",
+					"paragraph": true,
 					"text": "But Zelophehad, the son of Hepher, the son of Gilead, the son of Machir, the son of Manasseh, had no sons, but daughters: and these are the names of his daughters, Mahlah, and Noah, Hoglah, Milcah, and Tirzah."
 				},
 				{
@@ -1734,10 +1860,11 @@
 				},
 				{
 					"verse": "6",
-					"text": "Because the daughters of Manasseh had an inheritance among his sons: and the rest of Manasseh\u2019s sons had the land of Gilead."
+					"text": "Because the daughters of Manasseh had an inheritance among his sons: and the rest of Manasseh’s sons had the land of Gilead."
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And the coast of Manasseh was from Asher to Michmethah, that lieth before Shechem; and the border went along on the right hand unto the inhabitants of Entappuah."
 				},
 				{
@@ -1750,7 +1877,7 @@
 				},
 				{
 					"verse": "10",
-					"text": "Southward it was Ephraim\u2019s, and northward it was Manasseh\u2019s, and the sea is his border; and they met together in Asher on the north, and in Issachar on the east."
+					"text": "Southward it was Ephraim’s, and northward it was Manasseh’s, and the sea is his border; and they met together in Asher on the north, and in Issachar on the east."
 				},
 				{
 					"verse": "11",
@@ -1819,6 +1946,7 @@
 				},
 				{
 					"verse": "8",
+					"paragraph": true,
 					"text": "And the men arose, and went away: and Joshua charged them that went to describe the land, saying, Go and walk through the land, and describe it, and come again to me, that I may here cast lots for you before the LORD in Shiloh."
 				},
 				{
@@ -1827,10 +1955,12 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And Joshua cast lots for them in Shiloh before the LORD: and there Joshua divided the land unto the children of Israel according to their divisions."
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And the lot of the tribe of the children of Benjamin came up according to their families: and the coast of their lot came forth between the children of Judah and the children of Joseph."
 				},
 				{
@@ -1873,15 +2003,30 @@
 					"verse": "21",
 					"text": "Now the cities of the tribe of the children of Benjamin according to their families were Jericho, and Bethhoglah, and the valley of Keziz,"
 				},
-				{ "verse": "22", "text": "And Betharabah, and Zemaraim, and Bethel," },
-				{ "verse": "23", "text": "And Avim, and Parah, and Ophrah," },
+				{
+					"verse": "22",
+					"text": "And Betharabah, and Zemaraim, and Bethel,"
+				},
+				{
+					"verse": "23",
+					"text": "And Avim, and Parah, and Ophrah,"
+				},
 				{
 					"verse": "24",
 					"text": "And Chepharhaammonai, and Ophni, and Gaba; twelve cities with their villages:"
 				},
-				{ "verse": "25", "text": "Gibeon, and Ramah, and Beeroth," },
-				{ "verse": "26", "text": "And Mizpeh, and Chephirah, and Mozah," },
-				{ "verse": "27", "text": "And Rekem, and Irpeel, and Taralah," },
+				{
+					"verse": "25",
+					"text": "Gibeon, and Ramah, and Beeroth,"
+				},
+				{
+					"verse": "26",
+					"text": "And Mizpeh, and Chephirah, and Mozah,"
+				},
+				{
+					"verse": "27",
+					"text": "And Rekem, and Irpeel, and Taralah,"
+				},
 				{
 					"verse": "28",
 					"text": "And Zelah, Eleph, and Jebusi, which is Jerusalem, Gibeath, and Kirjath; fourteen cities with their villages. This is the inheritance of the children of Benjamin according to their families."
@@ -1899,8 +2044,14 @@
 					"verse": "2",
 					"text": "And they had in their inheritance Beersheba, and Sheba, and Moladah,"
 				},
-				{ "verse": "3", "text": "And Hazarshual, and Balah, and Azem," },
-				{ "verse": "4", "text": "And Eltolad, and Bethul, and Hormah," },
+				{
+					"verse": "3",
+					"text": "And Hazarshual, and Balah, and Azem,"
+				},
+				{
+					"verse": "4",
+					"text": "And Eltolad, and Bethul, and Hormah,"
+				},
 				{
 					"verse": "5",
 					"text": "And Ziklag, and Bethmarcaboth, and Hazarsusah,"
@@ -1923,6 +2074,7 @@
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And the third lot came up for the children of Zebulun according to their families: and the border of their inheritance was unto Sarid:"
 				},
 				{
@@ -1951,14 +2103,21 @@
 				},
 				{
 					"verse": "17",
+					"paragraph": true,
 					"text": "And the fourth lot came out to Issachar, for the children of Issachar according to their families."
 				},
 				{
 					"verse": "18",
 					"text": "And their border was toward Jezreel, and Chesulloth, and Shunem,"
 				},
-				{ "verse": "19", "text": "And Haphraim, and Shihon, and Anaharath," },
-				{ "verse": "20", "text": "And Rabbith, and Kishion, and Abez," },
+				{
+					"verse": "19",
+					"text": "And Haphraim, and Shihon, and Anaharath,"
+				},
+				{
+					"verse": "20",
+					"text": "And Rabbith, and Kishion, and Abez,"
+				},
 				{
 					"verse": "21",
 					"text": "And Remeth, and Engannim, and Enhaddah, and Bethpazzez;"
@@ -1973,6 +2132,7 @@
 				},
 				{
 					"verse": "24",
+					"paragraph": true,
 					"text": "And the fifth lot came out for the tribe of the children of Asher according to their families."
 				},
 				{
@@ -2005,6 +2165,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "The sixth lot came out to the children of Naphtali, even for the children of Naphtali according to their families."
 				},
 				{
@@ -2019,8 +2180,14 @@
 					"verse": "35",
 					"text": "And the fenced cities are Ziddim, Zer, and Hammath, Rakkath, and Chinnereth,"
 				},
-				{ "verse": "36", "text": "And Adamah, and Ramah, and Hazor," },
-				{ "verse": "37", "text": "And Kedesh, and Edrei, and Enhazor," },
+				{
+					"verse": "36",
+					"text": "And Adamah, and Ramah, and Hazor,"
+				},
+				{
+					"verse": "37",
+					"text": "And Kedesh, and Edrei, and Enhazor,"
+				},
 				{
 					"verse": "38",
 					"text": "And Iron, and Migdalel, Horem, and Bethanath, and Bethshemesh; nineteen cities with their villages."
@@ -2031,16 +2198,29 @@
 				},
 				{
 					"verse": "40",
+					"paragraph": true,
 					"text": "And the seventh lot came out for the tribe of the children of Dan according to their families."
 				},
 				{
 					"verse": "41",
 					"text": "And the coast of their inheritance was Zorah, and Eshtaol, and Irshemesh,"
 				},
-				{ "verse": "42", "text": "And Shaalabbin, and Ajalon, and Jethlah," },
-				{ "verse": "43", "text": "And Elon, and Thimnathah, and Ekron," },
-				{ "verse": "44", "text": "And Eltekeh, and Gibbethon, and Baalath," },
-				{ "verse": "45", "text": "And Jehud, and Beneberak, and Gathrimmon," },
+				{
+					"verse": "42",
+					"text": "And Shaalabbin, and Ajalon, and Jethlah,"
+				},
+				{
+					"verse": "43",
+					"text": "And Elon, and Thimnathah, and Ekron,"
+				},
+				{
+					"verse": "44",
+					"text": "And Eltekeh, and Gibbethon, and Baalath,"
+				},
+				{
+					"verse": "45",
+					"text": "And Jehud, and Beneberak, and Gathrimmon,"
+				},
 				{
 					"verse": "46",
 					"text": "And Mejarkon, and Rakkon, with the border before Japho."
@@ -2055,6 +2235,7 @@
 				},
 				{
 					"verse": "49",
+					"paragraph": true,
 					"text": "When they had made an end of dividing the land for inheritance by their coasts, the children of Israel gave an inheritance to Joshua the son of Nun among them:"
 				},
 				{
@@ -2070,7 +2251,10 @@
 		{
 			"chapter": "20",
 			"verses": [
-				{ "verse": "1", "text": "The LORD also spake unto Joshua, saying," },
+				{
+					"verse": "1",
+					"text": "The LORD also spake unto Joshua, saying,"
+				},
 				{
 					"verse": "2",
 					"text": "Speak to the children of Israel, saying, Appoint out for you cities of refuge, whereof I spake unto you by the hand of Moses:"
@@ -2093,6 +2277,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "And they appointed Kedesh in Galilee in mount Naphtali, and Shechem in mount Ephraim, and Kirjatharba, which is Hebron, in the mountain of Judah."
 				},
 				{
@@ -2142,6 +2327,7 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And they gave out of the tribe of the children of Judah, and out of the tribe of the children of Simeon, these cities which are here mentioned by name,"
 				},
 				{
@@ -2158,6 +2344,7 @@
 				},
 				{
 					"verse": "13",
+					"paragraph": true,
 					"text": "Thus they gave to the children of Aaron the priest Hebron with her suburbs, to be a city of refuge for the slayer; and Libnah with her suburbs,"
 				},
 				{
@@ -2186,6 +2373,7 @@
 				},
 				{
 					"verse": "20",
+					"paragraph": true,
 					"text": "And the families of the children of Kohath, the Levites which remained of the children of Kohath, even they had the cities of their lot out of the tribe of Ephraim."
 				},
 				{
@@ -2214,6 +2402,7 @@
 				},
 				{
 					"verse": "27",
+					"paragraph": true,
 					"text": "And unto the children of Gershon, of the families of the Levites, out of the other half tribe of Manasseh they gave Golan in Bashan with her suburbs, to be a city of refuge for the slayer; and Beeshterah with her suburbs; two cities."
 				},
 				{
@@ -2242,6 +2431,7 @@
 				},
 				{
 					"verse": "34",
+					"paragraph": true,
 					"text": "And unto the families of the children of Merari, the rest of the Levites, out of the tribe of Zebulun, Jokneam with her suburbs, and Kartah with her suburbs,"
 				},
 				{
@@ -2278,6 +2468,7 @@
 				},
 				{
 					"verse": "43",
+					"paragraph": true,
 					"text": "And the LORD gave unto Israel all the land which he sware to give unto their fathers; and they possessed it, and dwelt therein."
 				},
 				{
@@ -2319,6 +2510,7 @@
 				},
 				{
 					"verse": "7",
+					"paragraph": true,
 					"text": "Now to the one half of the tribe of Manasseh Moses had given possession in Bashan: but unto the other half thereof gave Joshua among their brethren on this side Jordan westward. And when Joshua sent them away also unto their tents, then he blessed them,"
 				},
 				{
@@ -2327,14 +2519,17 @@
 				},
 				{
 					"verse": "9",
+					"paragraph": true,
 					"text": "And the children of Reuben and the children of Gad and the half tribe of Manasseh returned, and departed from the children of Israel out of Shiloh, which is in the land of Canaan, to go unto the country of Gilead, to the land of their possession, whereof they were possessed, according to the word of the LORD by the hand of Moses."
 				},
 				{
 					"verse": "10",
+					"paragraph": true,
 					"text": "And when they came unto the borders of Jordan, that are in the land of Canaan, the children of Reuben and the children of Gad and the half tribe of Manasseh built there an altar by Jordan, a great altar to see to."
 				},
 				{
 					"verse": "11",
+					"paragraph": true,
 					"text": "And the children of Israel heard say, Behold, the children of Reuben and the children of Gad and the half tribe of Manasseh have built an altar over against the land of Canaan, in the borders of Jordan, at the passage of the children of Israel."
 				},
 				{
@@ -2351,6 +2546,7 @@
 				},
 				{
 					"verse": "15",
+					"paragraph": true,
 					"text": "And they came unto the children of Reuben, and to the children of Gad, and to the half tribe of Manasseh, unto the land of Gilead, and they spake with them, saying,"
 				},
 				{
@@ -2367,7 +2563,7 @@
 				},
 				{
 					"verse": "19",
-					"text": "Notwithstanding, if the land of your possession be unclean, then pass ye over unto the land of the possession of the LORD, wherein the LORD\u2019s tabernacle dwelleth, and take possession among us: but rebel not against the LORD, nor rebel against us, in building you an altar beside the altar of the LORD our God."
+					"text": "Notwithstanding, if the land of your possession be unclean, then pass ye over unto the land of the possession of the LORD, wherein the LORD’s tabernacle dwelleth, and take possession among us: but rebel not against the LORD, nor rebel against us, in building you an altar beside the altar of the LORD our God."
 				},
 				{
 					"verse": "20",
@@ -2375,6 +2571,7 @@
 				},
 				{
 					"verse": "21",
+					"paragraph": true,
 					"text": "Then the children of Reuben and the children of Gad and the half tribe of Manasseh answered, and said unto the heads of the thousands of Israel,"
 				},
 				{
@@ -2411,6 +2608,7 @@
 				},
 				{
 					"verse": "30",
+					"paragraph": true,
 					"text": "And when Phinehas the priest, and the princes of the congregation and heads of the thousands of Israel which were with him, heard the words that the children of Reuben and the children of Gad and the children of Manasseh spake, it pleased them."
 				},
 				{
@@ -2419,6 +2617,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "And Phinehas the son of Eleazar the priest, and the princes, returned from the children of Reuben, and from the children of Gad, out of the land of Gilead, unto the land of Canaan, to the children of Israel, and brought them word again."
 				},
 				{
@@ -2557,6 +2756,7 @@
 				},
 				{
 					"verse": "14",
+					"paragraph": true,
 					"text": "Now therefore fear the LORD, and serve him in sincerity and in truth: and put away the gods which your fathers served on the other side of the flood, and in Egypt; and serve ye the LORD."
 				},
 				{
@@ -2605,6 +2805,7 @@
 				},
 				{
 					"verse": "26",
+					"paragraph": true,
 					"text": "And Joshua wrote these words in the book of the law of God, and took a great stone, and set it up there under an oak, that was by the sanctuary of the LORD."
 				},
 				{
@@ -2617,6 +2818,7 @@
 				},
 				{
 					"verse": "29",
+					"paragraph": true,
 					"text": "And it came to pass after these things, that Joshua the son of Nun, the servant of the LORD, died, being an hundred and ten years old."
 				},
 				{
@@ -2629,6 +2831,7 @@
 				},
 				{
 					"verse": "32",
+					"paragraph": true,
 					"text": "And the bones of Joseph, which the children of Israel brought up out of Egypt, buried they in Shechem, in a parcel of ground which Jacob bought of the sons of Hamor the father of Shechem for an hundred pieces of silver: and it became the inheritance of the children of Joseph."
 				},
 				{
