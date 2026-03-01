@@ -81,18 +81,22 @@
 .actionButton {
 	display: flex;
 	align-items: center;
-	gap: 4px;
-	padding: 6px 8px;
+	gap: 6px;
+	padding: 8px 10px;
 	background: none;
 	border: none;
 	border-radius: 6px;
 	cursor: pointer;
 	transition: background 0.2s;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 400;
 	opacity: 0.5;
 	touch-action: manipulation;
 	-webkit-tap-highlight-color: transparent;
+}
+
+.actionButton:first-child {
+	padding-left: 0;
 }
 
 .actionButton:hover {
