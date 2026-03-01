@@ -81,6 +81,18 @@ export interface VerseNote {
 	updatedAt: number;
 }
 
+export interface CrossReferenceRecord {
+	id: string; // source verse ID, e.g. "Genesis-1:1"
+	refs: string[]; // target verse IDs sorted by relevance
+}
+
+export interface CrossReference {
+	verseId: string; // "Genesis-1:1"
+	book: string; // "Genesis"
+	chapter: string; // "1"
+	verse: string; // "1"
+}
+
 // Component Props Types
 export interface MainProps {
 	slug?: string;

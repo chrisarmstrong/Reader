@@ -3,6 +3,14 @@ import 'fake-indexeddb/auto';
 import { IDBFactory } from 'fake-indexeddb';
 import type { Book } from '../types/bible';
 
+// Mock the cross-reference JSON to avoid loading the full 5.6 MB file in tests
+vi.mock('../data/crossRefs.json', () => ({
+  default: {
+    'Genesis-1:1': ['John-1:1', 'Hebrews-11:3'],
+    'John-1:1': ['Genesis-1:1'],
+  },
+}));
+
 let seedBibleData: typeof import('./seedBibleData').seedBibleData;
 let isSeedingNeeded: typeof import('./seedBibleData').isSeedingNeeded;
 let BibleStorage: typeof import('./BibleStorage').default;
@@ -138,7 +146,7 @@ describe('seedBibleData', () => {
       await seedBibleData(mockBooks);
 
       const version = await BibleStorage.getPreference('seedVersion');
-      expect(version).toBe(1);
+      expect(version).toBe(2);
     });
 
     it('should skip seeding on subsequent calls if version matches', async () => {

@@ -10,8 +10,10 @@ import {
 	IconShare,
 	IconX,
 } from "@tabler/icons-react";
+import Link from "next/link";
 import BibleStorage from "../../utils/BibleStorage";
-import type { VerseNote } from "../../types/bible";
+import { getCrossReferences } from "../../utils/getCrossRefs";
+import type { VerseNote, CrossReference } from "../../types/bible";
 
 interface VerseDetailsProps {
 	active: boolean;
@@ -39,6 +41,8 @@ export default function VerseDetails({
 	const [noteText, setNoteText] = useState("");
 	const [currentNote, setCurrentNote] = useState<VerseNote | null>(null);
 	const [isEditing, setIsEditing] = useState(false);
+	const [crossRefs, setCrossRefs] = useState<CrossReference[]>([]);
+	const [visibleCrossRefs, setVisibleCrossRefs] = useState(10);
 	const savedNoteRef = useRef("");
 	const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -101,6 +105,16 @@ export default function VerseDetails({
 				})
 				.catch((error) => {
 					console.error("Error loading notes:", error);
+				});
+
+			getCrossReferences(book, chapter, verse)
+				.then((refs) => {
+					setCrossRefs(refs);
+					setVisibleCrossRefs(10);
+				})
+				.catch((error) => {
+					console.error("Error loading cross-references:", error);
+					setCrossRefs([]);
 				});
 		}
 	}, [active, book, chapter, verse]);
@@ -261,6 +275,35 @@ export default function VerseDetails({
 					rows={1}
 				/>
 			</div>
+
+			{crossRefs.length > 0 && (
+				<div className={styles.crossRefsSection}>
+					<h4 className={styles.crossRefsTitle}>Cross References</h4>
+					<div className={styles.crossRefsList}>
+						{crossRefs.slice(0, visibleCrossRefs).map((ref) => (
+							<Link
+								key={ref.verseId}
+								href={`/${ref.book.toLowerCase().replace(/\s+/g, "-")}#${ref.chapter}:${ref.verse}`}
+								className={styles.crossRefLink}
+								onClick={handleClose}
+							>
+								{ref.book} {ref.chapter}:{ref.verse}
+							</Link>
+						))}
+					</div>
+					{crossRefs.length > visibleCrossRefs && (
+						<button
+							className={styles.showMoreButton}
+							onClick={() =>
+								setVisibleCrossRefs((prev) => prev + 10)
+							}
+						>
+							Show more ({crossRefs.length - visibleCrossRefs}{" "}
+							remaining)
+						</button>
+					)}
+				</div>
+			)}
 		</Drawer>
 	);
 }

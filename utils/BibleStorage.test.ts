@@ -27,7 +27,7 @@ describe('BibleStorage', () => {
 
       expect(db).toBeDefined();
       expect(db.name).toBe('BibleReaderDB');
-      expect(db.version).toBe(4);
+      expect(db.version).toBe(5);
     });
 
     it('should create all required object stores', async () => {
