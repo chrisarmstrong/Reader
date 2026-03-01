@@ -83,6 +83,37 @@ function Reader({
 		};
 	}, [book]);
 
+	// Inject CSS to hide verse numbers when disabled
+	useEffect(() => {
+		const styleId = "verse-number-styles";
+		let styleEl = document.getElementById(styleId) as HTMLStyleElement;
+
+		const loadPreference = async () => {
+			const enabled = await BibleStorageInstance.getPreference(
+				"verseNumbersEnabled",
+				true
+			);
+
+			if (!styleEl) {
+				styleEl = document.createElement("style");
+				styleEl.id = styleId;
+				document.head.appendChild(styleEl);
+			}
+
+			styleEl.textContent = enabled
+				? ""
+				: ".verse sup { display: none !important; }";
+		};
+
+		loadPreference();
+
+		return () => {
+			if (styleEl && styleEl.parentNode) {
+				styleEl.parentNode.removeChild(styleEl);
+			}
+		};
+	}, [book]);
+
 	// Inject CSS for bookmarked verses (more efficient than JS checking on each render)
 	useEffect(() => {
 		const styleId = `bookmark-styles-${book.book}`;
