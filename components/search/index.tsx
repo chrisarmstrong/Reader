@@ -28,6 +28,7 @@ import { IconX } from "@tabler/icons-react";
 import { Books } from "../../utils/Books";
 import Debounce from "../../utils/Debounce";
 import BibleStorage from "../../utils/BibleStorage";
+import { tokenize } from "../../utils/seedBibleData";
 import type { Book } from "../../types/bible";
 
 type SearchScope = "all" | "book" | "old" | "new";
@@ -56,11 +57,7 @@ async function indexedSearch(
 	scope: SearchScope,
 	currentBook?: Book
 ): Promise<SearchResultProps[]> {
-	const keywords = keyword
-		.toLowerCase()
-		.replace(/[^a-z0-9' ]/g, " ")
-		.split(/\s+/)
-		.filter((w) => w.length > 1);
+	const keywords = tokenize(keyword);
 
 	if (keywords.length === 0) return [];
 
