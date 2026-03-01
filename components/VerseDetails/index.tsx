@@ -290,6 +290,20 @@ export default function VerseDetails({
 						</button>
 					</div>
 
+					<div className={styles.notesSection}>
+						<textarea
+							ref={textareaRef}
+							className={styles.noteTextarea}
+							placeholder="Add a note..."
+							value={noteText}
+							onChange={(e) => setNoteText(e.target.value)}
+							onBlur={() => {
+								saveNote();
+							}}
+							rows={1}
+						/>
+					</div>
+
 					{entities.length > 0 && (
 						<div className={styles.entitiesSection}>
 							<h4 className={styles.crossRefsTitle}>
@@ -316,20 +330,6 @@ export default function VerseDetails({
 							</div>
 						</div>
 					)}
-
-					<div className={styles.notesSection}>
-						<textarea
-							ref={textareaRef}
-							className={styles.noteTextarea}
-							placeholder="Add a note..."
-							value={noteText}
-							onChange={(e) => setNoteText(e.target.value)}
-							onBlur={() => {
-								saveNote();
-							}}
-							rows={1}
-						/>
-					</div>
 
 					{crossRefs.length > 0 && (
 						<div className={styles.crossRefsSection}>
