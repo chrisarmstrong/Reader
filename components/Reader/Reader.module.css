@@ -66,8 +66,7 @@
 	font-variant-numeric: oldstyle-nums;
 }
 
-.verse.newParagraph::before {
-	content: "";
+.verse.newParagraph {
 	display: block;
 }
 
