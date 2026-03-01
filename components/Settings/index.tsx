@@ -44,6 +44,7 @@ export default function Settings() {
 		const newValue = !redLetterEnabled;
 		setRedLetterEnabled(newValue);
 		await BibleStorageInstance.savePreference("redLetterEnabled", newValue);
+		window.dispatchEvent(new Event("redLetterChanged"));
 	};
 
 	const handleSpeedChange = async (speed: number) => {

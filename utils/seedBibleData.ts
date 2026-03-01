@@ -216,6 +216,9 @@ export async function seedBibleData(
 	).map(([book, chapters]) => ({ book, chapters }));
 
 	await BibleStorage.putRedLetterVerses(redLetterEntries);
+	if (typeof window !== "undefined") {
+		window.dispatchEvent(new Event("redLetterChanged"));
+	}
 	await yieldToBrowser();
 
 	// Mark seeding as complete

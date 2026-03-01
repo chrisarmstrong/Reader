@@ -2,14 +2,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .reference {
-	font-size: 18px;
-	font-weight: 500;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	opacity: 0.4;
 	margin: 0;
 }
 
@@ -17,12 +16,14 @@
 	background: none;
 	border: none;
 	cursor: pointer;
-	opacity: 0.5;
+	opacity: 0.35;
 	transition: opacity 0.2s;
-	padding: 8px;
+	padding: 4px;
+	margin: -4px -4px 0 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	outline: none;
 	touch-action: manipulation;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -32,9 +33,7 @@
 }
 
 .content {
-	padding: 24px 0;
-	flex: 1;
-	overflow-y: auto;
+	padding: 8px 0 0;
 }
 
 .verseText {
@@ -45,7 +44,9 @@
 }
 
 .notesSection {
-	padding: 16px 0 24px;
+	padding: 16px 0;
+	margin-top: 16px;
+	border-top: 1px solid rgba(0, 0, 0, 0.08);
 	overflow: hidden;
 }
 
@@ -73,40 +74,42 @@
 
 .actions {
 	display: flex;
-	gap: 12px;
-	padding: 20px 0;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	gap: 4px;
+	padding: 12px 0 0;
 }
 
 .actionButton {
-	flex: 1;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	gap: 8px;
-	padding: 16px;
-	background: rgba(0, 0, 0, 0.03);
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 8px;
+	gap: 6px;
+	padding: 8px 10px;
+	background: none;
+	border: none;
+	border-radius: 6px;
 	cursor: pointer;
-	transition: background 0.2s, transform 0.15s;
+	transition: background 0.2s;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 400;
+	opacity: 0.5;
 	touch-action: manipulation;
 	-webkit-tap-highlight-color: transparent;
 }
 
+.actionButton:first-child {
+	padding-left: 0;
+}
+
 .actionButton:hover {
-	background: rgba(0, 0, 0, 0.06);
-	transform: scale(1.02);
+	opacity: 0.8;
+	background: rgba(0, 0, 0, 0.04);
 }
 
 .actionButton:active {
-	transform: scale(0.98);
+	opacity: 1;
 }
 
 .actionButton:disabled {
-	opacity: 0.5;
+	opacity: 0.3;
 	cursor: not-allowed;
 }
 
@@ -188,4 +191,182 @@
 
 .showMoreButton:hover {
 	opacity: 1;
+}
+
+/* Entity chips (People & Places section) */
+.entitiesSection {
+	padding: 16px 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.entityChips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.entityChip {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 6px 12px;
+	background: rgba(0, 0, 0, 0.04);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	color: inherit;
+	transition: background 0.2s, transform 0.15s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.entityChip:hover {
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.entityChip:active {
+	transform: scale(0.96);
+}
+
+/* Entity detail view */
+.entityDetailHeader {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.backButton {
+	background: none;
+	border: none;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: opacity 0.2s;
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.backButton:hover {
+	opacity: 1;
+}
+
+.entityDetailTitle {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex: 1;
+}
+
+.entityDetailIcon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.06);
+	flex-shrink: 0;
+}
+
+.entityDetailTitleText {
+	min-width: 0;
+}
+
+.entityName {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.entityMeta {
+	display: block;
+	font-size: 13px;
+	opacity: 0.6;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* Entity tabs */
+.entityTabs {
+	display: flex;
+	gap: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 16px;
+}
+
+.entityTab {
+	flex: 1;
+	padding: 10px 0;
+	font-size: 14px;
+	font-weight: 500;
+	background: none;
+	border: none;
+	border-bottom: 2px solid transparent;
+	cursor: pointer;
+	color: inherit;
+	opacity: 0.5;
+	transition: opacity 0.2s, border-color 0.2s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.entityTab:hover {
+	opacity: 0.8;
+}
+
+.entityTabActive {
+	opacity: 1;
+	border-bottom-color: currentColor;
+}
+
+.entityTabContent {
+	padding: 0 0 16px;
+}
+
+.entityDescription {
+	font-size: 15px;
+	line-height: 1.6;
+	font-family: var(--serif), georgia, serif;
+	opacity: 0.85;
+	margin: 0;
+}
+
+.inlineVerseLink {
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: rgba(0, 0, 0, 0.3);
+	text-underline-offset: 2px;
+	transition: text-decoration-color 0.2s;
+}
+
+.inlineVerseLink:hover {
+	text-decoration-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Family tree */
+.familyGroup {
+	margin-bottom: 16px;
+}
+
+.familyGroup:last-child {
+	margin-bottom: 0;
+}
+
+.familyGroupLabel {
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	opacity: 0.5;
+	margin: 0 0 8px;
 }
