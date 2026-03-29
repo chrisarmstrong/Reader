@@ -13,6 +13,7 @@ export default function Settings() {
 	const router = useRouter();
 	const fileInputRef = useRef<HTMLInputElement>(null);
 	const [redLetterEnabled, setRedLetterEnabled] = useState(true);
+	const [verseNumbersEnabled, setVerseNumbersEnabled] = useState(true);
 	const [playbackSpeed, setPlaybackSpeed] = useState(1);
 	const [isSamplePlaying, setIsSamplePlaying] = useState(false);
 	const [statusMessage, setStatusMessage] = useState<string | null>(null);
@@ -23,6 +24,9 @@ export default function Settings() {
 	useEffect(() => {
 		BibleStorageInstance.getPreference("redLetterEnabled", true).then(
 			(val) => setRedLetterEnabled(val)
+		);
+		BibleStorageInstance.getPreference("verseNumbersEnabled", true).then(
+			(val) => setVerseNumbersEnabled(val)
 		);
 		BibleStorageInstance.getPreference("playbackSpeed", 1).then((val) =>
 			setPlaybackSpeed(val)
@@ -45,6 +49,12 @@ export default function Settings() {
 		setRedLetterEnabled(newValue);
 		await BibleStorageInstance.savePreference("redLetterEnabled", newValue);
 		window.dispatchEvent(new Event("redLetterChanged"));
+	};
+
+	const handleVerseNumbersToggle = async () => {
+		const newValue = !verseNumbersEnabled;
+		setVerseNumbersEnabled(newValue);
+		await BibleStorageInstance.savePreference("verseNumbersEnabled", newValue);
 	};
 
 	const handleSpeedChange = async (speed: number) => {
@@ -165,6 +175,14 @@ export default function Settings() {
 						className={styles.toggleIndicator}
 						data-enabled={redLetterEnabled}
 						onClick={handleRedLetterToggle}
+					/>
+				</div>
+				<div className={styles.settingRow}>
+					<span className={styles.settingLabel}>Verse Numbers</span>
+					<span
+						className={styles.toggleIndicator}
+						data-enabled={verseNumbersEnabled}
+						onClick={handleVerseNumbersToggle}
 					/>
 				</div>
 			</div>
