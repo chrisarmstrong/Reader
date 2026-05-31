@@ -93,23 +93,29 @@ export function useTypeset(
 
 		run();
 
+		let debounceTimer: ReturnType<typeof setTimeout> | null = null;
 		const observer = new ResizeObserver((entries) => {
 			if (cancelled) return;
 			const entry = entries[0];
 			if (!entry) return;
 			const newWidth = entry.contentRect.width;
-			if (Math.abs(newWidth - widthRef.current) < 1) return;
-			widthRef.current = newWidth;
+			if (Math.abs(newWidth - widthRef.current) < 5) return;
 
-			if (preparedRef.current && input) {
-				rebreak(preparedRef.current, newWidth, optsRef.current, input.verseMap);
-			}
+			if (debounceTimer) clearTimeout(debounceTimer);
+			debounceTimer = setTimeout(() => {
+				if (cancelled) return;
+				widthRef.current = newWidth;
+				if (preparedRef.current && input) {
+					rebreak(preparedRef.current, newWidth, optsRef.current, input.verseMap);
+				}
+			}, 150);
 		});
 
 		observer.observe(containerEl);
 
 		return () => {
 			cancelled = true;
+			if (debounceTimer) clearTimeout(debounceTimer);
 			observer.disconnect();
 		};
 	}, [enabled, input, containerEl, rebreak]);

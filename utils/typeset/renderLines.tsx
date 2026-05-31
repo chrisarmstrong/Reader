@@ -48,7 +48,7 @@ export function renderPositionedLines({
 		return (
 			<div
 				key={lineKey}
-				className={`${styles.ptLine}${line.isLast ? ` ${styles.ptLineLast}` : ""}`}
+				className={styles.ptLine}
 				style={wordSpacing ? { wordSpacing } : undefined}
 			>
 				{chunks.map((chunk, chunkIdx) => {

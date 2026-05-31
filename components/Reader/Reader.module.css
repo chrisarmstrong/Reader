@@ -29,10 +29,12 @@
 }
 
 .chapter {
+	width: 100%;
 	max-width: 70ch;
 	line-height: 24px;
 	grid-column: main;
 	margin-bottom: 24px;
+	overflow-x: hidden;
 }
 
 .chapterNumber {
@@ -51,17 +53,11 @@
 
 .ptLine {
 	display: block;
-	white-space: nowrap;
 	font-family: var(--serif), georgia, serif;
 }
 
 .ptLine .verse {
 	display: inline;
-	white-space: nowrap;
-}
-
-.ptLineLast {
-	white-space: normal;
 }
 
 .verseAnchor {
