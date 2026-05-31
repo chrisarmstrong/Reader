@@ -31,6 +31,7 @@
 .chapter {
 	width: 100%;
 	max-width: 70ch;
+	font-family: var(--serif), georgia, serif;
 	line-height: 24px;
 	grid-column: main;
 	margin-bottom: 24px;
@@ -58,6 +59,12 @@
 
 .ptLine .verse {
 	display: inline;
+}
+
+.ptLine .verse sup {
+	padding-left: 0.3ex;
+	padding-right: 0;
+	margin-right: 0;
 }
 
 .verseAnchor {
