@@ -51,7 +51,8 @@ export function useTypeset(
 			try {
 				await document.fonts.ready;
 
-				const font = getComputedStyle(containerEl).font;
+				const cs = getComputedStyle(containerEl);
+				const font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
 				if (!font || cancelled) return;
 
 				const { hyphenateText } = await import("./typeset/hyphenate");

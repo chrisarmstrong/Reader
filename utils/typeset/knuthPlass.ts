@@ -241,7 +241,9 @@ function buildLine(
 	const lineSegments: LineSegment[] = [];
 	let charOffset = 0;
 	for (let i = 0; i < from; i++) {
-		charOffset += prepared.segments[i]!.length;
+		if (prepared.segments[i] !== SOFT_HYPHEN) {
+			charOffset += prepared.segments[i]!.length;
+		}
 	}
 	const charStartOffset = charOffset;
 
@@ -251,7 +253,6 @@ function buildLine(
 		const width = prepared.widths[segIndex]!;
 
 		if (text === SOFT_HYPHEN) {
-			charOffset += text.length;
 			continue;
 		}
 
