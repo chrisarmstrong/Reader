@@ -97,18 +97,15 @@ export default function TypesetChapter({
 	useEffect(() => {
 		if (!chapterEl) return;
 
-		const width = chapterEl.offsetWidth;
-		if (width > 0) setContainerWidth(width);
+		const measure = () => {
+			const width = chapterEl.offsetWidth;
+			if (width > 0) setContainerWidth(width);
+		};
 
-		const observer = new ResizeObserver((entries) => {
-			const entry = entries[0];
-			if (!entry) return;
-			const newWidth = entry.contentRect.width;
-			if (newWidth > 0) setContainerWidth(newWidth);
-		});
+		measure();
 
-		observer.observe(chapterEl);
-		return () => observer.disconnect();
+		window.addEventListener("resize", measure);
+		return () => window.removeEventListener("resize", measure);
 	}, [chapterEl]);
 
 	const runs = useMemo(
