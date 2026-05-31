@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useCallback, useMemo } from "react";
+import { useRef, useCallback, useMemo, useState } from "react";
 import styles from "../Reader.module.css";
 import type { Chapter } from "../../../types/bible";
 import { buildParagraphRuns } from "../../../utils/typeset/paragraphBuilder";
@@ -83,7 +83,10 @@ export default function TypesetChapter({
 	selectedVerse,
 	onVerseClick,
 }: TypesetChapterProps) {
-	const chapterRef = useRef<HTMLDivElement>(null);
+	const [chapterEl, setChapterEl] = useState<HTMLDivElement | null>(null);
+	const chapterRef = useCallback((node: HTMLDivElement | null) => {
+		setChapterEl(node);
+	}, []);
 	const pointerStartRef = useRef<{ x: number; y: number } | null>(null);
 	const isSingleChapterBook = chaptersCount < 2;
 
@@ -178,7 +181,7 @@ export default function TypesetChapter({
 						key={`pr-${runIdx}`}
 						input={run.input}
 						verseNumbers={run.verseNumbers}
-						containerEl={chapterRef.current}
+						containerEl={chapterEl}
 						handlers={handlers}
 					/>
 				);

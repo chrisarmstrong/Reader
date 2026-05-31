@@ -160,6 +160,35 @@
 	background: rgba(255, 200, 0, 0.15);
 }
 
+.justificationToggle {
+	position: fixed;
+	bottom: calc(70px + env(safe-area-inset-bottom));
+	right: 16px;
+	z-index: 100;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(8px);
+	font-size: 11px;
+	font-weight: 600;
+	font-family: system-ui, sans-serif;
+	color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.15s, color 0.15s;
+	-webkit-tap-highlight-color: transparent;
+	touch-action: manipulation;
+}
+
+.justificationToggle:hover {
+	background: rgba(255, 255, 255, 1);
+	color: rgba(0, 0, 0, 0.8);
+}
+
 @keyframes highlightFade {
 	0% {
 		background: transparent;

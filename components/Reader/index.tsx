@@ -469,6 +469,19 @@ function Reader({
 				</div>
 			</div>
 
+			<button
+				className={styles.justificationToggle}
+				onClick={async () => {
+					const newValue = !optimalJustification;
+					setOptimalJustification(newValue);
+					await BibleStorageInstance.savePreference("optimalJustification", newValue);
+					window.dispatchEvent(new Event("optimalJustificationChanged"));
+				}}
+				aria-label="Toggle justification"
+			>
+				{optimalJustification ? "KP" : "CSS"}
+			</button>
+
 			<VerseDetails
 				active={selectedVerse !== null}
 				book={selectedVerse?.book || ""}
