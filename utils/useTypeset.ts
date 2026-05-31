@@ -55,7 +55,7 @@ export function useTypeset(
 				if (!font || cancelled) return;
 
 				const { hyphenateText } = await import("./typeset/hyphenate");
-				const hyphenatedText = hyphenateText(input.text);
+				const hyphenatedText = await hyphenateText(input.text);
 
 				const cacheKey = `${hyphenatedText}|${font}`;
 				let prepared = preparedCache.get(cacheKey);
