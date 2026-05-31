@@ -1,8 +1,10 @@
 import type { PreparedTextWithSegments } from "@chenglou/pretext";
 import type { VerseMapEntry, LineSegment, LineSpacing, PositionedLine } from "./types";
 import { getVerseIdAtOffset } from "./paragraphBuilder";
+import { SOFT_HYPHEN } from "./hyphenate";
 
 const HUGE_BADNESS = 1e8;
+const HYPHEN_PENALTY = 50;
 const SHORT_LINE_RATIO = 0.6;
 const RIVER_THRESHOLD = 1.5;
 const INFEASIBLE_SPACE_RATIO = 0.4;
@@ -11,16 +13,21 @@ const TIGHT_SPACE_RATIO = 0.65;
 
 export interface BreakOptions {
 	normalSpaceWidth: number;
+	hyphenWidth: number;
 }
+
+type BreakCandidateKind = "start" | "space" | "soft-hyphen" | "end";
 
 interface BreakCandidate {
 	segIndex: number;
+	kind: BreakCandidateKind;
 }
 
 interface LineStats {
 	wordWidth: number;
 	spaceCount: number;
 	naturalWidth: number;
+	trailingHyphen: boolean;
 }
 
 function isSpaceText(text: string): boolean {
@@ -34,14 +41,17 @@ function getLineStats(
 	fromCandidate: number,
 	toCandidate: number,
 	normalSpaceWidth: number,
+	hyphenWidth: number,
 ): LineStats {
 	const from = breakCandidates[fromCandidate]!.segIndex;
 	const to = breakCandidates[toCandidate]!.segIndex;
+	const trailingHyphen = breakCandidates[toCandidate]!.kind === "soft-hyphen";
 
 	let wordWidth = 0;
 	let spaceCount = 0;
 	for (let segIndex = from; segIndex < to; segIndex++) {
 		const text = segments[segIndex]!;
+		if (text === SOFT_HYPHEN) continue;
 		if (isSpaceText(text)) {
 			spaceCount++;
 		} else {
@@ -53,10 +63,15 @@ function getLineStats(
 		spaceCount--;
 	}
 
+	if (trailingHyphen) {
+		wordWidth += hyphenWidth;
+	}
+
 	return {
 		wordWidth,
 		spaceCount,
 		naturalWidth: wordWidth + spaceCount * normalSpaceWidth,
+		trailingHyphen,
 	};
 }
 
@@ -95,7 +110,9 @@ function lineBadness(
 		? 3000 + (tightThreshold - justifiedSpace) * (tightThreshold - justifiedSpace) * 10000
 		: 0;
 
-	return badness + riverPenalty + tightPenalty;
+	const hyphenCost = stats.trailingHyphen ? HYPHEN_PENALTY : 0;
+
+	return badness + riverPenalty + tightPenalty + hyphenCost;
 }
 
 export function breakParagraph(
@@ -110,14 +127,20 @@ export function breakParagraph(
 
 	if (segmentCount === 0) return [];
 
-	const breakCandidates: BreakCandidate[] = [{ segIndex: 0 }];
+	const breakCandidates: BreakCandidate[] = [{ segIndex: 0, kind: "start" }];
 	for (let segIndex = 0; segIndex < segmentCount; segIndex++) {
 		const text = segments[segIndex]!;
+		if (text === SOFT_HYPHEN) {
+			if (segIndex + 1 < segmentCount) {
+				breakCandidates.push({ segIndex: segIndex + 1, kind: "soft-hyphen" });
+			}
+			continue;
+		}
 		if (isSpaceText(text) && segIndex + 1 < segmentCount) {
-			breakCandidates.push({ segIndex: segIndex + 1 });
+			breakCandidates.push({ segIndex: segIndex + 1, kind: "space" });
 		}
 	}
-	breakCandidates.push({ segIndex: segmentCount });
+	breakCandidates.push({ segIndex: segmentCount, kind: "end" });
 
 	const candidateCount = breakCandidates.length;
 	const dp: number[] = new Array(candidateCount).fill(Infinity);
@@ -125,7 +148,7 @@ export function breakParagraph(
 	dp[0] = 0;
 
 	for (let toCandidate = 1; toCandidate < candidateCount; toCandidate++) {
-		const isLastLine = toCandidate === candidateCount - 1;
+		const isLastLine = breakCandidates[toCandidate]!.kind === "end";
 
 		for (let fromCandidate = toCandidate - 1; fromCandidate >= 0; fromCandidate--) {
 			if (dp[fromCandidate] === Infinity) continue;
@@ -136,6 +159,7 @@ export function breakParagraph(
 				fromCandidate,
 				toCandidate,
 				opts.normalSpaceWidth,
+				opts.hyphenWidth,
 			);
 
 			if (stats.naturalWidth > maxWidth * 2) break;
@@ -148,19 +172,18 @@ export function breakParagraph(
 		}
 	}
 
-	// If DP couldn't find any valid path (e.g. single oversized word), use greedy fallback
 	if (dp[candidateCount - 1] === Infinity) {
 		const fallbackLines: PositionedLine[] = [];
 		let from = 0;
 		for (let to = 1; to < candidateCount; to++) {
 			fallbackLines.push(
-				buildLine(prepared, verseMap, breakCandidates, from, to, maxWidth, opts.normalSpaceWidth, to === candidateCount - 1),
+				buildLine(prepared, verseMap, breakCandidates, from, to, maxWidth, opts, to === candidateCount - 1),
 			);
 			from = to;
 		}
 		if (fallbackLines.length === 0 && candidateCount >= 2) {
 			fallbackLines.push(
-				buildLine(prepared, verseMap, breakCandidates, 0, candidateCount - 1, maxWidth, opts.normalSpaceWidth, true),
+				buildLine(prepared, verseMap, breakCandidates, 0, candidateCount - 1, maxWidth, opts, true),
 			);
 		}
 		return fallbackLines;
@@ -191,7 +214,7 @@ export function breakParagraph(
 			fromCandidate,
 			toCandidate,
 			maxWidth,
-			opts.normalSpaceWidth,
+			opts,
 			isLast,
 		);
 		lines.push(line);
@@ -208,11 +231,12 @@ function buildLine(
 	fromCandidate: number,
 	toCandidate: number,
 	maxWidth: number,
-	normalSpaceWidth: number,
+	opts: BreakOptions,
 	isLast: boolean,
 ): PositionedLine {
 	const from = breakCandidates[fromCandidate]!.segIndex;
 	const to = breakCandidates[toCandidate]!.segIndex;
+	const trailingHyphen = breakCandidates[toCandidate]!.kind === "soft-hyphen" && !isLast;
 
 	const lineSegments: LineSegment[] = [];
 	let charOffset = 0;
@@ -225,6 +249,12 @@ function buildLine(
 	for (let segIndex = from; segIndex < to; segIndex++) {
 		const text = prepared.segments[segIndex]!;
 		const width = prepared.widths[segIndex]!;
+
+		if (text === SOFT_HYPHEN) {
+			charOffset += text.length;
+			continue;
+		}
+
 		const vid = getVerseIdAtOffset(verseMap, charOffset);
 
 		if (isSpaceText(text)) {
@@ -235,6 +265,10 @@ function buildLine(
 		}
 
 		charOffset += text.length;
+	}
+
+	if (trailingHyphen) {
+		lineSegments.push({ kind: "text", text: "-", width: opts.hyphenWidth });
 	}
 
 	// Trim trailing spaces
@@ -251,7 +285,7 @@ function buildLine(
 			wordWidth += seg.width;
 		}
 	}
-	const naturalWidth = wordWidth + spaceCount * normalSpaceWidth;
+	const naturalWidth = wordWidth + spaceCount * opts.normalSpaceWidth;
 
 	let spacing: LineSpacing;
 	if (isLast) {
@@ -260,10 +294,10 @@ function buildLine(
 		spacing = { kind: "ragged" };
 	} else {
 		const rawJustifiedSpace = (maxWidth - wordWidth) / spaceCount;
-		if (rawJustifiedSpace < normalSpaceWidth * OVERFLOW_SPACE_RATIO) {
+		if (rawJustifiedSpace < opts.normalSpaceWidth * OVERFLOW_SPACE_RATIO) {
 			spacing = { kind: "overflow" };
 		} else {
-			const wordSpacingPx = rawJustifiedSpace - normalSpaceWidth;
+			const wordSpacingPx = rawJustifiedSpace - opts.normalSpaceWidth;
 			spacing = { kind: "justified", wordSpacingPx };
 		}
 	}

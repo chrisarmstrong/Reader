@@ -38,4 +38,12 @@ export function measureSpaceWidth(font: string): number {
 	return ctx.measureText(" ").width;
 }
 
+export function measureHyphenWidth(font: string): number {
+	const canvas = document.createElement("canvas");
+	const ctx = canvas.getContext("2d");
+	if (!ctx) return 4;
+	ctx.font = font;
+	return ctx.measureText("-").width;
+}
+
 export type { PreparedTextWithSegments, PretextModule };
