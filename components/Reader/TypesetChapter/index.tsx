@@ -1,11 +1,12 @@
 "use client";
 
-import { useRef, useCallback, useMemo, useState } from "react";
+import { useRef, useCallback, useMemo, useState, useEffect } from "react";
 import styles from "../Reader.module.css";
 import type { Chapter } from "../../../types/bible";
 import { buildParagraphRuns } from "../../../utils/typeset/paragraphBuilder";
 import { useTypeset } from "../../../utils/useTypeset";
 import { renderPositionedLines } from "../../../utils/typeset/renderLines";
+import type { ParagraphInput } from "../../../utils/typeset/types";
 
 interface TypesetChapterProps {
 	chapter: Chapter;
@@ -20,11 +21,13 @@ interface TypesetChapterProps {
 function TypesetParagraphRun({
 	input,
 	verseNumbers,
+	containerWidth,
 	containerEl,
 	handlers,
 }: {
-	input: import("../../../utils/typeset/types").ParagraphInput;
+	input: ParagraphInput;
 	verseNumbers: Map<string, string>;
+	containerWidth: number;
 	containerEl: HTMLElement | null;
 	handlers: {
 		onPointerDown: (e: React.PointerEvent) => void;
@@ -34,7 +37,7 @@ function TypesetParagraphRun({
 		selectedVerse: { chapter: string; verse: string } | null;
 	};
 }) {
-	const { lines } = useTypeset(input, containerEl, true);
+	const { lines } = useTypeset(input, containerWidth, containerEl, true);
 
 	if (!lines) {
 		return (
@@ -84,11 +87,29 @@ export default function TypesetChapter({
 	onVerseClick,
 }: TypesetChapterProps) {
 	const [chapterEl, setChapterEl] = useState<HTMLDivElement | null>(null);
+	const [containerWidth, setContainerWidth] = useState(0);
 	const chapterRef = useCallback((node: HTMLDivElement | null) => {
 		setChapterEl(node);
 	}, []);
 	const pointerStartRef = useRef<{ x: number; y: number } | null>(null);
 	const isSingleChapterBook = chaptersCount < 2;
+
+	useEffect(() => {
+		if (!chapterEl) return;
+
+		const width = chapterEl.offsetWidth;
+		if (width > 0) setContainerWidth(width);
+
+		const observer = new ResizeObserver((entries) => {
+			const entry = entries[0];
+			if (!entry) return;
+			const newWidth = entry.contentRect.width;
+			if (newWidth > 0) setContainerWidth(newWidth);
+		});
+
+		observer.observe(chapterEl);
+		return () => observer.disconnect();
+	}, [chapterEl]);
 
 	const runs = useMemo(
 		() => buildParagraphRuns(chapter, isSingleChapterBook),
@@ -141,7 +162,7 @@ export default function TypesetChapter({
 				{chaptersCount > 1 ? chapter.chapter : dropCapChar}
 			</h2>
 
-			{runs.map((run, runIdx) => {
+			{containerWidth > 0 && runs.map((run, runIdx) => {
 				if (run.kind === "psalmTitle") {
 					return (
 						<span key={`st-${runIdx}`} className={styles.psalmTitle}>
@@ -181,6 +202,7 @@ export default function TypesetChapter({
 						key={`pr-${runIdx}`}
 						input={run.input}
 						verseNumbers={run.verseNumbers}
+						containerWidth={containerWidth}
 						containerEl={chapterEl}
 						handlers={handlers}
 					/>

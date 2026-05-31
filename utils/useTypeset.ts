@@ -15,14 +15,15 @@ const preparedCache = new Map<string, PreparedTextWithSegments>();
 
 export function useTypeset(
 	input: ParagraphInput | null,
+	containerWidth: number,
 	containerEl: HTMLElement | null,
 	enabled: boolean,
 ): UseTypesetResult {
 	const [lines, setLines] = useState<PositionedLine[] | null>(null);
 	const [error, setError] = useState<Error | null>(null);
 	const preparedRef = useRef<PreparedTextWithSegments | null>(null);
-	const widthRef = useRef<number>(0);
 	const optsRef = useRef<BreakOptions>({ normalSpaceWidth: 4, hyphenWidth: 4 });
+	const fontRef = useRef<string>("");
 
 	const rebreak = useCallback((prepared: PreparedTextWithSegments, width: number, opts: BreakOptions, verseMap: ParagraphInput["verseMap"]) => {
 		if (width <= 0) return;
@@ -39,7 +40,7 @@ export function useTypeset(
 	}, []);
 
 	useEffect(() => {
-		if (!enabled || !input || !containerEl) {
+		if (!enabled || !input || !containerEl || containerWidth <= 0) {
 			setLines(null);
 			setError(null);
 			return;
@@ -54,6 +55,7 @@ export function useTypeset(
 				const cs = getComputedStyle(containerEl);
 				const font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
 				if (!font || cancelled) return;
+				fontRef.current = font;
 
 				const { hyphenateText } = await import("./typeset/hyphenate");
 				const hyphenatedText = await hyphenateText(input.text);
@@ -80,9 +82,7 @@ export function useTypeset(
 					hyphenWidth: measureHyphenWidth(font),
 				};
 
-				const width = containerEl.offsetWidth;
-				widthRef.current = width;
-				rebreak(prepared, width, optsRef.current, input.verseMap);
+				rebreak(prepared, containerWidth, optsRef.current, input.verseMap);
 			} catch (err) {
 				if (!cancelled) {
 					console.warn("Typeset failed, falling back to native rendering:", err);
@@ -94,32 +94,10 @@ export function useTypeset(
 
 		run();
 
-		let debounceTimer: ReturnType<typeof setTimeout> | null = null;
-		const observer = new ResizeObserver((entries) => {
-			if (cancelled) return;
-			const entry = entries[0];
-			if (!entry) return;
-			const newWidth = entry.contentRect.width;
-			if (Math.abs(newWidth - widthRef.current) < 5) return;
-
-			if (debounceTimer) clearTimeout(debounceTimer);
-			debounceTimer = setTimeout(() => {
-				if (cancelled) return;
-				widthRef.current = newWidth;
-				if (preparedRef.current && input) {
-					rebreak(preparedRef.current, newWidth, optsRef.current, input.verseMap);
-				}
-			}, 150);
-		});
-
-		observer.observe(containerEl);
-
 		return () => {
 			cancelled = true;
-			if (debounceTimer) clearTimeout(debounceTimer);
-			observer.disconnect();
 		};
-	}, [enabled, input, containerEl, rebreak]);
+	}, [enabled, input, containerEl, containerWidth, rebreak]);
 
 	return { lines, error };
 }
