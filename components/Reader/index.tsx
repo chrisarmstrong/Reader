@@ -385,24 +385,6 @@ function Reader({
 		await updateBookmarkStyles();
 	};
 
-	const handlePointerDown = useCallback((e: React.PointerEvent) => {
-		pointerStartRef.current = { x: e.clientX, y: e.clientY };
-	}, []);
-
-	const handlePointerUpNative = useCallback(
-		(e: React.PointerEvent, chapter: string, verse: string, text: string) => {
-			const start = pointerStartRef.current;
-			pointerStartRef.current = null;
-			if (!start) return;
-			const dx = Math.abs(e.clientX - start.x);
-			const dy = Math.abs(e.clientY - start.y);
-			if (dx > 10 || dy > 10) return;
-			handleVerseClick(chapter, verse, text);
-		},
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-		[book.book],
-	);
-
 	return (
 		<>
 			<div
@@ -423,7 +405,6 @@ function Reader({
 								highlightVerse={highlightVerse}
 								readingVerse={readingVerse ?? null}
 								selectedVerse={selectedVerse}
-								onPointerDown={handlePointerDown}
 								onVerseClick={handleVerseClick}
 							/>
 						) : (

@@ -9,6 +9,7 @@ interface UseTypesetResult {
 	error: Error | null;
 }
 
+const MAX_CACHE_SIZE = 200;
 const preparedCache = new Map<string, PreparedTextWithSegments>();
 
 export function useTypeset(
@@ -61,6 +62,10 @@ export function useTypeset(
 				if (!prepared) {
 					const pretext = await import("@chenglou/pretext");
 					prepared = pretext.prepareWithSegments(input.text, font);
+					if (preparedCache.size >= MAX_CACHE_SIZE) {
+						const firstKey = preparedCache.keys().next().value;
+						if (firstKey !== undefined) preparedCache.delete(firstKey);
+					}
 					preparedCache.set(cacheKey, prepared);
 				}
 

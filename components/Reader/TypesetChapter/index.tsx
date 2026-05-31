@@ -14,7 +14,6 @@ interface TypesetChapterProps {
 	highlightVerse: string | null;
 	readingVerse: string | null;
 	selectedVerse: { chapter: string; verse: string } | null;
-	onPointerDown: (e: React.PointerEvent) => void;
 	onVerseClick: (chapter: string, verse: string, text: string) => void;
 }
 
@@ -38,7 +37,6 @@ function TypesetParagraphRun({
 	const { lines } = useTypeset(input, containerEl, true);
 
 	if (!lines) {
-		// Fallback: render as native inline verses while typesetting computes
 		return (
 			<>
 				{input.verseMap.map((entry) => {
@@ -83,10 +81,10 @@ export default function TypesetChapter({
 	highlightVerse,
 	readingVerse,
 	selectedVerse,
-	onPointerDown,
 	onVerseClick,
 }: TypesetChapterProps) {
 	const chapterRef = useRef<HTMLDivElement>(null);
+	const pointerStartRef = useRef<{ x: number; y: number } | null>(null);
 	const isSingleChapterBook = chaptersCount < 2;
 
 	const runs = useMemo(
@@ -94,8 +92,18 @@ export default function TypesetChapter({
 		[chapter, isSingleChapterBook],
 	);
 
+	const handlePointerDown = useCallback((e: React.PointerEvent) => {
+		pointerStartRef.current = { x: e.clientX, y: e.clientY };
+	}, []);
+
 	const handlePointerUp = useCallback(
 		(e: React.PointerEvent, verseId: string, text: string) => {
+			const start = pointerStartRef.current;
+			pointerStartRef.current = null;
+			if (!start) return;
+			const dx = Math.abs(e.clientX - start.x);
+			const dy = Math.abs(e.clientY - start.y);
+			if (dx > 10 || dy > 10) return;
 			const [ch, vs] = verseId.split(":");
 			if (ch && vs) {
 				onVerseClick(ch, vs, text);
@@ -106,13 +114,13 @@ export default function TypesetChapter({
 
 	const handlers = useMemo(
 		() => ({
-			onPointerDown,
+			onPointerDown: handlePointerDown,
 			onPointerUp: handlePointerUp,
 			highlightVerse,
 			readingVerse,
 			selectedVerse,
 		}),
-		[onPointerDown, handlePointerUp, highlightVerse, readingVerse, selectedVerse],
+		[handlePointerDown, handlePointerUp, highlightVerse, readingVerse, selectedVerse],
 	);
 
 	const firstVerse = chapter.verses[0];
@@ -154,7 +162,7 @@ export default function TypesetChapter({
 									? styles.selected
 									: ""
 							}`}
-							onPointerDown={onPointerDown}
+							onPointerDown={handlePointerDown}
 							onPointerUp={(e) =>
 								handlePointerUp(e, run.verseId, run.text)
 							}

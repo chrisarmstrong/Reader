@@ -25,7 +25,6 @@ interface RenderLinesProps {
 interface VerseChunk {
 	verseId: string;
 	segments: LineSegment[];
-	isFirstOccurrence: boolean;
 }
 
 export function renderPositionedLines({
@@ -43,13 +42,13 @@ export function renderPositionedLines({
 				? `${line.spacing.wordSpacingPx}px`
 				: undefined;
 
-		const chunks = groupSegmentsByVerse(line, verseMap, paragraphText, lineIdx);
+		const chunks = groupSegmentsByVerse(line, verseMap);
 		const lineKey = `ptl-${lineIdx}`;
 
 		return (
 			<div
 				key={lineKey}
-				className={`${styles.ptLine} ${line.isLast ? styles.ptLineLast : ""}`}
+				className={`${styles.ptLine}${line.isLast ? ` ${styles.ptLineLast}` : ""}`}
 				style={wordSpacing ? { wordSpacing } : undefined}
 			>
 				{chunks.map((chunk, chunkIdx) => {
@@ -57,36 +56,28 @@ export function renderPositionedLines({
 					if (isFirstGlobal) seenVerseIds.add(chunk.verseId);
 
 					const verseNum = verseNumbers.get(chunk.verseId);
-					const chunkText = chunk.segments
-						.filter((s) => s.kind === "text")
-						.map((s) => (s as { kind: "text"; text: string; width: number }).text)
-						.join(" ");
 
 					const isHighlighted = handlers.highlightVerse === chunk.verseId;
 					const isReading = handlers.readingVerse === chunk.verseId;
-					const [, chVs] = chunk.verseId.split(":");
 					const isSelected =
-						handlers.selectedVerse &&
+						handlers.selectedVerse != null &&
 						chunk.verseId ===
 							`${handlers.selectedVerse.chapter}:${handlers.selectedVerse.verse}`;
 
 					const verseClasses = [
 						styles.verse,
 						"verse",
-						isHighlighted ? styles.selected : "",
-						isReading ? styles.reading : "",
-						isSelected ? styles.selected : "",
+						isHighlighted && styles.selected,
+						isReading && styles.reading,
+						isSelected && styles.selected,
 					]
 						.filter(Boolean)
 						.join(" ");
 
-					const fullVerseText =
-						verseMap.find((v) => v.verseId === chunk.verseId)
-							? paragraphText.slice(
-									verseMap.find((v) => v.verseId === chunk.verseId)!.start,
-									verseMap.find((v) => v.verseId === chunk.verseId)!.end,
-								)
-							: chunkText;
+					const entry = verseMap.find((v) => v.verseId === chunk.verseId);
+					const fullVerseText = entry
+						? paragraphText.slice(entry.start, entry.end)
+						: "";
 
 					return (
 						<span key={`${lineKey}-${chunkIdx}`}>
@@ -133,19 +124,12 @@ function renderChunkContent(segments: LineSegment[]): string {
 function groupSegmentsByVerse(
 	line: PositionedLine,
 	verseMap: VerseMapEntry[],
-	fullText: string,
-	lineIdx: number,
 ): VerseChunk[] {
 	const chunks: VerseChunk[] = [];
 	if (line.segments.length === 0) return chunks;
 
-	// We need to find the character offset for this line's segments in the full text
-	// Reconstruct offset by walking through segments
 	let currentChunk: VerseChunk | null = null;
-
-	// Use line's verseIds as a fallback, but do segment-level assignment
-	// by tracking position in the text
-	let textPosition = findLineTextStart(line, fullText);
+	let textPosition = line.charStartOffset;
 
 	for (const seg of line.segments) {
 		const verseId = getVerseIdAtOffset(verseMap, textPosition);
@@ -155,7 +139,6 @@ function groupSegmentsByVerse(
 			currentChunk = {
 				verseId,
 				segments: [seg],
-				isFirstOccurrence: false,
 			};
 		} else {
 			currentChunk.segments.push(seg);
@@ -164,38 +147,10 @@ function groupSegmentsByVerse(
 		if (seg.kind === "text") {
 			textPosition += seg.text.length;
 		} else {
-			textPosition += 1; // space
+			textPosition += 1;
 		}
 	}
 
 	if (currentChunk) chunks.push(currentChunk);
 	return chunks;
-}
-
-function findLineTextStart(line: PositionedLine, fullText: string): number {
-	// Build the line's text content (excluding spaces at boundaries)
-	const lineTextParts: string[] = [];
-	for (const seg of line.segments) {
-		if (seg.kind === "text") {
-			lineTextParts.push(seg.text);
-			break; // just need first word to find position
-		}
-	}
-
-	if (lineTextParts.length === 0) return 0;
-
-	const firstWord = lineTextParts[0]!;
-	// Find this word in the full text - search from each possible position
-	let idx = 0;
-	while (idx < fullText.length) {
-		const found = fullText.indexOf(firstWord, idx);
-		if (found === -1) return 0;
-		// Verify it's at a word boundary (start of text or preceded by space)
-		if (found === 0 || fullText[found - 1] === " ") {
-			return found;
-		}
-		idx = found + 1;
-	}
-
-	return 0;
 }

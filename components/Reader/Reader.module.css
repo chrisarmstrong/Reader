@@ -45,7 +45,7 @@
 }
 
 .chapterNumber + p sup,
-.chapterNumber + .ptLine .verse sup:first-of-type {
+.chapterNumber + .ptLine sup {
 	display: none;
 }
 

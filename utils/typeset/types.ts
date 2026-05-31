@@ -32,4 +32,5 @@ export interface PositionedLine {
 	wordWidth: number;
 	spaceCount: number;
 	naturalWidth: number;
+	charStartOffset: number;
 }

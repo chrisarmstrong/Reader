@@ -219,6 +219,7 @@ function buildLine(
 	for (let i = 0; i < from; i++) {
 		charOffset += prepared.segments[i]!.length;
 	}
+	const charStartOffset = charOffset;
 
 	const verseIdsSet = new Set<string>();
 	for (let segIndex = from; segIndex < to; segIndex++) {
@@ -243,16 +244,14 @@ function buildLine(
 
 	let wordWidth = 0;
 	let spaceCount = 0;
-	let naturalWidth = 0;
 	for (const seg of lineSegments) {
-		naturalWidth += seg.kind === "space" ? seg.width : seg.width;
 		if (seg.kind === "space") {
 			spaceCount++;
 		} else {
 			wordWidth += seg.width;
 		}
 	}
-	naturalWidth = wordWidth + spaceCount * normalSpaceWidth;
+	const naturalWidth = wordWidth + spaceCount * normalSpaceWidth;
 
 	let spacing: LineSpacing;
 	if (isLast) {
@@ -277,6 +276,7 @@ function buildLine(
 		wordWidth,
 		spaceCount,
 		naturalWidth,
+		charStartOffset,
 	};
 }
 
