@@ -44,8 +44,31 @@
 	margin-right: 0.25ex;
 }
 
-.chapterNumber + p sup {
+.chapterNumber + p sup,
+.chapterNumber + .ptLine .verse sup:first-of-type {
 	display: none;
+}
+
+.ptLine {
+	display: block;
+	white-space: nowrap;
+	font-family: var(--serif), georgia, serif;
+}
+
+.ptLine .verse {
+	display: inline;
+	white-space: nowrap;
+}
+
+.ptLineLast {
+	white-space: normal;
+}
+
+.verseAnchor {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
 }
 
 .verse {

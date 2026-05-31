@@ -15,6 +15,7 @@
 		"add-paragraphs": "node scripts/addParagraphBreaks.mjs"
 	},
 	"dependencies": {
+		"@chenglou/pretext": "^0.0.7",
 		"@mantine/core": "^8.3.12",
 		"@mantine/hooks": "^8.3.12",
 		"@tabler/icons-react": "^3.36.1",

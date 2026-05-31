@@ -54,6 +54,14 @@
 	font-weight: 300;
 }
 
+.settingDescription {
+	display: block;
+	font-size: 13px;
+	font-weight: 400;
+	opacity: 0.4;
+	margin-top: 2px;
+}
+
 .toggleIndicator {
 	width: 36px;
 	height: 20px;

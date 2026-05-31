@@ -6,6 +6,16 @@ import { useBibleContent } from "../../utils/useReadingPosition";
 import VerseDetails from "../VerseDetails";
 import type { ReaderProps, Bookmark } from "../../types/bible";
 import BibleStorageInstance from "../../utils/BibleStorage";
+import TypesetChapter from "./TypesetChapter";
+
+function buildCssSelectors(ids: string[]): string {
+	return ids
+		.flatMap((id) => [
+			`#${CSS.escape(id)}`,
+			`[data-verse-id="${CSS.escape(id)}"]`,
+		])
+		.join(", ");
+}
 
 function Reader({
 	book,
@@ -31,6 +41,24 @@ function Reader({
 		verse: string;
 		text: string;
 	} | null>(null);
+
+	const [optimalJustification, setOptimalJustification] = useState(false);
+
+	useEffect(() => {
+		BibleStorageInstance.getPreference("optimalJustification", false).then(
+			(val) => setOptimalJustification(val),
+		);
+
+		const handleToggle = () => {
+			BibleStorageInstance.getPreference("optimalJustification", false).then(
+				(val) => setOptimalJustification(val),
+			);
+		};
+		window.addEventListener("optimalJustificationChanged", handleToggle);
+		return () => {
+			window.removeEventListener("optimalJustificationChanged", handleToggle);
+		};
+	}, []);
 
 	useEffect(() => {
 		searchActiveRef.current = searchActive;
@@ -63,15 +91,15 @@ function Reader({
 			}
 
 			// Build CSS selectors for all red letter verses in this book
-			const selectors: string[] = [];
+			const ids: string[] = [];
 			for (const [chapter, verses] of Object.entries(record.chapters)) {
 				for (const verse of verses) {
-					selectors.push(`#${CSS.escape(`${chapter}:${verse}`)}`);
+					ids.push(`${chapter}:${verse}`);
 				}
 			}
 
-			styleEl.textContent = selectors.length
-				? `${selectors.join(", ")} { color: #c0392b; }`
+			styleEl.textContent = ids.length
+				? `${buildCssSelectors(ids)} { color: #c0392b; }`
 				: "";
 		};
 
@@ -106,12 +134,10 @@ function Reader({
 			}
 
 			// Generate CSS rules targeting bookmarked verse IDs
-			const selectors = bookmarkedVerses
-				.map((b) => `#${CSS.escape(`${b.chapter}:${b.verse}`)}`)
-				.join(", ");
+			const ids = bookmarkedVerses.map((b) => `${b.chapter}:${b.verse}`);
 
-			styleEl.textContent = selectors
-				? `${selectors} { background: rgba(255, 200, 0, 0.15); border-bottom: 2px solid rgba(255, 200, 0, 0.5); }`
+			styleEl.textContent = ids.length
+				? `${buildCssSelectors(ids)} { background: rgba(255, 200, 0, 0.15); border-bottom: 2px solid rgba(255, 200, 0, 0.5); }`
 				: "";
 		};
 
@@ -263,15 +289,17 @@ function Reader({
 			{ root: null, threshold: [0, 0.5, 1] }
 		);
 
-		const verses = document.querySelectorAll("p.verse");
-		verses.forEach((node) => observer.observe(node));
+		const verses = document.querySelectorAll("p.verse, .verseAnchor");
+		verses.forEach((node) => {
+			if ((node as HTMLElement).id) observer.observe(node);
+		});
 
 		const visibleIds = visibleIdsRef.current;
 		return () => {
 			observer.disconnect();
 			visibleIds.clear();
 		};
-	}, [book, onChapterChange]);
+	}, [book, onChapterChange, optimalJustification]);
 
 	const chaptersCount = book?.chapters.length || 0;
 
@@ -343,12 +371,10 @@ function Reader({
 			const bookmarkedVerses = bookmarks.filter((b) => b.book === book.book);
 
 			// Update CSS rules
-			const selectors = bookmarkedVerses
-				.map((b) => `#${CSS.escape(`${b.chapter}:${b.verse}`)}`)
-				.join(", ");
+			const ids = bookmarkedVerses.map((b) => `${b.chapter}:${b.verse}`);
 
-			styleEl.textContent = selectors
-				? `${selectors} { background: rgba(255, 200, 0, 0.15); border-bottom: 2px solid rgba(255, 200, 0, 0.5); }`
+			styleEl.textContent = ids.length
+				? `${buildCssSelectors(ids)} { background: rgba(255, 200, 0, 0.15); border-bottom: 2px solid rgba(255, 200, 0, 0.5); }`
 				: "";
 		}
 	}, [book]);
@@ -358,6 +384,24 @@ function Reader({
 		// Reload bookmarks after drawer closes (in case bookmark was added/removed)
 		await updateBookmarkStyles();
 	};
+
+	const handlePointerDown = useCallback((e: React.PointerEvent) => {
+		pointerStartRef.current = { x: e.clientX, y: e.clientY };
+	}, []);
+
+	const handlePointerUpNative = useCallback(
+		(e: React.PointerEvent, chapter: string, verse: string, text: string) => {
+			const start = pointerStartRef.current;
+			pointerStartRef.current = null;
+			if (!start) return;
+			const dx = Math.abs(e.clientX - start.x);
+			const dy = Math.abs(e.clientY - start.y);
+			if (dx > 10 || dy > 10) return;
+			handleVerseClick(chapter, verse, text);
+		},
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+		[book.book],
+	);
 
 	return (
 		<>
@@ -369,64 +413,78 @@ function Reader({
 			>
 				<div className={styles.book}>
 					<h1 className={styles.bookTitle}>{book.book}</h1>
-					{book.chapters?.map((chapter) => (
-						<div
-							key={chapter.chapter}
-							className={`${styles.chapter} ${book.book === "Psalms" ? styles.psalm : ""}`}
-							id={chapter.chapter.toString()}
-						>
-							<h2 className={styles.chapterNumber}>
-								{chaptersCount > 1
-									? chapter.chapter
-									: chapter.verses[0]?.text.slice(0, 1)}
-							</h2>
-							{chapter.title && (
-								<span className={styles.psalmTitle}>
-									{chapter.title}
-								</span>
-							)}
-							{chapter.verses.map((verse, i) => (
-								<p
-									key={verse.verse}
-									id={chapter.chapter + `:` + verse.verse}
-									className={`${styles.verse} verse ${
-										verse.paragraph ? styles.newParagraph : ""
-									} ${verse.poetry ? styles.poetry : ""} ${
-										highlightVerse &&
-										highlightVerse === chapter.chapter + `:` + verse.verse
-											? styles.selected
-											: ""
-									} ${
-										readingVerse === chapter.chapter + `:` + verse.verse
-											? styles.reading
-											: ""
-									} ${
-										selectedVerse &&
-										selectedVerse.chapter === chapter.chapter &&
-										selectedVerse.verse === verse.verse
-											? styles.selected
-											: ""
-									}`}
-									onPointerDown={(e) => {
-										pointerStartRef.current = { x: e.clientX, y: e.clientY };
-									}}
-									onPointerUp={(e) => {
-										const start = pointerStartRef.current;
-										pointerStartRef.current = null;
-										if (!start) return;
-										const dx = Math.abs(e.clientX - start.x);
-										const dy = Math.abs(e.clientY - start.y);
-										if (dx > 10 || dy > 10) return;
-										handleVerseClick(chapter.chapter, verse.verse, verse.text);
-									}}
-								>
-									<sup>{verse.verse}&nbsp;</sup>
-									{i === 0 && chaptersCount < 2 && verse.text.slice(1)}
-									{(i > 0 || chaptersCount > 1) && verse.text}
-								</p>
-							))}
-						</div>
-					))}
+					{book.chapters?.map((chapter) =>
+						optimalJustification ? (
+							<TypesetChapter
+								key={chapter.chapter}
+								chapter={chapter}
+								bookName={book.book}
+								chaptersCount={chaptersCount}
+								highlightVerse={highlightVerse}
+								readingVerse={readingVerse ?? null}
+								selectedVerse={selectedVerse}
+								onPointerDown={handlePointerDown}
+								onVerseClick={handleVerseClick}
+							/>
+						) : (
+							<div
+								key={chapter.chapter}
+								className={`${styles.chapter} ${book.book === "Psalms" ? styles.psalm : ""}`}
+								id={chapter.chapter.toString()}
+							>
+								<h2 className={styles.chapterNumber}>
+									{chaptersCount > 1
+										? chapter.chapter
+										: chapter.verses[0]?.text.slice(0, 1)}
+								</h2>
+								{chapter.title && (
+									<span className={styles.psalmTitle}>
+										{chapter.title}
+									</span>
+								)}
+								{chapter.verses.map((verse, i) => (
+									<p
+										key={verse.verse}
+										id={chapter.chapter + `:` + verse.verse}
+										className={`${styles.verse} verse ${
+											verse.paragraph ? styles.newParagraph : ""
+										} ${verse.poetry ? styles.poetry : ""} ${
+											highlightVerse &&
+											highlightVerse === chapter.chapter + `:` + verse.verse
+												? styles.selected
+												: ""
+										} ${
+											readingVerse === chapter.chapter + `:` + verse.verse
+												? styles.reading
+												: ""
+										} ${
+											selectedVerse &&
+											selectedVerse.chapter === chapter.chapter &&
+											selectedVerse.verse === verse.verse
+												? styles.selected
+												: ""
+										}`}
+										onPointerDown={(e) => {
+											pointerStartRef.current = { x: e.clientX, y: e.clientY };
+										}}
+										onPointerUp={(e) => {
+											const start = pointerStartRef.current;
+											pointerStartRef.current = null;
+											if (!start) return;
+											const dx = Math.abs(e.clientX - start.x);
+											const dy = Math.abs(e.clientY - start.y);
+											if (dx > 10 || dy > 10) return;
+											handleVerseClick(chapter.chapter, verse.verse, verse.text);
+										}}
+									>
+										<sup>{verse.verse}&nbsp;</sup>
+										{i === 0 && chaptersCount < 2 && verse.text.slice(1)}
+										{(i > 0 || chaptersCount > 1) && verse.text}
+									</p>
+								))}
+							</div>
+						),
+					)}
 				</div>
 			</div>
 
