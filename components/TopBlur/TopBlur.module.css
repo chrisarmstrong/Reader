@@ -4,8 +4,8 @@
 	left: 0;
 	right: 0;
 	/* Fully-blurred region covers the safe area (status bar / Dynamic Island)
-	   plus a ramp zone that eases the blur back to sharp in the readable area. */
-	height: calc(env(safe-area-inset-top, 0px) + 56px);
+	   plus a taller ramp zone that eases the blur back to sharp gently. */
+	height: calc(env(safe-area-inset-top, 0px) + 72px);
 	pointer-events: none;
 	/* Above the reading text, below the search/bookmarks overlays (z-index 100). */
 	z-index: 90;
@@ -30,55 +30,55 @@
    its threshold upward (gradient runs bottom→top). Layers composite into a
    smooth blur ramp that is sharpest at the bottom and strongest at the top. */
 .layer1 {
-	-webkit-backdrop-filter: blur(0.5px);
-	backdrop-filter: blur(0.5px);
-	-webkit-mask-image: linear-gradient(to top, transparent 0%, black 12.5%);
-	mask-image: linear-gradient(to top, transparent 0%, black 12.5%);
+	-webkit-backdrop-filter: blur(0.4px);
+	backdrop-filter: blur(0.4px);
+	-webkit-mask-image: linear-gradient(to top, transparent 0%, black 20%);
+	mask-image: linear-gradient(to top, transparent 0%, black 20%);
 }
 
 .layer2 {
-	-webkit-backdrop-filter: blur(1px);
-	backdrop-filter: blur(1px);
-	-webkit-mask-image: linear-gradient(to top, transparent 12.5%, black 25%);
-	mask-image: linear-gradient(to top, transparent 12.5%, black 25%);
+	-webkit-backdrop-filter: blur(0.8px);
+	backdrop-filter: blur(0.8px);
+	-webkit-mask-image: linear-gradient(to top, transparent 12%, black 32%);
+	mask-image: linear-gradient(to top, transparent 12%, black 32%);
 }
 
 .layer3 {
-	-webkit-backdrop-filter: blur(2px);
-	backdrop-filter: blur(2px);
-	-webkit-mask-image: linear-gradient(to top, transparent 25%, black 37.5%);
-	mask-image: linear-gradient(to top, transparent 25%, black 37.5%);
+	-webkit-backdrop-filter: blur(1.5px);
+	backdrop-filter: blur(1.5px);
+	-webkit-mask-image: linear-gradient(to top, transparent 28%, black 48%);
+	mask-image: linear-gradient(to top, transparent 28%, black 48%);
 }
 
 .layer4 {
-	-webkit-backdrop-filter: blur(4px);
-	backdrop-filter: blur(4px);
-	-webkit-mask-image: linear-gradient(to top, transparent 37.5%, black 50%);
-	mask-image: linear-gradient(to top, transparent 37.5%, black 50%);
+	-webkit-backdrop-filter: blur(2.5px);
+	backdrop-filter: blur(2.5px);
+	-webkit-mask-image: linear-gradient(to top, transparent 44%, black 64%);
+	mask-image: linear-gradient(to top, transparent 44%, black 64%);
 }
 
 .layer5 {
-	-webkit-backdrop-filter: blur(8px);
-	backdrop-filter: blur(8px);
-	-webkit-mask-image: linear-gradient(to top, transparent 50%, black 62.5%);
-	mask-image: linear-gradient(to top, transparent 50%, black 62.5%);
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+	-webkit-mask-image: linear-gradient(to top, transparent 60%, black 80%);
+	mask-image: linear-gradient(to top, transparent 60%, black 80%);
 }
 
 .layer6 {
-	-webkit-backdrop-filter: blur(16px);
-	backdrop-filter: blur(16px);
-	-webkit-mask-image: linear-gradient(to top, transparent 62.5%, black 75%);
-	mask-image: linear-gradient(to top, transparent 62.5%, black 75%);
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+	-webkit-mask-image: linear-gradient(to top, transparent 76%, black 96%);
+	mask-image: linear-gradient(to top, transparent 76%, black 96%);
 }
 
-/* Subtle white fade so the blurred text dissolves into the area behind the
-   Dynamic Island rather than ending on a hard edge. */
+/* Very gentle white fade so the blurred text dissolves toward the area behind
+   the Dynamic Island. Kept soft and high so it never reads as a hard band. */
 .wash {
 	position: absolute;
 	inset: 0;
 	background: linear-gradient(
 		to top,
-		transparent 55%,
-		rgba(255, 255, 255, 0.85) 100%
+		transparent 70%,
+		rgba(255, 255, 255, 0.55) 100%
 	);
 }
