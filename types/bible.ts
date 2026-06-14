@@ -98,6 +98,33 @@ export interface CrossReferenceRecord {
 	refs: string[]; // target verse IDs sorted by relevance
 }
 
+// A single entry in a Study — either a referenced verse or a block of commentary
+export type StudyItem =
+	| {
+			id: string;
+			type: "verse";
+			book: string;
+			chapter: string;
+			verse: string;
+			text: string;
+	  }
+	| {
+			id: string;
+			type: "commentary";
+			heading?: string;
+			body: string;
+	  };
+
+// A user-curated collection of verses and commentary (e.g. "People named John")
+export interface Study {
+	id: string;
+	title: string;
+	description?: string;
+	items: StudyItem[];
+	createdAt: number;
+	updatedAt: number;
+}
+
 export interface RedLetterRecord {
 	book: string; // e.g. "Matthew"
 	chapters: Record<string, string[]>; // chapter -> array of verse numbers

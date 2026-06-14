@@ -1,0 +1,354 @@
+.container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	pointer-events: none;
+	transition: background-color 0.2s ease-in, opacity 0.2s;
+	display: flex;
+	flex-direction: column;
+}
+
+.container[data-active="false"] {
+	background: #ffffff00;
+	opacity: 0;
+}
+
+.container[data-active="true"] {
+	background: white;
+	opacity: 1;
+	pointer-events: all;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 24px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	flex-shrink: 0;
+	background: white;
+	z-index: 99;
+}
+
+.header h1 {
+	font-size: 32px;
+	font-weight: 300;
+	margin: 0;
+	flex: 1;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.count {
+	font-size: 18px;
+	opacity: 0.5;
+	font-weight: 300;
+}
+
+.iconButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border: none;
+	background: transparent;
+	border-radius: 8px;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: all 0.2s;
+	-webkit-tap-highlight-color: transparent;
+	touch-action: manipulation;
+	flex-shrink: 0;
+	color: inherit;
+}
+
+.iconButton:hover {
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.iconButton:active {
+	background: rgba(0, 0, 0, 0.1);
+	transform: scale(0.95);
+}
+
+.iconButton:disabled {
+	opacity: 0.2;
+	cursor: not-allowed;
+}
+
+.closeButton {
+	margin-left: auto;
+}
+
+.content {
+	flex: 1;
+	overflow-y: auto;
+	min-height: 0;
+	pointer-events: all;
+	-webkit-overflow-scrolling: touch;
+}
+
+.loading,
+.empty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 48px 24px;
+	text-align: center;
+	opacity: 0.5;
+}
+
+.empty p {
+	margin: 12px 0 0 0;
+	font-size: 18px;
+}
+
+.emptyHint {
+	font-size: 14px !important;
+	opacity: 0.7;
+	max-width: 320px;
+}
+
+/* New-study button */
+.newButton {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: 16px 24px;
+	padding: 14px 20px;
+	background: rgba(0, 0, 0, 0.04);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background 0.2s, transform 0.15s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	color: inherit;
+}
+
+.newButton:hover {
+	background: rgba(0, 0, 0, 0.07);
+}
+
+.newButton:active {
+	transform: scale(0.99);
+}
+
+/* Study list */
+.studyItem {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 20px 24px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	transition: background 0.15s;
+}
+
+.studyItem:hover {
+	background: rgba(0, 0, 0, 0.02);
+}
+
+.studyLink {
+	flex: 1;
+	min-width: 0;
+	background: none;
+	border: none;
+	text-align: left;
+	cursor: pointer;
+	color: inherit;
+	padding: 0;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.studyTitle {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0 0 4px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.studyMeta {
+	font-size: 13px;
+	opacity: 0.5;
+}
+
+.removeButton {
+	background: none;
+	border: none;
+	cursor: pointer;
+	opacity: 0.3;
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.2s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	flex-shrink: 0;
+	color: inherit;
+}
+
+.removeButton:hover {
+	opacity: 0.7;
+}
+
+.removeButton:active {
+	opacity: 1;
+}
+
+/* Detail view */
+.titleInput {
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 28px;
+	font-weight: 300;
+	padding: 24px 24px 8px;
+	background: transparent;
+	color: inherit;
+	font-family: inherit;
+}
+
+.descriptionInput {
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 0 24px 16px;
+	background: transparent;
+	color: inherit;
+	font-family: inherit;
+	resize: none;
+	opacity: 0.7;
+}
+
+.itemsList {
+	padding: 8px 0 24px;
+}
+
+.itemCard {
+	position: relative;
+	padding: 16px 24px;
+	border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.itemControls {
+	position: absolute;
+	top: 12px;
+	right: 16px;
+	display: flex;
+	gap: 2px;
+}
+
+.controlButton {
+	background: none;
+	border: none;
+	cursor: pointer;
+	opacity: 0.3;
+	padding: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.2s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	color: inherit;
+	border-radius: 6px;
+}
+
+.controlButton:hover {
+	opacity: 0.8;
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.controlButton:disabled {
+	opacity: 0.12;
+	cursor: not-allowed;
+}
+
+.verseLink {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	padding-right: 80px;
+}
+
+.verseReference {
+	font-size: 14px;
+	font-weight: 600;
+	opacity: 0.7;
+}
+
+.verseText {
+	font-family: var(--serif), georgia, serif;
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 6px 0 0;
+}
+
+.commentaryHeading {
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	font-weight: 600;
+	background: transparent;
+	color: inherit;
+	font-family: inherit;
+	padding: 0 80px 0 0;
+	margin-bottom: 6px;
+}
+
+.commentaryBody {
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	line-height: 1.6;
+	background: transparent;
+	color: inherit;
+	font-family: inherit;
+	resize: none;
+	min-height: 1.6em;
+}
+
+.addBlockButton {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: 16px 24px 0;
+	padding: 12px 18px;
+	background: rgba(0, 0, 0, 0.04);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 15px;
+	transition: background 0.2s, transform 0.15s;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	color: inherit;
+}
+
+.addBlockButton:hover {
+	background: rgba(0, 0, 0, 0.07);
+}
+
+.addBlockButton:active {
+	transform: scale(0.99);
+}

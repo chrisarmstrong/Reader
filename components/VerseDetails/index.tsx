@@ -11,13 +11,21 @@ import {
 	IconX,
 	IconUser,
 	IconMapPin,
+	IconNotebook,
+	IconCheck,
+	IconPlus,
 } from "@tabler/icons-react";
 import Link from "next/link";
 import BibleStorage from "../../utils/BibleStorage";
 import { getCrossReferences } from "../../utils/getCrossRefs";
 import { getVerseEntities } from "../../utils/getEntities";
 import EntityDetail from "./EntityDetail";
-import type { VerseNote, CrossReference, BibleEntity } from "../../types/bible";
+import type {
+	VerseNote,
+	CrossReference,
+	BibleEntity,
+	Study,
+} from "../../types/bible";
 
 interface VerseDetailsProps {
 	active: boolean;
@@ -51,6 +59,8 @@ export default function VerseDetails({
 	const [selectedEntity, setSelectedEntity] = useState<BibleEntity | null>(
 		null
 	);
+	const [showStudyPicker, setShowStudyPicker] = useState(false);
+	const [studies, setStudies] = useState<Study[]>([]);
 	const savedNoteRef = useRef("");
 	const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -135,9 +145,72 @@ export default function VerseDetails({
 				});
 		}
 
-		// Reset entity detail view when verse changes
+		// Reset entity detail and study picker when verse changes
 		setSelectedEntity(null);
+		setShowStudyPicker(false);
 	}, [active, book, chapter, verse]);
+
+	const handleStudyToggle = async () => {
+		const next = !showStudyPicker;
+		setShowStudyPicker(next);
+		if (next) {
+			try {
+				const all = await BibleStorage.getAllStudies();
+				setStudies(all);
+			} catch (error) {
+				console.error("Error loading studies:", error);
+				setStudies([]);
+			}
+		}
+	};
+
+	// True when a study already contains this verse
+	const studyHasVerse = (study: Study) =>
+		study.items.some(
+			(item) =>
+				item.type === "verse" &&
+				item.book === book &&
+				item.chapter === chapter &&
+				item.verse === verse
+		);
+
+	const handleToggleVerseInStudy = async (study: Study) => {
+		try {
+			const updated = studyHasVerse(study)
+				? await BibleStorage.removeVerseFromStudy(
+						study.id,
+						book,
+						chapter,
+						verse
+				  )
+				: await BibleStorage.addVerseToStudy(study.id, {
+						book,
+						chapter,
+						verse,
+						text,
+				  });
+			setStudies((prev) =>
+				prev.map((s) => (s.id === updated.id ? updated : s))
+			);
+		} catch (error) {
+			console.error("Error updating study:", error);
+		}
+	};
+
+	const handleCreateStudyWithVerse = async () => {
+		try {
+			const study = await BibleStorage.createStudy("Untitled study");
+			const updated = await BibleStorage.addVerseToStudy(study.id, {
+				book,
+				chapter,
+				verse,
+				text,
+			});
+			setStudies((prev) => [updated, ...prev]);
+		} catch (error) {
+			console.error("Error creating study:", error);
+		}
+	};
 
 	const handleBookmarkToggle = async () => {
 		console.log("=== handleBookmarkToggle called ===");
@@ -265,6 +338,17 @@ export default function VerseDetails({
 							<span>{isBookmarked ? "Bookmarked" : "Bookmark"}</span>
 						</button>
 
+						<button
+							className={styles.actionButton}
+							onPointerUp={(e) => {
+								e.preventDefault();
+								handleStudyToggle();
+							}}
+						>
+							<IconNotebook size={24} />
+							<span>Study</span>
+						</button>
+
 						{onPlayAudio && (
 							<button
 								className={styles.actionButton}
@@ -303,6 +387,57 @@ export default function VerseDetails({
 							rows={1}
 						/>
 					</div>
+
+					{showStudyPicker && (
+						<div className={styles.studySection}>
+							<h4 className={styles.crossRefsTitle}>Add to study</h4>
+							{studies.length === 0 && (
+								<p className={styles.studyEmptyHint}>
+									No studies yet. Create one to start collecting verses.
+								</p>
+							)}
+							{studies.map((study) => {
+								const added = studyHasVerse(study);
+								return (
+									<button
+										key={study.id}
+										className={styles.studyOption}
+										onPointerUp={(e) => {
+											e.preventDefault();
+											handleToggleVerseInStudy(study);
+										}}
+									>
+										<span className={styles.studyOptionLabel}>
+											{study.title}
+										</span>
+										{added ? (
+											<IconCheck
+												size={20}
+												className={styles.studyOptionCheck}
+											/>
+										) : (
+											<IconPlus
+												size={20}
+												className={styles.studyOptionAdd}
+											/>
+										)}
+									</button>
+								);
+							})}
+							<button
+								className={`${styles.studyOption} ${styles.studyNewRow}`}
+								onPointerUp={(e) => {
+									e.preventDefault();
+									handleCreateStudyWithVerse();
+								}}
+							>
+								<span className={styles.studyOptionLabel}>
+									New study with this verse
+								</span>
+								<IconPlus size={20} className={styles.studyOptionAdd} />
+							</button>
+						</div>
+					)}
 
 					{entities.length > 0 && (
 						<div className={styles.entitiesSection}>

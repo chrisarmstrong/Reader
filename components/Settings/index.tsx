@@ -132,7 +132,7 @@ export default function Settings() {
 			const text = await file.text();
 			const result = await BibleStorageInstance.importData(text);
 			setStatusMessage(
-				`Imported ${result.bookmarks} bookmark${result.bookmarks !== 1 ? "s" : ""} and ${result.notes} note${result.notes !== 1 ? "s" : ""}`
+				`Imported ${result.bookmarks} bookmark${result.bookmarks !== 1 ? "s" : ""}, ${result.notes} note${result.notes !== 1 ? "s" : ""} and ${result.studies} stud${result.studies !== 1 ? "ies" : "y"}`
 			);
 		} catch {
 			setStatusMessage("Import failed — invalid file format");
