@@ -15,6 +15,9 @@
 	justify-items: center;
 	grid-column: fullbleed;
 	padding: 24px 0;
+	/* Full-bleed PWA (black-translucent status bar): keep resting content clear
+	   of the status bar / Dynamic Island; text dissolves behind it on scroll. */
+	padding-top: calc(24px + env(safe-area-inset-top));
 	padding-bottom: calc(60px + env(safe-area-inset-bottom));
 }
 

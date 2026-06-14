@@ -29,6 +29,8 @@
 	align-items: center;
 	gap: 16px;
 	padding: 24px;
+	/* Clear the status bar / Dynamic Island in the full-bleed PWA. */
+	padding-top: calc(24px + env(safe-area-inset-top));
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	flex-shrink: 0;
 	background: white;
