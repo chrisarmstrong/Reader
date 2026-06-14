@@ -45,7 +45,7 @@ export const metadata = {
 	applicationName: "Holy Bible",
 	appleWebApp: {
 		capable: true,
-		statusBarStyle: "default",
+		statusBarStyle: "black-translucent",
 		title: "Holy Bible",
 	},
 	formatDetection: {
