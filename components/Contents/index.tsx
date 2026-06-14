@@ -17,6 +17,7 @@ interface ContentsProps {
 	onBookSelect?: (book: Book) => void;
 	books: Book[];
 	dismiss: () => void;
+	onStudyOpen?: () => void;
 }
 
 export default function Contents({
@@ -25,6 +26,7 @@ export default function Contents({
 	currentBook,
 	onBookSelect,
 	books,
+	onStudyOpen,
 }: ContentsProps) {
 	const listRef = useRef<HTMLDivElement | null>(null);
 	const router = useRouter();
@@ -156,6 +158,34 @@ export default function Contents({
 				>
 					Settings
 				</Link>
+				{onStudyOpen && (
+					<button
+						className={styles.studiesButton}
+						onPointerDown={(e) => {
+							pointerStartRef.current = { x: e.clientX, y: e.clientY };
+						}}
+						onPointerUp={(e) => {
+							const start = pointerStartRef.current;
+							pointerStartRef.current = null;
+							if (!start) return;
+							const dx = Math.abs(e.clientX - start.x);
+							const dy = Math.abs(e.clientY - start.y);
+							if (dx < TAP_THRESHOLD && dy < TAP_THRESHOLD) {
+								e.preventDefault();
+								onStudyOpen();
+							}
+						}}
+						onClick={(e) => {
+							if (e.detail > 0) {
+								e.preventDefault();
+							} else {
+								onStudyOpen();
+							}
+						}}
+					>
+						Studies
+					</button>
+				)}
 				<button
 					className={styles.randomButton}
 					onPointerDown={(e) => {

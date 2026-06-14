@@ -248,6 +248,10 @@ export default function Main({ slug, book }: MainProps) {
 					onBookSelect={handleBookSelect}
 					books={Books}
 					dismiss={() => setBookNavVisible(false)}
+					onStudyOpen={() => {
+						setBookNavVisible(false);
+						setStudyVisible(true);
+					}}
 				/>
 			)}
 
@@ -255,7 +259,6 @@ export default function Main({ slug, book }: MainProps) {
 				onMenuToggle={handleMenuToggle}
 				onSearchToggle={handleSearchToggle}
 				onBookmarksToggle={() => setBookmarksVisible((prev) => !prev)}
-				onStudyToggle={() => setStudyVisible((prev) => !prev)}
 				currentPosition={currentPosition}
 				currentBook={currentBook}
 				visibleChapter={visibleChapter}
