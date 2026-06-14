@@ -1,10 +1,61 @@
+/* =============================================================================
+   Top-edge progressive blur (Dynamic Island / status bar "out of focus" effect)
+   =============================================================================
+
+   WHAT THIS DOES
+   Text scrolling toward the top of the screen gradually blurs and lightens, so
+   it dissolves "out of focus" behind the status bar / Dynamic Island instead of
+   ending on a hard edge.
+
+   HOW IT WORKS
+   CSS has no native "gradient blur" (a blur whose strength varies across the
+   element). `backdrop-filter: blur()` only does a single uniform radius. To fake
+   a gradual ramp we STACK several backdrop-filter layers, each with a larger
+   blur, and mask each one so it only appears from a certain height upward. Where
+   the masks overlap, the radii compound, producing a smooth increase toward the
+   top. See the component's index.tsx for the layer markup.
+
+   HOW TO TUNE (the knobs, in rough order of usefulness)
+   - Overall strength / how far it reaches: `.container` height (the `+ 72px`).
+       Bigger = taller, gentler ramp that intrudes further into the readable
+       area; smaller = tighter, more abrupt.
+   - Max blur / how out-of-focus the top gets: the last layer's blur (`.layer6`).
+       Bump it up for stronger blur, down for subtler. Keep the progression
+       roughly geometric (each ~1.5–2x the previous) for a smooth ramp.
+   - Where the blur starts vs. ends: the mask `transparent X% / black Y%` stops.
+       Lower %s = blur reaches further down into the page (0% = very bottom of
+       the strip, 100% = very top). Each layer's window overlaps the next.
+   - Lightening / "dissolve" + the residual gamma-darkening (see note below):
+       the `.wash` gradient stops. Raise the LOW stops (e.g. `0.22 18%`) to fight
+       darkening as text enters the blur; raise the TOP stop toward `1` for a
+       cleaner white behind the island.
+
+   KNOWN QUIRK — slight darkening low down
+   Browsers run blur in gamma (sRGB) space, not linear light, so blurred dark
+   text on white gains a little weight and looks slightly darker. The `.wash`
+   compensates by lightening as the text blurs, but a faint darkening can remain
+   at the bottom of the ramp where the wash is intentionally near-transparent
+   (so it blends into the sharp reading text). Accepted as a known trade-off.
+
+   FUTURE / NICE-TO-HAVE
+   This whole stacked-layer dance exists only because gradient-strength blur
+   isn't expressible today. Keep an eye on the CSS Filter Effects work and any
+   future "progressive"/maskable backdrop-filter support — if a single native
+   property lands, this file should collapse to one element. Re-evaluate the
+   layer count then.
+
+   SCOPE
+   Mobile only (see media query) since it targets notch / Dynamic Island devices
+   and relies on the safe-area inset to size the fully-blurred region.
+   ============================================================================= */
+
 .container {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	/* Fully-blurred region covers the safe area (status bar / Dynamic Island)
-	   plus a taller ramp zone that eases the blur back to sharp gently. */
+	   plus a ramp zone that eases the blur back to sharp. KNOB: overall reach. */
 	height: calc(env(safe-area-inset-top, 0px) + 72px);
 	pointer-events: none;
 	/* Above the reading text, below the search/bookmarks overlays (z-index 100). */
@@ -27,8 +78,11 @@
 }
 
 /* Each layer blurs more than the previous one and is masked to apply only from
-   its threshold upward (gradient runs bottom→top). Layers composite into a
-   smooth blur ramp that is sharpest at the bottom and strongest at the top. */
+   its threshold upward (mask gradient runs bottom→top: 0% = bottom of strip,
+   100% = top). Overlapping windows make the radii compound into a smooth ramp,
+   sharpest at the bottom and strongest at the top.
+   KNOBS: per-layer `blur()` radius, and the mask `transparent X% / black Y%`
+   stops (where each layer's blur fades in). */
 .layer1 {
 	-webkit-backdrop-filter: blur(0.4px);
 	backdrop-filter: blur(0.4px);
@@ -71,10 +125,12 @@
 	mask-image: linear-gradient(to top, transparent 76%, black 96%);
 }
 
-/* White fade spread across the whole ramp. Browsers blur in gamma space, which
-   makes blurred dark text gain weight (look darker); this progressively lightens
-   the text as it blurs so it dissolves away rather than darkening. Kept as a
-   smooth multi-stop gradient (not a band) so it never reads as harsh. */
+/* White fade spread across the whole ramp. Counters the gamma-space darkening
+   (see header note) by progressively lightening the text as it blurs, so it
+   dissolves away rather than darkening. Multi-stop and starting from fully
+   transparent at the bottom so it blends into the sharp reading text without a
+   visible band. KNOBS: raise low stops to fight bottom darkening; raise the top
+   stop toward 1 for cleaner white behind the island. */
 .wash {
 	position: absolute;
 	inset: 0;
