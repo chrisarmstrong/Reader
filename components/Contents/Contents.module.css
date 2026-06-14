@@ -63,6 +63,32 @@
 	transform: scale(1.05);
 }
 
+.studiesButton {
+	opacity: 0.5;
+	transition: opacity 0.2s, transform 150ms ease;
+	will-change: opacity, transform;
+	width: 100%;
+	padding: 6px 0;
+	margin-bottom: 4px;
+	font-size: 24px;
+	font-weight: 300;
+	cursor: pointer;
+	display: block;
+	color: inherit;
+	background: none;
+	border: none;
+	text-align: left;
+	font-family: inherit;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.studiesButton:hover,
+.studiesButton:active {
+	opacity: 1;
+	transform: scale(1.05);
+}
+
 .randomButton {
 	opacity: 0.5;
 	transition: opacity 0.2s, transform 150ms ease;

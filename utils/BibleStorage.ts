@@ -12,6 +12,8 @@ import type {
 	SearchIndexEntry,
 	CrossReferenceRecord,
 	RedLetterRecord,
+	Study,
+	StudyItem,
 } from "../types/bible";
 
 class BibleStorage {
@@ -21,7 +23,7 @@ class BibleStorage {
 
 	constructor() {
 		this.dbName = "BibleReaderDB";
-		this.version = 6;
+		this.version = 7;
 		this.db = null;
 	}
 
@@ -158,6 +160,20 @@ class BibleStorage {
 				if (!db.objectStoreNames.contains("redLetterVerses")) {
 					console.log("Creating redLetterVerses store");
 					db.createObjectStore("redLetterVerses", { keyPath: "book" });
+				}
+
+				// Store for user-curated studies (collections of verses & commentary)
+				if (!db.objectStoreNames.contains("studies")) {
+					console.log("Creating studies store");
+					const studiesStore = db.createObjectStore("studies", {
+						keyPath: "id",
+					});
+					studiesStore.createIndex("updatedAt", "updatedAt", {
+						unique: false,
+					});
+					studiesStore.createIndex("createdAt", "createdAt", {
+						unique: false,
+					});
 				}
 
 				console.log("Upgrade complete");
@@ -534,6 +550,152 @@ class BibleStorage {
 		});
 	}
 
+	// --- Study methods ---
+
+	// Get all studies, most recently updated first
+	async getAllStudies(): Promise<Study[]> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["studies"], "readonly");
+		const store = transaction.objectStore("studies");
+		const index = store.index("updatedAt");
+
+		return new Promise((resolve, reject) => {
+			const request = index.openCursor(null, "prev");
+			const studies: Study[] = [];
+
+			request.onsuccess = (event) => {
+				const cursor = (event.target as IDBRequest<IDBCursorWithValue>).result;
+				if (cursor) {
+					studies.push(cursor.value);
+					cursor.continue();
+				} else {
+					resolve(studies);
+				}
+			};
+			request.onerror = () => reject(request.error);
+		});
+	}
+
+	// Get a single study by ID
+	async getStudy(id: string): Promise<Study | null> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["studies"], "readonly");
+		const store = transaction.objectStore("studies");
+
+		return new Promise((resolve, reject) => {
+			const request = store.get(id);
+			request.onsuccess = () => resolve(request.result || null);
+			request.onerror = () => reject(request.error);
+		});
+	}
+
+	// Create a new, empty study
+	async createStudy(title: string, description?: string): Promise<Study> {
+		await this.init();
+
+		const now = Date.now();
+		const study: Study = {
+			id: crypto.randomUUID(),
+			title: title.trim() || "Untitled study",
+			description,
+			items: [],
+			createdAt: now,
+			updatedAt: now,
+		};
+
+		return this.saveStudy(study);
+	}
+
+	// Persist a study (insert or update). Always refreshes updatedAt.
+	async saveStudy(study: Study): Promise<Study> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["studies"], "readwrite");
+		const store = transaction.objectStore("studies");
+
+		const toSave: Study = { ...study, updatedAt: Date.now() };
+
+		return new Promise((resolve, reject) => {
+			const request = store.put(toSave);
+			request.onsuccess = () => resolve(toSave);
+			request.onerror = () => reject(request.error);
+		});
+	}
+
+	// Delete a study
+	async deleteStudy(id: string): Promise<void> {
+		await this.init();
+
+		const transaction = this.db!.transaction(["studies"], "readwrite");
+		const store = transaction.objectStore("studies");
+
+		return new Promise((resolve, reject) => {
+			const request = store.delete(id);
+			request.onsuccess = () => resolve();
+			request.onerror = () => reject(request.error);
+		});
+	}
+
+	// Append a verse to a study (no-op if the verse is already present)
+	async addVerseToStudy(
+		studyId: string,
+		verse: { book: string; chapter: string; verse: string; text: string }
+	): Promise<Study> {
+		const study = await this.getStudy(studyId);
+		if (!study) {
+			throw new Error(`Study not found: ${studyId}`);
+		}
+
+		const alreadyPresent = study.items.some(
+			(item) =>
+				item.type === "verse" &&
+				item.book === verse.book &&
+				item.chapter === verse.chapter &&
+				item.verse === verse.verse
+		);
+		if (alreadyPresent) {
+			return study;
+		}
+
+		const item: StudyItem = {
+			id: crypto.randomUUID(),
+			type: "verse",
+			book: verse.book,
+			chapter: verse.chapter,
+			verse: verse.verse,
+			text: verse.text,
+		};
+
+		return this.saveStudy({ ...study, items: [...study.items, item] });
+	}
+
+	// Remove every verse item matching a reference from a study
+	async removeVerseFromStudy(
+		studyId: string,
+		book: string,
+		chapter: string,
+		verse: string
+	): Promise<Study> {
+		const study = await this.getStudy(studyId);
+		if (!study) {
+			throw new Error(`Study not found: ${studyId}`);
+		}
+
+		const items = study.items.filter(
+			(item) =>
+				!(
+					item.type === "verse" &&
+					item.book === book &&
+					item.chapter === chapter &&
+					item.verse === verse
+				)
+		);
+
+		return this.saveStudy({ ...study, items });
+	}
+
 	// --- Bible seeding methods ---
 
 	// Store a batch of verses in a single transaction
@@ -752,21 +914,25 @@ class BibleStorage {
 		});
 	}
 
-	// Export all notes and bookmarks as JSON
+	// Export all notes, bookmarks and studies as JSON
 	async exportData(): Promise<string> {
-		const [bookmarks, notes] = await Promise.all([
+		const [bookmarks, notes, studies] = await Promise.all([
 			this.getAllBookmarks(),
 			this.getAllNotes(),
+			this.getAllStudies(),
 		]);
 
-		return JSON.stringify({ bookmarks, notes }, null, 2);
+		return JSON.stringify({ bookmarks, notes, studies }, null, 2);
 	}
 
-	// Import notes and bookmarks from JSON
-	async importData(json: string): Promise<{ bookmarks: number; notes: number }> {
+	// Import notes, bookmarks and studies from JSON
+	async importData(
+		json: string
+	): Promise<{ bookmarks: number; notes: number; studies: number }> {
 		const data = JSON.parse(json);
 		let bookmarkCount = 0;
 		let noteCount = 0;
+		let studyCount = 0;
 
 		if (Array.isArray(data.bookmarks)) {
 			await this.init();
@@ -806,7 +972,26 @@ class BibleStorage {
 			});
 		}
 
-		return { bookmarks: bookmarkCount, notes: noteCount };
+		if (Array.isArray(data.studies)) {
+			await this.init();
+			const tx = this.db!.transaction(["studies"], "readwrite");
+			const store = tx.objectStore("studies");
+
+			await new Promise<void>((resolve, reject) => {
+				tx.oncomplete = () => resolve();
+				tx.onerror = () => reject(tx.error);
+				tx.onabort = () => reject(tx.error);
+
+				for (const study of data.studies) {
+					if (study.id && study.title && Array.isArray(study.items)) {
+						store.put(study);
+						studyCount++;
+					}
+				}
+			});
+		}
+
+		return { bookmarks: bookmarkCount, notes: noteCount, studies: studyCount };
 	}
 }
 

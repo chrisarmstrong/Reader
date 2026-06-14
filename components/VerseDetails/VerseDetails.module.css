@@ -193,6 +193,64 @@
 	opacity: 1;
 }
 
+/* Add-to-study picker */
+.studySection {
+	padding: 16px 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.studyOption {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	padding: 12px 0;
+	background: none;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+	cursor: pointer;
+	color: inherit;
+	font-size: 15px;
+	text-align: left;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.studyOption:last-child {
+	border-bottom: none;
+}
+
+.studyOptionLabel {
+	flex: 1;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.studyOptionCheck {
+	flex-shrink: 0;
+	color: #2f9e44;
+}
+
+.studyOptionAdd {
+	flex-shrink: 0;
+	opacity: 0.35;
+}
+
+.studyNewRow {
+	color: inherit;
+	font-weight: 500;
+	opacity: 0.8;
+}
+
+.studyEmptyHint {
+	font-size: 14px;
+	line-height: 1.5;
+	opacity: 0.6;
+	margin: 0 0 8px;
+}
+
 /* Entity chips (People & Places section) */
 .entitiesSection {
 	padding: 16px 0;

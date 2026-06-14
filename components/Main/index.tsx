@@ -11,6 +11,7 @@ import Search from "../search";
 import Reader from "../Reader";
 import Contents from "../Contents";
 import Bookmarks from "../Bookmarks";
+import StudyOverlay from "../Study";
 import NavBar from "../NavBar";
 import TopBlur from "../TopBlur";
 
@@ -24,6 +25,7 @@ export default function Main({ slug, book }: MainProps) {
 	const [bookNavVisible, setBookNavVisible] = useState<boolean>(false);
 	const [searchVisible, setSearchVisible] = useState<boolean>(false);
 	const [bookmarksVisible, setBookmarksVisible] = useState<boolean>(false);
+	const [studyVisible, setStudyVisible] = useState<boolean>(false);
 	const [currentBook, setCurrentBook] = useState<Book>(book || Books[0]);
 	const [initialLoadComplete, setInitialLoadComplete] =
 		useState<boolean>(false);
@@ -198,14 +200,15 @@ export default function Main({ slug, book }: MainProps) {
 				setSearchVisible(false);
 				setBookNavVisible(false);
 				setBookmarksVisible(false);
+				setStudyVisible(false);
 			}
 		};
 
-		if (searchVisible || bookNavVisible || bookmarksVisible) {
+		if (searchVisible || bookNavVisible || bookmarksVisible || studyVisible) {
 			document.addEventListener("keydown", handleEscape);
 			return () => document.removeEventListener("keydown", handleEscape);
 		}
-	}, [searchVisible, bookNavVisible, bookmarksVisible]);
+	}, [searchVisible, bookNavVisible, bookmarksVisible, studyVisible]);
 
 	return (
 		<div className={styles.container}>
@@ -220,6 +223,11 @@ export default function Main({ slug, book }: MainProps) {
 				active={bookmarksVisible}
 				dismiss={() => setBookmarksVisible(false)}
 				currentBook={currentBook}
+			/>
+
+			<StudyOverlay
+				active={studyVisible}
+				dismiss={() => setStudyVisible(false)}
 			/>
 
 			<Reader
@@ -240,6 +248,10 @@ export default function Main({ slug, book }: MainProps) {
 					onBookSelect={handleBookSelect}
 					books={Books}
 					dismiss={() => setBookNavVisible(false)}
+					onStudyOpen={() => {
+						setBookNavVisible(false);
+						setStudyVisible(true);
+					}}
 				/>
 			)}
 
