@@ -26,9 +26,11 @@
        Lower %s = blur reaches further down into the page (0% = very bottom of
        the strip, 100% = very top). Each layer's window overlaps the next.
    - Lightening / "dissolve" + the residual gamma-darkening (see note below):
-       the `.wash` gradient stops. Raise the LOW stops (e.g. `0.22 18%`) to fight
-       darkening as text enters the blur; raise the TOP stop toward `1` for a
-       cleaner white behind the island.
+       the `.wash` gradient stops. Raise the LOW stops to fight darkening as text
+       enters the blur. The TOP stop controls the island area: it is kept well
+       below pure white so the BLURRED text stays visible behind the Dynamic
+       Island — raise it toward `1` to white the area out instead, lower it to
+       show even more of the blur.
 
    KNOWN QUIRK — slight darkening low down
    Browsers run blur in gamma (sRGB) space, not linear light, so blurred dark
@@ -125,22 +127,21 @@
 	mask-image: linear-gradient(to top, transparent 76%, black 96%);
 }
 
-/* White fade spread across the whole ramp. Counters the gamma-space darkening
-   (see header note) by progressively lightening the text as it blurs, so it
-   dissolves away rather than darkening. Multi-stop and starting from fully
+/* Gentle white fade that counters the gamma-space darkening (see header note) by
+   lightening the text as it blurs. Deliberately caps WELL BELOW pure white so the
+   blurred text stays visible behind the Dynamic Island rather than being washed
+   out — the blur itself is the effect up there, not a white-out. Starts fully
    transparent at the bottom so it blends into the sharp reading text without a
-   visible band. KNOBS: raise low stops to fight bottom darkening; raise the top
-   stop toward 1 for cleaner white behind the island. */
+   band. KNOBS: raise low stops to fight bottom darkening; raise the top stop for
+   a whiter island area, lower it to show more of the blurred text behind it. */
 .wash {
 	position: absolute;
 	inset: 0;
 	background: linear-gradient(
 		to top,
 		transparent 0%,
-		rgba(255, 255, 255, 0.22) 18%,
-		rgba(255, 255, 255, 0.45) 42%,
-		rgba(255, 255, 255, 0.7) 68%,
-		rgba(255, 255, 255, 0.9) 88%,
-		rgba(255, 255, 255, 1) 100%
+		rgba(255, 255, 255, 0.2) 22%,
+		rgba(255, 255, 255, 0.34) 55%,
+		rgba(255, 255, 255, 0.42) 100%
 	);
 }
