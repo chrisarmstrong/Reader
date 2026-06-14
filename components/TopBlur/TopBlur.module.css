@@ -71,14 +71,19 @@
 	mask-image: linear-gradient(to top, transparent 76%, black 96%);
 }
 
-/* Very gentle white fade so the blurred text dissolves toward the area behind
-   the Dynamic Island. Kept soft and high so it never reads as a hard band. */
+/* White fade spread across the whole ramp. Browsers blur in gamma space, which
+   makes blurred dark text gain weight (look darker); this progressively lightens
+   the text as it blurs so it dissolves away rather than darkening. Kept as a
+   smooth multi-stop gradient (not a band) so it never reads as harsh. */
 .wash {
 	position: absolute;
 	inset: 0;
 	background: linear-gradient(
 		to top,
-		transparent 70%,
-		rgba(255, 255, 255, 0.55) 100%
+		transparent 0%,
+		rgba(255, 255, 255, 0.15) 35%,
+		rgba(255, 255, 255, 0.45) 65%,
+		rgba(255, 255, 255, 0.78) 88%,
+		rgba(255, 255, 255, 0.9) 100%
 	);
 }
