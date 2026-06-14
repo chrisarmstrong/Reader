@@ -12,6 +12,7 @@ import Reader from "../Reader";
 import Contents from "../Contents";
 import Bookmarks from "../Bookmarks";
 import NavBar from "../NavBar";
+import TopBlur from "../TopBlur";
 
 import { Books } from "../../utils/Books";
 import { useReadingPosition } from "../../utils/useReadingPosition";
@@ -228,6 +229,8 @@ export default function Main({ slug, book }: MainProps) {
 				readingVerse={currentVerseId}
 				onPlayAudio={handlePlayAudio}
 			/>
+
+			<TopBlur />
 
 			{/* Only render Contents when active */}
 			{bookNavVisible && (
