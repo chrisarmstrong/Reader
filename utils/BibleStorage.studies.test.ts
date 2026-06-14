@@ -140,6 +140,51 @@ describe("BibleStorage — studies", () => {
 		).rejects.toThrow();
 	});
 
+	it("preserves existing bookmarks when upgrading v6 → v7", async () => {
+		// Simulate a pre-existing version 6 database that already holds a bookmark,
+		// created before the `studies` store existed.
+		await new Promise<void>((resolve, reject) => {
+			const req = indexedDB.open("BibleReaderDB", 6);
+			req.onupgradeneeded = () => {
+				const db = req.result;
+				const store = db.createObjectStore("bookmarks", { keyPath: "id" });
+				store.createIndex("createdAt", "createdAt", { unique: false });
+				store.createIndex("book", "book", { unique: false });
+			};
+			req.onsuccess = () => {
+				const db = req.result;
+				const tx = db.transaction(["bookmarks"], "readwrite");
+				tx.objectStore("bookmarks").put({
+					id: "Genesis-1:1",
+					book: "Genesis",
+					chapter: "1",
+					verse: "1",
+					text: "In the beginning…",
+					createdAt: Date.now(),
+				});
+				tx.oncomplete = () => {
+					db.close();
+					resolve();
+				};
+				tx.onerror = () => reject(tx.error);
+			};
+			req.onerror = () => reject(req.error);
+		});
+
+		// Opening through BibleStorage triggers the 6 → 7 upgrade
+		const db = await BibleStorage.init();
+		expect(db.version).toBe(7);
+		expect(db.objectStoreNames.contains("studies")).toBe(true);
+
+		// The pre-existing bookmark must survive untouched
+		const bookmark = await BibleStorage.getBookmark("Genesis-1:1");
+		expect(bookmark).not.toBeNull();
+		expect(bookmark?.text).toBe("In the beginning…");
+
+		const all = await BibleStorage.getAllBookmarks();
+		expect(all).toHaveLength(1);
+	});
+
 	it("round-trips studies through export/import", async () => {
 		const study = await BibleStorage.createStudy("Exported");
 		await BibleStorage.addVerseToStudy(study.id, {

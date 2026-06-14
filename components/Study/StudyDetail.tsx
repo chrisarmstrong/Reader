@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import {
 	IconArrowLeft,
@@ -8,10 +8,13 @@ import {
 	IconChevronDown,
 	IconTrash,
 	IconPlus,
+	IconSearch,
 } from "@tabler/icons-react";
 import styles from "./Study.module.css";
 import BibleStorage from "../../utils/BibleStorage";
+import StudySearch from "./StudySearch";
 import type { Study, StudyItem } from "../../types/bible";
+import type { VerseSearchResult } from "../../utils/searchVerses";
 
 interface StudyDetailProps {
 	study: Study;
@@ -27,6 +30,7 @@ export default function StudyDetail({
 	onNavigate,
 }: StudyDetailProps) {
 	const [study, setStudy] = useState<Study>(initialStudy);
+	const [searchOpen, setSearchOpen] = useState(false);
 	const studyRef = useRef(study);
 	studyRef.current = study;
 
@@ -96,6 +100,48 @@ export default function StudyDetail({
 		const next = { ...study, items: [...study.items, item] };
 		setStudy(next);
 		persist(next);
+	};
+
+	// Verse references already in the study, so the search picker can mark them
+	const existingRefs = useMemo(() => {
+		const refs = new Set<string>();
+		for (const item of study.items) {
+			if (item.type === "verse") {
+				refs.add(`${item.book}-${item.chapter}:${item.verse}`);
+			}
+		}
+		return refs;
+	}, [study.items]);
+
+	const handleToggleVerse = (verse: VerseSearchResult, isAdded: boolean) => {
+		if (isAdded) {
+			const next = {
+				...study,
+				items: study.items.filter(
+					(item) =>
+						!(
+							item.type === "verse" &&
+							item.book === verse.book &&
+							item.chapter === verse.chapter &&
+							item.verse === verse.verse
+						)
+				),
+			};
+			setStudy(next);
+			persist(next);
+		} else {
+			const item: StudyItem = {
+				id: crypto.randomUUID(),
+				type: "verse",
+				book: verse.book,
+				chapter: verse.chapter,
+				verse: verse.verse,
+				text: verse.text,
+			};
+			const next = { ...study, items: [...study.items, item] };
+			setStudy(next);
+			persist(next);
+		}
 	};
 
 	return (
@@ -214,18 +260,37 @@ export default function StudyDetail({
 						</div>
 					))}
 
-					<button
-						className={styles.addBlockButton}
-						onPointerUp={(e) => {
-							e.preventDefault();
-							addCommentary();
-						}}
-					>
-						<IconPlus size={18} />
-						<span>Add commentary block</span>
-					</button>
+					<div className={styles.addButtonRow}>
+						<button
+							className={styles.addBlockButton}
+							onPointerUp={(e) => {
+								e.preventDefault();
+								setSearchOpen(true);
+							}}
+						>
+							<IconSearch size={18} />
+							<span>Add verse</span>
+						</button>
+						<button
+							className={styles.addBlockButton}
+							onPointerUp={(e) => {
+								e.preventDefault();
+								addCommentary();
+							}}
+						>
+							<IconPlus size={18} />
+							<span>Add commentary</span>
+						</button>
+					</div>
 				</div>
 			</div>
+
+			<StudySearch
+				active={searchOpen}
+				dismiss={() => setSearchOpen(false)}
+				existingRefs={existingRefs}
+				onToggleVerse={handleToggleVerse}
+			/>
 		</>
 	);
 }

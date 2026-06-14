@@ -328,11 +328,18 @@
 	min-height: 1.6em;
 }
 
+.addButtonRow {
+	display: flex;
+	gap: 8px;
+	margin: 16px 24px 0;
+}
+
 .addBlockButton {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 8px;
-	margin: 16px 24px 0;
+	flex: 1;
 	padding: 12px 18px;
 	background: rgba(0, 0, 0, 0.04);
 	border: 1px solid rgba(0, 0, 0, 0.1);
