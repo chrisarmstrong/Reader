@@ -15,6 +15,7 @@
 		"add-paragraphs": "node scripts/addParagraphBreaks.mjs"
 	},
 	"dependencies": {
+		"@chenglou/pretext": "^0.0.7",
 		"@mantine/core": "^8.3.12",
 		"@mantine/hooks": "^8.3.12",
 		"@tabler/icons-react": "^3.36.1",
@@ -23,6 +24,7 @@
 		"@types/react-dom": "^18.3.1",
 		"eslint": "^9.17.0",
 		"eslint-config-next": "^15.1.6",
+		"hyphen": "^1.14.1",
 		"motion": "^12.25.0",
 		"next": "^15.1.6",
 		"react": "^18.3.1",

@@ -13,6 +13,7 @@ export default function Settings() {
 	const router = useRouter();
 	const fileInputRef = useRef<HTMLInputElement>(null);
 	const [redLetterEnabled, setRedLetterEnabled] = useState(true);
+	const [optimalJustification, setOptimalJustification] = useState(false);
 	const [playbackSpeed, setPlaybackSpeed] = useState(1);
 	const [isSamplePlaying, setIsSamplePlaying] = useState(false);
 	const [statusMessage, setStatusMessage] = useState<string | null>(null);
@@ -23,6 +24,9 @@ export default function Settings() {
 	useEffect(() => {
 		BibleStorageInstance.getPreference("redLetterEnabled", true).then(
 			(val) => setRedLetterEnabled(val)
+		);
+		BibleStorageInstance.getPreference("optimalJustification", false).then(
+			(val) => setOptimalJustification(val)
 		);
 		BibleStorageInstance.getPreference("playbackSpeed", 1).then((val) =>
 			setPlaybackSpeed(val)
@@ -45,6 +49,13 @@ export default function Settings() {
 		setRedLetterEnabled(newValue);
 		await BibleStorageInstance.savePreference("redLetterEnabled", newValue);
 		window.dispatchEvent(new Event("redLetterChanged"));
+	};
+
+	const handleJustificationToggle = async () => {
+		const newValue = !optimalJustification;
+		setOptimalJustification(newValue);
+		await BibleStorageInstance.savePreference("optimalJustification", newValue);
+		window.dispatchEvent(new Event("optimalJustificationChanged"));
 	};
 
 	const handleSpeedChange = async (speed: number) => {
@@ -165,6 +176,19 @@ export default function Settings() {
 						className={styles.toggleIndicator}
 						data-enabled={redLetterEnabled}
 						onClick={handleRedLetterToggle}
+					/>
+				</div>
+				<div className={styles.settingRow}>
+					<div>
+						<span className={styles.settingLabel}>Optimal Justification</span>
+						<span className={styles.settingDescription}>
+							Experimental — Knuth–Plass line breaking
+						</span>
+					</div>
+					<span
+						className={styles.toggleIndicator}
+						data-enabled={optimalJustification}
+						onClick={handleJustificationToggle}
 					/>
 				</div>
 			</div>

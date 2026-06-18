@@ -32,10 +32,13 @@
 }
 
 .chapter {
+	width: 100%;
 	max-width: 70ch;
+	font-family: var(--serif), georgia, serif;
 	line-height: 24px;
 	grid-column: main;
 	margin-bottom: 24px;
+	overflow-x: hidden;
 }
 
 .chapterNumber {
@@ -47,8 +50,31 @@
 	margin-right: 0.25ex;
 }
 
-.chapterNumber + p sup {
+.chapterNumber + p sup,
+.chapterNumber + .ptLine sup {
 	display: none;
+}
+
+.ptLine {
+	display: block;
+	font-family: var(--serif), georgia, serif;
+}
+
+.ptLine .verse {
+	display: inline;
+}
+
+.ptLine .verse sup {
+	padding-left: 0.3ex;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.verseAnchor {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
 }
 
 .verse {
@@ -138,6 +164,35 @@
 
 .verse.selected {
 	background: rgba(255, 200, 0, 0.15);
+}
+
+.justificationToggle {
+	position: fixed;
+	bottom: calc(70px + env(safe-area-inset-bottom));
+	right: 16px;
+	z-index: 100;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(8px);
+	font-size: 11px;
+	font-weight: 600;
+	font-family: system-ui, sans-serif;
+	color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.15s, color 0.15s;
+	-webkit-tap-highlight-color: transparent;
+	touch-action: manipulation;
+}
+
+.justificationToggle:hover {
+	background: rgba(255, 255, 255, 1);
+	color: rgba(0, 0, 0, 0.8);
 }
 
 @keyframes highlightFade {
